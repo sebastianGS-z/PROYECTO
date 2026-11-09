@@ -1,6 +1,6 @@
 # Entrevistas de campo · Texto completo (anexo de la propuesta E0)
 
-Entrevistas del equipo a ingenieros agrónomos de Colima. Fecha, medio y nombre del entrevistador: ⚠️ COMPLETAR.
+Entrevistas del equipo a ingenieros agrónomos de Colima. Fecha y medio: 2026-11-09, llamada. Entrevistó: Jose Negrete Orozco.
 
 ### B. Entrevista 2: Sector Plátano
 * **Entrevistado:** Ing. Agrónomo consultor de parcelas plataneras.

@@ -1,6 +1,6 @@
 # Entrega E0 · Observatorio de Agro-Inteligencia Colimense (OAIC)
 
-Equipo: Grageda Sandoval Sebastián y ⚠️ NOMBRE DEL COMPAÑERO · Etiqueta: `e0` · Tablero: no aplica en E0 (se publica desde E1)
+Equipo: Grageda Sandoval Sebastián y Jose Negrete Orozco · Etiqueta: `e0` · Tablero: no aplica en E0 (se publica desde E1)
 
 ## Resumen en tres líneas
 1. Observatorio de precios mayoristas de limón, plátano y papaya (SNIIM) cruzados con clima de Tecomán y Colima (NOAA NCEI) para decidir cuándo vender.
@@ -17,7 +17,7 @@ Equipo: Grageda Sandoval Sebastián y ⚠️ NOMBRE DEL COMPAÑERO · Etiqueta: 
 | Preguntas analíticas (20) | [docs/E0/propuesta.md §3](propuesta.md) | Variable a pronosticar, factores del experimento y grupos a comparar |
 | Plan de recopilación (20) | [docs/E0/propuesta.md §4](propuesta.md) | robots.txt de las fuentes evaluadas en el Anexo de la propuesta (2026-11-09) |
 | Captura y serie histórica (25) | [extractores/](../../extractores) · [.github/workflows/captura_diaria.yml](../../.github/workflows/captura_diaria.yml) · [data/bronce/](../../data/bronce) · reporte `data/bronce/sniim/manifests/cobertura_<run_id>.csv` | SNIIM 36/36 meses por producto y mercado; clima 28/36 meses (propuesta §5). Actions: https://github.com/sebastianGS-z/PROYECTO/actions |
-| Arranque de calidad (15) | [calidad/tiempo-sebastian.csv](../../calidad/tiempo-sebastian.csv) · [calidad/defectos-sebastian.csv](../../calidad/defectos-sebastian.csv) · [calidad/tiempo-integrante2.csv](../../calidad/tiempo-integrante2.csv) · [calidad/defectos-integrante2.csv](../../calidad/defectos-integrante2.csv) · [calidad/bitacora_capturas.csv](../../calidad/bitacora_capturas.csv) · [calidad/objetivos_calidad.json](../../calidad/objetivos_calidad.json) | Registros PSP de ambos integrantes |
+| Arranque de calidad (15) | [calidad/tiempo-sebastian.csv](../../calidad/tiempo-sebastian.csv) · [calidad/defectos-sebastian.csv](../../calidad/defectos-sebastian.csv) · [calidad/tiempo-jose.csv](../../calidad/tiempo-jose.csv) · [calidad/defectos-jose.csv](../../calidad/defectos-jose.csv) · [calidad/bitacora_capturas.csv](../../calidad/bitacora_capturas.csv) · [calidad/objetivos_calidad.json](../../calidad/objetivos_calidad.json) | Registros PSP de ambos integrantes |
 
 ## Cómo reproducir
 ```bash
@@ -30,7 +30,7 @@ python main.py validar
 ```
 
 ## Lista de comprobación previa al tag `e0`
-- [ ] Entrevista real registrada y propuesta sin marcas ⚠️.
+- [ ] Entrevista real registrada y propuesta sin marcas pendientes.
 - [ ] robots.txt y términos de ambas fuentes leídos, con fecha, en la propuesta.
 - [ ] Serie histórica descargada y reporte de cobertura revisado (≥ 36 periodos o faltantes declarados).
 - [ ] Workflow diario ejecutado al menos una vez con éxito (y programado en la rama por defecto).
