@@ -1,0 +1,44 @@
+{
+  "_nota": "Definiciones de objetivos. NO son métricas alcanzadas: se evalúan con 'python main.py objetivos' sobre manifiestos reales. Hasta tener ejecuciones, el resultado es 'sin_datos'.",
+  "objetivos": [
+    {
+      "id": "OQ1",
+      "nombre": "Disponibilidad de captura",
+      "descripcion": "Porcentaje de ejecuciones programadas diarias que terminan en estado exitosa o sin_resultados (la fuente respondió sin errores).",
+      "formula": "disponibilidad = (ejecuciones_exitosa + ejecuciones_sin_resultados) / ejecuciones_diarias_totales * 100",
+      "denominador": "Todos los manifiestos con modo='diaria' del periodo evaluado, por fuente y global. Las ejecuciones parcial y fallida cuentan en el denominador y NO en el numerador.",
+      "unidad": "porcentaje",
+      "valor_objetivo": 95,
+      "operador": ">=",
+      "frecuencia_evaluacion": "semanal y al cierre de cada entrega",
+      "fuente_evidencia": "data/bronce/<fuente>/manifests/manifest_*.json (campos modo, estado)",
+      "criterio_cumplimiento": "disponibilidad >= 95 sobre el periodo evaluado"
+    },
+    {
+      "id": "OQ2",
+      "nombre": "Continuidad de ejecución",
+      "descripcion": "Cero fallos sin detectar o registrar: todo día programado sin manifiesto, o ejecución no exitosa sin error documentado, es un fallo no detectado.",
+      "formula": "fallos_no_detectados = dias_programados_sin_manifiesto + manifiestos_no_exitosos_sin_errores",
+      "denominador": "No aplica (conteo absoluto). Se reporta además la racha máxima de días consecutivos con fallo no detectado.",
+      "unidad": "conteo",
+      "valor_objetivo": 0,
+      "operador": "==",
+      "frecuencia_evaluacion": "diaria (revisión del resumen del workflow) y semanal",
+      "fuente_evidencia": "manifiestos + calidad/bitacora_capturas.csv + historial de GitHub Actions + logs/captura_*.log",
+      "criterio_cumplimiento": "fallos_no_detectados == 0"
+    },
+    {
+      "id": "OQ3",
+      "nombre": "Cobertura de capturas diarias",
+      "descripcion": "Porcentaje de capturas programadas que se ejecutaron o quedaron identificadas explícitamente como fallidas/no disponibles. Una ejecución fallida NO cuenta como captura exitosa.",
+      "formula": "cobertura = dias_con_manifiesto / dias_programados * 100",
+      "denominador": "Días calendario del periodo evaluado (una captura programada por día y fuente).",
+      "unidad": "porcentaje",
+      "valor_objetivo": 100,
+      "operador": "==",
+      "frecuencia_evaluacion": "semanal y al cierre de cada entrega",
+      "fuente_evidencia": "data/bronce/<fuente>/manifests/manifest_*.json (campo inicio, estado)",
+      "criterio_cumplimiento": "cobertura == 100; los días fallidos se listan aparte y no suman como éxito"
+    }
+  ]
+}

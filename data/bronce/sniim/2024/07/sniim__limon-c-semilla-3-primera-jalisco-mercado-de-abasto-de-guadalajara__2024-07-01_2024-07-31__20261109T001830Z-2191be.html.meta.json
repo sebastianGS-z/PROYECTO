@@ -1,0 +1,39 @@
+{
+  "esquema": "tdl-bronce-meta/1",
+  "contenido_original": {
+    "archivo": "sniim__limon-c-semilla-3-primera-jalisco-mercado-de-abasto-de-guadalajara__2024-07-01_2024-07-31__20261109T001830Z-2191be.html",
+    "descripcion": "Bytes tal como los entregó la fuente; no se modifican."
+  },
+  "metadatos_captura": {
+    "fuente": "sniim",
+    "fuente_url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F07%2F2024&fechaFinal=31%2F07%2F2024&ProductoId=418&OrigenId=-1&Origen=Todos&DestinoId=140&Destino=Jalisco%3A+Mercado+de+Abasto+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+    "fecha_captura": "2026-11-09T00:58:27Z",
+    "identificador_ejecucion": "20261109T001830Z-2191be",
+    "formato_original": "html",
+    "sha256": "bc404160feac67d099cbf6686747f3044c7f60c6c7e76cd2ce3a7faabb5b874c",
+    "bytes": 9425,
+    "http_status": 200,
+    "registros_detectados": 0,
+    "estado_captura": "sin_resultados",
+    "advertencias": [],
+    "colision_nombre": false,
+    "etiqueta": "Limón c/semilla # 3 - Primera__Jalisco: Mercado de Abasto de Guadalajara",
+    "producto": "Limón c/semilla # 3 - Primera",
+    "producto_id": "418",
+    "mercado": "Jalisco: Mercado de Abasto de Guadalajara",
+    "mercado_id": "140",
+    "fecha_ref_inicio": "2024-07-01",
+    "fecha_ref_fin": "2024-07-31",
+    "parametros": {
+      "fechaInicio": "01/07/2024",
+      "fechaFinal": "31/07/2024",
+      "ProductoId": "418",
+      "OrigenId": "-1",
+      "Origen": "Todos",
+      "DestinoId": "140",
+      "Destino": "Jalisco: Mercado de Abasto de Guadalajara",
+      "PreciosPorId": "1",
+      "RegistrosPorPagina": "500"
+    }
+  }
+}

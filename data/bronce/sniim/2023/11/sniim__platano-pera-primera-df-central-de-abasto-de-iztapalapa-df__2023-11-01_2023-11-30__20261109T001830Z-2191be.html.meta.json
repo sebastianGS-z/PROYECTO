@@ -1,0 +1,39 @@
+{
+  "esquema": "tdl-bronce-meta/1",
+  "contenido_original": {
+    "archivo": "sniim__platano-pera-primera-df-central-de-abasto-de-iztapalapa-df__2023-11-01_2023-11-30__20261109T001830Z-2191be.html",
+    "descripcion": "Bytes tal como los entregó la fuente; no se modifican."
+  },
+  "metadatos_captura": {
+    "fuente": "sniim",
+    "fuente_url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F11%2F2023&fechaFinal=30%2F11%2F2023&ProductoId=731&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+    "fecha_captura": "2026-11-09T00:45:44Z",
+    "identificador_ejecucion": "20261109T001830Z-2191be",
+    "formato_original": "html",
+    "sha256": "0d0bb34589b00c526c7dab03cf710c1d10c0a092359d62af623c0795ad9181d3",
+    "bytes": 9422,
+    "http_status": 200,
+    "registros_detectados": 0,
+    "estado_captura": "sin_resultados",
+    "advertencias": [],
+    "colision_nombre": false,
+    "etiqueta": "Plátano Pera - Primera__DF: Central de Abasto de Iztapalapa DF",
+    "producto": "Plátano Pera - Primera",
+    "producto_id": "731",
+    "mercado": "DF: Central de Abasto de Iztapalapa DF",
+    "mercado_id": "100",
+    "fecha_ref_inicio": "2023-11-01",
+    "fecha_ref_fin": "2023-11-30",
+    "parametros": {
+      "fechaInicio": "01/11/2023",
+      "fechaFinal": "30/11/2023",
+      "ProductoId": "731",
+      "OrigenId": "-1",
+      "Origen": "Todos",
+      "DestinoId": "100",
+      "Destino": "DF: Central de Abasto de Iztapalapa DF",
+      "PreciosPorId": "1",
+      "RegistrosPorPagina": "500"
+    }
+  }
+}

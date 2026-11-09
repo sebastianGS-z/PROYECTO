@@ -1,0 +1,39 @@
+{
+  "esquema": "tdl-bronce-meta/1",
+  "contenido_original": {
+    "archivo": "sniim__platano-morado-primera-jalisco-mercado-de-abasto-de-guadalajara__2024-03-01_2024-03-31__20261109T001830Z-2191be.html",
+    "descripcion": "Bytes tal como los entregó la fuente; no se modifican."
+  },
+  "metadatos_captura": {
+    "fuente": "sniim",
+    "fuente_url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F03%2F2024&fechaFinal=31%2F03%2F2024&ProductoId=727&OrigenId=-1&Origen=Todos&DestinoId=140&Destino=Jalisco%3A+Mercado+de+Abasto+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+    "fecha_captura": "2026-11-09T00:40:53Z",
+    "identificador_ejecucion": "20261109T001830Z-2191be",
+    "formato_original": "html",
+    "sha256": "442d3fa8a961ef8fff816816ad22d817ab900a50f4b9e1bc3127362bfcae78dc",
+    "bytes": 9425,
+    "http_status": 200,
+    "registros_detectados": 0,
+    "estado_captura": "sin_resultados",
+    "advertencias": [],
+    "colision_nombre": false,
+    "etiqueta": "Plátano Morado - Primera__Jalisco: Mercado de Abasto de Guadalajara",
+    "producto": "Plátano Morado - Primera",
+    "producto_id": "727",
+    "mercado": "Jalisco: Mercado de Abasto de Guadalajara",
+    "mercado_id": "140",
+    "fecha_ref_inicio": "2024-03-01",
+    "fecha_ref_fin": "2024-03-31",
+    "parametros": {
+      "fechaInicio": "01/03/2024",
+      "fechaFinal": "31/03/2024",
+      "ProductoId": "727",
+      "OrigenId": "-1",
+      "Origen": "Todos",
+      "DestinoId": "140",
+      "Destino": "Jalisco: Mercado de Abasto de Guadalajara",
+      "PreciosPorId": "1",
+      "RegistrosPorPagina": "500"
+    }
+  }
+}

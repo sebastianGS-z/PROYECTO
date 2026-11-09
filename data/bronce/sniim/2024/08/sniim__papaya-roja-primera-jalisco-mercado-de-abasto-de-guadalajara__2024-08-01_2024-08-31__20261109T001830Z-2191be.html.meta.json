@@ -1,0 +1,39 @@
+{
+  "esquema": "tdl-bronce-meta/1",
+  "contenido_original": {
+    "archivo": "sniim__papaya-roja-primera-jalisco-mercado-de-abasto-de-guadalajara__2024-08-01_2024-08-31__20261109T001830Z-2191be.html",
+    "descripcion": "Bytes tal como los entregó la fuente; no se modifican."
+  },
+  "metadatos_captura": {
+    "fuente": "sniim",
+    "fuente_url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F08%2F2024&fechaFinal=31%2F08%2F2024&ProductoId=623&OrigenId=-1&Origen=Todos&DestinoId=140&Destino=Jalisco%3A+Mercado+de+Abasto+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+    "fecha_captura": "2026-11-09T01:23:26Z",
+    "identificador_ejecucion": "20261109T001830Z-2191be",
+    "formato_original": "html",
+    "sha256": "f94e48aa674aca05b89d0be3e6493b3a118fe5c6e208557eda40d410d7e776b8",
+    "bytes": 9425,
+    "http_status": 200,
+    "registros_detectados": 0,
+    "estado_captura": "sin_resultados",
+    "advertencias": [],
+    "colision_nombre": false,
+    "etiqueta": "Papaya Roja - Primera__Jalisco: Mercado de Abasto de Guadalajara",
+    "producto": "Papaya Roja - Primera",
+    "producto_id": "623",
+    "mercado": "Jalisco: Mercado de Abasto de Guadalajara",
+    "mercado_id": "140",
+    "fecha_ref_inicio": "2024-08-01",
+    "fecha_ref_fin": "2024-08-31",
+    "parametros": {
+      "fechaInicio": "01/08/2024",
+      "fechaFinal": "31/08/2024",
+      "ProductoId": "623",
+      "OrigenId": "-1",
+      "Origen": "Todos",
+      "DestinoId": "140",
+      "Destino": "Jalisco: Mercado de Abasto de Guadalajara",
+      "PreciosPorId": "1",
+      "RegistrosPorPagina": "500"
+    }
+  }
+}

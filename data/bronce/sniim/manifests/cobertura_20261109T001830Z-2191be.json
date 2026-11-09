@@ -1,0 +1,72 @@
+{
+  "run_id": "20261109T001830Z-2191be",
+  "nota": "Un periodo cuenta solo si la fuente devolvió registros reales; archivos vacíos o fallidos no cuentan.",
+  "cobertura": [
+    {
+      "producto": "limon",
+      "mercado": "cdmx",
+      "periodos_esperados": 36,
+      "periodos_con_datos": 36,
+      "periodos_sin_datos": [],
+      "periodos_fallidos": [],
+      "cumple_36": true,
+      "primer_periodo": "2023-11",
+      "ultimo_periodo": "2026-10"
+    },
+    {
+      "producto": "limon",
+      "mercado": "guadalajara",
+      "periodos_esperados": 36,
+      "periodos_con_datos": 36,
+      "periodos_sin_datos": [],
+      "periodos_fallidos": [],
+      "cumple_36": true,
+      "primer_periodo": "2023-11",
+      "ultimo_periodo": "2026-10"
+    },
+    {
+      "producto": "papaya",
+      "mercado": "cdmx",
+      "periodos_esperados": 36,
+      "periodos_con_datos": 36,
+      "periodos_sin_datos": [],
+      "periodos_fallidos": [],
+      "cumple_36": true,
+      "primer_periodo": "2023-11",
+      "ultimo_periodo": "2026-10"
+    },
+    {
+      "producto": "papaya",
+      "mercado": "guadalajara",
+      "periodos_esperados": 36,
+      "periodos_con_datos": 36,
+      "periodos_sin_datos": [],
+      "periodos_fallidos": [],
+      "cumple_36": true,
+      "primer_periodo": "2023-11",
+      "ultimo_periodo": "2026-10"
+    },
+    {
+      "producto": "platano",
+      "mercado": "cdmx",
+      "periodos_esperados": 36,
+      "periodos_con_datos": 36,
+      "periodos_sin_datos": [],
+      "periodos_fallidos": [],
+      "cumple_36": true,
+      "primer_periodo": "2023-11",
+      "ultimo_periodo": "2026-10"
+    },
+    {
+      "producto": "platano",
+      "mercado": "guadalajara",
+      "periodos_esperados": 36,
+      "periodos_con_datos": 36,
+      "periodos_sin_datos": [],
+      "periodos_fallidos": [],
+      "cumple_36": true,
+      "primer_periodo": "2023-11",
+      "ultimo_periodo": "2026-10"
+    }
+  ]
+}

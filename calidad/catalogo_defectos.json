@@ -1,0 +1,15 @@
+{
+  "_nota": "Los diez tipos de defecto de PSP, exigidos por el Kit de arranque del proyecto integrador (documentación, sintaxis, construcción, asignación, interfaz, verificación, datos, función, sistema y entorno). Clasifican QUÉ falló; no son fases PSP (cuándo se introdujo/eliminó). El identificador es el valor que se escribe en la columna 'tipo' del CSV.",
+  "tipos": [
+    {"id": "documentacion", "nombre": "Documentación", "descripcion": "Comentarios, docstrings, mensajes o textos incorrectos o ausentes.", "ejemplo_tdl": "README con un comando que ya no existe."},
+    {"id": "sintaxis", "nombre": "Sintaxis", "descripcion": "Ortografía, puntuación, formato de instrucciones o erratas en el código.", "ejemplo_tdl": "Paréntesis o coma faltante en un JSON de configuración."},
+    {"id": "construccion", "nombre": "Construcción", "descripcion": "Gestión de cambios, empaquetado, bibliotecas y control de versiones.", "ejemplo_tdl": "requirements.txt sin una dependencia que el código importa."},
+    {"id": "asignacion", "nombre": "Asignación", "descripcion": "Declaración, nombres duplicados, alcance de variables, límites.", "ejemplo_tdl": "Variable que sobrescribe otra con el mismo nombre en el parser."},
+    {"id": "interfaz", "nombre": "Interfaz", "descripcion": "Llamadas y referencias entre procedimientos, entradas/salidas, parámetros de API o formularios.", "ejemplo_tdl": "Parámetro de fecha con formato incorrecto en la consulta del SNIIM."},
+    {"id": "verificacion", "nombre": "Verificación", "descripcion": "Mensajes de error y validaciones inadecuadas o ausentes.", "ejemplo_tdl": "Respuesta vacía aceptada como captura válida."},
+    {"id": "datos", "nombre": "Datos", "descripcion": "Estructura o contenido de los datos incorrecto (tipos, nulos, codificación).", "ejemplo_tdl": "Precio leído como texto con signo de pesos."},
+    {"id": "funcion", "nombre": "Función", "descripcion": "Lógica, bucles, cálculos, recursión o flujo de control erróneos.", "ejemplo_tdl": "Error de un día al generar el rango de un mes."},
+    {"id": "sistema", "nombre": "Sistema", "descripcion": "Configuración, temporización, memoria, concurrencia o recursos.", "ejemplo_tdl": "Dos extractores consultan el mismo dominio sin pausa compartida."},
+    {"id": "entorno", "nombre": "Entorno", "descripcion": "Problemas del entorno de diseño, compilación, pruebas o automatización.", "ejemplo_tdl": "Workflow de GitHub Actions sin permisos para publicar los datos."}
+  ]
+}

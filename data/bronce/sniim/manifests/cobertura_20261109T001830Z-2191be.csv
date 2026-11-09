@@ -1,0 +1,7 @@
+producto,mercado,periodos_esperados,periodos_con_datos,cumple_36
+limon,cdmx,36,36,True
+limon,guadalajara,36,36,True
+papaya,cdmx,36,36,True
+papaya,guadalajara,36,36,True
+platano,cdmx,36,36,True
+platano,guadalajara,36,36,True

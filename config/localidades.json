@@ -1,0 +1,13 @@
+{
+  "_nota": "Estaciones meteorológicas GHCN-Daily (NOAA). Coordenadas aproximadas. La estación de Manzanillo, Colima (WMO 76654) es la más cercana a las zonas productoras que se identificó; NO es Tecomán. Verificar el ID con el curl del README y agregar más estaciones aquí si se encuentran.",
+  "localidades": [
+    {
+      "id": "manzanillo",
+      "nombre": "Manzanillo",
+      "estado": "Colima",
+      "estacion": "MXM00076654",
+      "latitud": 19.14,
+      "longitud": -104.56
+    }
+  ]
+}

@@ -1,0 +1,750 @@
+{
+  "run_id": "20261109T100414Z-44eb79",
+  "fuente": "noaa_ncei",
+  "modo": "historica",
+  "disparador": "local",
+  "inicio": "2026-11-09T10:04:14Z",
+  "fin": "2026-11-09T10:05:17Z",
+  "duracion_s": 62.39,
+  "estado": "exitosa",
+  "solicitudes": 37,
+  "registros": 791,
+  "consultas": [
+    {
+      "localidad": "manzanillo",
+      "inicio": "2023-11-01",
+      "fin": "2023-11-30",
+      "modo": "diario",
+      "estado": "ok",
+      "registros": 30,
+      "archivo": "noaa_ncei__manzanillo-diario__2023-11-01_2023-11-30__20261109T100414Z-44eb79.json",
+      "error": null,
+      "advertencias": [
+        "TMAX: presente en 13 de 30 días (los ausentes no se rellenan)",
+        "TMIN: presente en 13 de 30 días (los ausentes no se rellenan)",
+        "PRCP: presente en 18 de 30 días (los ausentes no se rellenan)"
+      ]
+    },
+    {
+      "localidad": "manzanillo",
+      "inicio": "2023-12-01",
+      "fin": "2023-12-31",
+      "modo": "diario",
+      "estado": "ok",
+      "registros": 31,
+      "archivo": "noaa_ncei__manzanillo-diario__2023-12-01_2023-12-31__20261109T100414Z-44eb79.json",
+      "error": null,
+      "advertencias": [
+        "TMAX: presente en 23 de 31 días (los ausentes no se rellenan)",
+        "TMIN: presente en 23 de 31 días (los ausentes no se rellenan)",
+        "PRCP: presente en 29 de 31 días (los ausentes no se rellenan)"
+      ]
+    },
+    {
+      "localidad": "manzanillo",
+      "inicio": "2024-01-01",
+      "fin": "2024-01-31",
+      "modo": "diario",
+      "estado": "ok",
+      "registros": 31,
+      "archivo": "noaa_ncei__manzanillo-diario__2024-01-01_2024-01-31__20261109T100414Z-44eb79.json",
+      "error": null,
+      "advertencias": [
+        "TMAX: presente en 20 de 31 días (los ausentes no se rellenan)",
+        "TMIN: presente en 20 de 31 días (los ausentes no se rellenan)"
+      ]
+    },
+    {
+      "localidad": "manzanillo",
+      "inicio": "2024-02-01",
+      "fin": "2024-02-29",
+      "modo": "diario",
+      "estado": "ok",
+      "registros": 29,
+      "archivo": "noaa_ncei__manzanillo-diario__2024-02-01_2024-02-29__20261109T100414Z-44eb79.json",
+      "error": null,
+      "advertencias": [
+        "TMAX: presente en 18 de 29 días (los ausentes no se rellenan)",
+        "TMIN: presente en 18 de 29 días (los ausentes no se rellenan)"
+      ]
+    },
+    {
+      "localidad": "manzanillo",
+      "inicio": "2024-03-01",
+      "fin": "2024-03-31",
+      "modo": "diario",
+      "estado": "ok",
+      "registros": 27,
+      "archivo": "noaa_ncei__manzanillo-diario__2024-03-01_2024-03-31__20261109T100414Z-44eb79.json",
+      "error": null,
+      "advertencias": [
+        "TMAX: presente en 21 de 27 días (los ausentes no se rellenan)",
+        "TMIN: presente en 21 de 27 días (los ausentes no se rellenan)",
+        "Se esperaban 31 días y la fuente devolvió 27"
+      ]
+    },
+    {
+      "localidad": "manzanillo",
+      "inicio": "2024-04-01",
+      "fin": "2024-04-30",
+      "modo": "diario",
+      "estado": "ok",
+      "registros": 26,
+      "archivo": "noaa_ncei__manzanillo-diario__2024-04-01_2024-04-30__20261109T100414Z-44eb79.json",
+      "error": null,
+      "advertencias": [
+        "TMAX: presente en 17 de 26 días (los ausentes no se rellenan)",
+        "TMIN: presente en 17 de 26 días (los ausentes no se rellenan)",
+        "PRCP: presente en 25 de 26 días (los ausentes no se rellenan)",
+        "Se esperaban 30 días y la fuente devolvió 26"
+      ]
+    },
+    {
+      "localidad": "manzanillo",
+      "inicio": "2024-05-01",
+      "fin": "2024-05-31",
+      "modo": "diario",
+      "estado": "ok",
+      "registros": 30,
+      "archivo": "noaa_ncei__manzanillo-diario__2024-05-01_2024-05-31__20261109T100414Z-44eb79.json",
+      "error": null,
+      "advertencias": [
+        "TMAX: presente en 23 de 30 días (los ausentes no se rellenan)",
+        "TMIN: presente en 23 de 30 días (los ausentes no se rellenan)",
+        "PRCP: presente en 29 de 30 días (los ausentes no se rellenan)",
+        "Se esperaban 31 días y la fuente devolvió 30"
+      ]
+    },
+    {
+      "localidad": "manzanillo",
+      "inicio": "2024-06-01",
+      "fin": "2024-06-30",
+      "modo": "diario",
+      "estado": "ok",
+      "registros": 28,
+      "archivo": "noaa_ncei__manzanillo-diario__2024-06-01_2024-06-30__20261109T100414Z-44eb79.json",
+      "error": null,
+      "advertencias": [
+        "TMAX: presente en 8 de 28 días (los ausentes no se rellenan)",
+        "TMIN: presente en 8 de 28 días (los ausentes no se rellenan)",
+        "PRCP: presente en 10 de 28 días (los ausentes no se rellenan)",
+        "Se esperaban 30 días y la fuente devolvió 28"
+      ]
+    },
+    {
+      "localidad": "manzanillo",
+      "inicio": "2024-07-01",
+      "fin": "2024-07-31",
+      "modo": "diario",
+      "estado": "ok",
+      "registros": 31,
+      "archivo": "noaa_ncei__manzanillo-diario__2024-07-01_2024-07-31__20261109T100414Z-44eb79.json",
+      "error": null,
+      "advertencias": [
+        "TMAX: presente en 5 de 31 días (los ausentes no se rellenan)",
+        "TMIN: presente en 5 de 31 días (los ausentes no se rellenan)",
+        "PRCP: presente en 3 de 31 días (los ausentes no se rellenan)"
+      ]
+    },
+    {
+      "localidad": "manzanillo",
+      "inicio": "2024-08-01",
+      "fin": "2024-08-31",
+      "modo": "diario",
+      "estado": "ok",
+      "registros": 29,
+      "archivo": "noaa_ncei__manzanillo-diario__2024-08-01_2024-08-31__20261109T100414Z-44eb79.json",
+      "error": null,
+      "advertencias": [
+        "TMAX: presente en 4 de 29 días (los ausentes no se rellenan)",
+        "TMIN: presente en 4 de 29 días (los ausentes no se rellenan)",
+        "PRCP: presente en 9 de 29 días (los ausentes no se rellenan)",
+        "Se esperaban 31 días y la fuente devolvió 29"
+      ]
+    },
+    {
+      "localidad": "manzanillo",
+      "inicio": "2024-09-01",
+      "fin": "2024-09-30",
+      "modo": "diario",
+      "estado": "ok",
+      "registros": 30,
+      "archivo": "noaa_ncei__manzanillo-diario__2024-09-01_2024-09-30__20261109T100414Z-44eb79.json",
+      "error": null,
+      "advertencias": [
+        "TMAX: presente en 6 de 30 días (los ausentes no se rellenan)",
+        "TMIN: presente en 6 de 30 días (los ausentes no se rellenan)",
+        "PRCP: presente en 14 de 30 días (los ausentes no se rellenan)"
+      ]
+    },
+    {
+      "localidad": "manzanillo",
+      "inicio": "2024-10-01",
+      "fin": "2024-10-31",
+      "modo": "diario",
+      "estado": "ok",
+      "registros": 31,
+      "archivo": "noaa_ncei__manzanillo-diario__2024-10-01_2024-10-31__20261109T100414Z-44eb79.json",
+      "error": null,
+      "advertencias": [
+        "TMAX: presente en 16 de 31 días (los ausentes no se rellenan)",
+        "TMIN: presente en 16 de 31 días (los ausentes no se rellenan)",
+        "PRCP: presente en 21 de 31 días (los ausentes no se rellenan)"
+      ]
+    },
+    {
+      "localidad": "manzanillo",
+      "inicio": "2024-11-01",
+      "fin": "2024-11-30",
+      "modo": "diario",
+      "estado": "ok",
+      "registros": 26,
+      "archivo": "noaa_ncei__manzanillo-diario__2024-11-01_2024-11-30__20261109T100414Z-44eb79.json",
+      "error": null,
+      "advertencias": [
+        "TMAX: presente en 16 de 26 días (los ausentes no se rellenan)",
+        "TMIN: presente en 16 de 26 días (los ausentes no se rellenan)",
+        "PRCP: presente en 17 de 26 días (los ausentes no se rellenan)",
+        "Se esperaban 30 días y la fuente devolvió 26"
+      ]
+    },
+    {
+      "localidad": "manzanillo",
+      "inicio": "2024-12-01",
+      "fin": "2024-12-31",
+      "modo": "diario",
+      "estado": "ok",
+      "registros": 30,
+      "archivo": "noaa_ncei__manzanillo-diario__2024-12-01_2024-12-31__20261109T100414Z-44eb79.json",
+      "error": null,
+      "advertencias": [
+        "TMAX: presente en 21 de 30 días (los ausentes no se rellenan)",
+        "TMIN: presente en 21 de 30 días (los ausentes no se rellenan)",
+        "Se esperaban 31 días y la fuente devolvió 30"
+      ]
+    },
+    {
+      "localidad": "manzanillo",
+      "inicio": "2025-01-01",
+      "fin": "2025-01-31",
+      "modo": "diario",
+      "estado": "ok",
+      "registros": 27,
+      "archivo": "noaa_ncei__manzanillo-diario__2025-01-01_2025-01-31__20261109T100414Z-44eb79.json",
+      "error": null,
+      "advertencias": [
+        "PRCP: presente en 0 de 27 días (los ausentes no se rellenan)",
+        "Se esperaban 31 días y la fuente devolvió 27"
+      ]
+    },
+    {
+      "localidad": "manzanillo",
+      "inicio": "2025-02-01",
+      "fin": "2025-02-28",
+      "modo": "diario",
+      "estado": "ok",
+      "registros": 21,
+      "archivo": "noaa_ncei__manzanillo-diario__2025-02-01_2025-02-28__20261109T100414Z-44eb79.json",
+      "error": null,
+      "advertencias": [
+        "PRCP: presente en 0 de 21 días (los ausentes no se rellenan)",
+        "Se esperaban 28 días y la fuente devolvió 21"
+      ]
+    },
+    {
+      "localidad": "manzanillo",
+      "inicio": "2025-03-01",
+      "fin": "2025-03-31",
+      "modo": "diario",
+      "estado": "ok",
+      "registros": 25,
+      "archivo": "noaa_ncei__manzanillo-diario__2025-03-01_2025-03-31__20261109T100414Z-44eb79.json",
+      "error": null,
+      "advertencias": [
+        "PRCP: presente en 0 de 25 días (los ausentes no se rellenan)",
+        "Se esperaban 31 días y la fuente devolvió 25"
+      ]
+    },
+    {
+      "localidad": "manzanillo",
+      "inicio": "2025-04-01",
+      "fin": "2025-04-30",
+      "modo": "diario",
+      "estado": "ok",
+      "registros": 29,
+      "archivo": "noaa_ncei__manzanillo-diario__2025-04-01_2025-04-30__20261109T100414Z-44eb79.json",
+      "error": null,
+      "advertencias": [
+        "PRCP: presente en 0 de 29 días (los ausentes no se rellenan)",
+        "Se esperaban 30 días y la fuente devolvió 29"
+      ]
+    },
+    {
+      "localidad": "manzanillo",
+      "inicio": "2025-05-01",
+      "fin": "2025-05-31",
+      "modo": "diario",
+      "estado": "ok",
+      "registros": 28,
+      "archivo": "noaa_ncei__manzanillo-diario__2025-05-01_2025-05-31__20261109T100414Z-44eb79.json",
+      "error": null,
+      "advertencias": [
+        "PRCP: presente en 0 de 28 días (los ausentes no se rellenan)",
+        "Se esperaban 31 días y la fuente devolvió 28"
+      ]
+    },
+    {
+      "localidad": "manzanillo",
+      "inicio": "2025-06-01",
+      "fin": "2025-06-30",
+      "modo": "diario",
+      "estado": "ok",
+      "registros": 30,
+      "archivo": "noaa_ncei__manzanillo-diario__2025-06-01_2025-06-30__20261109T100414Z-44eb79.json",
+      "error": null,
+      "advertencias": [
+        "PRCP: presente en 0 de 30 días (los ausentes no se rellenan)"
+      ]
+    },
+    {
+      "localidad": "manzanillo",
+      "inicio": "2025-07-01",
+      "fin": "2025-07-31",
+      "modo": "diario",
+      "estado": "ok",
+      "registros": 30,
+      "archivo": "noaa_ncei__manzanillo-diario__2025-07-01_2025-07-31__20261109T100414Z-44eb79.json",
+      "error": null,
+      "advertencias": [
+        "PRCP: presente en 0 de 30 días (los ausentes no se rellenan)",
+        "Se esperaban 31 días y la fuente devolvió 30"
+      ]
+    },
+    {
+      "localidad": "manzanillo",
+      "inicio": "2025-08-01",
+      "fin": "2025-08-31",
+      "modo": "diario",
+      "estado": "ok",
+      "registros": 29,
+      "archivo": "noaa_ncei__manzanillo-diario__2025-08-01_2025-08-31__20261109T100414Z-44eb79.json",
+      "error": null,
+      "advertencias": [
+        "PRCP: presente en 0 de 29 días (los ausentes no se rellenan)",
+        "Se esperaban 31 días y la fuente devolvió 29"
+      ]
+    },
+    {
+      "localidad": "manzanillo",
+      "inicio": "2025-09-01",
+      "fin": "2025-09-30",
+      "modo": "diario",
+      "estado": "ok",
+      "registros": 26,
+      "archivo": "noaa_ncei__manzanillo-diario__2025-09-01_2025-09-30__20261109T100414Z-44eb79.json",
+      "error": null,
+      "advertencias": [
+        "PRCP: presente en 0 de 26 días (los ausentes no se rellenan)",
+        "Se esperaban 30 días y la fuente devolvió 26"
+      ]
+    },
+    {
+      "localidad": "manzanillo",
+      "inicio": "2025-10-01",
+      "fin": "2025-10-31",
+      "modo": "diario",
+      "estado": "ok",
+      "registros": 30,
+      "archivo": "noaa_ncei__manzanillo-diario__2025-10-01_2025-10-31__20261109T100414Z-44eb79.json",
+      "error": null,
+      "advertencias": [
+        "PRCP: presente en 0 de 30 días (los ausentes no se rellenan)",
+        "Se esperaban 31 días y la fuente devolvió 30"
+      ]
+    },
+    {
+      "localidad": "manzanillo",
+      "inicio": "2025-11-01",
+      "fin": "2025-11-30",
+      "modo": "diario",
+      "estado": "ok",
+      "registros": 30,
+      "archivo": "noaa_ncei__manzanillo-diario__2025-11-01_2025-11-30__20261109T100414Z-44eb79.json",
+      "error": null,
+      "advertencias": [
+        "PRCP: presente en 0 de 30 días (los ausentes no se rellenan)"
+      ]
+    },
+    {
+      "localidad": "manzanillo",
+      "inicio": "2025-12-01",
+      "fin": "2025-12-31",
+      "modo": "diario",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "noaa_ncei__manzanillo-diario__2025-12-01_2025-12-31__20261109T100414Z-44eb79.json",
+      "error": null,
+      "advertencias": [
+        "Se esperaban 31 días y la fuente devolvió 1"
+      ]
+    },
+    {
+      "localidad": "manzanillo",
+      "inicio": "2026-01-01",
+      "fin": "2026-01-31",
+      "modo": "diario",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "noaa_ncei__manzanillo-diario__2026-01-01_2026-01-31__20261109T100414Z-44eb79.json",
+      "error": null,
+      "advertencias": [
+        "Se esperaban 31 días y la fuente devolvió 1"
+      ]
+    },
+    {
+      "localidad": "manzanillo",
+      "inicio": "2026-02-01",
+      "fin": "2026-02-28",
+      "modo": "diario",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "noaa_ncei__manzanillo-diario__2026-02-01_2026-02-28__20261109T100414Z-44eb79.json",
+      "error": null,
+      "advertencias": [
+        "Se esperaban 28 días y la fuente devolvió 2"
+      ]
+    },
+    {
+      "localidad": "manzanillo",
+      "inicio": "2026-03-01",
+      "fin": "2026-03-31",
+      "modo": "diario",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "noaa_ncei__manzanillo-diario__2026-03-01_2026-03-31__20261109T100414Z-44eb79.json",
+      "error": null,
+      "advertencias": [
+        "La fuente devolvió una lista vacía (sin datos para la estación y fechas)"
+      ]
+    },
+    {
+      "localidad": "manzanillo",
+      "inicio": "2026-04-01",
+      "fin": "2026-04-30",
+      "modo": "diario",
+      "estado": "ok",
+      "registros": 24,
+      "archivo": "noaa_ncei__manzanillo-diario__2026-04-01_2026-04-30__20261109T100414Z-44eb79.json",
+      "error": null,
+      "advertencias": [
+        "PRCP: presente en 0 de 24 días (los ausentes no se rellenan)"
+      ]
+    },
+    {
+      "localidad": "manzanillo",
+      "inicio": "2026-05-01",
+      "fin": "2026-05-31",
+      "modo": "diario",
+      "estado": "ok",
+      "registros": 27,
+      "archivo": "noaa_ncei__manzanillo-diario__2026-05-01_2026-05-31__20261109T100414Z-44eb79.json",
+      "error": null,
+      "advertencias": [
+        "PRCP: presente en 0 de 27 días (los ausentes no se rellenan)"
+      ]
+    },
+    {
+      "localidad": "manzanillo",
+      "inicio": "2026-06-01",
+      "fin": "2026-06-30",
+      "modo": "diario",
+      "estado": "ok",
+      "registros": 26,
+      "archivo": "noaa_ncei__manzanillo-diario__2026-06-01_2026-06-30__20261109T100414Z-44eb79.json",
+      "error": null,
+      "advertencias": [
+        "PRCP: presente en 0 de 26 días (los ausentes no se rellenan)"
+      ]
+    },
+    {
+      "localidad": "manzanillo",
+      "inicio": "2026-07-01",
+      "fin": "2026-07-31",
+      "modo": "diario",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "noaa_ncei__manzanillo-diario__2026-07-01_2026-07-31__20261109T100414Z-44eb79.json",
+      "error": null,
+      "advertencias": [
+        "La fuente devolvió una lista vacía (sin datos para la estación y fechas)"
+      ]
+    },
+    {
+      "localidad": "manzanillo",
+      "inicio": "2026-08-01",
+      "fin": "2026-08-31",
+      "modo": "diario",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "noaa_ncei__manzanillo-diario__2026-08-01_2026-08-31__20261109T100414Z-44eb79.json",
+      "error": null,
+      "advertencias": [
+        "La fuente devolvió una lista vacía (sin datos para la estación y fechas)"
+      ]
+    },
+    {
+      "localidad": "manzanillo",
+      "inicio": "2026-09-01",
+      "fin": "2026-09-30",
+      "modo": "diario",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "noaa_ncei__manzanillo-diario__2026-09-01_2026-09-30__20261109T100414Z-44eb79.json",
+      "error": null,
+      "advertencias": [
+        "La fuente devolvió una lista vacía (sin datos para la estación y fechas)"
+      ]
+    },
+    {
+      "localidad": "manzanillo",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "modo": "diario",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "noaa_ncei__manzanillo-diario__2026-10-01_2026-10-31__20261109T100414Z-44eb79.json",
+      "error": null,
+      "advertencias": [
+        "La fuente devolvió una lista vacía (sin datos para la estación y fechas)"
+      ]
+    }
+  ],
+  "archivos": [
+    {
+      "ruta": "data/bronce/noaa_ncei/2023/11/noaa_ncei__manzanillo-diario__2023-11-01_2023-11-30__20261109T100414Z-44eb79.json",
+      "sha256": "4eee03d954eb6d65ab4f66dd077c40c092280e0aabc7cfcc0985e9551fdea8a9",
+      "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=daily-summaries&stations=MXM00076654&startDate=2023-11-01&endDate=2023-11-30&dataTypes=TAVG%2CTMAX%2CTMIN%2CPRCP&units=metric&format=json",
+      "bytes": 2432
+    },
+    {
+      "ruta": "data/bronce/noaa_ncei/2023/12/noaa_ncei__manzanillo-diario__2023-12-01_2023-12-31__20261109T100414Z-44eb79.json",
+      "sha256": "68dfc386ea74ed275efcc883e68757945e699f65bdafb34b33dbb6b24025de16",
+      "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=daily-summaries&stations=MXM00076654&startDate=2023-12-01&endDate=2023-12-31&dataTypes=TAVG%2CTMAX%2CTMIN%2CPRCP&units=metric&format=json",
+      "bytes": 2915
+    },
+    {
+      "ruta": "data/bronce/noaa_ncei/2024/01/noaa_ncei__manzanillo-diario__2024-01-01_2024-01-31__20261109T100414Z-44eb79.json",
+      "sha256": "4192e29afb5556c701950be9b69868acaadb0dc3c0164d3fdbdc9c8e82339cb6",
+      "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=daily-summaries&stations=MXM00076654&startDate=2024-01-01&endDate=2024-01-31&dataTypes=TAVG%2CTMAX%2CTMIN%2CPRCP&units=metric&format=json",
+      "bytes": 2857
+    },
+    {
+      "ruta": "data/bronce/noaa_ncei/2024/02/noaa_ncei__manzanillo-diario__2024-02-01_2024-02-29__20261109T100414Z-44eb79.json",
+      "sha256": "9b709f656df4577aa6314118e83360055cc2a24309a50bfc47e2630456c4f363",
+      "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=daily-summaries&stations=MXM00076654&startDate=2024-02-01&endDate=2024-02-29&dataTypes=TAVG%2CTMAX%2CTMIN%2CPRCP&units=metric&format=json",
+      "bytes": 2654
+    },
+    {
+      "ruta": "data/bronce/noaa_ncei/2024/03/noaa_ncei__manzanillo-diario__2024-03-01_2024-03-31__20261109T100414Z-44eb79.json",
+      "sha256": "273510ac5763a820845501a4930c641a894464307beb8b3f1b64d8da89599498",
+      "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=daily-summaries&stations=MXM00076654&startDate=2024-03-01&endDate=2024-03-31&dataTypes=TAVG%2CTMAX%2CTMIN%2CPRCP&units=metric&format=json",
+      "bytes": 2589
+    },
+    {
+      "ruta": "data/bronce/noaa_ncei/2024/04/noaa_ncei__manzanillo-diario__2024-04-01_2024-04-30__20261109T100414Z-44eb79.json",
+      "sha256": "b7989891dcf99a6b36609940cdd2b78808a072ffbee96fc7da66d2553d647f0a",
+      "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=daily-summaries&stations=MXM00076654&startDate=2024-04-01&endDate=2024-04-30&dataTypes=TAVG%2CTMAX%2CTMIN%2CPRCP&units=metric&format=json",
+      "bytes": 2390
+    },
+    {
+      "ruta": "data/bronce/noaa_ncei/2024/05/noaa_ncei__manzanillo-diario__2024-05-01_2024-05-31__20261109T100414Z-44eb79.json",
+      "sha256": "abc62511738c3513ac85ea0bccd5cca2a4667cd6006fb419141608648e16a24d",
+      "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=daily-summaries&stations=MXM00076654&startDate=2024-05-01&endDate=2024-05-31&dataTypes=TAVG%2CTMAX%2CTMIN%2CPRCP&units=metric&format=json",
+      "bytes": 2854
+    },
+    {
+      "ruta": "data/bronce/noaa_ncei/2024/06/noaa_ncei__manzanillo-diario__2024-06-01_2024-06-30__20261109T100414Z-44eb79.json",
+      "sha256": "414ecdb2bd6138f297ecd06d8c537035696ae4f9471f235d12050339721f377f",
+      "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=daily-summaries&stations=MXM00076654&startDate=2024-06-01&endDate=2024-06-30&dataTypes=TAVG%2CTMAX%2CTMIN%2CPRCP&units=metric&format=json",
+      "bytes": 2066
+    },
+    {
+      "ruta": "data/bronce/noaa_ncei/2024/07/noaa_ncei__manzanillo-diario__2024-07-01_2024-07-31__20261109T100414Z-44eb79.json",
+      "sha256": "675f1f6a234da85aae9a12f4ad3f7787c6e13a4362728ab3187d3db2e08d7cfb",
+      "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=daily-summaries&stations=MXM00076654&startDate=2024-07-01&endDate=2024-07-31&dataTypes=TAVG%2CTMAX%2CTMIN%2CPRCP&units=metric&format=json",
+      "bytes": 2074
+    },
+    {
+      "ruta": "data/bronce/noaa_ncei/2024/08/noaa_ncei__manzanillo-diario__2024-08-01_2024-08-31__20261109T100414Z-44eb79.json",
+      "sha256": "7be71f7a8fbbcd569fcc8a5e3c013a26a6d9b7b6cf4de525b478bcb07667e020",
+      "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=daily-summaries&stations=MXM00076654&startDate=2024-08-01&endDate=2024-08-31&dataTypes=TAVG%2CTMAX%2CTMIN%2CPRCP&units=metric&format=json",
+      "bytes": 2001
+    },
+    {
+      "ruta": "data/bronce/noaa_ncei/2024/09/noaa_ncei__manzanillo-diario__2024-09-01_2024-09-30__20261109T100414Z-44eb79.json",
+      "sha256": "2e744773c83abf9a6a254ad58992b652235d033c4776589164c41a2e263810ba",
+      "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=daily-summaries&stations=MXM00076654&startDate=2024-09-01&endDate=2024-09-30&dataTypes=TAVG%2CTMAX%2CTMIN%2CPRCP&units=metric&format=json",
+      "bytes": 2187
+    },
+    {
+      "ruta": "data/bronce/noaa_ncei/2024/10/noaa_ncei__manzanillo-diario__2024-10-01_2024-10-31__20261109T100414Z-44eb79.json",
+      "sha256": "eae56478f9d84617a0467f824f6771b1a8e67e82ef6779495a2d6c362e503a99",
+      "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=daily-summaries&stations=MXM00076654&startDate=2024-10-01&endDate=2024-10-31&dataTypes=TAVG%2CTMAX%2CTMIN%2CPRCP&units=metric&format=json",
+      "bytes": 2616
+    },
+    {
+      "ruta": "data/bronce/noaa_ncei/2024/11/noaa_ncei__manzanillo-diario__2024-11-01_2024-11-30__20261109T100414Z-44eb79.json",
+      "sha256": "e0b096dccbabe3993a8d5f7aa9b2f6b67fd74d19ccb5ccf302b1d8e5050e2977",
+      "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=daily-summaries&stations=MXM00076654&startDate=2024-11-01&endDate=2024-11-30&dataTypes=TAVG%2CTMAX%2CTMIN%2CPRCP&units=metric&format=json",
+      "bytes": 2258
+    },
+    {
+      "ruta": "data/bronce/noaa_ncei/2024/12/noaa_ncei__manzanillo-diario__2024-12-01_2024-12-31__20261109T100414Z-44eb79.json",
+      "sha256": "d172d53932f281a4d2ad6bdde9a1cee61f9302fa6cb1e48f1098662d35e52e95",
+      "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=daily-summaries&stations=MXM00076654&startDate=2024-12-01&endDate=2024-12-31&dataTypes=TAVG%2CTMAX%2CTMIN%2CPRCP&units=metric&format=json",
+      "bytes": 2811
+    },
+    {
+      "ruta": "data/bronce/noaa_ncei/2025/01/noaa_ncei__manzanillo-diario__2025-01-01_2025-01-31__20261109T100414Z-44eb79.json",
+      "sha256": "2705f1681e04700dd5c00af5a82ccdb0b14bc99fa18e61b1b7edbcfc900de9f2",
+      "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=daily-summaries&stations=MXM00076654&startDate=2025-01-01&endDate=2025-01-31&dataTypes=TAVG%2CTMAX%2CTMIN%2CPRCP&units=metric&format=json",
+      "bytes": 2406
+    },
+    {
+      "ruta": "data/bronce/noaa_ncei/2025/02/noaa_ncei__manzanillo-diario__2025-02-01_2025-02-28__20261109T100414Z-44eb79.json",
+      "sha256": "f3de4b378a956901a8eae9e68e3665b8be15fba5867afc9bc5f684467de4ae71",
+      "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=daily-summaries&stations=MXM00076654&startDate=2025-02-01&endDate=2025-02-28&dataTypes=TAVG%2CTMAX%2CTMIN%2CPRCP&units=metric&format=json",
+      "bytes": 1872
+    },
+    {
+      "ruta": "data/bronce/noaa_ncei/2025/03/noaa_ncei__manzanillo-diario__2025-03-01_2025-03-31__20261109T100414Z-44eb79.json",
+      "sha256": "2046bbd2592f822df5ac653cbc82cfd97c5785544e984f2e5ac6da8ff58956bc",
+      "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=daily-summaries&stations=MXM00076654&startDate=2025-03-01&endDate=2025-03-31&dataTypes=TAVG%2CTMAX%2CTMIN%2CPRCP&units=metric&format=json",
+      "bytes": 2228
+    },
+    {
+      "ruta": "data/bronce/noaa_ncei/2025/04/noaa_ncei__manzanillo-diario__2025-04-01_2025-04-30__20261109T100414Z-44eb79.json",
+      "sha256": "8a9e18a43a4bd8ddb43f0279e888b9f5cc7dd6777bfefd1e53c5c023071c7b80",
+      "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=daily-summaries&stations=MXM00076654&startDate=2025-04-01&endDate=2025-04-30&dataTypes=TAVG%2CTMAX%2CTMIN%2CPRCP&units=metric&format=json",
+      "bytes": 2584
+    },
+    {
+      "ruta": "data/bronce/noaa_ncei/2025/05/noaa_ncei__manzanillo-diario__2025-05-01_2025-05-31__20261109T100414Z-44eb79.json",
+      "sha256": "5bb41301af6b881ba3d15a7579ed1072857f577c99ddec5349b98c1537a9ef78",
+      "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=daily-summaries&stations=MXM00076654&startDate=2025-05-01&endDate=2025-05-31&dataTypes=TAVG%2CTMAX%2CTMIN%2CPRCP&units=metric&format=json",
+      "bytes": 2495
+    },
+    {
+      "ruta": "data/bronce/noaa_ncei/2025/06/noaa_ncei__manzanillo-diario__2025-06-01_2025-06-30__20261109T100414Z-44eb79.json",
+      "sha256": "42c676c68158bd1f1ebec240d95221d370896aa5f6bd4433fbc2357927015975",
+      "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=daily-summaries&stations=MXM00076654&startDate=2025-06-01&endDate=2025-06-30&dataTypes=TAVG%2CTMAX%2CTMIN%2CPRCP&units=metric&format=json",
+      "bytes": 2673
+    },
+    {
+      "ruta": "data/bronce/noaa_ncei/2025/07/noaa_ncei__manzanillo-diario__2025-07-01_2025-07-31__20261109T100414Z-44eb79.json",
+      "sha256": "4f47fac2e4b079e25204f8bbac628c8f044037cbf5b2c17e9acfd9736c430044",
+      "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=daily-summaries&stations=MXM00076654&startDate=2025-07-01&endDate=2025-07-31&dataTypes=TAVG%2CTMAX%2CTMIN%2CPRCP&units=metric&format=json",
+      "bytes": 2673
+    },
+    {
+      "ruta": "data/bronce/noaa_ncei/2025/08/noaa_ncei__manzanillo-diario__2025-08-01_2025-08-31__20261109T100414Z-44eb79.json",
+      "sha256": "281563e292498132e8bb88789a49483da3c6b5b598556f0f02b8fc1b7fa6c923",
+      "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=daily-summaries&stations=MXM00076654&startDate=2025-08-01&endDate=2025-08-31&dataTypes=TAVG%2CTMAX%2CTMIN%2CPRCP&units=metric&format=json",
+      "bytes": 2584
+    },
+    {
+      "ruta": "data/bronce/noaa_ncei/2025/09/noaa_ncei__manzanillo-diario__2025-09-01_2025-09-30__20261109T100414Z-44eb79.json",
+      "sha256": "d13fecbf3607f642ec49ac2625e180cebb8f3722f64d2bdd414d5b80cd9e8994",
+      "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=daily-summaries&stations=MXM00076654&startDate=2025-09-01&endDate=2025-09-30&dataTypes=TAVG%2CTMAX%2CTMIN%2CPRCP&units=metric&format=json",
+      "bytes": 2317
+    },
+    {
+      "ruta": "data/bronce/noaa_ncei/2025/10/noaa_ncei__manzanillo-diario__2025-10-01_2025-10-31__20261109T100414Z-44eb79.json",
+      "sha256": "829dad49e886c74e4b796df58ad97d790ffd09b21fd113367613e43314ae075a",
+      "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=daily-summaries&stations=MXM00076654&startDate=2025-10-01&endDate=2025-10-31&dataTypes=TAVG%2CTMAX%2CTMIN%2CPRCP&units=metric&format=json",
+      "bytes": 2673
+    },
+    {
+      "ruta": "data/bronce/noaa_ncei/2025/11/noaa_ncei__manzanillo-diario__2025-11-01_2025-11-30__20261109T100414Z-44eb79.json",
+      "sha256": "ab91d51daaa56074684816ae11ec1bb5ebcfa2a15a58de38c9e9d3d2ea59bc7f",
+      "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=daily-summaries&stations=MXM00076654&startDate=2025-11-01&endDate=2025-11-30&dataTypes=TAVG%2CTMAX%2CTMIN%2CPRCP&units=metric&format=json",
+      "bytes": 2673
+    },
+    {
+      "ruta": "data/bronce/noaa_ncei/2025/12/noaa_ncei__manzanillo-diario__2025-12-01_2025-12-31__20261109T100414Z-44eb79.json",
+      "sha256": "bc579ddb038b5176e6f29c998497d3d02159047832b7fea2d90ff17d61819767",
+      "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=daily-summaries&stations=MXM00076654&startDate=2025-12-01&endDate=2025-12-31&dataTypes=TAVG%2CTMAX%2CTMIN%2CPRCP&units=metric&format=json",
+      "bytes": 50
+    },
+    {
+      "ruta": "data/bronce/noaa_ncei/2026/01/noaa_ncei__manzanillo-diario__2026-01-01_2026-01-31__20261109T100414Z-44eb79.json",
+      "sha256": "6d29c97b9a4e131e17f95b120b907ca92a4b8b977dfe85e74e235d105caa97c6",
+      "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=daily-summaries&stations=MXM00076654&startDate=2026-01-01&endDate=2026-01-31&dataTypes=TAVG%2CTMAX%2CTMIN%2CPRCP&units=metric&format=json",
+      "bytes": 50
+    },
+    {
+      "ruta": "data/bronce/noaa_ncei/2026/02/noaa_ncei__manzanillo-diario__2026-02-01_2026-02-28__20261109T100414Z-44eb79.json",
+      "sha256": "bd92e2bc3f6d68d20a081d244f17a4f2f2b24cf20ca0946a1482d4d3dab2594b",
+      "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=daily-summaries&stations=MXM00076654&startDate=2026-02-01&endDate=2026-02-28&dataTypes=TAVG%2CTMAX%2CTMIN%2CPRCP&units=metric&format=json",
+      "bytes": 97
+    },
+    {
+      "ruta": "data/bronce/noaa_ncei/2026/03/noaa_ncei__manzanillo-diario__2026-03-01_2026-03-31__20261109T100414Z-44eb79.json",
+      "sha256": "3fbbd4c6d76130399b0c79cdf41758669224a91e05b7b216953f0c9728750865",
+      "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=daily-summaries&stations=MXM00076654&startDate=2026-03-01&endDate=2026-03-31&dataTypes=TAVG%2CTMAX%2CTMIN%2CPRCP&units=metric&format=json",
+      "bytes": 4
+    },
+    {
+      "ruta": "data/bronce/noaa_ncei/2026/04/noaa_ncei__manzanillo-diario__2026-04-01_2026-04-30__20261109T100414Z-44eb79.json",
+      "sha256": "228be29d7c037aa502dd5e2180c685612e452e17fb019e336db7082341aa6698",
+      "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=daily-summaries&stations=MXM00076654&startDate=2026-04-01&endDate=2026-04-30&dataTypes=TAVG%2CTMAX%2CTMIN%2CPRCP&units=metric&format=json",
+      "bytes": 2421
+    },
+    {
+      "ruta": "data/bronce/noaa_ncei/2026/05/noaa_ncei__manzanillo-diario__2026-05-01_2026-05-31__20261109T100414Z-44eb79.json",
+      "sha256": "c8c3b175c97253b0935bb3eb823c49080a926de50bafea206849f0f9a505d0a0",
+      "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=daily-summaries&stations=MXM00076654&startDate=2026-05-01&endDate=2026-05-31&dataTypes=TAVG%2CTMAX%2CTMIN%2CPRCP&units=metric&format=json",
+      "bytes": 2594
+    },
+    {
+      "ruta": "data/bronce/noaa_ncei/2026/06/noaa_ncei__manzanillo-diario__2026-06-01_2026-06-30__20261109T100414Z-44eb79.json",
+      "sha256": "9b932dfbbd936b1ad2cc5aff1269a83d0182750caa7e0dca0f1fd98569f4af39",
+      "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=daily-summaries&stations=MXM00076654&startDate=2026-06-01&endDate=2026-06-30&dataTypes=TAVG%2CTMAX%2CTMIN%2CPRCP&units=metric&format=json",
+      "bytes": 2505
+    },
+    {
+      "ruta": "data/bronce/noaa_ncei/2026/07/noaa_ncei__manzanillo-diario__2026-07-01_2026-07-31__20261109T100414Z-44eb79.json",
+      "sha256": "3fbbd4c6d76130399b0c79cdf41758669224a91e05b7b216953f0c9728750865",
+      "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=daily-summaries&stations=MXM00076654&startDate=2026-07-01&endDate=2026-07-31&dataTypes=TAVG%2CTMAX%2CTMIN%2CPRCP&units=metric&format=json",
+      "bytes": 4
+    },
+    {
+      "ruta": "data/bronce/noaa_ncei/2026/08/noaa_ncei__manzanillo-diario__2026-08-01_2026-08-31__20261109T100414Z-44eb79.json",
+      "sha256": "3fbbd4c6d76130399b0c79cdf41758669224a91e05b7b216953f0c9728750865",
+      "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=daily-summaries&stations=MXM00076654&startDate=2026-08-01&endDate=2026-08-31&dataTypes=TAVG%2CTMAX%2CTMIN%2CPRCP&units=metric&format=json",
+      "bytes": 4
+    },
+    {
+      "ruta": "data/bronce/noaa_ncei/2026/09/noaa_ncei__manzanillo-diario__2026-09-01_2026-09-30__20261109T100414Z-44eb79.json",
+      "sha256": "3fbbd4c6d76130399b0c79cdf41758669224a91e05b7b216953f0c9728750865",
+      "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=daily-summaries&stations=MXM00076654&startDate=2026-09-01&endDate=2026-09-30&dataTypes=TAVG%2CTMAX%2CTMIN%2CPRCP&units=metric&format=json",
+      "bytes": 4
+    },
+    {
+      "ruta": "data/bronce/noaa_ncei/2026/10/noaa_ncei__manzanillo-diario__2026-10-01_2026-10-31__20261109T100414Z-44eb79.json",
+      "sha256": "3fbbd4c6d76130399b0c79cdf41758669224a91e05b7b216953f0c9728750865",
+      "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=daily-summaries&stations=MXM00076654&startDate=2026-10-01&endDate=2026-10-31&dataTypes=TAVG%2CTMAX%2CTMIN%2CPRCP&units=metric&format=json",
+      "bytes": 4
+    }
+  ],
+  "errores": [],
+  "parametros": {
+    "localidades": [
+      "manzanillo"
+    ],
+    "inicio": "2023-11-01",
+    "fin": "2026-10-31"
+  },
+  "esquema": "tdl-manifest/1",
+  "archivos_generados": 36
+}

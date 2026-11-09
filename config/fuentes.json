@@ -1,0 +1,51 @@
+{
+  "_nota": "Las etiquetas de mercado deben coincidir con las opciones reales del formulario del SNIIM (ConsultaFrutasYHortalizas.aspx). Los IDs numericos se descubren en tiempo de ejecucion leyendo el formulario; no se escriben a mano.",
+  "sniim": {
+    "productos": [
+      {
+        "clave": "platano",
+        "busqueda": "Plátano"
+      },
+      {
+        "clave": "limon",
+        "busqueda": "Limón"
+      },
+      {
+        "clave": "papaya",
+        "busqueda": "Papaya"
+      }
+    ],
+    "mercados": [
+      {
+        "clave": "guadalajara",
+        "etiqueta_formulario": "Jalisco: Mercado de Abasto de Guadalajara"
+      },
+      {
+        "clave": "cdmx",
+        "etiqueta_formulario": "DF: Central de Abasto de Iztapalapa DF"
+      }
+    ],
+    "mercados_opcionales": [
+      {
+        "clave": "colima",
+        "etiqueta_formulario": "Colima: Centros de distribución de Colima"
+      },
+      {
+        "clave": "guadalajara_felipe_angeles",
+        "etiqueta_formulario": "Jalisco: Mercado Felipe Ángeles de Guadalajara"
+      }
+    ],
+    "precios_por": "presentacion"
+  },
+  "noaa_ncei": {
+    "dataset": "daily-summaries",
+    "variables_diarias": [
+      "TAVG",
+      "TMAX",
+      "TMIN",
+      "PRCP"
+    ],
+    "unidades": "metric",
+    "_nota": "GHCN-Daily vía NCEI Access Data Service v1. TAVG/TMAX/TMIN en °C y PRCP en mm (units=metric). Los días o variables sin dato simplemente no aparecen en la respuesta y NO se rellenan. Descartadas por robots.txt (Disallow): Open-Meteo (Disallow: /, 2026-11-09) y NASA POWER (Disallow: /api/, 2026-11-09)."
+  }
+}
