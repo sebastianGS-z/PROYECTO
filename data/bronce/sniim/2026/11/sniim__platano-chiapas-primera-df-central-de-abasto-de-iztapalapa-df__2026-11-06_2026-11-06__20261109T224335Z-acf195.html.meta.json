@@ -1,0 +1,39 @@
+{
+  "esquema": "tdl-bronce-meta/1",
+  "contenido_original": {
+    "archivo": "sniim__platano-chiapas-primera-df-central-de-abasto-de-iztapalapa-df__2026-11-06_2026-11-06__20261109T224335Z-acf195.html",
+    "descripcion": "Bytes tal como los entregó la fuente; no se modifican."
+  },
+  "metadatos_captura": {
+    "fuente": "sniim",
+    "fuente_url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=06%2F11%2F2026&fechaFinal=06%2F11%2F2026&ProductoId=663&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+    "fecha_captura": "2026-11-09T22:43:49Z",
+    "identificador_ejecucion": "20261109T224335Z-acf195",
+    "formato_original": "html",
+    "sha256": "ee068b1e09d8ca61a5e889c1bf62ff52c9b522325bb09c40b4055585da7dd5e2",
+    "bytes": 14700,
+    "http_status": 200,
+    "registros_detectados": 1,
+    "estado_captura": "ok",
+    "advertencias": [],
+    "colision_nombre": false,
+    "etiqueta": "Plátano Chiapas - Primera__DF: Central de Abasto de Iztapalapa DF",
+    "producto": "Plátano Chiapas - Primera",
+    "producto_id": "663",
+    "mercado": "DF: Central de Abasto de Iztapalapa DF",
+    "mercado_id": "100",
+    "fecha_ref_inicio": "2026-11-06",
+    "fecha_ref_fin": "2026-11-06",
+    "parametros": {
+      "fechaInicio": "06/11/2026",
+      "fechaFinal": "06/11/2026",
+      "ProductoId": "663",
+      "OrigenId": "-1",
+      "Origen": "Todos",
+      "DestinoId": "100",
+      "Destino": "DF: Central de Abasto de Iztapalapa DF",
+      "PreciosPorId": "1",
+      "RegistrosPorPagina": "500"
+    }
+  }
+}

@@ -3,3 +3,5 @@ run_id,fuente,modo,disparador,inicio_utc,fin_utc,duracion_s,estado,solicitudes,r
 20261109T001830Z-2191be,sniim,historica,local,2026-11-09T00:18:30Z,2026-11-09T01:27:26Z,4136.9,exitosa,1378,14281,1369,0,
 20261109T102523Z-871621,sniim,diaria,workflow_dispatch,2026-11-09T10:25:23Z,2026-11-09T10:26:49Z,86.06,sin_resultados,40,0,39,0,
 20261109T102523Z-871621,noaa_ncei,diaria,workflow_dispatch,2026-11-09T10:26:49Z,2026-11-09T10:26:50Z,1.74,sin_resultados,2,0,1,0,
+20261109T224335Z-acf195,sniim,diaria,local,2026-11-09T22:43:35Z,2026-11-09T22:45:14Z,99.04,exitosa,40,19,39,0,
+20261109T224335Z-acf195,noaa_ncei,diaria,local,2026-11-09T22:45:14Z,2026-11-09T22:45:17Z,2.24,sin_resultados,2,0,1,0,
