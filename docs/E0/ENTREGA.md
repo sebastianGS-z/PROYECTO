@@ -1,6 +1,6 @@
 # Entrega E0 · Observatorio de Agro-Inteligencia Colimense (OAIC)
 
-Equipo: ⚠️ COMPLETAR (integrantes) · Etiqueta: `e0` · Tablero: no aplica en E0 (se publica desde E1)
+Equipo: Grageda Sandoval Sebastián y ⚠️ NOMBRE DEL COMPAÑERO · Etiqueta: `e0` · Tablero: no aplica en E0 (se publica desde E1)
 
 ## Resumen en tres líneas
 1. Observatorio de precios mayoristas de limón, plátano y papaya (SNIIM) cruzados con clima de Tecomán y Colima (NOAA NCEI) para decidir cuándo vender.
@@ -13,11 +13,11 @@ Equipo: ⚠️ COMPLETAR (integrantes) · Etiqueta: `e0` · Tablero: no aplica e
 
 | Criterio (puntos) | Evidencia (enlace) | Nota del equipo |
 |---|---|---|
-| Pregunta y cliente (20) | [docs/E0/propuesta.md §1–2](propuesta.md) | ⚠️ COMPLETAR: entrevista real realizada |
+| Pregunta y cliente (20) | [docs/E0/propuesta.md §1–2](propuesta.md) | Tres entrevistas a ingenieros agrónomos (ver entrevistas.md) |
 | Preguntas analíticas (20) | [docs/E0/propuesta.md §3](propuesta.md) | Variable a pronosticar, factores del experimento y grupos a comparar |
-| Plan de recopilación (20) | [docs/E0/propuesta.md §4](propuesta.md) | ⚠️ COMPLETAR: robots.txt y términos leídos con fecha |
-| Captura y serie histórica (25) | [extractores/](../../extractores) · [.github/workflows/captura_diaria.yml](../../.github/workflows/captura_diaria.yml) · [data/bronce/](../../data/bronce) · reporte `data/bronce/sniim/manifests/cobertura_<run_id>.csv` | ⚠️ COMPLETAR: periodos reales con datos por producto/mercado y enlace a una ejecución exitosa de Actions |
-| Arranque de calidad (15) | [calidad/tiempo-integrante1.csv](../../calidad/tiempo-integrante1.csv) · [calidad/defectos-integrante1.csv](../../calidad/defectos-integrante1.csv) · [calidad/tiempo-integrante2.csv](../../calidad/tiempo-integrante2.csv) · [calidad/defectos-integrante2.csv](../../calidad/defectos-integrante2.csv) · [calidad/bitacora_capturas.csv](../../calidad/bitacora_capturas.csv) · [calidad/objetivos_calidad.json](../../calidad/objetivos_calidad.json) | ⚠️ COMPLETAR: registros reales de ambos integrantes |
+| Plan de recopilación (20) | [docs/E0/propuesta.md §4](propuesta.md) | robots.txt de las fuentes evaluadas en el Anexo de la propuesta (2026-11-09) |
+| Captura y serie histórica (25) | [extractores/](../../extractores) · [.github/workflows/captura_diaria.yml](../../.github/workflows/captura_diaria.yml) · [data/bronce/](../../data/bronce) · reporte `data/bronce/sniim/manifests/cobertura_<run_id>.csv` | SNIIM 36/36 meses por producto y mercado; clima 28/36 meses (propuesta §5). Actions: https://github.com/sebastianGS-z/PROYECTO/actions |
+| Arranque de calidad (15) | [calidad/tiempo-sebastian.csv](../../calidad/tiempo-sebastian.csv) · [calidad/defectos-sebastian.csv](../../calidad/defectos-sebastian.csv) · [calidad/tiempo-integrante2.csv](../../calidad/tiempo-integrante2.csv) · [calidad/defectos-integrante2.csv](../../calidad/defectos-integrante2.csv) · [calidad/bitacora_capturas.csv](../../calidad/bitacora_capturas.csv) · [calidad/objetivos_calidad.json](../../calidad/objetivos_calidad.json) | Registros PSP de ambos integrantes |
 
 ## Cómo reproducir
 ```bash

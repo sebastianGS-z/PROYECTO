@@ -1,0 +1,5 @@
+fecha,inicio,fin,interrupcion_min,fase,actividad
+2026-11-08,18:18,19:27,0,compilacion,Ejecucion captura historica SNIIM 36 meses (run 20261109T001830Z-2191be)
+2026-11-09,04:03,04:06,0,pruebas,Pruebas de integracion reales y captura historica de clima (run 20261109T100414Z-44eb79)
+2026-11-09,04:18,04:27,0,compilacion,Push a GitHub y ejecucion del workflow (run 20261109T102523Z-871621)
+2026-11-09,16:43,16:46,0,compilacion,Captura diaria 2026-11-06 con precios reales (run 20261109T224335Z-acf195)

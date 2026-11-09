@@ -76,12 +76,12 @@ python main.py validar            # SHA-256 de cada archivo + manifiestos
 
 ## 12. Sistema PSP
 ```bash
-python -m calidad.psp tiempo --archivo calidad/tiempo-integrante1.csv --fecha 2026-11-08 \
+python -m calidad.psp tiempo --archivo calidad/tiempo-sebastian.csv --fecha 2026-11-08 \
     --inicio 09:00 --fin 10:30 --interrupcion 10 --fase Codificación --actividad "Extractor base"
-python -m calidad.psp defecto --archivo calidad/defectos-integrante1.csv --fecha 2026-11-08 \
+python -m calidad.psp defecto --archivo calidad/defectos-sebastian.csv --fecha 2026-11-08 \
     --tipo datos --introducido Codificación --eliminado Pruebas --minutos 15 --descripcion "Parser ignora filas"
-python -m calidad.psp resumen --archivo calidad/tiempo-integrante1.csv
-python -m calidad.psp validar --tiempo calidad/tiempo-integrante1.csv --defectos calidad/defectos-integrante1.csv
+python -m calidad.psp resumen --archivo calidad/tiempo-sebastian.csv
+python -m calidad.psp validar --tiempo calidad/tiempo-sebastian.csv --defectos calidad/defectos-sebastian.csv
 ```
 Fases (estilo del Kit; se aceptan sinónimos con acentos): planeacion, diseno, codigo, revision, compilacion, pruebas, correccion, documentacion. Tiempo neto = fin − inicio − interrupción. Los CSV están **vacíos** (solo encabezados): registren tiempos y defectos reales.
 Tipos de defecto (`calidad/catalogo_defectos.json`): los diez de PSP que exige el Kit: documentacion, sintaxis, construccion, asignacion, interfaz, verificacion, datos, funcion, sistema y entorno (cada uno con un ejemplo del proyecto).

@@ -1,0 +1,4 @@
+numero,fecha,tipo,fase_introducido,fase_eliminado,minutos_correccion,defecto_origen,descripcion
+1,2026-11-09,verificacion,codigo,pruebas,15,,Parser SNIIM no reconocia el mensaje NO HAY REGISTROS
+2,2026-11-09,interfaz,diseno,pruebas,30,,Open-Meteo y NASA POWER prohiben su API en robots.txt; cambio de fuente a NOAA NCEI
+3,2026-11-09,documentacion,documentacion,revision,5,,README con tipo de defecto D05 obsoleto
