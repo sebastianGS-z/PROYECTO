@@ -24,7 +24,7 @@ config → extractores (HTTP ético + parseo) → pipeline → almacenamiento (B
 | Almacenamiento | `almacenamiento/bronze_writer.py` | Original intacto + sidecar `.meta.json`, creación exclusiva (inmutable) |
 | Registro | `almacenamiento/manifest.py` | Manifiesto por ejecución y fuente con estado final |
 | Integridad | `scripts/validar_bronce.py` | Recalcula SHA-256 y verifica manifiestos |
-| Calidad PSP | `calidad/psp.py` | Tiempo neto, defectos, catálogo D01–D10, objetivos OQ1–OQ3 |
+| Calidad PSP | `calidad/psp.py` | Tiempo neto, defectos, 10 tipos PSP, objetivos OQ1–OQ3 |
 
 Estados de ejecución: `exitosa`, `parcial`, `sin_resultados`, `fallida`. Una fuente que falla **nunca** queda como exitosa. Códigos de salida: `0` exitosa/sin_resultados · `1` fallida · `2` parcial.
 
@@ -79,7 +79,7 @@ python main.py validar            # SHA-256 de cada archivo + manifiestos
 python -m calidad.psp tiempo --archivo calidad/tiempo-integrante1.csv --fecha 2026-11-08 \
     --inicio 09:00 --fin 10:30 --interrupcion 10 --fase Codificación --actividad "Extractor base"
 python -m calidad.psp defecto --archivo calidad/defectos-integrante1.csv --fecha 2026-11-08 \
-    --tipo D05 --introducido Codificación --eliminado Pruebas --minutos 15 --descripcion "Parser ignora filas"
+    --tipo datos --introducido Codificación --eliminado Pruebas --minutos 15 --descripcion "Parser ignora filas"
 python -m calidad.psp resumen --archivo calidad/tiempo-integrante1.csv
 python -m calidad.psp validar --tiempo calidad/tiempo-integrante1.csv --defectos calidad/defectos-integrante1.csv
 ```
@@ -90,7 +90,7 @@ Objetivos (`calidad/objetivos_calidad.json`): OQ1 disponibilidad ≥ 95 %, OQ2 c
 
 ## 13. Pruebas
 ```bash
-python -m pytest -q                                    # unitarias, sin red (71)
+python -m pytest -q                                    # unitarias, sin red (72)
 RUN_INTEGRATION=1 python -m pytest -m integration -s   # contra SNIIM y NOAA NCEI reales
 ```
 Los HTML/JSON de las pruebas unitarias son *fixtures* controlados, no capturas reales.
