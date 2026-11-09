@@ -1,0 +1,734 @@
+{
+  "run_id": "20261109T102523Z-871621",
+  "fuente": "sniim",
+  "modo": "diaria",
+  "disparador": "workflow_dispatch",
+  "inicio": "2026-11-09T10:25:23Z",
+  "fin": "2026-11-09T10:26:49Z",
+  "duracion_s": 86.06,
+  "estado": "sin_resultados",
+  "solicitudes": 40,
+  "registros": 0,
+  "consultas": [
+    {
+      "paso": "catalogo_formulario",
+      "estado": "ok",
+      "registros": 0,
+      "archivo": "sniim__catalogo-formulario__2026-11-09_2026-11-09__20261109T102523Z-871621.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "platano",
+      "producto": "Plátano Chiapas - Primera",
+      "mercado_clave": "guadalajara",
+      "inicio": "2026-11-08",
+      "fin": "2026-11-08",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__platano-chiapas-primera-jalisco-mercado-de-abasto-de-guadalajara__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "platano",
+      "producto": "Plátano Chiapas - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2026-11-08",
+      "fin": "2026-11-08",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__platano-chiapas-primera-df-central-de-abasto-de-iztapalapa-df__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "platano",
+      "producto": "Plátano Chiapas calidad exportación - Primera",
+      "mercado_clave": "guadalajara",
+      "inicio": "2026-11-08",
+      "fin": "2026-11-08",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__platano-chiapas-calidad-exportacion-primera-jalisco-mercado-de-abasto-de-guadalajara__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "platano",
+      "producto": "Plátano Chiapas calidad exportación - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2026-11-08",
+      "fin": "2026-11-08",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__platano-chiapas-calidad-exportacion-primera-df-central-de-abasto-de-iztapalapa-df__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "platano",
+      "producto": "Plátano Dominico - Primera",
+      "mercado_clave": "guadalajara",
+      "inicio": "2026-11-08",
+      "fin": "2026-11-08",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__platano-dominico-primera-jalisco-mercado-de-abasto-de-guadalajara__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "platano",
+      "producto": "Plátano Dominico - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2026-11-08",
+      "fin": "2026-11-08",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__platano-dominico-primera-df-central-de-abasto-de-iztapalapa-df__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "platano",
+      "producto": "Plátano Enano-Gigante - Primera",
+      "mercado_clave": "guadalajara",
+      "inicio": "2026-11-08",
+      "fin": "2026-11-08",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__platano-enano-gigante-primera-jalisco-mercado-de-abasto-de-guadalajara__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "platano",
+      "producto": "Plátano Enano-Gigante - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2026-11-08",
+      "fin": "2026-11-08",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__platano-enano-gigante-primera-df-central-de-abasto-de-iztapalapa-df__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "platano",
+      "producto": "Plátano Macho - Primera",
+      "mercado_clave": "guadalajara",
+      "inicio": "2026-11-08",
+      "fin": "2026-11-08",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__platano-macho-primera-jalisco-mercado-de-abasto-de-guadalajara__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "platano",
+      "producto": "Plátano Macho - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2026-11-08",
+      "fin": "2026-11-08",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__platano-macho-primera-df-central-de-abasto-de-iztapalapa-df__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "platano",
+      "producto": "Plátano Manzano - Primera",
+      "mercado_clave": "guadalajara",
+      "inicio": "2026-11-08",
+      "fin": "2026-11-08",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__platano-manzano-primera-jalisco-mercado-de-abasto-de-guadalajara__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "platano",
+      "producto": "Plátano Manzano - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2026-11-08",
+      "fin": "2026-11-08",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__platano-manzano-primera-df-central-de-abasto-de-iztapalapa-df__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "platano",
+      "producto": "Plátano Morado - Primera",
+      "mercado_clave": "guadalajara",
+      "inicio": "2026-11-08",
+      "fin": "2026-11-08",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__platano-morado-primera-jalisco-mercado-de-abasto-de-guadalajara__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "platano",
+      "producto": "Plátano Morado - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2026-11-08",
+      "fin": "2026-11-08",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__platano-morado-primera-df-central-de-abasto-de-iztapalapa-df__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "platano",
+      "producto": "Plátano Pera - Primera",
+      "mercado_clave": "guadalajara",
+      "inicio": "2026-11-08",
+      "fin": "2026-11-08",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__platano-pera-primera-jalisco-mercado-de-abasto-de-guadalajara__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "platano",
+      "producto": "Plátano Pera - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2026-11-08",
+      "fin": "2026-11-08",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__platano-pera-primera-df-central-de-abasto-de-iztapalapa-df__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "platano",
+      "producto": "Plátano Tabasco - Primera",
+      "mercado_clave": "guadalajara",
+      "inicio": "2026-11-08",
+      "fin": "2026-11-08",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__platano-tabasco-primera-jalisco-mercado-de-abasto-de-guadalajara__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "platano",
+      "producto": "Plátano Tabasco - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2026-11-08",
+      "fin": "2026-11-08",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__platano-tabasco-primera-df-central-de-abasto-de-iztapalapa-df__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "platano",
+      "producto": "Plátano Veracruz - Primera",
+      "mercado_clave": "guadalajara",
+      "inicio": "2026-11-08",
+      "fin": "2026-11-08",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__platano-veracruz-primera-jalisco-mercado-de-abasto-de-guadalajara__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "platano",
+      "producto": "Plátano Veracruz - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2026-11-08",
+      "fin": "2026-11-08",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__platano-veracruz-primera-df-central-de-abasto-de-iztapalapa-df__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon",
+      "producto": "Limón c/semilla # 2 - Primera",
+      "mercado_clave": "guadalajara",
+      "inicio": "2026-11-08",
+      "fin": "2026-11-08",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-2-primera-jalisco-mercado-de-abasto-de-guadalajara__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon",
+      "producto": "Limón c/semilla # 2 - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2026-11-08",
+      "fin": "2026-11-08",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-2-primera-df-central-de-abasto-de-iztapalapa-df__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon",
+      "producto": "Limón c/semilla # 3 - Primera",
+      "mercado_clave": "guadalajara",
+      "inicio": "2026-11-08",
+      "fin": "2026-11-08",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-3-primera-jalisco-mercado-de-abasto-de-guadalajara__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon",
+      "producto": "Limón c/semilla # 3 - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2026-11-08",
+      "fin": "2026-11-08",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-3-primera-df-central-de-abasto-de-iztapalapa-df__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon",
+      "producto": "Limón c/semilla # 4 - Primera",
+      "mercado_clave": "guadalajara",
+      "inicio": "2026-11-08",
+      "fin": "2026-11-08",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-4-primera-jalisco-mercado-de-abasto-de-guadalajara__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon",
+      "producto": "Limón c/semilla # 4 - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2026-11-08",
+      "fin": "2026-11-08",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-4-primera-df-central-de-abasto-de-iztapalapa-df__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "guadalajara",
+      "inicio": "2026-11-08",
+      "fin": "2026-11-08",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-5-primera-jalisco-mercado-de-abasto-de-guadalajara__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2026-11-08",
+      "fin": "2026-11-08",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-5-primera-df-central-de-abasto-de-iztapalapa-df__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon",
+      "producto": "Limón c/semilla sin clasificación - Primera",
+      "mercado_clave": "guadalajara",
+      "inicio": "2026-11-08",
+      "fin": "2026-11-08",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-sin-clasificacion-primera-jalisco-mercado-de-abasto-de-guadalajara__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon",
+      "producto": "Limón c/semilla sin clasificación - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2026-11-08",
+      "fin": "2026-11-08",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-sin-clasificacion-primera-df-central-de-abasto-de-iztapalapa-df__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon",
+      "producto": "Limón s/semilla - Primera",
+      "mercado_clave": "guadalajara",
+      "inicio": "2026-11-08",
+      "fin": "2026-11-08",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-s-semilla-primera-jalisco-mercado-de-abasto-de-guadalajara__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon",
+      "producto": "Limón s/semilla - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2026-11-08",
+      "fin": "2026-11-08",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-s-semilla-primera-df-central-de-abasto-de-iztapalapa-df__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Amarilla - Primera",
+      "mercado_clave": "guadalajara",
+      "inicio": "2026-11-08",
+      "fin": "2026-11-08",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-amarilla-primera-jalisco-mercado-de-abasto-de-guadalajara__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Amarilla - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2026-11-08",
+      "fin": "2026-11-08",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-amarilla-primera-df-central-de-abasto-de-iztapalapa-df__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Maradol - Primera",
+      "mercado_clave": "guadalajara",
+      "inicio": "2026-11-08",
+      "fin": "2026-11-08",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-maradol-primera-jalisco-mercado-de-abasto-de-guadalajara__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Maradol - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2026-11-08",
+      "fin": "2026-11-08",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-maradol-primera-df-central-de-abasto-de-iztapalapa-df__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Roja - Primera",
+      "mercado_clave": "guadalajara",
+      "inicio": "2026-11-08",
+      "fin": "2026-11-08",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-roja-primera-jalisco-mercado-de-abasto-de-guadalajara__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Roja - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2026-11-08",
+      "fin": "2026-11-08",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-roja-primera-df-central-de-abasto-de-iztapalapa-df__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+      "error": null,
+      "advertencias": []
+    }
+  ],
+  "archivos": [
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__catalogo-formulario__2026-11-09_2026-11-09__20261109T102523Z-871621.html",
+      "sha256": "d83d0a0ca42c04fe7026fe58e587e44d099ad6682c4bf8455ff8fa5fcc043b91",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/Consultas/MercadosNacionales/PreciosDeMercado/Agricolas/ConsultaFrutasYHortalizas.aspx",
+      "bytes": 67149
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__platano-chiapas-primera-jalisco-mercado-de-abasto-de-guadalajara__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+      "sha256": "8e65b0bcceb6cbe7821910d53c264d65b463d0e9afd22299fd0d2054e8b80136",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=08%2F11%2F2026&fechaFinal=08%2F11%2F2026&ProductoId=663&OrigenId=-1&Origen=Todos&DestinoId=140&Destino=Jalisco%3A+Mercado+de+Abasto+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9425
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__platano-chiapas-primera-df-central-de-abasto-de-iztapalapa-df__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+      "sha256": "a5c7d734fe6c57883dded61055e14fee48d877df6b1c35728bd657c832c0a923",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=08%2F11%2F2026&fechaFinal=08%2F11%2F2026&ProductoId=663&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9422
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__platano-chiapas-calidad-exportacion-primera-jalisco-mercado-de-abasto-de-guadalajara__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+      "sha256": "f6803cdd8ecf1f0eb7112a8fe1156c45e382de5dd9c2567be85da164d6c60683",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=08%2F11%2F2026&fechaFinal=08%2F11%2F2026&ProductoId=665&OrigenId=-1&Origen=Todos&DestinoId=140&Destino=Jalisco%3A+Mercado+de+Abasto+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9425
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__platano-chiapas-calidad-exportacion-primera-df-central-de-abasto-de-iztapalapa-df__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+      "sha256": "3c6f910c53a7342051a144d24f9e9362af54a52096d19dd0cd41bad176134d6b",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=08%2F11%2F2026&fechaFinal=08%2F11%2F2026&ProductoId=665&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9422
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__platano-dominico-primera-jalisco-mercado-de-abasto-de-guadalajara__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+      "sha256": "d896d15e065775c4d781ffce18a9e54f5a7c3367b68d727fe6b0eacc218af079",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=08%2F11%2F2026&fechaFinal=08%2F11%2F2026&ProductoId=666&OrigenId=-1&Origen=Todos&DestinoId=140&Destino=Jalisco%3A+Mercado+de+Abasto+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9425
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__platano-dominico-primera-df-central-de-abasto-de-iztapalapa-df__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+      "sha256": "d06820758b9b5d3a6153c661320b450d792ecf966c0973d151a03ad2a90587e7",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=08%2F11%2F2026&fechaFinal=08%2F11%2F2026&ProductoId=666&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9422
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__platano-enano-gigante-primera-jalisco-mercado-de-abasto-de-guadalajara__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+      "sha256": "a1b62d30db6e69b442bc9abb18458cc8f3e396b7c431a89c2fce6f8f30f79893",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=08%2F11%2F2026&fechaFinal=08%2F11%2F2026&ProductoId=670&OrigenId=-1&Origen=Todos&DestinoId=140&Destino=Jalisco%3A+Mercado+de+Abasto+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9425
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__platano-enano-gigante-primera-df-central-de-abasto-de-iztapalapa-df__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+      "sha256": "7672494a658abad6cde86f632762f7034dafce6f6468bd14b25bd381786def84",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=08%2F11%2F2026&fechaFinal=08%2F11%2F2026&ProductoId=670&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9422
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__platano-macho-primera-jalisco-mercado-de-abasto-de-guadalajara__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+      "sha256": "c2a4e158f699872980a1b4fb4075655fbcdfce195ce501c5bf5987b10f1cf951",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=08%2F11%2F2026&fechaFinal=08%2F11%2F2026&ProductoId=723&OrigenId=-1&Origen=Todos&DestinoId=140&Destino=Jalisco%3A+Mercado+de+Abasto+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9425
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__platano-macho-primera-df-central-de-abasto-de-iztapalapa-df__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+      "sha256": "7cd3ba68e751ef7420a280c018d88ae880caaea150d8a9ea3ba613438d56872b",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=08%2F11%2F2026&fechaFinal=08%2F11%2F2026&ProductoId=723&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9422
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__platano-manzano-primera-jalisco-mercado-de-abasto-de-guadalajara__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+      "sha256": "3740d19d97a656c2116c73098bd96f17841a7148f66f0322f190bac65e3b4fd9",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=08%2F11%2F2026&fechaFinal=08%2F11%2F2026&ProductoId=728&OrigenId=-1&Origen=Todos&DestinoId=140&Destino=Jalisco%3A+Mercado+de+Abasto+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9425
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__platano-manzano-primera-df-central-de-abasto-de-iztapalapa-df__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+      "sha256": "5211fc42e0fec747f7d8b5dd9bf44683f243e23c47f736c4db93555fb052ad9b",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=08%2F11%2F2026&fechaFinal=08%2F11%2F2026&ProductoId=728&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9422
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__platano-morado-primera-jalisco-mercado-de-abasto-de-guadalajara__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+      "sha256": "a0655d1199c00d7f5eeeb7110914e6d31666c9febc3f4721ed415df50bc3820e",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=08%2F11%2F2026&fechaFinal=08%2F11%2F2026&ProductoId=727&OrigenId=-1&Origen=Todos&DestinoId=140&Destino=Jalisco%3A+Mercado+de+Abasto+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9425
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__platano-morado-primera-df-central-de-abasto-de-iztapalapa-df__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+      "sha256": "b051eab7936d9f41a4054d1a42de7825aaf434fe9ff67ca67b8db0999a331364",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=08%2F11%2F2026&fechaFinal=08%2F11%2F2026&ProductoId=727&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9422
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__platano-pera-primera-jalisco-mercado-de-abasto-de-guadalajara__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+      "sha256": "5b3d72eab9fc2daff33fe9fadb3b19fa9c65f05089eed6a2b56435bd40cdbae8",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=08%2F11%2F2026&fechaFinal=08%2F11%2F2026&ProductoId=731&OrigenId=-1&Origen=Todos&DestinoId=140&Destino=Jalisco%3A+Mercado+de+Abasto+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9425
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__platano-pera-primera-df-central-de-abasto-de-iztapalapa-df__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+      "sha256": "684c4d9f301e21a176b6f77a861d8ece3467f67541d956e693f400eb91ce4eaf",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=08%2F11%2F2026&fechaFinal=08%2F11%2F2026&ProductoId=731&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9422
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__platano-tabasco-primera-jalisco-mercado-de-abasto-de-guadalajara__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+      "sha256": "ac5406aed2b9910f8d042f9245d58434e37a4a5da9a2208cdcd4147137389c43",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=08%2F11%2F2026&fechaFinal=08%2F11%2F2026&ProductoId=732&OrigenId=-1&Origen=Todos&DestinoId=140&Destino=Jalisco%3A+Mercado+de+Abasto+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9425
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__platano-tabasco-primera-df-central-de-abasto-de-iztapalapa-df__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+      "sha256": "763803fc5b716a77debe5a2b49a5b58c81894332795cdf05bad362d28a2f91eb",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=08%2F11%2F2026&fechaFinal=08%2F11%2F2026&ProductoId=732&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9422
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__platano-veracruz-primera-jalisco-mercado-de-abasto-de-guadalajara__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+      "sha256": "f751f4aa4c32c2f08576fdf1fb35a21385fbad39c7cffa6141acd2d68b5dacce",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=08%2F11%2F2026&fechaFinal=08%2F11%2F2026&ProductoId=736&OrigenId=-1&Origen=Todos&DestinoId=140&Destino=Jalisco%3A+Mercado+de+Abasto+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9425
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__platano-veracruz-primera-df-central-de-abasto-de-iztapalapa-df__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+      "sha256": "d5821c546b2512af1a13935b5f9e92790eeed1e6988888c163b6ce3ed5ee8e3d",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=08%2F11%2F2026&fechaFinal=08%2F11%2F2026&ProductoId=736&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9422
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__limon-c-semilla-2-primera-jalisco-mercado-de-abasto-de-guadalajara__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+      "sha256": "9ace8aa238cd9506445a8007eef43d7994a2a496ab3073a9aca70a6737b69035",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=08%2F11%2F2026&fechaFinal=08%2F11%2F2026&ProductoId=417&OrigenId=-1&Origen=Todos&DestinoId=140&Destino=Jalisco%3A+Mercado+de+Abasto+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9425
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__limon-c-semilla-2-primera-df-central-de-abasto-de-iztapalapa-df__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+      "sha256": "d087bfbaf8b3fdcad606acd075696b353468929675fef6e8304af43ca300fe5f",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=08%2F11%2F2026&fechaFinal=08%2F11%2F2026&ProductoId=417&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9422
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__limon-c-semilla-3-primera-jalisco-mercado-de-abasto-de-guadalajara__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+      "sha256": "cb89a19abde7775b5fde4ebd4c0b5e7148382ef8b7ae34e54b2d354195945e1b",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=08%2F11%2F2026&fechaFinal=08%2F11%2F2026&ProductoId=418&OrigenId=-1&Origen=Todos&DestinoId=140&Destino=Jalisco%3A+Mercado+de+Abasto+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9425
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__limon-c-semilla-3-primera-df-central-de-abasto-de-iztapalapa-df__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+      "sha256": "298e4281d6d72eaa8bace7edefa51ceb7ee73e8ce0b80873d0d3584cfe1a3949",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=08%2F11%2F2026&fechaFinal=08%2F11%2F2026&ProductoId=418&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9422
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__limon-c-semilla-4-primera-jalisco-mercado-de-abasto-de-guadalajara__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+      "sha256": "77dd7c3cc9d6a3b84abec9400f6a1b7011c6c0ed9b560ca282731a9254fe49c5",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=08%2F11%2F2026&fechaFinal=08%2F11%2F2026&ProductoId=419&OrigenId=-1&Origen=Todos&DestinoId=140&Destino=Jalisco%3A+Mercado+de+Abasto+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9425
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__limon-c-semilla-4-primera-df-central-de-abasto-de-iztapalapa-df__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+      "sha256": "d928d68fe37487bb062bbf860688665be360d32d2c91d6d6b1b4ffc818f16683",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=08%2F11%2F2026&fechaFinal=08%2F11%2F2026&ProductoId=419&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9422
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__limon-c-semilla-5-primera-jalisco-mercado-de-abasto-de-guadalajara__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+      "sha256": "972ca7600e0c8dc0489523a45dbeb55dbf6d083e4ab3f05b1332fa40bdc07697",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=08%2F11%2F2026&fechaFinal=08%2F11%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=140&Destino=Jalisco%3A+Mercado+de+Abasto+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9425
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__limon-c-semilla-5-primera-df-central-de-abasto-de-iztapalapa-df__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+      "sha256": "2b4732598b8a4f2b84c4e60002f6f90fbbd97fa6c6324825147e867306955186",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=08%2F11%2F2026&fechaFinal=08%2F11%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9422
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__limon-c-semilla-sin-clasificacion-primera-jalisco-mercado-de-abasto-de-guadalajara__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+      "sha256": "72d97f2c09cf19e4a0845fab7c1a9f132339c787d17b944d761eaee689e8ad22",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=08%2F11%2F2026&fechaFinal=08%2F11%2F2026&ProductoId=423&OrigenId=-1&Origen=Todos&DestinoId=140&Destino=Jalisco%3A+Mercado+de+Abasto+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9425
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__limon-c-semilla-sin-clasificacion-primera-df-central-de-abasto-de-iztapalapa-df__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+      "sha256": "43bf949ef221ac0a7a431ff0acc93fc7216ca693fabed0f31c483ca33537b00f",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=08%2F11%2F2026&fechaFinal=08%2F11%2F2026&ProductoId=423&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9422
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__limon-s-semilla-primera-jalisco-mercado-de-abasto-de-guadalajara__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+      "sha256": "1a398dd963987975c464cfdda1a917b55edb76c8165ec016f02c8af2790b7726",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=08%2F11%2F2026&fechaFinal=08%2F11%2F2026&ProductoId=426&OrigenId=-1&Origen=Todos&DestinoId=140&Destino=Jalisco%3A+Mercado+de+Abasto+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9425
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__limon-s-semilla-primera-df-central-de-abasto-de-iztapalapa-df__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+      "sha256": "9cfde029370afb3ed3ce178c817b028b99d2ec53aef2798211d9d015fbf7771c",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=08%2F11%2F2026&fechaFinal=08%2F11%2F2026&ProductoId=426&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9422
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__papaya-amarilla-primera-jalisco-mercado-de-abasto-de-guadalajara__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+      "sha256": "21d257e8aa81547bc534f57c4e5e2d5dc7016d6a6c5cab77221ed0496acc7ade",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=08%2F11%2F2026&fechaFinal=08%2F11%2F2026&ProductoId=620&OrigenId=-1&Origen=Todos&DestinoId=140&Destino=Jalisco%3A+Mercado+de+Abasto+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9425
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__papaya-amarilla-primera-df-central-de-abasto-de-iztapalapa-df__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+      "sha256": "0424678d2c11eb9dabbfe02dc56384525a306a463ed9df09a1bb888fcac7ed78",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=08%2F11%2F2026&fechaFinal=08%2F11%2F2026&ProductoId=620&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9422
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__papaya-maradol-primera-jalisco-mercado-de-abasto-de-guadalajara__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+      "sha256": "36674c2152c35ee33ed0ebc1d9240ec79125689c4fb920af51fe20f35501f23b",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=08%2F11%2F2026&fechaFinal=08%2F11%2F2026&ProductoId=609&OrigenId=-1&Origen=Todos&DestinoId=140&Destino=Jalisco%3A+Mercado+de+Abasto+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9425
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__papaya-maradol-primera-df-central-de-abasto-de-iztapalapa-df__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+      "sha256": "1a026c34a8a0641c1d90438ab77fc72c6e41cc0a3681c7751a8558d9c899275c",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=08%2F11%2F2026&fechaFinal=08%2F11%2F2026&ProductoId=609&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9422
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__papaya-roja-primera-jalisco-mercado-de-abasto-de-guadalajara__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+      "sha256": "2e505faf701957a14754626a621ec8be6cd80d47a813445c35021a5ac777c41d",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=08%2F11%2F2026&fechaFinal=08%2F11%2F2026&ProductoId=623&OrigenId=-1&Origen=Todos&DestinoId=140&Destino=Jalisco%3A+Mercado+de+Abasto+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9425
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__papaya-roja-primera-df-central-de-abasto-de-iztapalapa-df__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+      "sha256": "16c1c8fac39a8b8c6dda1e0faf8471959f108b2c8b06d07a7c07ce7b79135d22",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=08%2F11%2F2026&fechaFinal=08%2F11%2F2026&ProductoId=623&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9422
+    }
+  ],
+  "errores": [],
+  "parametros": {
+    "productos": [
+      "platano",
+      "limon",
+      "papaya"
+    ],
+    "mercados": [
+      "guadalajara",
+      "cdmx"
+    ],
+    "periodos": [
+      [
+        "2026-11-08",
+        "2026-11-08"
+      ]
+    ]
+  },
+  "esquema": "tdl-manifest/1",
+  "archivos_generados": 39
+}

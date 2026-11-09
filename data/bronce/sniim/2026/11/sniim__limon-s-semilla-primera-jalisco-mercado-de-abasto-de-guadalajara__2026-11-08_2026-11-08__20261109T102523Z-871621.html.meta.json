@@ -1,0 +1,39 @@
+{
+  "esquema": "tdl-bronce-meta/1",
+  "contenido_original": {
+    "archivo": "sniim__limon-s-semilla-primera-jalisco-mercado-de-abasto-de-guadalajara__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+    "descripcion": "Bytes tal como los entregó la fuente; no se modifican."
+  },
+  "metadatos_captura": {
+    "fuente": "sniim",
+    "fuente_url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=08%2F11%2F2026&fechaFinal=08%2F11%2F2026&ProductoId=426&OrigenId=-1&Origen=Todos&DestinoId=140&Destino=Jalisco%3A+Mercado+de+Abasto+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+    "fecha_captura": "2026-11-09T10:26:37Z",
+    "identificador_ejecucion": "20261109T102523Z-871621",
+    "formato_original": "html",
+    "sha256": "1a398dd963987975c464cfdda1a917b55edb76c8165ec016f02c8af2790b7726",
+    "bytes": 9425,
+    "http_status": 200,
+    "registros_detectados": 0,
+    "estado_captura": "sin_resultados",
+    "advertencias": [],
+    "colision_nombre": false,
+    "etiqueta": "Limón s/semilla - Primera__Jalisco: Mercado de Abasto de Guadalajara",
+    "producto": "Limón s/semilla - Primera",
+    "producto_id": "426",
+    "mercado": "Jalisco: Mercado de Abasto de Guadalajara",
+    "mercado_id": "140",
+    "fecha_ref_inicio": "2026-11-08",
+    "fecha_ref_fin": "2026-11-08",
+    "parametros": {
+      "fechaInicio": "08/11/2026",
+      "fechaFinal": "08/11/2026",
+      "ProductoId": "426",
+      "OrigenId": "-1",
+      "Origen": "Todos",
+      "DestinoId": "140",
+      "Destino": "Jalisco: Mercado de Abasto de Guadalajara",
+      "PreciosPorId": "1",
+      "RegistrosPorPagina": "500"
+    }
+  }
+}

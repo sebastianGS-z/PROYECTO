@@ -1,0 +1,39 @@
+{
+  "esquema": "tdl-bronce-meta/1",
+  "contenido_original": {
+    "archivo": "sniim__papaya-roja-primera-df-central-de-abasto-de-iztapalapa-df__2026-11-08_2026-11-08__20261109T102523Z-871621.html",
+    "descripcion": "Bytes tal como los entregó la fuente; no se modifican."
+  },
+  "metadatos_captura": {
+    "fuente": "sniim",
+    "fuente_url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=08%2F11%2F2026&fechaFinal=08%2F11%2F2026&ProductoId=623&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+    "fecha_captura": "2026-11-09T10:26:49Z",
+    "identificador_ejecucion": "20261109T102523Z-871621",
+    "formato_original": "html",
+    "sha256": "16c1c8fac39a8b8c6dda1e0faf8471959f108b2c8b06d07a7c07ce7b79135d22",
+    "bytes": 9422,
+    "http_status": 200,
+    "registros_detectados": 0,
+    "estado_captura": "sin_resultados",
+    "advertencias": [],
+    "colision_nombre": false,
+    "etiqueta": "Papaya Roja - Primera__DF: Central de Abasto de Iztapalapa DF",
+    "producto": "Papaya Roja - Primera",
+    "producto_id": "623",
+    "mercado": "DF: Central de Abasto de Iztapalapa DF",
+    "mercado_id": "100",
+    "fecha_ref_inicio": "2026-11-08",
+    "fecha_ref_fin": "2026-11-08",
+    "parametros": {
+      "fechaInicio": "08/11/2026",
+      "fechaFinal": "08/11/2026",
+      "ProductoId": "623",
+      "OrigenId": "-1",
+      "Origen": "Todos",
+      "DestinoId": "100",
+      "Destino": "DF: Central de Abasto de Iztapalapa DF",
+      "PreciosPorId": "1",
+      "RegistrosPorPagina": "500"
+    }
+  }
+}
