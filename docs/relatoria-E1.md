@@ -33,5 +33,4 @@ Corrida local materializada sobre el Bronce existente: 15,109 registros normaliz
 ## Pendientes de cierre
 
 * Revisar calidad y recuentos generados, especialmente conflictos y filas en cuarentena.
-* Crear/publicar el tag `e1` sobre el commit aprobado.
-* Registrar el enlace en el formulario oficial cuando se proporcione su URL.
+* Registrar [el tag `e1` del repositorio](https://github.com/sebastianGS-z/PROYECTO/tree/e1) en el formulario oficial cuando se proporcione su URL.

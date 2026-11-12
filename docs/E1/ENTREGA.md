@@ -81,7 +81,7 @@ Un registro inválido no pasa a Plata/Oro. Se guarda en `registros_invalidos.csv
 - [x] Plata y Oro conectados a workflows diario e histórico.
 - [x] Ficha técnica E1 y relatoría.
 - [x] Ejecutar `python main.py capas` sobre los datos Bronce disponibles y revisar los reportes materializados.
-- [ ] Crear y publicar tag `e1` después de revisar la corrida.
+- [x] Crear y publicar tag `e1` después de revisar la corrida.
 - [ ] Registrar el enlace de GitHub en el formulario oficial de E1.
 
 ## Resultado de la corrida local
