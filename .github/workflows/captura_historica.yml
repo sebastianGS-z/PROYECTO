@@ -58,6 +58,9 @@ jobs:
           echo "exit_code=$?" >> "$GITHUB_OUTPUT"
           exit 0
 
+      - name: Pipeline E1 (Bronce → Plata → Oro)
+        run: python main.py capas
+
       - name: Validar Capa Bronce
         id: validar
         continue-on-error: true
@@ -86,6 +89,6 @@ jobs:
         if: always()
         run: |
           echo "Código de la captura: ${{ steps.captura.outputs.exit_code }} (0 ok, 1 fallida, 2 parcial: revise el reporte de cobertura)"
-          [ "${{ steps.captura.outputs.exit_code }}" = "1" ] && { echo "::error::Captura histórica fallida"; exit 1; }
+          [ "${{ steps.captura.outputs.exit_code }}" != "0" ] && { echo "::error::Captura histórica fallida o parcial"; exit 1; }
           [ "${{ steps.validar.outcome }}" != "success" ] && { echo "::error::Validación de Bronce falló"; exit 1; }
           exit 0

@@ -5,6 +5,7 @@
     python main.py validar
     python main.py objetivos  [--desde ... --hasta ...]
     python main.py psp        <subcomando de calidad.psp>
+    python main.py capas      [--bronze-dir ... --data-dir ...] (pipeline E1)
 """
 from __future__ import annotations
 
@@ -43,6 +44,8 @@ def main(argv: list[str] | None = None) -> int:
         from calidad.psp import main as f
     elif cmd == "objetivos":
         return _objetivos(resto)
+    elif cmd == "capas":
+        from src.tdl_e1.pipeline import main as f
     else:
         print(f"Comando desconocido: {cmd}\n{__doc__}", file=sys.stderr)
         return 2

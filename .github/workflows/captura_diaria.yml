@@ -51,6 +51,9 @@ jobs:
           echo "exit_code=$code" >> "$GITHUB_OUTPUT"
           exit 0   # el resultado se evalúa al final, después de guardar la evidencia
 
+      - name: Pipeline E1 (Bronce → Plata → Oro)
+        run: python main.py capas
+
       - name: Validar Capa Bronce (SHA-256 y manifiestos)
         id: validar
         continue-on-error: true

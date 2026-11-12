@@ -1,0 +1,180 @@
+{
+  "regla": "No se imputan precios ni precipitación. MAR/MCAR/MNAR no se prueban solo con valores observados; se reportan asociaciones descriptivas.",
+  "variables": {
+    "precio_min": {
+      "n_aplicable": 14300,
+      "faltantes": 0,
+      "porcentaje": 0.0,
+      "mecanismo": "sin_faltantes",
+      "tasas_por_grupo": {
+        "tipo_registro": {
+          "precio": 0.0
+        },
+        "cultivo": {
+          "limon": 0.0,
+          "papaya": 0.0,
+          "platano": 0.0
+        },
+        "mercado": {
+          "100": 0.0,
+          "140": 0.0
+        }
+      },
+      "decision_imputacion": "no_imputar: una cotización ausente no se deduce de las restantes"
+    },
+    "precio_max": {
+      "n_aplicable": 14300,
+      "faltantes": 0,
+      "porcentaje": 0.0,
+      "mecanismo": "sin_faltantes",
+      "tasas_por_grupo": {
+        "tipo_registro": {
+          "precio": 0.0
+        },
+        "cultivo": {
+          "limon": 0.0,
+          "papaya": 0.0,
+          "platano": 0.0
+        },
+        "mercado": {
+          "100": 0.0,
+          "140": 0.0
+        }
+      },
+      "decision_imputacion": "no_imputar: una cotización ausente no se deduce de las restantes"
+    },
+    "precio_frecuente": {
+      "n_aplicable": 14300,
+      "faltantes": 0,
+      "porcentaje": 0.0,
+      "mecanismo": "sin_faltantes",
+      "tasas_por_grupo": {
+        "tipo_registro": {
+          "precio": 0.0
+        },
+        "cultivo": {
+          "limon": 0.0,
+          "papaya": 0.0,
+          "platano": 0.0
+        },
+        "mercado": {
+          "100": 0.0,
+          "140": 0.0
+        }
+      },
+      "decision_imputacion": "no_imputar: una cotización ausente no se deduce de las restantes"
+    },
+    "tavg_c": {
+      "n_aplicable": 1098,
+      "faltantes": 307,
+      "porcentaje": 27.96,
+      "mecanismo": "MAR_compatible_asociacion_con_variables_observadas",
+      "tasas_por_grupo": {
+        "estacion": {
+          "MXM00076654": 0.2796
+        },
+        "mes": {
+          "1": 0.3763,
+          "2": 0.4118,
+          "3": 0.4409,
+          "4": 0.1222,
+          "5": 0.086,
+          "6": 0.0667,
+          "7": 0.3441,
+          "8": 0.3763,
+          "9": 0.3778,
+          "10": 0.3441,
+          "11": 0.0652,
+          "12": 0.3441
+        }
+      },
+      "decision_imputacion": "solo feature de modelado: interpolación lineal interior de hasta 2 días, con indicador; nunca sobrescribe el valor original"
+    },
+    "tmax_c": {
+      "n_aplicable": 1098,
+      "faltantes": 505,
+      "porcentaje": 45.99,
+      "mecanismo": "MAR_compatible_asociacion_con_variables_observadas",
+      "tasas_por_grupo": {
+        "estacion": {
+          "MXM00076654": 0.4599
+        },
+        "mes": {
+          "1": 0.4946,
+          "2": 0.5412,
+          "3": 0.5054,
+          "4": 0.2222,
+          "5": 0.1613,
+          "6": 0.2889,
+          "7": 0.6237,
+          "8": 0.6452,
+          "9": 0.6444,
+          "10": 0.5054,
+          "11": 0.3587,
+          "12": 0.5269
+        }
+      },
+      "decision_imputacion": "solo feature de modelado: interpolación lineal interior de hasta 2 días, con indicador; nunca sobrescribe el valor original"
+    },
+    "tmin_c": {
+      "n_aplicable": 1098,
+      "faltantes": 505,
+      "porcentaje": 45.99,
+      "mecanismo": "MAR_compatible_asociacion_con_variables_observadas",
+      "tasas_por_grupo": {
+        "estacion": {
+          "MXM00076654": 0.4599
+        },
+        "mes": {
+          "1": 0.4946,
+          "2": 0.5412,
+          "3": 0.5054,
+          "4": 0.2222,
+          "5": 0.1613,
+          "6": 0.2889,
+          "7": 0.6237,
+          "8": 0.6452,
+          "9": 0.6444,
+          "10": 0.5054,
+          "11": 0.3587,
+          "12": 0.5269
+        }
+      },
+      "decision_imputacion": "solo feature de modelado: interpolación lineal interior de hasta 2 días, con indicador; nunca sobrescribe el valor original"
+    },
+    "prcp_mm": {
+      "n_aplicable": 1098,
+      "faltantes": 806,
+      "porcentaje": 73.41,
+      "mecanismo": "MAR_compatible_asociacion_con_variables_observadas",
+      "tasas_por_grupo": {
+        "estacion": {
+          "MXM00076654": 0.7341
+        },
+        "mes": {
+          "1": 0.6667,
+          "2": 0.6588,
+          "3": 0.7097,
+          "4": 0.7222,
+          "5": 0.6882,
+          "6": 0.8889,
+          "7": 0.9677,
+          "8": 0.9032,
+          "9": 0.8444,
+          "10": 0.7742,
+          "11": 0.6196,
+          "12": 0.3656
+        }
+      },
+      "decision_imputacion": "no_imputar: precipitación es episódica; ausencia no significa cero"
+    }
+  },
+  "calendario_climatico": {
+    "inicio_observado": "2023-11-01",
+    "fin_observado": "2026-11-08",
+    "dias_estacion_esperados_en_rangos_observados": 1098,
+    "dias_con_algun_dato": 791,
+    "dias_sin_registro_util": 307,
+    "nota": "Rango derivado de fechas válidas. No incluye posibles faltantes anteriores o posteriores al rango observado."
+  }
+}

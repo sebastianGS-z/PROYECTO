@@ -46,7 +46,7 @@ python -m venv .venv
 source .venv/bin/activate        # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 ```
-(`pandas` no se usa: no es necesario para guardar crudos.)
+El pipeline E1 usa pandas, NumPy y Pandera para transformar Bronce y validar Plata.
 
 ## 8. Configuración
 `cp .env.example .env` y ajusta. Parámetros: `TDL_USER_AGENT`, `TDL_TIMEOUT`, `TDL_MAX_RETRIES`, `TDL_BACKOFF_BASE`, `TDL_MIN_DELAY` (1.5 s), `TDL_DATA_DIR`, `TDL_LOG_LEVEL`, URLs de las fuentes. **Cambia el correo de contacto del User-Agent por el real del equipo.**
@@ -74,7 +74,25 @@ Datos sintéticos (solo pruebas): `python scripts/generar_sinteticos.py` → `da
 python main.py validar            # SHA-256 de cada archivo + manifiestos
 ```
 
-## 12. Sistema PSP
+## 12. Pipeline E1: Bronce → Plata → Oro
+
+```bash
+python main.py capas
+```
+
+El pipeline lee únicamente capturas Bronce con sidecar y verifica su SHA-256 antes de parsear. Normaliza fechas y números de SNIIM y NOAA a un esquema común, valida tipos y rangos con Pandera y envía los registros inválidos a `data/cuarentena/registros_invalidos.csv` con archivo, hash, motivo y registro original. No modifica Bronce.
+
+Salidas principales:
+
+* `data/plata/precios_clima.csv`: registros validados, originales normalizados, atípicos señalados, versiones de análisis winsorizadas y variables Min-Max/Z-Score.
+* `data/plata/clima_modelado.csv`: calendario diario de la estación con una copia de variables de temperatura interpoladas solo en huecos interiores de hasta dos días; conserva los valores observados y marca cada imputación. Precipitación y precios no se imputan.
+* `data/plata/diagnostico_faltantes.json` y `reporte_calidad.json`: perfiles de faltantes, asociaciones descriptivas, decisiones de imputación y resumen de controles.
+* `data/plata/conflictos_resueltos.csv`: claves repetidas con valores discrepantes; conserva en Plata la captura más reciente y mantiene todas las versiones originales en Bronce.
+* `data/oro/panel_mensual.csv`: agregación mensual de precios por variante, plaza, origen y presentación, unida al resumen mensual de cada estación climática disponible.
+
+Las capas Plata/Oro y la cuarentena se regeneran en cada ejecución. Ambos workflows ejecutan `python main.py capas` tras la captura; la publicación normal de `data/` conserva los resultados. Detalle de decisiones y límites: [docs/E1/ENTREGA.md](docs/E1/ENTREGA.md).
+
+## 13. Sistema PSP
 ```bash
 python -m calidad.psp tiempo --archivo calidad/tiempo-sebastian.csv --fecha 2026-11-08 \
     --inicio 09:00 --fin 10:30 --interrupcion 10 --fase Codificación --actividad "Extractor base"
@@ -88,17 +106,17 @@ Tipos de defecto (`calidad/catalogo_defectos.json`): los diez de PSP que exige e
 Bitácora de capturas: `calidad/bitacora_capturas.csv` (una fila por ejecución y fuente; base de MTBF/MTTR/disponibilidad en E1).
 Objetivos (`calidad/objetivos_calidad.json`): OQ1 disponibilidad ≥ 95 %, OQ2 cero fallos no detectados, OQ3 cobertura diaria 100 %. Evaluación: `python main.py objetivos --desde AAAA-MM-DD --hasta AAAA-MM-DD` (devuelve `sin_datos` si no hay manifiestos; no hay metas "alcanzadas" sin evidencia).
 
-## 13. Pruebas
+## 14. Pruebas
 ```bash
 python -m pytest -q                                    # unitarias, sin red (72)
 RUN_INTEGRATION=1 python -m pytest -m integration -s   # contra SNIIM y NOAA NCEI reales
 ```
 Los HTML/JSON de las pruebas unitarias son *fixtures* controlados, no capturas reales.
 
-## 14. GitHub Actions
-`.github/workflows/captura_historica.yml`: manual, descarga la serie de 36 meses en la nube. `.github/workflows/captura_diaria.yml`: diario a las **03:00 UTC = 21:00 en Colima** (UTC-6 todo el año desde 2022) y manual (`workflow_dispatch`). `concurrency` evita ejecuciones simultáneas; permisos mínimos `contents: write`; instala dependencias, corre pruebas, captura, valida, publica `data/` con `GITHUB_TOKEN` (sin PAT) aunque la captura falle (para dejar evidencia), sube logs como artefacto y falla el job si el código de salida ≠ 0. Habilita *Settings → Actions → Workflow permissions → Read and write*. Los `schedule` solo corren desde la rama por defecto.
+## 15. GitHub Actions
+`.github/workflows/captura_historica.yml`: manual, descarga la serie de 36 meses en la nube. `.github/workflows/captura_diaria.yml`: diario a las **03:00 UTC = 21:00 en Colima** (UTC-6 todo el año desde 2022) y manual (`workflow_dispatch`). `concurrency` evita ejecuciones simultáneas; permisos mínimos `contents: write`; instala dependencias, corre pruebas, captura, ejecuta el pipeline E1, valida Bronce y publica `data/` con `GITHUB_TOKEN` (sin PAT) aunque la captura falle (para dejar evidencia), sube logs como artefacto y falla el job si captura termina parcial/fallida o la validación falla. Habilita *Settings → Actions → Workflow permissions → Read and write*. Los `schedule` solo corren desde la rama por defecto.
 
-## 15. Limitaciones conocidas
+## 16. Limitaciones conocidas
 * **SNIIM sin API oficial**: se usa la consulta web pública. El parser (`parse_resultados`) se escribió según la estructura observada y **debe validarse con la primera ejecución real** (`pytest -m integration`). Si el sitio cambia, solo se ajustan `parse_formulario` y `parse_resultados`; un cambio de estructura produce estado `fallida`, nunca datos inventados.
 * La URL de resultados usa el patrón observado; que acepte rangos mensuales y la paginación (`RegistrosPorPagina=500`) no está verificado: si la fuente reporta varias páginas, la captura queda `parcial`.
 * Tecomán/Armería no son mercados del SNIIM; las zonas productoras se cubren con clima. "Colima: Centros de distribución" es opcional.
@@ -106,10 +124,10 @@ Los HTML/JSON de las pruebas unitarias son *fixtures* controlados, no capturas r
 * GitHub Actions puede ser bloqueado por el sitio (IPs de centros de datos): quedaría registrado como fallida.
 * NOAA NCEI: una sola estación (Manzanillo), no Tecomán; verificar el ID con `curl -s "https://www.ncei.noaa.gov/access/services/data/v1?dataset=daily-summaries&stations=MXM00076654&startDate=2024-01-01&endDate=2024-01-05&dataTypes=TMAX,TMIN,PRCP&format=json&units=metric"`.
 
-## 16. Consideraciones éticas
+## 17. Consideraciones éticas
 User-Agent identificable, robots.txt obligatorio (si no se puede leer, **no se hace scraping**), Crawl-delay y pausa ≥ 1.5 s por dominio, sin proxies, sin evadir protecciones, volumen bajo. NOAA NCEI: revisar términos, atribución y límites de uso antes de publicar resultados.
 
-## 17. Ejemplo de ejecución
+## 18. Ejemplo de ejecución
 ```
 $ python main.py diaria --fecha 2026-11-06
 … RESUMEN run=20261108T090133Z-332bb7 fuente=sniim estado=fallida … solicitudes=2 registros=0 archivos=0 errores=1
