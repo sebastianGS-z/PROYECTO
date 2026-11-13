@@ -11,9 +11,9 @@ HOY = date.today().isoformat()
 
 def test_cuatro_csv_con_encabezados_exactos():
     base = psp.CALIDAD_DIR
-    for n in (1, 2):
-        assert open(base / f"tiempo-integrante{n}.csv", encoding="utf-8").readline().strip() == ",".join(psp.COLUMNAS_TIEMPO)
-        assert open(base / f"defectos-integrante{n}.csv", encoding="utf-8").readline().strip() == ",".join(psp.COLUMNAS_DEFECTOS)
+    for integrante in ("sebastian", "jose"):
+        assert open(base / f"tiempo-{integrante}.csv", encoding="utf-8").readline().strip() == ",".join(psp.COLUMNAS_TIEMPO)
+        assert open(base / f"defectos-{integrante}.csv", encoding="utf-8").readline().strip() == ",".join(psp.COLUMNAS_DEFECTOS)
     assert psp.COLUMNAS_TIEMPO == ["fecha", "inicio", "fin", "interrupcion_min", "fase", "actividad"]
 
 
