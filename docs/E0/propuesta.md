@@ -100,7 +100,7 @@ Se entrevistó a tres ingenieros agrónomos de los cultivos del observatorio: li
 * **Capa bronce:** cada captura guarda el contenido original sin modificar y un archivo `.meta.json` con fuente, URL, fecha, identificador de ejecución, formato y SHA-256; no se sobrescribe nada. Validación: `python main.py validar`.
 * **Serie histórica SNIIM:** run `20261109T001830Z-2191be` (1,368 consultas, 69 min, exitosa): **36 de 36 meses con datos reales** para cada producto y mercado. Hubo 8 errores transitorios del servidor que se reintentaron solos. Evidencia: `data/bronce/sniim/manifests/cobertura_20261109T001830Z-2191be.csv`.
 * **Clima NOAA NCEI:** run `20261109T100414Z-44eb79`: **28 de 36 meses con datos** (791 días); sin datos de dic-2025 a mar-2026 y de jul a oct-2026 porque la estación no reportó. No se rellenaron; se tratarán como valores faltantes en E1.
-* **Captura automática:** workflow `captura_diaria.yml` de GitHub Actions ejecutado en verde el 2026-11-09 (captura del domingo 8, `sin_resultados` porque el SNIIM no publica ese día). Captura del viernes 2026-11-06 con SNIIM exitosa y 19 registros reales.
+* **Captura automática:** workflow `captura_diaria.yml` de GitHub Actions con programación diaria y habilitado en la rama por defecto. Tras corregir una prueba que esperaba nombres PSP obsoletos, la ejecución manual `43492271206` del 2026-11-13 terminó en verde: pasaron pruebas, captura diaria, pipeline E1, validación de Bronce y publicación de datos. La próxima ejecución programada posterior a la corrección confirmará el disparo automático. Captura del viernes 2026-11-06 con SNIIM exitosa y 19 registros reales.
 * **Bitácora de ejecuciones:** `calidad/bitacora_capturas.csv`.
 
 ---
