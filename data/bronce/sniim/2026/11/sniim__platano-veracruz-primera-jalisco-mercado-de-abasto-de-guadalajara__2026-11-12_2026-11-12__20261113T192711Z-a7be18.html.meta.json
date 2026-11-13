@@ -1,0 +1,39 @@
+{
+  "esquema": "tdl-bronce-meta/1",
+  "contenido_original": {
+    "archivo": "sniim__platano-veracruz-primera-jalisco-mercado-de-abasto-de-guadalajara__2026-11-12_2026-11-12__20261113T192711Z-a7be18.html",
+    "descripcion": "Bytes tal como los entregó la fuente; no se modifican."
+  },
+  "metadatos_captura": {
+    "fuente": "sniim",
+    "fuente_url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=12%2F11%2F2026&fechaFinal=12%2F11%2F2026&ProductoId=736&OrigenId=-1&Origen=Todos&DestinoId=140&Destino=Jalisco%3A+Mercado+de+Abasto+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+    "fecha_captura": "2026-11-13T19:27:56Z",
+    "identificador_ejecucion": "20261113T192711Z-a7be18",
+    "formato_original": "html",
+    "sha256": "9918dbb8b21b2ba5132d143e3143ad246d09c2b82d2f8fb1ffa6b2fe6cc21bdb",
+    "bytes": 9425,
+    "http_status": 200,
+    "registros_detectados": 0,
+    "estado_captura": "sin_resultados",
+    "advertencias": [],
+    "colision_nombre": false,
+    "etiqueta": "Plátano Veracruz - Primera__Jalisco: Mercado de Abasto de Guadalajara",
+    "producto": "Plátano Veracruz - Primera",
+    "producto_id": "736",
+    "mercado": "Jalisco: Mercado de Abasto de Guadalajara",
+    "mercado_id": "140",
+    "fecha_ref_inicio": "2026-11-12",
+    "fecha_ref_fin": "2026-11-12",
+    "parametros": {
+      "fechaInicio": "12/11/2026",
+      "fechaFinal": "12/11/2026",
+      "ProductoId": "736",
+      "OrigenId": "-1",
+      "Origen": "Todos",
+      "DestinoId": "140",
+      "Destino": "Jalisco: Mercado de Abasto de Guadalajara",
+      "PreciosPorId": "1",
+      "RegistrosPorPagina": "500"
+    }
+  }
+}

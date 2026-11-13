@@ -1,0 +1,705 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+	<HEAD>
+		<title>FrutasYHortalizas</title>
+		<meta content="Microsoft Visual Studio .NET 7.1" name="GENERATOR">
+		<meta content="Visual Basic .NET 7.1" name="CODE_LANGUAGE">
+		<meta content="JavaScript" name="vs_defaultClientScript">
+		<meta content="http://schemas.microsoft.com/intellisense/ie5" name="vs_targetSchema">
+		<LINK href="../../../../Diseno/Estilos/estilo.css" type="text/css" rel="stylesheet">
+		<LINK title="Aqua" media="all" href="../../../../Diseno/jscalendar-1.0/skins/aqua/theme.css"
+			type="text/css" rel="stylesheet">
+		<LINK href="../../../../Diseno/Estilos/estilo.css" type="text/css" rel="stylesheet">
+	</HEAD>
+	<body MS_POSITIONING="GridLayout">
+		<form name="Form1" method="post" action="ConsultaFrutasYHortalizas.aspx" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTI4NDM2MzkyMQ9kFgICAQ9kFkgCAQ8PFgIeBFRleHQFE01lcmNhZG9zIE5hY2lvbmFsZXNkZAIDDw8WAh8ABRNGcnV0YXMgeSBIb3J0YWxpemFzZGQCBQ8PFgIfAAVFRXN0YSBpbmZvcm1hY2nDs24gc2UgYWN0dWFsaXphIGxvcyBkw61hcyBow6FiaWxlcyBkZSBsdW5lcyBhIHZpZXJuZXMuZGQCCQ8PFgIfAAUJUHJvZHVjdG86ZGQCCw8QDxYGHg5EYXRhVmFsdWVGaWVsZAUKUHJvZHVjdG9JZB4NRGF0YVRleHRGaWVsZAUMUHJvZHVjdG9EZXNjHgtfIURhdGFCb3VuZGdkEBXfAQVUb2RvcxBBY2VsZ2EgLSBQcmltZXJhGkFndWFjYXRlIENyaW9sbG8gLSBQcmltZXJhGUFndWFjYXRlIEZ1ZXJ0ZSAtIFByaW1lcmEXQWd1YWNhdGUgSGFzcyAtIFByaW1lcmEdQWd1YWNhdGUgSGFzcyAtIENhbGlkYWQgZXh0cmEjQWd1YWNhdGUgSGFzcyAtIENhbGlkYWQgc3VwZXIgZXh0cmEiQWd1YWNhdGUgSGFzcyBhZGVsYW50YWRvIC0gUHJpbWVyYSJBZ3VhY2F0ZSBIYXNzIGZsb3IgdmllamEgLSBQcmltZXJhGEFndWFjYXRlIFBhZ3VhIC0gUHJpbWVyYRRBam8gQmxhbmNvIC0gUHJpbWVyYRhBam8gQmxhbmNvICMgOCAtIFByaW1lcmEUQWpvIE1vcmFkbyAtIFByaW1lcmEOQXBpbyAtIFByaW1lcmETQmVyZW5qZW5hIC0gUHJpbWVyYRFCZXRhYmVsIC0gUHJpbWVyYRJCcsOzY29saSAtIFByaW1lcmETQ2FjYWh1YXRlIC0gUHJpbWVyYRxDYWxhYmFjaXRhIENyaW9sbGEgLSBQcmltZXJhHUNhbGFiYWNpdGEgSXRhbGlhbmEgLSBQcmltZXJhHUNhbGFiYWNpdGEgcmVnaW9uYWwgLSBQcmltZXJhHkNhbGFiYXphIGRlIGNhc3RpbGxhIC0gUHJpbWVyYRBDYW1vdGUgLSBQcmltZXJhD0Nhw7FhIC0gUHJpbWVyYRZDZWJvbGxhIEJvbGEgLSBQcmltZXJhHUNlYm9sbGEgQm9sYSBncmFuZGUgLSBQcmltZXJhGUNlYm9sbGEgZGUgcmFibyAtIFByaW1lcmEYQ2Vib2xsYSBNb3JhZGEgLSBQcmltZXJhEkNpbGFudHJvIC0gUHJpbWVyYRpDaXJ1ZWxhIEFtYXJpbGxhIC0gUHJpbWVyYRlDaXJ1ZWxhIENsYXVkaWEgLSBQcmltZXJhIkNpcnVlbGEgaHVlc3VkYSBBbWFyaWxsYSAtIFByaW1lcmEeQ2lydWVsYSBodWVzdWRhIFJvamEgLSBQcmltZXJhGkNpcnVlbGEgTW9zY2F0ZWwgLSBQcmltZXJhF0NpcnVlbGEgTmVncmEgLSBQcmltZXJhFkNpcnVlbGEgcGFzYSAtIFByaW1lcmEWQ2lydWVsYSBSb2phIC0gUHJpbWVyYQ5Db2NvIC0gUHJpbWVyYRRDb2wgZ3JhbmRlIC0gUHJpbWVyYRVDb2wgbWVkaWFuYSAtIFByaW1lcmEgQ29sIHNpbiBjbGFzaWZpY2FjacOzbiAtIFByaW1lcmEZQ29saWZsb3IgZ3JhbmRlIC0gUHJpbWVyYRpDb2xpZmxvciBtZWRpYW5hIC0gUHJpbWVyYSVDb2xpZmxvciBzaW4gY2xhc2lmaWNhY2nDs24gLSBQcmltZXJhFUNoYW1wacOxw7NuIC0gUHJpbWVyYRFDaGF5b3RlIC0gUHJpbWVyYR1DaGF5b3RlIHNpbiBlc3BpbmFzIC0gUHJpbWVyYRNDaMOtY2hhcm8gLSBQcmltZXJhHENow61jaGFybyBhcnJ1Z2FkbyAtIFByaW1lcmEXQ2hpbGUgQW5haGVpbSAtIFByaW1lcmEVQ2hpbGUgYW5jaG8gLSBQcmltZXJhGkNoaWxlIENhbGlmb3JuaWEgLSBQcmltZXJhFkNoaWxlIENhbG9ybyAtIFByaW1lcmEWQ2hpbGUgQ2FyaWJlIC0gUHJpbWVyYRNDaGlsZSBDYXQgLSBQcmltZXJhF0NoaWxlIENoaWxhY2EgLSBQcmltZXJhIENoaWxlIGRlIMOBcmJvbCBmcmVzY28gLSBQcmltZXJhHkNoaWxlIGRlIMOBcmJvbCBzZWNvIC0gUHJpbWVyYRVDaGlsZSBEdWxjZSAtIFByaW1lcmEYQ2hpbGUgR3VhamlsbG8gLSBQcmltZXJhGENoaWxlIEhhYmFuZXJvIC0gUHJpbWVyYRhDaGlsZSBIw7puZ2FybyAtIFByaW1lcmEZQ2hpbGUgSmFsYXBlw7FvIC0gUHJpbWVyYRdDaGlsZSBNaXJhc29sIC0gUHJpbWVyYRdDaGlsZSBQYXNpbGxhIC0gUHJpbWVyYSBDaGlsZSBQaW1pZW50byBtb3Jyw7NuIC0gUHJpbWVyYRdDaGlsZSBQb2JsYW5vIC0gUHJpbWVyYRtDaGlsZSBQdXlhIGZyZXNjbyAtIFByaW1lcmEZQ2hpbGUgUHV5YSBzZWNvIC0gUHJpbWVyYRdDaGlsZSBTZXJyYW5vIC0gUHJpbWVyYRpEdXJhem5vIEFtYXJpbGxvIC0gUHJpbWVyYRxEdXJhem5vIE1lbG9jb3TDs24gLSBQcmltZXJhGER1cmF6bm8gUHJpc2NvIC0gUHJpbWVyYQ9Fam90ZSAtIFByaW1lcmEVRWpvdGUgbGFyZ28gLSBQcmltZXJhF0Vqb3RlIHJlZG9uZG8gLSBQcmltZXJhD0Vsb3RlIC0gUHJpbWVyYRZFbG90ZSBncmFuZGUgLSBQcmltZXJhF0Vsb3RlIG1lZGlhbm8gLSBQcmltZXJhEUVwYXpvdGUgLSBQcmltZXJhFEVzcMOhcnJhZ28gLSBQcmltZXJhEkVzcGluYWNhIC0gUHJpbWVyYQ9GcmVzYSAtIFByaW1lcmEYRnJlc2EgQ2hhbmRsZXIgLSBQcmltZXJhF0dyYW5hZGEgQ2hpbmEgLSBQcmltZXJhFkdyYW5hZGEgUm9qYSAtIFByaW1lcmETR3VhbmFiYW5hIC0gUHJpbWVyYRFHdWF5YWJhIC0gUHJpbWVyYRRIYWJhIHZlcmRlIC0gUHJpbWVyYRFKYW1haWNhIC0gUHJpbWVyYRFKw61jYW1hIC0gUHJpbWVyYRlKw61jYW1hIG1lZGlhbmEgLSBQcmltZXJhG0rDrWNhbWEgcGnDsWF0ZXJhIC0gUHJpbWVyYQ5LaXdpIC0gUHJpbWVyYSBMZWNodWdhIE9yZWpvbmEgZ3JhbmRlIC0gUHJpbWVyYSxMZWNodWdhIE9yZWpvbmEgc2luIGNsYXNpZmljYWNpw7NuIC0gUHJpbWVyYSFMZWNodWdhIFJvbWFuaXRhIGdyYW5kZSAtIFByaW1lcmEiTGVjaHVnYSBSb21hbml0YSBtZWRpYW5hIC0gUHJpbWVyYS1MZWNodWdhIFJvbWFuaXRhIHNpbiBjbGFzaWZpY2FjacOzbiAtIFByaW1lcmEOTGltYSAtIFByaW1lcmEeTGltw7NuIGMvc2VtaWxsYSAjIDIgLSBQcmltZXJhHkxpbcOzbiBjL3NlbWlsbGEgIyAzIC0gUHJpbWVyYR5MaW3Ds24gYy9zZW1pbGxhICMgNCAtIFByaW1lcmEeTGltw7NuIGMvc2VtaWxsYSAjIDUgLSBQcmltZXJhLUxpbcOzbiBjL3NlbWlsbGEgc2luIGNsYXNpZmljYWNpw7NuIC0gUHJpbWVyYRpMaW3Ds24gcy9zZW1pbGxhIC0gUHJpbWVyYQ9NYW1leSAtIFByaW1lcmETTWFuZGFyaW5hIC0gUHJpbWVyYRtNYW5kYXJpbmEgTcOzbmljYSAtIFByaW1lcmEZTWFuZGFyaW5hIFJleW5hIC0gUHJpbWVyYR1NYW5kYXJpbmEgVGFuZ2VyaW5hIC0gUHJpbWVyYRdNYW5nbyBBdGF1bGZvIC0gUHJpbWVyYRdNYW5nbyBDcmlvbGxvIC0gUHJpbWVyYRVNYW5nbyBIYWRlbiAtIFByaW1lcmEUTWFuZ28gS2VudCAtIFByaW1lcmEWTWFuZ28gTWFuaWxhIC0gUHJpbWVyYRlNYW5nbyBNYW5pbGlsbGEgLSBQcmltZXJhE01hbmdvIE9ybyAtIFByaW1lcmEVTWFuZ28gVG9tbXkgLSBQcmltZXJhIk1hbnphbmEgR29sZGVuIERlbGljaW91cyAtIFByaW1lcmEfTWFuemFuYSBSZWQgRGVsaWNpb3VzIC0gUHJpbWVyYRpNYW56YW5hIFN0YXJraW5nIC0gUHJpbWVyYSBNZWzDs24gQ2FudGFsb3VwZSAjIDEyIC0gUHJpbWVyYR9NZWxvbiBDYW50YWxvdXBlICMgMTQgLSBQcmltZXJhIE1lbMOzbiBDYW50YWxvdXBlICMgMTUgLSBQcmltZXJhIE1lbMOzbiBDYW50YWxvdXBlICMgMTYgLSBQcmltZXJhIE1lbMOzbiBDYW50YWxvdXBlICMgMTggLSBQcmltZXJhIE1lbMOzbiBDYW50YWxvdXBlICMgMjIgLSBQcmltZXJhIE1lbMOzbiBDYW50YWxvdXBlICMgMjMgLSBQcmltZXJhIE1lbMOzbiBDYW50YWxvdXBlICMgMjcgLSBQcmltZXJhH01lbG9uIENhbnRhbG91cGUgIyAzNiAtIFByaW1lcmEgTWVsw7NuIENhbnRhbG91cGUgIyA0NSAtIFByaW1lcmEgTWVsw7NuIENhbnRhbG91cGUgIyA0OCAtIFByaW1lcmEfTWVsw7NuIENhbnRhbG91cGUgIyA5IC0gUHJpbWVyYS5NZWzDs24gQ2FudGFsb3VwZSBzaW4gY2xhc2lmaWNhY2nDs24gLSBQcmltZXJhE01lbWJyaWxsbyAtIFByaW1lcmEQTmFuY2hlIC0gUHJpbWVyYRdOYXJhbmphIEFncmlhIC0gUHJpbWVyYR1OYXJhbmphIE1hcmNoIGNoaWNhIC0gUHJpbWVyYR5OYXJhbmphIE1hcmNoIGdyYW5kZSAtIFByaW1lcmEfTmFyYW5qYSBNYXJjaCBtZWRpYW5hIC0gUHJpbWVyYSBOYXJhbmphIFZhbGVuY2lhIGNoaWNhIC0gUHJpbWVyYSFOYXJhbmphIFZhbGVuY2lhIGdyYW5kZSAtIFByaW1lcmEiTmFyYW5qYSBWYWxlbmNpYSBtZWRpYW5hIC0gUHJpbWVyYRNOZWN0YXJpbmEgLSBQcmltZXJhD05vcGFsIC0gUHJpbWVyYRZOb3BhbCBncmFuZGUgLSBQcmltZXJhDk51ZXogLSBQcmltZXJhGE51ZXogLSBXZXN0ZXJuIC0gUHJpbWVyYSBOdWV6IGPDoXNjYXJhIGRlIHBhcGVsIC0gUHJpbWVyYRZOdWV6IFdpY2hpdGEgLSBQcmltZXJhEk9yw6lnYW5vIC0gUHJpbWVyYRRQYXBhIEFscGhhIC0gUHJpbWVyYRZQYXBhIEdhbGVhbmEgLSBQcmltZXJhE1BhcGEgR2VtYSAtIFByaW1lcmEXUGFwYSBNYXJjaWFuYSAtIFByaW1lcmEVUGFwYSBSb3VzZXQgLSBQcmltZXJhGFBhcGEgU2FuIEpvc8OpIC0gUHJpbWVyYRlQYXBheWEgQW1hcmlsbGEgLSBQcmltZXJhGFBhcGF5YSBNYXJhZG9sIC0gUHJpbWVyYRVQYXBheWEgUm9qYSAtIFByaW1lcmEQUGVwaW5vIC0gUHJpbWVyYRVQZXJhIMOBbmdlbCAtIFByaW1lcmEYUGVyYSBBc2nDoXRpY2EgLSBQcmltZXJhHVBlcmEgQmFydGxldHQgIyAxMzUgLSBQcmltZXJhFFBlcmEgQm9zY28gLSBQcmltZXJhHVBlcmEgRMK0YW5qb3UgIyAxMDAgLSBQcmltZXJhFlBlcmEgTGVjaGVyYSAtIFByaW1lcmEaUGVyYSBNYW50ZXF1aWxsYSAtIFByaW1lcmEXUGVyYSBQYXJhw61zbyAtIFByaW1lcmERUGVyZWppbCAtIFByaW1lcmEVUGnDsWEgY2hpY2EgLSBQcmltZXJhFlBpw7FhIGdyYW5kZSAtIFByaW1lcmEXUGnDsWEgbWVkaWFuYSAtIFByaW1lcmESUGlzdGFjaGUgLSBQcmltZXJhEFBpdGF5YSAtIFByaW1lcmEaUGzDoXRhbm8gQ2hpYXBhcyAtIFByaW1lcmEvUGzDoXRhbm8gQ2hpYXBhcyBjYWxpZGFkIGV4cG9ydGFjacOzbiAtIFByaW1lcmEbUGzDoXRhbm8gRG9taW5pY28gLSBQcmltZXJhIFBsw6F0YW5vIEVuYW5vLUdpZ2FudGUgLSBQcmltZXJhGFBsw6F0YW5vIE1hY2hvIC0gUHJpbWVyYRpQbMOhdGFubyBNYW56YW5vIC0gUHJpbWVyYRlQbMOhdGFubyBNb3JhZG8gLSBQcmltZXJhF1Bsw6F0YW5vIFBlcmEgLSBQcmltZXJhGlBsw6F0YW5vIFRhYmFzY28gLSBQcmltZXJhG1Bsw6F0YW5vIFZlcmFjcnV6IC0gUHJpbWVyYRFSw6FiYW5vIC0gUHJpbWVyYRhTYW5kw61hIEJsYW5jYSAtIFByaW1lcmEcU2FuZMOtYSBDaGFybGVzdG9uIC0gUHJpbWVyYRlTYW5kw61hIEp1YmlsZWUgLSBQcmltZXJhF1NhbmTDrWEgTmVncmEgLSBQcmltZXJhGVNhbmTDrWEgUGVhY29jayAtIFByaW1lcmEYU2FuZMOtYSBSYXlhZGEgLSBQcmltZXJhGlNhbmTDrWEgU2FuZ3LDrWEgLSBQcmltZXJhE1RhbWFyaW5kbyAtIFByaW1lcmESVGVqb2NvdGUgLSBQcmltZXJhFVRvbWF0ZSBCb2xhIC0gUHJpbWVyYRpUb21hdGUgU2FsYWRldHRlIC0gUHJpbWVyYRZUb21hdGUgVmVyZGUgLSBQcmltZXJhGFRvcm9uamEgQmxhbmNhIC0gUHJpbWVyYRZUb3JvbmphIFJv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IEZlZGVyYWwHRHVyYW5nbwpHdWFuYWp1YXRvCEd1ZXJyZXJvB0hpZGFsZ28MSW1wb3J0YWNpw7NuB0phbGlzY28HTcOpeGljbwpNaWNob2Fjw6FuB01vcmVsb3MITmFjaW9uYWwHTmF5YXJpdAtOdWV2byBMZcOzbgZPYXhhY2EGUHVlYmxhClF1ZXLDqXRhcm8MUXVpbnRhbmEgUm9vEFNhbiBMdWlzIFBvdG9zw60PU2luIEVzcGVjaWZpY2FyB1NpbmFsb2EGU29ub3JhB1RhYmFzY28KVGFtYXVsaXBhcwhUbGF4Y2FsYQhWZXJhY3J1eghZdWNhdMOhbglaYWNhdGVjYXMVJAItMQExATIBMwE0ATcBOAE1ATYBOQIxMAIxMQIxMgIxMwI1NQIxNAIxNQIxNgIxNwI0NAIxOAIxOQIyMAIyMQIyMgIyMwIyNAEwAjI1AjI2AjI3AjI4AjI5AjMwAjMxAjMyFCsDJGdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2RkAhEPDxYCHwAFE01lcmNhZG8gZGUgZGVzdGlubzpkZAITDxAPFgYfAQUJRGVzdGlub0lkHwIFC0Rlc3Rpbm9EZXNjHwNnZBAVMgVUb2Rvcz9BZ3Vhc2NhbGllbnRlczogQ2VudHJvIENvbWVyY2lhbCBBZ3JvcGVjdWFyaW8gZGUgQWd1YXNjYWxpZW50ZXMyQmFqYSBDYWxpZm9ybmlhIDogQ2VudHJhbCBkZSBBYmFzdG8gSU5ESUEsIFRpanVhbmE1QmFqYSBDYWxpZm9ybmlhIFN1cjogVW5pw7NuIGRlIENvbWVyY2lhbnRlcyBkZSBMYSBQYXo1Q2FtcGVjaGU6IE1lcmNhZG8gIlBlZHJvIFPDoWlueiBkZSBCYXJhbmRhIiwgQ2FtcGVjaGUyQ29haHVpbGE6IENlbnRyYWwgZGUgQWJhc3RvIGRlIExhIExhZ3VuYSwgVG9ycmXDs24qQ29saW1hOiBDZW50cm9zIGRlIGRpc3RyaWJ1Y2nDs24gZGUgQ29saW1hL0NoaWFwYXM6IENlbnRyYWwgZGUgQWJhc3RvIGRlIFR1eHRsYSBHdXRpw6lycmV6EkNoaWFwYXM6IFRhcGFjaHVsYSlDaGlodWFodWE6IENlbnRyYWwgZGUgQWJhc3RvIGRlIENoaWh1YWh1YStDaGlodWFodWE6IE1lcmNhZG8gZGUgQWJhc3RvIGRlIENkLiBKdcOhcmV6JkRGOiBDZW50cmFsIGRlIEFiYXN0byBkZSBJenRhcGFsYXBhIERGLER1cmFuZ286IENlbnRyYWwgZGUgQWJhc3RvICJGcmFuY2lzY28gVmlsbGEiO0R1cmFuZ286IENlbnRybyBkZSBEaXN0cmlidWNpw7NuIHkgQWJhc3RvIGRlIEfDs21leiBQYWxhY2lvJkd1YW5hanVhdG86IENlbnRyYWwgZGUgQWJhc3RvIGRlIExlw7NuOkd1YW5hanVhdG86IE1lcmNhZG8gZGUgQWJhc3RvIGRlIENlbGF5YSAoIkJlbml0byBKdcOhcmV6IikmR3VhbmFqdWF0bzogTcOzZHVsbyBkZSBBYmFzdG8gSXJhcHVhdG8oR3VlcnJlcm86IENlbnRyYWwgZGUgQWJhc3RvcyBkZSBBY2FwdWxjbyNHdWVycmVybzogQ2hpbHBhbmNpbmdvIGRlIGxvcyBCcmF2byVIaWRhbGdvOiBDZW50cmFsIGRlIEFiYXN0byBkZSBQYWNodWNhKUphbGlzY286IE1lcmNhZG8gZGUgQWJhc3RvIGRlIEd1YWRhbGFqYXJhL0phbGlzY286IE1lcmNhZG8gRmVsaXBlIMOBbmdlbGVzIGRlIEd1YWRhbGFqYXJhJk3DqXhpY286IENlbnRyYWwgZGUgQWJhc3RvIGRlIEVjYXRlcGVjJE3DqXhpY286IENlbnRyYWwgZGUgQWJhc3RvIGRlIFRvbHVjYShNaWNob2Fjw6FuOiBNZXJjYWRvIGRlIEFiYXN0byBkZSBNb3JlbGlhJU1vcmVsb3M6IENlbnRyYWwgZGUgQWJhc3RvIGRlIEN1YXV0bGE1TW9yZWxvczogTWVyY2FkbyAiQWRvbGZvIEzDs3BleiBNYXRlb3MiIGRlIEN1ZXJuYXZhY2E6TmF5YXJpdDogTWVyY2FkbyBkZSBhYmFzdG8gJ0Fkb2xmbyBMw7NwZXogTWF0ZW9zJyBkZSBUZXBpYx5OYXlhcml0OiBOYXlhcmFiYXN0b3MgZGUgVGVwaWNGTnVldm8gTGXDs246IE1lcmNhZG8gZGUgQWJhc3RvICJFc3RyZWxsYSIgZGUgU2FuIE5pY29sw6FzIGRlIGxvcyBHYXJ6YSNPYXhhY2E6IE3Ds2R1bG8gZGUgQWJhc3RvIGRlIE9heGFjYSNQdWVibGE6IENlbnRyYWwgZGUgQWJhc3RvIGRlIFB1ZWJsYStRdWVyw6l0YXJvOiBNZXJjYWRvIGRlIEFiYXN0byBkZSBRdWVyw6l0YXJvL1F1aW50YW5hIFJvbzogTWVyY2FkbyBkZSBDaGV0dW1hbCwgUXVpbnRhbmEgUm9vJ1F1aW50YW5hIFJvbzogTcOzZHVsbyBkZSBBYmFzdG8gQ2FuY8O6bjZTYW4gTHVpcyBQb3Rvc8OtOiBDZW50cm8gZGUgQWJhc3RvIGRlIFNhbiBMdWlzIFBvdG9zw60nU2luYWxvYTogQ2VudHJhbCBkZSBBYmFzdG8gZGUgQ3VsaWFjw6FuJFNpbmFsb2E6IFpvbmEgZGUgQWJhc3RvIGRlIE1hemF0bMOhbilTb25vcmE6IENlbnRyYWwgZGUgQWJhc3RvIGRlIENkLiBPYnJlZ8Ozbj1Tb25vcmE6IE1lcmNhZG8gZGUgQWJhc3RvICJGcmFuY2lzY28gSS4gTWFkZXJvIiBkZSBIZXJtb3NpbGxvKlRhYmFzY286IENlbnRyYWwgZGUgQWJhc3RvIGRlIFZpbGxhaGVybW9zYShUYW1hdWxpcGFzOiBNw7NkdWxvIGRlIEFiYXN0byBkZSBSZXlub3NhO1RhbWF1bGlwYXM6IE3Ds2R1bG8gZGUgQWJhc3RvIGRlIFRhbXBpY28sIE1hZGVybyB5IEFsdGFtaXJhJVZlcmFjcnV6OiBDZW50cmFsIGRlIEFiYXN0byBkZSBKYWxhcGEqVmVyYWNydXo6IENlbnRyYWwgZGUgQWJhc3RvIGRlIE1pbmF0aXRsw6FuG1ZlcmFjcnV6OiBNZXJjYWRvIE1hbGlicsOhbiZZdWNhdMOhbjogQ2VudHJhbCBkZSBBYmFzdG8gZGUgTcOpcmlkYSRZdWNhdMOhbjogQ2VudHJvIE1heW9yaXN0YSBPeGt1dHpjYWIjWXVjYXTDoW46IE1lcmNhZG8gIkNhc2EgZGVsIFB1ZWJsbyIpWmFjYXRlY2FzOiBNZXJjYWRvIGRlIEFiYXN0byBkZSBaYWNhdGVjYXMVMgItMQIxMAIzMwIyMAI0MAI1MAI4MAI3MAI3MQI2MQI2MwMxMDADMTAyAzEwMQMxMTADMTEyAzExMQMxMjEDMTIyAzEzMAMxNDADMTQxAzE1MQMxNTADMTYwAzE3MAMxNzIDMTgwAzE4MQMxOTADMjAwAzIxMAMyMjADMjMwAzIzMQMyNDADMjUwAzI1MgMyNjEDMjYwAzI3MAMyODEDMjgwAzMwMQMzMDIDMzA2AzMxMAMzMTEDMzEyAzMyMBQrAzJnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2RkAhUPDxYCHwAFE0LDunNxdWVkYSBkZWwgZMOtYTpkZAIaDw8WAh8ABQJhbGRkAiAPDxYCHwAFDFByZWNpb3MgcG9yOmRkAiUPDxYCHwBlZGQCKA8PFgIeCEltYWdlVXJsBSsuLi8uLi8uLi8uLi9EaXNlbm8vSW1hZ2VuZXMvYm90UmVncmVzYXIuZ2lmZGQCKg8PFgIfBAUpLi4vLi4vLi4vLi4vRGlzZW5vL0ltYWdlbmVzL2JvdEJ1c2Nhci5naWZkZAIsDw8WAh8ABRNJbmZvcm1lcyBFc3BlY2lhbGVzZGQCLg8PFgIfAAUnUmVzdW1lbiBTZW1hbmFsIGRlIEZydXRhcyBZIEhvcnRhbGl6YXM6ZGQCMA8PFgIfAAUTTWVyY2FkbyBkZSBEZXN0aW5vOmRkAjIPEA8WBh8BBQlEZXN0aW5vSWQfAgULRGVzdGlub0Rlc2MfA2dkEBUyClNlbGVjY2lvbmU/QWd1YXNjYWxpZW50ZXM6IENlbnRybyBDb21lcmNpYWwgQWdyb3BlY3VhcmlvIGRlIEFndWFzY2FsaWVudGVzMkJhamEgQ2FsaWZvcm5pYSA6IENlbnRyYWwgZGUgQWJhc3RvIElORElBLCBUaWp1YW5hNUJhamEgQ2FsaWZvcm5pYSBTdXI6IFVuacOzbiBkZSBDb21lcmNpYW50ZXMgZGUgTGEgUGF6NUNhbXBlY2hlOiBNZXJjYWRvICJQZWRybyBTw6FpbnogZGUgQmFyYW5kYSIsIENhbXBlY2hlMkNvYWh1aWxhOiBDZW50cmFsIGRlIEFiYXN0byBkZSBMYSBMYWd1bmEsIFRvcnJlw7NuKkNvbGltYTogQ2VudHJvcyBkZSBkaXN0cmlidWNpw7NuIGRlIENvbGltYS9DaGlhcGFzOiBDZW50cmFsIGRlIEFiYXN0byBkZSBUdXh0bGEgR3V0acOpcnJlehJDaGlhcGFzOiBUYXBhY2h1bGEpQ2hpaHVhaHVhOiBDZW50cmFsIGRlIEFiYXN0byBkZSBDaGlodWFodWErQ2hpaHVhaHVhOiBNZXJjYWRvIGRlIEFiYXN0byBkZSBDZC4gSnXDoXJleiZERjogQ2VudHJhbCBkZSBBYmFzdG8gZGUgSXp0YXBhbGFwYSBERixEdXJhbmdvOiBDZW50cmFsIGRlIEFiYXN0byAiRnJhbmNpc2NvIFZpbGxhIjtEdXJhbmdvOiBDZW50cm8gZGUgRGlzdHJpYnVjacOzbiB5IEFiYXN0byBkZSBHw7NtZXogUGFsYWNpbyZHdWFuYWp1YXRvOiBDZW50cmFsIGRlIEFiYXN0byBkZSBMZcOzbjpHdWFuYWp1YXRvOiBNZXJjYWRvIGRlIEFiYXN0byBkZSBDZWxheWEgKCJCZW5pdG8gSnXDoXJleiIpJkd1YW5hanVhdG86IE3Ds2R1bG8gZGUgQWJhc3RvIElyYXB1YXRvKEd1ZXJyZXJvOiBDZW50cmFsIGRlIEFiYXN0b3MgZGUgQWNhcHVsY28jR3VlcnJlcm86IENoaWxwYW5jaW5nbyBkZSBsb3MgQnJhdm8lSGlkYWxnbzogQ2VudHJhbCBkZSBBYmFzdG8gZGUgUGFjaHVjYSlKYWxpc2NvOiBNZXJjYWRvIGRlIEFiYXN0byBkZSBHdWFkYWxhamFyYS9KYWxpc2NvOiBNZXJjYWRvIEZlbGlwZSDDgW5nZWxlcyBkZSBHdWFkYWxhamFyYSZNw6l4aWNvOiBDZW50cmFsIGRlIEFiYXN0byBkZSBFY2F0ZXBlYyRNw6l4aWNvOiBDZW50cmFsIGRlIEFiYXN0byBkZSBUb2x1Y2EoTWljaG9hY8OhbjogTWVyY2FkbyBkZSBBYmFzdG8gZGUgTW9yZWxpYSVNb3JlbG9zOiBDZW50cmFsIGRlIEFiYXN0byBkZSBDdWF1dGxhNU1vcmVsb3M6IE1lcmNhZG8gIkFkb2xmbyBMw7NwZXogTWF0ZW9zIiBkZSBDdWVybmF2YWNhOk5heWFyaXQ6IE1lcmNhZG8gZGUgYWJhc3RvICdBZG9sZm8gTMOzcGV6IE1hdGVvcycgZGUgVGVwaWMeTmF5YXJpdDogTmF5YXJhYmFzdG9zIGRlIFRlcGljRk51ZXZvIExlw7NuOiBNZXJjYWRvIGRlIEFiYXN0byAiRXN0cmVsbGEiIGRlIFNhbiBOaWNvbMOhcyBkZSBsb3MgR2FyemEjT2F4YWNhOiBNw7NkdWxvIGRlIEFiYXN0byBkZSBPYXhhY2EjUHVlYmxhOiBDZW50cmFsIGRlIEFiYXN0byBkZSBQdWVibGErUXVlcsOpdGFybzogTWVyY2FkbyBkZSBBYmFzdG8gZGUgUXVlcsOpdGFyby9RdWludGFuYSBSb286IE1lcmNhZG8gZGUgQ2hldHVtYWwsIFF1aW50YW5hIFJvbydRdWludGFuYSBSb286IE3Ds2R1bG8gZGUgQWJhc3RvIENhbmPDum42U2FuIEx1aXMgUG90b3PDrTogQ2VudHJvIGRlIEFiYXN0byBkZSBTYW4gTHVpcyBQb3Rvc8OtJ1NpbmFsb2E6IENlbnRyYWwgZGUgQWJhc3RvIGRlIEN1bGlhY8OhbiRTaW5hbG9hOiBab25hIGRlIEFiYXN0byBkZSBNYXphdGzDoW4pU29ub3JhOiBDZW50cmFsIGRlIEFiYXN0byBkZSBDZC4gT2JyZWfDs249U29ub3JhOiBNZXJjYWRvIGRlIEFiYXN0byAiRnJhbmNpc2NvIEkuIE1hZGVybyIgZGUgSGVybW9zaWxsbypUYWJhc2NvOiBDZW50cmFsIGRlIEFiYXN0byBkZSBWaWxsYWhlcm1vc2EoVGFtYXVsaXBhczogTcOzZHVsbyBkZSBBYmFzdG8gZGUgUmV5bm9zYTtUYW1hdWxpcGFzOiBNw7NkdWxvIGRlIEFiYXN0byBkZSBUYW1waWNvLCBNYWRlcm8geSBBbHRhbWlyYSVWZXJhY3J1ejogQ2VudHJhbCBkZSBBYmFzdG8gZGUgSmFsYXBhKlZlcmFjcnV6OiBDZW50cmFsIGRlIEFiYXN0byBkZSBNaW5hdGl0bMOhbhtWZXJhY3J1ejogTWVyY2FkbyBNYWxpYnLDoW4mWXVjYXTDoW46IENlbnRyYWwgZGUgQWJhc3RvIGRlIE3DqXJpZGEkWXVjYXTDoW46IENlbnRybyBNYXlvcmlzdGEgT3hrdXR6Y2FiI1l1Y2F0w6FuOiBNZXJjYWRvICJDYXNhIGRlbCBQdWVibG8iKVphY2F0ZWNhczogTWVyY2FkbyBkZSBBYmFzdG8gZGUgWmFjYXRlY2FzFTICLTECMTACMzMCMjACNDACNTACODACNzACNzECNjECNjMDMTAwAzEwMgMxMDEDMTEwAzExMgMxMTEDMTIxAzEyMgMxMzADMTQwAzE0MQMxNTEDMTUwAzE2MAMxNzADMTcyAzE4MAMxODEDMTkwAzIwMAMyMTADMjIwAzIzMAMyMzEDMjQwAzI1MAMyNTIDMjYxAzI2MAMyNzADMjgxAzI4MAMzMDEDMzAyAzMwNgMzMTADMzExAzMxMgMzMjAUKwMyZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dkZAI0Dw8WAh8ABQlDb25zdWx0YTpkZAI3Dw8WAh8ABQlzZW1hbmEgZGVkZAI4DxBkDxYMZgIBAgICAwIEAgUCBgIHAggCCQIKAgsWDBAFBUVuZXJvBQVFbmVyb2cQBQdGZWJyZXJvBQdGZWJyZXJvZxAFBU1hcnpvBQVNYXJ6b2cQBQVBYnJpbAUFQWJyaWxnEAUETWF5bwUETWF5b2cQBQVKdW5pbwUFSnVuaW9nEAUFSnVsaW8FBUp1bGlvZxAFBkFnb3N0bwUGQWdvc3RvZxAFClNlcHRpZW1icmUFClNlcHRpZW1icmVnEAUHT2N0dWJyZQUHT2N0dWJyZWcQBQlOb3ZpZW1icmUFCU5vdmllbWJyZWcQBQlEaWNpZW1icmUFCURpY2llbWJyZWdkZAI5Dw8WAh8ABQJkZWRkAjoPEA8WBh8BBQRZZWFyHwIFBFllYXIfA2dkEBUdBDIwMjYEMjAyNQQyMDI0BDIwMjMEMjAyMgQyMDIxBDIwMjAEMjAxOQQyMDE4BDIwMTcEMjAxNgQyMDE1BDIwMTQEMjAxMwQyMDEyBDIwMTEEMjAxMAQyMDA5BDIwMDgEMjAwNwQyMDA2BDIwMDUEMjAwNAQyMDAzBDIwMDIEMjAwMQQyMDAwBDE5OTkEMTk5OBUdBDIwMjYEMjAyNQQyMDI0BDIwMjMEMjAyMgQyMDIxBDIwMjAEMjAxOQQyMDE4BDIwMTcEMjAxNgQyMDE1BDIwMTQEMjAxMwQyMDEyBDIwMTEEMjAxMAQyMDA5BDIwMDgEMjAwNwQyMDA2BDIwMDUEMjAwNAQyMDAzBDIwMDIEMjAwMQQyMDAwBDE5OTkEMTk5OBQrAx1nZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2RkAjwPDxYCHwBlZGQCPg8PFgIfBAUrLi4vLi4vLi4vLi4vRGlzZW5vL0ltYWdlbmVzL2JvdFJlZ3Jlc2FyLmdpZmRkAkAPDxYCHwQFKS4uLy4uLy4uLy4uL0Rpc2Vuby9JbWFnZW5lcy9ib3RCdXNjYXIuZ2lmZGQCQg8PFgIfAAUmUmVzdW1lbiBNZW5zdWFsIGRlIEZydXRhcyBZIEhvcnRhbGl6YXNkZAJGDxAPFgYfAQUJRGVzdGlub0lkHwIFC0Rlc3Rpbm9EZXNjHwNnZBAVMgpTZWxlY2Npb25lP0FndWFzY2FsaWVudGVzOiBDZW50cm8gQ29tZXJjaWFsIEFncm9wZWN1YXJpbyBkZSBBZ3Vhc2NhbGllbnRlczJCYWphIENhbGlmb3JuaWEgOiBDZW50cmFsIGRlIEFiYXN0byBJTkRJQSwgVGlqdWFuYTVCYWphIENhbGlmb3JuaWEgU3VyOiBVbmnDs24gZGUgQ29tZXJjaWFudGVzIGRlIExhIFBhejVDYW1wZWNoZTogTWVyY2FkbyAiUGVkcm8gU8OhaW56IGRlIEJhcmFuZGEiLCBDYW1wZWNoZTJDb2FodWlsYTogQ2VudHJhbCBkZSBBYmFzdG8gZGUgTGEgTGFndW5hLCBUb3JyZcOzbipDb2xpbWE6IENlbnRyb3MgZGUgZGlzdHJpYnVjacOzbiBkZSBDb2xpbWEvQ2hpYXBhczogQ2VudHJhbCBkZSBBYmFzdG8gZGUgVHV4dGxhIEd1dGnDqXJyZXoSQ2hpYXBhczogVGFwYWNodWxhKUNoaWh1YWh1YTogQ2VudHJhbCBkZSBBYmFzdG8gZGUgQ2hpaHVhaHVhK0NoaWh1YWh1YTogTWVyY2FkbyBkZSBBYmFzdG8gZGUgQ2QuIEp1w6FyZXomREY6IENlbnRyYWwgZGUgQWJhc3RvIGRlIEl6dGFwYWxhcGEgREYsRHVyYW5nbzogQ2VudHJhbCBkZSBBYmFzdG8gIkZyYW5jaXNjbyBWaWxsYSI7RHVyYW5nbzogQ2VudHJvIGRlIERpc3RyaWJ1Y2nDs24geSBBYmFzdG8gZGUgR8OzbWV6IFBhbGFjaW8mR3VhbmFqdWF0bzogQ2VudHJhbCBkZSBBYmFzdG8gZGUgTGXDs246R3VhbmFqdWF0bzogTWVyY2FkbyBkZSBBYmFzdG8gZGUgQ2VsYXlhICgiQmVuaXRvIEp1w6FyZXoiKSZHdWFuYWp1YXRvOiBNw7NkdWxvIGRlIEFiYXN0byBJcmFwdWF0byhHdWVycmVybzogQ2VudHJhbCBkZSBBYmFzdG9zIGRlIEFjYXB1bGNvI0d1ZXJyZXJvOiBDaGlscGFuY2luZ28gZGUgbG9zIEJyYXZvJUhpZGFsZ286IENlbnRyYWwgZGUgQWJhc3RvIGRlIFBhY2h1Y2EpSmFsaXNjbzogTWVyY2FkbyBkZSBBYmFzdG8gZGUgR3VhZGFsYWphcmEvSmFsaXNjbzogTWVyY2FkbyBGZWxpcGUgw4FuZ2VsZXMgZGUgR3VhZGFsYWphcmEmTcOpeGljbzogQ2VudHJhbCBkZSBBYmFzdG8gZGUgRWNhdGVwZWMkTcOpeGljbzogQ2VudHJhbCBkZSBBYmFzdG8gZGUgVG9sdWNhKE1pY2hvYWPDoW46IE1lcmNhZG8gZGUgQWJhc3RvIGRlIE1vcmVsaWElTW9yZWxvczogQ2VudHJhbCBkZSBBYmFzdG8gZGUgQ3VhdXRsYTVNb3JlbG9zOiBNZXJjYWRvICJBZG9sZm8gTMOzcGV6IE1hdGVvcyIgZGUgQ3Vlcm5hdmFjYTpOYXlhcml0OiBNZXJjYWRvIGRlIGFiYXN0byAnQWRvbGZvIEzDs3BleiBNYXRlb3MnIGRlIFRlcGljHk5heWFyaXQ6IE5heWFyYWJhc3RvcyBkZSBUZXBpY0ZOdWV2byBMZcOzbjogTWVyY2FkbyBkZSBBYmFzdG8gIkVzdHJlbGxhIiBkZSBTYW4gTmljb2zDoXMgZGUgbG9zIEdhcnphI09heGFjYTogTcOzZHVsbyBkZSBBYmFzdG8gZGUgT2F4YWNhI1B1ZWJsYTogQ2VudHJhbCBkZSBBYmFzdG8gZGUgUHVlYmxhK1F1ZXLDqXRhcm86IE1lcmNhZG8gZGUgQWJhc3RvIGRlIFF1ZXLDqXRhcm8vUXVpbnRhbmEgUm9vOiBNZXJjYWRvIGRlIENoZXR1bWFsLCBRdWludGFuYSBSb28nUXVpbnRhbmEgUm9vOiBNw7NkdWxvIGRlIEFiYXN0byBDYW5jw7puNlNhbiBMdWlzIFBvdG9zw606IENlbnRybyBkZSBBYmFzdG8gZGUgU2FuIEx1aXMgUG90b3PDrSdTaW5hbG9hOiBDZW50cmFsIGRlIEFiYXN0byBkZSBDdWxpYWPDoW4kU2luYWxvYTogWm9uYSBkZSBBYmFzdG8gZGUgTWF6YXRsw6FuKVNvbm9yYTogQ2VudHJhbCBkZSBBYmFzdG8gZGUgQ2QuIE9icmVnw7NuPVNvbm9yYTogTWVyY2FkbyBkZSBBYmFzdG8gIkZyYW5jaXNjbyBJLiBNYWRlcm8iIGRlIEhlcm1vc2lsbG8qVGFiYXNjbzogQ2VudHJhbCBkZSBBYmFzdG8gZGUgVmlsbGFoZXJtb3NhKFRhbWF1bGlwYXM6IE3Ds2R1bG8gZGUgQWJhc3RvIGRlIFJleW5vc2E7VGFtYXVsaXBhczogTcOzZHVsbyBkZSBBYmFzdG8gZGUgVGFtcGljbywgTWFkZXJvIHkgQWx0YW1pcmElVmVyYWNydXo6IENlbnRyYWwgZGUgQWJhc3RvIGRlIEphbGFwYSpWZXJhY3J1ejogQ2VudHJhbCBkZSBBYmFzdG8gZGUgTWluYXRpdGzDoW4bVmVyYWNydXo6IE1lcmNhZG8gTWFsaWJyw6FuJll1Y2F0w6FuOiBDZW50cmFsIGRlIEFiYXN0byBkZSBNw6lyaWRhJFl1Y2F0w6FuOiBDZW50cm8gTWF5b3Jpc3RhIE94a3V0emNhYiNZdWNhdMOhbjogTWVyY2FkbyAiQ2FzYSBkZWwgUHVlYmxvIilaYWNhdGVjYXM6IE1lcmNhZG8gZGUgQWJhc3RvIGRlIFphY2F0ZWNhcxUyAi0xAjEwAjMzAjIwAjQwAjUwAjgwAjcwAjcxAjYxAjYzAzEwMAMxMDIDMTAxAzExMAMxMTIDMTExAzEyMQMxMjIDMTMwAzE0MAMxNDEDMTUxAzE1MAMxNjADMTcwAzE3MgMxODADMTgxAzE5MAMyMDADMjEwAzIyMAMyMzADMjMxAzI0MAMyNTADMjUyAzI2MQMyNjADMjcwAzI4MQMyODADMzAxAzMwMgMzMDYDMzEwAzMxMQMzMTIDMzIwFCsDMmdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZGQCSA8PFgIfAAUETWVzOmRkAkoPEGQPFgxmAgECAgIDAgQCBQIGAgcCCAIJAgoCCxYMEAUFRW5lcm8FBUVuZXJvZxAFB0ZlYnJlcm8FB0ZlYnJlcm9nEAUFTWFyem8FBU1hcnpvZxAFBUFicmlsBQVBYnJpbGcQBQRNYXlvBQRNYXlvZxAFBUp1bmlvBQVKdW5pb2cQBQVKdWxpbwUFSnVsaW9nEAUGQWdvc3RvBQZBZ29zdG9nEAUKU2VwdGllbWJyZQUKU2VwdGllbWJyZWcQBQdPY3R1YnJlBQdPY3R1YnJlZxAFCU5vdmllbWJyZQUJTm92aWVtYnJlZxAFCURpY2llbWJyZQUJRGljaWVtYnJlZ2RkAkwPDxYCHwAFAmRlZGQCTQ8QDxYGHwEFBFllYXIfAgUEWWVhch8DZ2QQFR0EMjAyNgQyMDI1BDIwMjQEMjAyMwQyMDIyBDIwMjEEMjAyMAQyMDE5BDIwMTgEMjAxNwQyMDE2BDIwMTUEMjAxNAQyMDEzBDIwMTIEMjAxMQQyMDEwBDIwMDkEMjAwOAQyMDA3BDIwMDYEMjAwNQQyMDA0BDIwMDMEMjAwMgQyMDAxBDIwMDAEMTk5OQQxOTk4FR0EMjAyNgQyMDI1BDIwMjQEMjAyMwQyMDIyBDIwMjEEMjAyMAQyMDE5BDIwMTgEMjAxNwQyMDE2BDIwMTUEMjAxNAQyMDEzBDIwMTIEMjAxMQQyMDEwBDIwMDkEMjAwOAQyMDA3BDIwMDYEMjAwNQQyMDA0BDIwMDMEMjAwMgQyMDAxBDIwMDAEMTk5OQQxOTk4FCsDHWdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZGQCTw8PFgIfAGVkZAJRDw8WAh8EBSsuLi8uLi8uLi8uLi9EaXNlbm8vSW1hZ2VuZXMvYm90UmVncmVzYXIuZ2lmZGQCUw8PFgIfBAUpLi4vLi4vLi4vLi4vRGlzZW5vL0ltYWdlbmVzL2JvdEJ1c2Nhci5naWZkZBgBBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WBgUMaWJ0blJlZ3Jlc2FyBQlidG5CdXNjYXIFE2lidG5SZWdyZXNhclNlbWFuYWwFEGJ0bkJ1c2NhclNlbWFuYWwFE2lidG5SZWdyZXNhck1lbnN1YWwFEGJ0bkJ1c2Nhck1lbnN1YWxZwwTNGiVQTEQRAacdbrWn5F5fNQ==" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="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" />
+			<TABLE id="tblPrincipal" style="Z-INDEX: 101; LEFT: 8px; POSITION: absolute; TOP: 8px"
+				cellSpacing="1" cols="1" cellPadding="1" width="100%" align="center" border="0">
+				<TR>
+					<TD>
+						<P>&nbsp;</P>
+						<P>
+							<table id="tblEncabezadoMercado" cellSpacing="0" cellPadding="0" width="100%" align="center"
+								border="0">
+								<TR>
+									<TD class="encabezado" align="center"><span id="lblEncabezadoMercados" class="encabezado">Mercados Nacionales</span></TD>
+								</TR>
+							</table>
+							<TABLE id="tblEncabezado" cellSpacing="0" cellPadding="0" width="100%" align="center" border="0">
+								<TR>
+									<TD align="right" width="15"><IMG alt="" src="../../../../Diseno/Imagenes/imgTablaContenidoIzquierda.gif" border="0"></TD>
+									<TD class="subencabezado" align="center" width="100%"><span id="lblEncabezadoTipoConsulta" class="subencabezado">Frutas y Hortalizas</span></TD>
+									<TD align="left" width="15"><IMG alt="" src="../../../../Diseno/Imagenes/imgTablaContenidoDerecha.gif" border="0"></TD>
+								</TR>
+							</TABLE>
+						</P>
+						<P>
+							<TABLE id="tblActualizacion" cellSpacing="0" cellPadding="0" width="100%" align="center"
+								border="0">
+								<TR>
+									<TD class="encabACT2" align="center"><span id="lblFrecuenciaActualizacion" class="encabACT">Esta información se actualiza los días hábiles de lunes a viernes.</span></TD>
+								</TR>
+							</TABLE>
+						</P>
+
+<P>
+<TABLE id="tblActualizacion" cellSpacing="0" cellPadding="0" width="100%" align="center"border="0">
+<TR>
+<TD class="encabACT2" align="center"><span id="lblTexto" class="encabACT">El "Origen" de los productos de frutas y hortalizas  es de comercialización</span></TD>
+</TR>
+</TABLE>
+</P>
+
+
+						<P>
+							<TABLE id="tblFiltro" cellSpacing="0" cellPadding="0" width="100%" align="center" border="0">
+								<TR>
+									<TD class="encabACT2" align="center" colspan="2"><font color="red" size="2">Mercado "Adolfo López Mateos" de Cuernavaca, Morelos, se actualiza los lunes.</font></TD>
+								</TR>
+								<TR>
+									<TD class="texto" style="HEIGHT: 22px" align="right" width="30%"><STRONG><span id="lblProducto" class="Texto"><b>Producto:</b></span></STRONG></TD>
+									<TD style="HEIGHT: 22px" width="70%" align="left"><select name="ddlProducto" id="ddlProducto" class="Texto">
+	<option selected="selected" value="-1">Todos</option>
+	<option value="31">Acelga - Primera</option>
+	<option value="130">Aguacate Criollo - Primera</option>
+	<option value="131">Aguacate Fuerte - Primera</option>
+	<option value="133">Aguacate Hass - Primera</option>
+	<option value="136">Aguacate Hass - Calidad extra</option>
+	<option value="137">Aguacate Hass - Calidad super extra</option>
+	<option value="135">Aguacate Hass adelantado - Primera</option>
+	<option value="138">Aguacate Hass flor vieja - Primera</option>
+	<option value="139">Aguacate Pagua - Primera</option>
+	<option value="142">Ajo Blanco - Primera</option>
+	<option value="144">Ajo Blanco # 8 - Primera</option>
+	<option value="146">Ajo Morado - Primera</option>
+	<option value="152">Apio - Primera</option>
+	<option value="157">Berenjena - Primera</option>
+	<option value="160">Betabel - Primera</option>
+	<option value="162">Br&#243;coli - Primera</option>
+	<option value="181">Cacahuate - Primera</option>
+	<option value="166">Calabacita Criolla - Primera</option>
+	<option value="170">Calabacita Italiana - Primera</option>
+	<option value="180">Calabacita regional - Primera</option>
+	<option value="169">Calabaza de castilla - Primera</option>
+	<option value="175">Camote - Primera</option>
+	<option value="178">Ca&#241;a - Primera</option>
+	<option value="183">Cebolla Bola - Primera</option>
+	<option value="182">Cebolla Bola grande - Primera</option>
+	<option value="190">Cebolla de rabo - Primera</option>
+	<option value="187">Cebolla Morada - Primera</option>
+	<option value="208">Cilantro - Primera</option>
+	<option value="196">Ciruela Amarilla - Primera</option>
+	<option value="197">Ciruela Claudia - Primera</option>
+	<option value="198">Ciruela huesuda Amarilla - Primera</option>
+	<option value="199">Ciruela huesuda Roja - Primera</option>
+	<option value="200">Ciruela Moscatel - Primera</option>
+	<option value="201">Ciruela Negra - Primera</option>
+	<option value="203">Ciruela pasa - Primera</option>
+	<option value="207">Ciruela Roja - Primera</option>
+	<option value="250">Coco - Primera</option>
+	<option value="253">Col grande - Primera</option>
+	<option value="257">Col mediana - Primera</option>
+	<option value="265">Col sin clasificaci&#243;n - Primera</option>
+	<option value="263">Coliflor grande - Primera</option>
+	<option value="261">Coliflor mediana - Primera</option>
+	<option value="260">Coliflor sin clasificaci&#243;n - Primera</option>
+	<option value="270">Champi&#241;&#243;n - Primera</option>
+	<option value="275">Chayote - Primera</option>
+	<option value="272">Chayote sin espinas - Primera</option>
+	<option value="285">Ch&#237;charo - Primera</option>
+	<option value="279">Ch&#237;charo arrugado - Primera</option>
+	<option value="215">Chile Anaheim - Primera</option>
+	<option value="216">Chile ancho - Primera</option>
+	<option value="221">Chile California - Primera</option>
+	<option value="222">Chile Caloro - Primera</option>
+	<option value="223">Chile Caribe - Primera</option>
+	<option value="220">Chile Cat - Primera</option>
+	<option value="225">Chile Chilaca - Primera</option>
+	<option value="213">Chile de &#193;rbol fresco - Primera</option>
+	<option value="217">Chile de &#193;rbol seco - Primera</option>
+	<option value="227">Chile Dulce - Primera</option>
+	<option value="228">Chile Guajillo - Primera</option>
+	<option value="230">Chile Habanero - Primera</option>
+	<option value="232">Chile H&#250;ngaro - Primera</option>
+	<option value="233">Chile Jalape&#241;o - Primera</option>
+	<option value="236">Chile Mirasol - Primera</option>
+	<option value="237">Chile Pasilla - Primera</option>
+	<option value="239">Chile Pimiento morr&#243;n - Primera</option>
+	<option value="242">Chile Poblano - Primera</option>
+	<option value="238">Chile Puya fresco - Primera</option>
+	<option value="245">Chile Puya seco - Primera</option>
+	<option value="246">Chile Serrano - Primera</option>
+	<option value="290">Durazno Amarillo - Primera</option>
+	<option value="294">Durazno Melocot&#243;n - Primera</option>
+	<option value="297">Durazno Prisco - Primera</option>
+	<option value="302">Ejote - Primera</option>
+	<option value="299">Ejote largo - Primera</option>
+	<option value="304">Ejote redondo - Primera</option>
+	<option value="308">Elote - Primera</option>
+	<option value="306">Elote grande - Primera</option>
+	<option value="307">Elote mediano - Primera</option>
+	<option value="312">Epazote - Primera</option>
+	<option value="314">Esp&#225;rrago - Primera</option>
+	<option value="316">Espinaca - Primera</option>
+	<option value="358">Fresa - Primera</option>
+	<option value="356">Fresa Chandler - Primera</option>
+	<option value="372">Granada China - Primera</option>
+	<option value="373">Granada Roja - Primera</option>
+	<option value="374">Guanabana - Primera</option>
+	<option value="378">Guayaba - Primera</option>
+	<option value="385">Haba verde - Primera</option>
+	<option value="389">Jamaica - Primera</option>
+	<option value="392">J&#237;cama - Primera</option>
+	<option value="396">J&#237;cama mediana - Primera</option>
+	<option value="397">J&#237;cama pi&#241;atera - Primera</option>
+	<option value="399">Kiwi - Primera</option>
+	<option value="401">Lechuga Orejona grande - Primera</option>
+	<option value="403">Lechuga Orejona sin clasificaci&#243;n - Primera</option>
+	<option value="405">Lechuga Romanita grande - Primera</option>
+	<option value="407">Lechuga Romanita mediana - Primera</option>
+	<option value="409">Lechuga Romanita sin clasificaci&#243;n - Primera</option>
+	<option value="413">Lima - Primera</option>
+	<option value="417">Lim&#243;n c/semilla # 2 - Primera</option>
+	<option value="418">Lim&#243;n c/semilla # 3 - Primera</option>
+	<option value="419">Lim&#243;n c/semilla # 4 - Primera</option>
+	<option value="421">Lim&#243;n c/semilla # 5 - Primera</option>
+	<option value="423">Lim&#243;n c/semilla sin clasificaci&#243;n - Primera</option>
+	<option value="426">Lim&#243;n s/semilla - Primera</option>
+	<option value="429">Mamey - Primera</option>
+	<option value="451">Mandarina - Primera</option>
+	<option value="447">Mandarina M&#243;nica - Primera</option>
+	<option value="455">Mandarina Reyna - Primera</option>
+	<option value="459">Mandarina Tangerina - Primera</option>
+	<option value="465">Mango Ataulfo - Primera</option>
+	<option value="469">Mango Criollo - Primera</option>
+	<option value="473">Mango Haden - Primera</option>
+	<option value="479">Mango Kent - Primera</option>
+	<option value="480">Mango Manila - Primera</option>
+	<option value="485">Mango Manililla - Primera</option>
+	<option value="489">Mango Oro - Primera</option>
+	<option value="494">Mango Tommy - Primera</option>
+	<option value="519">Manzana Golden Delicious - Primera</option>
+	<option value="522">Manzana Red Delicious - Primera</option>
+	<option value="526">Manzana Starking - Primera</option>
+	<option value="500">Mel&#243;n Cantaloupe # 12 - Primera</option>
+	<option value="501">Melon Cantaloupe # 14 - Primera</option>
+	<option value="502">Mel&#243;n Cantaloupe # 15 - Primera</option>
+	<option value="503">Mel&#243;n Cantaloupe # 16 - Primera</option>
+	<option value="505">Mel&#243;n Cantaloupe # 18 - Primera</option>
+	<option value="506">Mel&#243;n Cantaloupe # 22 - Primera</option>
+	<option value="507">Mel&#243;n Cantaloupe # 23 - Primera</option>
+	<option value="508">Mel&#243;n Cantaloupe # 27 - Primera</option>
+	<option value="510">Melon Cantaloupe # 36 - Primera</option>
+	<option value="512">Mel&#243;n Cantaloupe # 45 - Primera</option>
+	<option value="513">Mel&#243;n Cantaloupe # 48 - Primera</option>
+	<option value="499">Mel&#243;n Cantaloupe # 9 - Primera</option>
+	<option value="516">Mel&#243;n Cantaloupe sin clasificaci&#243;n - Primera</option>
+	<option value="529">Membrillo - Primera</option>
+	<option value="539">Nanche - Primera</option>
+	<option value="534">Naranja Agria - Primera</option>
+	<option value="536">Naranja March chica - Primera</option>
+	<option value="537">Naranja March grande - Primera</option>
+	<option value="538">Naranja March mediana - Primera</option>
+	<option value="546">Naranja Valencia chica - Primera</option>
+	<option value="549">Naranja Valencia grande - Primera</option>
+	<option value="551">Naranja Valencia mediana - Primera</option>
+	<option value="554">Nectarina - Primera</option>
+	<option value="560">Nopal - Primera</option>
+	<option value="556">Nopal grande - Primera</option>
+	<option value="565">Nuez - Primera</option>
+	<option value="566">Nuez - Western - Primera</option>
+	<option value="563">Nuez c&#225;scara de papel - Primera</option>
+	<option value="567">Nuez Wichita - Primera</option>
+	<option value="607">Or&#233;gano - Primera</option>
+	<option value="740">Papa Alpha - Primera</option>
+	<option value="748">Papa Galeana - Primera</option>
+	<option value="749">Papa Gema - Primera</option>
+	<option value="753">Papa Marciana - Primera</option>
+	<option value="766">Papa Rouset - Primera</option>
+	<option value="767">Papa San Jos&#233; - Primera</option>
+	<option value="620">Papaya Amarilla - Primera</option>
+	<option value="609">Papaya Maradol - Primera</option>
+	<option value="623">Papaya Roja - Primera</option>
+	<option value="771">Pepino - Primera</option>
+	<option value="630">Pera &#193;ngel - Primera</option>
+	<option value="645">Pera Asi&#225;tica - Primera</option>
+	<option value="632">Pera Bartlett # 135 - Primera</option>
+	<option value="626">Pera Bosco - Primera</option>
+	<option value="634">Pera D&#180;anjou # 100 - Primera</option>
+	<option value="638">Pera Lechera - Primera</option>
+	<option value="639">Pera Mantequilla - Primera</option>
+	<option value="640">Pera Para&#237;so - Primera</option>
+	<option value="635">Perejil - Primera</option>
+	<option value="646">Pi&#241;a chica - Primera</option>
+	<option value="648">Pi&#241;a grande - Primera</option>
+	<option value="651">Pi&#241;a mediana - Primera</option>
+	<option value="655">Pistache - Primera</option>
+	<option value="774">Pitaya - Primera</option>
+	<option value="663">Pl&#225;tano Chiapas - Primera</option>
+	<option value="665">Pl&#225;tano Chiapas calidad exportaci&#243;n - Primera</option>
+	<option value="666">Pl&#225;tano Dominico - Primera</option>
+	<option value="670">Pl&#225;tano Enano-Gigante - Primera</option>
+	<option value="723">Pl&#225;tano Macho - Primera</option>
+	<option value="728">Pl&#225;tano Manzano - Primera</option>
+	<option value="727">Pl&#225;tano Morado - Primera</option>
+	<option value="731">Pl&#225;tano Pera - Primera</option>
+	<option value="732">Pl&#225;tano Tabasco - Primera</option>
+	<option value="736">Pl&#225;tano Veracruz - Primera</option>
+	<option value="775">R&#225;bano - Primera</option>
+	<option value="783">Sand&#237;a Blanca - Primera</option>
+	<option value="785">Sand&#237;a Charleston - Primera</option>
+	<option value="791">Sand&#237;a Jubilee - Primera</option>
+	<option value="795">Sand&#237;a Negra - Primera</option>
+	<option value="796">Sand&#237;a Peacock - Primera</option>
+	<option value="799">Sand&#237;a Rayada - Primera</option>
+	<option value="787">Sand&#237;a Sangr&#237;a - Primera</option>
+	<option value="800">Tamarindo - Primera</option>
+	<option value="804">Tejocote - Primera</option>
+	<option value="836">Tomate Bola - Primera</option>
+	<option value="839">Tomate Saladette - Primera</option>
+	<option value="842">Tomate Verde - Primera</option>
+	<option value="811">Toronja Blanca - Primera</option>
+	<option value="824">Toronja Roja - Primera</option>
+	<option value="823">Toronja Roja mediana - Primera</option>
+	<option value="832">Toronja Rosada - Primera</option>
+	<option value="848">Tuna - Primera</option>
+	<option value="845">Tuna Blanca - Primera</option>
+	<option value="851">Uva Blanca - Primera</option>
+	<option value="854">Uva Calmeria - Primera</option>
+	<option value="852">Uva Cardenal - Primera</option>
+	<option value="857">Uva Flame - Primera</option>
+	<option value="858">Uva Globo - Primera</option>
+	<option value="861">Uva Moscatel - Primera</option>
+	<option value="862">Uva pasa - Primera</option>
+	<option value="863">Uva Perlette - Primera</option>
+	<option value="866">Uva Queen - Primera</option>
+	<option value="869">Uva sin semilla - Primera</option>
+	<option value="871">Uva Superior - Primera</option>
+	<option value="872">Uva Thompson - Primera</option>
+	<option value="876">Yerbabuena - Primera</option>
+	<option value="878">Zanahoria le&#241;a - Primera</option>
+	<option value="880">Zanahoria mediana - Primera</option>
+	<option value="884">Zanahoria polvo - Primera</option>
+	<option value="888">Zapote - Primera</option>
+	<option value="891">Zarzamora - Primera</option>
+
+</select><STRONG></STRONG></TD>
+								</TR>
+								<TR>
+									<TD class="texto" style="HEIGHT: 25px" align="right" width="30%"><span id="lblOrigen" class="Texto"><b>Origen:</b></span></TD>
+									<TD style="HEIGHT: 25px" width="70%" align="left"><select name="ddlOrigen" id="ddlOrigen" class="Texto">
+	<option selected="selected" value="-1">Todos</option>
+	<option value="1">Aguascalientes</option>
+	<option value="2">Baja California</option>
+	<option value="3">Baja California Sur</option>
+	<option value="4">Campeche</option>
+	<option value="7">Coahuila</option>
+	<option value="8">Colima</option>
+	<option value="5">Chiapas</option>
+	<option value="6">Chihuahua</option>
+	<option value="9">Distrito Federal</option>
+	<option value="10">Durango</option>
+	<option value="11">Guanajuato</option>
+	<option value="12">Guerrero</option>
+	<option value="13">Hidalgo</option>
+	<option value="55">Importaci&#243;n</option>
+	<option value="14">Jalisco</option>
+	<option value="15">M&#233;xico</option>
+	<option value="16">Michoac&#225;n</option>
+	<option value="17">Morelos</option>
+	<option value="44">Nacional</option>
+	<option value="18">Nayarit</option>
+	<option value="19">Nuevo Le&#243;n</option>
+	<option value="20">Oaxaca</option>
+	<option value="21">Puebla</option>
+	<option value="22">Quer&#233;taro</option>
+	<option value="23">Quintana Roo</option>
+	<option value="24">San Luis Potos&#237;</option>
+	<option value="0">Sin Especificar</option>
+	<option value="25">Sinaloa</option>
+	<option value="26">Sonora</option>
+	<option value="27">Tabasco</option>
+	<option value="28">Tamaulipas</option>
+	<option value="29">Tlaxcala</option>
+	<option value="30">Veracruz</option>
+	<option value="31">Yucat&#225;n</option>
+	<option value="32">Zacatecas</option>
+
+</select><STRONG></STRONG></TD>
+								</TR>
+								<TR>
+									<TD class="texto" align="right" width="30%"><span id="lblDestino" class="Texto"><b>Mercado de destino:</b></span></TD>
+									<TD width="70%" align="left"><select name="ddlDestino" id="ddlDestino" class="Texto">
+	<option selected="selected" value="-1">Todos</option>
+	<option value="10">Aguascalientes: Centro Comercial Agropecuario de Aguascalientes</option>
+	<option value="33">Baja California : Central de Abasto INDIA, Tijuana</option>
+	<option value="20">Baja California Sur: Uni&#243;n de Comerciantes de La Paz</option>
+	<option value="40">Campeche: Mercado &quot;Pedro S&#225;inz de Baranda&quot;, Campeche</option>
+	<option value="50">Coahuila: Central de Abasto de La Laguna, Torre&#243;n</option>
+	<option value="80">Colima: Centros de distribuci&#243;n de Colima</option>
+	<option value="70">Chiapas: Central de Abasto de Tuxtla Guti&#233;rrez</option>
+	<option value="71">Chiapas: Tapachula</option>
+	<option value="61">Chihuahua: Central de Abasto de Chihuahua</option>
+	<option value="63">Chihuahua: Mercado de Abasto de Cd. Ju&#225;rez</option>
+	<option value="100">DF: Central de Abasto de Iztapalapa DF</option>
+	<option value="102">Durango: Central de Abasto &quot;Francisco Villa&quot;</option>
+	<option value="101">Durango: Centro de Distribuci&#243;n y Abasto de G&#243;mez Palacio</option>
+	<option value="110">Guanajuato: Central de Abasto de Le&#243;n</option>
+	<option value="112">Guanajuato: Mercado de Abasto de Celaya (&quot;Benito Ju&#225;rez&quot;)</option>
+	<option value="111">Guanajuato: M&#243;dulo de Abasto Irapuato</option>
+	<option value="121">Guerrero: Central de Abastos de Acapulco</option>
+	<option value="122">Guerrero: Chilpancingo de los Bravo</option>
+	<option value="130">Hidalgo: Central de Abasto de Pachuca</option>
+	<option value="140">Jalisco: Mercado de Abasto de Guadalajara</option>
+	<option value="141">Jalisco: Mercado Felipe &#193;ngeles de Guadalajara</option>
+	<option value="151">M&#233;xico: Central de Abasto de Ecatepec</option>
+	<option value="150">M&#233;xico: Central de Abasto de Toluca</option>
+	<option value="160">Michoac&#225;n: Mercado de Abasto de Morelia</option>
+	<option value="170">Morelos: Central de Abasto de Cuautla</option>
+	<option value="172">Morelos: Mercado &quot;Adolfo L&#243;pez Mateos&quot; de Cuernavaca</option>
+	<option value="180">Nayarit: Mercado de abasto 'Adolfo L&#243;pez Mateos' de Tepic</option>
+	<option value="181">Nayarit: Nayarabastos de Tepic</option>
+	<option value="190">Nuevo Le&#243;n: Mercado de Abasto &quot;Estrella&quot; de San Nicol&#225;s de los Garza</option>
+	<option value="200">Oaxaca: M&#243;dulo de Abasto de Oaxaca</option>
+	<option value="210">Puebla: Central de Abasto de Puebla</option>
+	<option value="220">Quer&#233;taro: Mercado de Abasto de Quer&#233;taro</option>
+	<option value="230">Quintana Roo: Mercado de Chetumal, Quintana Roo</option>
+	<option value="231">Quintana Roo: M&#243;dulo de Abasto Canc&#250;n</option>
+	<option value="240">San Luis Potos&#237;: Centro de Abasto de San Luis Potos&#237;</option>
+	<option value="250">Sinaloa: Central de Abasto de Culiac&#225;n</option>
+	<option value="252">Sinaloa: Zona de Abasto de Mazatl&#225;n</option>
+	<option value="261">Sonora: Central de Abasto de Cd. Obreg&#243;n</option>
+	<option value="260">Sonora: Mercado de Abasto &quot;Francisco I. Madero&quot; de Hermosillo</option>
+	<option value="270">Tabasco: Central de Abasto de Villahermosa</option>
+	<option value="281">Tamaulipas: M&#243;dulo de Abasto de Reynosa</option>
+	<option value="280">Tamaulipas: M&#243;dulo de Abasto de Tampico, Madero y Altamira</option>
+	<option value="301">Veracruz: Central de Abasto de Jalapa</option>
+	<option value="302">Veracruz: Central de Abasto de Minatitl&#225;n</option>
+	<option value="306">Veracruz: Mercado Malibr&#225;n</option>
+	<option value="310">Yucat&#225;n: Central de Abasto de M&#233;rida</option>
+	<option value="311">Yucat&#225;n: Centro Mayorista Oxkutzcab</option>
+	<option value="312">Yucat&#225;n: Mercado &quot;Casa del Pueblo&quot;</option>
+	<option value="320">Zacatecas: Mercado de Abasto de Zacatecas</option>
+
+</select><STRONG></STRONG></TD>
+								</TR>
+								<tr>
+									<TD class="texto" style="HEIGHT: 20px" vAlign="top" align="right" width="30%"><span id="lblBusquedaDia" class="Texto"><b>Búsqueda del día:</b></span></TD>
+									<td class="Texto" style="HEIGHT: 20px" width="70%"><input name="txtFechaInicio" type="text" value="13/11/2026" id="txtFechaInicio" class="Texto" /><input type="submit" name="btnCalendarioFI" value="..." id="btnCalendarioFI" />&nbsp;<span id="lblAl" class="Texto">al</span>&nbsp;<input name="txtFechaFinal" type="text" value="13/11/2026" id="txtFechaFinal" class="Texto" /><input type="submit" name="btnCalendarioFF" value="..." id="btnCalendarioFF" /></td>
+								</tr>
+								<tr>
+									<TD class="texto" style="HEIGHT: 14px" align="right" width="30%"><span id="lblPrecios" class="Texto"><b>Precios por:</b></span></TD>
+									<td style="HEIGHT: 14px" width="70%" align="left"><select name="ddlPrecios" id="ddlPrecios" class="Texto">
+	<option value="1">Presentaci&#243;n Comercial (encuestado)</option>
+	<option value="2">Kilogramo (calculado)</option>
+
+</select><STRONG></STRONG></td>
+								</tr>
+								<tr>
+									<TD align="center" colSpan="2"></TD>
+								</tr>
+							</TABLE>
+						</P>
+						<P>
+							<TABLE id="tblBotonesBuscar" cellSpacing="0" cellPadding="0" width="100%" align="center"
+								border="0">
+								<tr>
+									<td bgColor="#015729" colSpan="2" height="1"><IMG src="../../../../Diseno/Imagenes/uno.gif"></td>
+								</tr>
+								<TR>
+									<TD align="left" width="30%"><input type="image" name="ibtnRegresar" id="ibtnRegresar" src="../../../../Diseno/Imagenes/botRegresar.gif" border="0" /><A href="javascript:history.back(-1);"></A></TD>
+									<TD align="center" width="70%"><input type="image" name="btnBuscar" id="btnBuscar" src="../../../../Diseno/Imagenes/botBuscar.gif" border="0" /></TD>
+								</TR>
+							</TABLE>
+						</P>
+						<P>&nbsp;</P>
+						<P>
+							<table id="tblInformesEspeciales" cellSpacing="0" cellPadding="0" width="100%" align="center"
+								border="0">
+								<tr>
+									<td align="right" width="15"><IMG alt="" src="../../../..//Diseno/Imagenes/imgTablaContenidoIzquierda.gif"></td>
+									<td class="subencabezado" width="100%"><span id="lblInformesEspeciales" class="subencabezado">Informes Especiales</span></td>
+									<td width="15"><IMG alt="" src="../../../..//Diseno/Imagenes/imgTablaContenidoDerecha.gif"></td>
+								</tr>
+							</table>
+						<p></p>
+						<TABLE cellSpacing="0" cellPadding="0" width="100%" align="center" border="0">
+							<TR>
+								<TD class="encabACT2" colSpan="2"><span id="lblTituloResumenSemanal" class="encabACT">Resumen Semanal de Frutas Y Hortalizas:</span></TD>
+							</TR>
+						</TABLE>
+						<TABLE id="tblResumenSemanal" cellSpacing="0" cellPadding="0" width="100%" align="center"
+							border="0">
+							<tr>
+								<td class="Texto" align="right" width="30%"><span id="lblDestinoSemanal" class="Texto"><b>Mercado de Destino:</b></span></td>
+								<td width="70%"><STRONG><select name="ddlDestinoInfEsp" id="ddlDestinoInfEsp" class="Texto">
+	<option value="-1">Seleccione</option>
+	<option value="10">Aguascalientes: Centro Comercial Agropecuario de Aguascalientes</option>
+	<option value="33">Baja California : Central de Abasto INDIA, Tijuana</option>
+	<option value="20">Baja California Sur: Uni&#243;n de Comerciantes de La Paz</option>
+	<option value="40">Campeche: Mercado &quot;Pedro S&#225;inz de Baranda&quot;, Campeche</option>
+	<option value="50">Coahuila: Central de Abasto de La Laguna, Torre&#243;n</option>
+	<option value="80">Colima: Centros de distribuci&#243;n de Colima</option>
+	<option value="70">Chiapas: Central de Abasto de Tuxtla Guti&#233;rrez</option>
+	<option value="71">Chiapas: Tapachula</option>
+	<option value="61">Chihuahua: Central de Abasto de Chihuahua</option>
+	<option selected="selected" value="63">Chihuahua: Mercado de Abasto de Cd. Ju&#225;rez</option>
+	<option value="100">DF: Central de Abasto de Iztapalapa DF</option>
+	<option value="102">Durango: Central de Abasto &quot;Francisco Villa&quot;</option>
+	<option value="101">Durango: Centro de Distribuci&#243;n y Abasto de G&#243;mez Palacio</option>
+	<option value="110">Guanajuato: Central de Abasto de Le&#243;n</option>
+	<option value="112">Guanajuato: Mercado de Abasto de Celaya (&quot;Benito Ju&#225;rez&quot;)</option>
+	<option value="111">Guanajuato: M&#243;dulo de Abasto Irapuato</option>
+	<option value="121">Guerrero: Central de Abastos de Acapulco</option>
+	<option value="122">Guerrero: Chilpancingo de los Bravo</option>
+	<option value="130">Hidalgo: Central de Abasto de Pachuca</option>
+	<option value="140">Jalisco: Mercado de Abasto de Guadalajara</option>
+	<option value="141">Jalisco: Mercado Felipe &#193;ngeles de Guadalajara</option>
+	<option value="151">M&#233;xico: Central de Abasto de Ecatepec</option>
+	<option value="150">M&#233;xico: Central de Abasto de Toluca</option>
+	<option value="160">Michoac&#225;n: Mercado de Abasto de Morelia</option>
+	<option value="170">Morelos: Central de Abasto de Cuautla</option>
+	<option value="172">Morelos: Mercado &quot;Adolfo L&#243;pez Mateos&quot; de Cuernavaca</option>
+	<option value="180">Nayarit: Mercado de abasto 'Adolfo L&#243;pez Mateos' de Tepic</option>
+	<option value="181">Nayarit: Nayarabastos de Tepic</option>
+	<option value="190">Nuevo Le&#243;n: Mercado de Abasto &quot;Estrella&quot; de San Nicol&#225;s de los Garza</option>
+	<option value="200">Oaxaca: M&#243;dulo de Abasto de Oaxaca</option>
+	<option value="210">Puebla: Central de Abasto de Puebla</option>
+	<option value="220">Quer&#233;taro: Mercado de Abasto de Quer&#233;taro</option>
+	<option value="230">Quintana Roo: Mercado de Chetumal, Quintana Roo</option>
+	<option value="231">Quintana Roo: M&#243;dulo de Abasto Canc&#250;n</option>
+	<option value="240">San Luis Potos&#237;: Centro de Abasto de San Luis Potos&#237;</option>
+	<option value="250">Sinaloa: Central de Abasto de Culiac&#225;n</option>
+	<option value="252">Sinaloa: Zona de Abasto de Mazatl&#225;n</option>
+	<option value="261">Sonora: Central de Abasto de Cd. Obreg&#243;n</option>
+	<option value="260">Sonora: Mercado de Abasto &quot;Francisco I. Madero&quot; de Hermosillo</option>
+	<option value="270">Tabasco: Central de Abasto de Villahermosa</option>
+	<option value="281">Tamaulipas: M&#243;dulo de Abasto de Reynosa</option>
+	<option value="280">Tamaulipas: M&#243;dulo de Abasto de Tampico, Madero y Altamira</option>
+	<option value="301">Veracruz: Central de Abasto de Jalapa</option>
+	<option value="302">Veracruz: Central de Abasto de Minatitl&#225;n</option>
+	<option value="306">Veracruz: Mercado Malibr&#225;n</option>
+	<option value="310">Yucat&#225;n: Central de Abasto de M&#233;rida</option>
+	<option value="311">Yucat&#225;n: Centro Mayorista Oxkutzcab</option>
+	<option value="312">Yucat&#225;n: Mercado &quot;Casa del Pueblo&quot;</option>
+	<option value="320">Zacatecas: Mercado de Abasto de Zacatecas</option>
+
+</select></STRONG></td>
+							</tr>
+							<tr>
+								<td class="Texto" align="right" width="30%"><span id="lblSemana" class="Texto"><b>Consulta:</b></span></td>
+								<td width="70%"><select name="ddlSemanaInfEsp" id="ddlSemanaInfEsp" class="Texto">
+	<option value="1">1era</option>
+	<option selected="selected" value="2">2da</option>
+	<option value="3">3era</option>
+	<option value="4">4ta</option>
+	<option value="5">5ta</option>
+
+</select><span id="lblSemanaDe" class="Texto">semana de</span><select name="ddlMesSemana" id="ddlMesSemana" class="Texto">
+	<option value="Enero">Enero</option>
+	<option value="Febrero">Febrero</option>
+	<option value="Marzo">Marzo</option>
+	<option value="Abril">Abril</option>
+	<option value="Mayo">Mayo</option>
+	<option value="Junio">Junio</option>
+	<option value="Julio">Julio</option>
+	<option value="Agosto">Agosto</option>
+	<option value="Septiembre">Septiembre</option>
+	<option value="Octubre">Octubre</option>
+	<option selected="selected" value="Noviembre">Noviembre</option>
+	<option value="Diciembre">Diciembre</option>
+
+</select><span id="lblSemanaDeMesDe" class="Texto">de</span><select name="ddlAnioSemana" id="ddlAnioSemana">
+	<option value="2026">2026</option>
+	<option value="2025">2025</option>
+	<option value="2024">2024</option>
+	<option value="2023">2023</option>
+	<option value="2022">2022</option>
+	<option value="2021">2021</option>
+	<option value="2020">2020</option>
+	<option value="2019">2019</option>
+	<option value="2018">2018</option>
+	<option value="2017">2017</option>
+	<option value="2016">2016</option>
+	<option value="2015">2015</option>
+	<option value="2014">2014</option>
+	<option value="2013">2013</option>
+	<option value="2012">2012</option>
+	<option value="2011">2011</option>
+	<option value="2010">2010</option>
+	<option value="2009">2009</option>
+	<option value="2008">2008</option>
+	<option value="2007">2007</option>
+	<option value="2006">2006</option>
+	<option value="2005">2005</option>
+	<option value="2004">2004</option>
+	<option value="2003">2003</option>
+	<option value="2002">2002</option>
+	<option value="2001">2001</option>
+	<option value="2000">2000</option>
+	<option value="1999">1999</option>
+	<option value="1998">1998</option>
+
+</select></td>
+							</tr>
+							<tr>
+								<td align="center" colSpan="2" style="HEIGHT: 21px"></td>
+							</tr>
+						</TABLE>
+						<P></P>
+						<P></P>
+						<P>
+							<TABLE id="tblBotonesSemanal" cellSpacing="0" cellPadding="0" width="100%" align="center"
+								border="0">
+								<tr>
+									<td bgColor="#015729" colSpan="2" height="1"><IMG src="../../../../Diseno/Imagenes/uno.gif"></td>
+								</tr>
+								<TR>
+									<TD align="left" width="30%"><input type="image" name="ibtnRegresarSemanal" id="ibtnRegresarSemanal" src="../../../../Diseno/Imagenes/botRegresar.gif" border="0" /><A href="javascript:history.back(-1);"></A></TD>
+									<TD align="center" width="70%"><input type="image" name="btnBuscarSemanal" id="btnBuscarSemanal" src="../../../../Diseno/Imagenes/botBuscar.gif" border="0" /></TD>
+								</TR>
+							</TABLE>
+						</P>
+						<P>&nbsp;</P>
+						<P>
+							<table cellSpacing="1" cellPadding="1" width="100%" align="center" border="0">
+								<TR>
+									<TD class="encabACT2" colSpan="2"><span id="lblTituloResumenMensual" class="encabACT">Resumen Mensual de Frutas Y Hortalizas</span></TD>
+								</TR>
+							</table>
+							<TABLE id="tblResumenMensual" cellSpacing="1" cellPadding="1" width="100%" align="center"
+								border="0">
+								<TR>
+									<TD class="Texto" style="HEIGHT: 26px" width="30%" align="right"><span id="lblDestinoMensual" class="Texto"><b>Mercado de destino:</b></span></TD>
+									<TD style="HEIGHT: 26px" width="70%"><STRONG><select name="ddlDestinoMensual" id="ddlDestinoMensual" class="Texto">
+	<option value="-1">Seleccione</option>
+	<option value="10">Aguascalientes: Centro Comercial Agropecuario de Aguascalientes</option>
+	<option value="33">Baja California : Central de Abasto INDIA, Tijuana</option>
+	<option value="20">Baja California Sur: Uni&#243;n de Comerciantes de La Paz</option>
+	<option value="40">Campeche: Mercado &quot;Pedro S&#225;inz de Baranda&quot;, Campeche</option>
+	<option value="50">Coahuila: Central de Abasto de La Laguna, Torre&#243;n</option>
+	<option value="80">Colima: Centros de distribuci&#243;n de Colima</option>
+	<option value="70">Chiapas: Central de Abasto de Tuxtla Guti&#233;rrez</option>
+	<option value="71">Chiapas: Tapachula</option>
+	<option value="61">Chihuahua: Central de Abasto de Chihuahua</option>
+	<option selected="selected" value="63">Chihuahua: Mercado de Abasto de Cd. Ju&#225;rez</option>
+	<option value="100">DF: Central de Abasto de Iztapalapa DF</option>
+	<option value="102">Durango: Central de Abasto &quot;Francisco Villa&quot;</option>
+	<option value="101">Durango: Centro de Distribuci&#243;n y Abasto de G&#243;mez Palacio</option>
+	<option value="110">Guanajuato: Central de Abasto de Le&#243;n</option>
+	<option value="112">Guanajuato: Mercado de Abasto de Celaya (&quot;Benito Ju&#225;rez&quot;)</option>
+	<option value="111">Guanajuato: M&#243;dulo de Abasto Irapuato</option>
+	<option value="121">Guerrero: Central de Abastos de Acapulco</option>
+	<option value="122">Guerrero: Chilpancingo de los Bravo</option>
+	<option value="130">Hidalgo: Central de Abasto de Pachuca</option>
+	<option value="140">Jalisco: Mercado de Abasto de Guadalajara</option>
+	<option value="141">Jalisco: Mercado Felipe &#193;ngeles de Guadalajara</option>
+	<option value="151">M&#233;xico: Central de Abasto de Ecatepec</option>
+	<option value="150">M&#233;xico: Central de Abasto de Toluca</option>
+	<option value="160">Michoac&#225;n: Mercado de Abasto de Morelia</option>
+	<option value="170">Morelos: Central de Abasto de Cuautla</option>
+	<option value="172">Morelos: Mercado &quot;Adolfo L&#243;pez Mateos&quot; de Cuernavaca</option>
+	<option value="180">Nayarit: Mercado de abasto 'Adolfo L&#243;pez Mateos' de Tepic</option>
+	<option value="181">Nayarit: Nayarabastos de Tepic</option>
+	<option value="190">Nuevo Le&#243;n: Mercado de Abasto &quot;Estrella&quot; de San Nicol&#225;s de los Garza</option>
+	<option value="200">Oaxaca: M&#243;dulo de Abasto de Oaxaca</option>
+	<option value="210">Puebla: Central de Abasto de Puebla</option>
+	<option value="220">Quer&#233;taro: Mercado de Abasto de Quer&#233;taro</option>
+	<option value="230">Quintana Roo: Mercado de Chetumal, Quintana Roo</option>
+	<option value="231">Quintana Roo: M&#243;dulo de Abasto Canc&#250;n</option>
+	<option value="240">San Luis Potos&#237;: Centro de Abasto de San Luis Potos&#237;</option>
+	<option value="250">Sinaloa: Central de Abasto de Culiac&#225;n</option>
+	<option value="252">Sinaloa: Zona de Abasto de Mazatl&#225;n</option>
+	<option value="261">Sonora: Central de Abasto de Cd. Obreg&#243;n</option>
+	<option value="260">Sonora: Mercado de Abasto &quot;Francisco I. Madero&quot; de Hermosillo</option>
+	<option value="270">Tabasco: Central de Abasto de Villahermosa</option>
+	<option value="281">Tamaulipas: M&#243;dulo de Abasto de Reynosa</option>
+	<option value="280">Tamaulipas: M&#243;dulo de Abasto de Tampico, Madero y Altamira</option>
+	<option value="301">Veracruz: Central de Abasto de Jalapa</option>
+	<option value="302">Veracruz: Central de Abasto de Minatitl&#225;n</option>
+	<option value="306">Veracruz: Mercado Malibr&#225;n</option>
+	<option value="310">Yucat&#225;n: Central de Abasto de M&#233;rida</option>
+	<option value="311">Yucat&#225;n: Centro Mayorista Oxkutzcab</option>
+	<option value="312">Yucat&#225;n: Mercado &quot;Casa del Pueblo&quot;</option>
+	<option value="320">Zacatecas: Mercado de Abasto de Zacatecas</option>
+
+</select></STRONG></TD>
+								</TR>
+								<TR>
+									<TD class="Texto" style="HEIGHT: 24px" width="30%" align="right"><span id="lblMes" class="Texto"><b>Mes:</b></span></TD>
+									<TD class="Texto" style="HEIGHT: 24px" width="70%"><select name="ddlMesMensual" id="ddlMesMensual" class="Texto">
+	<option value="Enero">Enero</option>
+	<option value="Febrero">Febrero</option>
+	<option value="Marzo">Marzo</option>
+	<option value="Abril">Abril</option>
+	<option value="Mayo">Mayo</option>
+	<option value="Junio">Junio</option>
+	<option value="Julio">Julio</option>
+	<option value="Agosto">Agosto</option>
+	<option value="Septiembre">Septiembre</option>
+	<option value="Octubre">Octubre</option>
+	<option selected="selected" value="Noviembre">Noviembre</option>
+	<option value="Diciembre">Diciembre</option>
+
+</select>&nbsp;
+										<span id="lblMesDe" class="Texto">de</span><select name="ddlAnioMensual" id="ddlAnioMensual">
+	<option value="2026">2026</option>
+	<option value="2025">2025</option>
+	<option value="2024">2024</option>
+	<option value="2023">2023</option>
+	<option value="2022">2022</option>
+	<option value="2021">2021</option>
+	<option value="2020">2020</option>
+	<option value="2019">2019</option>
+	<option value="2018">2018</option>
+	<option value="2017">2017</option>
+	<option value="2016">2016</option>
+	<option value="2015">2015</option>
+	<option value="2014">2014</option>
+	<option value="2013">2013</option>
+	<option value="2012">2012</option>
+	<option value="2011">2011</option>
+	<option value="2010">2010</option>
+	<option value="2009">2009</option>
+	<option value="2008">2008</option>
+	<option value="2007">2007</option>
+	<option value="2006">2006</option>
+	<option value="2005">2005</option>
+	<option value="2004">2004</option>
+	<option value="2003">2003</option>
+	<option value="2002">2002</option>
+	<option value="2001">2001</option>
+	<option value="2000">2000</option>
+	<option value="1999">1999</option>
+	<option value="1998">1998</option>
+
+</select></TD>
+								</TR>
+								<tr>
+									<td align="center" colSpan="2">&nbsp;
+										</td>
+								</tr>
+							</TABLE>
+						</P>
+						<P>
+							<TABLE id="tblBotonesMensual" cellSpacing="0" cellPadding="0" width="100%" align="center"
+								border="0">
+								<tr>
+									<td bgColor="#015729" colSpan="2" height="1"><IMG src="../../../../Diseno/Imagenes/uno.gif"></td>
+								</tr>
+								<TR>
+									<TD align="left" width="30%"><input type="image" name="ibtnRegresarMensual" id="ibtnRegresarMensual" src="../../../../Diseno/Imagenes/botRegresar.gif" border="0" /><A href="javascript:history.back(-1);"></A></TD>
+									<TD align="center" width="70%"><input type="image" name="btnBuscarMensual" id="btnBuscarMensual" src="../../../../Diseno/Imagenes/botBuscar.gif" border="0" /></TD>
+								</TR>
+							</TABLE>
+						</P>
+					</TD>
+				</TR>
+			</TABLE>
+		</form>
+	</body>
+</HTML>

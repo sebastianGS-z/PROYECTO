@@ -1,0 +1,39 @@
+{
+  "esquema": "tdl-bronce-meta/1",
+  "contenido_original": {
+    "archivo": "sniim__limon-c-semilla-4-primera-df-central-de-abasto-de-iztapalapa-df__2026-11-12_2026-11-12__20261113T192711Z-a7be18.html",
+    "descripcion": "Bytes tal como los entregó la fuente; no se modifican."
+  },
+  "metadatos_captura": {
+    "fuente": "sniim",
+    "fuente_url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=12%2F11%2F2026&fechaFinal=12%2F11%2F2026&ProductoId=419&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+    "fecha_captura": "2026-11-13T19:28:13Z",
+    "identificador_ejecucion": "20261113T192711Z-a7be18",
+    "formato_original": "html",
+    "sha256": "1ab94324e13aac17b004ba5badf4dd4e37ba75595815b6f16d0953822e92ee97",
+    "bytes": 14726,
+    "http_status": 200,
+    "registros_detectados": 1,
+    "estado_captura": "ok",
+    "advertencias": [],
+    "colision_nombre": false,
+    "etiqueta": "Limón c/semilla # 4 - Primera__DF: Central de Abasto de Iztapalapa DF",
+    "producto": "Limón c/semilla # 4 - Primera",
+    "producto_id": "419",
+    "mercado": "DF: Central de Abasto de Iztapalapa DF",
+    "mercado_id": "100",
+    "fecha_ref_inicio": "2026-11-12",
+    "fecha_ref_fin": "2026-11-12",
+    "parametros": {
+      "fechaInicio": "12/11/2026",
+      "fechaFinal": "12/11/2026",
+      "ProductoId": "419",
+      "OrigenId": "-1",
+      "Origen": "Todos",
+      "DestinoId": "100",
+      "Destino": "DF: Central de Abasto de Iztapalapa DF",
+      "PreciosPorId": "1",
+      "RegistrosPorPagina": "500"
+    }
+  }
+}

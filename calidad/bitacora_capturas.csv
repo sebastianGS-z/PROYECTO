@@ -5,3 +5,5 @@ run_id,fuente,modo,disparador,inicio_utc,fin_utc,duracion_s,estado,solicitudes,r
 20261109T102523Z-871621,noaa_ncei,diaria,workflow_dispatch,2026-11-09T10:26:49Z,2026-11-09T10:26:50Z,1.74,sin_resultados,2,0,1,0,
 20261109T224335Z-acf195,sniim,diaria,local,2026-11-09T22:43:35Z,2026-11-09T22:45:14Z,99.04,exitosa,40,19,39,0,
 20261109T224335Z-acf195,noaa_ncei,diaria,local,2026-11-09T22:45:14Z,2026-11-09T22:45:17Z,2.24,sin_resultados,2,0,1,0,
+20261113T192711Z-a7be18,sniim,diaria,workflow_dispatch,2026-11-13T19:27:11Z,2026-11-13T19:28:34Z,82.31,exitosa,40,19,39,0,
+20261113T192711Z-a7be18,noaa_ncei,diaria,workflow_dispatch,2026-11-13T19:28:34Z,2026-11-13T19:28:36Z,1.96,sin_resultados,2,0,1,0,
