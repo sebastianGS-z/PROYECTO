@@ -35,7 +35,7 @@ python main.py validar
 - [x] SNIIM: 36/36 meses por producto/mercado. NOAA: 28/36 meses; los meses faltantes están declarados y no se rellenaron.
 - [x] Workflow diario habilitado en la rama por defecto. Las cuatro ejecuciones programadas previas fallaron por una prueba PSP que esperaba nombres obsoletos; la prueba quedó corregida. La ejecución manual 43492271206 del 2026-11-13 pasó pruebas, captura, pipeline E1 y validación de Bronce. La próxima ejecución programada posterior al arreglo confirmará el ciclo automático.
 - [x] PSP inicial: existen los cuatro CSV individuales con encabezados válidos y están definidos tres objetivos medibles. Los CSV de José no contienen filas, lo cual no contradice el requisito de archivos de registro abiertos.
-- [ ] Colaboradores: GitHub muestra un colaborador aceptado y dos invitaciones pendientes además del dueño. El equipo indica que se invitó a dos profesores y al compañero; la rúbrica recibida menciona tres profesores. Falta confirmar con el curso si son dos o tres docentes y verificar la aceptación de las invitaciones.
+- [ ] Colaboradores: el equipo confirma que el requisito correcto es dos profesores y el compañero. GitHub muestra un colaborador aceptado y dos invitaciones pendientes además del dueño; falta que los destinatarios acepten las invitaciones para confirmar el acceso efectivo.
 - [x] Tag `e0` creado el 2026-11-09 17:24 (hora local, antes del límite de 23:59).
 - [ ] Registro de la URL del repositorio en Classroom: el integrante responsable indicó que realizará el envío; falta marcar la tarea como entregada y verificarlo allí.
 
