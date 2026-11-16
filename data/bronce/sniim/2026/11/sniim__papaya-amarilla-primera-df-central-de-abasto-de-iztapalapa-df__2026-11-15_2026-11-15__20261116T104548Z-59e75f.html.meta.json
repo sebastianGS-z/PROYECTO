@@ -1,0 +1,39 @@
+{
+  "esquema": "tdl-bronce-meta/1",
+  "contenido_original": {
+    "archivo": "sniim__papaya-amarilla-primera-df-central-de-abasto-de-iztapalapa-df__2026-11-15_2026-11-15__20261116T104548Z-59e75f.html",
+    "descripcion": "Bytes tal como los entregó la fuente; no se modifican."
+  },
+  "metadatos_captura": {
+    "fuente": "sniim",
+    "fuente_url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=15%2F11%2F2026&fechaFinal=15%2F11%2F2026&ProductoId=620&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+    "fecha_captura": "2026-11-16T10:47:45Z",
+    "identificador_ejecucion": "20261116T104548Z-59e75f",
+    "formato_original": "html",
+    "sha256": "e42e399ab9215027f17877b9d31141513e7268a2a2f19bec7a6c8affb9c10d19",
+    "bytes": 9422,
+    "http_status": 200,
+    "registros_detectados": 0,
+    "estado_captura": "sin_resultados",
+    "advertencias": [],
+    "colision_nombre": false,
+    "etiqueta": "Papaya Amarilla - Primera__DF: Central de Abasto de Iztapalapa DF",
+    "producto": "Papaya Amarilla - Primera",
+    "producto_id": "620",
+    "mercado": "DF: Central de Abasto de Iztapalapa DF",
+    "mercado_id": "100",
+    "fecha_ref_inicio": "2026-11-15",
+    "fecha_ref_fin": "2026-11-15",
+    "parametros": {
+      "fechaInicio": "15/11/2026",
+      "fechaFinal": "15/11/2026",
+      "ProductoId": "620",
+      "OrigenId": "-1",
+      "Origen": "Todos",
+      "DestinoId": "100",
+      "Destino": "DF: Central de Abasto de Iztapalapa DF",
+      "PreciosPorId": "1",
+      "RegistrosPorPagina": "500"
+    }
+  }
+}

@@ -11,3 +11,5 @@ run_id,fuente,modo,disparador,inicio_utc,fin_utc,duracion_s,estado,solicitudes,r
 20261114T095357Z-7911f2,noaa_ncei,diaria,schedule,2026-11-14T09:55:47Z,2026-11-14T09:55:49Z,1.95,sin_resultados,2,0,1,0,
 20261115T103014Z-2742c4,sniim,diaria,schedule,2026-11-15T10:30:14Z,2026-11-15T10:31:57Z,102.75,sin_resultados,40,0,39,0,
 20261115T103014Z-2742c4,noaa_ncei,diaria,schedule,2026-11-15T10:31:57Z,2026-11-15T10:31:59Z,1.99,sin_resultados,2,0,1,0,
+20261116T104548Z-59e75f,sniim,diaria,schedule,2026-11-16T10:45:48Z,2026-11-16T10:48:01Z,133.25,sin_resultados,40,0,39,0,
+20261116T104548Z-59e75f,noaa_ncei,diaria,schedule,2026-11-16T10:48:01Z,2026-11-16T10:48:03Z,1.91,sin_resultados,2,0,1,0,
