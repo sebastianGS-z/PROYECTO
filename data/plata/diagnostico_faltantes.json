@@ -65,13 +65,13 @@
       "decision_imputacion": "no_imputar: una cotización ausente no se deduce de las restantes"
     },
     "tavg_c": {
-      "n_aplicable": 1102,
-      "faltantes": 311,
-      "porcentaje": 28.22,
+      "n_aplicable": 1103,
+      "faltantes": 312,
+      "porcentaje": 28.29,
       "mecanismo": "MAR_compatible_asociacion_con_variables_observadas",
       "tasas_por_grupo": {
         "estacion": {
-          "MXM00076654": 0.2822
+          "MXM00076654": 0.2829
         },
         "mes": {
           "1": 0.3763,
@@ -84,20 +84,20 @@
           "8": 0.3763,
           "9": 0.3778,
           "10": 0.3441,
-          "11": 0.1042,
+          "11": 0.1134,
           "12": 0.3441
         }
       },
       "decision_imputacion": "solo feature de modelado: interpolación lineal interior de hasta 2 días, con indicador; nunca sobrescribe el valor original"
     },
     "tmax_c": {
-      "n_aplicable": 1102,
-      "faltantes": 509,
-      "porcentaje": 46.19,
+      "n_aplicable": 1103,
+      "faltantes": 510,
+      "porcentaje": 46.24,
       "mecanismo": "MAR_compatible_asociacion_con_variables_observadas",
       "tasas_por_grupo": {
         "estacion": {
-          "MXM00076654": 0.4619
+          "MXM00076654": 0.4624
         },
         "mes": {
           "1": 0.4946,
@@ -110,20 +110,20 @@
           "8": 0.6452,
           "9": 0.6444,
           "10": 0.5054,
-          "11": 0.3854,
+          "11": 0.3918,
           "12": 0.5269
         }
       },
       "decision_imputacion": "solo feature de modelado: interpolación lineal interior de hasta 2 días, con indicador; nunca sobrescribe el valor original"
     },
     "tmin_c": {
-      "n_aplicable": 1102,
-      "faltantes": 509,
-      "porcentaje": 46.19,
+      "n_aplicable": 1103,
+      "faltantes": 510,
+      "porcentaje": 46.24,
       "mecanismo": "MAR_compatible_asociacion_con_variables_observadas",
       "tasas_por_grupo": {
         "estacion": {
-          "MXM00076654": 0.4619
+          "MXM00076654": 0.4624
         },
         "mes": {
           "1": 0.4946,
@@ -136,20 +136,20 @@
           "8": 0.6452,
           "9": 0.6444,
           "10": 0.5054,
-          "11": 0.3854,
+          "11": 0.3918,
           "12": 0.5269
         }
       },
       "decision_imputacion": "solo feature de modelado: interpolación lineal interior de hasta 2 días, con indicador; nunca sobrescribe el valor original"
     },
     "prcp_mm": {
-      "n_aplicable": 1102,
-      "faltantes": 810,
-      "porcentaje": 73.5,
+      "n_aplicable": 1103,
+      "faltantes": 811,
+      "porcentaje": 73.53,
       "mecanismo": "MAR_compatible_asociacion_con_variables_observadas",
       "tasas_por_grupo": {
         "estacion": {
-          "MXM00076654": 0.735
+          "MXM00076654": 0.7353
         },
         "mes": {
           "1": 0.6667,
@@ -162,7 +162,7 @@
           "8": 0.9032,
           "9": 0.8444,
           "10": 0.7742,
-          "11": 0.6354,
+          "11": 0.6392,
           "12": 0.3656
         }
       },
@@ -171,10 +171,10 @@
   },
   "calendario_climatico": {
     "inicio_observado": "2023-11-01",
-    "fin_observado": "2026-11-15",
-    "dias_estacion_esperados_en_rangos_observados": 1102,
+    "fin_observado": "2026-11-16",
+    "dias_estacion_esperados_en_rangos_observados": 1103,
     "dias_con_algun_dato": 791,
-    "dias_sin_registro_util": 311,
+    "dias_sin_registro_util": 312,
     "nota": "Rango derivado de fechas válidas. No incluye posibles faltantes anteriores o posteriores al rango observado."
   }
 }
