@@ -88,9 +88,18 @@ Salidas principales:
 * `data/plata/clima_modelado.csv`: calendario diario de la estación con una copia de variables de temperatura interpoladas solo en huecos interiores de hasta dos días; conserva los valores observados y marca cada imputación. Precipitación y precios no se imputan.
 * `data/plata/diagnostico_faltantes.json` y `reporte_calidad.json`: perfiles de faltantes, asociaciones descriptivas, decisiones de imputación y resumen de controles.
 * `data/plata/conflictos_resueltos.csv`: claves repetidas con valores discrepantes; conserva en Plata la captura más reciente y mantiene todas las versiones originales en Bronce.
-* `data/oro/panel_mensual.csv`: agregación mensual de precios por variante, plaza, origen y presentación, unida al resumen mensual de cada estación climática disponible.
+* `data/oro/panel_mensual.csv`: agregación mensual de precios por variante, plaza, origen y presentación, unida al resumen mensual de cada estación climática disponible. Cada fila lleva `linaje_precios_bronce` y `linaje_clima_bronce`: listas con ruta, SHA-256, fecha UTC de ingesta e índice del registro original. `data/plata/reporte_calidad.json` registra los conteos de la puerta de linaje.
 
-Las capas Plata/Oro y la cuarentena se regeneran en cada ejecución. Ambos workflows ejecutan `python main.py capas` tras la captura; la publicación normal de `data/` conserva los resultados. Detalle de decisiones y límites: [docs/E1/ENTREGA.md](docs/E1/ENTREGA.md).
+Las capas Plata/Oro y la cuarentena se regeneran en cada ejecución. El workflow diario ejecuta `python main.py e2` para actualizar también la dimensión geoespacial; el workflow histórico usa `python main.py capas`. La publicación normal de `data/` conserva los resultados. Detalle E1: [docs/E1/ENTREGA.md](docs/E1/ENTREGA.md).
+
+## 12.1 Integración geoespacial E2
+
+```bash
+python main.py e2                  # captura el Marco Geoestadístico de INEGI y regenera E1 + E2
+python main.py e2 --solo-procesar  # usa el GeoJSON de INEGI ya guardado en Bronce
+```
+
+El proceso guarda la capa municipal de Colima en `data/bronce/inegi_marco/`, transforma atributos y geometría con GeoPandas en `data/plata/marco_geoestadistico_colima.csv`, publica la dimensión municipal en `data/oro/contexto_geoespacial_municipal.csv` y crea un mapa en `docs/E2/`. El reporte de proceso está en `data/plata/reporte_geoespacial_e2.json`. La dimensión geográfica permanece separada de los precios por mercado para evitar uniones entre unidades espaciales incompatibles. Términos, robots.txt, atribución, privacidad y sesgos: [docs/etica-datos.md](docs/etica-datos.md). Ficha: [docs/E2/ENTREGA.md](docs/E2/ENTREGA.md).
 
 ## 13. Sistema PSP
 ```bash
@@ -114,7 +123,7 @@ RUN_INTEGRATION=1 python -m pytest -m integration -s   # contra SNIIM y NOAA NCE
 Los HTML/JSON de las pruebas unitarias son *fixtures* controlados, no capturas reales.
 
 ## 15. GitHub Actions
-`.github/workflows/captura_historica.yml`: manual, descarga la serie de 36 meses en la nube. `.github/workflows/captura_diaria.yml`: diario a las **03:00 UTC = 21:00 en Colima** (UTC-6 todo el año desde 2022) y manual (`workflow_dispatch`). `concurrency` evita ejecuciones simultáneas; permisos mínimos `contents: write`; instala dependencias, corre pruebas, captura, ejecuta el pipeline E1, valida Bronce y publica `data/` con `GITHUB_TOKEN` (sin PAT) aunque la captura falle (para dejar evidencia), sube logs como artefacto y falla el job si captura termina parcial/fallida o la validación falla. Habilita *Settings → Actions → Workflow permissions → Read and write*. Los `schedule` solo corren desde la rama por defecto.
+`.github/workflows/captura_historica.yml`: manual, descarga la serie de 36 meses en la nube. `.github/workflows/captura_diaria.yml`: diario a las **03:00 UTC = 21:00 en Colima** (UTC-6 todo el año desde 2022) y manual (`workflow_dispatch`). `concurrency` evita ejecuciones simultáneas; permisos mínimos `contents: write`; instala dependencias, corre pruebas, captura SNIIM/NOAA, ejecuta `python main.py e2` (incluye la captura INEGI y los productos E1/E2), valida Bronce y publica `data/` con `GITHUB_TOKEN` (sin PAT), sube logs como artefacto y falla el job si captura o validación no fueron correctas. Habilita *Settings → Actions → Workflow permissions → Read and write*. Los `schedule` solo corren desde la rama por defecto.
 
 ## 16. Limitaciones conocidas
 * **SNIIM sin API oficial**: se usa la consulta web pública. El parser (`parse_resultados`) se escribió según la estructura observada y **debe validarse con la primera ejecución real** (`pytest -m integration`). Si el sitio cambia, solo se ajustan `parse_formulario` y `parse_resultados`; un cambio de estructura produce estado `fallida`, nunca datos inventados.
@@ -125,7 +134,7 @@ Los HTML/JSON de las pruebas unitarias son *fixtures* controlados, no capturas r
 * NOAA NCEI: una sola estación (Manzanillo), no Tecomán; verificar el ID con `curl -s "https://www.ncei.noaa.gov/access/services/data/v1?dataset=daily-summaries&stations=MXM00076654&startDate=2024-01-01&endDate=2024-01-05&dataTypes=TMAX,TMIN,PRCP&format=json&units=metric"`.
 
 ## 17. Consideraciones éticas
-User-Agent identificable, robots.txt obligatorio (si no se puede leer, **no se hace scraping**), Crawl-delay y pausa ≥ 1.5 s por dominio, sin proxies, sin evadir protecciones, volumen bajo. NOAA NCEI: revisar términos, atribución y límites de uso antes de publicar resultados.
+User-Agent identificable, robots.txt obligatorio (si no se puede leer, **no se hace scraping**), Crawl-delay y pausa ≥ 1.5 s por dominio, sin proxies ni evasión de protecciones y con volumen bajo. La declaración vigente de términos y límites de las tres fuentes está en [docs/etica-datos.md](docs/etica-datos.md).
 
 ## 18. Ejemplo de ejecución
 ```

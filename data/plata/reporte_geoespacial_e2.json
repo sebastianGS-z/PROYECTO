@@ -1,0 +1,33 @@
+{
+  "esquema": "tdl-e2-geoespacial/1",
+  "generado_utc": "2026-11-17T13:42:58.403604+00:00",
+  "fuente": "INEGI Marco Geoestadístico municipal",
+  "endpoint": "https://gaia.inegi.org.mx/wscatgeo/v2/geo/mgem/06",
+  "edicion_geometria": "INEGI. Marco Geoestadístico, diciembre de 2025",
+  "edicion_atributos": "INEGI. Censo de Población y Vivienda, 2020",
+  "registros_geojson": 10,
+  "municipios_colima": 10,
+  "crs_salida": "EPSG:4326",
+  "crs_superficie": "EPSG:32613",
+  "bronce": {
+    "archivo": "data/bronce/inegi_marco/2026/11/inegi_marco__marco-municipal-colima__2026-11-17_2026-11-17__20261117T133522Z-e9106a.geojson",
+    "sha256": "a345fd583e0b9c35ecc84c1494c40b5999338c8a33b134c9ad28e4e1d2635571",
+    "fecha_ingesta_utc": "2026-11-17T13:35:25Z",
+    "registros": "GeoJSON FeatureCollection.features[n]"
+  },
+  "asignacion_estacion": [
+    {
+      "estacion": "MXM00076654",
+      "localidad_fuente": "Manzanillo",
+      "municipio_cvegeo": "06007",
+      "municipio": "Manzanillo",
+      "estado": "asignacion_punto_en_poligono"
+    }
+  ],
+  "productos": {
+    "plata_csv": "data/plata/marco_geoestadistico_colima.csv",
+    "oro_csv": "data/oro/contexto_geoespacial_municipal.csv",
+    "mapa": "docs/E2/mapa_marco_geoestadistico_colima.png"
+  },
+  "nota": "Los límites y población municipal se entregan como dimensión separada; no se asocian directamente a mercados mayoristas fuera de Colima."
+}

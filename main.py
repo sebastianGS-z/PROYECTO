@@ -6,6 +6,7 @@
     python main.py objetivos  [--desde ... --hasta ...]
     python main.py psp        <subcomando de calidad.psp>
     python main.py capas      [--bronze-dir ... --data-dir ...] (pipeline E1)
+    python main.py e2         [--solo-procesar] (captura INEGI, E1 y productos geoespaciales)
 """
 from __future__ import annotations
 
@@ -46,6 +47,8 @@ def main(argv: list[str] | None = None) -> int:
         return _objetivos(resto)
     elif cmd == "capas":
         from src.tdl_e1.pipeline import main as f
+    elif cmd == "e2":
+        from src.tdl_e2.geoespacial import main as f
     else:
         print(f"Comando desconocido: {cmd}\n{__doc__}", file=sys.stderr)
         return 2

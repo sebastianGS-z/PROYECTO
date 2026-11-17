@@ -41,7 +41,7 @@ STRING_FIELDS = (
     "presentacion", "estacion", "localidad", "source_file", "source_sha256", "capturado_en",
 )
 COLUMNS = (
-    "fecha", *STRING_FIELDS, "latitud", "longitud", *NUMERIC_FIELDS, "versiones_observadas",
+    "fecha", *STRING_FIELDS, "source_record_index", "latitud", "longitud", *NUMERIC_FIELDS, "versiones_observadas",
 )
 
 
@@ -56,6 +56,7 @@ def _schema() -> pa.DataFrameSchema:
         "estacion": pa.Column(str, nullable=True), "localidad": pa.Column(str, nullable=True),
         "source_file": pa.Column(str, nullable=False), "source_sha256": pa.Column(str, nullable=False),
         "capturado_en": pa.Column(str, nullable=False),
+        "source_record_index": pa.Column(int, checks=pa.Check.ge(1), nullable=False),
         "latitud": pa.Column(float, checks=pa.Check.in_range(-90, 90), nullable=True),
         "longitud": pa.Column(float, checks=pa.Check.in_range(-180, 180), nullable=True),
         "versiones_observadas": pa.Column(int, checks=pa.Check.ge(1), nullable=False),
@@ -128,7 +129,7 @@ def _parse_sniim(path: Path, metadata: dict[str, Any], sha: str, sources: dict[s
     except StructureChangedError as exc:
         return [], [_bad(path, f"estructura SNIIM no reconocida: {exc}", sha=sha)]
     rows, quarantine = [], []
-    for raw in parsed.registros:
+    for source_record_index, raw in enumerate(parsed.registros, start=1):
         try:
             source_date = raw.get("Fecha")
             if not source_date:
@@ -154,7 +155,8 @@ def _parse_sniim(path: Path, metadata: dict[str, Any], sha: str, sources: dict[s
                 "variante": md.get("producto"), "variante_id": str(md.get("producto_id", "")) or None,
                 "mercado": md.get("mercado_id") or md.get("mercado"), "origen": raw.get("Origen") or None,
                 "presentacion": raw.get("Presentación") or None, "source_file": _display_path(path),
-                "source_sha256": sha, "capturado_en": str(md.get("fecha_captura", "")), **prices,
+                "source_sha256": sha, "capturado_en": str(md.get("fecha_captura", "")),
+                "source_record_index": source_record_index, **prices,
             }
             if row["precio_min"] is not None and row["precio_max"] is not None and row["precio_min"] > row["precio_max"]:
                 raise ValueError("precio_min mayor que precio_max")
@@ -179,7 +181,7 @@ def _parse_noaa(path: Path, metadata: dict[str, Any], sha: str) -> tuple[list[di
             raise ValueError("respuesta NOAA no es una lista JSON")
     except (OSError, UnicodeError, json.JSONDecodeError, ValueError) as exc:
         return [], [_bad(path, f"JSON NOAA inválido: {exc}", sha=sha)]
-    for raw in payload:
+    for source_record_index, raw in enumerate(payload, start=1):
         try:
             if not isinstance(raw, dict):
                 raise ValueError("registro NOAA no es un objeto")
@@ -193,7 +195,8 @@ def _parse_noaa(path: Path, metadata: dict[str, Any], sha: str) -> tuple[list[di
                 "estacion": str(raw.get("STATION") or metadata.get("estacion") or ""),
                 "localidad": metadata.get("localidad"), "latitud": _number(metadata.get("latitud")),
                 "longitud": _number(metadata.get("longitud")), "source_file": _display_path(path),
-                "source_sha256": sha, "capturado_en": str(metadata.get("fecha_captura", "")), **values,
+                "source_sha256": sha, "capturado_en": str(metadata.get("fecha_captura", "")),
+                "source_record_index": source_record_index, **values,
             }
             if row["tmin_c"] is not None and row["tmax_c"] is not None and row["tmin_c"] > row["tmax_c"]:
                 raise ValueError("tmin_c mayor que tmax_c")
@@ -237,7 +240,7 @@ def _as_types(frame: pd.DataFrame) -> pd.DataFrame:
     df["fecha"] = pd.to_datetime(df["fecha"], errors="coerce")
     for name in STRING_FIELDS:
         df[name] = df[name].map(lambda value: None if pd.isna(value) else str(value)).astype(object)
-    for name in ("latitud", "longitud", *NUMERIC_FIELDS):
+    for name in ("source_record_index", "latitud", "longitud", *NUMERIC_FIELDS):
         df[name] = pd.to_numeric(df[name], errors="coerce")
     df["versiones_observadas"] = pd.to_numeric(df["versiones_observadas"], errors="coerce")
     return df.loc[:, COLUMNS]
@@ -303,6 +306,11 @@ def resolver_duplicados(frame: pd.DataFrame) -> tuple[pd.DataFrame, list[dict[st
             continue
         group = group.sort_values(["capturado_en", "source_file"], kind="stable")
         chosen = group.iloc[-1].copy()
+        chosen["source_versions"] = json.dumps([
+            {"archivo": str(r.source_file), "sha256": str(r.source_sha256),
+             "ingesta_utc": str(r.capturado_en), "registro": int(r.source_record_index)}
+            for r in group.itertuples(index=False)
+        ], ensure_ascii=False, sort_keys=True)
         distinct = group[value_columns].astype("string").drop_duplicates()
         changed = len(distinct) > 1
         chosen["versiones_observadas"] = int(group["versiones_observadas"].fillna(1).sum())
@@ -498,6 +506,22 @@ def construir_oro(frame: pd.DataFrame) -> pd.DataFrame:
     gold_prices = prices.groupby(keys, dropna=False).agg(agg)
     gold_prices.columns = [f"{field}_{stat}" for field, stat in gold_prices.columns]
     gold_prices = gold_prices.reset_index()
+    def linaje(group: pd.DataFrame) -> str:
+        origins = []
+        for row in group.itertuples(index=False):
+            versions = getattr(row, "source_versions", None)
+            if versions and isinstance(versions, str):
+                try:
+                    origins.extend(json.loads(versions))
+                    continue
+                except json.JSONDecodeError:
+                    pass
+            origins.append({"archivo": row.source_file, "sha256": row.source_sha256,
+                            "ingesta_utc": row.capturado_en, "registro": int(row.source_record_index)})
+        unique = {(x["archivo"], x["sha256"], x["ingesta_utc"], x["registro"]): x for x in origins}
+        return json.dumps([unique[k] for k in sorted(unique)], ensure_ascii=False, sort_keys=True)
+    gold_prices["linaje_precios_bronce"] = prices.groupby(keys, dropna=False, sort=False).apply(
+        linaje, include_groups=False).reindex(pd.MultiIndex.from_frame(gold_prices[keys])).to_numpy()
     counts = prices.groupby(keys, dropna=False).size().rename("n_observaciones_precio").reset_index()
     gold_prices = gold_prices.merge(counts, on=keys, how="left", validate="one_to_one")
     if not climate.empty:
@@ -506,6 +530,10 @@ def construir_oro(frame: pd.DataFrame) -> pd.DataFrame:
         gold_climate = climate.groupby(["estacion", "anio", "mes"], dropna=False).agg(climate_agg)
         gold_climate.columns = [f"{field}_{stat}" for field, stat in gold_climate.columns]
         gold_climate = gold_climate.reset_index()
+        climate_lineage = (climate.groupby(["estacion", "anio", "mes"], dropna=False, sort=False)
+                           .apply(linaje, include_groups=False).rename("linaje_clima_bronce").reset_index())
+        gold_climate = gold_climate.merge(climate_lineage, on=["estacion", "anio", "mes"],
+                                          how="left", validate="one_to_one")
         observed_days = (climate[climate[list(WEATHER_FIELDS)].notna().any(axis=1)]
                          .groupby(["estacion", "anio", "mes"], dropna=False)["fecha"]
                          .nunique().rename("dias_clima_observados").reset_index())
@@ -516,6 +544,43 @@ def construir_oro(frame: pd.DataFrame) -> pd.DataFrame:
         gold_prices["dias_clima_observados"] = 0
     gold_prices["fecha_mes"] = pd.to_datetime(dict(year=gold_prices["anio"], month=gold_prices["mes"], day=1))
     return gold_prices.sort_values(["fecha_mes", "cultivo", "variante_id", "mercado"], kind="stable").reset_index(drop=True)
+
+
+def validar_linaje_oro(gold: pd.DataFrame) -> dict[str, Any]:
+    """Puerta de linaje: cada fila Oro debe declarar sus registros Bronce verificables."""
+    if gold.empty:
+        raise ValueError("Linaje Oro: el panel no contiene registros")
+    fields = {"precios": "linaje_precios_bronce", "clima": "linaje_clima_bronce"}
+    climate_origins = 0
+    price_origins = 0
+    for row_number, row in gold.iterrows():
+        for label, field in fields.items():
+            raw = row.get(field)
+            if pd.isna(raw) or not str(raw).strip():
+                if label == "clima":
+                    continue  # el mes puede tener una ausencia de fuente declarada
+                raise ValueError(f"Linaje Oro: fila {row_number} no tiene {field}")
+            try:
+                origins = json.loads(str(raw))
+            except (TypeError, json.JSONDecodeError) as exc:
+                raise ValueError(f"Linaje Oro: JSON inválido en fila {row_number}, campo {field}") from exc
+            if not isinstance(origins, list) or (label == "precios" and not origins):
+                raise ValueError(f"Linaje Oro: lista de origen vacía o inválida en fila {row_number}, campo {field}")
+            for origin in origins:
+                if not isinstance(origin, dict) or not origin.get("archivo") or not origin.get("ingesta_utc"):
+                    raise ValueError(f"Linaje Oro: falta ruta/fecha de ingesta en fila {row_number}, campo {field}")
+                if not re.fullmatch(r"[0-9a-f]{64}", str(origin.get("sha256", ""))):
+                    raise ValueError(f"Linaje Oro: SHA-256 inválido en fila {row_number}, campo {field}")
+                if not isinstance(origin.get("registro"), int) or origin["registro"] < 1:
+                    raise ValueError(f"Linaje Oro: índice de registro inválido en fila {row_number}, campo {field}")
+                if label == "precios":
+                    price_origins += 1
+                else:
+                    climate_origins += 1
+    return {"filas_oro_verificadas": int(len(gold)), "referencias_bronce_precio": price_origins,
+            "referencias_bronce_clima": climate_origins,
+            "campos": list(fields.values()),
+            "elementos": ["archivo", "sha256", "ingesta_utc", "registro"]}
 
 
 def _write_csv(frame: pd.DataFrame, target: Path) -> None:
@@ -539,6 +604,7 @@ def ejecutar(bronze_dir: Path, data_dir: Path) -> dict[str, Any]:
     missing_report = diagnostico_faltantes(clean, climate_expected)
     transformed, climate_model, transform_report = transformar_estadisticamente(clean, climate_expected)
     gold = construir_oro(clean)
+    lineage_report = validar_linaje_oro(gold)
     silver_dir, gold_dir, quarantine_dir = data_dir / "plata", data_dir / "oro", data_dir / "cuarentena"
     _write_csv(transformed, silver_dir / "precios_clima.csv")
     _write_csv(climate_model, silver_dir / "clima_modelado.csv")
@@ -552,6 +618,7 @@ def ejecutar(bronze_dir: Path, data_dir: Path) -> dict[str, Any]:
         "bronce": _display_path(bronze_dir), "registros_bronce_parseados": len(raw), "registros_plata_validos": len(clean),
         "registros_cuarentena": len(quarantine), "conflictos_duplicados": len(conflicts),
         "filas_oro": len(gold), "integridad": "Pandera estricto; SHA-256 Bronce verificado antes de parsear",
+        "linaje_oro": lineage_report,
         "faltantes": missing_report, "transformaciones": transform_report,
         "imputacion": {"precios": "ninguna", "precipitacion": "ninguna", "temperatura": "solo copia de modelado; interpolación lineal interior de hasta dos días, con flags; original intacto"},
         "jerarquias_conceptuales": transform_report["jerarquias"],
