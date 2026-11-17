@@ -1,0 +1,29 @@
+{
+  "esquema": "tdl-bronce-meta/1",
+  "contenido_original": {
+    "archivo": "inegi_marco__marco-municipal-colima__2026-11-17_2026-11-17__20261117T134935Z-0c6457.geojson",
+    "descripcion": "Bytes tal como los entregó la fuente; no se modifican."
+  },
+  "metadatos_captura": {
+    "fuente": "inegi_marco",
+    "fuente_url": "https://gaia.inegi.org.mx/wscatgeo/v2/geo/mgem/06",
+    "fecha_captura": "2026-11-17T13:49:37Z",
+    "identificador_ejecucion": "20261117T134935Z-0c6457",
+    "formato_original": "geojson",
+    "sha256": "a345fd583e0b9c35ecc84c1494c40b5999338c8a33b134c9ad28e4e1d2635571",
+    "bytes": 517085,
+    "http_status": 200,
+    "registros_detectados": 10,
+    "estado_captura": "ok",
+    "advertencias": [],
+    "colision_nombre": false,
+    "etiqueta": "marco-municipal-colima",
+    "cve_ent": "06",
+    "nombre_entidad": "Colima",
+    "producto": "Marco Geoestadístico municipal",
+    "edicion_geometria": "INEGI. Marco Geoestadístico, diciembre de 2025",
+    "edicion_atributos": "INEGI. Censo de Población y Vivienda, 2020",
+    "fecha_ref_inicio": "2026-11-17",
+    "fecha_ref_fin": "2026-11-17"
+  }
+}
