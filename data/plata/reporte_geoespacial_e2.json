@@ -1,6 +1,6 @@
 {
   "esquema": "tdl-e2-geoespacial/1",
-  "generado_utc": "2026-11-17T13:42:58.403604+00:00",
+  "generado_utc": "2026-11-17T13:46:10.066481+00:00",
   "fuente": "INEGI Marco Geoestadístico municipal",
   "endpoint": "https://gaia.inegi.org.mx/wscatgeo/v2/geo/mgem/06",
   "edicion_geometria": "INEGI. Marco Geoestadístico, diciembre de 2025",
@@ -10,9 +10,9 @@
   "crs_salida": "EPSG:4326",
   "crs_superficie": "EPSG:32613",
   "bronce": {
-    "archivo": "data/bronce/inegi_marco/2026/11/inegi_marco__marco-municipal-colima__2026-11-17_2026-11-17__20261117T133522Z-e9106a.geojson",
+    "archivo": "data/bronce/inegi_marco/2026/11/inegi_marco__marco-municipal-colima__2026-11-17_2026-11-17__20261117T134546Z-02486d.geojson",
     "sha256": "a345fd583e0b9c35ecc84c1494c40b5999338c8a33b134c9ad28e4e1d2635571",
-    "fecha_ingesta_utc": "2026-11-17T13:35:25Z",
+    "fecha_ingesta_utc": "2026-11-17T13:45:48Z",
     "registros": "GeoJSON FeatureCollection.features[n]"
   },
   "asignacion_estacion": [

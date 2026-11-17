@@ -13,6 +13,8 @@ Se amplió el esquema interno de Bronce-Plata para retener el índice de cada re
 
 La declaración ética cubre términos, robots.txt, atribución, minimización de datos, sesgos y diferencias de periodo entre la geometría de 2025 y los atributos de población del Censo 2020.
 
+Se ejecutó `python main.py e2` localmente con las capturas más recientes de la rama: 15,147 filas válidas en Plata y 712 agregaciones en Oro; la puerta verificó las referencias de linaje antes de escribir. Se capturaron 10 municipios de Colima y el punto de la estación se asignó al municipio INEGI 06007, Manzanillo. El mapa y los reportes se generaron en sus rutas de entrega.
+
 ## Decisiones y limitaciones
 
 - La capa municipal de INEGI se mantiene como dimensión geoespacial separada en Oro. No se adjunta población municipal a las cotizaciones de mercados de Guadalajara o CDMX porque esa unión daría una relación espacial falsa.
@@ -28,7 +30,6 @@ La declaración ética cubre términos, robots.txt, atribución, minimización d
 
 ## Pendientes de cierre
 
-1. Ejecutar `python main.py e2` en el entorno con las dependencias instaladas y revisar el producto y el mapa resultantes.
-2. Confirmar un workflow exitoso en GitHub Actions tras añadir el extractor INEGI y la integración de linaje.
-3. Publicar los cambios y crear el tag `e2` apuntando al commit final.
-4. Registrar el enlace del repositorio en el formulario oficial.
+1. Confirmar un workflow exitoso en GitHub Actions tras publicar el extractor INEGI y la integración de linaje.
+2. Crear el tag `e2` apuntando al commit publicado y validado.
+3. Registrar el enlace del repositorio en el formulario oficial.

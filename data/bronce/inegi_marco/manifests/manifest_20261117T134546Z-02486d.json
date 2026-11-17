@@ -1,0 +1,39 @@
+{
+  "run_id": "20261117T134546Z-02486d",
+  "fuente": "inegi_marco",
+  "modo": "e2",
+  "disparador": "local o GitHub Actions",
+  "inicio": "2026-11-17T13:45:46Z",
+  "fin": "2026-11-17T13:45:48Z",
+  "duracion_s": 2.82,
+  "estado": "exitosa",
+  "solicitudes": 2,
+  "registros": 10,
+  "consultas": [
+    {
+      "entidad": "06",
+      "producto": "Marco Geoestadístico municipal",
+      "estado": "ok",
+      "registros": 10,
+      "archivo": "inegi_marco__marco-municipal-colima__2026-11-17_2026-11-17__20261117T134546Z-02486d.geojson",
+      "error": null,
+      "advertencias": []
+    }
+  ],
+  "archivos": [
+    {
+      "ruta": "data/bronce/inegi_marco/2026/11/inegi_marco__marco-municipal-colima__2026-11-17_2026-11-17__20261117T134546Z-02486d.geojson",
+      "sha256": "a345fd583e0b9c35ecc84c1494c40b5999338c8a33b134c9ad28e4e1d2635571",
+      "url": "https://gaia.inegi.org.mx/wscatgeo/v2/geo/mgem/06",
+      "bytes": 517085
+    }
+  ],
+  "errores": [],
+  "parametros": {
+    "endpoint": "https://gaia.inegi.org.mx/wscatgeo/v2/geo/mgem/06",
+    "entidad": "06",
+    "unidad": "municipios"
+  },
+  "esquema": "tdl-manifest/1",
+  "archivos_generados": 1
+}

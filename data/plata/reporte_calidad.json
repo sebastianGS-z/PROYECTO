@@ -1,6 +1,6 @@
 {
   "esquema": "tdl-e1-quality/1",
-  "generado_utc": "2026-11-17T11:36:55.281586+00:00",
+  "generado_utc": "2026-11-17T13:46:10.000368+00:00",
   "bronce": "data/bronce",
   "registros_bronce_parseados": 15147,
   "registros_plata_validos": 15147,
@@ -8,6 +8,21 @@
   "conflictos_duplicados": 0,
   "filas_oro": 712,
   "integridad": "Pandera estricto; SHA-256 Bronce verificado antes de parsear",
+  "linaje_oro": {
+    "filas_oro_verificadas": 712,
+    "referencias_bronce_precio": 14338,
+    "referencias_bronce_clima": 15545,
+    "campos": [
+      "linaje_precios_bronce",
+      "linaje_clima_bronce"
+    ],
+    "elementos": [
+      "archivo",
+      "sha256",
+      "ingesta_utc",
+      "registro"
+    ]
+  },
   "faltantes": {
     "regla": "No se imputan precios ni precipitación. MAR/MCAR/MNAR no se prueban solo con valores observados; se reportan asociaciones descriptivas.",
     "variables": {
