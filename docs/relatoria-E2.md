@@ -20,7 +20,7 @@ Se ejecutó `python main.py e2` localmente con las capturas más recientes de la
 - La capa municipal de INEGI se mantiene como dimensión geoespacial separada en Oro. No se adjunta población municipal a las cotizaciones de mercados de Guadalajara o CDMX porque esa unión daría una relación espacial falsa.
 - El punto NOAA representa una estación meteorológica; no representa cada parcela del estado.
 - El conteo poblacional corresponde al Censo 2020 y no debe leerse como población actual ni como producción agrícola.
-- El tag `e2` se generará después de verificar la captura, productos y workflow publicados.
+- GitHub Actions terminó con éxito en el run [44096242096](https://github.com/sebastianGS-z/PROYECTO/actions/runs/44096242096): las pruebas, captura diaria, pipeline E1 + E2 y validación de Bronce pasaron y los datos se publicaron.
 
 ## Evidencias
 
@@ -30,6 +30,5 @@ Se ejecutó `python main.py e2` localmente con las capturas más recientes de la
 
 ## Pendientes de cierre
 
-1. Confirmar un workflow exitoso en GitHub Actions tras publicar el extractor INEGI y la integración de linaje.
-2. Crear el tag `e2` apuntando al commit publicado y validado.
-3. Registrar el enlace del repositorio en el formulario oficial.
+1. Crear y publicar el tag `e2` en el commit con esta ficha y la evidencia del workflow exitoso.
+2. Registrar el enlace del repositorio en el formulario oficial de la entrega.
