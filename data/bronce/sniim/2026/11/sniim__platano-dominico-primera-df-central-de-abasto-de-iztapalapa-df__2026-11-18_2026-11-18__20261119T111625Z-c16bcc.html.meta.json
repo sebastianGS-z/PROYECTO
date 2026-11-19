@@ -1,0 +1,39 @@
+{
+  "esquema": "tdl-bronce-meta/1",
+  "contenido_original": {
+    "archivo": "sniim__platano-dominico-primera-df-central-de-abasto-de-iztapalapa-df__2026-11-18_2026-11-18__20261119T111625Z-c16bcc.html",
+    "descripcion": "Bytes tal como los entregó la fuente; no se modifican."
+  },
+  "metadatos_captura": {
+    "fuente": "sniim",
+    "fuente_url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=18%2F11%2F2026&fechaFinal=18%2F11%2F2026&ProductoId=666&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+    "fecha_captura": "2026-11-19T11:16:53Z",
+    "identificador_ejecucion": "20261119T111625Z-c16bcc",
+    "formato_original": "html",
+    "sha256": "cc879ac01f623039c84d573114cc4ee4be82a1c27ae3bce5af3daaf45a23b66e",
+    "bytes": 14705,
+    "http_status": 200,
+    "registros_detectados": 1,
+    "estado_captura": "ok",
+    "advertencias": [],
+    "colision_nombre": false,
+    "etiqueta": "Plátano Dominico - Primera__DF: Central de Abasto de Iztapalapa DF",
+    "producto": "Plátano Dominico - Primera",
+    "producto_id": "666",
+    "mercado": "DF: Central de Abasto de Iztapalapa DF",
+    "mercado_id": "100",
+    "fecha_ref_inicio": "2026-11-18",
+    "fecha_ref_fin": "2026-11-18",
+    "parametros": {
+      "fechaInicio": "18/11/2026",
+      "fechaFinal": "18/11/2026",
+      "ProductoId": "666",
+      "OrigenId": "-1",
+      "Origen": "Todos",
+      "DestinoId": "100",
+      "Destino": "DF: Central de Abasto de Iztapalapa DF",
+      "PreciosPorId": "1",
+      "RegistrosPorPagina": "500"
+    }
+  }
+}
