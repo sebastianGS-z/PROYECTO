@@ -250,18 +250,20 @@ def puerta_calidad(frame: pd.DataFrame, initial_quarantine: list[dict[str, Any]]
     """Valida con Pandera; filas que fallan se envían a cuarentena con evidencia."""
     df = _as_types(frame)
     quarantine = list(initial_quarantine)
-    # Reglas relacionales que describen el significado de las variables de origen.
-    business_reasons: dict[int, list[str]] = defaultdict(list)
-    for index, row in df.iterrows():
-        if row["tipo_registro"] == "precio":
-            if row["precio_min"] is not None and row["precio_max"] is not None and row["precio_min"] > row["precio_max"]:
-                business_reasons[index].append("precio_min mayor que precio_max")
-            if row["precio_min"] is not None and row["precio_frecuente"] is not None and row["precio_frecuente"] < row["precio_min"]:
-                business_reasons[index].append("precio_frecuente menor que precio_min")
-            if row["precio_max"] is not None and row["precio_frecuente"] is not None and row["precio_frecuente"] > row["precio_max"]:
-                business_reasons[index].append("precio_frecuente mayor que precio_max")
-        if row["tipo_registro"] == "clima" and row["tmin_c"] is not None and row["tmax_c"] is not None and row["tmin_c"] > row["tmax_c"]:
-            business_reasons[index].append("tmin_c mayor que tmax_c")
+    # Evalúa las reglas de negocio en bloque y construye motivos solo para filas
+    # inválidas. El pipeline anterior iteraba todas las filas con iterrows().
+    prices = df["tipo_registro"].eq("precio")
+    climate = df["tipo_registro"].eq("clima")
+    business_masks = (
+        ("precio_min mayor que precio_max", prices & df["precio_min"].notna() & df["precio_max"].notna() & df["precio_min"].gt(df["precio_max"])),
+        ("precio_frecuente menor que precio_min", prices & df["precio_min"].notna() & df["precio_frecuente"].notna() & df["precio_frecuente"].lt(df["precio_min"])),
+        ("precio_frecuente mayor que precio_max", prices & df["precio_max"].notna() & df["precio_frecuente"].notna() & df["precio_frecuente"].gt(df["precio_max"])),
+        ("tmin_c mayor que tmax_c", climate & df["tmin_c"].notna() & df["tmax_c"].notna() & df["tmin_c"].gt(df["tmax_c"])),
+    )
+    business_reasons: dict[Any, list[str]] = defaultdict(list)
+    for reason, mask in business_masks:
+        for index in df.index[mask]:
+            business_reasons[index].append(reason)
     bad_indexes = set(business_reasons)
     candidates = df.drop(index=list(bad_indexes)) if bad_indexes else df
     def append_business_quarantine() -> None:
@@ -297,6 +299,10 @@ def resolver_duplicados(frame: pd.DataFrame) -> tuple[pd.DataFrame, list[dict[st
     if df.empty:
         return df, []
     keys = ["tipo_registro", "fecha", "variante_id", "mercado", "origen", "presentacion", "estacion"]
+    # La mayoría de las capturas diarias no contienen claves repetidas. Evitar
+    # iterar todos los grupos singleton conserva el frame sin alterar su orden.
+    if not df.duplicated(keys, keep=False).any():
+        return df.reset_index(drop=True), []
     value_columns = [*NUMERIC_FIELDS, "cultivo", "variante", "localidad", "latitud", "longitud"]
     conflicts: list[dict[str, Any]] = []
     retained: list[pd.Series] = []

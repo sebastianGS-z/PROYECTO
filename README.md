@@ -101,6 +101,16 @@ python main.py e2 --solo-procesar  # usa el GeoJSON de INEGI ya guardado en Bron
 
 El proceso guarda la capa municipal de Colima en `data/bronce/inegi_marco/`, transforma atributos y geometría con GeoPandas en `data/plata/marco_geoestadistico_colima.csv`, publica la dimensión municipal en `data/oro/contexto_geoespacial_municipal.csv` y crea un mapa en `docs/E2/`. El reporte de proceso está en `data/plata/reporte_geoespacial_e2.json`. La dimensión geográfica permanece separada de los precios por mercado para evitar uniones entre unidades espaciales incompatibles. Términos, robots.txt, atribución, privacidad y sesgos: [docs/etica-datos.md](docs/etica-datos.md). Ficha: [docs/E2/ENTREGA.md](docs/E2/ENTREGA.md).
 
+## 12.2 Optimización y publicación E3
+
+`src/tdl_e1/pipeline.py` aplica validación vectorizada de reglas y evita recorrer grupos singleton si no hay claves duplicadas. El parser SNIIM limita el árbol HTML a tablas. La medición antes/después se reproduce con el tag de línea base `e2` y el inventario Bronce versionado:
+
+```bash
+python benchmarks/comparativa.py --repeticiones 3
+```
+
+El benchmark usa procesos aislados, exige igualdad SHA-256 de las salidas CSV y guarda resultados, logs y gráfica. El dataset curado está en [`data/publico/panel_mensual_e3.csv`](data/publico/panel_mensual_e3.csv); licencia y avisos en [`data/publico/LICENSE.md`](data/publico/LICENSE.md); diccionario en [`docs/E3/datasheet.md`](docs/E3/datasheet.md); resultados en [`docs/E3/ENTREGA.md`](docs/E3/ENTREGA.md).
+
 ## 13. Sistema PSP
 ```bash
 python -m calidad.psp tiempo --archivo calidad/tiempo-sebastian.csv --fecha 2026-11-08 \

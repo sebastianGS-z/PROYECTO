@@ -1,0 +1,7 @@
+version,run,errors,seconds,peak_rss_kib,records_parsed,records_valid,records_quarantined,gold_rows,duplicate_conflicts,log
+base,1,0,22.150280391972046,177700,15204,15204,0,712,0,benchmarks/evidencias/base_corrida_1.log
+optimizado,1,0,19.463393245998304,159180,15204,15204,0,712,0,benchmarks/evidencias/optimizado_corrida_1.log
+base,2,0,22.104266475973418,177848,15204,15204,0,712,0,benchmarks/evidencias/base_corrida_2.log
+optimizado,2,0,19.23108551101177,159204,15204,15204,0,712,0,benchmarks/evidencias/optimizado_corrida_2.log
+base,3,0,21.67159360399819,178092,15204,15204,0,712,0,benchmarks/evidencias/base_corrida_3.log
+optimizado,3,0,19.289004479011055,159244,15204,15204,0,712,0,benchmarks/evidencias/optimizado_corrida_3.log

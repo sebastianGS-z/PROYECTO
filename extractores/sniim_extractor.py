@@ -17,11 +17,12 @@ from __future__ import annotations
 
 import re
 import unicodedata
+from html import unescape
 from dataclasses import dataclass, field
 from datetime import date
 from typing import Any
 
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, SoupStrainer
 
 from extractores.base import BaseExtractor, RawCapture, StructureChangedError
 
@@ -155,10 +156,14 @@ def _rejilla(tabla) -> list[list[str]]:
 
 def parse_resultados(html: str) -> ResultadoParseado:
     """Interpreta la página de resultados. Los valores se conservan como texto original."""
-    soup = BeautifulSoup(html, "html.parser")
-    texto_norm = normalizar(soup.get_text(" "))
+    # El texto plano basta para detectar paginación y respuestas sin resultados;
+    # el árbol HTML completo se restringe a tablas, que son el único contenido
+    # estructural necesario para extraer observaciones.
+    texto = re.sub(r"(?is)<(?:script|style)\b[^>]*>.*?</(?:script|style)\s*>", " ", html)
+    texto_norm = normalizar(unescape(re.sub(r"<[^>]+>", " ", texto)))
     m = re.search(r"pagina (\d+) de (\d+)", texto_norm)
     pagina = (int(m.group(1)), int(m.group(2))) if m else None
+    soup = BeautifulSoup(html, "html.parser", parse_only=SoupStrainer("table"))
 
     tabla = None
     for tr in soup.find_all("tr"):

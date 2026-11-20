@@ -1,0 +1,142 @@
+{
+  "generado_utc": "2026-11-20T21:49:10.831421+00:00",
+  "baseline": {
+    "referencia": "e2",
+    "commit": "34b56a3d6f5dc9d5614bd8a21bbd364a879eaa44"
+  },
+  "optimizado": {
+    "referencia": "working_tree",
+    "codigo_sha256": "7b863c60f7a7328ee98e28440d44308b2a9155e625c398fa4985342d33a0c729"
+  },
+  "condiciones": {
+    "repeticiones_por_version": 3,
+    "python": "3.12.3",
+    "plataforma": "linux",
+    "bronce": {
+      "archivos": 3736,
+      "bytes": 37463948,
+      "sha256_inventario": "e80946048bbf911f6be13ab49ec19a313dc808f0a47c97705e6ba84dc98ecea7"
+    },
+    "metricas_resumidas": "mediana de procesos aislados"
+  },
+  "metricas": {
+    "tiempo_segundos": {
+      "antes": 22.104266475973418,
+      "despues": 19.289004479011055,
+      "mejora_porcentaje": 12.74
+    },
+    "memoria_max_mib": {
+      "antes": 173.6796875,
+      "despues": 155.47265625,
+      "mejora_porcentaje": 10.48
+    },
+    "errores": {
+      "antes": 0,
+      "despues": 0
+    },
+    "registros_procesados": {
+      "antes": 15204,
+      "despues": 15204
+    },
+    "registros_cuarentena": {
+      "antes": 0,
+      "despues": 0
+    },
+    "filas_oro": {
+      "antes": 712,
+      "despues": 712
+    },
+    "conflictos_duplicados": {
+      "antes": 0,
+      "despues": 0
+    },
+    "salidas_csv_identicas": true
+  },
+  "corridas": [
+    {
+      "version": "base",
+      "run": 1,
+      "errors": 0,
+      "seconds": 22.150280391972046,
+      "peak_rss_kib": 177700,
+      "records_parsed": 15204,
+      "records_valid": 15204,
+      "records_quarantined": 0,
+      "gold_rows": 712,
+      "duplicate_conflicts": 0,
+      "log": "benchmarks/evidencias/base_corrida_1.log"
+    },
+    {
+      "version": "optimizado",
+      "run": 1,
+      "errors": 0,
+      "seconds": 19.463393245998304,
+      "peak_rss_kib": 159180,
+      "records_parsed": 15204,
+      "records_valid": 15204,
+      "records_quarantined": 0,
+      "gold_rows": 712,
+      "duplicate_conflicts": 0,
+      "log": "benchmarks/evidencias/optimizado_corrida_1.log"
+    },
+    {
+      "version": "base",
+      "run": 2,
+      "errors": 0,
+      "seconds": 22.104266475973418,
+      "peak_rss_kib": 177848,
+      "records_parsed": 15204,
+      "records_valid": 15204,
+      "records_quarantined": 0,
+      "gold_rows": 712,
+      "duplicate_conflicts": 0,
+      "log": "benchmarks/evidencias/base_corrida_2.log"
+    },
+    {
+      "version": "optimizado",
+      "run": 2,
+      "errors": 0,
+      "seconds": 19.23108551101177,
+      "peak_rss_kib": 159204,
+      "records_parsed": 15204,
+      "records_valid": 15204,
+      "records_quarantined": 0,
+      "gold_rows": 712,
+      "duplicate_conflicts": 0,
+      "log": "benchmarks/evidencias/optimizado_corrida_2.log"
+    },
+    {
+      "version": "base",
+      "run": 3,
+      "errors": 0,
+      "seconds": 21.67159360399819,
+      "peak_rss_kib": 178092,
+      "records_parsed": 15204,
+      "records_valid": 15204,
+      "records_quarantined": 0,
+      "gold_rows": 712,
+      "duplicate_conflicts": 0,
+      "log": "benchmarks/evidencias/base_corrida_3.log"
+    },
+    {
+      "version": "optimizado",
+      "run": 3,
+      "errors": 0,
+      "seconds": 19.289004479011055,
+      "peak_rss_kib": 159244,
+      "records_parsed": 15204,
+      "records_valid": 15204,
+      "records_quarantined": 0,
+      "gold_rows": 712,
+      "duplicate_conflicts": 0,
+      "log": "benchmarks/evidencias/optimizado_corrida_3.log"
+    }
+  ],
+  "archivos_salida_sha256": {
+    "cuarentena/registros_invalidos.csv": "dd22e55d67b3b0e59cd0c2156e38128ffcf2daf8f200e3b93f15864b19d36e03",
+    "oro/panel_mensual.csv": "b39744207a369cd7199608e5fa00e6d495e90f58058b0d856642e61099400c5d",
+    "plata/clima_modelado.csv": "bbcd4c477a6b8441895a7cdba0234a3c025e1978e471fb79026658958a99331c",
+    "plata/conflictos_resueltos.csv": "0e27fa76417a366a56f87890fdc122ff3332cb298cc1718946b3d86a26c11afd",
+    "plata/precios_clima.csv": "db95e3c3ba3a3dd3a74e0d85e91777be19eab1e2e539240a534245f1339a9fde"
+  }
+}
