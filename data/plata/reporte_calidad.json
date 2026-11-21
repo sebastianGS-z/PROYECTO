@@ -1,16 +1,16 @@
 {
   "esquema": "tdl-e1-quality/1",
-  "generado_utc": "2026-11-20T21:46:46.372289+00:00",
+  "generado_utc": "2026-11-21T10:46:58.314916+00:00",
   "bronce": "data/bronce",
-  "registros_bronce_parseados": 15204,
-  "registros_plata_validos": 15204,
+  "registros_bronce_parseados": 15223,
+  "registros_plata_validos": 15223,
   "registros_cuarentena": 0,
   "conflictos_duplicados": 0,
   "filas_oro": 712,
   "integridad": "Pandera estricto; SHA-256 Bronce verificado antes de parsear",
   "linaje_oro": {
     "filas_oro_verificadas": 712,
-    "referencias_bronce_precio": 14395,
+    "referencias_bronce_precio": 14414,
     "referencias_bronce_clima": 15545,
     "campos": [
       "linaje_precios_bronce",
@@ -27,7 +27,7 @@
     "regla": "No se imputan precios ni precipitación. MAR/MCAR/MNAR no se prueban solo con valores observados; se reportan asociaciones descriptivas.",
     "variables": {
       "precio_min": {
-        "n_aplicable": 14395,
+        "n_aplicable": 14414,
         "faltantes": 0,
         "porcentaje": 0.0,
         "mecanismo": "sin_faltantes",
@@ -48,7 +48,7 @@
         "decision_imputacion": "no_imputar: una cotización ausente no se deduce de las restantes"
       },
       "precio_max": {
-        "n_aplicable": 14395,
+        "n_aplicable": 14414,
         "faltantes": 0,
         "porcentaje": 0.0,
         "mecanismo": "sin_faltantes",
@@ -69,7 +69,7 @@
         "decision_imputacion": "no_imputar: una cotización ausente no se deduce de las restantes"
       },
       "precio_frecuente": {
-        "n_aplicable": 14395,
+        "n_aplicable": 14414,
         "faltantes": 0,
         "porcentaje": 0.0,
         "mecanismo": "sin_faltantes",
@@ -90,13 +90,13 @@
         "decision_imputacion": "no_imputar: una cotización ausente no se deduce de las restantes"
       },
       "tavg_c": {
-        "n_aplicable": 1106,
-        "faltantes": 315,
-        "porcentaje": 28.48,
+        "n_aplicable": 1107,
+        "faltantes": 316,
+        "porcentaje": 28.55,
         "mecanismo": "MAR_compatible_asociacion_con_variables_observadas",
         "tasas_por_grupo": {
           "estacion": {
-            "MXM00076654": 0.2848
+            "MXM00076654": 0.2855
           },
           "mes": {
             "1": 0.3763,
@@ -109,20 +109,20 @@
             "8": 0.3763,
             "9": 0.3778,
             "10": 0.3441,
-            "11": 0.14,
+            "11": 0.1485,
             "12": 0.3441
           }
         },
         "decision_imputacion": "solo feature de modelado: interpolación lineal interior de hasta 2 días, con indicador; nunca sobrescribe el valor original"
       },
       "tmax_c": {
-        "n_aplicable": 1106,
-        "faltantes": 513,
-        "porcentaje": 46.38,
+        "n_aplicable": 1107,
+        "faltantes": 514,
+        "porcentaje": 46.43,
         "mecanismo": "MAR_compatible_asociacion_con_variables_observadas",
         "tasas_por_grupo": {
           "estacion": {
-            "MXM00076654": 0.4638
+            "MXM00076654": 0.4643
           },
           "mes": {
             "1": 0.4946,
@@ -135,20 +135,20 @@
             "8": 0.6452,
             "9": 0.6444,
             "10": 0.5054,
-            "11": 0.41,
+            "11": 0.4158,
             "12": 0.5269
           }
         },
         "decision_imputacion": "solo feature de modelado: interpolación lineal interior de hasta 2 días, con indicador; nunca sobrescribe el valor original"
       },
       "tmin_c": {
-        "n_aplicable": 1106,
-        "faltantes": 513,
-        "porcentaje": 46.38,
+        "n_aplicable": 1107,
+        "faltantes": 514,
+        "porcentaje": 46.43,
         "mecanismo": "MAR_compatible_asociacion_con_variables_observadas",
         "tasas_por_grupo": {
           "estacion": {
-            "MXM00076654": 0.4638
+            "MXM00076654": 0.4643
           },
           "mes": {
             "1": 0.4946,
@@ -161,20 +161,20 @@
             "8": 0.6452,
             "9": 0.6444,
             "10": 0.5054,
-            "11": 0.41,
+            "11": 0.4158,
             "12": 0.5269
           }
         },
         "decision_imputacion": "solo feature de modelado: interpolación lineal interior de hasta 2 días, con indicador; nunca sobrescribe el valor original"
       },
       "prcp_mm": {
-        "n_aplicable": 1106,
-        "faltantes": 814,
-        "porcentaje": 73.6,
+        "n_aplicable": 1107,
+        "faltantes": 815,
+        "porcentaje": 73.62,
         "mecanismo": "MAR_compatible_asociacion_con_variables_observadas",
         "tasas_por_grupo": {
           "estacion": {
-            "MXM00076654": 0.736
+            "MXM00076654": 0.7362
           },
           "mes": {
             "1": 0.6667,
@@ -187,7 +187,7 @@
             "8": 0.9032,
             "9": 0.8444,
             "10": 0.7742,
-            "11": 0.65,
+            "11": 0.6535,
             "12": 0.3656
           }
         },
@@ -196,10 +196,10 @@
     },
     "calendario_climatico": {
       "inicio_observado": "2023-11-01",
-      "fin_observado": "2026-11-19",
-      "dias_estacion_esperados_en_rangos_observados": 1106,
+      "fin_observado": "2026-11-20",
+      "dias_estacion_esperados_en_rangos_observados": 1107,
       "dias_con_algun_dato": 791,
-      "dias_sin_registro_util": 315,
+      "dias_sin_registro_util": 316,
       "nota": "Rango derivado de fechas válidas. No incluye posibles faltantes anteriores o posteriores al rango observado."
     }
   },
@@ -274,22 +274,22 @@
         "metodo": "Min-Max y Z-Score poblacional sobre *_analisis (original o winsorizado); parámetros completos en el reporte",
         "minimo": 5.0,
         "maximo": 830.0,
-        "media": 164.65765022577284,
-        "desviacion": 171.90629831390206
+        "media": 164.61920702095185,
+        "desviacion": 171.85997850576283
       },
       "precio_max": {
         "metodo": "Min-Max y Z-Score poblacional sobre *_analisis (original o winsorizado); parámetros completos en el reporte",
         "minimo": 8.0,
-        "maximo": 1551.25,
-        "media": 198.78876693296286,
-        "desviacion": 214.67514626525644
+        "maximo": 1555.0,
+        "media": 198.73030040238658,
+        "desviacion": 214.60627384493898
       },
       "precio_frecuente": {
         "metodo": "Min-Max y Z-Score poblacional sobre *_analisis (original o winsorizado); parámetros completos en el reporte",
         "minimo": 6.0,
         "maximo": 945.0,
-        "media": 174.44584056964223,
-        "desviacion": 181.89927573794895
+        "media": 174.4043985014569,
+        "desviacion": 181.84835380720682
       },
       "tavg_c": {
         "metodo": "Min-Max y Z-Score poblacional sobre *_analisis (original o winsorizado); parámetros completos en el reporte",
