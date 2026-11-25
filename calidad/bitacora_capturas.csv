@@ -40,3 +40,6 @@ run_id,fuente,modo,disparador,inicio_utc,fin_utc,duracion_s,estado,solicitudes,r
 20261124T132359Z-261815,sniim,diaria,schedule,2026-11-24T13:23:59Z,2026-11-24T13:25:27Z,88.04,exitosa,40,19,39,0,
 20261124T132359Z-261815,noaa_ncei,diaria,schedule,2026-11-24T13:25:27Z,2026-11-24T13:25:29Z,1.93,sin_resultados,2,0,1,0,
 20261124T132530Z-83e569,inegi_marco,e2,local o GitHub Actions,2026-11-24T13:25:30Z,2026-11-24T13:25:32Z,2.44,exitosa,2,10,1,0,
+20261125T121630Z-cc6370,sniim,diaria,schedule,2026-11-25T12:16:30Z,2026-11-25T12:18:17Z,107.83,exitosa,40,19,39,0,
+20261125T121630Z-cc6370,noaa_ncei,diaria,schedule,2026-11-25T12:18:17Z,2026-11-25T12:18:20Z,2.11,sin_resultados,2,0,1,0,
+20261125T121820Z-75c817,inegi_marco,e2,local o GitHub Actions,2026-11-25T12:18:20Z,2026-11-25T12:18:22Z,2.41,exitosa,2,10,1,0,
