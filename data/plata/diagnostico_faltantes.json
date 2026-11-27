@@ -2,7 +2,7 @@
   "regla": "No se imputan precios ni precipitación. MAR/MCAR/MNAR no se prueban solo con valores observados; se reportan asociaciones descriptivas.",
   "variables": {
     "precio_min": {
-      "n_aplicable": 14471,
+      "n_aplicable": 14490,
       "faltantes": 0,
       "porcentaje": 0.0,
       "mecanismo": "sin_faltantes",
@@ -23,7 +23,7 @@
       "decision_imputacion": "no_imputar: una cotización ausente no se deduce de las restantes"
     },
     "precio_max": {
-      "n_aplicable": 14471,
+      "n_aplicable": 14490,
       "faltantes": 0,
       "porcentaje": 0.0,
       "mecanismo": "sin_faltantes",
@@ -44,7 +44,7 @@
       "decision_imputacion": "no_imputar: una cotización ausente no se deduce de las restantes"
     },
     "precio_frecuente": {
-      "n_aplicable": 14471,
+      "n_aplicable": 14490,
       "faltantes": 0,
       "porcentaje": 0.0,
       "mecanismo": "sin_faltantes",
@@ -65,13 +65,13 @@
       "decision_imputacion": "no_imputar: una cotización ausente no se deduce de las restantes"
     },
     "tavg_c": {
-      "n_aplicable": 1112,
-      "faltantes": 321,
-      "porcentaje": 28.87,
+      "n_aplicable": 1113,
+      "faltantes": 322,
+      "porcentaje": 28.93,
       "mecanismo": "MAR_compatible_asociacion_con_variables_observadas",
       "tasas_por_grupo": {
         "estacion": {
-          "MXM00076654": 0.2887
+          "MXM00076654": 0.2893
         },
         "mes": {
           "1": 0.3763,
@@ -84,20 +84,20 @@
           "8": 0.3763,
           "9": 0.3778,
           "10": 0.3441,
-          "11": 0.1887,
+          "11": 0.1963,
           "12": 0.3441
         }
       },
       "decision_imputacion": "solo feature de modelado: interpolación lineal interior de hasta 2 días, con indicador; nunca sobrescribe el valor original"
     },
     "tmax_c": {
-      "n_aplicable": 1112,
-      "faltantes": 519,
-      "porcentaje": 46.67,
+      "n_aplicable": 1113,
+      "faltantes": 520,
+      "porcentaje": 46.72,
       "mecanismo": "MAR_compatible_asociacion_con_variables_observadas",
       "tasas_por_grupo": {
         "estacion": {
-          "MXM00076654": 0.4667
+          "MXM00076654": 0.4672
         },
         "mes": {
           "1": 0.4946,
@@ -110,20 +110,20 @@
           "8": 0.6452,
           "9": 0.6444,
           "10": 0.5054,
-          "11": 0.4434,
+          "11": 0.4486,
           "12": 0.5269
         }
       },
       "decision_imputacion": "solo feature de modelado: interpolación lineal interior de hasta 2 días, con indicador; nunca sobrescribe el valor original"
     },
     "tmin_c": {
-      "n_aplicable": 1112,
-      "faltantes": 519,
-      "porcentaje": 46.67,
+      "n_aplicable": 1113,
+      "faltantes": 520,
+      "porcentaje": 46.72,
       "mecanismo": "MAR_compatible_asociacion_con_variables_observadas",
       "tasas_por_grupo": {
         "estacion": {
-          "MXM00076654": 0.4667
+          "MXM00076654": 0.4672
         },
         "mes": {
           "1": 0.4946,
@@ -136,20 +136,20 @@
           "8": 0.6452,
           "9": 0.6444,
           "10": 0.5054,
-          "11": 0.4434,
+          "11": 0.4486,
           "12": 0.5269
         }
       },
       "decision_imputacion": "solo feature de modelado: interpolación lineal interior de hasta 2 días, con indicador; nunca sobrescribe el valor original"
     },
     "prcp_mm": {
-      "n_aplicable": 1112,
-      "faltantes": 820,
-      "porcentaje": 73.74,
+      "n_aplicable": 1113,
+      "faltantes": 821,
+      "porcentaje": 73.76,
       "mecanismo": "MAR_compatible_asociacion_con_variables_observadas",
       "tasas_por_grupo": {
         "estacion": {
-          "MXM00076654": 0.7374
+          "MXM00076654": 0.7376
         },
         "mes": {
           "1": 0.6667,
@@ -162,7 +162,7 @@
           "8": 0.9032,
           "9": 0.8444,
           "10": 0.7742,
-          "11": 0.6698,
+          "11": 0.6729,
           "12": 0.3656
         }
       },
@@ -171,10 +171,10 @@
   },
   "calendario_climatico": {
     "inicio_observado": "2023-11-01",
-    "fin_observado": "2026-11-25",
-    "dias_estacion_esperados_en_rangos_observados": 1112,
+    "fin_observado": "2026-11-26",
+    "dias_estacion_esperados_en_rangos_observados": 1113,
     "dias_con_algun_dato": 791,
-    "dias_sin_registro_util": 321,
+    "dias_sin_registro_util": 322,
     "nota": "Rango derivado de fechas válidas. No incluye posibles faltantes anteriores o posteriores al rango observado."
   }
 }
