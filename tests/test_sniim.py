@@ -9,7 +9,7 @@ from datetime import date
 import pytest
 
 from extractores.base import StructureChangedError
-from extractores.sniim_extractor import (SniimExtractor, normalizar, parse_formulario, parse_resultados)
+from extractores.sniim_extractor import SniimExtractor, normalizar, parse_formulario, parse_resultados
 from tests.conftest import FakeResponse, FakeSession
 
 FORM = """<html><body><form>

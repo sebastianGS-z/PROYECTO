@@ -2,12 +2,11 @@
 import json
 from datetime import date
 
-from almacenamiento.bronze_writer import META_SUFFIX
 from calidad.objetivos import evaluar_objetivos
-from pipeline import capturar_clima, capturar_sniim, exit_code, meses, ultimos_36_meses
-from scripts.validar_bronce import validar
 from extractores.sniim_extractor import SniimExtractor
 from extractores.weather_extractor import WeatherExtractor
+from pipeline import capturar_clima, capturar_sniim, exit_code, meses, ultimos_36_meses
+from scripts.validar_bronce import validar
 from tests.conftest import FakeResponse, FakeSession
 from tests.test_sniim import FORM, RESULTADOS, SIN
 from tests.test_weather import payload

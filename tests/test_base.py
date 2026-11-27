@@ -1,8 +1,7 @@
 import pytest
 import requests
 
-from extractores.base import (BaseExtractor, EmptyResponseError, HttpError, RequestFailed,
-                              RobotsDisallowed, RobotsUnavailable)
+from extractores.base import BaseExtractor, EmptyResponseError, HttpError, RequestFailed, RobotsDisallowed, RobotsUnavailable
 from tests.conftest import ROBOTS_OK, FakeResponse, FakeSession
 
 URL = "https://ejemplo.mx/datos"

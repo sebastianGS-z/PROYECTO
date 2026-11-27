@@ -1,0 +1,92 @@
+name: Integración continua (puerta de calidad 2)
+
+# Puerta 2 del Proyecto Integrador: en cada push y pull request corren linter, pruebas con
+# cobertura mínima, búsqueda de secretos, auditoría de dependencias y la puerta de datos (Bronce → Oro).
+# Un cambio que rompe cualquiera de estos pasos no se integra.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: validacion-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  secretos:
+    name: Secretos expuestos (gitleaks, historial completo)
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  calidad:
+    name: Linter, pruebas, cobertura y puerta de datos
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Instalar dependencias con versiones exactas
+        run: python -m pip install -r requirements-lock.txt
+      - name: Linter (ruff, configuración en pyproject.toml)
+        run: ruff check --output-format=github .
+      - name: Vulnerabilidades de dependencias (pip-audit)
+        run: pip-audit -r requirements-dev.txt --progress-spinner off
+      - name: Pruebas unitarias sin red con cobertura mínima de 60 %
+        run: python -m pytest -q --cov --cov-report=term --cov-report=xml
+      - name: Puerta de datos: regenerar Plata y Oro desde Bronce versionado
+        run: python main.py capas
+      - name: Rechazar si la puerta de calidad envió registros a cuarentena sin reportarlos
+        run: |
+          python - <<'PY'
+          import json, sys
+          r = json.load(open("data/plata/reporte_calidad.json", encoding="utf-8"))
+          print({k: r[k] for k in ("registros_bronce_parseados", "registros_plata_validos", "registros_cuarentena", "filas_oro")})
+          if r["registros_plata_validos"] + r["registros_cuarentena"] < r["registros_bronce_parseados"]:
+              sys.exit("Registros perdidos entre Bronce y Plata sin pasar por cuarentena")
+          if r["filas_oro"] == 0:
+              sys.exit("Oro vacío")
+          PY
+      - name: Integración geoespacial E2 desde Bronce (sin red)
+        run: python main.py e2 --solo-procesar
+      - name: Pronóstico, exportación y tablero (sin red)
+        run: python main.py observatorio --horizonte 3
+      - name: Mapa agrícola y referencia comercial global desde Bronce
+        run: |
+          python main.py siap
+          python main.py comercio-intl --solo-procesar
+      - name: Métricas de calidad (fiabilidad e ISO/IEC 25012)
+        run: python -m calidad.metricas
+      - name: Verificar artefactos del observatorio
+        run: |
+          test -s data/oro/panel_mensual.csv
+          test -s data/oro/reporte_observatorio_e4.json
+          test -s data/publico/panel_mensual_actual.csv
+          test -s data/publico/produccion_municipal_colima.geojson
+          test -s data/publico/comercio_fruticola_mundial.csv
+          test -s tablero/index.html
+          test -s calidad/reportes/fiabilidad.json
+          test -s calidad/reportes/iso25012.json
+      - name: Guardar reporte de cobertura
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cobertura-${{ github.run_id }}
+          path: coverage.xml
+          if-no-files-found: ignore
+          retention-days: 30

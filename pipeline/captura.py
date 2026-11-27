@@ -2,11 +2,9 @@
 from __future__ import annotations
 
 import calendar
-import json
 import logging
 import os
 from datetime import date, timedelta
-from pathlib import Path
 from typing import Any
 
 from almacenamiento.bronze_writer import BronzeWriter
@@ -70,7 +68,7 @@ def capturar_sniim(run_id: str, modo: str, periodos: list[tuple[date, date]], se
         cat_ok = True
         try:
             ext.cargar_catalogo()
-        except RobotsDisallowed as exc:
+        except RobotsDisallowed:
             raise
         except ExtractorError as exc:
             man.add_consulta({"paso": "catalogo_formulario"}, "fallida", error=str(exc))
@@ -118,7 +116,7 @@ def capturar_clima(run_id: str, modo: str, inicio: date, fin: date, settings: Se
     ext = extractor or WeatherExtractor(settings)
     writer = BronzeWriter(settings.bronze_dir)
     man = Manifest(run_id, "noaa_ncei", modo, disparador(),
-                   parametros={"localidades": [l["id"] for l in elegidas], "inicio": inicio.isoformat(), "fin": fin.isoformat()})
+                   parametros={"localidades": [loc["id"] for loc in elegidas], "inicio": inicio.isoformat(), "fin": fin.isoformat()})
     tramos = meses(inicio, fin) if por_mes else [(inicio, fin)]
     try:
         for loc in elegidas:

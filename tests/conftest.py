@@ -7,7 +7,6 @@ from __future__ import annotations
 from dataclasses import replace
 
 import pytest
-import requests
 
 from config.settings import get_settings
 from extractores import base

@@ -43,6 +43,26 @@ class INEGIMarcoExtractor(BaseExtractor):
                        "fecha_ref_fin": datetime.now(timezone.utc).date().isoformat()},
         )
 
+    def fetch_estado(self, clave: str) -> RawCapture:
+        """Captura la geometría oficial de un estado para mapas nacionales de mercados."""
+        if not clave.isdigit() or len(clave) != 2 or not 1 <= int(clave) <= 32:
+            raise ValueError(f"Clave de entidad INEGI inválida: {clave!r}")
+        endpoint = f"https://gaia.inegi.org.mx/wscatgeo/v2/geo/mgee/{clave}"
+        response = self.get(endpoint, headers={"Accept": "application/geo+json, application/json"})
+        payload = self.parse_json(response)
+        if payload.get("type") != "FeatureCollection" or not payload.get("features"):
+            raise ValueError(f"El INEGI no devolvió el polígono estatal {clave}")
+        name = str(payload["features"][0].get("properties", {}).get("nomgeo", clave))
+        return RawCapture(fuente=self.fuente, url=response.url, contenido=response.content,
+                          formato="geojson", http_status=response.status_code,
+                          registros=len(payload["features"]), estado="ok",
+                          metadatos={"etiqueta": f"marco-estatal-{clave}", "tipo": "marco-estatal",
+                                     "cve_ent": clave, "nombre_entidad": name,
+                                     "producto": "Marco Geoestadístico estatal",
+                                     "edicion_geometria": payload.get("metadatos", {}).get("Fuente_informacion_vectorial"),
+                                     "fecha_ref_inicio": datetime.now(timezone.utc).date().isoformat(),
+                                     "fecha_ref_fin": datetime.now(timezone.utc).date().isoformat()})
+
 
 def capturar(settings=None) -> tuple[Path, str]:
     settings = settings or get_settings()
@@ -71,8 +91,17 @@ def capturar(settings=None) -> tuple[Path, str]:
     return path, cap.fecha_captura
 
 
+def _rel(path: Path) -> str:
+    """Ruta relativa al repositorio cuando es posible (reproducible); absoluta si está fuera."""
+    resolved = Path(path).resolve()
+    return resolved.relative_to(BASE_DIR).as_posix() if resolved.is_relative_to(BASE_DIR) else str(resolved)
+
+
 def _latest_geojson(bronze_dir: Path) -> tuple[Path, dict[str, Any], str]:
-    files = sorted((bronze_dir / "inegi_marco").rglob("*.geojson"), key=lambda p: p.stat().st_mtime_ns)
+    # Solo la capa municipal de Colima: los polígonos estatales (marco-estatal-XX) comparten carpeta
+    # y no deben confundirse con ella. Se ordena por nombre (incluye el run_id con fecha UTC), no por mtime,
+    # que cambia al clonar el repositorio.
+    files = sorted((bronze_dir / "inegi_marco").rglob("*__marco-municipal-colima__*.geojson"), key=lambda p: p.name.rsplit("__", 1)[-1])
     if not files:
         raise FileNotFoundError("No hay GeoJSON del Marco Geoestadístico en Bronce; ejecute primero la captura E2")
     path = files[-1]
@@ -138,7 +167,7 @@ def procesar(bronze_dir: Path, data_dir: Path, mapa_path: Path | None = None) ->
     tabular["fuente_geoespacial"] = "INEGI Marco Geoestadístico municipal"
     tabular["version_geometria"] = str(md.get("edicion_geometria") or "no informada")
     tabular["version_atributos"] = str(md.get("edicion_atributos") or "no informada")
-    tabular["source_file"] = source_path.resolve().relative_to(BASE_DIR).as_posix()
+    tabular["source_file"] = _rel(source_path)
     tabular["source_sha256"] = digest
     tabular["fecha_ingesta_utc"] = md.get("fecha_captura", "")
     silver_path = data_dir / "plata" / "marco_geoestadistico_colima.csv"
@@ -164,9 +193,7 @@ def procesar(bronze_dir: Path, data_dir: Path, mapa_path: Path | None = None) ->
                    "fecha_ingesta_utc": md.get("fecha_captura"),
                    "registros": "GeoJSON FeatureCollection.features[n]"},
         "asignacion_estacion": stations,
-        "productos": {"plata_csv": silver_path.relative_to(BASE_DIR).as_posix(),
-                      "oro_csv": gold_path.relative_to(BASE_DIR).as_posix(),
-                      "mapa": mapa_path.relative_to(BASE_DIR).as_posix() if mapa_path.is_relative_to(BASE_DIR) else str(mapa_path)},
+        "productos": {"plata_csv": _rel(silver_path), "oro_csv": _rel(gold_path), "mapa": _rel(mapa_path)},
         "nota": "Los límites y población municipal se entregan como dimensión separada; no se asocian directamente a mercados mayoristas fuera de Colima.",
     }
     report_path.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")

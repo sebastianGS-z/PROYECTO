@@ -9,3 +9,12 @@ logs/*
 data/sintetico/
 data/diagnostico/
 *.egg-info/
+
+# Cobertura y caché de herramientas de calidad
+.coverage
+coverage.xml
+.ruff_cache/
+
+# Audio de entrevistas: la voz es dato personal (LFPDPPP). Se conserva solo la transcripción en docs/E0/entrevistas.md
+ENTREVISTA.m4a
+*.m4a

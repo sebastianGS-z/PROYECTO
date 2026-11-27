@@ -17,9 +17,9 @@ from __future__ import annotations
 
 import re
 import unicodedata
-from html import unescape
 from dataclasses import dataclass, field
 from datetime import date
+from html import unescape
 from typing import Any
 
 from bs4 import BeautifulSoup, SoupStrainer
@@ -154,8 +154,14 @@ def _rejilla(tabla) -> list[list[str]]:
     return filas
 
 
-def parse_resultados(html: str) -> ResultadoParseado:
-    """Interpreta la página de resultados. Los valores se conservan como texto original."""
+def parse_resultados(html: str, parser: str = "lxml", solo_tablas: bool = True) -> ResultadoParseado:
+    """Interpreta la página de resultados. Los valores se conservan como texto original.
+
+    ``parser`` y ``solo_tablas`` existen para el experimento factorial E2 (laboratorio/e2_experimento.py);
+    los valores por defecto son la configuración de producción: lxml + solo tablas, la combinación ganadora del
+    experimento (docs/E2/experimento_factorial.md), verificada con salidas idénticas (SHA-256) sobre todo Bronce.
+    ``html5lib`` ignora ``parse_only``.
+    """
     # El texto plano basta para detectar paginación y respuestas sin resultados;
     # el árbol HTML completo se restringe a tablas, que son el único contenido
     # estructural necesario para extraer observaciones.
@@ -163,7 +169,10 @@ def parse_resultados(html: str) -> ResultadoParseado:
     texto_norm = normalizar(unescape(re.sub(r"<[^>]+>", " ", texto)))
     m = re.search(r"pagina (\d+) de (\d+)", texto_norm)
     pagina = (int(m.group(1)), int(m.group(2))) if m else None
-    soup = BeautifulSoup(html, "html.parser", parse_only=SoupStrainer("table"))
+    if solo_tablas and parser != "html5lib":
+        soup = BeautifulSoup(html, parser, parse_only=SoupStrainer("table"))
+    else:
+        soup = BeautifulSoup(html, parser)
 
     tabla = None
     for tr in soup.find_all("tr"):
@@ -195,7 +204,7 @@ def parse_resultados(html: str) -> ResultadoParseado:
         if len(fila) > 1 and len(set(fila)) == 1:
             continue  # fila de sección (p. ej. "Frutas") con colspan
         if len(fila) == len(claves):
-            registros.append(dict(zip(claves, fila)))
+            registros.append(dict(zip(claves, fila, strict=True)))
         elif len(fila) > 1:
             omitidas += 1  # forma inesperada: se reporta, no se inventa
     if not registros and omitidas:

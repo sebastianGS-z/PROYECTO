@@ -1,0 +1,5 @@
+# Herramientas de calidad (integración continua y desarrollo). Las de ejecución están en requirements.txt.
+-r requirements.txt
+pytest-cov>=5,<8
+ruff>=0.6,<1
+pip-audit>=2.7,<3

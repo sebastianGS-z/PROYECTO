@@ -1,0 +1,31 @@
+# Configuración de herramientas de calidad (la configuración de pytest vive en pytest.ini).
+
+[tool.coverage.run]
+# Se mide todo el código del observatorio, incluidos scripts y módulos opcionales:
+# la cobertura no se infla excluyendo lo que no tiene pruebas.
+source = ["almacenamiento", "calidad", "config", "extractores", "pipeline", "scripts", "src", "laboratorio"]
+omit = ["tests/*"]
+branch = false
+
+[tool.coverage.report]
+fail_under = 60
+show_missing = false
+skip_empty = true
+
+[tool.ruff]
+target-version = "py311"
+line-length = 160
+extend-exclude = ["data", "benchmarks/evidencias", ".venv"]
+
+[tool.ruff.lint]
+# Errores reales (pyflakes), estilo básico y patrones de errores comunes.
+select = ["E", "F", "W", "B", "I"]
+ignore = [
+    "E501",  # líneas largas: el formateo se revisa en revisión de código, no bloquea la integración
+    "E702",  # varias sentencias por línea en argparse compacto (estilo existente del proyecto)
+    "E701",
+    "E731",
+]
+
+[tool.ruff.lint.isort]
+known-first-party = ["almacenamiento", "calidad", "config", "extractores", "pipeline", "scripts", "src", "laboratorio", "tests"]

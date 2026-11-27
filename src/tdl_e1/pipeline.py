@@ -14,7 +14,6 @@ import re
 import sys
 import tempfile
 from collections import defaultdict
-from datetime import date
 from pathlib import Path
 from typing import Any
 
@@ -28,12 +27,13 @@ import pandas as pd
 import pandera.pandas as pa
 
 from almacenamiento.bronze_writer import sha256_file
-from config.settings import BASE_DIR, get_settings, cargar_fuentes
+from config.settings import BASE_DIR, cargar_fuentes, get_settings
 from extractores.base import StructureChangedError
 from extractores.sniim_extractor import decodificar_html, parse_resultados
 
 LOG = logging.getLogger("tdl.e1")
-PRICE_FIELDS = ("precio_min", "precio_max", "precio_frecuente")
+PRICE_FIELDS = ("precio_min", "precio_max", "precio_frecuente",
+                "precio_min_kg", "precio_max_kg", "precio_frecuente_kg")
 WEATHER_FIELDS = ("tavg_c", "tmax_c", "tmin_c", "prcp_mm")
 NUMERIC_FIELDS = PRICE_FIELDS + WEATHER_FIELDS
 STRING_FIELDS = (
@@ -41,7 +41,8 @@ STRING_FIELDS = (
     "presentacion", "estacion", "localidad", "source_file", "source_sha256", "capturado_en",
 )
 COLUMNS = (
-    "fecha", *STRING_FIELDS, "source_record_index", "latitud", "longitud", *NUMERIC_FIELDS, "versiones_observadas",
+    "fecha", *STRING_FIELDS, "source_record_index", "latitud", "longitud", *NUMERIC_FIELDS,
+    "peso_presentacion_kg", "regla_conversion_kg", "versiones_observadas",
 )
 
 
@@ -59,6 +60,8 @@ def _schema() -> pa.DataFrameSchema:
         "source_record_index": pa.Column(int, checks=pa.Check.ge(1), nullable=False),
         "latitud": pa.Column(float, checks=pa.Check.in_range(-90, 90), nullable=True),
         "longitud": pa.Column(float, checks=pa.Check.in_range(-180, 180), nullable=True),
+        "peso_presentacion_kg": pa.Column(float, checks=pa.Check.gt(0), nullable=True),
+        "regla_conversion_kg": pa.Column(str, nullable=True),
         "versiones_observadas": pa.Column(int, checks=pa.Check.ge(1), nullable=False),
     }
     for field in PRICE_FIELDS:
@@ -91,6 +94,19 @@ def _number(value: Any) -> float | None:
     if not math.isfinite(result):
         raise ValueError(f"valor no finito: {value!r}")
     return result
+
+
+def _peso_presentacion_kg(value: Any) -> tuple[float | None, str]:
+    """Convierte solo presentaciones con unidad/peso expresos en la fuente."""
+    label = str(value or "").strip().casefold()
+    if "kilogramo" in label or re.fullmatch(r"kg\.?", label):
+        return 1.0, "kilogramo_reportado_por_sniim"
+    match = re.search(r"\b(?:caja|arpilla)\s+de\s+(\d+(?:[.,]\d+)?)\s*kg\b", label)
+    if match:
+        weight = float(match.group(1).replace(",", "."))
+        if math.isfinite(weight) and weight > 0:
+            return weight, "peso_explicito_en_presentacion_sniim"
+    return None, "sin_peso_verificable"
 
 
 def _sidecar(path: Path) -> tuple[dict[str, Any], str]:
@@ -150,13 +166,18 @@ def _parse_sniim(path: Path, metadata: dict[str, Any], sha: str, sources: dict[s
                       "precio_frecuente": _number(raw.get("Precio Frec"))}
             if not any(value is not None for value in prices.values()):
                 raise ValueError("fila sin ningún precio interpretable")
+            presentation = raw.get("Presentación") or None
+            weight_kg, conversion_rule = _peso_presentacion_kg(presentation)
+            prices_per_kg = {f"{field}_kg": (value / weight_kg if value is not None and weight_kg else None)
+                             for field, value in prices.items()}
             row = _empty_record() | {
                 "fecha": day, "fuente": "sniim", "tipo_registro": "precio", "cultivo": crop or None,
                 "variante": md.get("producto"), "variante_id": str(md.get("producto_id", "")) or None,
                 "mercado": md.get("mercado_id") or md.get("mercado"), "origen": raw.get("Origen") or None,
-                "presentacion": raw.get("Presentación") or None, "source_file": _display_path(path),
+                "presentacion": presentation, "peso_presentacion_kg": weight_kg,
+                "regla_conversion_kg": conversion_rule, "source_file": _display_path(path),
                 "source_sha256": sha, "capturado_en": str(md.get("fecha_captura", "")),
-                "source_record_index": source_record_index, **prices,
+                "source_record_index": source_record_index, **prices, **prices_per_kg,
             }
             if row["precio_min"] is not None and row["precio_max"] is not None and row["precio_min"] > row["precio_max"]:
                 raise ValueError("precio_min mayor que precio_max")
@@ -395,9 +416,15 @@ def diagnostico_faltantes(frame: pd.DataFrame, expected_dates: dict[str, set[pd.
     if not climate_calendar.empty:
         observed_days = int(climate_calendar[list(WEATHER_FIELDS)].notna().any(axis=1).sum())
         days = climate_calendar["fecha"]
+        actual_observations = climate_source.loc[
+            climate_source[list(WEATHER_FIELDS)].notna().any(axis=1), "fecha"
+        ]
         report["calendario_climatico"] = {
-            "inicio_observado": days.min().date().isoformat(), "fin_observado": days.max().date().isoformat(),
-            "dias_estacion_esperados_en_rangos_observados": int(len(days)), "dias_con_algun_dato": observed_days,
+            "inicio_calendario_esperado": days.min().date().isoformat(),
+            "fin_calendario_esperado": days.max().date().isoformat(),
+            "inicio_ultima_serie_observada": actual_observations.min().date().isoformat() if not actual_observations.empty else None,
+            "fin_ultima_serie_observada": actual_observations.max().date().isoformat() if not actual_observations.empty else None,
+            "dias_calendario_esperados": int(len(days)), "dias_con_algun_dato": observed_days,
             "dias_sin_registro_util": int(len(days) - observed_days),
             "nota": "Rango derivado de fechas válidas. No incluye posibles faltantes anteriores o posteriores al rango observado.",
         }
@@ -630,6 +657,18 @@ def ejecutar(bronze_dir: Path, data_dir: Path) -> dict[str, Any]:
         "jerarquias_conceptuales": transform_report["jerarquias"],
         "conflictos": "duplicados con valores distintos: se conserva la captura de mayor fecha_captura; los originales siguen en Bronce; detalle en conflictos_resueltos.csv",
         "cuarentena": "cada fila incluye ruta, hash cuando disponible, motivo y representación del registro original",
+    }
+    prices = clean[clean["tipo_registro"].eq("precio")]
+    report["normalizacion_precio_kg"] = {
+        "regla": "precio de la presentación dividido entre kg declarados explícitamente por SNIIM; sin peso verificable permanece nulo",
+        "cotizaciones_totales": int(len(prices)),
+        "cotizaciones_con_precio_frecuente_kg": int(prices["precio_frecuente_kg"].notna().sum()),
+        "por_presentacion": {
+            str(label): {"registros": int(len(group)),
+                         "convertibles": int(group["precio_frecuente_kg"].notna().sum()),
+                         "kg_por_unidad": sorted({float(x) for x in group["peso_presentacion_kg"].dropna()})}
+            for label, group in prices.groupby("presentacion", dropna=False)
+        },
     }
     report_path = silver_dir / "reporte_calidad.json"
     report_path.parent.mkdir(parents=True, exist_ok=True)
