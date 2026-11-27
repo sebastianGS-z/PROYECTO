@@ -55,7 +55,7 @@ def generar(resultados: Path = RESULTADOS, docs: Path = BASE_DIR / "docs", desti
 <h3>Comparación de los cuatro modelos (meses que el modelo no vio)</h3>
 {_tabla(lim['comparacion_prueba'], [('modelo', 'Modelo'), ('MAE', 'MAE'), ('RMSE', 'RMSE'), ('MAPE_pct', 'MAPE %')])}
 <p class="note">Cómo leerlo: el intervalo de 80 % es el rango donde esperamos el precio 4 de cada 5 meses. Es un apoyo para planear compras y ventas, no un precio garantizado.
-Método completo: <a href="../docs/E1/laboratorio_series.md">laboratorio de series de tiempo</a>.</p>
+Método completo: <a href="https://github.com/sebastianGS-z/PROYECTO/blob/main/docs/E1/laboratorio_series.md">laboratorio de series de tiempo</a>.</p>
 </section>""")
         if "papaya_maradol" in e1:
             secciones.append(f"""<section><h3>Papaya Maradol · Colima → Guadalajara</h3><p class="lead">{html.escape(e1['papaya_maradol']['frase_cliente'])}</p>
@@ -75,7 +75,7 @@ Método completo: <a href="../docs/E1/laboratorio_series.md">laboratorio de seri
 <p class="note">Interpretación para el comprador: {html.escape(' y '.join(derecha))} se ubican a la derecha del mapa ({html.escape(nombres['CP1'].lower())});
 {html.escape(izquierda)} queda en el extremo izquierdo, el opuesto en ese índice, por lo que conviene revisarlo con más frecuencia.
 La MANOVA (traza de Pillai con prueba de permutación, p = {fmt(e3['pillai_permutacion']['p'], 3)}) confirma que los productos difieren en conjunto.
-Detalle: <a href="../docs/E3/multivariado.md">laboratorio multivariado</a>.</p>
+Detalle: <a href="https://github.com/sebastianGS-z/PROYECTO/blob/main/docs/E3/multivariado.md">laboratorio multivariado</a>.</p>
 </section>""")
     if e2:
         conf = e2["confirmacion"]
@@ -87,7 +87,7 @@ Detalle: <a href="../docs/E3/multivariado.md">laboratorio multivariado</a>.</p>
   <div class="kpi"><span>Tiempo confirmado</span><strong>{fmt(conf['media_s'], 2)} s</strong><small>5 corridas de confirmación</small></div>
   <div class="kpi"><span>Mejora vs. producción</span><strong>{fmt(e2['mejora_vs_produccion_pct'], 1)} %</strong><small>misma muestra de capturas</small></div>
 </div>
-<p class="note">Diseño 2³ con 3 réplicas en bloques aleatorizados, diseño 3×2 con interacción y fraccionado 2⁴⁻¹. Detalle: <a href="../docs/E2/experimento_factorial.md">experimento factorial</a>.</p>
+<p class="note">Diseño 2³ con 3 réplicas en bloques aleatorizados, diseño 3×2 con interacción y fraccionado 2⁴⁻¹. Detalle: <a href="https://github.com/sebastianGS-z/PROYECTO/blob/main/docs/E2/experimento_factorial.md">experimento factorial</a>.</p>
 </section>""")
     cuerpo = "\n".join(secciones) or '<p class="empty">Ejecute primero los laboratorios: python -m laboratorio.e1_series, e2_experimento y e3_multivariado.</p>'
     pagina = f"""<!doctype html>

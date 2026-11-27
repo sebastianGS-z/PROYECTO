@@ -12,6 +12,7 @@
     python main.py reporte (reporte de inteligencia imprimible y API estática de datos)
     python main.py preguntas (preguntas del agricultor respondidas con datos y calculadora de precio)
     python main.py portal (página de inicio para clientes y panel de administración)
+    python main.py mapa (mapa interactivo: producción municipal y centrales de abasto)
     python main.py comercial  <subcomando> (seguimiento local de oportunidades y costeo)
     python main.py siap [archivo.csv] (producción municipal SIAP + mapa INEGI)
     python main.py siap-captura --anios 2016 ... 2025 (cierres agrícolas anuales SIAP a Bronce)
@@ -60,6 +61,8 @@ def main(argv: list[str] | None = None) -> int:
         from src.tdl_e1.pipeline import main as f
     elif cmd == "e2":
         from src.tdl_e2.geoespacial import main as f
+    elif cmd == "mapa":
+        from src.inteligencia.mapa import main as f
     elif cmd == "portal":
         from src.inteligencia.portal import main as f
     elif cmd == "preguntas":

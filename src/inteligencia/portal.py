@@ -26,7 +26,7 @@ from config.settings import BASE_DIR
 
 REPO = "https://github.com/sebastianGS-z/PROYECTO"
 PRODUCTOS = {"limon": "Limón", "papaya": "Papaya", "platano": "Plátano"}
-NAV = [("inicio.html", "Inicio"), ("preguntas.html", "Preguntas del productor"), ("inteligencia.html", "Reporte de inteligencia"),
+NAV = [("inicio.html", "Inicio"), ("preguntas.html", "Preguntas del productor"), ("mapa.html", "Mapa"), ("inteligencia.html", "Reporte de inteligencia"),
        ("cliente.html", "Vista de cliente"), ("index.html", "Panel técnico"), ("laboratorio.html", "Laboratorio"), ("admin.html", "Administración")]
 
 CSS = """
@@ -48,6 +48,7 @@ th{color:var(--muted);font-weight:650}.wrap{overflow-x:auto;border:1px solid var
 .cta{display:inline-block;margin-top:8px;background:var(--forest);color:#fff;text-decoration:none;border-radius:9px;padding:8px 12px;font-weight:700;font-size:13px}
 .dias{display:flex;gap:3px;flex-wrap:wrap}.dia{width:22px;height:22px;border-radius:5px;display:grid;place-items:center;font-size:10px;color:#fff}
 .dia.ok{background:var(--ok)}.dia.bad{background:var(--red)}
+.decision{margin-top:10px;padding:8px 10px;background:var(--paper);border-radius:10px}.decision p{margin:4px 0 0;font-size:13.5px}
 """
 
 
@@ -77,6 +78,13 @@ def _pagina(titulo: str, subtitulo: str, actual: str, cuerpo: str) -> str:
             f'<nav aria-label="Secciones"><div class="in">{nav}</div></nav><main>{cuerpo}</main></body></html>')
 
 
+def _resumen(texto: str, maximo: int = 230) -> str:
+    """Primera(s) oración(es) de una respuesta, con negritas Markdown convertidas a HTML."""
+    plano = texto if len(texto) <= maximo else texto[: texto.rfind(". ", 0, maximo) + 1 or maximo]
+    partes = html.escape(plano).split("**")
+    return "".join(f"<b>{p}</b>" if i % 2 else p for i, p in enumerate(partes))
+
+
 def _pill(nivel: str) -> str:
     clase = {"alta": "alta", "media": "media", "baja": "baja"}.get(nivel, "na")
     return f'<span class="pill {clase}">Confianza {html.escape(nivel)}</span>'
@@ -98,24 +106,40 @@ def inicio(base: Path = BASE_DIR) -> str:
         if "tipo_serie" in p and p["tipo_serie"].eq("origen_colima").any():
             p = p[p["tipo_serie"].eq("origen_colima")]
         s = senales[senales["cultivo"].eq(c)].sort_values("meses_historia", ascending=False) if not senales.empty else senales
+        if not p.empty and not s.empty and "variante_id" in s:
+            misma = s[(s["variante_id"].astype(float) == float(p.iloc[0]["variante_id"])) & (s["mercado"].astype(str) == str(int(float(p.iloc[0]["mercado"]))))]
+            s = misma if not misma.empty else s  # el último precio y el pronóstico deben ser de la misma serie
         resp = {r["pregunta"]: r for r in preg.get("respuestas", {}).get(c, [])}
         conf_pron = next((r["confianza"] for q, r in resp.items() if "próximo mes" in q), "no aplica")
         filas = []
         if not s.empty:
             r = s.iloc[0]
-            filas.append(f'<div class="row"><span>Último precio ({html.escape(str(r["ultimo_mes"]))})</span><b>{_f(r["ultimo_precio_mxn_kg"])} MXN/kg</b></div>')
+            lugar = html.escape(str(r.get("nombre_mercado", "")).split(" · ")[0])
+            var_s = html.escape(str(r.get("variante", "")).replace(" - Primera", ""))
+            filas.append(f'<div class="muted">Último precio: {var_s}</div>')
+            filas.append(f'<div class="row"><span>{lugar} ({html.escape(str(r["ultimo_mes"]))})</span><b>{_f(r["ultimo_precio_mxn_kg"])} MXN/kg</b></div>')
             filas.append(f'<div class="row"><span>Frente a su historia</span><b>percentil {_f(r["percentil_historico"], 0)}</b></div>')
         if not p.empty:
             r = p.iloc[0]
             ref = " (referencia de mercado)" if r.get("tipo_serie") == "referencia_mercado" else ""
-            filas.append(f'<div class="row"><span>Pronóstico {html.escape(str(r["fecha_pronostico"]))}{ref}</span><b>{_f(r["precio_frecuente_mxn_kg"])} MXN/kg</b></div>')
+            lugar = html.escape(str(r["nombre_mercado"]).split(" · ")[0])
+            var_p = html.escape(str(r.get("variante", "")).replace(" - Primera", ""))
+            filas.append(f'<div class="muted">Pronóstico: {var_p}{ref}</div>')
+            filas.append(f'<div class="row"><span>{lugar} ({html.escape(str(r["fecha_pronostico"]))})</span><b>{_f(r["precio_frecuente_mxn_kg"])} MXN/kg</b></div>')
             filas.append(f'<div class="row"><span>Rango probable (80 %)</span><b>{_f(r["li80_mxn_kg"])} – {_f(r["ls80_mxn_kg"])}</b></div>')
             plaza = html.escape(str(r["nombre_mercado"]))
         else:
             plaza = "—"
             filas.append('<div class="row"><span>Pronóstico</span><b>sin serie elegible</b></div>')
-        tarjetas.append(f'<article class="card"><h3>{nombre}</h3><div class="muted">{plaza}</div>{"".join(filas)}'
-                        f'<p>{_pill(conf_pron)}</p><a class="cta" href="preguntas.html">13 respuestas sobre {nombre.lower()} →</a></article>')
+        decisiones = []
+        for clave, etiqueta in (("vender ahora o esperar", "¿Vendo o espero?"), ("central de abasto", "¿A qué central mando?")):
+            r_ = next((r for q, r in resp.items() if clave in q), None)
+            if r_ and r_.get("confianza") != "no aplica":
+                txt = _resumen(r_.get("veredicto") or r_["respuesta"])
+                decisiones.append(f'<div class="decision"><div class="muted">{etiqueta} {_pill(r_["confianza"])}</div><p>{txt}</p></div>')
+        filas.append("".join(decisiones))
+        tarjetas.append(f'<article class="card"><h3>{nombre}</h3><div class="muted">Pronóstico en {plaza}</div>{"".join(filas)}'
+                        f'<p>{_pill(conf_pron)}</p><a class="cta" href="preguntas.html">{len(resp) or "Ver"} respuestas sobre {nombre.lower()} →</a></article>')
     hallazgos = "".join(f"<li>{html.escape(h)}</li>" for h in intel.get("hallazgos", [])[:5])
     v = fiab.get("periodos", {}).get("ventana_sello_14_dias", {})
     cuerpo = (f'<h2>Precio por producto</h2><div class="grid">{"".join(tarjetas)}</div>'
@@ -123,6 +147,7 @@ def inicio(base: Path = BASE_DIR) -> str:
               f'<a class="cta" href="inteligencia.html">Ver reporte completo (imprimible)</a></div>'
               '<h2>¿Qué quiere hacer?</h2><div class="grid">'
               '<div class="card"><h3>Saber si me ofrecen buen precio</h3><p class="muted">Calculadora en huerta contra precio rural y mayorista.</p><a class="cta" href="preguntas.html">Abrir calculadora</a></div>'
+              '<div class="card"><h3>Ver dónde se produce y a dónde vender</h3><p class="muted">Mapa de municipios de Colima y de las centrales que pagan más o menos.</p><a class="cta" href="mapa.html">Abrir mapa</a></div>'
               '<div class="card"><h3>Comparar centrales y costos</h3><p class="muted">Simulador de margen, flete y punto de equilibrio con sus costos.</p><a class="cta" href="cliente.html">Abrir vista de cliente</a></div>'
               '<div class="card"><h3>Ver la serie y los modelos</h3><p class="muted">Historial, pronóstico con rango y evaluación de modelos.</p><a class="cta" href="index.html">Abrir panel técnico</a></div>'
               '<div class="card"><h3>Descargar los datos</h3><p class="muted">CSV y API JSON con licencia abierta.</p><a class="cta" href="../data/publico/api/v1/index.json">Abrir API</a></div></div>'

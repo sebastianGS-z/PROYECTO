@@ -2,7 +2,7 @@
   "api": "OAIC · Observatorio de Agro-Inteligencia Colimense",
   "version": "v1",
   "licencia": "CC BY 4.0 para la contribución OAIC; las fuentes conservan sus términos (data/publico/LICENSE.md)",
-  "generado_utc": "2026-11-27T17:34:17+00:00",
+  "generado_utc": "2026-11-27T19:28:33+00:00",
   "recursos": {
     "pronosticos": {
       "url": "pronosticos.json",

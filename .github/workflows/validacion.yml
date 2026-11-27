@@ -81,6 +81,7 @@ jobs:
           python main.py inteligencia
           python main.py reporte
           python main.py preguntas
+          python main.py mapa
           python main.py portal
       - name: Verificar artefactos del observatorio
         run: |
@@ -98,6 +99,8 @@ jobs:
           test -s tablero/preguntas.html
           test -s tablero/inicio.html
           test -s tablero/admin.html
+          test -s tablero/mapa.html
+          test -s data/publico/geo/municipios_colima.geojson
       - name: Guardar reporte de cobertura
         if: always()
         uses: actions/upload-artifact@v4

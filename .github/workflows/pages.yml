@@ -37,6 +37,8 @@ jobs:
           mkdir -p _site/data
           cp -r tablero _site/tablero
           cp -r data/publico _site/data/publico
+          # Las métricas de calidad alimentan el panel de administración; los informes se enlazan a GitHub.
+          mkdir -p _site/calidad && cp -r calidad/reportes _site/calidad/reportes
           cat > _site/index.html <<'HTML'
           <!doctype html><html lang="es"><head><meta charset="utf-8">
           <meta http-equiv="refresh" content="0; url=tablero/inicio.html">

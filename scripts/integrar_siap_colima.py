@@ -90,6 +90,8 @@ def integrar(archivos: list[Path] | Path, marco: Path | None = None) -> dict:
     if gdf.crs is None or not {"cvegeo", "nomgeo"}.issubset(gdf.columns):
         raise ValueError("El marco INEGI no contiene geometría CRS, cvegeo y nomgeo")
     gdf = gdf.to_crs("EPSG:4326")
+    # ~50 m de tolerancia: suficiente para un mapa municipal y reduce el archivo de MB a KB.
+    gdf["geometry"] = gdf.geometry.simplify(0.0005, preserve_topology=True)
     gdf["cvegeo"] = gdf.cvegeo.astype(str).str.zfill(5)
     gdf = gdf.merge(ultimo, left_on="cvegeo", right_on="municipio_cvegeo", how="left")  # el mapa muestra el último año
     # Una geometría por cultivo y municipio para que el cliente filtre la capa.
@@ -98,7 +100,7 @@ def integrar(archivos: list[Path] | Path, marco: Path | None = None) -> dict:
             "precio_medio_rural_mxn_unidad", "fuente", "archivo_bronce", "sha256_bronce", "limitacion", "geometry"]
     geo = gdf[[c for c in cols if c in gdf.columns]].dropna(subset=["Nomcultivo"]).copy()
     geo_path = public / "produccion_municipal_colima.geojson"
-    geo.to_file(geo_path, driver="GeoJSON")
+    geo.to_file(geo_path, driver="GeoJSON", COORDINATE_PRECISION=5)
     report = {"fuente": "SIAP", "anio": int(grouped.Anio.max()), "anios": sorted(int(a) for a in por_anio), "registros_colima": len(grouped),
               "cultivos": sorted(grouped.Nomcultivo.unique().tolist()), "unidades": units,
               "archivo_bronce": str(ultimo.archivo_bronce.iloc[0]), "sha256_bronce": source_sha,

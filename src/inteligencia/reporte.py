@@ -156,7 +156,7 @@ table.cal td,table.cal th{{text-align:center;padding:5px 4px}}.c3{{background:#b
 @media print{{body{{background:#fff;font-size:11px}}header{{background:#fff;color:#000;padding:0 0 6px;border-bottom:2px solid #000}}header a,.print{{display:none}}main{{padding:0}}
 h2{{break-after:avoid}}table{{break-inside:avoid}}.kpi{{border-color:#999}}@page{{size:A4;margin:12mm}}}}
 </style></head><body>
-<header><div class="in"><button class="print" onclick="window.print()">Imprimir / PDF</button><a href="index.html">← Panel principal</a>
+<header><div class="in"><button class="print" onclick="window.print()">Imprimir / PDF</button><a href="inicio.html">← Inicio</a> · <a href="mapa.html">Mapa</a> · <a href="preguntas.html">Preguntas</a>
 <h1>Reporte de inteligencia · precios de frutas de Colima</h1>
 <div>Corte: último mes cerrado {html.escape(str(corte))} · Fuentes oficiales: SNIIM (Secretaría de Economía), SIAP (SADER), NOAA, INEGI</div></div></header>
 <main>

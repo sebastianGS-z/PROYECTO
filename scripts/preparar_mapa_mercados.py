@@ -55,6 +55,13 @@ CITY_BY_MARKET = {
 }
 
 
+def _simplificar(geometria: dict, tolerancia: float = 0.01) -> dict:
+    """Simplifica un polígono estatal (~1 km) para que el mapa web pese KB y no decenas de MB."""
+    from shapely.geometry import mapping, shape
+    geo = shape(geometria).simplify(tolerancia, preserve_topology=True)
+    return json.loads(json.dumps(mapping(geo)), parse_float=lambda x: round(float(x), 4))
+
+
 def _latest_state_files(bronze: Path) -> dict[str, Path]:
     found: dict[str, tuple[int, Path]] = {}
     for sidecar in (bronze / "inegi_marco").rglob("*.geojson.meta.json"):
@@ -179,7 +186,7 @@ def preparar(capturar_fuentes: bool = True) -> dict:
             state_features.append({"type": "Feature", "properties": {"cve_ent": code,
                                  "nombre": feature.get("properties", {}).get("nomgeo", meta.get("nombre_entidad")),
                                  "fuente": "INEGI · Marco Geoestadístico 2025"},
-                                  "geometry": feature["geometry"]})
+                                  "geometry": _simplificar(feature["geometry"])})
     city_by = city_points
     quote_counts = {str(c["mercado_id"]): int(c.get("filas", 0)) for c in report["capturas"]}
     market_features = []

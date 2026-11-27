@@ -74,7 +74,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/ calidad/bitacora_capturas.csv calidad/reportes/ tablero/index.html tablero/cliente.html tablero/inteligencia.html tablero/preguntas.html tablero/inicio.html tablero/admin.html docs/E4/reporte_inteligencia.md docs/E4/preguntas_agricultor.md
+          git add data/ calidad/bitacora_capturas.csv calidad/reportes/ tablero/index.html tablero/cliente.html tablero/inteligencia.html tablero/preguntas.html tablero/mapa.html tablero/inicio.html tablero/admin.html docs/E4/reporte_inteligencia.md docs/E4/preguntas_agricultor.md
           if git diff --cached --quiet; then echo "Sin cambios"; else
             git commit -m "datos: captura histórica $(date -u +%F) [skip ci]"
             git pull --rebase origin "${GITHUB_REF_NAME}"

@@ -1,0 +1,39 @@
+{
+  "esquema": "tdl-bronce-meta/1",
+  "contenido_original": {
+    "archivo": "sniim__platano-macho-primera-jalisco-mercado-de-abasto-de-guadalajara__2017-08-01_2017-08-31__20261127T173045Z-dd78ea.html",
+    "descripcion": "Bytes tal como los entregó la fuente; no se modifican."
+  },
+  "metadatos_captura": {
+    "fuente": "sniim",
+    "fuente_url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F08%2F2017&fechaFinal=31%2F08%2F2017&ProductoId=723&OrigenId=-1&Origen=Todos&DestinoId=140&Destino=Jalisco%3A+Mercado+de+Abasto+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+    "fecha_captura": "2026-11-27T18:27:04Z",
+    "identificador_ejecucion": "20261127T173045Z-dd78ea",
+    "formato_original": "html",
+    "sha256": "a39125256fab41f8627c69246274c1eaa66ddbf0f9e5f1711ec80cd4cd353274",
+    "bytes": 26912,
+    "http_status": 200,
+    "registros_detectados": 23,
+    "estado_captura": "ok",
+    "advertencias": [],
+    "colision_nombre": false,
+    "etiqueta": "Plátano Macho - Primera__Jalisco: Mercado de Abasto de Guadalajara",
+    "producto": "Plátano Macho - Primera",
+    "producto_id": "723",
+    "mercado": "Jalisco: Mercado de Abasto de Guadalajara",
+    "mercado_id": "140",
+    "fecha_ref_inicio": "2017-08-01",
+    "fecha_ref_fin": "2017-08-31",
+    "parametros": {
+      "fechaInicio": "01/08/2017",
+      "fechaFinal": "31/08/2017",
+      "ProductoId": "723",
+      "OrigenId": "-1",
+      "Origen": "Todos",
+      "DestinoId": "140",
+      "Destino": "Jalisco: Mercado de Abasto de Guadalajara",
+      "PreciosPorId": "1",
+      "RegistrosPorPagina": "500"
+    }
+  }
+}

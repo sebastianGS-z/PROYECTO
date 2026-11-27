@@ -69,3 +69,23 @@ def test_admin_levanta_alertas_y_contabilidad(base):
     inv = portal.inventario_bronce(base)
     assert inv.iloc[0]["fuente"] == "sniim" and inv.iloc[0]["archivos"] == 1
     assert portal.ejecutar(base) and (base / "tablero/admin.html").is_file()
+
+
+def test_mapa_genera_capas_ligeras_y_pagina(tmp_path):
+    """Usa los datos reales versionados: el mapa debe pesar poco y encuadrar Colima continental."""
+    import shutil
+
+    from config.settings import BASE_DIR
+    from src.inteligencia import mapa
+    for rel in ("data/publico/produccion_municipal_colima.geojson", "data/oro/produccion_municipal_siap_colima.csv",
+                "data/publico/mapa_mercados_sniim.geojson", "data/publico/plazas_colima.csv"):
+        (tmp_path / rel).parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy(BASE_DIR / rel, tmp_path / rel)
+    (tmp_path / "tablero").mkdir()
+    r = mapa.ejecutar(tmp_path)
+    assert r["municipios"] == 10 and r["centrales"] > 10 and len(r["anios"]) >= 1
+    assert r["kb_pagina"] < 1000
+    pagina = (tmp_path / "tablero/mapa.html").read_text(encoding="utf-8")
+    assert "leaflet@1.9.4" in pagina and "Revillagigedo" in pagina and "COLIMA=L.latLngBounds" in pagina
+    prod = mapa.produccion(tmp_path)
+    assert "Limón" in prod["cultivos"] and prod["datos"]["Limón"]

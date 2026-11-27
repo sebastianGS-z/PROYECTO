@@ -54,13 +54,14 @@ def nivel_confianza(p: float | None, n: int, n_alto: int, n_medio: int) -> tuple
     """
     if p is None or (isinstance(p, float) and math.isnan(p)):
         return "baja", f"sin prueba estadística posible con {n} observaciones"
+    ptxt = "p < 0.001" if p < 0.001 else f"p = {p:.3f}"
     if p < ALFA and n >= n_alto:
-        return "alta", f"p = {p:.3f} con {n} observaciones"
+        return "alta", f"{ptxt} con {n} observaciones"
     if p < ALFA and n >= n_medio:
-        return "media", f"p = {p:.3f}, pero solo {n} observaciones"
+        return "media", f"{ptxt}, pero solo {n} observaciones"
     if p < 0.20 and n >= n_alto:
-        return "media", f"tendencia no concluyente (p = {p:.3f}) con {n} observaciones"
-    return "baja", f"no se distingue del azar (p = {p:.3f}, {n} observaciones)"
+        return "media", f"tendencia no concluyente ({ptxt}) con {n} observaciones"
+    return "baja", f"no se distingue del azar ({ptxt}, {n} observaciones)"
 
 
 def prueba_diferencia(dif: pd.Series) -> tuple[float | None, str]:
@@ -274,7 +275,7 @@ def hallazgos(p: dict[str, pd.DataFrame]) -> list[str]:
     out = []
     mg = p["margen_productor"]
     if not mg.empty:
-        ref = mg[mg["mercado"].eq(REFERENCIA)]
+        ref = mg[mg["mercado"].eq(REFERENCIA) & mg["meses_mayorista"].ge(6)]  # años con < 6 meses cotizados sesgan por estacionalidad
         for _, r in ref.iterrows():
             out.append(f"{NOMBRE_CULTIVO.get(r['cultivo'], r['cultivo'])} {r['anio']}: el productor de Colima recibió en promedio {r['precio_productor_mxn_kg']:.2f} MXN/kg "
                        f"(SIAP) mientras el mayorista de origen Colima se cotizó en {r['precio_mayorista_mxn_kg']:.2f} MXN/kg en Guadalajara: "

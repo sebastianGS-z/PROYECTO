@@ -155,7 +155,7 @@ En Guadalajara, frente a su tendencia, los meses que más pagaron en promedio fu
 
 Pagaron **más** que Guadalajara · Mercado de Abasto, con diferencia comprobada: Querétaro · Mercado de Abasto +5.44 MXN/kg (12 meses, mayor en 100 % de ellos; flete extra máximo 5.44 MXN/kg); Zacatecas · Mercado de Abasto +3.89 MXN/kg (12 meses, mayor en 100 % de ellos; flete extra máximo 3.89 MXN/kg); San Luis Potosí · Centro de Abasto +3.31 MXN/kg (12 meses, mayor en 92 % de ellos; flete extra máximo 3.31 MXN/kg). Pagaron significativamente **menos**: Guadalajara · Mercado Felipe Ángeles -0.63 MXN/kg.
 
-- **Confianza:** alta — p = 0.000 con 12 observaciones
+- **Confianza:** alta — p < 0.001 con 12 observaciones
 - **Qué hacer:** Pida a su transportista el costo por kilo a Querétaro y réstele el costo a Guadalajara: si la diferencia es menor que el "flete extra máximo", esa central le deja más. Sume mermas por más días de viaje y confirme comprador antes de enviar.
 - **Fuente:** SNIIM · meses pareados contra Guadalajara · Mercado de Abasto (Wilcoxon / prueba de signos) · **Datos a:** 2025-11 a 2026-10
 
@@ -269,7 +269,7 @@ Se necesitan al menos 24 meses en Guadalajara para estimar el patrón por mes; a
 
 Pagaron **más** que Querétaro · Mercado de Abasto, con diferencia comprobada: Tijuana · Central de Abasto INDIA (Plátano Dominico) +21.15 MXN/kg (12 meses, mayor en 100 % de ellos; flete extra máximo 21.15 MXN/kg). Pagaron significativamente **menos**: Zacatecas · Mercado de Abasto (Plátano Chiapas) -5.73 MXN/kg. En 2 comparaciones la diferencia no se distingue del azar (San Luis Potosí · Centro de Abasto (Plátano Tabasco); Tijuana · Central de Abasto INDIA (Plátano Chiapas)).
 
-- **Confianza:** alta — p = 0.000 con 12 observaciones
+- **Confianza:** alta — p < 0.001 con 12 observaciones
 - **Qué hacer:** Pida a su transportista el costo por kilo a Tijuana y réstele el costo a Querétaro: si la diferencia es menor que el "flete extra máximo", esa central le deja más. Sume mermas por más días de viaje y confirme comprador antes de enviar.
 - **Fuente:** SNIIM · meses pareados contra Querétaro · Mercado de Abasto (Wilcoxon / prueba de signos) · **Datos a:** 2025-11 a 2026-10
 
@@ -283,11 +283,11 @@ Cotizaciones del 2026-11-25 (producto de origen Colima; MXN/kg, mediana por cent
 
 ### 7. De lo que paga la central, ¿cuánto le llega al productor?
 
-En 2025 el productor de Colima recibió en promedio **5.21 MXN/kg** (SIAP) y Tijuana · Central de Abasto INDIA cotizó el producto de origen Colima en 29.89 MXN/kg: al productor le llegó el **17 %**. Los otros 24.68 MXN/kg cubren empaque, flete, mermas, comisiones e intermediación.
+No hay un año común entre el precio rural SIAP y cotizaciones de origen Colima en alguna central para este producto.
 
-- **Confianza:** baja — promedios anuales oficiales; 2 meses de cotización mayorista; no distingue calidades
-- **Qué hacer:** Use este porcentaje para revisar si una oferta en huerta está en línea con el mercado (calculadora de arriba).
-- **Fuente:** SIAP (precio medio rural) · SNIIM · **Datos a:** 2025
+- **Confianza:** no aplica — sin año común
+- **Qué hacer:** —
+- **Fuente:** SIAP · SNIIM · **Datos a:** —
 
 ### 8. ¿Cómo ha cambiado lo que se le paga al productor en los últimos años?
 

@@ -1,0 +1,39 @@
+{
+  "esquema": "tdl-bronce-meta/1",
+  "contenido_original": {
+    "archivo": "sniim__platano-enano-gigante-primera-jalisco-mercado-de-abasto-de-guadalajara__2022-10-01_2022-10-31__20261127T173045Z-dd78ea.html",
+    "descripcion": "Bytes tal como los entregó la fuente; no se modifican."
+  },
+  "metadatos_captura": {
+    "fuente": "sniim",
+    "fuente_url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2022&fechaFinal=31%2F10%2F2022&ProductoId=670&OrigenId=-1&Origen=Todos&DestinoId=140&Destino=Jalisco%3A+Mercado+de+Abasto+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+    "fecha_captura": "2026-11-27T17:41:17Z",
+    "identificador_ejecucion": "20261127T173045Z-dd78ea",
+    "formato_original": "html",
+    "sha256": "9b5033fe222d931d0ab712068563d6a5bf9da34f3e850cd8b6653f23b787340b",
+    "bytes": 9425,
+    "http_status": 200,
+    "registros_detectados": 0,
+    "estado_captura": "sin_resultados",
+    "advertencias": [],
+    "colision_nombre": false,
+    "etiqueta": "Plátano Enano-Gigante - Primera__Jalisco: Mercado de Abasto de Guadalajara",
+    "producto": "Plátano Enano-Gigante - Primera",
+    "producto_id": "670",
+    "mercado": "Jalisco: Mercado de Abasto de Guadalajara",
+    "mercado_id": "140",
+    "fecha_ref_inicio": "2022-10-01",
+    "fecha_ref_fin": "2022-10-31",
+    "parametros": {
+      "fechaInicio": "01/10/2022",
+      "fechaFinal": "31/10/2022",
+      "ProductoId": "670",
+      "OrigenId": "-1",
+      "Origen": "Todos",
+      "DestinoId": "140",
+      "Destino": "Jalisco: Mercado de Abasto de Guadalajara",
+      "PreciosPorId": "1",
+      "RegistrosPorPagina": "500"
+    }
+  }
+}

@@ -79,9 +79,12 @@ def cargar(base: Path = BASE_DIR, corte: pd.Period | None = None) -> dict[str, A
     }
 
 
-def _r(pregunta: str, respuesta: str, confianza: str, motivo: str, accion: str, fuente: str, actualizado: str = "—") -> dict[str, Any]:
+def _r(pregunta: str, respuesta: str, confianza: str, motivo: str, accion: str, fuente: str, actualizado: str = "—",
+       veredicto: str | None = None) -> dict[str, Any]:
+    """``veredicto``: la conclusión en una frase, para tarjetas y resúmenes (por defecto, la primera oración)."""
+    primera = respuesta.split(". ")[0].rstrip(".") + "."
     return {"pregunta": pregunta, "respuesta": respuesta, "confianza": confianza, "motivo": motivo,
-            "accion": accion, "fuente": fuente, "actualizado": actualizado}
+            "accion": accion, "fuente": fuente, "actualizado": actualizado, "veredicto": veredicto or primera}
 
 
 def _pronostico(d: dict[str, Any], c: str) -> pd.DataFrame:
@@ -155,7 +158,8 @@ def r_vender_o_esperar(d: dict[str, Any], c: str) -> dict[str, Any]:
               conf, motivo + f"; probabilidad estimada con {len(sel)} errores históricos",
               "Esperar solo tiene sentido si la fruta aguanta en el árbol sin perder calidad y si la probabilidad es claramente mayor a 50 %; si es cercana a 50 %, "
               "vender por partes reduce el riesgo.",
-              "SNIIM · pronóstico y validación fuera de muestra", str(r["fecha_ultimo_dato"]))
+              "SNIIM · pronóstico y validación fuera de muestra", str(r["fecha_ultimo_dato"]),
+              veredicto=f"En **{prob * 100:.0f} %** de los escenarios el precio de {r['fecha_pronostico']} supera al actual ({_f(ultimo)} MXN/kg): {lectura}.")
 
 
 def r_caro_o_barato(d: dict[str, Any], c: str) -> dict[str, Any]:
@@ -230,7 +234,14 @@ def r_que_plaza(d: dict[str, Any], c: str) -> dict[str, Any]:
     else:
         conf, motivo = "baja", "ninguna diferencia es estadísticamente distinguible del azar"
         accion = "Decida por costo de flete y por comprador confirmado; los precios publicados no separan a las centrales."
-    return _r(q, " ".join(partes), conf, motivo, accion, f"SNIIM · meses pareados contra {ref} (Wilcoxon / prueba de signos)", periodo)
+    if not mas.empty:
+        top = mas.iloc[0]
+        veredicto = f"**{etiqueta(top)}** pagó +{_f(top['diferencia_media_mxn_kg'])} MXN/kg más que {ref} en {int(top['meses_pareados'])} meses; conviene si el flete extra cuesta menos de {_f(top['flete_equilibrio_mxn_kg'])} MXN/kg."
+    elif not menos.empty:
+        veredicto = f"**{ref}** es la mejor opción comprobada: {len(menos)} centrales pagan significativamente menos."
+    else:
+        veredicto = "Los precios publicados no distinguen a las centrales; decida por flete y comprador."
+    return _r(q, " ".join(partes), conf, motivo, accion, f"SNIIM · meses pareados contra {ref} (Wilcoxon / prueba de signos)", periodo, veredicto=veredicto)
 
 
 def _margen_cultivo(d: dict[str, Any], c: str) -> pd.DataFrame:
@@ -238,7 +249,7 @@ def _margen_cultivo(d: dict[str, Any], c: str) -> pd.DataFrame:
     mg = d["margen"]
     if mg.empty:
         return mg
-    mg = mg[mg["cultivo"].eq(c)]
+    mg = mg[mg["cultivo"].eq(c) & mg["meses_mayorista"].ge(6)]  # un año con pocos meses cotizados sesga el promedio
     ref = mg[mg["mercado"].astype(str).eq(REFERENCIA)]
     if not ref.empty:
         return ref.sort_values("anio")
@@ -448,7 +459,7 @@ summary{{font-weight:700;cursor:pointer;padding:10px 0;display:flex;gap:10px;ali
 .calc input{{font:inherit;font-size:20px;width:8em;padding:6px 8px;border:1px solid var(--line);border-radius:8px;margin:0 6px}}#veredicto{{margin-top:10px;font-size:15px}}
 .leyenda{{font-size:13px;color:var(--muted)}}h2{{font-size:18px;margin:22px 0 8px}}ul.no li{{margin-bottom:8px}}.muted{{color:var(--muted);font-size:13px}}
 </style></head><body>
-<header><div class="in"><a href="index.html">← Panel</a> · <a href="inteligencia.html">Reporte de inteligencia</a> · <a href="cliente.html">Vista de cliente</a>
+<header><div class="in"><a href="index.html">← Panel</a> · <a href="mapa.html">Mapa</a> · <a href="inteligencia.html">Reporte de inteligencia</a> · <a href="cliente.html">Vista de cliente</a>
 <h1>Preguntas que se hace un productor de Colima</h1><div>Respuestas calculadas con datos oficiales · último mes cerrado {html.escape(corte)} · se actualiza cada día</div></div></header>
 <main>
 <div class="tabs" role="group" aria-label="Producto">{botones}</div>
