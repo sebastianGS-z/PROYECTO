@@ -23,11 +23,10 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  publicar:
+  # Dos jobs (armar → desplegar), como recomienda GitHub: en un solo job, deploy-pages a veces busca el
+  # artefacto antes de que quede registrado y falla con "No artifacts named github-pages".
+  armar:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deploy.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -50,5 +49,13 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
+
+  desplegar:
+    needs: armar
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
       - id: deploy
         uses: actions/deploy-pages@v4
