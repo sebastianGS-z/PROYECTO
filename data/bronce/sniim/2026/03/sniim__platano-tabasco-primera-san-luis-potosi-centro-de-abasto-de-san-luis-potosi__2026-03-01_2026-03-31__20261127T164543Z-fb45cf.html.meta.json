@@ -1,0 +1,39 @@
+{
+  "esquema": "tdl-bronce-meta/1",
+  "contenido_original": {
+    "archivo": "sniim__platano-tabasco-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-03-01_2026-03-31__20261127T164543Z-fb45cf.html",
+    "descripcion": "Bytes tal como los entregó la fuente; no se modifican."
+  },
+  "metadatos_captura": {
+    "fuente": "sniim",
+    "fuente_url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F03%2F2026&fechaFinal=31%2F03%2F2026&ProductoId=732&OrigenId=-1&Origen=Todos&DestinoId=240&Destino=San+Luis+Potos%C3%AD%3A+Centro+de+Abasto+de+San+Luis+Potos%C3%AD&PreciosPorId=1&RegistrosPorPagina=500",
+    "fecha_captura": "2026-11-27T17:27:41Z",
+    "identificador_ejecucion": "20261127T164543Z-fb45cf",
+    "formato_original": "html",
+    "sha256": "0198f7b2a17c4945e43fd9e4c6112d61fc4e29304c24dff4c8270a1ec4b707ab",
+    "bytes": 25774,
+    "http_status": 200,
+    "registros_detectados": 21,
+    "estado_captura": "ok",
+    "advertencias": [],
+    "colision_nombre": false,
+    "etiqueta": "Plátano Tabasco - Primera__San Luis Potosí: Centro de Abasto de San Luis Potosí",
+    "producto": "Plátano Tabasco - Primera",
+    "producto_id": "732",
+    "mercado": "San Luis Potosí: Centro de Abasto de San Luis Potosí",
+    "mercado_id": "240",
+    "fecha_ref_inicio": "2026-03-01",
+    "fecha_ref_fin": "2026-03-31",
+    "parametros": {
+      "fechaInicio": "01/03/2026",
+      "fechaFinal": "31/03/2026",
+      "ProductoId": "732",
+      "OrigenId": "-1",
+      "Origen": "Todos",
+      "DestinoId": "240",
+      "Destino": "San Luis Potosí: Centro de Abasto de San Luis Potosí",
+      "PreciosPorId": "1",
+      "RegistrosPorPagina": "500"
+    }
+  }
+}

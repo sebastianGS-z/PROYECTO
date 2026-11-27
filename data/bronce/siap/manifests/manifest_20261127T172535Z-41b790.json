@@ -1,0 +1,38 @@
+{
+  "run_id": "20261127T172535Z-41b790",
+  "fuente": "siap",
+  "modo": "historica",
+  "disparador": "local",
+  "inicio": "2026-11-27T17:25:35Z",
+  "fin": "2026-11-27T17:25:56Z",
+  "duracion_s": 21.07,
+  "estado": "exitosa",
+  "solicitudes": 2,
+  "registros": 36992,
+  "consultas": [
+    {
+      "anio": 2024,
+      "estado": "ok",
+      "registros": 36992,
+      "archivo": "siap__cierre-agricola-municipal-2024__2024-01-01_2024-12-31__20261127T172535Z-41b790.csv",
+      "error": null,
+      "advertencias": []
+    }
+  ],
+  "archivos": [
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/siap/2024/01/siap__cierre-agricola-municipal-2024__2024-01-01_2024-12-31__20261127T172535Z-41b790.csv",
+      "sha256": "cffa7d638d74b4fc18966154c411ff207530d8be962abc9e311d2b08f3ffbb11",
+      "url": "https://nube.agricultura.gob.mx/index.php?view=10AE434F-A2158368-A120BC5A-EDF4AFAA&ANIO=2024",
+      "bytes": 5959152
+    }
+  ],
+  "errores": [],
+  "parametros": {
+    "anios": [
+      2024
+    ]
+  },
+  "esquema": "tdl-manifest/1",
+  "archivos_generados": 1
+}

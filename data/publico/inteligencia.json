@@ -1,0 +1,37 @@
+{
+  "esquema": "oaic-inteligencia/1",
+  "generado_utc": "2026-11-27T17:33:49+00:00",
+  "ultimo_mes_cerrado": "2026-10",
+  "plaza_referencia": "Guadalajara · Mercado de Abasto",
+  "archivos": {
+    "margen_productor": {
+      "filas": 22,
+      "csv": "data/publico/margen_productor.csv"
+    },
+    "plazas_colima": {
+      "filas": 17,
+      "csv": "data/publico/plazas_colima.csv"
+    },
+    "calendario_venta": {
+      "filas": 48,
+      "csv": "data/publico/calendario_venta.csv"
+    },
+    "senales_mercado": {
+      "filas": 22,
+      "csv": "data/publico/senales_mercado.csv"
+    }
+  },
+  "hallazgos": [
+    "Limón 2025: el productor de Colima recibió en promedio 9.80 MXN/kg (SIAP) mientras el mayorista de origen Colima se cotizó en 26.01 MXN/kg en Guadalajara: el productor capta 38 % del precio mayorista.",
+    "Limón 2024: el productor de Colima recibió en promedio 10.32 MXN/kg (SIAP) mientras el mayorista de origen Colima se cotizó en 21.27 MXN/kg en Guadalajara: el productor capta 48 % del precio mayorista.",
+    "Limón 2023: el productor de Colima recibió en promedio 14.26 MXN/kg (SIAP) mientras el mayorista de origen Colima se cotizó en 24.42 MXN/kg en Guadalajara: el productor capta 58 % del precio mayorista.",
+    "Papaya 2024: el productor de Colima recibió en promedio 7.41 MXN/kg (SIAP) mientras el mayorista de origen Colima se cotizó en 19.80 MXN/kg en Guadalajara: el productor capta 37 % del precio mayorista.",
+    "Papaya 2025: el productor de Colima recibió en promedio 7.47 MXN/kg (SIAP) mientras el mayorista de origen Colima se cotizó en 18.21 MXN/kg en Guadalajara: el productor capta 41 % del precio mayorista.",
+    "Papaya 2023: el productor de Colima recibió en promedio 7.75 MXN/kg (SIAP) mientras el mayorista de origen Colima se cotizó en 19.00 MXN/kg en Guadalajara: el productor capta 41 % del precio mayorista.",
+    "Papaya Maradol - Primera: Querétaro · Mercado de Abasto pagó en promedio 5.44 MXN/kg más que Guadalajara · Mercado de Abasto en 12 meses pareados (100 % de los meses). Conviene enviar ahí solo si el flete adicional cuesta menos de 5.44 MXN/kg. Confianza alta (p = 0.000 con 12 observaciones).",
+    "Plátano Dominico - Primera: Tijuana · Central de Abasto INDIA pagó en promedio 21.15 MXN/kg más que Querétaro · Mercado de Abasto en 12 meses pareados (100 % de los meses). Conviene enviar ahí solo si el flete adicional cuesta menos de 21.15 MXN/kg. Confianza alta (p = 0.000 con 12 observaciones).",
+    "Limón en Guadalajara: el mes que más pagó en promedio fue septiembre (+32 % frente a la tendencia) y el que menos diciembre (-30 % frente a la tendencia), con 3 años por mes; la prueba de Kruskal-Wallis no lo distingue del azar (p = 0.31), así que es una pista, no una regla.",
+    "Papaya en Guadalajara: el mes que más pagó en promedio fue noviembre (+19 % frente a la tendencia) y el que menos julio (-16 % frente a la tendencia), con 3 años por mes; la prueba de Kruskal-Wallis no lo distingue del azar (p = 0.26), así que es una pista, no una regla.",
+    "Tamarindo en Guadalajara: el mes que más pagó en promedio fue enero (+13 % frente a la tendencia) y el que menos septiembre (-7 % frente a la tendencia), con 2 a 3 años por mes; la prueba de Kruskal-Wallis no lo distingue del azar (p = 0.58), así que es una pista, no una regla."
+  ]
+}

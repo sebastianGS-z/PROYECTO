@@ -1,0 +1,39 @@
+{
+  "esquema": "tdl-bronce-meta/1",
+  "contenido_original": {
+    "archivo": "sniim__limon-c-semilla-5-primera-nuevo-leon-mercado-de-abasto-estrella-de-san-nicolas-de-los-garz__2026-05-01_2026-05-31__20261127T163300Z-b2933e.html",
+    "descripcion": "Bytes tal como los entregó la fuente; no se modifican."
+  },
+  "metadatos_captura": {
+    "fuente": "sniim",
+    "fuente_url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F05%2F2026&fechaFinal=31%2F05%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=190&Destino=Nuevo+Le%C3%B3n%3A+Mercado+de+Abasto+%22Estrella%22+de+San+Nicol%C3%A1s+de+los+Garza&PreciosPorId=1&RegistrosPorPagina=500",
+    "fecha_captura": "2026-11-27T16:36:24Z",
+    "identificador_ejecucion": "20261127T163300Z-b2933e",
+    "formato_original": "html",
+    "sha256": "37ab0559aeae1c0209bbf384a9bbec2e71eaaa76f3f6963ae2d3d439dbcca46d",
+    "bytes": 25110,
+    "http_status": 200,
+    "registros_detectados": 19,
+    "estado_captura": "ok",
+    "advertencias": [],
+    "colision_nombre": false,
+    "etiqueta": "Limón c/semilla # 5 - Primera__Nuevo León: Mercado de Abasto \"Estrella\" de San Nicolás de los Garza",
+    "producto": "Limón c/semilla # 5 - Primera",
+    "producto_id": "421",
+    "mercado": "Nuevo León: Mercado de Abasto \"Estrella\" de San Nicolás de los Garza",
+    "mercado_id": "190",
+    "fecha_ref_inicio": "2026-05-01",
+    "fecha_ref_fin": "2026-05-31",
+    "parametros": {
+      "fechaInicio": "01/05/2026",
+      "fechaFinal": "31/05/2026",
+      "ProductoId": "421",
+      "OrigenId": "-1",
+      "Origen": "Todos",
+      "DestinoId": "190",
+      "Destino": "Nuevo León: Mercado de Abasto \"Estrella\" de San Nicolás de los Garza",
+      "PreciosPorId": "1",
+      "RegistrosPorPagina": "500"
+    }
+  }
+}

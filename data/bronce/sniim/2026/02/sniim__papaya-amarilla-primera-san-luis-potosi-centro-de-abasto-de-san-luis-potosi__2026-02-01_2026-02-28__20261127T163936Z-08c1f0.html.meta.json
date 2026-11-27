@@ -1,0 +1,39 @@
+{
+  "esquema": "tdl-bronce-meta/1",
+  "contenido_original": {
+    "archivo": "sniim__papaya-amarilla-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-02-01_2026-02-28__20261127T163936Z-08c1f0.html",
+    "descripcion": "Bytes tal como los entregó la fuente; no se modifican."
+  },
+  "metadatos_captura": {
+    "fuente": "sniim",
+    "fuente_url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F02%2F2026&fechaFinal=28%2F02%2F2026&ProductoId=620&OrigenId=-1&Origen=Todos&DestinoId=240&Destino=San+Luis+Potos%C3%AD%3A+Centro+de+Abasto+de+San+Luis+Potos%C3%AD&PreciosPorId=1&RegistrosPorPagina=500",
+    "fecha_captura": "2026-11-27T16:40:52Z",
+    "identificador_ejecucion": "20261127T163936Z-08c1f0",
+    "formato_original": "html",
+    "sha256": "e078ef9e20ee9f7ed82e5c2e5c08c8f78b7a757de9f82880f89d1757249b7645",
+    "bytes": 9446,
+    "http_status": 200,
+    "registros_detectados": 0,
+    "estado_captura": "sin_resultados",
+    "advertencias": [],
+    "colision_nombre": false,
+    "etiqueta": "Papaya Amarilla - Primera__San Luis Potosí: Centro de Abasto de San Luis Potosí",
+    "producto": "Papaya Amarilla - Primera",
+    "producto_id": "620",
+    "mercado": "San Luis Potosí: Centro de Abasto de San Luis Potosí",
+    "mercado_id": "240",
+    "fecha_ref_inicio": "2026-02-01",
+    "fecha_ref_fin": "2026-02-28",
+    "parametros": {
+      "fechaInicio": "01/02/2026",
+      "fechaFinal": "28/02/2026",
+      "ProductoId": "620",
+      "OrigenId": "-1",
+      "Origen": "Todos",
+      "DestinoId": "240",
+      "Destino": "San Luis Potosí: Centro de Abasto de San Luis Potosí",
+      "PreciosPorId": "1",
+      "RegistrosPorPagina": "500"
+    }
+  }
+}

@@ -42,9 +42,10 @@ def ultimos_36_meses(hoy: date | None = None) -> tuple[date, date]:
 def _resolver(fuentes: dict[str, Any], productos: list[str] | None, mercados: list[str] | None,
               incluir_opcionales: bool) -> tuple[list[dict], list[dict]]:
     cfg = fuentes["sniim"]
-    prods = [p for p in cfg["productos"] if not productos or p["clave"] in productos]
+    # Los productos "solo_dirigido" (subvariedades para capturas puntuales) no entran a la captura por defecto.
+    prods = [p for p in cfg["productos"] if (p["clave"] in productos if productos else not p.get("solo_dirigido"))]
     if mercados:
-        mers = [m for m in cfg["mercados"] + cfg["mercados_opcionales"] if m["clave"] in mercados]
+        mers = [m for m in cfg["mercados"] + cfg["mercados_opcionales"] + cfg.get("mercados_destino_colima", []) if m["clave"] in mercados]
     else:
         mers = cfg["mercados"] + (cfg["mercados_opcionales"] if incluir_opcionales else [])
     if not prods or not mers:

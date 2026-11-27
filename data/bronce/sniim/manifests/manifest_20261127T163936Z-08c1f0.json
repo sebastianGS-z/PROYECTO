@@ -1,0 +1,2906 @@
+{
+  "run_id": "20261127T163936Z-08c1f0",
+  "fuente": "sniim",
+  "modo": "historica",
+  "disparador": "local",
+  "inicio": "2026-11-27T16:39:36Z",
+  "fin": "2026-11-27T16:45:43Z",
+  "duracion_s": 366.99,
+  "estado": "exitosa",
+  "solicitudes": 160,
+  "registros": 1581,
+  "consultas": [
+    {
+      "paso": "catalogo_formulario",
+      "estado": "ok",
+      "registros": 0,
+      "archivo": "sniim__catalogo-formulario__2026-11-27_2026-11-27__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Amarilla - Primera",
+      "mercado_clave": "guadalajara_felipe_angeles",
+      "inicio": "2025-11-01",
+      "fin": "2025-11-30",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-amarilla-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2025-11-01_2025-11-30__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Amarilla - Primera",
+      "mercado_clave": "guadalajara_felipe_angeles",
+      "inicio": "2025-12-01",
+      "fin": "2025-12-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-amarilla-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2025-12-01_2025-12-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Amarilla - Primera",
+      "mercado_clave": "guadalajara_felipe_angeles",
+      "inicio": "2026-01-01",
+      "fin": "2026-01-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-amarilla-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-01-01_2026-01-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Amarilla - Primera",
+      "mercado_clave": "guadalajara_felipe_angeles",
+      "inicio": "2026-02-01",
+      "fin": "2026-02-28",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-amarilla-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-02-01_2026-02-28__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Amarilla - Primera",
+      "mercado_clave": "guadalajara_felipe_angeles",
+      "inicio": "2026-03-01",
+      "fin": "2026-03-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-amarilla-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-03-01_2026-03-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Amarilla - Primera",
+      "mercado_clave": "guadalajara_felipe_angeles",
+      "inicio": "2026-04-01",
+      "fin": "2026-04-30",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-amarilla-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-04-01_2026-04-30__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Amarilla - Primera",
+      "mercado_clave": "guadalajara_felipe_angeles",
+      "inicio": "2026-05-01",
+      "fin": "2026-05-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-amarilla-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-05-01_2026-05-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Amarilla - Primera",
+      "mercado_clave": "guadalajara_felipe_angeles",
+      "inicio": "2026-06-01",
+      "fin": "2026-06-30",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-amarilla-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-06-01_2026-06-30__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Amarilla - Primera",
+      "mercado_clave": "guadalajara_felipe_angeles",
+      "inicio": "2026-07-01",
+      "fin": "2026-07-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-amarilla-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-07-01_2026-07-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Amarilla - Primera",
+      "mercado_clave": "guadalajara_felipe_angeles",
+      "inicio": "2026-08-01",
+      "fin": "2026-08-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-amarilla-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-08-01_2026-08-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Amarilla - Primera",
+      "mercado_clave": "guadalajara_felipe_angeles",
+      "inicio": "2026-09-01",
+      "fin": "2026-09-30",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-amarilla-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-09-01_2026-09-30__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Amarilla - Primera",
+      "mercado_clave": "guadalajara_felipe_angeles",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-amarilla-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-10-01_2026-10-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Amarilla - Primera",
+      "mercado_clave": "guadalajara_felipe_angeles",
+      "inicio": "2026-11-01",
+      "fin": "2026-11-26",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-amarilla-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-11-01_2026-11-26__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Amarilla - Primera",
+      "mercado_clave": "queretaro",
+      "inicio": "2025-11-01",
+      "fin": "2025-11-30",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-amarilla-primera-queretaro-mercado-de-abasto-de-queretaro__2025-11-01_2025-11-30__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Amarilla - Primera",
+      "mercado_clave": "queretaro",
+      "inicio": "2025-12-01",
+      "fin": "2025-12-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-amarilla-primera-queretaro-mercado-de-abasto-de-queretaro__2025-12-01_2025-12-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Amarilla - Primera",
+      "mercado_clave": "queretaro",
+      "inicio": "2026-01-01",
+      "fin": "2026-01-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-amarilla-primera-queretaro-mercado-de-abasto-de-queretaro__2026-01-01_2026-01-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Amarilla - Primera",
+      "mercado_clave": "queretaro",
+      "inicio": "2026-02-01",
+      "fin": "2026-02-28",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-amarilla-primera-queretaro-mercado-de-abasto-de-queretaro__2026-02-01_2026-02-28__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Amarilla - Primera",
+      "mercado_clave": "queretaro",
+      "inicio": "2026-03-01",
+      "fin": "2026-03-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-amarilla-primera-queretaro-mercado-de-abasto-de-queretaro__2026-03-01_2026-03-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Amarilla - Primera",
+      "mercado_clave": "queretaro",
+      "inicio": "2026-04-01",
+      "fin": "2026-04-30",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-amarilla-primera-queretaro-mercado-de-abasto-de-queretaro__2026-04-01_2026-04-30__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Amarilla - Primera",
+      "mercado_clave": "queretaro",
+      "inicio": "2026-05-01",
+      "fin": "2026-05-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-amarilla-primera-queretaro-mercado-de-abasto-de-queretaro__2026-05-01_2026-05-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Amarilla - Primera",
+      "mercado_clave": "queretaro",
+      "inicio": "2026-06-01",
+      "fin": "2026-06-30",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-amarilla-primera-queretaro-mercado-de-abasto-de-queretaro__2026-06-01_2026-06-30__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Amarilla - Primera",
+      "mercado_clave": "queretaro",
+      "inicio": "2026-07-01",
+      "fin": "2026-07-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-amarilla-primera-queretaro-mercado-de-abasto-de-queretaro__2026-07-01_2026-07-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Amarilla - Primera",
+      "mercado_clave": "queretaro",
+      "inicio": "2026-08-01",
+      "fin": "2026-08-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-amarilla-primera-queretaro-mercado-de-abasto-de-queretaro__2026-08-01_2026-08-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Amarilla - Primera",
+      "mercado_clave": "queretaro",
+      "inicio": "2026-09-01",
+      "fin": "2026-09-30",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-amarilla-primera-queretaro-mercado-de-abasto-de-queretaro__2026-09-01_2026-09-30__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Amarilla - Primera",
+      "mercado_clave": "queretaro",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-amarilla-primera-queretaro-mercado-de-abasto-de-queretaro__2026-10-01_2026-10-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Amarilla - Primera",
+      "mercado_clave": "queretaro",
+      "inicio": "2026-11-01",
+      "fin": "2026-11-26",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-amarilla-primera-queretaro-mercado-de-abasto-de-queretaro__2026-11-01_2026-11-26__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Amarilla - Primera",
+      "mercado_clave": "san_luis_potosi",
+      "inicio": "2025-11-01",
+      "fin": "2025-11-30",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-amarilla-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2025-11-01_2025-11-30__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Amarilla - Primera",
+      "mercado_clave": "san_luis_potosi",
+      "inicio": "2025-12-01",
+      "fin": "2025-12-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-amarilla-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2025-12-01_2025-12-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Amarilla - Primera",
+      "mercado_clave": "san_luis_potosi",
+      "inicio": "2026-01-01",
+      "fin": "2026-01-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-amarilla-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-01-01_2026-01-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Amarilla - Primera",
+      "mercado_clave": "san_luis_potosi",
+      "inicio": "2026-02-01",
+      "fin": "2026-02-28",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-amarilla-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-02-01_2026-02-28__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Amarilla - Primera",
+      "mercado_clave": "san_luis_potosi",
+      "inicio": "2026-03-01",
+      "fin": "2026-03-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-amarilla-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-03-01_2026-03-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Amarilla - Primera",
+      "mercado_clave": "san_luis_potosi",
+      "inicio": "2026-04-01",
+      "fin": "2026-04-30",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-amarilla-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-04-01_2026-04-30__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Amarilla - Primera",
+      "mercado_clave": "san_luis_potosi",
+      "inicio": "2026-05-01",
+      "fin": "2026-05-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-amarilla-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-05-01_2026-05-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Amarilla - Primera",
+      "mercado_clave": "san_luis_potosi",
+      "inicio": "2026-06-01",
+      "fin": "2026-06-30",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-amarilla-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-06-01_2026-06-30__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Amarilla - Primera",
+      "mercado_clave": "san_luis_potosi",
+      "inicio": "2026-07-01",
+      "fin": "2026-07-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-amarilla-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-07-01_2026-07-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Amarilla - Primera",
+      "mercado_clave": "san_luis_potosi",
+      "inicio": "2026-08-01",
+      "fin": "2026-08-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-amarilla-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-08-01_2026-08-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Amarilla - Primera",
+      "mercado_clave": "san_luis_potosi",
+      "inicio": "2026-09-01",
+      "fin": "2026-09-30",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-amarilla-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-09-01_2026-09-30__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Amarilla - Primera",
+      "mercado_clave": "san_luis_potosi",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-amarilla-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-10-01_2026-10-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Amarilla - Primera",
+      "mercado_clave": "san_luis_potosi",
+      "inicio": "2026-11-01",
+      "fin": "2026-11-26",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-amarilla-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-11-01_2026-11-26__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Amarilla - Primera",
+      "mercado_clave": "zacatecas",
+      "inicio": "2025-11-01",
+      "fin": "2025-11-30",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-amarilla-primera-zacatecas-mercado-de-abasto-de-zacatecas__2025-11-01_2025-11-30__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Amarilla - Primera",
+      "mercado_clave": "zacatecas",
+      "inicio": "2025-12-01",
+      "fin": "2025-12-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-amarilla-primera-zacatecas-mercado-de-abasto-de-zacatecas__2025-12-01_2025-12-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Amarilla - Primera",
+      "mercado_clave": "zacatecas",
+      "inicio": "2026-01-01",
+      "fin": "2026-01-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-amarilla-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-01-01_2026-01-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Amarilla - Primera",
+      "mercado_clave": "zacatecas",
+      "inicio": "2026-02-01",
+      "fin": "2026-02-28",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-amarilla-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-02-01_2026-02-28__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Amarilla - Primera",
+      "mercado_clave": "zacatecas",
+      "inicio": "2026-03-01",
+      "fin": "2026-03-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-amarilla-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-03-01_2026-03-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Amarilla - Primera",
+      "mercado_clave": "zacatecas",
+      "inicio": "2026-04-01",
+      "fin": "2026-04-30",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-amarilla-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-04-01_2026-04-30__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Amarilla - Primera",
+      "mercado_clave": "zacatecas",
+      "inicio": "2026-05-01",
+      "fin": "2026-05-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-amarilla-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-05-01_2026-05-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Amarilla - Primera",
+      "mercado_clave": "zacatecas",
+      "inicio": "2026-06-01",
+      "fin": "2026-06-30",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-amarilla-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-06-01_2026-06-30__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Amarilla - Primera",
+      "mercado_clave": "zacatecas",
+      "inicio": "2026-07-01",
+      "fin": "2026-07-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-amarilla-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-07-01_2026-07-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Amarilla - Primera",
+      "mercado_clave": "zacatecas",
+      "inicio": "2026-08-01",
+      "fin": "2026-08-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-amarilla-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-08-01_2026-08-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Amarilla - Primera",
+      "mercado_clave": "zacatecas",
+      "inicio": "2026-09-01",
+      "fin": "2026-09-30",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-amarilla-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-09-01_2026-09-30__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Amarilla - Primera",
+      "mercado_clave": "zacatecas",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-amarilla-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-10-01_2026-10-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Amarilla - Primera",
+      "mercado_clave": "zacatecas",
+      "inicio": "2026-11-01",
+      "fin": "2026-11-26",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-amarilla-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-11-01_2026-11-26__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Maradol - Primera",
+      "mercado_clave": "guadalajara_felipe_angeles",
+      "inicio": "2025-11-01",
+      "fin": "2025-11-30",
+      "estado": "ok",
+      "registros": 57,
+      "archivo": "sniim__papaya-maradol-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2025-11-01_2025-11-30__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Maradol - Primera",
+      "mercado_clave": "guadalajara_felipe_angeles",
+      "inicio": "2025-12-01",
+      "fin": "2025-12-31",
+      "estado": "ok",
+      "registros": 66,
+      "archivo": "sniim__papaya-maradol-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2025-12-01_2025-12-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Maradol - Primera",
+      "mercado_clave": "guadalajara_felipe_angeles",
+      "inicio": "2026-01-01",
+      "fin": "2026-01-31",
+      "estado": "ok",
+      "registros": 48,
+      "archivo": "sniim__papaya-maradol-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-01-01_2026-01-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Maradol - Primera",
+      "mercado_clave": "guadalajara_felipe_angeles",
+      "inicio": "2026-02-01",
+      "fin": "2026-02-28",
+      "estado": "ok",
+      "registros": 54,
+      "archivo": "sniim__papaya-maradol-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-02-01_2026-02-28__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Maradol - Primera",
+      "mercado_clave": "guadalajara_felipe_angeles",
+      "inicio": "2026-03-01",
+      "fin": "2026-03-31",
+      "estado": "ok",
+      "registros": 63,
+      "archivo": "sniim__papaya-maradol-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-03-01_2026-03-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Maradol - Primera",
+      "mercado_clave": "guadalajara_felipe_angeles",
+      "inicio": "2026-04-01",
+      "fin": "2026-04-30",
+      "estado": "ok",
+      "registros": 60,
+      "archivo": "sniim__papaya-maradol-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-04-01_2026-04-30__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Maradol - Primera",
+      "mercado_clave": "guadalajara_felipe_angeles",
+      "inicio": "2026-05-01",
+      "fin": "2026-05-31",
+      "estado": "ok",
+      "registros": 57,
+      "archivo": "sniim__papaya-maradol-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-05-01_2026-05-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Maradol - Primera",
+      "mercado_clave": "guadalajara_felipe_angeles",
+      "inicio": "2026-06-01",
+      "fin": "2026-06-30",
+      "estado": "ok",
+      "registros": 66,
+      "archivo": "sniim__papaya-maradol-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-06-01_2026-06-30__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Maradol - Primera",
+      "mercado_clave": "guadalajara_felipe_angeles",
+      "inicio": "2026-07-01",
+      "fin": "2026-07-31",
+      "estado": "ok",
+      "registros": 69,
+      "archivo": "sniim__papaya-maradol-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-07-01_2026-07-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Maradol - Primera",
+      "mercado_clave": "guadalajara_felipe_angeles",
+      "inicio": "2026-08-01",
+      "fin": "2026-08-31",
+      "estado": "ok",
+      "registros": 63,
+      "archivo": "sniim__papaya-maradol-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-08-01_2026-08-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Maradol - Primera",
+      "mercado_clave": "guadalajara_felipe_angeles",
+      "inicio": "2026-09-01",
+      "fin": "2026-09-30",
+      "estado": "ok",
+      "registros": 63,
+      "archivo": "sniim__papaya-maradol-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-09-01_2026-09-30__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Maradol - Primera",
+      "mercado_clave": "guadalajara_felipe_angeles",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "ok",
+      "registros": 66,
+      "archivo": "sniim__papaya-maradol-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-10-01_2026-10-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Maradol - Primera",
+      "mercado_clave": "guadalajara_felipe_angeles",
+      "inicio": "2026-11-01",
+      "fin": "2026-11-26",
+      "estado": "ok",
+      "registros": 51,
+      "archivo": "sniim__papaya-maradol-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-11-01_2026-11-26__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Maradol - Primera",
+      "mercado_clave": "queretaro",
+      "inicio": "2025-11-01",
+      "fin": "2025-11-30",
+      "estado": "ok",
+      "registros": 19,
+      "archivo": "sniim__papaya-maradol-primera-queretaro-mercado-de-abasto-de-queretaro__2025-11-01_2025-11-30__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Maradol - Primera",
+      "mercado_clave": "queretaro",
+      "inicio": "2025-12-01",
+      "fin": "2025-12-31",
+      "estado": "ok",
+      "registros": 22,
+      "archivo": "sniim__papaya-maradol-primera-queretaro-mercado-de-abasto-de-queretaro__2025-12-01_2025-12-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Maradol - Primera",
+      "mercado_clave": "queretaro",
+      "inicio": "2026-01-01",
+      "fin": "2026-01-31",
+      "estado": "ok",
+      "registros": 21,
+      "archivo": "sniim__papaya-maradol-primera-queretaro-mercado-de-abasto-de-queretaro__2026-01-01_2026-01-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Maradol - Primera",
+      "mercado_clave": "queretaro",
+      "inicio": "2026-02-01",
+      "fin": "2026-02-28",
+      "estado": "ok",
+      "registros": 19,
+      "archivo": "sniim__papaya-maradol-primera-queretaro-mercado-de-abasto-de-queretaro__2026-02-01_2026-02-28__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Maradol - Primera",
+      "mercado_clave": "queretaro",
+      "inicio": "2026-03-01",
+      "fin": "2026-03-31",
+      "estado": "ok",
+      "registros": 21,
+      "archivo": "sniim__papaya-maradol-primera-queretaro-mercado-de-abasto-de-queretaro__2026-03-01_2026-03-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Maradol - Primera",
+      "mercado_clave": "queretaro",
+      "inicio": "2026-04-01",
+      "fin": "2026-04-30",
+      "estado": "ok",
+      "registros": 20,
+      "archivo": "sniim__papaya-maradol-primera-queretaro-mercado-de-abasto-de-queretaro__2026-04-01_2026-04-30__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Maradol - Primera",
+      "mercado_clave": "queretaro",
+      "inicio": "2026-05-01",
+      "fin": "2026-05-31",
+      "estado": "ok",
+      "registros": 19,
+      "archivo": "sniim__papaya-maradol-primera-queretaro-mercado-de-abasto-de-queretaro__2026-05-01_2026-05-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Maradol - Primera",
+      "mercado_clave": "queretaro",
+      "inicio": "2026-06-01",
+      "fin": "2026-06-30",
+      "estado": "ok",
+      "registros": 22,
+      "archivo": "sniim__papaya-maradol-primera-queretaro-mercado-de-abasto-de-queretaro__2026-06-01_2026-06-30__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Maradol - Primera",
+      "mercado_clave": "queretaro",
+      "inicio": "2026-07-01",
+      "fin": "2026-07-31",
+      "estado": "ok",
+      "registros": 23,
+      "archivo": "sniim__papaya-maradol-primera-queretaro-mercado-de-abasto-de-queretaro__2026-07-01_2026-07-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Maradol - Primera",
+      "mercado_clave": "queretaro",
+      "inicio": "2026-08-01",
+      "fin": "2026-08-31",
+      "estado": "ok",
+      "registros": 21,
+      "archivo": "sniim__papaya-maradol-primera-queretaro-mercado-de-abasto-de-queretaro__2026-08-01_2026-08-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Maradol - Primera",
+      "mercado_clave": "queretaro",
+      "inicio": "2026-09-01",
+      "fin": "2026-09-30",
+      "estado": "ok",
+      "registros": 21,
+      "archivo": "sniim__papaya-maradol-primera-queretaro-mercado-de-abasto-de-queretaro__2026-09-01_2026-09-30__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Maradol - Primera",
+      "mercado_clave": "queretaro",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "ok",
+      "registros": 22,
+      "archivo": "sniim__papaya-maradol-primera-queretaro-mercado-de-abasto-de-queretaro__2026-10-01_2026-10-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Maradol - Primera",
+      "mercado_clave": "queretaro",
+      "inicio": "2026-11-01",
+      "fin": "2026-11-26",
+      "estado": "ok",
+      "registros": 17,
+      "archivo": "sniim__papaya-maradol-primera-queretaro-mercado-de-abasto-de-queretaro__2026-11-01_2026-11-26__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Maradol - Primera",
+      "mercado_clave": "san_luis_potosi",
+      "inicio": "2025-11-01",
+      "fin": "2025-11-30",
+      "estado": "ok",
+      "registros": 19,
+      "archivo": "sniim__papaya-maradol-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2025-11-01_2025-11-30__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Maradol - Primera",
+      "mercado_clave": "san_luis_potosi",
+      "inicio": "2025-12-01",
+      "fin": "2025-12-31",
+      "estado": "ok",
+      "registros": 22,
+      "archivo": "sniim__papaya-maradol-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2025-12-01_2025-12-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Maradol - Primera",
+      "mercado_clave": "san_luis_potosi",
+      "inicio": "2026-01-01",
+      "fin": "2026-01-31",
+      "estado": "ok",
+      "registros": 21,
+      "archivo": "sniim__papaya-maradol-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-01-01_2026-01-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Maradol - Primera",
+      "mercado_clave": "san_luis_potosi",
+      "inicio": "2026-02-01",
+      "fin": "2026-02-28",
+      "estado": "ok",
+      "registros": 19,
+      "archivo": "sniim__papaya-maradol-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-02-01_2026-02-28__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Maradol - Primera",
+      "mercado_clave": "san_luis_potosi",
+      "inicio": "2026-03-01",
+      "fin": "2026-03-31",
+      "estado": "ok",
+      "registros": 21,
+      "archivo": "sniim__papaya-maradol-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-03-01_2026-03-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Maradol - Primera",
+      "mercado_clave": "san_luis_potosi",
+      "inicio": "2026-04-01",
+      "fin": "2026-04-30",
+      "estado": "ok",
+      "registros": 20,
+      "archivo": "sniim__papaya-maradol-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-04-01_2026-04-30__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Maradol - Primera",
+      "mercado_clave": "san_luis_potosi",
+      "inicio": "2026-05-01",
+      "fin": "2026-05-31",
+      "estado": "ok",
+      "registros": 19,
+      "archivo": "sniim__papaya-maradol-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-05-01_2026-05-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Maradol - Primera",
+      "mercado_clave": "san_luis_potosi",
+      "inicio": "2026-06-01",
+      "fin": "2026-06-30",
+      "estado": "ok",
+      "registros": 22,
+      "archivo": "sniim__papaya-maradol-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-06-01_2026-06-30__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Maradol - Primera",
+      "mercado_clave": "san_luis_potosi",
+      "inicio": "2026-07-01",
+      "fin": "2026-07-31",
+      "estado": "ok",
+      "registros": 23,
+      "archivo": "sniim__papaya-maradol-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-07-01_2026-07-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Maradol - Primera",
+      "mercado_clave": "san_luis_potosi",
+      "inicio": "2026-08-01",
+      "fin": "2026-08-31",
+      "estado": "ok",
+      "registros": 21,
+      "archivo": "sniim__papaya-maradol-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-08-01_2026-08-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Maradol - Primera",
+      "mercado_clave": "san_luis_potosi",
+      "inicio": "2026-09-01",
+      "fin": "2026-09-30",
+      "estado": "ok",
+      "registros": 21,
+      "archivo": "sniim__papaya-maradol-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-09-01_2026-09-30__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Maradol - Primera",
+      "mercado_clave": "san_luis_potosi",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "ok",
+      "registros": 22,
+      "archivo": "sniim__papaya-maradol-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-10-01_2026-10-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Maradol - Primera",
+      "mercado_clave": "san_luis_potosi",
+      "inicio": "2026-11-01",
+      "fin": "2026-11-26",
+      "estado": "ok",
+      "registros": 17,
+      "archivo": "sniim__papaya-maradol-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-11-01_2026-11-26__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Maradol - Primera",
+      "mercado_clave": "zacatecas",
+      "inicio": "2025-11-01",
+      "fin": "2025-11-30",
+      "estado": "ok",
+      "registros": 19,
+      "archivo": "sniim__papaya-maradol-primera-zacatecas-mercado-de-abasto-de-zacatecas__2025-11-01_2025-11-30__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Maradol - Primera",
+      "mercado_clave": "zacatecas",
+      "inicio": "2025-12-01",
+      "fin": "2025-12-31",
+      "estado": "ok",
+      "registros": 22,
+      "archivo": "sniim__papaya-maradol-primera-zacatecas-mercado-de-abasto-de-zacatecas__2025-12-01_2025-12-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Maradol - Primera",
+      "mercado_clave": "zacatecas",
+      "inicio": "2026-01-01",
+      "fin": "2026-01-31",
+      "estado": "ok",
+      "registros": 21,
+      "archivo": "sniim__papaya-maradol-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-01-01_2026-01-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Maradol - Primera",
+      "mercado_clave": "zacatecas",
+      "inicio": "2026-02-01",
+      "fin": "2026-02-28",
+      "estado": "ok",
+      "registros": 19,
+      "archivo": "sniim__papaya-maradol-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-02-01_2026-02-28__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Maradol - Primera",
+      "mercado_clave": "zacatecas",
+      "inicio": "2026-03-01",
+      "fin": "2026-03-31",
+      "estado": "ok",
+      "registros": 21,
+      "archivo": "sniim__papaya-maradol-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-03-01_2026-03-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Maradol - Primera",
+      "mercado_clave": "zacatecas",
+      "inicio": "2026-04-01",
+      "fin": "2026-04-30",
+      "estado": "ok",
+      "registros": 20,
+      "archivo": "sniim__papaya-maradol-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-04-01_2026-04-30__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Maradol - Primera",
+      "mercado_clave": "zacatecas",
+      "inicio": "2026-05-01",
+      "fin": "2026-05-31",
+      "estado": "ok",
+      "registros": 19,
+      "archivo": "sniim__papaya-maradol-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-05-01_2026-05-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Maradol - Primera",
+      "mercado_clave": "zacatecas",
+      "inicio": "2026-06-01",
+      "fin": "2026-06-30",
+      "estado": "ok",
+      "registros": 22,
+      "archivo": "sniim__papaya-maradol-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-06-01_2026-06-30__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Maradol - Primera",
+      "mercado_clave": "zacatecas",
+      "inicio": "2026-07-01",
+      "fin": "2026-07-31",
+      "estado": "ok",
+      "registros": 23,
+      "archivo": "sniim__papaya-maradol-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-07-01_2026-07-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Maradol - Primera",
+      "mercado_clave": "zacatecas",
+      "inicio": "2026-08-01",
+      "fin": "2026-08-31",
+      "estado": "ok",
+      "registros": 21,
+      "archivo": "sniim__papaya-maradol-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-08-01_2026-08-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Maradol - Primera",
+      "mercado_clave": "zacatecas",
+      "inicio": "2026-09-01",
+      "fin": "2026-09-30",
+      "estado": "ok",
+      "registros": 21,
+      "archivo": "sniim__papaya-maradol-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-09-01_2026-09-30__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Maradol - Primera",
+      "mercado_clave": "zacatecas",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "ok",
+      "registros": 19,
+      "archivo": "sniim__papaya-maradol-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-10-01_2026-10-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Maradol - Primera",
+      "mercado_clave": "zacatecas",
+      "inicio": "2026-11-01",
+      "fin": "2026-11-26",
+      "estado": "ok",
+      "registros": 17,
+      "archivo": "sniim__papaya-maradol-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-11-01_2026-11-26__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Roja - Primera",
+      "mercado_clave": "guadalajara_felipe_angeles",
+      "inicio": "2025-11-01",
+      "fin": "2025-11-30",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-roja-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2025-11-01_2025-11-30__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Roja - Primera",
+      "mercado_clave": "guadalajara_felipe_angeles",
+      "inicio": "2025-12-01",
+      "fin": "2025-12-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-roja-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2025-12-01_2025-12-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Roja - Primera",
+      "mercado_clave": "guadalajara_felipe_angeles",
+      "inicio": "2026-01-01",
+      "fin": "2026-01-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-roja-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-01-01_2026-01-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Roja - Primera",
+      "mercado_clave": "guadalajara_felipe_angeles",
+      "inicio": "2026-02-01",
+      "fin": "2026-02-28",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-roja-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-02-01_2026-02-28__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Roja - Primera",
+      "mercado_clave": "guadalajara_felipe_angeles",
+      "inicio": "2026-03-01",
+      "fin": "2026-03-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-roja-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-03-01_2026-03-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Roja - Primera",
+      "mercado_clave": "guadalajara_felipe_angeles",
+      "inicio": "2026-04-01",
+      "fin": "2026-04-30",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-roja-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-04-01_2026-04-30__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Roja - Primera",
+      "mercado_clave": "guadalajara_felipe_angeles",
+      "inicio": "2026-05-01",
+      "fin": "2026-05-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-roja-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-05-01_2026-05-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Roja - Primera",
+      "mercado_clave": "guadalajara_felipe_angeles",
+      "inicio": "2026-06-01",
+      "fin": "2026-06-30",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-roja-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-06-01_2026-06-30__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Roja - Primera",
+      "mercado_clave": "guadalajara_felipe_angeles",
+      "inicio": "2026-07-01",
+      "fin": "2026-07-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-roja-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-07-01_2026-07-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Roja - Primera",
+      "mercado_clave": "guadalajara_felipe_angeles",
+      "inicio": "2026-08-01",
+      "fin": "2026-08-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-roja-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-08-01_2026-08-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Roja - Primera",
+      "mercado_clave": "guadalajara_felipe_angeles",
+      "inicio": "2026-09-01",
+      "fin": "2026-09-30",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-roja-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-09-01_2026-09-30__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Roja - Primera",
+      "mercado_clave": "guadalajara_felipe_angeles",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-roja-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-10-01_2026-10-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Roja - Primera",
+      "mercado_clave": "guadalajara_felipe_angeles",
+      "inicio": "2026-11-01",
+      "fin": "2026-11-26",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-roja-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-11-01_2026-11-26__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Roja - Primera",
+      "mercado_clave": "queretaro",
+      "inicio": "2025-11-01",
+      "fin": "2025-11-30",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-roja-primera-queretaro-mercado-de-abasto-de-queretaro__2025-11-01_2025-11-30__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Roja - Primera",
+      "mercado_clave": "queretaro",
+      "inicio": "2025-12-01",
+      "fin": "2025-12-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-roja-primera-queretaro-mercado-de-abasto-de-queretaro__2025-12-01_2025-12-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Roja - Primera",
+      "mercado_clave": "queretaro",
+      "inicio": "2026-01-01",
+      "fin": "2026-01-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-roja-primera-queretaro-mercado-de-abasto-de-queretaro__2026-01-01_2026-01-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Roja - Primera",
+      "mercado_clave": "queretaro",
+      "inicio": "2026-02-01",
+      "fin": "2026-02-28",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-roja-primera-queretaro-mercado-de-abasto-de-queretaro__2026-02-01_2026-02-28__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Roja - Primera",
+      "mercado_clave": "queretaro",
+      "inicio": "2026-03-01",
+      "fin": "2026-03-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-roja-primera-queretaro-mercado-de-abasto-de-queretaro__2026-03-01_2026-03-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Roja - Primera",
+      "mercado_clave": "queretaro",
+      "inicio": "2026-04-01",
+      "fin": "2026-04-30",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-roja-primera-queretaro-mercado-de-abasto-de-queretaro__2026-04-01_2026-04-30__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Roja - Primera",
+      "mercado_clave": "queretaro",
+      "inicio": "2026-05-01",
+      "fin": "2026-05-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-roja-primera-queretaro-mercado-de-abasto-de-queretaro__2026-05-01_2026-05-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Roja - Primera",
+      "mercado_clave": "queretaro",
+      "inicio": "2026-06-01",
+      "fin": "2026-06-30",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-roja-primera-queretaro-mercado-de-abasto-de-queretaro__2026-06-01_2026-06-30__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Roja - Primera",
+      "mercado_clave": "queretaro",
+      "inicio": "2026-07-01",
+      "fin": "2026-07-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-roja-primera-queretaro-mercado-de-abasto-de-queretaro__2026-07-01_2026-07-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Roja - Primera",
+      "mercado_clave": "queretaro",
+      "inicio": "2026-08-01",
+      "fin": "2026-08-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-roja-primera-queretaro-mercado-de-abasto-de-queretaro__2026-08-01_2026-08-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Roja - Primera",
+      "mercado_clave": "queretaro",
+      "inicio": "2026-09-01",
+      "fin": "2026-09-30",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-roja-primera-queretaro-mercado-de-abasto-de-queretaro__2026-09-01_2026-09-30__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Roja - Primera",
+      "mercado_clave": "queretaro",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-roja-primera-queretaro-mercado-de-abasto-de-queretaro__2026-10-01_2026-10-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Roja - Primera",
+      "mercado_clave": "queretaro",
+      "inicio": "2026-11-01",
+      "fin": "2026-11-26",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-roja-primera-queretaro-mercado-de-abasto-de-queretaro__2026-11-01_2026-11-26__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Roja - Primera",
+      "mercado_clave": "san_luis_potosi",
+      "inicio": "2025-11-01",
+      "fin": "2025-11-30",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-roja-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2025-11-01_2025-11-30__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Roja - Primera",
+      "mercado_clave": "san_luis_potosi",
+      "inicio": "2025-12-01",
+      "fin": "2025-12-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-roja-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2025-12-01_2025-12-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Roja - Primera",
+      "mercado_clave": "san_luis_potosi",
+      "inicio": "2026-01-01",
+      "fin": "2026-01-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-roja-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-01-01_2026-01-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Roja - Primera",
+      "mercado_clave": "san_luis_potosi",
+      "inicio": "2026-02-01",
+      "fin": "2026-02-28",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-roja-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-02-01_2026-02-28__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Roja - Primera",
+      "mercado_clave": "san_luis_potosi",
+      "inicio": "2026-03-01",
+      "fin": "2026-03-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-roja-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-03-01_2026-03-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Roja - Primera",
+      "mercado_clave": "san_luis_potosi",
+      "inicio": "2026-04-01",
+      "fin": "2026-04-30",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-roja-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-04-01_2026-04-30__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Roja - Primera",
+      "mercado_clave": "san_luis_potosi",
+      "inicio": "2026-05-01",
+      "fin": "2026-05-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-roja-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-05-01_2026-05-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Roja - Primera",
+      "mercado_clave": "san_luis_potosi",
+      "inicio": "2026-06-01",
+      "fin": "2026-06-30",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-roja-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-06-01_2026-06-30__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Roja - Primera",
+      "mercado_clave": "san_luis_potosi",
+      "inicio": "2026-07-01",
+      "fin": "2026-07-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-roja-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-07-01_2026-07-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Roja - Primera",
+      "mercado_clave": "san_luis_potosi",
+      "inicio": "2026-08-01",
+      "fin": "2026-08-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-roja-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-08-01_2026-08-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Roja - Primera",
+      "mercado_clave": "san_luis_potosi",
+      "inicio": "2026-09-01",
+      "fin": "2026-09-30",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-roja-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-09-01_2026-09-30__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Roja - Primera",
+      "mercado_clave": "san_luis_potosi",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-roja-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-10-01_2026-10-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Roja - Primera",
+      "mercado_clave": "san_luis_potosi",
+      "inicio": "2026-11-01",
+      "fin": "2026-11-26",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-roja-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-11-01_2026-11-26__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Roja - Primera",
+      "mercado_clave": "zacatecas",
+      "inicio": "2025-11-01",
+      "fin": "2025-11-30",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-roja-primera-zacatecas-mercado-de-abasto-de-zacatecas__2025-11-01_2025-11-30__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Roja - Primera",
+      "mercado_clave": "zacatecas",
+      "inicio": "2025-12-01",
+      "fin": "2025-12-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-roja-primera-zacatecas-mercado-de-abasto-de-zacatecas__2025-12-01_2025-12-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Roja - Primera",
+      "mercado_clave": "zacatecas",
+      "inicio": "2026-01-01",
+      "fin": "2026-01-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-roja-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-01-01_2026-01-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Roja - Primera",
+      "mercado_clave": "zacatecas",
+      "inicio": "2026-02-01",
+      "fin": "2026-02-28",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-roja-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-02-01_2026-02-28__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Roja - Primera",
+      "mercado_clave": "zacatecas",
+      "inicio": "2026-03-01",
+      "fin": "2026-03-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-roja-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-03-01_2026-03-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Roja - Primera",
+      "mercado_clave": "zacatecas",
+      "inicio": "2026-04-01",
+      "fin": "2026-04-30",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-roja-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-04-01_2026-04-30__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Roja - Primera",
+      "mercado_clave": "zacatecas",
+      "inicio": "2026-05-01",
+      "fin": "2026-05-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-roja-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-05-01_2026-05-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Roja - Primera",
+      "mercado_clave": "zacatecas",
+      "inicio": "2026-06-01",
+      "fin": "2026-06-30",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-roja-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-06-01_2026-06-30__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Roja - Primera",
+      "mercado_clave": "zacatecas",
+      "inicio": "2026-07-01",
+      "fin": "2026-07-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-roja-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-07-01_2026-07-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Roja - Primera",
+      "mercado_clave": "zacatecas",
+      "inicio": "2026-08-01",
+      "fin": "2026-08-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-roja-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-08-01_2026-08-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Roja - Primera",
+      "mercado_clave": "zacatecas",
+      "inicio": "2026-09-01",
+      "fin": "2026-09-30",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-roja-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-09-01_2026-09-30__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Roja - Primera",
+      "mercado_clave": "zacatecas",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-roja-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-10-01_2026-10-31__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "papaya",
+      "producto": "Papaya Roja - Primera",
+      "mercado_clave": "zacatecas",
+      "inicio": "2026-11-01",
+      "fin": "2026-11-26",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__papaya-roja-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-11-01_2026-11-26__20261127T163936Z-08c1f0.html",
+      "error": null,
+      "advertencias": []
+    }
+  ],
+  "archivos": [
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__catalogo-formulario__2026-11-27_2026-11-27__20261127T163936Z-08c1f0.html",
+      "sha256": "0b7309043ab6c99dd2c634866bf0cfc75ae0301215a714035ea2a060fb889383",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/Consultas/MercadosNacionales/PreciosDeMercado/Agricolas/ConsultaFrutasYHortalizas.aspx",
+      "bytes": 67149
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/11/sniim__papaya-amarilla-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2025-11-01_2025-11-30__20261127T163936Z-08c1f0.html",
+      "sha256": "b665f2cd8d562ba378323c931726d0fcdd8fe85b349d9712a12477c74de9911a",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F11%2F2025&fechaFinal=30%2F11%2F2025&ProductoId=620&OrigenId=-1&Origen=Todos&DestinoId=141&Destino=Jalisco%3A+Mercado+Felipe+%C3%81ngeles+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9435
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/12/sniim__papaya-amarilla-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2025-12-01_2025-12-31__20261127T163936Z-08c1f0.html",
+      "sha256": "56605ebde8d507d7defd0c984c828db06c1a03390a33a7d9d8ab7441bbc7eb5e",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F12%2F2025&fechaFinal=31%2F12%2F2025&ProductoId=620&OrigenId=-1&Origen=Todos&DestinoId=141&Destino=Jalisco%3A+Mercado+Felipe+%C3%81ngeles+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9435
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/01/sniim__papaya-amarilla-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-01-01_2026-01-31__20261127T163936Z-08c1f0.html",
+      "sha256": "0196d2fe335583f725b3f1b6b8e77a34c1504ddffb4b128e7532035830eede0c",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F01%2F2026&fechaFinal=31%2F01%2F2026&ProductoId=620&OrigenId=-1&Origen=Todos&DestinoId=141&Destino=Jalisco%3A+Mercado+Felipe+%C3%81ngeles+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9435
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/02/sniim__papaya-amarilla-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-02-01_2026-02-28__20261127T163936Z-08c1f0.html",
+      "sha256": "ea1f13859d2a7d308e73c892054f69237c9f89e29cd80cc7a98d63ce49cc0dde",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F02%2F2026&fechaFinal=28%2F02%2F2026&ProductoId=620&OrigenId=-1&Origen=Todos&DestinoId=141&Destino=Jalisco%3A+Mercado+Felipe+%C3%81ngeles+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9435
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/03/sniim__papaya-amarilla-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-03-01_2026-03-31__20261127T163936Z-08c1f0.html",
+      "sha256": "6d0612bccc5a9d051b865ae2e307b3b733df0a5cde3c57953738d489cf5da15a",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F03%2F2026&fechaFinal=31%2F03%2F2026&ProductoId=620&OrigenId=-1&Origen=Todos&DestinoId=141&Destino=Jalisco%3A+Mercado+Felipe+%C3%81ngeles+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9435
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/04/sniim__papaya-amarilla-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-04-01_2026-04-30__20261127T163936Z-08c1f0.html",
+      "sha256": "1254874671ba3cae915c0abf04ed21da47768ef3025b344e0b57d9b5858d63a4",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F04%2F2026&fechaFinal=30%2F04%2F2026&ProductoId=620&OrigenId=-1&Origen=Todos&DestinoId=141&Destino=Jalisco%3A+Mercado+Felipe+%C3%81ngeles+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9435
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/05/sniim__papaya-amarilla-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-05-01_2026-05-31__20261127T163936Z-08c1f0.html",
+      "sha256": "7cf1a7d455c6dce5ae9b97174b727be9f0eb68074dec82865bd25a4a11bfd1e5",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F05%2F2026&fechaFinal=31%2F05%2F2026&ProductoId=620&OrigenId=-1&Origen=Todos&DestinoId=141&Destino=Jalisco%3A+Mercado+Felipe+%C3%81ngeles+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9435
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/06/sniim__papaya-amarilla-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-06-01_2026-06-30__20261127T163936Z-08c1f0.html",
+      "sha256": "cc27f8e158369024a3793b9f4a6c68c0272e35caf51b6b8688c10b39af121bc9",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F06%2F2026&fechaFinal=30%2F06%2F2026&ProductoId=620&OrigenId=-1&Origen=Todos&DestinoId=141&Destino=Jalisco%3A+Mercado+Felipe+%C3%81ngeles+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9435
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/07/sniim__papaya-amarilla-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-07-01_2026-07-31__20261127T163936Z-08c1f0.html",
+      "sha256": "50b058618153f8e88d8b3eaaf133fcb44579174078279a468073def6daa675aa",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F07%2F2026&fechaFinal=31%2F07%2F2026&ProductoId=620&OrigenId=-1&Origen=Todos&DestinoId=141&Destino=Jalisco%3A+Mercado+Felipe+%C3%81ngeles+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9435
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/08/sniim__papaya-amarilla-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-08-01_2026-08-31__20261127T163936Z-08c1f0.html",
+      "sha256": "12b3ad50c3a58d194b90f147c1be7d6181e60b42c834b20fa63194804b3a0251",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F08%2F2026&fechaFinal=31%2F08%2F2026&ProductoId=620&OrigenId=-1&Origen=Todos&DestinoId=141&Destino=Jalisco%3A+Mercado+Felipe+%C3%81ngeles+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9435
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/09/sniim__papaya-amarilla-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-09-01_2026-09-30__20261127T163936Z-08c1f0.html",
+      "sha256": "6794ed4f956e7ac13bdd957d54d90a033acf18985b239cead2ae8aa2aba4431b",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F09%2F2026&fechaFinal=30%2F09%2F2026&ProductoId=620&OrigenId=-1&Origen=Todos&DestinoId=141&Destino=Jalisco%3A+Mercado+Felipe+%C3%81ngeles+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9435
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__papaya-amarilla-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-10-01_2026-10-31__20261127T163936Z-08c1f0.html",
+      "sha256": "d16701eb6b2875047aa13c187ab88e30b223071b2368f93175584d709e16da1e",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=620&OrigenId=-1&Origen=Todos&DestinoId=141&Destino=Jalisco%3A+Mercado+Felipe+%C3%81ngeles+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9435
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__papaya-amarilla-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-11-01_2026-11-26__20261127T163936Z-08c1f0.html",
+      "sha256": "e80cf01e729eb05f54898e82b52fa414202670929c25d749c8ab5ee5b0f18387",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F11%2F2026&fechaFinal=26%2F11%2F2026&ProductoId=620&OrigenId=-1&Origen=Todos&DestinoId=141&Destino=Jalisco%3A+Mercado+Felipe+%C3%81ngeles+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9435
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/11/sniim__papaya-amarilla-primera-queretaro-mercado-de-abasto-de-queretaro__2025-11-01_2025-11-30__20261127T163936Z-08c1f0.html",
+      "sha256": "3d3884180a7fa6868a6a64569c0da7487ccee29e376820088147e77b6d898a02",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F11%2F2025&fechaFinal=30%2F11%2F2025&ProductoId=620&OrigenId=-1&Origen=Todos&DestinoId=220&Destino=Quer%C3%A9taro%3A+Mercado+de+Abasto+de+Quer%C3%A9taro&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9435
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/12/sniim__papaya-amarilla-primera-queretaro-mercado-de-abasto-de-queretaro__2025-12-01_2025-12-31__20261127T163936Z-08c1f0.html",
+      "sha256": "71d9b596c4464f377b5fe857ac3ebff0055b2d348a7712b86e44b8c0d1c09f46",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F12%2F2025&fechaFinal=31%2F12%2F2025&ProductoId=620&OrigenId=-1&Origen=Todos&DestinoId=220&Destino=Quer%C3%A9taro%3A+Mercado+de+Abasto+de+Quer%C3%A9taro&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9435
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/01/sniim__papaya-amarilla-primera-queretaro-mercado-de-abasto-de-queretaro__2026-01-01_2026-01-31__20261127T163936Z-08c1f0.html",
+      "sha256": "00a8ba9b9396f59e4f6276afa068c9f15b729200d2db2d80f7f04310fe34f038",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F01%2F2026&fechaFinal=31%2F01%2F2026&ProductoId=620&OrigenId=-1&Origen=Todos&DestinoId=220&Destino=Quer%C3%A9taro%3A+Mercado+de+Abasto+de+Quer%C3%A9taro&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9435
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/02/sniim__papaya-amarilla-primera-queretaro-mercado-de-abasto-de-queretaro__2026-02-01_2026-02-28__20261127T163936Z-08c1f0.html",
+      "sha256": "68a6a81ccaef356c69cfea913bd9d46d0b0ace5826f18636ffa246013988ccd8",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F02%2F2026&fechaFinal=28%2F02%2F2026&ProductoId=620&OrigenId=-1&Origen=Todos&DestinoId=220&Destino=Quer%C3%A9taro%3A+Mercado+de+Abasto+de+Quer%C3%A9taro&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9435
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/03/sniim__papaya-amarilla-primera-queretaro-mercado-de-abasto-de-queretaro__2026-03-01_2026-03-31__20261127T163936Z-08c1f0.html",
+      "sha256": "1b0d0d2cc522486488f69a478061ea635615b4e3b9b8ae4ce1bd4826cc5fafec",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F03%2F2026&fechaFinal=31%2F03%2F2026&ProductoId=620&OrigenId=-1&Origen=Todos&DestinoId=220&Destino=Quer%C3%A9taro%3A+Mercado+de+Abasto+de+Quer%C3%A9taro&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9435
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/04/sniim__papaya-amarilla-primera-queretaro-mercado-de-abasto-de-queretaro__2026-04-01_2026-04-30__20261127T163936Z-08c1f0.html",
+      "sha256": "d89cefb947eba458c146b0d5ae4ccebf4e77dcdef876b0813c52cc867cae5e9d",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F04%2F2026&fechaFinal=30%2F04%2F2026&ProductoId=620&OrigenId=-1&Origen=Todos&DestinoId=220&Destino=Quer%C3%A9taro%3A+Mercado+de+Abasto+de+Quer%C3%A9taro&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9435
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/05/sniim__papaya-amarilla-primera-queretaro-mercado-de-abasto-de-queretaro__2026-05-01_2026-05-31__20261127T163936Z-08c1f0.html",
+      "sha256": "410cff1ae2e1cf74bf2d1da86937ece10481fb10b6bc4e77289060a6f3474ffe",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F05%2F2026&fechaFinal=31%2F05%2F2026&ProductoId=620&OrigenId=-1&Origen=Todos&DestinoId=220&Destino=Quer%C3%A9taro%3A+Mercado+de+Abasto+de+Quer%C3%A9taro&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9435
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/06/sniim__papaya-amarilla-primera-queretaro-mercado-de-abasto-de-queretaro__2026-06-01_2026-06-30__20261127T163936Z-08c1f0.html",
+      "sha256": "17fd3aa48d357e6574f04c05f0b519febf01357ae5cae5f9341500947e332370",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F06%2F2026&fechaFinal=30%2F06%2F2026&ProductoId=620&OrigenId=-1&Origen=Todos&DestinoId=220&Destino=Quer%C3%A9taro%3A+Mercado+de+Abasto+de+Quer%C3%A9taro&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9435
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/07/sniim__papaya-amarilla-primera-queretaro-mercado-de-abasto-de-queretaro__2026-07-01_2026-07-31__20261127T163936Z-08c1f0.html",
+      "sha256": "1e5d3a9f0b603d25c66eebf655ca7498193eaf7fa5488238d2abfeb3753b4b73",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F07%2F2026&fechaFinal=31%2F07%2F2026&ProductoId=620&OrigenId=-1&Origen=Todos&DestinoId=220&Destino=Quer%C3%A9taro%3A+Mercado+de+Abasto+de+Quer%C3%A9taro&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9435
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/08/sniim__papaya-amarilla-primera-queretaro-mercado-de-abasto-de-queretaro__2026-08-01_2026-08-31__20261127T163936Z-08c1f0.html",
+      "sha256": "5314a2447e20756570e86df38dab126643277752e5a7956ae1ac1baffbc6b333",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F08%2F2026&fechaFinal=31%2F08%2F2026&ProductoId=620&OrigenId=-1&Origen=Todos&DestinoId=220&Destino=Quer%C3%A9taro%3A+Mercado+de+Abasto+de+Quer%C3%A9taro&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9435
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/09/sniim__papaya-amarilla-primera-queretaro-mercado-de-abasto-de-queretaro__2026-09-01_2026-09-30__20261127T163936Z-08c1f0.html",
+      "sha256": "c829f5a9fdd72574dde71efd54a493a497d845d2d27a9c943c7d8c88bfc1cc6a",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F09%2F2026&fechaFinal=30%2F09%2F2026&ProductoId=620&OrigenId=-1&Origen=Todos&DestinoId=220&Destino=Quer%C3%A9taro%3A+Mercado+de+Abasto+de+Quer%C3%A9taro&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9435
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__papaya-amarilla-primera-queretaro-mercado-de-abasto-de-queretaro__2026-10-01_2026-10-31__20261127T163936Z-08c1f0.html",
+      "sha256": "d5b2a243bb8b472add6fb82486b4ebf654c679c8c8569074715f53a2a4c2af74",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=620&OrigenId=-1&Origen=Todos&DestinoId=220&Destino=Quer%C3%A9taro%3A+Mercado+de+Abasto+de+Quer%C3%A9taro&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9435
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__papaya-amarilla-primera-queretaro-mercado-de-abasto-de-queretaro__2026-11-01_2026-11-26__20261127T163936Z-08c1f0.html",
+      "sha256": "555ccb606a4d8f79c5ab4099f4f7b742798248334b4ddb120997f5b5e9cae335",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F11%2F2026&fechaFinal=26%2F11%2F2026&ProductoId=620&OrigenId=-1&Origen=Todos&DestinoId=220&Destino=Quer%C3%A9taro%3A+Mercado+de+Abasto+de+Quer%C3%A9taro&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9435
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/11/sniim__papaya-amarilla-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2025-11-01_2025-11-30__20261127T163936Z-08c1f0.html",
+      "sha256": "3fa71524c020c42cfbc92d4bdc03727ea6a27f8cfb5127c65208658e6506b68c",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F11%2F2025&fechaFinal=30%2F11%2F2025&ProductoId=620&OrigenId=-1&Origen=Todos&DestinoId=240&Destino=San+Luis+Potos%C3%AD%3A+Centro+de+Abasto+de+San+Luis+Potos%C3%AD&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9446
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/12/sniim__papaya-amarilla-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2025-12-01_2025-12-31__20261127T163936Z-08c1f0.html",
+      "sha256": "aa1d85f1a0f1a6854f5ff76a6a3e409d77dc7bfbaac8191c160c6f8446d5992d",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F12%2F2025&fechaFinal=31%2F12%2F2025&ProductoId=620&OrigenId=-1&Origen=Todos&DestinoId=240&Destino=San+Luis+Potos%C3%AD%3A+Centro+de+Abasto+de+San+Luis+Potos%C3%AD&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9446
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/01/sniim__papaya-amarilla-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-01-01_2026-01-31__20261127T163936Z-08c1f0.html",
+      "sha256": "6c99e1c690ebd1aa5d82b286cb011970e8ffee6f5769c5ec0d7d77d5fc697601",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F01%2F2026&fechaFinal=31%2F01%2F2026&ProductoId=620&OrigenId=-1&Origen=Todos&DestinoId=240&Destino=San+Luis+Potos%C3%AD%3A+Centro+de+Abasto+de+San+Luis+Potos%C3%AD&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9446
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/02/sniim__papaya-amarilla-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-02-01_2026-02-28__20261127T163936Z-08c1f0.html",
+      "sha256": "e078ef9e20ee9f7ed82e5c2e5c08c8f78b7a757de9f82880f89d1757249b7645",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F02%2F2026&fechaFinal=28%2F02%2F2026&ProductoId=620&OrigenId=-1&Origen=Todos&DestinoId=240&Destino=San+Luis+Potos%C3%AD%3A+Centro+de+Abasto+de+San+Luis+Potos%C3%AD&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9446
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/03/sniim__papaya-amarilla-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-03-01_2026-03-31__20261127T163936Z-08c1f0.html",
+      "sha256": "7b6333556cbec6adc393bda93c3a826f7ddce39abe7c007e943178e9e78bdc1b",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F03%2F2026&fechaFinal=31%2F03%2F2026&ProductoId=620&OrigenId=-1&Origen=Todos&DestinoId=240&Destino=San+Luis+Potos%C3%AD%3A+Centro+de+Abasto+de+San+Luis+Potos%C3%AD&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9446
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/04/sniim__papaya-amarilla-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-04-01_2026-04-30__20261127T163936Z-08c1f0.html",
+      "sha256": "6812bfdcb5d2723e98dcea5699d26616bd9f30ac3f444542293df4914552c2c6",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F04%2F2026&fechaFinal=30%2F04%2F2026&ProductoId=620&OrigenId=-1&Origen=Todos&DestinoId=240&Destino=San+Luis+Potos%C3%AD%3A+Centro+de+Abasto+de+San+Luis+Potos%C3%AD&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9446
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/05/sniim__papaya-amarilla-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-05-01_2026-05-31__20261127T163936Z-08c1f0.html",
+      "sha256": "618a43b7495757c4f8c797574a0d041f3c8806c1c5a592b50fcecd3e72c3a452",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F05%2F2026&fechaFinal=31%2F05%2F2026&ProductoId=620&OrigenId=-1&Origen=Todos&DestinoId=240&Destino=San+Luis+Potos%C3%AD%3A+Centro+de+Abasto+de+San+Luis+Potos%C3%AD&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9446
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/06/sniim__papaya-amarilla-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-06-01_2026-06-30__20261127T163936Z-08c1f0.html",
+      "sha256": "76331121e99a4ce438fc39123009e7f415e41d8c9f262fbe087341d4fd12daa2",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F06%2F2026&fechaFinal=30%2F06%2F2026&ProductoId=620&OrigenId=-1&Origen=Todos&DestinoId=240&Destino=San+Luis+Potos%C3%AD%3A+Centro+de+Abasto+de+San+Luis+Potos%C3%AD&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9446
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/07/sniim__papaya-amarilla-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-07-01_2026-07-31__20261127T163936Z-08c1f0.html",
+      "sha256": "e3505bc6f004502c21fbdc826e7972acc177fbfe3cd176b45bf13cafd018e011",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F07%2F2026&fechaFinal=31%2F07%2F2026&ProductoId=620&OrigenId=-1&Origen=Todos&DestinoId=240&Destino=San+Luis+Potos%C3%AD%3A+Centro+de+Abasto+de+San+Luis+Potos%C3%AD&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9446
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/08/sniim__papaya-amarilla-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-08-01_2026-08-31__20261127T163936Z-08c1f0.html",
+      "sha256": "5e85191b605203ce817d9e5c0c90f49a0abe97711aa222755d9d0a056e5f8ac6",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F08%2F2026&fechaFinal=31%2F08%2F2026&ProductoId=620&OrigenId=-1&Origen=Todos&DestinoId=240&Destino=San+Luis+Potos%C3%AD%3A+Centro+de+Abasto+de+San+Luis+Potos%C3%AD&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9446
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/09/sniim__papaya-amarilla-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-09-01_2026-09-30__20261127T163936Z-08c1f0.html",
+      "sha256": "b60643c41256eca9d948d87526c4a3178122b26e950102fbf05185edef5481f4",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F09%2F2026&fechaFinal=30%2F09%2F2026&ProductoId=620&OrigenId=-1&Origen=Todos&DestinoId=240&Destino=San+Luis+Potos%C3%AD%3A+Centro+de+Abasto+de+San+Luis+Potos%C3%AD&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9446
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__papaya-amarilla-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-10-01_2026-10-31__20261127T163936Z-08c1f0.html",
+      "sha256": "98f09d77f6194379e16c45ab8eab44221cf80ec308847d482f2b1837655867fe",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=620&OrigenId=-1&Origen=Todos&DestinoId=240&Destino=San+Luis+Potos%C3%AD%3A+Centro+de+Abasto+de+San+Luis+Potos%C3%AD&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9446
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__papaya-amarilla-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-11-01_2026-11-26__20261127T163936Z-08c1f0.html",
+      "sha256": "9f8719e47dd96d38b72f4cb255a5ce68e60dc8217d83f0cfd5612b10673a314f",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F11%2F2026&fechaFinal=26%2F11%2F2026&ProductoId=620&OrigenId=-1&Origen=Todos&DestinoId=240&Destino=San+Luis+Potos%C3%AD%3A+Centro+de+Abasto+de+San+Luis+Potos%C3%AD&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9446
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/11/sniim__papaya-amarilla-primera-zacatecas-mercado-de-abasto-de-zacatecas__2025-11-01_2025-11-30__20261127T163936Z-08c1f0.html",
+      "sha256": "ac4eedd45505bc7ddb6ebdb4ab86b73d9beb63a43ad585bf0c692735c64fddf1",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F11%2F2025&fechaFinal=30%2F11%2F2025&ProductoId=620&OrigenId=-1&Origen=Todos&DestinoId=320&Destino=Zacatecas%3A+Mercado+de+Abasto+de+Zacatecas&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9425
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/12/sniim__papaya-amarilla-primera-zacatecas-mercado-de-abasto-de-zacatecas__2025-12-01_2025-12-31__20261127T163936Z-08c1f0.html",
+      "sha256": "5d32130600ddb47e2026c434a550730db6a7dbf7865aa2be6f5ba0f4703ccbe5",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F12%2F2025&fechaFinal=31%2F12%2F2025&ProductoId=620&OrigenId=-1&Origen=Todos&DestinoId=320&Destino=Zacatecas%3A+Mercado+de+Abasto+de+Zacatecas&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9425
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/01/sniim__papaya-amarilla-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-01-01_2026-01-31__20261127T163936Z-08c1f0.html",
+      "sha256": "dfb955aeade90dd11feb2b937e69fc5cda6ba00aa886f109643027dffb486f71",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F01%2F2026&fechaFinal=31%2F01%2F2026&ProductoId=620&OrigenId=-1&Origen=Todos&DestinoId=320&Destino=Zacatecas%3A+Mercado+de+Abasto+de+Zacatecas&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9425
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/02/sniim__papaya-amarilla-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-02-01_2026-02-28__20261127T163936Z-08c1f0.html",
+      "sha256": "d4f130ebfcb23c2fcc76f01284cb353f84fbabe4761e626c5db5f8ca54061566",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F02%2F2026&fechaFinal=28%2F02%2F2026&ProductoId=620&OrigenId=-1&Origen=Todos&DestinoId=320&Destino=Zacatecas%3A+Mercado+de+Abasto+de+Zacatecas&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9425
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/03/sniim__papaya-amarilla-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-03-01_2026-03-31__20261127T163936Z-08c1f0.html",
+      "sha256": "50d421cc0f5889e5cc96307ef011f59dbb6f5739e37ccb88175ccaa22c7e665f",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F03%2F2026&fechaFinal=31%2F03%2F2026&ProductoId=620&OrigenId=-1&Origen=Todos&DestinoId=320&Destino=Zacatecas%3A+Mercado+de+Abasto+de+Zacatecas&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9425
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/04/sniim__papaya-amarilla-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-04-01_2026-04-30__20261127T163936Z-08c1f0.html",
+      "sha256": "d4ce64cc50456db89a9cb68410e4fc87c8c906bff6aa4e38d01ea18c56b6ed81",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F04%2F2026&fechaFinal=30%2F04%2F2026&ProductoId=620&OrigenId=-1&Origen=Todos&DestinoId=320&Destino=Zacatecas%3A+Mercado+de+Abasto+de+Zacatecas&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9425
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/05/sniim__papaya-amarilla-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-05-01_2026-05-31__20261127T163936Z-08c1f0.html",
+      "sha256": "d4107866d0b0a97e45dd0311e1352554602472a2924360ffdca08d9b429286bb",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F05%2F2026&fechaFinal=31%2F05%2F2026&ProductoId=620&OrigenId=-1&Origen=Todos&DestinoId=320&Destino=Zacatecas%3A+Mercado+de+Abasto+de+Zacatecas&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9425
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/06/sniim__papaya-amarilla-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-06-01_2026-06-30__20261127T163936Z-08c1f0.html",
+      "sha256": "df47ab0cc785c1a4b16fd33854cda2bd62d5c0a8ded57b671154aacd776c8696",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F06%2F2026&fechaFinal=30%2F06%2F2026&ProductoId=620&OrigenId=-1&Origen=Todos&DestinoId=320&Destino=Zacatecas%3A+Mercado+de+Abasto+de+Zacatecas&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9425
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/07/sniim__papaya-amarilla-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-07-01_2026-07-31__20261127T163936Z-08c1f0.html",
+      "sha256": "ffc0f987cc528d8aab3f33f625ea565370513555a6f2261c9ba7067b20ae37fc",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F07%2F2026&fechaFinal=31%2F07%2F2026&ProductoId=620&OrigenId=-1&Origen=Todos&DestinoId=320&Destino=Zacatecas%3A+Mercado+de+Abasto+de+Zacatecas&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9425
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/08/sniim__papaya-amarilla-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-08-01_2026-08-31__20261127T163936Z-08c1f0.html",
+      "sha256": "1d97be3462758b93451abdccb90bd0b138ec0acc7770247bbd3dbd7440005b0f",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F08%2F2026&fechaFinal=31%2F08%2F2026&ProductoId=620&OrigenId=-1&Origen=Todos&DestinoId=320&Destino=Zacatecas%3A+Mercado+de+Abasto+de+Zacatecas&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9425
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/09/sniim__papaya-amarilla-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-09-01_2026-09-30__20261127T163936Z-08c1f0.html",
+      "sha256": "de82bf5165295c3a3bad8b383b0118c5348ba579e2b079af17a782124d30b15a",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F09%2F2026&fechaFinal=30%2F09%2F2026&ProductoId=620&OrigenId=-1&Origen=Todos&DestinoId=320&Destino=Zacatecas%3A+Mercado+de+Abasto+de+Zacatecas&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9425
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__papaya-amarilla-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-10-01_2026-10-31__20261127T163936Z-08c1f0.html",
+      "sha256": "d4ee69ec8bce94305b80bd70fea897a64724ee86efbe23885450d2535df6a593",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=620&OrigenId=-1&Origen=Todos&DestinoId=320&Destino=Zacatecas%3A+Mercado+de+Abasto+de+Zacatecas&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9425
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__papaya-amarilla-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-11-01_2026-11-26__20261127T163936Z-08c1f0.html",
+      "sha256": "ad3e7cfc5394aac4e77389ac3e24d3267363ecbeb724f7424c1f8d77f917de41",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F11%2F2026&fechaFinal=26%2F11%2F2026&ProductoId=620&OrigenId=-1&Origen=Todos&DestinoId=320&Destino=Zacatecas%3A+Mercado+de+Abasto+de+Zacatecas&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9425
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/11/sniim__papaya-maradol-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2025-11-01_2025-11-30__20261127T163936Z-08c1f0.html",
+      "sha256": "89a919f4d6995676a6eae83a87bfc6d041938046a4a446ec145ece4f2f7c51b2",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F11%2F2025&fechaFinal=30%2F11%2F2025&ProductoId=609&OrigenId=-1&Origen=Todos&DestinoId=141&Destino=Jalisco%3A+Mercado+Felipe+%C3%81ngeles+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 45368
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/12/sniim__papaya-maradol-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2025-12-01_2025-12-31__20261127T163936Z-08c1f0.html",
+      "sha256": "c3774526619857d7c4e44a4dea65c8735145b1b84500f7cfbcd3752cf6208ba2",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F12%2F2025&fechaFinal=31%2F12%2F2025&ProductoId=609&OrigenId=-1&Origen=Todos&DestinoId=141&Destino=Jalisco%3A+Mercado+Felipe+%C3%81ngeles+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 50266
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/01/sniim__papaya-maradol-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-01-01_2026-01-31__20261127T163936Z-08c1f0.html",
+      "sha256": "c85353299ec11cc1a2b3a7ca84f724deedfdf13b05320a26c8980f2531698a57",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F01%2F2026&fechaFinal=31%2F01%2F2026&ProductoId=609&OrigenId=-1&Origen=Todos&DestinoId=141&Destino=Jalisco%3A+Mercado+Felipe+%C3%81ngeles+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 40470
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/02/sniim__papaya-maradol-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-02-01_2026-02-28__20261127T163936Z-08c1f0.html",
+      "sha256": "5e65cb7ba1a71d36806971b11e04f92272b9330a090e31d59ab6c296d94bf95a",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F02%2F2026&fechaFinal=28%2F02%2F2026&ProductoId=609&OrigenId=-1&Origen=Todos&DestinoId=141&Destino=Jalisco%3A+Mercado+Felipe+%C3%81ngeles+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 43734
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/03/sniim__papaya-maradol-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-03-01_2026-03-31__20261127T163936Z-08c1f0.html",
+      "sha256": "06df495f7b3a0340bbff571cd692dde4efbcd3b085ea13223b94c3338f1df8c4",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F03%2F2026&fechaFinal=31%2F03%2F2026&ProductoId=609&OrigenId=-1&Origen=Todos&DestinoId=141&Destino=Jalisco%3A+Mercado+Felipe+%C3%81ngeles+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 48652
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/04/sniim__papaya-maradol-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-04-01_2026-04-30__20261127T163936Z-08c1f0.html",
+      "sha256": "710131499add318509b59d6158613285d4e8ac0a087f769357a38a051e58cc51",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F04%2F2026&fechaFinal=30%2F04%2F2026&ProductoId=609&OrigenId=-1&Origen=Todos&DestinoId=141&Destino=Jalisco%3A+Mercado+Felipe+%C3%81ngeles+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 46998
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/05/sniim__papaya-maradol-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-05-01_2026-05-31__20261127T163936Z-08c1f0.html",
+      "sha256": "a09d5da56d4a4a21a7642de130236f7fb843b17167c0ddee9fb684fb98cb62ca",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F05%2F2026&fechaFinal=31%2F05%2F2026&ProductoId=609&OrigenId=-1&Origen=Todos&DestinoId=141&Destino=Jalisco%3A+Mercado+Felipe+%C3%81ngeles+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 45368
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/06/sniim__papaya-maradol-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-06-01_2026-06-30__20261127T163936Z-08c1f0.html",
+      "sha256": "1619fef78628b44e7908561bc0259b6dc7ff72cc10390d05009ca098c5d1f298",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F06%2F2026&fechaFinal=30%2F06%2F2026&ProductoId=609&OrigenId=-1&Origen=Todos&DestinoId=141&Destino=Jalisco%3A+Mercado+Felipe+%C3%81ngeles+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 50266
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/07/sniim__papaya-maradol-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-07-01_2026-07-31__20261127T163936Z-08c1f0.html",
+      "sha256": "1e8870e5dcdbf6603a126c605dfd8b60c01f30700646735382a30653fc41ee87",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F07%2F2026&fechaFinal=31%2F07%2F2026&ProductoId=609&OrigenId=-1&Origen=Todos&DestinoId=141&Destino=Jalisco%3A+Mercado+Felipe+%C3%81ngeles+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 51900
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/08/sniim__papaya-maradol-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-08-01_2026-08-31__20261127T163936Z-08c1f0.html",
+      "sha256": "2cc5207b67eeaa7b577c637bec77f6b44c6977f05fc99ea70811d1f204de01ab",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F08%2F2026&fechaFinal=31%2F08%2F2026&ProductoId=609&OrigenId=-1&Origen=Todos&DestinoId=141&Destino=Jalisco%3A+Mercado+Felipe+%C3%81ngeles+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 48632
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/09/sniim__papaya-maradol-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-09-01_2026-09-30__20261127T163936Z-08c1f0.html",
+      "sha256": "6c6605b59b3cbf24665f21fb1724258d1643e6b72547d600ff4be6207e9726a2",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F09%2F2026&fechaFinal=30%2F09%2F2026&ProductoId=609&OrigenId=-1&Origen=Todos&DestinoId=141&Destino=Jalisco%3A+Mercado+Felipe+%C3%81ngeles+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 48632
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__papaya-maradol-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-10-01_2026-10-31__20261127T163936Z-08c1f0.html",
+      "sha256": "ceb74dbc389a2775f8fd1d85309cf437bd04fc2fde3c31ca77f6d1d619d9e43e",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=609&OrigenId=-1&Origen=Todos&DestinoId=141&Destino=Jalisco%3A+Mercado+Felipe+%C3%81ngeles+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 50266
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__papaya-maradol-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-11-01_2026-11-26__20261127T163936Z-08c1f0.html",
+      "sha256": "81bc13859bf5fc7d1f445b4c69785dc603b05615efce8e7c05f21a147614ac4d",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F11%2F2026&fechaFinal=26%2F11%2F2026&ProductoId=609&OrigenId=-1&Origen=Todos&DestinoId=141&Destino=Jalisco%3A+Mercado+Felipe+%C3%81ngeles+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 42100
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/11/sniim__papaya-maradol-primera-queretaro-mercado-de-abasto-de-queretaro__2025-11-01_2025-11-30__20261127T163936Z-08c1f0.html",
+      "sha256": "2468df65f05bea522d2b0806519650c4e1039924ee9e6dd426577654db327e1f",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F11%2F2025&fechaFinal=30%2F11%2F2025&ProductoId=609&OrigenId=-1&Origen=Todos&DestinoId=220&Destino=Quer%C3%A9taro%3A+Mercado+de+Abasto+de+Quer%C3%A9taro&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 24646
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/12/sniim__papaya-maradol-primera-queretaro-mercado-de-abasto-de-queretaro__2025-12-01_2025-12-31__20261127T163936Z-08c1f0.html",
+      "sha256": "d887361c1943e47310f06e3796a6615ea2b51f862e009de487895f4ad3ea424b",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F12%2F2025&fechaFinal=31%2F12%2F2025&ProductoId=609&OrigenId=-1&Origen=Todos&DestinoId=220&Destino=Quer%C3%A9taro%3A+Mercado+de+Abasto+de+Quer%C3%A9taro&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26274
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/01/sniim__papaya-maradol-primera-queretaro-mercado-de-abasto-de-queretaro__2026-01-01_2026-01-31__20261127T163936Z-08c1f0.html",
+      "sha256": "464d32b85da4bd7f4dbc3ba99ac1686660022d427e8abd37f316c116d05ebb28",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F01%2F2026&fechaFinal=31%2F01%2F2026&ProductoId=609&OrigenId=-1&Origen=Todos&DestinoId=220&Destino=Quer%C3%A9taro%3A+Mercado+de+Abasto+de+Quer%C3%A9taro&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 25734
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/02/sniim__papaya-maradol-primera-queretaro-mercado-de-abasto-de-queretaro__2026-02-01_2026-02-28__20261127T163936Z-08c1f0.html",
+      "sha256": "4c54535d4cf7a5d966350037128706b35693e326624f0e491b56bcac4089e8b8",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F02%2F2026&fechaFinal=28%2F02%2F2026&ProductoId=609&OrigenId=-1&Origen=Todos&DestinoId=220&Destino=Quer%C3%A9taro%3A+Mercado+de+Abasto+de+Quer%C3%A9taro&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 24646
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/03/sniim__papaya-maradol-primera-queretaro-mercado-de-abasto-de-queretaro__2026-03-01_2026-03-31__20261127T163936Z-08c1f0.html",
+      "sha256": "1afdd3e7da131258dd6f9506e2f68f80a7cf34c6cea21b29d254b6b92288c837",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F03%2F2026&fechaFinal=31%2F03%2F2026&ProductoId=609&OrigenId=-1&Origen=Todos&DestinoId=220&Destino=Quer%C3%A9taro%3A+Mercado+de+Abasto+de+Quer%C3%A9taro&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 25730
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/04/sniim__papaya-maradol-primera-queretaro-mercado-de-abasto-de-queretaro__2026-04-01_2026-04-30__20261127T163936Z-08c1f0.html",
+      "sha256": "1b9bd1f62295de4d0c373a9ea778c050d2c0442982683a0ec6252045c9cd3f58",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F04%2F2026&fechaFinal=30%2F04%2F2026&ProductoId=609&OrigenId=-1&Origen=Todos&DestinoId=220&Destino=Quer%C3%A9taro%3A+Mercado+de+Abasto+de+Quer%C3%A9taro&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 25186
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/05/sniim__papaya-maradol-primera-queretaro-mercado-de-abasto-de-queretaro__2026-05-01_2026-05-31__20261127T163936Z-08c1f0.html",
+      "sha256": "78a41d27e537f30cce0797ba703d502d6c8d68480bdce1d8b0ff6340e9abbb46",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F05%2F2026&fechaFinal=31%2F05%2F2026&ProductoId=609&OrigenId=-1&Origen=Todos&DestinoId=220&Destino=Quer%C3%A9taro%3A+Mercado+de+Abasto+de+Quer%C3%A9taro&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 24646
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/06/sniim__papaya-maradol-primera-queretaro-mercado-de-abasto-de-queretaro__2026-06-01_2026-06-30__20261127T163936Z-08c1f0.html",
+      "sha256": "b635bc7b42dcfc17a34fcd8271f43c367a064d03171da57c0395288e8ecd6afd",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F06%2F2026&fechaFinal=30%2F06%2F2026&ProductoId=609&OrigenId=-1&Origen=Todos&DestinoId=220&Destino=Quer%C3%A9taro%3A+Mercado+de+Abasto+de+Quer%C3%A9taro&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26274
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/07/sniim__papaya-maradol-primera-queretaro-mercado-de-abasto-de-queretaro__2026-07-01_2026-07-31__20261127T163936Z-08c1f0.html",
+      "sha256": "2f66636454164405b27e584fdf42fbe57a5385c87e3dea48f077d15d95440def",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F07%2F2026&fechaFinal=31%2F07%2F2026&ProductoId=609&OrigenId=-1&Origen=Todos&DestinoId=220&Destino=Quer%C3%A9taro%3A+Mercado+de+Abasto+de+Quer%C3%A9taro&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26818
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/08/sniim__papaya-maradol-primera-queretaro-mercado-de-abasto-de-queretaro__2026-08-01_2026-08-31__20261127T163936Z-08c1f0.html",
+      "sha256": "fd7ce0f3b2c8e096b9e3d241e23bf311119bb8fe8635dbe7c693ce28986fcc56",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F08%2F2026&fechaFinal=31%2F08%2F2026&ProductoId=609&OrigenId=-1&Origen=Todos&DestinoId=220&Destino=Quer%C3%A9taro%3A+Mercado+de+Abasto+de+Quer%C3%A9taro&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 25734
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/09/sniim__papaya-maradol-primera-queretaro-mercado-de-abasto-de-queretaro__2026-09-01_2026-09-30__20261127T163936Z-08c1f0.html",
+      "sha256": "983452e4d4b53e20bc0e5018df0bf67ba975cb1f6becdad9c8d856c5990857d7",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F09%2F2026&fechaFinal=30%2F09%2F2026&ProductoId=609&OrigenId=-1&Origen=Todos&DestinoId=220&Destino=Quer%C3%A9taro%3A+Mercado+de+Abasto+de+Quer%C3%A9taro&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 25734
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__papaya-maradol-primera-queretaro-mercado-de-abasto-de-queretaro__2026-10-01_2026-10-31__20261127T163936Z-08c1f0.html",
+      "sha256": "a203bb1469336660d1b3416102489ae0bb4cbfa16f41eb1971156721007ffde9",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=609&OrigenId=-1&Origen=Todos&DestinoId=220&Destino=Quer%C3%A9taro%3A+Mercado+de+Abasto+de+Quer%C3%A9taro&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26274
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__papaya-maradol-primera-queretaro-mercado-de-abasto-de-queretaro__2026-11-01_2026-11-26__20261127T163936Z-08c1f0.html",
+      "sha256": "8c72a383754eeaa9b5ab8004d912d8d0c275c9a8141d5793358e1f42b5c366c4",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F11%2F2026&fechaFinal=26%2F11%2F2026&ProductoId=609&OrigenId=-1&Origen=Todos&DestinoId=220&Destino=Quer%C3%A9taro%3A+Mercado+de+Abasto+de+Quer%C3%A9taro&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 23562
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/11/sniim__papaya-maradol-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2025-11-01_2025-11-30__20261127T163936Z-08c1f0.html",
+      "sha256": "944c528fa638625178f40679e793bf2c2b1f88d8d090babd4101eff1604b9d2e",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F11%2F2025&fechaFinal=30%2F11%2F2025&ProductoId=609&OrigenId=-1&Origen=Todos&DestinoId=240&Destino=San+Luis+Potos%C3%AD%3A+Centro+de+Abasto+de+San+Luis+Potos%C3%AD&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 24684
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/12/sniim__papaya-maradol-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2025-12-01_2025-12-31__20261127T163936Z-08c1f0.html",
+      "sha256": "ad772a2be1391e2d09651fb733643756e94bc8467e79746c1166fcbe13b171d3",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F12%2F2025&fechaFinal=31%2F12%2F2025&ProductoId=609&OrigenId=-1&Origen=Todos&DestinoId=240&Destino=San+Luis+Potos%C3%AD%3A+Centro+de+Abasto+de+San+Luis+Potos%C3%AD&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26312
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/01/sniim__papaya-maradol-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-01-01_2026-01-31__20261127T163936Z-08c1f0.html",
+      "sha256": "21ada9d3723ee5c4ed9f26059806210cb83e6b51f2a98d53767048b8ba51daaa",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F01%2F2026&fechaFinal=31%2F01%2F2026&ProductoId=609&OrigenId=-1&Origen=Todos&DestinoId=240&Destino=San+Luis+Potos%C3%AD%3A+Centro+de+Abasto+de+San+Luis+Potos%C3%AD&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 25768
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/02/sniim__papaya-maradol-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-02-01_2026-02-28__20261127T163936Z-08c1f0.html",
+      "sha256": "747697290fe3a56deb4c30338d2a6adc50abf0ca2eef71202b32f3550b83c198",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F02%2F2026&fechaFinal=28%2F02%2F2026&ProductoId=609&OrigenId=-1&Origen=Todos&DestinoId=240&Destino=San+Luis+Potos%C3%AD%3A+Centro+de+Abasto+de+San+Luis+Potos%C3%AD&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 24684
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/03/sniim__papaya-maradol-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-03-01_2026-03-31__20261127T163936Z-08c1f0.html",
+      "sha256": "f9145b23542dc8531126cc647dc7638cec79528449d1cf3dff20c8cb860e4314",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F03%2F2026&fechaFinal=31%2F03%2F2026&ProductoId=609&OrigenId=-1&Origen=Todos&DestinoId=240&Destino=San+Luis+Potos%C3%AD%3A+Centro+de+Abasto+de+San+Luis+Potos%C3%AD&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 25768
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/04/sniim__papaya-maradol-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-04-01_2026-04-30__20261127T163936Z-08c1f0.html",
+      "sha256": "7da4762a1e843d8aa1471d597b42993b44f16d826e2258d872a630a625bc1ee5",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F04%2F2026&fechaFinal=30%2F04%2F2026&ProductoId=609&OrigenId=-1&Origen=Todos&DestinoId=240&Destino=San+Luis+Potos%C3%AD%3A+Centro+de+Abasto+de+San+Luis+Potos%C3%AD&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 25228
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/05/sniim__papaya-maradol-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-05-01_2026-05-31__20261127T163936Z-08c1f0.html",
+      "sha256": "4a1ee6c55e5616103904ad55090abae616c8bcda67f808ff02de338d0fb5be94",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F05%2F2026&fechaFinal=31%2F05%2F2026&ProductoId=609&OrigenId=-1&Origen=Todos&DestinoId=240&Destino=San+Luis+Potos%C3%AD%3A+Centro+de+Abasto+de+San+Luis+Potos%C3%AD&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 24684
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/06/sniim__papaya-maradol-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-06-01_2026-06-30__20261127T163936Z-08c1f0.html",
+      "sha256": "71c8f0745a7de68bd05eab44c0e67ff902298d448bb88a9f4e1cfbca71f8c26c",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F06%2F2026&fechaFinal=30%2F06%2F2026&ProductoId=609&OrigenId=-1&Origen=Todos&DestinoId=240&Destino=San+Luis+Potos%C3%AD%3A+Centro+de+Abasto+de+San+Luis+Potos%C3%AD&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26312
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/07/sniim__papaya-maradol-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-07-01_2026-07-31__20261127T163936Z-08c1f0.html",
+      "sha256": "a38d78be5e8ad70a646adcf53d4ef7f87c1ac7bfca84bb82c986a798b1ae1cf0",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F07%2F2026&fechaFinal=31%2F07%2F2026&ProductoId=609&OrigenId=-1&Origen=Todos&DestinoId=240&Destino=San+Luis+Potos%C3%AD%3A+Centro+de+Abasto+de+San+Luis+Potos%C3%AD&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26856
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/08/sniim__papaya-maradol-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-08-01_2026-08-31__20261127T163936Z-08c1f0.html",
+      "sha256": "f2e9610aaa28adb15b27260f85696ca7ad7b909307e45c9895a824f145f04f8e",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F08%2F2026&fechaFinal=31%2F08%2F2026&ProductoId=609&OrigenId=-1&Origen=Todos&DestinoId=240&Destino=San+Luis+Potos%C3%AD%3A+Centro+de+Abasto+de+San+Luis+Potos%C3%AD&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 25768
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/09/sniim__papaya-maradol-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-09-01_2026-09-30__20261127T163936Z-08c1f0.html",
+      "sha256": "cb8709285bed53d3700a135e4d51cb170d80bacd1d50947e1ae61267ef5e6a05",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F09%2F2026&fechaFinal=30%2F09%2F2026&ProductoId=609&OrigenId=-1&Origen=Todos&DestinoId=240&Destino=San+Luis+Potos%C3%AD%3A+Centro+de+Abasto+de+San+Luis+Potos%C3%AD&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 25764
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__papaya-maradol-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-10-01_2026-10-31__20261127T163936Z-08c1f0.html",
+      "sha256": "3ad546be4f75a06f5ef64270837e3dfe2e5d3ed053f9c10f124cdbfba5deb944",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=609&OrigenId=-1&Origen=Todos&DestinoId=240&Destino=San+Luis+Potos%C3%AD%3A+Centro+de+Abasto+de+San+Luis+Potos%C3%AD&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26312
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__papaya-maradol-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-11-01_2026-11-26__20261127T163936Z-08c1f0.html",
+      "sha256": "253d5e18e2131b3b20982609d1d291df60ff5bee7c3d43ab55189d44ac0010e4",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F11%2F2026&fechaFinal=26%2F11%2F2026&ProductoId=609&OrigenId=-1&Origen=Todos&DestinoId=240&Destino=San+Luis+Potos%C3%AD%3A+Centro+de+Abasto+de+San+Luis+Potos%C3%AD&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 23600
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/11/sniim__papaya-maradol-primera-zacatecas-mercado-de-abasto-de-zacatecas__2025-11-01_2025-11-30__20261127T163936Z-08c1f0.html",
+      "sha256": "2e710dced62863a24880de55c4b6378e0a847b37d5dd4c930ae3c947d180404c",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F11%2F2025&fechaFinal=30%2F11%2F2025&ProductoId=609&OrigenId=-1&Origen=Todos&DestinoId=320&Destino=Zacatecas%3A+Mercado+de+Abasto+de+Zacatecas&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 24634
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/12/sniim__papaya-maradol-primera-zacatecas-mercado-de-abasto-de-zacatecas__2025-12-01_2025-12-31__20261127T163936Z-08c1f0.html",
+      "sha256": "c997da03d6d999fb936948b5e84f6b1ce1cedd5a925f894888e5d7c9d507ac56",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F12%2F2025&fechaFinal=31%2F12%2F2025&ProductoId=609&OrigenId=-1&Origen=Todos&DestinoId=320&Destino=Zacatecas%3A+Mercado+de+Abasto+de+Zacatecas&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26262
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/01/sniim__papaya-maradol-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-01-01_2026-01-31__20261127T163936Z-08c1f0.html",
+      "sha256": "ec293e2848dc9f5b10043946736457d6e0f8a27b97a0dd659658908accaa280e",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F01%2F2026&fechaFinal=31%2F01%2F2026&ProductoId=609&OrigenId=-1&Origen=Todos&DestinoId=320&Destino=Zacatecas%3A+Mercado+de+Abasto+de+Zacatecas&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 25718
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/02/sniim__papaya-maradol-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-02-01_2026-02-28__20261127T163936Z-08c1f0.html",
+      "sha256": "4679f097915215f5b121bafe2ccc5abd0a29dfec40189b4264b6acf738538ea7",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F02%2F2026&fechaFinal=28%2F02%2F2026&ProductoId=609&OrigenId=-1&Origen=Todos&DestinoId=320&Destino=Zacatecas%3A+Mercado+de+Abasto+de+Zacatecas&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 24634
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/03/sniim__papaya-maradol-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-03-01_2026-03-31__20261127T163936Z-08c1f0.html",
+      "sha256": "a56aa099b8bf9c22f399411383832ef751bb6a4f76bb0136a18d076c426e2e6b",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F03%2F2026&fechaFinal=31%2F03%2F2026&ProductoId=609&OrigenId=-1&Origen=Todos&DestinoId=320&Destino=Zacatecas%3A+Mercado+de+Abasto+de+Zacatecas&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 25718
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/04/sniim__papaya-maradol-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-04-01_2026-04-30__20261127T163936Z-08c1f0.html",
+      "sha256": "7f7311599627bb8391fa572ab3addb778cc59cf8f089199001e7c00550b2230f",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F04%2F2026&fechaFinal=30%2F04%2F2026&ProductoId=609&OrigenId=-1&Origen=Todos&DestinoId=320&Destino=Zacatecas%3A+Mercado+de+Abasto+de+Zacatecas&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 25174
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/05/sniim__papaya-maradol-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-05-01_2026-05-31__20261127T163936Z-08c1f0.html",
+      "sha256": "85c58460fc7b683774dc75a03106e36c23b1cdd3d4a7d501ed8c5bfcf283fa7c",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F05%2F2026&fechaFinal=31%2F05%2F2026&ProductoId=609&OrigenId=-1&Origen=Todos&DestinoId=320&Destino=Zacatecas%3A+Mercado+de+Abasto+de+Zacatecas&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 24634
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/06/sniim__papaya-maradol-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-06-01_2026-06-30__20261127T163936Z-08c1f0.html",
+      "sha256": "d909326dd5e271bc203b1470c2f2b439ae631c333dab9a9bfb392b4844f8a0f6",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F06%2F2026&fechaFinal=30%2F06%2F2026&ProductoId=609&OrigenId=-1&Origen=Todos&DestinoId=320&Destino=Zacatecas%3A+Mercado+de+Abasto+de+Zacatecas&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26262
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/07/sniim__papaya-maradol-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-07-01_2026-07-31__20261127T163936Z-08c1f0.html",
+      "sha256": "4afdb996cd0b608e4eb7e0fbfd7c1855c31fd5c21d6ef6eb8f1142bf8cc5cf32",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F07%2F2026&fechaFinal=31%2F07%2F2026&ProductoId=609&OrigenId=-1&Origen=Todos&DestinoId=320&Destino=Zacatecas%3A+Mercado+de+Abasto+de+Zacatecas&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26802
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/08/sniim__papaya-maradol-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-08-01_2026-08-31__20261127T163936Z-08c1f0.html",
+      "sha256": "06cc25db2b375586893b50be75a32a538983d41d95c5ed514b0aafbc1068bbee",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F08%2F2026&fechaFinal=31%2F08%2F2026&ProductoId=609&OrigenId=-1&Origen=Todos&DestinoId=320&Destino=Zacatecas%3A+Mercado+de+Abasto+de+Zacatecas&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 25718
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/09/sniim__papaya-maradol-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-09-01_2026-09-30__20261127T163936Z-08c1f0.html",
+      "sha256": "a059f151c01b6a7ac627fd3f5429abbd8b59fed1b9721f392d8dec2ba524fd09",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F09%2F2026&fechaFinal=30%2F09%2F2026&ProductoId=609&OrigenId=-1&Origen=Todos&DestinoId=320&Destino=Zacatecas%3A+Mercado+de+Abasto+de+Zacatecas&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 25718
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__papaya-maradol-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-10-01_2026-10-31__20261127T163936Z-08c1f0.html",
+      "sha256": "52e6c87f0e4dd0e0ecd082d9e020fa90485eb549ecfd817b761565b7b4e93f2e",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=609&OrigenId=-1&Origen=Todos&DestinoId=320&Destino=Zacatecas%3A+Mercado+de+Abasto+de+Zacatecas&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 24630
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__papaya-maradol-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-11-01_2026-11-26__20261127T163936Z-08c1f0.html",
+      "sha256": "5c77c21611fad8bca53cf021f44e9a456ecb0e84f61f7e51448c6e5b7c118c7c",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F11%2F2026&fechaFinal=26%2F11%2F2026&ProductoId=609&OrigenId=-1&Origen=Todos&DestinoId=320&Destino=Zacatecas%3A+Mercado+de+Abasto+de+Zacatecas&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 23546
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/11/sniim__papaya-roja-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2025-11-01_2025-11-30__20261127T163936Z-08c1f0.html",
+      "sha256": "d1aecd44c1440071ad635adcd5f28ef6389c739d24da26bc2a17f298223a4b14",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F11%2F2025&fechaFinal=30%2F11%2F2025&ProductoId=623&OrigenId=-1&Origen=Todos&DestinoId=141&Destino=Jalisco%3A+Mercado+Felipe+%C3%81ngeles+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9435
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/12/sniim__papaya-roja-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2025-12-01_2025-12-31__20261127T163936Z-08c1f0.html",
+      "sha256": "cacc20ea3e114618cabe5cd0b02b40a2569991ab91bf69820a455ce7cadee40b",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F12%2F2025&fechaFinal=31%2F12%2F2025&ProductoId=623&OrigenId=-1&Origen=Todos&DestinoId=141&Destino=Jalisco%3A+Mercado+Felipe+%C3%81ngeles+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9435
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/01/sniim__papaya-roja-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-01-01_2026-01-31__20261127T163936Z-08c1f0.html",
+      "sha256": "51a0bcaa02588de542feccc64fc5f378c4d869307cbc9d07674d8efbf571fced",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F01%2F2026&fechaFinal=31%2F01%2F2026&ProductoId=623&OrigenId=-1&Origen=Todos&DestinoId=141&Destino=Jalisco%3A+Mercado+Felipe+%C3%81ngeles+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9435
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/02/sniim__papaya-roja-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-02-01_2026-02-28__20261127T163936Z-08c1f0.html",
+      "sha256": "ba8e4b669d341c3b21761b61fc9c086f629d0d12fd13c40e4ea82eac4aa0f6cb",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F02%2F2026&fechaFinal=28%2F02%2F2026&ProductoId=623&OrigenId=-1&Origen=Todos&DestinoId=141&Destino=Jalisco%3A+Mercado+Felipe+%C3%81ngeles+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9435
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/03/sniim__papaya-roja-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-03-01_2026-03-31__20261127T163936Z-08c1f0.html",
+      "sha256": "e03ab00762bde6f3906c33fe978535400d6c0b1f5474de1e223fc9083ccd6e69",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F03%2F2026&fechaFinal=31%2F03%2F2026&ProductoId=623&OrigenId=-1&Origen=Todos&DestinoId=141&Destino=Jalisco%3A+Mercado+Felipe+%C3%81ngeles+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9435
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/04/sniim__papaya-roja-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-04-01_2026-04-30__20261127T163936Z-08c1f0.html",
+      "sha256": "a0d3ed2eeda14ff986d1388f13f6e47bef1a48cac8faecc85449ecd7f2a92b77",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F04%2F2026&fechaFinal=30%2F04%2F2026&ProductoId=623&OrigenId=-1&Origen=Todos&DestinoId=141&Destino=Jalisco%3A+Mercado+Felipe+%C3%81ngeles+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9435
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/05/sniim__papaya-roja-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-05-01_2026-05-31__20261127T163936Z-08c1f0.html",
+      "sha256": "6588d4f85db6c2e7d935e9e4a352013839354418a2dbb9ad3d0b4e27024765f7",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F05%2F2026&fechaFinal=31%2F05%2F2026&ProductoId=623&OrigenId=-1&Origen=Todos&DestinoId=141&Destino=Jalisco%3A+Mercado+Felipe+%C3%81ngeles+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9435
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/06/sniim__papaya-roja-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-06-01_2026-06-30__20261127T163936Z-08c1f0.html",
+      "sha256": "f09911fed6d14dd3b958fc28cc3856574be7e0fef939b6d15799725f631f79f6",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F06%2F2026&fechaFinal=30%2F06%2F2026&ProductoId=623&OrigenId=-1&Origen=Todos&DestinoId=141&Destino=Jalisco%3A+Mercado+Felipe+%C3%81ngeles+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9435
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/07/sniim__papaya-roja-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-07-01_2026-07-31__20261127T163936Z-08c1f0.html",
+      "sha256": "ede2d998a9e5bc7b780c290973a4997963bdb8e875068181cde03d5bdfa1f6de",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F07%2F2026&fechaFinal=31%2F07%2F2026&ProductoId=623&OrigenId=-1&Origen=Todos&DestinoId=141&Destino=Jalisco%3A+Mercado+Felipe+%C3%81ngeles+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9435
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/08/sniim__papaya-roja-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-08-01_2026-08-31__20261127T163936Z-08c1f0.html",
+      "sha256": "71e7b8ab79fa63d6930b69fb8dab805deb54ae24893bb392e6d8c9d20284ecae",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F08%2F2026&fechaFinal=31%2F08%2F2026&ProductoId=623&OrigenId=-1&Origen=Todos&DestinoId=141&Destino=Jalisco%3A+Mercado+Felipe+%C3%81ngeles+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9435
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/09/sniim__papaya-roja-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-09-01_2026-09-30__20261127T163936Z-08c1f0.html",
+      "sha256": "6f4134930f4948b8973cdb26873da58c74f6825beb15d3fb8e1e9918cfc7c1a4",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F09%2F2026&fechaFinal=30%2F09%2F2026&ProductoId=623&OrigenId=-1&Origen=Todos&DestinoId=141&Destino=Jalisco%3A+Mercado+Felipe+%C3%81ngeles+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9435
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__papaya-roja-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-10-01_2026-10-31__20261127T163936Z-08c1f0.html",
+      "sha256": "7423daba4540fba043c31c912cd95e62fe5701b82f8eef56ae99ec1cbbf3cb58",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=623&OrigenId=-1&Origen=Todos&DestinoId=141&Destino=Jalisco%3A+Mercado+Felipe+%C3%81ngeles+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9435
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__papaya-roja-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-11-01_2026-11-26__20261127T163936Z-08c1f0.html",
+      "sha256": "e7a5d354c2f575ebd6d00c81881d52b4593bd0d9310dfa72ee734ea61cca54b0",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F11%2F2026&fechaFinal=26%2F11%2F2026&ProductoId=623&OrigenId=-1&Origen=Todos&DestinoId=141&Destino=Jalisco%3A+Mercado+Felipe+%C3%81ngeles+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9435
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/11/sniim__papaya-roja-primera-queretaro-mercado-de-abasto-de-queretaro__2025-11-01_2025-11-30__20261127T163936Z-08c1f0.html",
+      "sha256": "df9b5560485767e5c2d16000ed9535c6b6df7966d83fbacfe8239d83e02dc5d3",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F11%2F2025&fechaFinal=30%2F11%2F2025&ProductoId=623&OrigenId=-1&Origen=Todos&DestinoId=220&Destino=Quer%C3%A9taro%3A+Mercado+de+Abasto+de+Quer%C3%A9taro&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9435
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/12/sniim__papaya-roja-primera-queretaro-mercado-de-abasto-de-queretaro__2025-12-01_2025-12-31__20261127T163936Z-08c1f0.html",
+      "sha256": "7d83b6688be5c26d4487838a2f527f81c0c31a4275ee39ddcda532dfd16fefd4",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F12%2F2025&fechaFinal=31%2F12%2F2025&ProductoId=623&OrigenId=-1&Origen=Todos&DestinoId=220&Destino=Quer%C3%A9taro%3A+Mercado+de+Abasto+de+Quer%C3%A9taro&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9435
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/01/sniim__papaya-roja-primera-queretaro-mercado-de-abasto-de-queretaro__2026-01-01_2026-01-31__20261127T163936Z-08c1f0.html",
+      "sha256": "aec1744316b0e4a935753c43c99d5be122b5da26b945a84926aef3d55841bf13",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F01%2F2026&fechaFinal=31%2F01%2F2026&ProductoId=623&OrigenId=-1&Origen=Todos&DestinoId=220&Destino=Quer%C3%A9taro%3A+Mercado+de+Abasto+de+Quer%C3%A9taro&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9435
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/02/sniim__papaya-roja-primera-queretaro-mercado-de-abasto-de-queretaro__2026-02-01_2026-02-28__20261127T163936Z-08c1f0.html",
+      "sha256": "fe6eb0421332fad7ccae9c10c1b2414cc4efd9d48bf9c53eed728a2cd5ae55a3",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F02%2F2026&fechaFinal=28%2F02%2F2026&ProductoId=623&OrigenId=-1&Origen=Todos&DestinoId=220&Destino=Quer%C3%A9taro%3A+Mercado+de+Abasto+de+Quer%C3%A9taro&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9435
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/03/sniim__papaya-roja-primera-queretaro-mercado-de-abasto-de-queretaro__2026-03-01_2026-03-31__20261127T163936Z-08c1f0.html",
+      "sha256": "7cf963cb4a1b299a2ac4b55be87bf52cdef3753bb0d9fb9f5642f2dc9ed8349b",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F03%2F2026&fechaFinal=31%2F03%2F2026&ProductoId=623&OrigenId=-1&Origen=Todos&DestinoId=220&Destino=Quer%C3%A9taro%3A+Mercado+de+Abasto+de+Quer%C3%A9taro&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9435
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/04/sniim__papaya-roja-primera-queretaro-mercado-de-abasto-de-queretaro__2026-04-01_2026-04-30__20261127T163936Z-08c1f0.html",
+      "sha256": "b8e8ac1bdad7b72a8e01a3196229b242a045c244b79bf3e274c1ad80c7db1d69",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F04%2F2026&fechaFinal=30%2F04%2F2026&ProductoId=623&OrigenId=-1&Origen=Todos&DestinoId=220&Destino=Quer%C3%A9taro%3A+Mercado+de+Abasto+de+Quer%C3%A9taro&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9435
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/05/sniim__papaya-roja-primera-queretaro-mercado-de-abasto-de-queretaro__2026-05-01_2026-05-31__20261127T163936Z-08c1f0.html",
+      "sha256": "10ae56330e84ee94ec58175a3782d4bac2eb6e696441aaf0392d87fc41d74897",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F05%2F2026&fechaFinal=31%2F05%2F2026&ProductoId=623&OrigenId=-1&Origen=Todos&DestinoId=220&Destino=Quer%C3%A9taro%3A+Mercado+de+Abasto+de+Quer%C3%A9taro&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9435
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/06/sniim__papaya-roja-primera-queretaro-mercado-de-abasto-de-queretaro__2026-06-01_2026-06-30__20261127T163936Z-08c1f0.html",
+      "sha256": "19a5f5da533f33eaee793f46963ded0f6db0acee493364b4037c70e4ceef9614",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F06%2F2026&fechaFinal=30%2F06%2F2026&ProductoId=623&OrigenId=-1&Origen=Todos&DestinoId=220&Destino=Quer%C3%A9taro%3A+Mercado+de+Abasto+de+Quer%C3%A9taro&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9435
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/07/sniim__papaya-roja-primera-queretaro-mercado-de-abasto-de-queretaro__2026-07-01_2026-07-31__20261127T163936Z-08c1f0.html",
+      "sha256": "f59d8df14d5018eeb5de03255755df8c0c18c6202e7813befb110decec627541",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F07%2F2026&fechaFinal=31%2F07%2F2026&ProductoId=623&OrigenId=-1&Origen=Todos&DestinoId=220&Destino=Quer%C3%A9taro%3A+Mercado+de+Abasto+de+Quer%C3%A9taro&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9435
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/08/sniim__papaya-roja-primera-queretaro-mercado-de-abasto-de-queretaro__2026-08-01_2026-08-31__20261127T163936Z-08c1f0.html",
+      "sha256": "e6ebfb1d7686e571971836b83ec112384510559101fce490c7e4956a5c6659a2",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F08%2F2026&fechaFinal=31%2F08%2F2026&ProductoId=623&OrigenId=-1&Origen=Todos&DestinoId=220&Destino=Quer%C3%A9taro%3A+Mercado+de+Abasto+de+Quer%C3%A9taro&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9435
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/09/sniim__papaya-roja-primera-queretaro-mercado-de-abasto-de-queretaro__2026-09-01_2026-09-30__20261127T163936Z-08c1f0.html",
+      "sha256": "313a57dc55ef5d719dea160bcc55f9dc2847641e8eed0c231d17a34ad04acdd5",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F09%2F2026&fechaFinal=30%2F09%2F2026&ProductoId=623&OrigenId=-1&Origen=Todos&DestinoId=220&Destino=Quer%C3%A9taro%3A+Mercado+de+Abasto+de+Quer%C3%A9taro&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9435
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__papaya-roja-primera-queretaro-mercado-de-abasto-de-queretaro__2026-10-01_2026-10-31__20261127T163936Z-08c1f0.html",
+      "sha256": "208fae14bbd63b6e5d1d186491e9db855a8d24dd29b11ecd5a7009b69be1bb28",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=623&OrigenId=-1&Origen=Todos&DestinoId=220&Destino=Quer%C3%A9taro%3A+Mercado+de+Abasto+de+Quer%C3%A9taro&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9435
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__papaya-roja-primera-queretaro-mercado-de-abasto-de-queretaro__2026-11-01_2026-11-26__20261127T163936Z-08c1f0.html",
+      "sha256": "24e20580a94f7c71a3e115d8b0a0991046d9051bb058fe8b229537fbc625606a",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F11%2F2026&fechaFinal=26%2F11%2F2026&ProductoId=623&OrigenId=-1&Origen=Todos&DestinoId=220&Destino=Quer%C3%A9taro%3A+Mercado+de+Abasto+de+Quer%C3%A9taro&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9435
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/11/sniim__papaya-roja-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2025-11-01_2025-11-30__20261127T163936Z-08c1f0.html",
+      "sha256": "0858b91aecd421a16039fcaa180dfcc6cb9920c79a17b6d68098867b6b720ed9",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F11%2F2025&fechaFinal=30%2F11%2F2025&ProductoId=623&OrigenId=-1&Origen=Todos&DestinoId=240&Destino=San+Luis+Potos%C3%AD%3A+Centro+de+Abasto+de+San+Luis+Potos%C3%AD&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9446
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/12/sniim__papaya-roja-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2025-12-01_2025-12-31__20261127T163936Z-08c1f0.html",
+      "sha256": "e5243dbfefaed8d3e60498bfb284790cda1a609a10a9968ed926542c4841e237",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F12%2F2025&fechaFinal=31%2F12%2F2025&ProductoId=623&OrigenId=-1&Origen=Todos&DestinoId=240&Destino=San+Luis+Potos%C3%AD%3A+Centro+de+Abasto+de+San+Luis+Potos%C3%AD&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9446
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/01/sniim__papaya-roja-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-01-01_2026-01-31__20261127T163936Z-08c1f0.html",
+      "sha256": "d34b200ca019570dc1f7d9402a8edd80fc0e8596bcc12e7ac8e793cbb5122810",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F01%2F2026&fechaFinal=31%2F01%2F2026&ProductoId=623&OrigenId=-1&Origen=Todos&DestinoId=240&Destino=San+Luis+Potos%C3%AD%3A+Centro+de+Abasto+de+San+Luis+Potos%C3%AD&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9446
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/02/sniim__papaya-roja-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-02-01_2026-02-28__20261127T163936Z-08c1f0.html",
+      "sha256": "d175d960968c39b01912af2637d92b53a902b9cf2e24f317d5e5e56f5324bab0",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F02%2F2026&fechaFinal=28%2F02%2F2026&ProductoId=623&OrigenId=-1&Origen=Todos&DestinoId=240&Destino=San+Luis+Potos%C3%AD%3A+Centro+de+Abasto+de+San+Luis+Potos%C3%AD&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9446
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/03/sniim__papaya-roja-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-03-01_2026-03-31__20261127T163936Z-08c1f0.html",
+      "sha256": "4cace07198ae245a1d2d748a0da553bcc65a47added8b72aa544072942d3fa5a",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F03%2F2026&fechaFinal=31%2F03%2F2026&ProductoId=623&OrigenId=-1&Origen=Todos&DestinoId=240&Destino=San+Luis+Potos%C3%AD%3A+Centro+de+Abasto+de+San+Luis+Potos%C3%AD&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9446
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/04/sniim__papaya-roja-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-04-01_2026-04-30__20261127T163936Z-08c1f0.html",
+      "sha256": "060a9f061137a20055024e17239217d4f796a9f31cdfe414b117ca7cbcce5f18",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F04%2F2026&fechaFinal=30%2F04%2F2026&ProductoId=623&OrigenId=-1&Origen=Todos&DestinoId=240&Destino=San+Luis+Potos%C3%AD%3A+Centro+de+Abasto+de+San+Luis+Potos%C3%AD&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9446
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/05/sniim__papaya-roja-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-05-01_2026-05-31__20261127T163936Z-08c1f0.html",
+      "sha256": "6de8ded3aa8e7d8da89bef03ea3da6c61d7e4d853487643558b2779828cbcaeb",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F05%2F2026&fechaFinal=31%2F05%2F2026&ProductoId=623&OrigenId=-1&Origen=Todos&DestinoId=240&Destino=San+Luis+Potos%C3%AD%3A+Centro+de+Abasto+de+San+Luis+Potos%C3%AD&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9446
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/06/sniim__papaya-roja-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-06-01_2026-06-30__20261127T163936Z-08c1f0.html",
+      "sha256": "a51b983f7abd87dda0c24043ae7285590783f1511ec6fbded947301dc40f4fd0",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F06%2F2026&fechaFinal=30%2F06%2F2026&ProductoId=623&OrigenId=-1&Origen=Todos&DestinoId=240&Destino=San+Luis+Potos%C3%AD%3A+Centro+de+Abasto+de+San+Luis+Potos%C3%AD&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9446
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/07/sniim__papaya-roja-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-07-01_2026-07-31__20261127T163936Z-08c1f0.html",
+      "sha256": "e63fee8e9bac199860a7d2d8eb5c5170ba205aae3baad5f3ee22c18d77496d8a",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F07%2F2026&fechaFinal=31%2F07%2F2026&ProductoId=623&OrigenId=-1&Origen=Todos&DestinoId=240&Destino=San+Luis+Potos%C3%AD%3A+Centro+de+Abasto+de+San+Luis+Potos%C3%AD&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9446
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/08/sniim__papaya-roja-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-08-01_2026-08-31__20261127T163936Z-08c1f0.html",
+      "sha256": "f3776bb8f4284ac5cdd41f3132ceea3b74c8f2d0f68df842b4b020035c84cb0e",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F08%2F2026&fechaFinal=31%2F08%2F2026&ProductoId=623&OrigenId=-1&Origen=Todos&DestinoId=240&Destino=San+Luis+Potos%C3%AD%3A+Centro+de+Abasto+de+San+Luis+Potos%C3%AD&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9446
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/09/sniim__papaya-roja-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-09-01_2026-09-30__20261127T163936Z-08c1f0.html",
+      "sha256": "c743da3a25a396fee93f86fc22362732ef34c238ab46a751ee9f700527eb6803",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F09%2F2026&fechaFinal=30%2F09%2F2026&ProductoId=623&OrigenId=-1&Origen=Todos&DestinoId=240&Destino=San+Luis+Potos%C3%AD%3A+Centro+de+Abasto+de+San+Luis+Potos%C3%AD&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9446
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__papaya-roja-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-10-01_2026-10-31__20261127T163936Z-08c1f0.html",
+      "sha256": "3c9630d3644bc4ebcb31e8a9bde275f1b266cdf2e741fc358401f1b7751c7156",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=623&OrigenId=-1&Origen=Todos&DestinoId=240&Destino=San+Luis+Potos%C3%AD%3A+Centro+de+Abasto+de+San+Luis+Potos%C3%AD&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9446
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__papaya-roja-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-11-01_2026-11-26__20261127T163936Z-08c1f0.html",
+      "sha256": "60f69178595886382824d342924fb881b1f9d1d363249a3a9c0e1193f420e496",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F11%2F2026&fechaFinal=26%2F11%2F2026&ProductoId=623&OrigenId=-1&Origen=Todos&DestinoId=240&Destino=San+Luis+Potos%C3%AD%3A+Centro+de+Abasto+de+San+Luis+Potos%C3%AD&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9446
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/11/sniim__papaya-roja-primera-zacatecas-mercado-de-abasto-de-zacatecas__2025-11-01_2025-11-30__20261127T163936Z-08c1f0.html",
+      "sha256": "8fa3764d7857eddb78f34698218753fe27c6e06d8cb5a2689326bf62169bf0a4",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F11%2F2025&fechaFinal=30%2F11%2F2025&ProductoId=623&OrigenId=-1&Origen=Todos&DestinoId=320&Destino=Zacatecas%3A+Mercado+de+Abasto+de+Zacatecas&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9425
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/12/sniim__papaya-roja-primera-zacatecas-mercado-de-abasto-de-zacatecas__2025-12-01_2025-12-31__20261127T163936Z-08c1f0.html",
+      "sha256": "7dc955c78076bb9c30278fcf0b83a9a30eb02fd471b8eb7d1f60224471d36d8e",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F12%2F2025&fechaFinal=31%2F12%2F2025&ProductoId=623&OrigenId=-1&Origen=Todos&DestinoId=320&Destino=Zacatecas%3A+Mercado+de+Abasto+de+Zacatecas&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9425
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/01/sniim__papaya-roja-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-01-01_2026-01-31__20261127T163936Z-08c1f0.html",
+      "sha256": "72cba8cad67669d03f0751e1ef29425d5443b96e05ea207506eb5de2d26fe49e",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F01%2F2026&fechaFinal=31%2F01%2F2026&ProductoId=623&OrigenId=-1&Origen=Todos&DestinoId=320&Destino=Zacatecas%3A+Mercado+de+Abasto+de+Zacatecas&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9425
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/02/sniim__papaya-roja-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-02-01_2026-02-28__20261127T163936Z-08c1f0.html",
+      "sha256": "60055b3b5bb0b1bfca00a2a2740c976d1c28dcc6e5d7a16ac75f36ea7b643fa1",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F02%2F2026&fechaFinal=28%2F02%2F2026&ProductoId=623&OrigenId=-1&Origen=Todos&DestinoId=320&Destino=Zacatecas%3A+Mercado+de+Abasto+de+Zacatecas&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9425
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/03/sniim__papaya-roja-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-03-01_2026-03-31__20261127T163936Z-08c1f0.html",
+      "sha256": "93b1281b582a17dfc0dec0cda15d909f0391e6e74daf7af24d54059d9b92af3a",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F03%2F2026&fechaFinal=31%2F03%2F2026&ProductoId=623&OrigenId=-1&Origen=Todos&DestinoId=320&Destino=Zacatecas%3A+Mercado+de+Abasto+de+Zacatecas&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9425
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/04/sniim__papaya-roja-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-04-01_2026-04-30__20261127T163936Z-08c1f0.html",
+      "sha256": "a2d54475c0cc12ded533e3d1d8f66e83272d432eefde525a970e43b7f738d575",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F04%2F2026&fechaFinal=30%2F04%2F2026&ProductoId=623&OrigenId=-1&Origen=Todos&DestinoId=320&Destino=Zacatecas%3A+Mercado+de+Abasto+de+Zacatecas&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9425
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/05/sniim__papaya-roja-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-05-01_2026-05-31__20261127T163936Z-08c1f0.html",
+      "sha256": "dcdacc26c8b47f40fe223fec88e79c097b3d9f69a1a68f71e3c5a7b18a196bd5",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F05%2F2026&fechaFinal=31%2F05%2F2026&ProductoId=623&OrigenId=-1&Origen=Todos&DestinoId=320&Destino=Zacatecas%3A+Mercado+de+Abasto+de+Zacatecas&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9425
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/06/sniim__papaya-roja-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-06-01_2026-06-30__20261127T163936Z-08c1f0.html",
+      "sha256": "e8f850e72bb0055a0e1814b4517aea3abdebc9c5c447fe00d7c95142ba945bd4",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F06%2F2026&fechaFinal=30%2F06%2F2026&ProductoId=623&OrigenId=-1&Origen=Todos&DestinoId=320&Destino=Zacatecas%3A+Mercado+de+Abasto+de+Zacatecas&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9425
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/07/sniim__papaya-roja-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-07-01_2026-07-31__20261127T163936Z-08c1f0.html",
+      "sha256": "92f0163e71631de4034a1c04e035e87a6bdb48c73bbc6d7c53186160da29769a",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F07%2F2026&fechaFinal=31%2F07%2F2026&ProductoId=623&OrigenId=-1&Origen=Todos&DestinoId=320&Destino=Zacatecas%3A+Mercado+de+Abasto+de+Zacatecas&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9425
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/08/sniim__papaya-roja-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-08-01_2026-08-31__20261127T163936Z-08c1f0.html",
+      "sha256": "ac1049592da47d2a0adca30671d120f73ca9033d950604fa6e13d9dc85cbcdd6",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F08%2F2026&fechaFinal=31%2F08%2F2026&ProductoId=623&OrigenId=-1&Origen=Todos&DestinoId=320&Destino=Zacatecas%3A+Mercado+de+Abasto+de+Zacatecas&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9425
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/09/sniim__papaya-roja-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-09-01_2026-09-30__20261127T163936Z-08c1f0.html",
+      "sha256": "3448235d517316d5b89aada28d6cb849f46401cf911b45e95f92374ff049f043",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F09%2F2026&fechaFinal=30%2F09%2F2026&ProductoId=623&OrigenId=-1&Origen=Todos&DestinoId=320&Destino=Zacatecas%3A+Mercado+de+Abasto+de+Zacatecas&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9425
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__papaya-roja-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-10-01_2026-10-31__20261127T163936Z-08c1f0.html",
+      "sha256": "21eb7ad197e5d0490f8450459d46ab107937a0dc872bfc0cbc3a952726cab2dc",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=623&OrigenId=-1&Origen=Todos&DestinoId=320&Destino=Zacatecas%3A+Mercado+de+Abasto+de+Zacatecas&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9425
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__papaya-roja-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-11-01_2026-11-26__20261127T163936Z-08c1f0.html",
+      "sha256": "b1d0ca2ff3133fac93c7b958116b0e0f798159423cb148f6d0dc2bcc31485d4d",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F11%2F2026&fechaFinal=26%2F11%2F2026&ProductoId=623&OrigenId=-1&Origen=Todos&DestinoId=320&Destino=Zacatecas%3A+Mercado+de+Abasto+de+Zacatecas&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9425
+    }
+  ],
+  "errores": [],
+  "parametros": {
+    "productos": [
+      "papaya"
+    ],
+    "mercados": [
+      "guadalajara_felipe_angeles",
+      "queretaro",
+      "san_luis_potosi",
+      "zacatecas"
+    ],
+    "periodos": [
+      [
+        "2025-11-01",
+        "2025-11-30"
+      ],
+      [
+        "2025-12-01",
+        "2025-12-31"
+      ],
+      [
+        "2026-01-01",
+        "2026-01-31"
+      ],
+      [
+        "2026-02-01",
+        "2026-02-28"
+      ],
+      [
+        "2026-03-01",
+        "2026-03-31"
+      ],
+      [
+        "2026-04-01",
+        "2026-04-30"
+      ],
+      [
+        "2026-05-01",
+        "2026-05-31"
+      ],
+      [
+        "2026-06-01",
+        "2026-06-30"
+      ],
+      [
+        "2026-07-01",
+        "2026-07-31"
+      ],
+      [
+        "2026-08-01",
+        "2026-08-31"
+      ],
+      [
+        "2026-09-01",
+        "2026-09-30"
+      ],
+      [
+        "2026-10-01",
+        "2026-10-31"
+      ],
+      [
+        "2026-11-01",
+        "2026-11-26"
+      ]
+    ]
+  },
+  "esquema": "tdl-manifest/1",
+  "archivos_generados": 157
+}

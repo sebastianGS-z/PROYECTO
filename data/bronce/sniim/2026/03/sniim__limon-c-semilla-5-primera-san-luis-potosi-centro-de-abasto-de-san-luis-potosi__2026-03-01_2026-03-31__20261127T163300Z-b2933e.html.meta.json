@@ -1,0 +1,39 @@
+{
+  "esquema": "tdl-bronce-meta/1",
+  "contenido_original": {
+    "archivo": "sniim__limon-c-semilla-5-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-03-01_2026-03-31__20261127T163300Z-b2933e.html",
+    "descripcion": "Bytes tal como los entregó la fuente; no se modifican."
+  },
+  "metadatos_captura": {
+    "fuente": "sniim",
+    "fuente_url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F03%2F2026&fechaFinal=31%2F03%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=240&Destino=San+Luis+Potos%C3%AD%3A+Centro+de+Abasto+de+San+Luis+Potos%C3%AD&PreciosPorId=1&RegistrosPorPagina=500",
+    "fecha_captura": "2026-11-27T16:36:57Z",
+    "identificador_ejecucion": "20261127T163300Z-b2933e",
+    "formato_original": "html",
+    "sha256": "ad492a60ac37a9aa2c128fea28217b03dbfdc082d755c05b00a43ca5f7fe41d0",
+    "bytes": 26174,
+    "http_status": 200,
+    "registros_detectados": 21,
+    "estado_captura": "ok",
+    "advertencias": [],
+    "colision_nombre": false,
+    "etiqueta": "Limón c/semilla # 5 - Primera__San Luis Potosí: Centro de Abasto de San Luis Potosí",
+    "producto": "Limón c/semilla # 5 - Primera",
+    "producto_id": "421",
+    "mercado": "San Luis Potosí: Centro de Abasto de San Luis Potosí",
+    "mercado_id": "240",
+    "fecha_ref_inicio": "2026-03-01",
+    "fecha_ref_fin": "2026-03-31",
+    "parametros": {
+      "fechaInicio": "01/03/2026",
+      "fechaFinal": "31/03/2026",
+      "ProductoId": "421",
+      "OrigenId": "-1",
+      "Origen": "Todos",
+      "DestinoId": "240",
+      "Destino": "San Luis Potosí: Centro de Abasto de San Luis Potosí",
+      "PreciosPorId": "1",
+      "RegistrosPorPagina": "500"
+    }
+  }
+}

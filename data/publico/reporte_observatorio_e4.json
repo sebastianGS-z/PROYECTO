@@ -1,6 +1,6 @@
 {
   "esquema": "oaic-e4-observatorio/1",
-  "generado_utc": "2026-11-27T16:23:20.959151+00:00",
+  "generado_utc": "2026-11-27T17:32:50.268962+00:00",
   "capa_oro": "data/oro/panel_mensual.csv",
   "origen_objetivo": "Colima",
   "horizonte_meses": 3,
@@ -18,15 +18,15 @@
     "suavizamiento_simple",
     "holt",
     "holt_winters_aditivo",
-    "arima_111"
+    "arima_aic"
   ],
   "minimo_meses_contiguos": 36,
-  "series_pronosticadas": 3,
-  "filas_pronostico": 9,
-  "comparaciones_pareadas": 1,
+  "series_pronosticadas": 4,
+  "filas_pronostico": 12,
+  "comparaciones_pareadas": 6,
   "contexto_climatico": {
-    "meses_con_observaciones": 32,
-    "ultimo_mes_con_observacion": "2026-10",
+    "meses_con_observaciones": 33,
+    "ultimo_mes_con_observacion": "2026-11",
     "estaciones": [
       "MXM00076654"
     ],
@@ -39,11 +39,36 @@
       "variante_id": "421",
       "variante": "Limón c/semilla # 5 - Primera",
       "origen": "Colima",
+      "mercado": "10",
+      "nombre_mercado": "Aguascalientes · Centro Comercial Agropecuario",
+      "tipo_serie": "origen_colima",
+      "meses": 12,
+      "pronosticable": false,
+      "motivo": "requiere_36_meses_contiguos_sin_imputacion"
+    },
+    {
+      "cultivo": "limon",
+      "variante_id": "421",
+      "variante": "Limón c/semilla # 5 - Primera",
+      "origen": "Colima",
+      "mercado": "101",
+      "nombre_mercado": "Gómez Palacio · Centro de Distribución y Abasto",
+      "tipo_serie": "origen_colima",
+      "meses": 12,
+      "pronosticable": false,
+      "motivo": "requiere_36_meses_contiguos_sin_imputacion"
+    },
+    {
+      "cultivo": "limon",
+      "variante_id": "421",
+      "variante": "Limón c/semilla # 5 - Primera",
+      "origen": "Colima",
       "mercado": "140",
       "nombre_mercado": "Guadalajara · Mercado de Abasto",
+      "tipo_serie": "origen_colima",
       "meses": 36,
       "pronosticable": true,
-      "modelo_elegido": "arima_111",
+      "modelo_elegido": "arima_aic",
       "n_validaciones_seleccion": 6,
       "n_validaciones_holdout": 6,
       "periodo_seleccion": [
@@ -59,15 +84,88 @@
       "linaje_serie_sha256": "133547bc41a48bcd98d0919a86ce1f9ccf5b32756409591b1b692fed9baaa13c"
     },
     {
+      "cultivo": "limon",
+      "variante_id": "421",
+      "variante": "Limón c/semilla # 5 - Primera",
+      "origen": "Colima",
+      "mercado": "141",
+      "nombre_mercado": "Guadalajara · Mercado Felipe Ángeles",
+      "tipo_serie": "origen_colima",
+      "meses": 12,
+      "pronosticable": false,
+      "motivo": "requiere_36_meses_contiguos_sin_imputacion"
+    },
+    {
+      "cultivo": "limon",
+      "variante_id": "421",
+      "variante": "Limón c/semilla # 5 - Primera",
+      "origen": "Colima",
+      "mercado": "190",
+      "nombre_mercado": "Monterrey · Mercado de Abasto Estrella",
+      "tipo_serie": "origen_colima",
+      "meses": 12,
+      "pronosticable": false,
+      "motivo": "requiere_36_meses_contiguos_sin_imputacion"
+    },
+    {
+      "cultivo": "limon",
+      "variante_id": "421",
+      "variante": "Limón c/semilla # 5 - Primera",
+      "origen": "Colima",
+      "mercado": "240",
+      "nombre_mercado": "San Luis Potosí · Centro de Abasto",
+      "tipo_serie": "origen_colima",
+      "meses": 12,
+      "pronosticable": false,
+      "motivo": "requiere_36_meses_contiguos_sin_imputacion"
+    },
+    {
+      "cultivo": "limon",
+      "variante_id": "421",
+      "variante": "Limón c/semilla # 5 - Primera",
+      "origen": "Colima",
+      "mercado": "260",
+      "nombre_mercado": "Hermosillo · Mercado de Abasto Francisco I. Madero",
+      "tipo_serie": "origen_colima",
+      "meses": 12,
+      "pronosticable": false,
+      "motivo": "requiere_36_meses_contiguos_sin_imputacion"
+    },
+    {
+      "cultivo": "limon",
+      "variante_id": "421",
+      "variante": "Limón c/semilla # 5 - Primera",
+      "origen": "Colima",
+      "mercado": "261",
+      "nombre_mercado": "Cd. Obregón · Central de Abasto",
+      "tipo_serie": "origen_colima",
+      "meses": 9,
+      "pronosticable": false,
+      "motivo": "requiere_36_meses_contiguos_sin_imputacion"
+    },
+    {
+      "cultivo": "limon",
+      "variante_id": "421",
+      "variante": "Limón c/semilla # 5 - Primera",
+      "origen": "Colima",
+      "mercado": "50",
+      "nombre_mercado": "Torreón · Central de Abasto de La Laguna",
+      "tipo_serie": "origen_colima",
+      "meses": 12,
+      "pronosticable": false,
+      "motivo": "requiere_36_meses_contiguos_sin_imputacion"
+    },
+    {
       "cultivo": "papaya",
       "variante_id": "609",
       "variante": "Papaya Maradol - Primera",
       "origen": "Colima",
       "mercado": "140",
       "nombre_mercado": "Guadalajara · Mercado de Abasto",
+      "tipo_serie": "origen_colima",
       "meses": 36,
       "pronosticable": true,
-      "modelo_elegido": "suavizamiento_simple",
+      "modelo_elegido": "arima_aic",
       "n_validaciones_seleccion": 6,
       "n_validaciones_holdout": 6,
       "periodo_seleccion": [
@@ -83,12 +181,157 @@
       "linaje_serie_sha256": "392f33934d23e578ab3c4bbd6e13ea42e5af1b4a40a6743cace9597c386e9bed"
     },
     {
+      "cultivo": "papaya",
+      "variante_id": "609",
+      "variante": "Papaya Maradol - Primera",
+      "origen": "Colima",
+      "mercado": "141",
+      "nombre_mercado": "Guadalajara · Mercado Felipe Ángeles",
+      "tipo_serie": "origen_colima",
+      "meses": 12,
+      "pronosticable": false,
+      "motivo": "requiere_36_meses_contiguos_sin_imputacion"
+    },
+    {
+      "cultivo": "papaya",
+      "variante_id": "609",
+      "variante": "Papaya Maradol - Primera",
+      "origen": "Colima",
+      "mercado": "220",
+      "nombre_mercado": "Querétaro · Mercado de Abasto",
+      "tipo_serie": "origen_colima",
+      "meses": 12,
+      "pronosticable": false,
+      "motivo": "requiere_36_meses_contiguos_sin_imputacion"
+    },
+    {
+      "cultivo": "papaya",
+      "variante_id": "609",
+      "variante": "Papaya Maradol - Primera",
+      "origen": "Colima",
+      "mercado": "240",
+      "nombre_mercado": "San Luis Potosí · Centro de Abasto",
+      "tipo_serie": "origen_colima",
+      "meses": 12,
+      "pronosticable": false,
+      "motivo": "requiere_36_meses_contiguos_sin_imputacion"
+    },
+    {
+      "cultivo": "papaya",
+      "variante_id": "609",
+      "variante": "Papaya Maradol - Primera",
+      "origen": "Colima",
+      "mercado": "320",
+      "nombre_mercado": "Zacatecas · Mercado de Abasto",
+      "tipo_serie": "origen_colima",
+      "meses": 12,
+      "pronosticable": false,
+      "motivo": "requiere_36_meses_contiguos_sin_imputacion"
+    },
+    {
+      "cultivo": "platano",
+      "variante_id": "663",
+      "variante": "Plátano Chiapas - Primera",
+      "origen": "Colima",
+      "mercado": "20",
+      "nombre_mercado": "La Paz · Unión de Comerciantes",
+      "tipo_serie": "origen_colima",
+      "meses": 12,
+      "pronosticable": false,
+      "motivo": "requiere_36_meses_contiguos_sin_imputacion"
+    },
+    {
+      "cultivo": "platano",
+      "variante_id": "663",
+      "variante": "Plátano Chiapas - Primera",
+      "origen": "Colima",
+      "mercado": "320",
+      "nombre_mercado": "Zacatecas · Mercado de Abasto",
+      "tipo_serie": "origen_colima",
+      "meses": 12,
+      "pronosticable": false,
+      "motivo": "requiere_36_meses_contiguos_sin_imputacion"
+    },
+    {
+      "cultivo": "platano",
+      "variante_id": "663",
+      "variante": "Plátano Chiapas - Primera",
+      "origen": "Colima",
+      "mercado": "33",
+      "nombre_mercado": "Tijuana · Central de Abasto INDIA",
+      "tipo_serie": "origen_colima",
+      "meses": 3,
+      "pronosticable": false,
+      "motivo": "requiere_36_meses_contiguos_sin_imputacion"
+    },
+    {
+      "cultivo": "platano",
+      "variante_id": "666",
+      "variante": "Plátano Dominico - Primera",
+      "origen": "Colima",
+      "mercado": "220",
+      "nombre_mercado": "Querétaro · Mercado de Abasto",
+      "tipo_serie": "origen_colima",
+      "meses": 12,
+      "pronosticable": false,
+      "motivo": "requiere_36_meses_contiguos_sin_imputacion"
+    },
+    {
+      "cultivo": "platano",
+      "variante_id": "666",
+      "variante": "Plátano Dominico - Primera",
+      "origen": "Colima",
+      "mercado": "33",
+      "nombre_mercado": "Tijuana · Central de Abasto INDIA",
+      "tipo_serie": "origen_colima",
+      "meses": 12,
+      "pronosticable": false,
+      "motivo": "requiere_36_meses_contiguos_sin_imputacion"
+    },
+    {
+      "cultivo": "platano",
+      "variante_id": "723",
+      "variante": "Plátano Macho - Primera",
+      "origen": "Colima",
+      "mercado": "220",
+      "nombre_mercado": "Querétaro · Mercado de Abasto",
+      "tipo_serie": "origen_colima",
+      "meses": 12,
+      "pronosticable": false,
+      "motivo": "requiere_36_meses_contiguos_sin_imputacion"
+    },
+    {
+      "cultivo": "platano",
+      "variante_id": "732",
+      "variante": "Plátano Tabasco - Primera",
+      "origen": "Colima",
+      "mercado": "220",
+      "nombre_mercado": "Querétaro · Mercado de Abasto",
+      "tipo_serie": "origen_colima",
+      "meses": 12,
+      "pronosticable": false,
+      "motivo": "requiere_36_meses_contiguos_sin_imputacion"
+    },
+    {
+      "cultivo": "platano",
+      "variante_id": "732",
+      "variante": "Plátano Tabasco - Primera",
+      "origen": "Colima",
+      "mercado": "240",
+      "nombre_mercado": "San Luis Potosí · Centro de Abasto",
+      "tipo_serie": "origen_colima",
+      "meses": 12,
+      "pronosticable": false,
+      "motivo": "requiere_36_meses_contiguos_sin_imputacion"
+    },
+    {
       "cultivo": "sandia_jubilee",
       "variante_id": "791",
       "variante": "Sandía Jubilee - Primera",
       "origen": "Colima",
       "mercado": "80",
       "nombre_mercado": "Colima · Centros de distribución",
+      "tipo_serie": "origen_colima",
       "meses": 1,
       "pronosticable": false,
       "motivo": "requiere_36_meses_contiguos_sin_imputacion"
@@ -100,6 +343,7 @@
       "origen": "Colima",
       "mercado": "80",
       "nombre_mercado": "Colima · Centros de distribución",
+      "tipo_serie": "origen_colima",
       "meses": 1,
       "pronosticable": false,
       "motivo": "requiere_36_meses_contiguos_sin_imputacion"
@@ -111,6 +355,7 @@
       "origen": "Colima",
       "mercado": "140",
       "nombre_mercado": "Guadalajara · Mercado de Abasto",
+      "tipo_serie": "origen_colima",
       "meses": 27,
       "pronosticable": false,
       "motivo": "requiere_36_meses_contiguos_sin_imputacion"
@@ -122,6 +367,7 @@
       "origen": "Colima",
       "mercado": "80",
       "nombre_mercado": "Colima · Centros de distribución",
+      "tipo_serie": "origen_colima",
       "meses": 36,
       "pronosticable": true,
       "modelo_elegido": "suavizamiento_simple",
@@ -138,6 +384,31 @@
       "fecha_primer_dato": "2023-11",
       "fecha_ultimo_dato": "2026-10",
       "linaje_serie_sha256": "b6b4af014dfdde391636a43bc94c31c03747a515d1fc63d03b14b4d74dd120ea"
+    },
+    {
+      "cultivo": "platano",
+      "variante_id": "732",
+      "variante": "Plátano Tabasco - Primera",
+      "origen": "Michoacán",
+      "mercado": "140",
+      "nombre_mercado": "Guadalajara · Mercado de Abasto",
+      "tipo_serie": "referencia_mercado",
+      "meses": 36,
+      "pronosticable": true,
+      "modelo_elegido": "holt_winters_aditivo",
+      "n_validaciones_seleccion": 6,
+      "n_validaciones_holdout": 6,
+      "periodo_seleccion": [
+        "2025-11",
+        "2026-04"
+      ],
+      "periodo_holdout": [
+        "2026-05",
+        "2026-10"
+      ],
+      "fecha_primer_dato": "2023-11",
+      "fecha_ultimo_dato": "2026-10",
+      "linaje_serie_sha256": "d796d4cfca18f201657b1eec6d8191140fddd4f1b526930a2b66d3eac1ab39e1"
     },
     {
       "cultivo": "aguacate_hass",
@@ -176,12 +447,6 @@
       "motivo": "sin_cotizaciones_SNIIM_con_origen_Colima"
     },
     {
-      "cultivo": "platano",
-      "origen": "Colima",
-      "pronosticable": false,
-      "motivo": "sin_cotizaciones_SNIIM_con_origen_Colima"
-    },
-    {
       "cultivo": "sandia_rayada",
       "origen": "Colima",
       "pronosticable": false,
@@ -194,5 +459,5 @@
       "motivo": "sin_cotizaciones_SNIIM_con_origen_Colima"
     }
   ],
-  "advertencia": "Pronósticos académicos exploratorios, no consejo comercial ni garantía. Sin intervalo predictivo validado; factores de transporte, calidad, volumen y precio en parcela no están modelados."
+  "advertencia": "Pronósticos académicos exploratorios, no consejo comercial ni garantía. Cada estimación incluye un intervalo empírico de 80 % y 95 % construido con errores fuera de muestra; su cobertura real se audita en el holdout. El precio en parcela proviene de SIAP (anual) y el flete es un supuesto editable."
 }

@@ -1,0 +1,39 @@
+{
+  "esquema": "tdl-bronce-meta/1",
+  "contenido_original": {
+    "archivo": "sniim__limon-c-semilla-5-primera-chihuahua-central-de-abasto-de-chihuahua__2026-09-01_2026-09-30__20261127T163300Z-b2933e.html",
+    "descripcion": "Bytes tal como los entregó la fuente; no se modifican."
+  },
+  "metadatos_captura": {
+    "fuente": "sniim",
+    "fuente_url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F09%2F2026&fechaFinal=30%2F09%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=61&Destino=Chihuahua%3A+Central+de+Abasto+de+Chihuahua&PreciosPorId=1&RegistrosPorPagina=500",
+    "fecha_captura": "2026-11-27T16:34:56Z",
+    "identificador_ejecucion": "20261127T163300Z-b2933e",
+    "formato_original": "html",
+    "sha256": "5350f1fd5ff5e099fb35e7183499bab6c3cb60528db554a0c1a7ecc328f74838",
+    "bytes": 9424,
+    "http_status": 200,
+    "registros_detectados": 0,
+    "estado_captura": "sin_resultados",
+    "advertencias": [],
+    "colision_nombre": false,
+    "etiqueta": "Limón c/semilla # 5 - Primera__Chihuahua: Central de Abasto de Chihuahua",
+    "producto": "Limón c/semilla # 5 - Primera",
+    "producto_id": "421",
+    "mercado": "Chihuahua: Central de Abasto de Chihuahua",
+    "mercado_id": "61",
+    "fecha_ref_inicio": "2026-09-01",
+    "fecha_ref_fin": "2026-09-30",
+    "parametros": {
+      "fechaInicio": "01/09/2026",
+      "fechaFinal": "30/09/2026",
+      "ProductoId": "421",
+      "OrigenId": "-1",
+      "Origen": "Todos",
+      "DestinoId": "61",
+      "Destino": "Chihuahua: Central de Abasto de Chihuahua",
+      "PreciosPorId": "1",
+      "RegistrosPorPagina": "500"
+    }
+  }
+}

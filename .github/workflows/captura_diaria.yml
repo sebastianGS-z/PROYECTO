@@ -52,6 +52,14 @@ jobs:
           echo "exit_code=$code" >> "$GITHUB_OUTPUT"
           exit 0   # el resultado se evalúa al final, después de guardar la evidencia
 
+      - name: Catálogo nacional SNIIM (todas las plazas, para comparar destinos)
+        id: catalogo
+        continue-on-error: true   # complementario: si falla, la captura principal y el pipeline siguen
+        env:
+          FECHA: ${{ github.event.inputs.fecha }}
+        run: |
+          if [ -n "$FECHA" ]; then python main.py precios-catalogo --fecha "$FECHA"; else python main.py precios-catalogo; fi
+
       - name: Pipeline E1 + integración geoespacial E2
         run: python main.py e2
 
@@ -63,6 +71,14 @@ jobs:
 
       - name: Pronósticos auditables, exportación pública y tablero
         run: python main.py observatorio --horizonte 3
+
+      - name: Inteligencia comercial, reporte para clientes y API de datos
+        run: |
+          python main.py inteligencia
+          python -m calidad.metricas
+          python main.py reporte
+          python main.py preguntas
+          python main.py portal
 
       - name: Validar Capa Bronce (SHA-256 y manifiestos)
         id: validar
@@ -76,6 +92,7 @@ jobs:
             echo "## Captura diaria TDL"
             echo "- Código de salida de la captura: \`${{ steps.captura.outputs.exit_code }}\` (0 exitosa/sin resultados, 1 fallida, 2 parcial)"
             echo "- Validación de Bronce: \`${{ steps.validar.outcome }}\`"
+            echo "- Catálogo nacional: \`${{ steps.catalogo.outcome }}\`"
             python - <<'PY'
           import glob, json, os
           for fuente in ("sniim", "noaa_ncei"):
@@ -91,7 +108,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/ calidad/bitacora_capturas.csv tablero/index.html tablero/cliente.html
+          git add data/ calidad/bitacora_capturas.csv calidad/reportes/ tablero/index.html tablero/cliente.html tablero/inteligencia.html tablero/preguntas.html tablero/inicio.html tablero/admin.html docs/E4/reporte_inteligencia.md docs/E4/preguntas_agricultor.md
           if git diff --cached --quiet; then
             echo "Sin cambios que publicar"
           else

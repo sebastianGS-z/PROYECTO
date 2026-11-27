@@ -1,0 +1,39 @@
+{
+  "esquema": "tdl-bronce-meta/1",
+  "contenido_original": {
+    "archivo": "sniim__limon-c-semilla-5-primera-sonora-central-de-abasto-de-cd-obregon__2026-04-01_2026-04-30__20261127T163300Z-b2933e.html",
+    "descripcion": "Bytes tal como los entregó la fuente; no se modifican."
+  },
+  "metadatos_captura": {
+    "fuente": "sniim",
+    "fuente_url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F04%2F2026&fechaFinal=30%2F04%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=261&Destino=Sonora%3A+Central+de+Abasto+de+Cd.+Obreg%C3%B3n&PreciosPorId=1&RegistrosPorPagina=500",
+    "fecha_captura": "2026-11-27T16:37:51Z",
+    "identificador_ejecucion": "20261127T163300Z-b2933e",
+    "formato_original": "html",
+    "sha256": "4cda9e66a010149007ce6cc70eb9d1029991ba749564e55f92ab966a0bf3f819",
+    "bytes": 25568,
+    "http_status": 200,
+    "registros_detectados": 20,
+    "estado_captura": "ok",
+    "advertencias": [],
+    "colision_nombre": false,
+    "etiqueta": "Limón c/semilla # 5 - Primera__Sonora: Central de Abasto de Cd. Obregón",
+    "producto": "Limón c/semilla # 5 - Primera",
+    "producto_id": "421",
+    "mercado": "Sonora: Central de Abasto de Cd. Obregón",
+    "mercado_id": "261",
+    "fecha_ref_inicio": "2026-04-01",
+    "fecha_ref_fin": "2026-04-30",
+    "parametros": {
+      "fechaInicio": "01/04/2026",
+      "fechaFinal": "30/04/2026",
+      "ProductoId": "421",
+      "OrigenId": "-1",
+      "Origen": "Todos",
+      "DestinoId": "261",
+      "Destino": "Sonora: Central de Abasto de Cd. Obregón",
+      "PreciosPorId": "1",
+      "RegistrosPorPagina": "500"
+    }
+  }
+}

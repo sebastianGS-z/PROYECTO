@@ -1,0 +1,39 @@
+{
+  "esquema": "tdl-bronce-meta/1",
+  "contenido_original": {
+    "archivo": "sniim__platano-manzano-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-04-01_2026-04-30__20261127T164543Z-fb45cf.html",
+    "descripcion": "Bytes tal como los entregó la fuente; no se modifican."
+  },
+  "metadatos_captura": {
+    "fuente": "sniim",
+    "fuente_url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F04%2F2026&fechaFinal=30%2F04%2F2026&ProductoId=728&OrigenId=-1&Origen=Todos&DestinoId=240&Destino=San+Luis+Potos%C3%AD%3A+Centro+de+Abasto+de+San+Luis+Potos%C3%AD&PreciosPorId=1&RegistrosPorPagina=500",
+    "fecha_captura": "2026-11-27T16:57:53Z",
+    "identificador_ejecucion": "20261127T164543Z-fb45cf",
+    "formato_original": "html",
+    "sha256": "97034839dda55535f60fbdc0eb710f6e0997036033581e51e83030389d02a73a",
+    "bytes": 9446,
+    "http_status": 200,
+    "registros_detectados": 0,
+    "estado_captura": "sin_resultados",
+    "advertencias": [],
+    "colision_nombre": false,
+    "etiqueta": "Plátano Manzano - Primera__San Luis Potosí: Centro de Abasto de San Luis Potosí",
+    "producto": "Plátano Manzano - Primera",
+    "producto_id": "728",
+    "mercado": "San Luis Potosí: Centro de Abasto de San Luis Potosí",
+    "mercado_id": "240",
+    "fecha_ref_inicio": "2026-04-01",
+    "fecha_ref_fin": "2026-04-30",
+    "parametros": {
+      "fechaInicio": "01/04/2026",
+      "fechaFinal": "30/04/2026",
+      "ProductoId": "728",
+      "OrigenId": "-1",
+      "Origen": "Todos",
+      "DestinoId": "240",
+      "Destino": "San Luis Potosí: Centro de Abasto de San Luis Potosí",
+      "PreciosPorId": "1",
+      "RegistrosPorPagina": "500"
+    }
+  }
+}

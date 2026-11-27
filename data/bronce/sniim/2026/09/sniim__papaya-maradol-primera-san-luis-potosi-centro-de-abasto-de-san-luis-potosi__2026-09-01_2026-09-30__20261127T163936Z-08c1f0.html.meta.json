@@ -1,0 +1,39 @@
+{
+  "esquema": "tdl-bronce-meta/1",
+  "contenido_original": {
+    "archivo": "sniim__papaya-maradol-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-09-01_2026-09-30__20261127T163936Z-08c1f0.html",
+    "descripcion": "Bytes tal como los entregó la fuente; no se modifican."
+  },
+  "metadatos_captura": {
+    "fuente": "sniim",
+    "fuente_url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F09%2F2026&fechaFinal=30%2F09%2F2026&ProductoId=609&OrigenId=-1&Origen=Todos&DestinoId=240&Destino=San+Luis+Potos%C3%AD%3A+Centro+de+Abasto+de+San+Luis+Potos%C3%AD&PreciosPorId=1&RegistrosPorPagina=500",
+    "fecha_captura": "2026-11-27T16:43:38Z",
+    "identificador_ejecucion": "20261127T163936Z-08c1f0",
+    "formato_original": "html",
+    "sha256": "cb8709285bed53d3700a135e4d51cb170d80bacd1d50947e1ae61267ef5e6a05",
+    "bytes": 25764,
+    "http_status": 200,
+    "registros_detectados": 21,
+    "estado_captura": "ok",
+    "advertencias": [],
+    "colision_nombre": false,
+    "etiqueta": "Papaya Maradol - Primera__San Luis Potosí: Centro de Abasto de San Luis Potosí",
+    "producto": "Papaya Maradol - Primera",
+    "producto_id": "609",
+    "mercado": "San Luis Potosí: Centro de Abasto de San Luis Potosí",
+    "mercado_id": "240",
+    "fecha_ref_inicio": "2026-09-01",
+    "fecha_ref_fin": "2026-09-30",
+    "parametros": {
+      "fechaInicio": "01/09/2026",
+      "fechaFinal": "30/09/2026",
+      "ProductoId": "609",
+      "OrigenId": "-1",
+      "Origen": "Todos",
+      "DestinoId": "240",
+      "Destino": "San Luis Potosí: Centro de Abasto de San Luis Potosí",
+      "PreciosPorId": "1",
+      "RegistrosPorPagina": "500"
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "run_id": "20261127T163132Z-2ffbb8",
+  "fuente": "noaa_ncei",
+  "modo": "diaria",
+  "disparador": "local",
+  "inicio": "2026-11-27T16:31:32Z",
+  "fin": "2026-11-27T16:31:39Z",
+  "duracion_s": 6.44,
+  "estado": "exitosa",
+  "solicitudes": 2,
+  "registros": 13,
+  "consultas": [
+    {
+      "localidad": "manzanillo",
+      "inicio": "2026-10-28",
+      "fin": "2026-11-26",
+      "modo": "diario",
+      "estado": "ok",
+      "registros": 13,
+      "archivo": "noaa_ncei__manzanillo-diario__2026-10-28_2026-11-26__20261127T163132Z-2ffbb8.json",
+      "error": null,
+      "advertencias": [
+        "TAVG: presente en 4 de 13 días (los ausentes no se rellenan)",
+        "TMAX: presente en 4 de 13 días (los ausentes no se rellenan)",
+        "TMIN: presente en 4 de 13 días (los ausentes no se rellenan)",
+        "Se esperaban 30 días y la fuente devolvió 13"
+      ]
+    }
+  ],
+  "archivos": [
+    {
+      "ruta": "data/bronce/noaa_ncei/2026/10/noaa_ncei__manzanillo-diario__2026-10-28_2026-11-26__20261127T163132Z-2ffbb8.json",
+      "sha256": "22bff4e50996c78044a97713706042fbe42049274adfe6838ed6806c5386e901",
+      "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=daily-summaries&stations=MXM00076654&startDate=2026-10-28&endDate=2026-11-26&dataTypes=TAVG%2CTMAX%2CTMIN%2CPRCP&units=metric&format=json",
+      "bytes": 955
+    }
+  ],
+  "errores": [],
+  "parametros": {
+    "localidades": [
+      "manzanillo"
+    ],
+    "inicio": "2026-10-28",
+    "fin": "2026-11-26"
+  },
+  "esquema": "tdl-manifest/1",
+  "archivos_generados": 1
+}

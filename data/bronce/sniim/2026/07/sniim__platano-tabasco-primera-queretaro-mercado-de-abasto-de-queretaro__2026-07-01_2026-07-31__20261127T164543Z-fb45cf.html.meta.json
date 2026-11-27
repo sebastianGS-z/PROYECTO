@@ -1,0 +1,39 @@
+{
+  "esquema": "tdl-bronce-meta/1",
+  "contenido_original": {
+    "archivo": "sniim__platano-tabasco-primera-queretaro-mercado-de-abasto-de-queretaro__2026-07-01_2026-07-31__20261127T164543Z-fb45cf.html",
+    "descripcion": "Bytes tal como los entregó la fuente; no se modifican."
+  },
+  "metadatos_captura": {
+    "fuente": "sniim",
+    "fuente_url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F07%2F2026&fechaFinal=31%2F07%2F2026&ProductoId=732&OrigenId=-1&Origen=Todos&DestinoId=220&Destino=Quer%C3%A9taro%3A+Mercado+de+Abasto+de+Quer%C3%A9taro&PreciosPorId=1&RegistrosPorPagina=500",
+    "fecha_captura": "2026-11-27T17:27:21Z",
+    "identificador_ejecucion": "20261127T164543Z-fb45cf",
+    "formato_original": "html",
+    "sha256": "2660ec8cd2133fc91fd98cff5b26b83bad4b406f0a2c05433c58cacc38fe97a4",
+    "bytes": 26824,
+    "http_status": 200,
+    "registros_detectados": 23,
+    "estado_captura": "ok",
+    "advertencias": [],
+    "colision_nombre": false,
+    "etiqueta": "Plátano Tabasco - Primera__Querétaro: Mercado de Abasto de Querétaro",
+    "producto": "Plátano Tabasco - Primera",
+    "producto_id": "732",
+    "mercado": "Querétaro: Mercado de Abasto de Querétaro",
+    "mercado_id": "220",
+    "fecha_ref_inicio": "2026-07-01",
+    "fecha_ref_fin": "2026-07-31",
+    "parametros": {
+      "fechaInicio": "01/07/2026",
+      "fechaFinal": "31/07/2026",
+      "ProductoId": "732",
+      "OrigenId": "-1",
+      "Origen": "Todos",
+      "DestinoId": "220",
+      "Destino": "Querétaro: Mercado de Abasto de Querétaro",
+      "PreciosPorId": "1",
+      "RegistrosPorPagina": "500"
+    }
+  }
+}

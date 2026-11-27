@@ -1,0 +1,45 @@
+{
+  "esquema": "tdl-bronce-meta/1",
+  "contenido_original": {
+    "archivo": "noaa_ncei__manzanillo-diario__2026-10-28_2026-11-26__20261127T163132Z-2ffbb8.json",
+    "descripcion": "Bytes tal como los entregó la fuente; no se modifican."
+  },
+  "metadatos_captura": {
+    "fuente": "noaa_ncei",
+    "fuente_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=daily-summaries&stations=MXM00076654&startDate=2026-10-28&endDate=2026-11-26&dataTypes=TAVG%2CTMAX%2CTMIN%2CPRCP&units=metric&format=json",
+    "fecha_captura": "2026-11-27T16:31:39Z",
+    "identificador_ejecucion": "20261127T163132Z-2ffbb8",
+    "formato_original": "json",
+    "sha256": "22bff4e50996c78044a97713706042fbe42049274adfe6838ed6806c5386e901",
+    "bytes": 955,
+    "http_status": 200,
+    "registros_detectados": 13,
+    "estado_captura": "ok",
+    "advertencias": [
+      "TAVG: presente en 4 de 13 días (los ausentes no se rellenan)",
+      "TMAX: presente en 4 de 13 días (los ausentes no se rellenan)",
+      "TMIN: presente en 4 de 13 días (los ausentes no se rellenan)",
+      "Se esperaban 30 días y la fuente devolvió 13"
+    ],
+    "colision_nombre": false,
+    "etiqueta": "manzanillo-diario",
+    "localidad": "Manzanillo",
+    "localidad_id": "manzanillo",
+    "estacion": "MXM00076654",
+    "latitud": 19.05,
+    "longitud": -104.317,
+    "fecha_ref_inicio": "2026-10-28",
+    "fecha_ref_fin": "2026-11-26",
+    "modo": "diario",
+    "parametros": {
+      "dataset": "daily-summaries",
+      "stations": "MXM00076654",
+      "startDate": "2026-10-28",
+      "endDate": "2026-11-26",
+      "dataTypes": "TAVG,TMAX,TMIN,PRCP",
+      "units": "metric",
+      "format": "json"
+    },
+    "unidades": "TAVG/TMAX/TMIN en °C, PRCP en mm (units=metric)"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "esquema": "tdl-bronce-meta/1",
+  "contenido_original": {
+    "archivo": "sniim__papaya-amarilla-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-10-01_2026-10-31__20261127T163936Z-08c1f0.html",
+    "descripcion": "Bytes tal como los entregó la fuente; no se modifican."
+  },
+  "metadatos_captura": {
+    "fuente": "sniim",
+    "fuente_url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=620&OrigenId=-1&Origen=Todos&DestinoId=141&Destino=Jalisco%3A+Mercado+Felipe+%C3%81ngeles+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+    "fecha_captura": "2026-11-27T16:40:08Z",
+    "identificador_ejecucion": "20261127T163936Z-08c1f0",
+    "formato_original": "html",
+    "sha256": "d16701eb6b2875047aa13c187ab88e30b223071b2368f93175584d709e16da1e",
+    "bytes": 9435,
+    "http_status": 200,
+    "registros_detectados": 0,
+    "estado_captura": "sin_resultados",
+    "advertencias": [],
+    "colision_nombre": false,
+    "etiqueta": "Papaya Amarilla - Primera__Jalisco: Mercado Felipe Ángeles de Guadalajara",
+    "producto": "Papaya Amarilla - Primera",
+    "producto_id": "620",
+    "mercado": "Jalisco: Mercado Felipe Ángeles de Guadalajara",
+    "mercado_id": "141",
+    "fecha_ref_inicio": "2026-10-01",
+    "fecha_ref_fin": "2026-10-31",
+    "parametros": {
+      "fechaInicio": "01/10/2026",
+      "fechaFinal": "31/10/2026",
+      "ProductoId": "620",
+      "OrigenId": "-1",
+      "Origen": "Todos",
+      "DestinoId": "141",
+      "Destino": "Jalisco: Mercado Felipe Ángeles de Guadalajara",
+      "PreciosPorId": "1",
+      "RegistrosPorPagina": "500"
+    }
+  }
+}

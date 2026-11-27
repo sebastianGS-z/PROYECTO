@@ -1,0 +1,143 @@
+{
+  "run_id": "20261127T172604Z-adc5b2",
+  "fuente": "siap",
+  "modo": "historica",
+  "disparador": "local",
+  "inicio": "2026-11-27T17:26:04Z",
+  "fin": "2026-11-27T17:26:39Z",
+  "duracion_s": 34.58,
+  "estado": "exitosa",
+  "solicitudes": 9,
+  "registros": 280826,
+  "consultas": [
+    {
+      "anio": 2016,
+      "estado": "ok",
+      "registros": 36929,
+      "archivo": "siap__cierre-agricola-municipal-2016__2016-01-01_2016-12-31__20261127T172604Z-adc5b2.csv",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "anio": 2017,
+      "estado": "ok",
+      "registros": 36912,
+      "archivo": "siap__cierre-agricola-municipal-2017__2017-01-01_2017-12-31__20261127T172604Z-adc5b2.csv",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "anio": 2018,
+      "estado": "ok",
+      "registros": 36637,
+      "archivo": "siap__cierre-agricola-municipal-2018__2018-01-01_2018-12-31__20261127T172604Z-adc5b2.csv",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "anio": 2019,
+      "estado": "ok",
+      "registros": 36695,
+      "archivo": "siap__cierre-agricola-municipal-2019__2019-01-01_2019-12-31__20261127T172604Z-adc5b2.csv",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "anio": 2020,
+      "estado": "ok",
+      "registros": 28661,
+      "archivo": "siap__cierre-agricola-municipal-2020__2020-01-01_2020-12-31__20261127T172604Z-adc5b2.csv",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "anio": 2021,
+      "estado": "ok",
+      "registros": 28741,
+      "archivo": "siap__cierre-agricola-municipal-2021__2021-01-01_2021-12-31__20261127T172604Z-adc5b2.csv",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "anio": 2022,
+      "estado": "ok",
+      "registros": 37555,
+      "archivo": "siap__cierre-agricola-municipal-2022__2022-01-01_2022-12-31__20261127T172604Z-adc5b2.csv",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "anio": 2023,
+      "estado": "ok",
+      "registros": 38696,
+      "archivo": "siap__cierre-agricola-municipal-2023__2023-01-01_2023-12-31__20261127T172604Z-adc5b2.csv",
+      "error": null,
+      "advertencias": []
+    }
+  ],
+  "archivos": [
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/siap/2016/01/siap__cierre-agricola-municipal-2016__2016-01-01_2016-12-31__20261127T172604Z-adc5b2.csv",
+      "sha256": "bdd6fc80534f9100d1637c32f7db43f71004127edb5c692e64aecd3b89a7eb7a",
+      "url": "https://nube.agricultura.gob.mx/index.php?view=10AE434F-A2158368-A120BC5A-EDF4AFAA&ANIO=2016",
+      "bytes": 5875278
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/siap/2017/01/siap__cierre-agricola-municipal-2017__2017-01-01_2017-12-31__20261127T172604Z-adc5b2.csv",
+      "sha256": "ec9ab47d3b40e063ab3a3a7571197e3ce7fd58b522dc096f26bb0dea239ace22",
+      "url": "https://nube.agricultura.gob.mx/index.php?view=10AE434F-A2158368-A120BC5A-EDF4AFAA&ANIO=2017",
+      "bytes": 5884738
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/siap/2018/01/siap__cierre-agricola-municipal-2018__2018-01-01_2018-12-31__20261127T172604Z-adc5b2.csv",
+      "sha256": "9af11d1d342ad2cb632cdc004cca7cbf62ae20026c52254c352eec8cdb1babd5",
+      "url": "https://nube.agricultura.gob.mx/index.php?view=10AE434F-A2158368-A120BC5A-EDF4AFAA&ANIO=2018",
+      "bytes": 5863477
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/siap/2019/01/siap__cierre-agricola-municipal-2019__2019-01-01_2019-12-31__20261127T172604Z-adc5b2.csv",
+      "sha256": "f6a01472287c65bc50d237d7edcbaf4400c4439d3c3389f93bd40bf8c74fbf98",
+      "url": "https://nube.agricultura.gob.mx/index.php?view=10AE434F-A2158368-A120BC5A-EDF4AFAA&ANIO=2019",
+      "bytes": 5911711
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/siap/2020/01/siap__cierre-agricola-municipal-2020__2020-01-01_2020-12-31__20261127T172604Z-adc5b2.csv",
+      "sha256": "ebf3f12a5ec4fa5a65d2f0d87158da0528280c51b6035e6bc1eb5e96cf4c4304",
+      "url": "https://nube.agricultura.gob.mx/index.php?view=10AE434F-A2158368-A120BC5A-EDF4AFAA&ANIO=2020",
+      "bytes": 4635574
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/siap/2021/01/siap__cierre-agricola-municipal-2021__2021-01-01_2021-12-31__20261127T172604Z-adc5b2.csv",
+      "sha256": "1f03b2f405c18ea00b63766f9732c7ed2f944b589e815ba6492c723e9b2cb65b",
+      "url": "https://nube.agricultura.gob.mx/index.php?view=10AE434F-A2158368-A120BC5A-EDF4AFAA&ANIO=2021",
+      "bytes": 4649328
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/siap/2022/01/siap__cierre-agricola-municipal-2022__2022-01-01_2022-12-31__20261127T172604Z-adc5b2.csv",
+      "sha256": "745f5189592446aa4348ffeba2780fd858f7071aef8dfd338414abbf2bc46162",
+      "url": "https://nube.agricultura.gob.mx/index.php?view=10AE434F-A2158368-A120BC5A-EDF4AFAA&ANIO=2022",
+      "bytes": 6032570
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/siap/2023/01/siap__cierre-agricola-municipal-2023__2023-01-01_2023-12-31__20261127T172604Z-adc5b2.csv",
+      "sha256": "30b3e90714d646821a6320645681b18e8e8fdbba8b88f59d4b5904b23acf4bf6",
+      "url": "https://nube.agricultura.gob.mx/index.php?view=10AE434F-A2158368-A120BC5A-EDF4AFAA&ANIO=2023",
+      "bytes": 6678816
+    }
+  ],
+  "errores": [],
+  "parametros": {
+    "anios": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023
+    ]
+  },
+  "esquema": "tdl-manifest/1",
+  "archivos_generados": 8
+}

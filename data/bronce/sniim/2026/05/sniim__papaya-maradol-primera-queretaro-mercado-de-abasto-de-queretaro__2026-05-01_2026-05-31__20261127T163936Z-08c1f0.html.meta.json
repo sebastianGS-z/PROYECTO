@@ -1,0 +1,39 @@
+{
+  "esquema": "tdl-bronce-meta/1",
+  "contenido_original": {
+    "archivo": "sniim__papaya-maradol-primera-queretaro-mercado-de-abasto-de-queretaro__2026-05-01_2026-05-31__20261127T163936Z-08c1f0.html",
+    "descripcion": "Bytes tal como los entregó la fuente; no se modifican."
+  },
+  "metadatos_captura": {
+    "fuente": "sniim",
+    "fuente_url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F05%2F2026&fechaFinal=31%2F05%2F2026&ProductoId=609&OrigenId=-1&Origen=Todos&DestinoId=220&Destino=Quer%C3%A9taro%3A+Mercado+de+Abasto+de+Quer%C3%A9taro&PreciosPorId=1&RegistrosPorPagina=500",
+    "fecha_captura": "2026-11-27T16:42:47Z",
+    "identificador_ejecucion": "20261127T163936Z-08c1f0",
+    "formato_original": "html",
+    "sha256": "78a41d27e537f30cce0797ba703d502d6c8d68480bdce1d8b0ff6340e9abbb46",
+    "bytes": 24646,
+    "http_status": 200,
+    "registros_detectados": 19,
+    "estado_captura": "ok",
+    "advertencias": [],
+    "colision_nombre": false,
+    "etiqueta": "Papaya Maradol - Primera__Querétaro: Mercado de Abasto de Querétaro",
+    "producto": "Papaya Maradol - Primera",
+    "producto_id": "609",
+    "mercado": "Querétaro: Mercado de Abasto de Querétaro",
+    "mercado_id": "220",
+    "fecha_ref_inicio": "2026-05-01",
+    "fecha_ref_fin": "2026-05-31",
+    "parametros": {
+      "fechaInicio": "01/05/2026",
+      "fechaFinal": "31/05/2026",
+      "ProductoId": "609",
+      "OrigenId": "-1",
+      "Origen": "Todos",
+      "DestinoId": "220",
+      "Destino": "Querétaro: Mercado de Abasto de Querétaro",
+      "PreciosPorId": "1",
+      "RegistrosPorPagina": "500"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "esquema": "tdl-bronce-meta/1",
+  "contenido_original": {
+    "archivo": "sniim__limon-c-semilla-5-primera-veracruz-mercado-malibran__2026-04-01_2026-04-30__20261127T163300Z-b2933e.html",
+    "descripcion": "Bytes tal como los entregó la fuente; no se modifican."
+  },
+  "metadatos_captura": {
+    "fuente": "sniim",
+    "fuente_url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F04%2F2026&fechaFinal=30%2F04%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=306&Destino=Veracruz%3A+Mercado+Malibr%C3%A1n&PreciosPorId=1&RegistrosPorPagina=500",
+    "fecha_captura": "2026-11-27T16:38:43Z",
+    "identificador_ejecucion": "20261127T163300Z-b2933e",
+    "formato_original": "html",
+    "sha256": "5257a204a719399b4aeb5d370c16b4f54a97ed177636fb2213554d2caba1b49d",
+    "bytes": 9415,
+    "http_status": 200,
+    "registros_detectados": 0,
+    "estado_captura": "sin_resultados",
+    "advertencias": [],
+    "colision_nombre": false,
+    "etiqueta": "Limón c/semilla # 5 - Primera__Veracruz: Mercado Malibrán",
+    "producto": "Limón c/semilla # 5 - Primera",
+    "producto_id": "421",
+    "mercado": "Veracruz: Mercado Malibrán",
+    "mercado_id": "306",
+    "fecha_ref_inicio": "2026-04-01",
+    "fecha_ref_fin": "2026-04-30",
+    "parametros": {
+      "fechaInicio": "01/04/2026",
+      "fechaFinal": "30/04/2026",
+      "ProductoId": "421",
+      "OrigenId": "-1",
+      "Origen": "Todos",
+      "DestinoId": "306",
+      "Destino": "Veracruz: Mercado Malibrán",
+      "PreciosPorId": "1",
+      "RegistrosPorPagina": "500"
+    }
+  }
+}

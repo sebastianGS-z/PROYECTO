@@ -2,7 +2,7 @@
   "regla": "No se imputan precios ni precipitación. MAR/MCAR/MNAR no se prueban solo con valores observados; se reportan asociaciones descriptivas.",
   "variables": {
     "precio_min": {
-      "n_aplicable": 17224,
+      "n_aplicable": 24855,
       "faltantes": 0,
       "porcentaje": 0.0,
       "mecanismo": "sin_faltantes",
@@ -27,16 +27,28 @@
           "tamarindo": 0.0
         },
         "mercado": {
+          "10": 0.0,
           "100": 0.0,
+          "101": 0.0,
           "140": 0.0,
+          "141": 0.0,
           "160": 0.0,
+          "190": 0.0,
+          "20": 0.0,
+          "220": 0.0,
+          "240": 0.0,
+          "260": 0.0,
+          "261": 0.0,
+          "320": 0.0,
+          "33": 0.0,
+          "50": 0.0,
           "80": 0.0
         }
       },
       "decision_imputacion": "no_imputar: una cotización ausente no se deduce de las restantes"
     },
     "precio_max": {
-      "n_aplicable": 17224,
+      "n_aplicable": 24855,
       "faltantes": 0,
       "porcentaje": 0.0,
       "mecanismo": "sin_faltantes",
@@ -61,16 +73,28 @@
           "tamarindo": 0.0
         },
         "mercado": {
+          "10": 0.0,
           "100": 0.0,
+          "101": 0.0,
           "140": 0.0,
+          "141": 0.0,
           "160": 0.0,
+          "190": 0.0,
+          "20": 0.0,
+          "220": 0.0,
+          "240": 0.0,
+          "260": 0.0,
+          "261": 0.0,
+          "320": 0.0,
+          "33": 0.0,
+          "50": 0.0,
           "80": 0.0
         }
       },
       "decision_imputacion": "no_imputar: una cotización ausente no se deduce de las restantes"
     },
     "precio_frecuente": {
-      "n_aplicable": 17224,
+      "n_aplicable": 24855,
       "faltantes": 0,
       "porcentaje": 0.0,
       "mecanismo": "sin_faltantes",
@@ -95,22 +119,34 @@
           "tamarindo": 0.0
         },
         "mercado": {
+          "10": 0.0,
           "100": 0.0,
+          "101": 0.0,
           "140": 0.0,
+          "141": 0.0,
           "160": 0.0,
+          "190": 0.0,
+          "20": 0.0,
+          "220": 0.0,
+          "240": 0.0,
+          "260": 0.0,
+          "261": 0.0,
+          "320": 0.0,
+          "33": 0.0,
+          "50": 0.0,
           "80": 0.0
         }
       },
       "decision_imputacion": "no_imputar: una cotización ausente no se deduce de las restantes"
     },
     "precio_min_kg": {
-      "n_aplicable": 17224,
+      "n_aplicable": 24855,
       "faltantes": 53,
-      "porcentaje": 0.31,
+      "porcentaje": 0.21,
       "mecanismo": "MAR_compatible_asociacion_con_variables_observadas",
       "tasas_por_grupo": {
         "tipo_registro": {
-          "precio": 0.0031
+          "precio": 0.0021
         },
         "cultivo": {
           "aguacate_hass": 0.0,
@@ -129,22 +165,34 @@
           "tamarindo": 0.0
         },
         "mercado": {
+          "10": 0.0,
           "100": 0.0,
+          "101": 0.0,
           "140": 0.0025,
+          "141": 0.0,
           "160": 0.1111,
+          "190": 0.0,
+          "20": 0.0,
+          "220": 0.0,
+          "240": 0.0,
+          "260": 0.0,
+          "261": 0.0,
+          "320": 0.0,
+          "33": 0.0,
+          "50": 0.0,
           "80": 0.0137
         }
       },
       "decision_imputacion": "no_imputar: una cotización ausente no se deduce de las restantes"
     },
     "precio_max_kg": {
-      "n_aplicable": 17224,
+      "n_aplicable": 24855,
       "faltantes": 53,
-      "porcentaje": 0.31,
+      "porcentaje": 0.21,
       "mecanismo": "MAR_compatible_asociacion_con_variables_observadas",
       "tasas_por_grupo": {
         "tipo_registro": {
-          "precio": 0.0031
+          "precio": 0.0021
         },
         "cultivo": {
           "aguacate_hass": 0.0,
@@ -163,22 +211,34 @@
           "tamarindo": 0.0
         },
         "mercado": {
+          "10": 0.0,
           "100": 0.0,
+          "101": 0.0,
           "140": 0.0025,
+          "141": 0.0,
           "160": 0.1111,
+          "190": 0.0,
+          "20": 0.0,
+          "220": 0.0,
+          "240": 0.0,
+          "260": 0.0,
+          "261": 0.0,
+          "320": 0.0,
+          "33": 0.0,
+          "50": 0.0,
           "80": 0.0137
         }
       },
       "decision_imputacion": "no_imputar: una cotización ausente no se deduce de las restantes"
     },
     "precio_frecuente_kg": {
-      "n_aplicable": 17224,
+      "n_aplicable": 24855,
       "faltantes": 53,
-      "porcentaje": 0.31,
+      "porcentaje": 0.21,
       "mecanismo": "MAR_compatible_asociacion_con_variables_observadas",
       "tasas_por_grupo": {
         "tipo_registro": {
-          "precio": 0.0031
+          "precio": 0.0021
         },
         "cultivo": {
           "aguacate_hass": 0.0,
@@ -197,22 +257,34 @@
           "tamarindo": 0.0
         },
         "mercado": {
+          "10": 0.0,
           "100": 0.0,
+          "101": 0.0,
           "140": 0.0025,
+          "141": 0.0,
           "160": 0.1111,
+          "190": 0.0,
+          "20": 0.0,
+          "220": 0.0,
+          "240": 0.0,
+          "260": 0.0,
+          "261": 0.0,
+          "320": 0.0,
+          "33": 0.0,
+          "50": 0.0,
           "80": 0.0137
         }
       },
       "decision_imputacion": "no_imputar: una cotización ausente no se deduce de las restantes"
     },
     "tavg_c": {
-      "n_aplicable": 1113,
-      "faltantes": 247,
-      "porcentaje": 22.19,
+      "n_aplicable": 1122,
+      "faltantes": 254,
+      "porcentaje": 22.64,
       "mecanismo": "MAR_compatible_asociacion_con_variables_observadas",
       "tasas_por_grupo": {
         "estacion": {
-          "MXM00076654": 0.2219
+          "MXM00076654": 0.2264
         },
         "mes": {
           "1": 0.3763,
@@ -225,20 +297,20 @@
           "8": 0.2151,
           "9": 0.1667,
           "10": 0.1613,
-          "11": 0.1963,
+          "11": 0.2414,
           "12": 0.3441
         }
       },
       "decision_imputacion": "solo feature de modelado: interpolación lineal interior de hasta 2 días, con indicador; nunca sobrescribe el valor original"
     },
     "tmax_c": {
-      "n_aplicable": 1113,
-      "faltantes": 445,
-      "porcentaje": 39.98,
+      "n_aplicable": 1122,
+      "faltantes": 452,
+      "porcentaje": 40.29,
       "mecanismo": "MAR_compatible_asociacion_con_variables_observadas",
       "tasas_por_grupo": {
         "estacion": {
-          "MXM00076654": 0.3998
+          "MXM00076654": 0.4029
         },
         "mes": {
           "1": 0.4946,
@@ -251,20 +323,20 @@
           "8": 0.4839,
           "9": 0.4333,
           "10": 0.3226,
-          "11": 0.4486,
+          "11": 0.4741,
           "12": 0.5269
         }
       },
       "decision_imputacion": "solo feature de modelado: interpolación lineal interior de hasta 2 días, con indicador; nunca sobrescribe el valor original"
     },
     "tmin_c": {
-      "n_aplicable": 1113,
-      "faltantes": 445,
-      "porcentaje": 39.98,
+      "n_aplicable": 1122,
+      "faltantes": 452,
+      "porcentaje": 40.29,
       "mecanismo": "MAR_compatible_asociacion_con_variables_observadas",
       "tasas_por_grupo": {
         "estacion": {
-          "MXM00076654": 0.3998
+          "MXM00076654": 0.4029
         },
         "mes": {
           "1": 0.4946,
@@ -277,20 +349,20 @@
           "8": 0.4839,
           "9": 0.4333,
           "10": 0.3226,
-          "11": 0.4486,
+          "11": 0.4741,
           "12": 0.5269
         }
       },
       "decision_imputacion": "solo feature de modelado: interpolación lineal interior de hasta 2 días, con indicador; nunca sobrescribe el valor original"
     },
     "prcp_mm": {
-      "n_aplicable": 1113,
+      "n_aplicable": 1122,
       "faltantes": 698,
-      "porcentaje": 62.71,
+      "porcentaje": 62.21,
       "mecanismo": "MAR_compatible_asociacion_con_variables_observadas",
       "tasas_por_grupo": {
         "estacion": {
-          "MXM00076654": 0.6271
+          "MXM00076654": 0.6221
         },
         "mes": {
           "1": 0.6667,
@@ -303,7 +375,7 @@
           "8": 0.5699,
           "9": 0.5111,
           "10": 0.4409,
-          "11": 0.6729,
+          "11": 0.6207,
           "12": 0.3656
         }
       },
@@ -314,9 +386,9 @@
     "inicio_calendario_esperado": "2023-11-01",
     "fin_calendario_esperado": "2026-11-26",
     "inicio_ultima_serie_observada": "2023-11-01",
-    "fin_ultima_serie_observada": "2026-10-31",
-    "dias_calendario_esperados": 1113,
-    "dias_con_algun_dato": 914,
+    "fin_ultima_serie_observada": "2026-11-10",
+    "dias_calendario_esperados": 1122,
+    "dias_con_algun_dato": 923,
     "dias_sin_registro_util": 199,
     "nota": "Rango derivado de fechas válidas. No incluye posibles faltantes anteriores o posteriores al rango observado."
   }

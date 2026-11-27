@@ -25,9 +25,13 @@ def _sha(path: Path) -> str:
     return h.hexdigest()
 
 
-def integrar(siap: Path, marco: Path | None = None) -> dict:
+def _colima_por_anio(siap: Path) -> pd.DataFrame:
+    """Lee un cierre anual SIAP original y devuelve el agregado municipal de Colima con su linaje."""
     source_sha = _sha(siap)
     df = pd.read_csv(siap, encoding="cp1252", low_memory=False)
+    # Los cierres 2016–2020 nombran la columna "Nomcultivo Sin Um"; se normaliza al leer (Bronce no cambia).
+    if "Nomcultivo" not in df.columns and "Nomcultivo Sin Um" in df.columns:
+        df = df.rename(columns={"Nomcultivo Sin Um": "Nomcultivo"})
     required = {"Anio", "Idestado", "Nomestado", "Idmunicipio", "Nommunicipio",
                 "Nomunidad", "Nomcultivo", "Sembrada", "Cosechada", "Volumenproduccion",
                 "Valorproduccion"}
@@ -36,7 +40,6 @@ def integrar(siap: Path, marco: Path | None = None) -> dict:
     df = df[(pd.to_numeric(df.Idestado, errors="coerce") == 6) & df.Nomestado.eq("Colima")].copy()
     if df.empty:
         raise ValueError("No se localizaron registros municipales del estado de Colima")
-    units = sorted(df.Nomunidad.dropna().astype(str).unique())
     df["municipio_cvegeo"] = "06" + pd.to_numeric(df.Idmunicipio, errors="raise").astype(int).astype(str).str.zfill(3)
     numeric = ["Sembrada", "Cosechada", "Volumenproduccion", "Valorproduccion"]
     for col in numeric:
@@ -55,6 +58,21 @@ def integrar(siap: Path, marco: Path | None = None) -> dict:
     grouped["archivo_bronce"] = siap.resolve().relative_to(ROOT).as_posix()
     grouped["sha256_bronce"] = source_sha
     grouped["limitacion"] = "Producción anual cosechada; no representa inventario actual, oferta exportable ni productor individual."
+    grouped.attrs["unidades"] = sorted(df.Nomunidad.dropna().astype(str).unique())
+    return grouped
+
+
+def integrar(archivos: list[Path] | Path, marco: Path | None = None) -> dict:
+    """Integra uno o varios cierres anuales; si hay varias capturas del mismo año gana la más reciente."""
+    archivos = [archivos] if isinstance(archivos, Path) else list(archivos)
+    por_anio: dict[int, pd.DataFrame] = {}
+    for siap in sorted(archivos, key=lambda p: p.name.rsplit("__", 1)[-1]):
+        g = _colima_por_anio(siap)
+        por_anio[int(g["Anio"].max())] = g
+    grouped = pd.concat(por_anio.values(), ignore_index=True).sort_values(["Anio", "municipio_cvegeo", "Nomcultivo"])
+    units = sorted({u for g in por_anio.values() for u in g.attrs.get("unidades", [])})
+    ultimo = grouped[grouped["Anio"].eq(grouped["Anio"].max())]
+    source_sha = str(ultimo["sha256_bronce"].iloc[0])
     public = ROOT / "data" / "publico"
     public.mkdir(parents=True, exist_ok=True)
     gold = ROOT / "data" / "oro"
@@ -73,7 +91,7 @@ def integrar(siap: Path, marco: Path | None = None) -> dict:
         raise ValueError("El marco INEGI no contiene geometría CRS, cvegeo y nomgeo")
     gdf = gdf.to_crs("EPSG:4326")
     gdf["cvegeo"] = gdf.cvegeo.astype(str).str.zfill(5)
-    gdf = gdf.merge(grouped, left_on="cvegeo", right_on="municipio_cvegeo", how="left")
+    gdf = gdf.merge(ultimo, left_on="cvegeo", right_on="municipio_cvegeo", how="left")  # el mapa muestra el último año
     # Una geometría por cultivo y municipio para que el cliente filtre la capa.
     cols = ["cvegeo", "nomgeo", "Anio", "Nomcultivo", "Nomunidad", "superficie_sembrada_ha",
             "superficie_cosechada_ha", "volumen_produccion", "valor_produccion_mxn",
@@ -81,13 +99,13 @@ def integrar(siap: Path, marco: Path | None = None) -> dict:
     geo = gdf[[c for c in cols if c in gdf.columns]].dropna(subset=["Nomcultivo"]).copy()
     geo_path = public / "produccion_municipal_colima.geojson"
     geo.to_file(geo_path, driver="GeoJSON")
-    report = {"fuente": "SIAP", "anio": int(grouped.Anio.max()), "registros_colima": len(grouped),
+    report = {"fuente": "SIAP", "anio": int(grouped.Anio.max()), "anios": sorted(int(a) for a in por_anio), "registros_colima": len(grouped),
               "cultivos": sorted(grouped.Nomcultivo.unique().tolist()), "unidades": units,
-              "archivo_bronce": grouped.archivo_bronce.iloc[0], "sha256_bronce": source_sha,
+              "archivo_bronce": str(ultimo.archivo_bronce.iloc[0]), "sha256_bronce": source_sha,
               "marco_geoestadistico": marco.resolve().relative_to(ROOT).as_posix(),
               "limitacion": "Los municipios señalan producción histórica anual; no se interpretan como disponibilidad en tiempo real ni coordenadas de predios."}
     (public / "reporte_produccion_siap.json").write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    return {"registros": len(grouped), "cultivos": len(report["cultivos"]), "municipios": int(geo.cvegeo.nunique()),
+    return {"anios": sorted(int(a) for a in por_anio), "registros": len(grouped), "cultivos": len(report["cultivos"]), "municipios": int(geo.cvegeo.nunique()),
             "csv": str(out), "geojson": str(geo_path), "sha256": source_sha}
 
 
@@ -98,7 +116,7 @@ def main(argv=None) -> int:
     files = [Path(a.archivo)] if a.archivo else [Path(x) for x in sorted(glob.glob(str(ROOT / "data/bronce/siap/**/*.csv"), recursive=True))]
     if not files:
         raise SystemExit("No existe captura SIAP en Bronce. Descargue el cierre municipal oficial y consérvelo allí antes de procesar.")
-    print(json.dumps(integrar(files[-1]), ensure_ascii=False, indent=2))
+    print(json.dumps(integrar(files), ensure_ascii=False, indent=2))
     return 0
 
 

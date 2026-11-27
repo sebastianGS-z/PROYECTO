@@ -1,0 +1,28 @@
+{
+  "esquema": "tdl-bronce-meta/1",
+  "contenido_original": {
+    "archivo": "siap__cierre-agricola-municipal-2019__2019-01-01_2019-12-31__20261127T172604Z-adc5b2.csv",
+    "descripcion": "Bytes tal como los entregó la fuente; no se modifican."
+  },
+  "metadatos_captura": {
+    "fuente": "siap",
+    "fuente_url": "https://nube.agricultura.gob.mx/index.php?view=10AE434F-A2158368-A120BC5A-EDF4AFAA&ANIO=2019",
+    "fecha_captura": "2026-11-27T17:26:26Z",
+    "identificador_ejecucion": "20261127T172604Z-adc5b2",
+    "formato_original": "csv",
+    "sha256": "f6a01472287c65bc50d237d7edcbaf4400c4439d3c3389f93bd40bf8c74fbf98",
+    "bytes": 5911711,
+    "http_status": 200,
+    "registros_detectados": 36695,
+    "estado_captura": "ok",
+    "advertencias": [],
+    "colision_nombre": false,
+    "etiqueta": "cierre-agricola-municipal-2019",
+    "fecha_ref_inicio": "2019-01-01",
+    "fecha_ref_fin": "2019-12-31",
+    "anio_estadistico": 2019,
+    "estado": "nacional (se filtra Colima en Oro)",
+    "unidad_geografica": "municipio",
+    "nota": "Descarga oficial SIAP DGSIAP, bytes originales sin modificar; producción histórica no representa inventario disponible."
+  }
+}

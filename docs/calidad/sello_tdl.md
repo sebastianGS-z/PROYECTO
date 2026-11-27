@@ -6,7 +6,7 @@ Fecha de la evidencia: 2026-11-27. Todas las cifras se recalculan en la CI en ca
 |---|---|---|---|---|
 | Disponibilidad medida de la captura | ≥ 95 % en los últimos 14 días | **100 %** (14 de 14 días, 14 – 27 nov) | [`calidad/reportes/fiabilidad.json`](../../calidad/reportes/fiabilidad.json), [fiabilidad_seguridad.md](fiabilidad_seguridad.md) | ✅ |
 | Completitud de la capa Oro (ISO/IEC 25012) | ≥ 95 % | **100 %** en columnas obligatorias (95.2 % en la tabla completa) | [`calidad/reportes/iso25012.json`](../../calidad/reportes/iso25012.json), [iso25012.md](iso25012.md) | ✅ |
-| Cobertura de pruebas automáticas | ≥ 60 % | **69.3 %** sobre todo el código (132 pruebas) | `pytest --cov`; la CI falla por debajo de 60 % | ✅ |
+| Cobertura de pruebas automáticas | ≥ 60 % | **71.0 %** sobre todo el código (149 pruebas) | `pytest --cov`; la CI falla por debajo de 60 % | ✅ |
 | Secretos expuestos en el repositorio | 0 | **0** | gitleaks (historial completo) en CI + escaneo local | ✅ (gitleaks se confirma en la primera ejecución de la CI en GitHub) |
 | Hallazgos críticos de auditoría abiertos | 0 | **0** en la auditoría interna | [cierre_hallazgos.md](auditoria/cierre_hallazgos.md) | ⚠️ Falta incorporar los hallazgos de la auditoría cruzada externa |
 | Reproducibilidad | Un tercero clona y obtiene los mismos resultados | Clon limpio: Bronce íntegro y los 5 CSV de Plata/Oro con el mismo SHA-256 | [procedimiento](#reproducibilidad) | ✅ (falta la prueba por una persona ajena al equipo) |

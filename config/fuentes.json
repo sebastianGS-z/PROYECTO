@@ -11,6 +11,12 @@
         "busqueda": "Limón"
       },
       {
+        "clave": "limon_c5",
+        "busqueda": "Limón c/semilla # 5",
+        "_nota": "Solo para capturas dirigidas a plazas destino; el cultivo se normaliza como 'limon'.",
+        "solo_dirigido": true
+      },
+      {
         "clave": "papaya",
         "busqueda": "Papaya"
       },
@@ -99,7 +105,85 @@
         "etiqueta_formulario": "Nayarit: Mercado de abasto 'Adolfo López Mateos' de Tepic"
       }
     ],
-    "precios_por": "presentacion"
+    "precios_por": "presentacion",
+    "_nota_mercados_destino_colima": "Plazas donde el catálogo SNIIM del 2026-11-25 mostró limón, papaya o plátano de origen Colima. Solo se consultan si se piden explícitamente (--mercados); no forman parte de la captura diaria por producto.",
+    "mercados_destino_colima": [
+      {
+        "clave": "aguascalientes",
+        "etiqueta_formulario": "Aguascalientes: Centro Comercial Agropecuario de Aguascalientes",
+        "mercado_id_formulario": "10"
+      },
+      {
+        "clave": "la_paz",
+        "etiqueta_formulario": "Baja California Sur: Unión de Comerciantes de La Paz",
+        "mercado_id_formulario": "20"
+      },
+      {
+        "clave": "tijuana",
+        "etiqueta_formulario": "Baja California : Central de Abasto INDIA, Tijuana",
+        "mercado_id_formulario": "33"
+      },
+      {
+        "clave": "torreon",
+        "etiqueta_formulario": "Coahuila: Central de Abasto de La Laguna, Torreón",
+        "mercado_id_formulario": "50"
+      },
+      {
+        "clave": "chihuahua",
+        "etiqueta_formulario": "Chihuahua: Central de Abasto de Chihuahua",
+        "mercado_id_formulario": "61"
+      },
+      {
+        "clave": "cd_juarez",
+        "etiqueta_formulario": "Chihuahua: Mercado de Abasto de Cd. Juárez",
+        "mercado_id_formulario": "63"
+      },
+      {
+        "clave": "gomez_palacio",
+        "etiqueta_formulario": "Durango: Centro de Distribución y Abasto de Gómez Palacio",
+        "mercado_id_formulario": "101"
+      },
+      {
+        "clave": "monterrey",
+        "etiqueta_formulario": "Nuevo León: Mercado de Abasto \"Estrella\" de San Nicolás de los Garza",
+        "mercado_id_formulario": "190"
+      },
+      {
+        "clave": "queretaro",
+        "etiqueta_formulario": "Querétaro: Mercado de Abasto de Querétaro",
+        "mercado_id_formulario": "220"
+      },
+      {
+        "clave": "san_luis_potosi",
+        "etiqueta_formulario": "San Luis Potosí: Centro de Abasto de San Luis Potosí",
+        "mercado_id_formulario": "240"
+      },
+      {
+        "clave": "hermosillo",
+        "etiqueta_formulario": "Sonora: Mercado de Abasto \"Francisco I. Madero\" de Hermosillo",
+        "mercado_id_formulario": "260"
+      },
+      {
+        "clave": "cd_obregon",
+        "etiqueta_formulario": "Sonora: Central de Abasto de Cd. Obregón",
+        "mercado_id_formulario": "261"
+      },
+      {
+        "clave": "villahermosa",
+        "etiqueta_formulario": "Tabasco: Central de Abasto de Villahermosa",
+        "mercado_id_formulario": "270"
+      },
+      {
+        "clave": "veracruz",
+        "etiqueta_formulario": "Veracruz: Mercado Malibrán",
+        "mercado_id_formulario": "306"
+      },
+      {
+        "clave": "zacatecas",
+        "etiqueta_formulario": "Zacatecas: Mercado de Abasto de Zacatecas",
+        "mercado_id_formulario": "320"
+      }
+    ]
   },
   "noaa_ncei": {
     "dataset": "daily-summaries",

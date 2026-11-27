@@ -18,11 +18,11 @@ La ejecución con capturas Bronce locales produjo:
 - **865** observaciones mensuales públicas comparables por kilogramo, de **13 cultivos**, **13 orígenes reportados** y **4 plazas**: Colima, Guadalajara, Ciudad de México y Morelia. Entre los productos capturados están limón, papaya y plátano, además de mango Ataulfo/Manila, aguacate Hass, coco, tamarindo, guayaba, guanábana y variedades identificadas de sandía.
 - **3** precios de coco por pieza en octubre de 2026. Se muestran en su unidad reportada, aparte del análisis por kg; no se infiere peso por pieza ni se convierten a MXN/kg.
 - **Tres series pronosticables** de origen reportado Colima y 36 meses cerrados entre noviembre de 2023 y octubre de 2026: limón c/semilla #5 y papaya Maradol en Guadalajara, y tamarindo en los Centros de distribución de Colima. El mes actual (noviembre) se excluye por estar incompleto. El umbral de elegibilidad de 36 meses permite separar entrenamiento, selección y evaluación; no se amplía el pronóstico a variedades con cobertura incompleta.
-- **9 estimaciones** (3 meses por serie). Se elige el modelo con menor MAE en seis meses de selección y se mide el error reportado en otros seis meses holdout independientes. ARIMA(1,1,1) ganó para limón (MAE holdout 6.15 MXN/kg; MAPE 23.49 %); suavizamiento simple ganó para papaya (MAE 1.51; MAPE 8.89 %) y tamarindo (MAE 0.22; MAPE 0.53 %). Consulta los CSV para los errores exactos y todos los modelos evaluados.
+- **9 estimaciones** (3 meses por serie). Se elige el modelo con menor MAE en seis meses de selección y se mide el error reportado en otros seis meses holdout independientes. Desde el 2026-11-27 el ARIMA se reestima con orden elegido por Dickey-Fuller y AIC en cada punto de validación (antes era un ARIMA(1,1,1) fijo); los errores vigentes por serie y modelo están en `data/oro/metricas_backtest_colima.csv`.
 - **1 comparación pareada** para una misma variante/origen Colima entre plazas: tamarindo tiene 27 meses comunes entre Colima y Guadalajara. Es descriptiva y no basta por sí sola para recomendar una plaza. La vista también muestra pares de otros orígenes cuando coinciden meses, identifica el tamaño de muestra y advierte que menos de 12 meses no sustenta una recomendación.
 - El contexto climático procede de la estación de Manzanillo: 32 meses con observaciones, con el dato más reciente en octubre de 2026. No representa directamente las parcelas productoras ni las plazas mayoristas y no alimenta el pronóstico de precios.
 
-Las nuevas frutas y plazas agregan amplitud de consulta, pero solo tamarindo reunió 36 meses consecutivos con origen Colima en la plaza local. Mango Ataulfo y guayaba incorporan observaciones históricas, aunque no reúnen los criterios de elegibilidad por origen/continuidad para un pronóstico. Otras combinaciones nuevas solo tienen octubre de 2026. No se extrapola un pronóstico ni se rellenan meses ausentes. Los pronósticos son estimaciones puntuales académicas, sin intervalo predictivo validado ni garantía; no modelan flete, calidad, volumen, precio en parcela o causalidad climática.
+Las nuevas frutas y plazas agregan amplitud de consulta, pero solo tamarindo reunió 36 meses consecutivos con origen Colima en la plaza local. Mango Ataulfo y guayaba incorporan observaciones históricas, aunque no reúnen los criterios de elegibilidad por origen/continuidad para un pronóstico. Otras combinaciones nuevas solo tienen octubre de 2026. No se extrapola un pronóstico ni se rellenan meses ausentes. Cada pronóstico se publica con intervalos de 80 % y 95 % construidos con errores fuera de muestra (cobertura auditada en el holdout). No modelan flete, calidad ni volumen; el precio en parcela se reporta aparte con SIAP.
 
 ## Interfaz para clientes
 
@@ -63,3 +63,19 @@ python3 scripts/servir_tablero.py --port 8000
 La captura histórica consulta 36 meses por mes y mercado, conserva cada respuesta y su estado (con datos, sin resultados o fallida) en los manifiestos. El flujo también descarga NOAA para Manzanillo. Respeta el retraso, robots.txt y reintentos del extractor.
 
 La regeneración final reportó 18,963 registros Bronce parseados, 18,061 en Plata, cero en cuarentena, 895 filas Oro, tres series pronosticables y nueve estimaciones. La selección del modelo usa seis meses anteriores y la evaluación de error se reserva para los seis meses posteriores; sus fechas exactas se publican en el reporte por serie y en las predicciones de validación. La interfaz se revisó con tamarindo (MAE holdout y comparación pareada), mango (producción municipal y flujos internacionales) y una simulación de costos que señaló “No vender con estos costos” cuando el resultado neto era negativo. Los datos municipales SIAP y las tablas internacionales se regeneraron desde sus archivos Bronce.
+
+
+## Actualización 2026-11-27 · entregables E4
+
+| Entregable de la guía | Evidencia |
+|---|---|
+| Reporte de inteligencia (2 páginas) | [`tablero/inteligencia.html`](../../tablero/inteligencia.html) (imprimible a PDF) · [reporte_inteligencia.md](reporte_inteligencia.md) |
+| Respuestas a las preguntas del productor, con nivel de confianza | [`tablero/preguntas.html`](../../tablero/preguntas.html) · [preguntas_agricultor.md](preguntas_agricultor.md) |
+| Reporte técnico final | [reporte_tecnico.md](reporte_tecnico.md) |
+| Modelo de negocio | [modelo_negocio.md](modelo_negocio.md) |
+| Observatorio en línea | <https://sebastiangs-z.github.io/PROYECTO/> (se publica tras cada captura diaria) |
+| API de datos | `data/publico/api/v1/index.json` |
+| Demo en vivo | Actions → "Captura diaria TDL" → *Run workflow*: captura, puerta de calidad, pronóstico, reporte y publicación |
+| Relatoría final, pitch y video | **Pendiente del equipo** |
+
+Cambios de fondo en esta actualización: intervalos de predicción en todas las series; pronóstico de referencia de mercado para productos sin 36 meses de origen Colima (plátano); captura de 12 meses en 16 centrales destino para comparar plazas con pruebas de Wilcoxon / signos; margen del productor con SIAP; calendario de venta con prueba de Kruskal-Wallis (resultado: **no significativo** con 3 años, y así se comunica); captura climática con ventana de 30 días por el rezago de NOAA.

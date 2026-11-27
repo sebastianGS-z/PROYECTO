@@ -1,0 +1,39 @@
+{
+  "esquema": "tdl-bronce-meta/1",
+  "contenido_original": {
+    "archivo": "sniim__papaya-amarilla-primera-queretaro-mercado-de-abasto-de-queretaro__2026-04-01_2026-04-30__20261127T163936Z-08c1f0.html",
+    "descripcion": "Bytes tal como los entregó la fuente; no se modifican."
+  },
+  "metadatos_captura": {
+    "fuente": "sniim",
+    "fuente_url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F04%2F2026&fechaFinal=30%2F04%2F2026&ProductoId=620&OrigenId=-1&Origen=Todos&DestinoId=220&Destino=Quer%C3%A9taro%3A+Mercado+de+Abasto+de+Quer%C3%A9taro&PreciosPorId=1&RegistrosPorPagina=500",
+    "fecha_captura": "2026-11-27T16:40:19Z",
+    "identificador_ejecucion": "20261127T163936Z-08c1f0",
+    "formato_original": "html",
+    "sha256": "d89cefb947eba458c146b0d5ae4ccebf4e77dcdef876b0813c52cc867cae5e9d",
+    "bytes": 9435,
+    "http_status": 200,
+    "registros_detectados": 0,
+    "estado_captura": "sin_resultados",
+    "advertencias": [],
+    "colision_nombre": false,
+    "etiqueta": "Papaya Amarilla - Primera__Querétaro: Mercado de Abasto de Querétaro",
+    "producto": "Papaya Amarilla - Primera",
+    "producto_id": "620",
+    "mercado": "Querétaro: Mercado de Abasto de Querétaro",
+    "mercado_id": "220",
+    "fecha_ref_inicio": "2026-04-01",
+    "fecha_ref_fin": "2026-04-30",
+    "parametros": {
+      "fechaInicio": "01/04/2026",
+      "fechaFinal": "30/04/2026",
+      "ProductoId": "620",
+      "OrigenId": "-1",
+      "Origen": "Todos",
+      "DestinoId": "220",
+      "Destino": "Querétaro: Mercado de Abasto de Querétaro",
+      "PreciosPorId": "1",
+      "RegistrosPorPagina": "500"
+    }
+  }
+}

@@ -69,6 +69,22 @@ python main.py historica --incluir-mercados-opcionales  # añade Colima y Felipe
 Genera `data/bronce/sniim/manifests/cobertura_<run_id>.{json,csv}`: un periodo (mes) cuenta **solo** si la fuente devolvió registros reales. Los meses sin datos o fallidos se listan; la existencia de 36 archivos no equivale a 36 periodos.
 Datos sintéticos (solo pruebas): `python scripts/generar_sinteticos.py` → `data/sintetico/SINTETICO_*.csv`, nunca en `data/bronce`.
 
+## Sitio público y vistas
+
+Sitio: **<https://sebastiangs-z.github.io/PROYECTO/>** (se publica con GitHub Pages después de cada captura diaria).
+
+| Vista | Para quién | Qué muestra |
+|---|---|---|
+| [`tablero/inicio.html`](tablero/inicio.html) | Cliente | Precio, pronóstico con rango y confianza por producto; hallazgos; accesos |
+| [`tablero/preguntas.html`](tablero/preguntas.html) | Productor | 14 preguntas por producto respondidas con datos, nivel de confianza, qué hacer y calculadora de precio justo |
+| [`tablero/inteligencia.html`](tablero/inteligencia.html) | Cliente | Reporte imprimible: pronóstico, plazas, margen del productor, calendario, señales |
+| [`tablero/cliente.html`](tablero/cliente.html) | Comprador | Comparación de plazas, simulador de margen y flete, mapa SIAP, comercio exterior |
+| [`tablero/index.html`](tablero/index.html) | Analista | Serie, pronóstico con banda de 80 %, evaluación de modelos, calidad y linaje |
+| [`tablero/laboratorio.html`](tablero/laboratorio.html) | Docentes / analista | Resultados de E1–E3 |
+| [`tablero/admin.html`](tablero/admin.html) | Operador | Alertas, disponibilidad, estado por fuente, puerta de calidad, ISO/IEC 25012, salud de pronósticos, inventario de Bronce |
+
+Regenerar todo desde Bronce: `python main.py capas && python main.py observatorio && python -m calidad.metricas && python main.py inteligencia && python main.py reporte && python main.py preguntas && python main.py portal`. Fuentes históricas adicionales: `python main.py siap-captura --anios 2016 ... 2025` (cierres agrícolas SIAP) y `python main.py historica --inicio 2016-11-01 ...` (SNIIM).
+
 ## Mapa de evidencias por materia
 
 | Materia | Evidencia principal |

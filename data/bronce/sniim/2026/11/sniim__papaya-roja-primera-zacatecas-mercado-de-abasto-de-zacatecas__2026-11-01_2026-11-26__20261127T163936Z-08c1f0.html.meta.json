@@ -1,0 +1,39 @@
+{
+  "esquema": "tdl-bronce-meta/1",
+  "contenido_original": {
+    "archivo": "sniim__papaya-roja-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-11-01_2026-11-26__20261127T163936Z-08c1f0.html",
+    "descripcion": "Bytes tal como los entregó la fuente; no se modifican."
+  },
+  "metadatos_captura": {
+    "fuente": "sniim",
+    "fuente_url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F11%2F2026&fechaFinal=26%2F11%2F2026&ProductoId=623&OrigenId=-1&Origen=Todos&DestinoId=320&Destino=Zacatecas%3A+Mercado+de+Abasto+de+Zacatecas&PreciosPorId=1&RegistrosPorPagina=500",
+    "fecha_captura": "2026-11-27T16:45:43Z",
+    "identificador_ejecucion": "20261127T163936Z-08c1f0",
+    "formato_original": "html",
+    "sha256": "b1d0ca2ff3133fac93c7b958116b0e0f798159423cb148f6d0dc2bcc31485d4d",
+    "bytes": 9425,
+    "http_status": 200,
+    "registros_detectados": 0,
+    "estado_captura": "sin_resultados",
+    "advertencias": [],
+    "colision_nombre": false,
+    "etiqueta": "Papaya Roja - Primera__Zacatecas: Mercado de Abasto de Zacatecas",
+    "producto": "Papaya Roja - Primera",
+    "producto_id": "623",
+    "mercado": "Zacatecas: Mercado de Abasto de Zacatecas",
+    "mercado_id": "320",
+    "fecha_ref_inicio": "2026-11-01",
+    "fecha_ref_fin": "2026-11-26",
+    "parametros": {
+      "fechaInicio": "01/11/2026",
+      "fechaFinal": "26/11/2026",
+      "ProductoId": "623",
+      "OrigenId": "-1",
+      "Origen": "Todos",
+      "DestinoId": "320",
+      "Destino": "Zacatecas: Mercado de Abasto de Zacatecas",
+      "PreciosPorId": "1",
+      "RegistrosPorPagina": "500"
+    }
+  }
+}

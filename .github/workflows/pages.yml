@@ -1,0 +1,52 @@
+name: Publicar tablero (GitHub Pages)
+
+# Publica el observatorio como sitio estático: tablero, reporte de inteligencia, laboratorio,
+# datos públicos y API de solo lectura. Se actualiza después de cada captura diaria
+# (los commits de datos llevan [skip ci], por eso se usa workflow_run) y en cada push a main.
+# Requiere una sola vez: Settings → Pages → Source: "GitHub Actions".
+
+on:
+  push:
+    branches: [main]
+  workflow_run:
+    workflows: ["Captura diaria TDL"]
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main   # en workflow_run, tomar los datos recién publicados por la captura
+      - name: Armar el sitio
+        run: |
+          mkdir -p _site/data
+          cp -r tablero _site/tablero
+          cp -r data/publico _site/data/publico
+          cat > _site/index.html <<'HTML'
+          <!doctype html><html lang="es"><head><meta charset="utf-8">
+          <meta http-equiv="refresh" content="0; url=tablero/inicio.html">
+          <title>OAIC · Observatorio de Agro-Inteligencia Colimense</title></head>
+          <body><a href="tablero/inicio.html">Abrir el observatorio</a></body></html>
+          HTML
+          touch _site/.nojekyll
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deploy
+        uses: actions/deploy-pages@v4

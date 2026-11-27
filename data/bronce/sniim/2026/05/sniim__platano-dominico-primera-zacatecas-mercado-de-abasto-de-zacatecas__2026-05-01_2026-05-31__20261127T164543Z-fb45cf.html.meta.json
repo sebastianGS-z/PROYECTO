@@ -1,0 +1,39 @@
+{
+  "esquema": "tdl-bronce-meta/1",
+  "contenido_original": {
+    "archivo": "sniim__platano-dominico-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-05-01_2026-05-31__20261127T164543Z-fb45cf.html",
+    "descripcion": "Bytes tal como los entregó la fuente; no se modifican."
+  },
+  "metadatos_captura": {
+    "fuente": "sniim",
+    "fuente_url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F05%2F2026&fechaFinal=31%2F05%2F2026&ProductoId=666&OrigenId=-1&Origen=Todos&DestinoId=320&Destino=Zacatecas%3A+Mercado+de+Abasto+de+Zacatecas&PreciosPorId=1&RegistrosPorPagina=500",
+    "fecha_captura": "2026-11-27T16:52:26Z",
+    "identificador_ejecucion": "20261127T164543Z-fb45cf",
+    "formato_original": "html",
+    "sha256": "24ffefdbc7ef922864405b305282d1778f1f04290978ca56b566db4b5f04024a",
+    "bytes": 9425,
+    "http_status": 200,
+    "registros_detectados": 0,
+    "estado_captura": "sin_resultados",
+    "advertencias": [],
+    "colision_nombre": false,
+    "etiqueta": "Plátano Dominico - Primera__Zacatecas: Mercado de Abasto de Zacatecas",
+    "producto": "Plátano Dominico - Primera",
+    "producto_id": "666",
+    "mercado": "Zacatecas: Mercado de Abasto de Zacatecas",
+    "mercado_id": "320",
+    "fecha_ref_inicio": "2026-05-01",
+    "fecha_ref_fin": "2026-05-31",
+    "parametros": {
+      "fechaInicio": "01/05/2026",
+      "fechaFinal": "31/05/2026",
+      "ProductoId": "666",
+      "OrigenId": "-1",
+      "Origen": "Todos",
+      "DestinoId": "320",
+      "Destino": "Zacatecas: Mercado de Abasto de Zacatecas",
+      "PreciosPorId": "1",
+      "RegistrosPorPagina": "500"
+    }
+  }
+}

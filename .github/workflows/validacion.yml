@@ -76,6 +76,12 @@ jobs:
           python main.py comercio-intl --solo-procesar
       - name: Métricas de calidad (fiabilidad e ISO/IEC 25012)
         run: python -m calidad.metricas
+      - name: Inteligencia comercial, preguntas, reporte, API y portal (sin red)
+        run: |
+          python main.py inteligencia
+          python main.py reporte
+          python main.py preguntas
+          python main.py portal
       - name: Verificar artefactos del observatorio
         run: |
           test -s data/oro/panel_mensual.csv
@@ -86,6 +92,12 @@ jobs:
           test -s tablero/index.html
           test -s calidad/reportes/fiabilidad.json
           test -s calidad/reportes/iso25012.json
+          test -s tablero/inteligencia.html
+          test -s data/publico/api/v1/index.json
+          test -s data/publico/plazas_colima.csv
+          test -s tablero/preguntas.html
+          test -s tablero/inicio.html
+          test -s tablero/admin.html
       - name: Guardar reporte de cobertura
         if: always()
         uses: actions/upload-artifact@v4

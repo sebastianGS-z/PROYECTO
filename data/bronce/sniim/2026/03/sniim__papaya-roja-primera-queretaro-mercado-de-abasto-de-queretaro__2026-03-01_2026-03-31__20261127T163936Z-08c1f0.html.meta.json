@@ -1,0 +1,39 @@
+{
+  "esquema": "tdl-bronce-meta/1",
+  "contenido_original": {
+    "archivo": "sniim__papaya-roja-primera-queretaro-mercado-de-abasto-de-queretaro__2026-03-01_2026-03-31__20261127T163936Z-08c1f0.html",
+    "descripcion": "Bytes tal como los entregó la fuente; no se modifican."
+  },
+  "metadatos_captura": {
+    "fuente": "sniim",
+    "fuente_url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F03%2F2026&fechaFinal=31%2F03%2F2026&ProductoId=623&OrigenId=-1&Origen=Todos&DestinoId=220&Destino=Quer%C3%A9taro%3A+Mercado+de+Abasto+de+Quer%C3%A9taro&PreciosPorId=1&RegistrosPorPagina=500",
+    "fecha_captura": "2026-11-27T16:44:37Z",
+    "identificador_ejecucion": "20261127T163936Z-08c1f0",
+    "formato_original": "html",
+    "sha256": "7cf963cb4a1b299a2ac4b55be87bf52cdef3753bb0d9fb9f5642f2dc9ed8349b",
+    "bytes": 9435,
+    "http_status": 200,
+    "registros_detectados": 0,
+    "estado_captura": "sin_resultados",
+    "advertencias": [],
+    "colision_nombre": false,
+    "etiqueta": "Papaya Roja - Primera__Querétaro: Mercado de Abasto de Querétaro",
+    "producto": "Papaya Roja - Primera",
+    "producto_id": "623",
+    "mercado": "Querétaro: Mercado de Abasto de Querétaro",
+    "mercado_id": "220",
+    "fecha_ref_inicio": "2026-03-01",
+    "fecha_ref_fin": "2026-03-31",
+    "parametros": {
+      "fechaInicio": "01/03/2026",
+      "fechaFinal": "31/03/2026",
+      "ProductoId": "623",
+      "OrigenId": "-1",
+      "Origen": "Todos",
+      "DestinoId": "220",
+      "Destino": "Querétaro: Mercado de Abasto de Querétaro",
+      "PreciosPorId": "1",
+      "RegistrosPorPagina": "500"
+    }
+  }
+}

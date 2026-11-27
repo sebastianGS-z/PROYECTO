@@ -1,0 +1,3149 @@
+{
+  "run_id": "20261127T163300Z-b2933e",
+  "fuente": "sniim",
+  "modo": "historica",
+  "disparador": "local",
+  "inicio": "2026-11-27T16:33:00Z",
+  "fin": "2026-11-27T16:39:36Z",
+  "duracion_s": 396.33,
+  "estado": "exitosa",
+  "solicitudes": 171,
+  "registros": 3090,
+  "consultas": [
+    {
+      "paso": "catalogo_formulario",
+      "estado": "ok",
+      "registros": 0,
+      "archivo": "sniim__catalogo-formulario__2026-11-27_2026-11-27__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "guadalajara_felipe_angeles",
+      "inicio": "2025-11-01",
+      "fin": "2025-11-30",
+      "estado": "ok",
+      "registros": 19,
+      "archivo": "sniim__limon-c-semilla-5-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2025-11-01_2025-11-30__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "guadalajara_felipe_angeles",
+      "inicio": "2025-12-01",
+      "fin": "2025-12-31",
+      "estado": "ok",
+      "registros": 22,
+      "archivo": "sniim__limon-c-semilla-5-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2025-12-01_2025-12-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "guadalajara_felipe_angeles",
+      "inicio": "2026-01-01",
+      "fin": "2026-01-31",
+      "estado": "ok",
+      "registros": 21,
+      "archivo": "sniim__limon-c-semilla-5-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-01-01_2026-01-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "guadalajara_felipe_angeles",
+      "inicio": "2026-02-01",
+      "fin": "2026-02-28",
+      "estado": "ok",
+      "registros": 18,
+      "archivo": "sniim__limon-c-semilla-5-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-02-01_2026-02-28__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "guadalajara_felipe_angeles",
+      "inicio": "2026-03-01",
+      "fin": "2026-03-31",
+      "estado": "ok",
+      "registros": 21,
+      "archivo": "sniim__limon-c-semilla-5-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-03-01_2026-03-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "guadalajara_felipe_angeles",
+      "inicio": "2026-04-01",
+      "fin": "2026-04-30",
+      "estado": "ok",
+      "registros": 20,
+      "archivo": "sniim__limon-c-semilla-5-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-04-01_2026-04-30__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "guadalajara_felipe_angeles",
+      "inicio": "2026-05-01",
+      "fin": "2026-05-31",
+      "estado": "ok",
+      "registros": 19,
+      "archivo": "sniim__limon-c-semilla-5-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-05-01_2026-05-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "guadalajara_felipe_angeles",
+      "inicio": "2026-06-01",
+      "fin": "2026-06-30",
+      "estado": "ok",
+      "registros": 22,
+      "archivo": "sniim__limon-c-semilla-5-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-06-01_2026-06-30__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "guadalajara_felipe_angeles",
+      "inicio": "2026-07-01",
+      "fin": "2026-07-31",
+      "estado": "ok",
+      "registros": 23,
+      "archivo": "sniim__limon-c-semilla-5-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-07-01_2026-07-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "guadalajara_felipe_angeles",
+      "inicio": "2026-08-01",
+      "fin": "2026-08-31",
+      "estado": "ok",
+      "registros": 21,
+      "archivo": "sniim__limon-c-semilla-5-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-08-01_2026-08-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "guadalajara_felipe_angeles",
+      "inicio": "2026-09-01",
+      "fin": "2026-09-30",
+      "estado": "ok",
+      "registros": 21,
+      "archivo": "sniim__limon-c-semilla-5-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-09-01_2026-09-30__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "guadalajara_felipe_angeles",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "ok",
+      "registros": 22,
+      "archivo": "sniim__limon-c-semilla-5-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-10-01_2026-10-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "guadalajara_felipe_angeles",
+      "inicio": "2026-11-01",
+      "fin": "2026-11-26",
+      "estado": "ok",
+      "registros": 17,
+      "archivo": "sniim__limon-c-semilla-5-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-11-01_2026-11-26__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "aguascalientes",
+      "inicio": "2025-11-01",
+      "fin": "2025-11-30",
+      "estado": "ok",
+      "registros": 38,
+      "archivo": "sniim__limon-c-semilla-5-primera-aguascalientes-centro-comercial-agropecuario-de-aguascalientes__2025-11-01_2025-11-30__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "aguascalientes",
+      "inicio": "2025-12-01",
+      "fin": "2025-12-31",
+      "estado": "ok",
+      "registros": 44,
+      "archivo": "sniim__limon-c-semilla-5-primera-aguascalientes-centro-comercial-agropecuario-de-aguascalientes__2025-12-01_2025-12-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "aguascalientes",
+      "inicio": "2026-01-01",
+      "fin": "2026-01-31",
+      "estado": "ok",
+      "registros": 42,
+      "archivo": "sniim__limon-c-semilla-5-primera-aguascalientes-centro-comercial-agropecuario-de-aguascalientes__2026-01-01_2026-01-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "aguascalientes",
+      "inicio": "2026-02-01",
+      "fin": "2026-02-28",
+      "estado": "ok",
+      "registros": 38,
+      "archivo": "sniim__limon-c-semilla-5-primera-aguascalientes-centro-comercial-agropecuario-de-aguascalientes__2026-02-01_2026-02-28__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "aguascalientes",
+      "inicio": "2026-03-01",
+      "fin": "2026-03-31",
+      "estado": "ok",
+      "registros": 42,
+      "archivo": "sniim__limon-c-semilla-5-primera-aguascalientes-centro-comercial-agropecuario-de-aguascalientes__2026-03-01_2026-03-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "aguascalientes",
+      "inicio": "2026-04-01",
+      "fin": "2026-04-30",
+      "estado": "ok",
+      "registros": 40,
+      "archivo": "sniim__limon-c-semilla-5-primera-aguascalientes-centro-comercial-agropecuario-de-aguascalientes__2026-04-01_2026-04-30__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "aguascalientes",
+      "inicio": "2026-05-01",
+      "fin": "2026-05-31",
+      "estado": "ok",
+      "registros": 38,
+      "archivo": "sniim__limon-c-semilla-5-primera-aguascalientes-centro-comercial-agropecuario-de-aguascalientes__2026-05-01_2026-05-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "aguascalientes",
+      "inicio": "2026-06-01",
+      "fin": "2026-06-30",
+      "estado": "ok",
+      "registros": 44,
+      "archivo": "sniim__limon-c-semilla-5-primera-aguascalientes-centro-comercial-agropecuario-de-aguascalientes__2026-06-01_2026-06-30__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "aguascalientes",
+      "inicio": "2026-07-01",
+      "fin": "2026-07-31",
+      "estado": "ok",
+      "registros": 46,
+      "archivo": "sniim__limon-c-semilla-5-primera-aguascalientes-centro-comercial-agropecuario-de-aguascalientes__2026-07-01_2026-07-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "aguascalientes",
+      "inicio": "2026-08-01",
+      "fin": "2026-08-31",
+      "estado": "ok",
+      "registros": 42,
+      "archivo": "sniim__limon-c-semilla-5-primera-aguascalientes-centro-comercial-agropecuario-de-aguascalientes__2026-08-01_2026-08-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "aguascalientes",
+      "inicio": "2026-09-01",
+      "fin": "2026-09-30",
+      "estado": "ok",
+      "registros": 42,
+      "archivo": "sniim__limon-c-semilla-5-primera-aguascalientes-centro-comercial-agropecuario-de-aguascalientes__2026-09-01_2026-09-30__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "aguascalientes",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "ok",
+      "registros": 44,
+      "archivo": "sniim__limon-c-semilla-5-primera-aguascalientes-centro-comercial-agropecuario-de-aguascalientes__2026-10-01_2026-10-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "aguascalientes",
+      "inicio": "2026-11-01",
+      "fin": "2026-11-26",
+      "estado": "ok",
+      "registros": 34,
+      "archivo": "sniim__limon-c-semilla-5-primera-aguascalientes-centro-comercial-agropecuario-de-aguascalientes__2026-11-01_2026-11-26__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "torreon",
+      "inicio": "2025-11-01",
+      "fin": "2025-11-30",
+      "estado": "ok",
+      "registros": 38,
+      "archivo": "sniim__limon-c-semilla-5-primera-coahuila-central-de-abasto-de-la-laguna-torreon__2025-11-01_2025-11-30__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "torreon",
+      "inicio": "2025-12-01",
+      "fin": "2025-12-31",
+      "estado": "ok",
+      "registros": 44,
+      "archivo": "sniim__limon-c-semilla-5-primera-coahuila-central-de-abasto-de-la-laguna-torreon__2025-12-01_2025-12-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "torreon",
+      "inicio": "2026-01-01",
+      "fin": "2026-01-31",
+      "estado": "ok",
+      "registros": 40,
+      "archivo": "sniim__limon-c-semilla-5-primera-coahuila-central-de-abasto-de-la-laguna-torreon__2026-01-01_2026-01-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "torreon",
+      "inicio": "2026-02-01",
+      "fin": "2026-02-28",
+      "estado": "ok",
+      "registros": 36,
+      "archivo": "sniim__limon-c-semilla-5-primera-coahuila-central-de-abasto-de-la-laguna-torreon__2026-02-01_2026-02-28__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "torreon",
+      "inicio": "2026-03-01",
+      "fin": "2026-03-31",
+      "estado": "ok",
+      "registros": 42,
+      "archivo": "sniim__limon-c-semilla-5-primera-coahuila-central-de-abasto-de-la-laguna-torreon__2026-03-01_2026-03-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "torreon",
+      "inicio": "2026-04-01",
+      "fin": "2026-04-30",
+      "estado": "ok",
+      "registros": 40,
+      "archivo": "sniim__limon-c-semilla-5-primera-coahuila-central-de-abasto-de-la-laguna-torreon__2026-04-01_2026-04-30__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "torreon",
+      "inicio": "2026-05-01",
+      "fin": "2026-05-31",
+      "estado": "ok",
+      "registros": 38,
+      "archivo": "sniim__limon-c-semilla-5-primera-coahuila-central-de-abasto-de-la-laguna-torreon__2026-05-01_2026-05-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "torreon",
+      "inicio": "2026-06-01",
+      "fin": "2026-06-30",
+      "estado": "ok",
+      "registros": 44,
+      "archivo": "sniim__limon-c-semilla-5-primera-coahuila-central-de-abasto-de-la-laguna-torreon__2026-06-01_2026-06-30__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "torreon",
+      "inicio": "2026-07-01",
+      "fin": "2026-07-31",
+      "estado": "ok",
+      "registros": 46,
+      "archivo": "sniim__limon-c-semilla-5-primera-coahuila-central-de-abasto-de-la-laguna-torreon__2026-07-01_2026-07-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "torreon",
+      "inicio": "2026-08-01",
+      "fin": "2026-08-31",
+      "estado": "ok",
+      "registros": 42,
+      "archivo": "sniim__limon-c-semilla-5-primera-coahuila-central-de-abasto-de-la-laguna-torreon__2026-08-01_2026-08-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "torreon",
+      "inicio": "2026-09-01",
+      "fin": "2026-09-30",
+      "estado": "ok",
+      "registros": 42,
+      "archivo": "sniim__limon-c-semilla-5-primera-coahuila-central-de-abasto-de-la-laguna-torreon__2026-09-01_2026-09-30__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "torreon",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "ok",
+      "registros": 40,
+      "archivo": "sniim__limon-c-semilla-5-primera-coahuila-central-de-abasto-de-la-laguna-torreon__2026-10-01_2026-10-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "torreon",
+      "inicio": "2026-11-01",
+      "fin": "2026-11-26",
+      "estado": "ok",
+      "registros": 34,
+      "archivo": "sniim__limon-c-semilla-5-primera-coahuila-central-de-abasto-de-la-laguna-torreon__2026-11-01_2026-11-26__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "chihuahua",
+      "inicio": "2025-11-01",
+      "fin": "2025-11-30",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-5-primera-chihuahua-central-de-abasto-de-chihuahua__2025-11-01_2025-11-30__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "chihuahua",
+      "inicio": "2025-12-01",
+      "fin": "2025-12-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-5-primera-chihuahua-central-de-abasto-de-chihuahua__2025-12-01_2025-12-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "chihuahua",
+      "inicio": "2026-01-01",
+      "fin": "2026-01-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-5-primera-chihuahua-central-de-abasto-de-chihuahua__2026-01-01_2026-01-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "chihuahua",
+      "inicio": "2026-02-01",
+      "fin": "2026-02-28",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-5-primera-chihuahua-central-de-abasto-de-chihuahua__2026-02-01_2026-02-28__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "chihuahua",
+      "inicio": "2026-03-01",
+      "fin": "2026-03-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-5-primera-chihuahua-central-de-abasto-de-chihuahua__2026-03-01_2026-03-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "chihuahua",
+      "inicio": "2026-04-01",
+      "fin": "2026-04-30",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-5-primera-chihuahua-central-de-abasto-de-chihuahua__2026-04-01_2026-04-30__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "chihuahua",
+      "inicio": "2026-05-01",
+      "fin": "2026-05-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-5-primera-chihuahua-central-de-abasto-de-chihuahua__2026-05-01_2026-05-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "chihuahua",
+      "inicio": "2026-06-01",
+      "fin": "2026-06-30",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-5-primera-chihuahua-central-de-abasto-de-chihuahua__2026-06-01_2026-06-30__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "chihuahua",
+      "inicio": "2026-07-01",
+      "fin": "2026-07-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-5-primera-chihuahua-central-de-abasto-de-chihuahua__2026-07-01_2026-07-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "chihuahua",
+      "inicio": "2026-08-01",
+      "fin": "2026-08-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-5-primera-chihuahua-central-de-abasto-de-chihuahua__2026-08-01_2026-08-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "chihuahua",
+      "inicio": "2026-09-01",
+      "fin": "2026-09-30",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-5-primera-chihuahua-central-de-abasto-de-chihuahua__2026-09-01_2026-09-30__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "chihuahua",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-5-primera-chihuahua-central-de-abasto-de-chihuahua__2026-10-01_2026-10-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "chihuahua",
+      "inicio": "2026-11-01",
+      "fin": "2026-11-26",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-5-primera-chihuahua-central-de-abasto-de-chihuahua__2026-11-01_2026-11-26__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "cd_juarez",
+      "inicio": "2025-11-01",
+      "fin": "2025-11-30",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-5-primera-chihuahua-mercado-de-abasto-de-cd-juarez__2025-11-01_2025-11-30__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "cd_juarez",
+      "inicio": "2025-12-01",
+      "fin": "2025-12-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-5-primera-chihuahua-mercado-de-abasto-de-cd-juarez__2025-12-01_2025-12-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "cd_juarez",
+      "inicio": "2026-01-01",
+      "fin": "2026-01-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-5-primera-chihuahua-mercado-de-abasto-de-cd-juarez__2026-01-01_2026-01-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "cd_juarez",
+      "inicio": "2026-02-01",
+      "fin": "2026-02-28",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-5-primera-chihuahua-mercado-de-abasto-de-cd-juarez__2026-02-01_2026-02-28__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "cd_juarez",
+      "inicio": "2026-03-01",
+      "fin": "2026-03-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-5-primera-chihuahua-mercado-de-abasto-de-cd-juarez__2026-03-01_2026-03-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "cd_juarez",
+      "inicio": "2026-04-01",
+      "fin": "2026-04-30",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-5-primera-chihuahua-mercado-de-abasto-de-cd-juarez__2026-04-01_2026-04-30__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "cd_juarez",
+      "inicio": "2026-05-01",
+      "fin": "2026-05-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-5-primera-chihuahua-mercado-de-abasto-de-cd-juarez__2026-05-01_2026-05-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "cd_juarez",
+      "inicio": "2026-06-01",
+      "fin": "2026-06-30",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-5-primera-chihuahua-mercado-de-abasto-de-cd-juarez__2026-06-01_2026-06-30__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "cd_juarez",
+      "inicio": "2026-07-01",
+      "fin": "2026-07-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-5-primera-chihuahua-mercado-de-abasto-de-cd-juarez__2026-07-01_2026-07-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "cd_juarez",
+      "inicio": "2026-08-01",
+      "fin": "2026-08-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-5-primera-chihuahua-mercado-de-abasto-de-cd-juarez__2026-08-01_2026-08-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "cd_juarez",
+      "inicio": "2026-09-01",
+      "fin": "2026-09-30",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-5-primera-chihuahua-mercado-de-abasto-de-cd-juarez__2026-09-01_2026-09-30__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "cd_juarez",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-5-primera-chihuahua-mercado-de-abasto-de-cd-juarez__2026-10-01_2026-10-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "cd_juarez",
+      "inicio": "2026-11-01",
+      "fin": "2026-11-26",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-5-primera-chihuahua-mercado-de-abasto-de-cd-juarez__2026-11-01_2026-11-26__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "gomez_palacio",
+      "inicio": "2025-11-01",
+      "fin": "2025-11-30",
+      "estado": "ok",
+      "registros": 57,
+      "archivo": "sniim__limon-c-semilla-5-primera-durango-centro-de-distribucion-y-abasto-de-gomez-palacio__2025-11-01_2025-11-30__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "gomez_palacio",
+      "inicio": "2025-12-01",
+      "fin": "2025-12-31",
+      "estado": "ok",
+      "registros": 66,
+      "archivo": "sniim__limon-c-semilla-5-primera-durango-centro-de-distribucion-y-abasto-de-gomez-palacio__2025-12-01_2025-12-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "gomez_palacio",
+      "inicio": "2026-01-01",
+      "fin": "2026-01-31",
+      "estado": "ok",
+      "registros": 57,
+      "archivo": "sniim__limon-c-semilla-5-primera-durango-centro-de-distribucion-y-abasto-de-gomez-palacio__2026-01-01_2026-01-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "gomez_palacio",
+      "inicio": "2026-02-01",
+      "fin": "2026-02-28",
+      "estado": "ok",
+      "registros": 57,
+      "archivo": "sniim__limon-c-semilla-5-primera-durango-centro-de-distribucion-y-abasto-de-gomez-palacio__2026-02-01_2026-02-28__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "gomez_palacio",
+      "inicio": "2026-03-01",
+      "fin": "2026-03-31",
+      "estado": "ok",
+      "registros": 63,
+      "archivo": "sniim__limon-c-semilla-5-primera-durango-centro-de-distribucion-y-abasto-de-gomez-palacio__2026-03-01_2026-03-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "gomez_palacio",
+      "inicio": "2026-04-01",
+      "fin": "2026-04-30",
+      "estado": "ok",
+      "registros": 60,
+      "archivo": "sniim__limon-c-semilla-5-primera-durango-centro-de-distribucion-y-abasto-de-gomez-palacio__2026-04-01_2026-04-30__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "gomez_palacio",
+      "inicio": "2026-05-01",
+      "fin": "2026-05-31",
+      "estado": "ok",
+      "registros": 57,
+      "archivo": "sniim__limon-c-semilla-5-primera-durango-centro-de-distribucion-y-abasto-de-gomez-palacio__2026-05-01_2026-05-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "gomez_palacio",
+      "inicio": "2026-06-01",
+      "fin": "2026-06-30",
+      "estado": "ok",
+      "registros": 66,
+      "archivo": "sniim__limon-c-semilla-5-primera-durango-centro-de-distribucion-y-abasto-de-gomez-palacio__2026-06-01_2026-06-30__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "gomez_palacio",
+      "inicio": "2026-07-01",
+      "fin": "2026-07-31",
+      "estado": "ok",
+      "registros": 69,
+      "archivo": "sniim__limon-c-semilla-5-primera-durango-centro-de-distribucion-y-abasto-de-gomez-palacio__2026-07-01_2026-07-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "gomez_palacio",
+      "inicio": "2026-08-01",
+      "fin": "2026-08-31",
+      "estado": "ok",
+      "registros": 63,
+      "archivo": "sniim__limon-c-semilla-5-primera-durango-centro-de-distribucion-y-abasto-de-gomez-palacio__2026-08-01_2026-08-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "gomez_palacio",
+      "inicio": "2026-09-01",
+      "fin": "2026-09-30",
+      "estado": "ok",
+      "registros": 63,
+      "archivo": "sniim__limon-c-semilla-5-primera-durango-centro-de-distribucion-y-abasto-de-gomez-palacio__2026-09-01_2026-09-30__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "gomez_palacio",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "ok",
+      "registros": 66,
+      "archivo": "sniim__limon-c-semilla-5-primera-durango-centro-de-distribucion-y-abasto-de-gomez-palacio__2026-10-01_2026-10-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "gomez_palacio",
+      "inicio": "2026-11-01",
+      "fin": "2026-11-26",
+      "estado": "ok",
+      "registros": 51,
+      "archivo": "sniim__limon-c-semilla-5-primera-durango-centro-de-distribucion-y-abasto-de-gomez-palacio__2026-11-01_2026-11-26__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "monterrey",
+      "inicio": "2025-11-01",
+      "fin": "2025-11-30",
+      "estado": "ok",
+      "registros": 19,
+      "archivo": "sniim__limon-c-semilla-5-primera-nuevo-leon-mercado-de-abasto-estrella-de-san-nicolas-de-los-garz__2025-11-01_2025-11-30__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "monterrey",
+      "inicio": "2025-12-01",
+      "fin": "2025-12-31",
+      "estado": "ok",
+      "registros": 22,
+      "archivo": "sniim__limon-c-semilla-5-primera-nuevo-leon-mercado-de-abasto-estrella-de-san-nicolas-de-los-garz__2025-12-01_2025-12-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "monterrey",
+      "inicio": "2026-01-01",
+      "fin": "2026-01-31",
+      "estado": "ok",
+      "registros": 21,
+      "archivo": "sniim__limon-c-semilla-5-primera-nuevo-leon-mercado-de-abasto-estrella-de-san-nicolas-de-los-garz__2026-01-01_2026-01-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "monterrey",
+      "inicio": "2026-02-01",
+      "fin": "2026-02-28",
+      "estado": "ok",
+      "registros": 19,
+      "archivo": "sniim__limon-c-semilla-5-primera-nuevo-leon-mercado-de-abasto-estrella-de-san-nicolas-de-los-garz__2026-02-01_2026-02-28__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "monterrey",
+      "inicio": "2026-03-01",
+      "fin": "2026-03-31",
+      "estado": "ok",
+      "registros": 21,
+      "archivo": "sniim__limon-c-semilla-5-primera-nuevo-leon-mercado-de-abasto-estrella-de-san-nicolas-de-los-garz__2026-03-01_2026-03-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "monterrey",
+      "inicio": "2026-04-01",
+      "fin": "2026-04-30",
+      "estado": "ok",
+      "registros": 20,
+      "archivo": "sniim__limon-c-semilla-5-primera-nuevo-leon-mercado-de-abasto-estrella-de-san-nicolas-de-los-garz__2026-04-01_2026-04-30__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "monterrey",
+      "inicio": "2026-05-01",
+      "fin": "2026-05-31",
+      "estado": "ok",
+      "registros": 19,
+      "archivo": "sniim__limon-c-semilla-5-primera-nuevo-leon-mercado-de-abasto-estrella-de-san-nicolas-de-los-garz__2026-05-01_2026-05-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "monterrey",
+      "inicio": "2026-06-01",
+      "fin": "2026-06-30",
+      "estado": "ok",
+      "registros": 22,
+      "archivo": "sniim__limon-c-semilla-5-primera-nuevo-leon-mercado-de-abasto-estrella-de-san-nicolas-de-los-garz__2026-06-01_2026-06-30__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "monterrey",
+      "inicio": "2026-07-01",
+      "fin": "2026-07-31",
+      "estado": "ok",
+      "registros": 23,
+      "archivo": "sniim__limon-c-semilla-5-primera-nuevo-leon-mercado-de-abasto-estrella-de-san-nicolas-de-los-garz__2026-07-01_2026-07-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "monterrey",
+      "inicio": "2026-08-01",
+      "fin": "2026-08-31",
+      "estado": "ok",
+      "registros": 21,
+      "archivo": "sniim__limon-c-semilla-5-primera-nuevo-leon-mercado-de-abasto-estrella-de-san-nicolas-de-los-garz__2026-08-01_2026-08-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "monterrey",
+      "inicio": "2026-09-01",
+      "fin": "2026-09-30",
+      "estado": "ok",
+      "registros": 21,
+      "archivo": "sniim__limon-c-semilla-5-primera-nuevo-leon-mercado-de-abasto-estrella-de-san-nicolas-de-los-garz__2026-09-01_2026-09-30__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "monterrey",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "ok",
+      "registros": 21,
+      "archivo": "sniim__limon-c-semilla-5-primera-nuevo-leon-mercado-de-abasto-estrella-de-san-nicolas-de-los-garz__2026-10-01_2026-10-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "monterrey",
+      "inicio": "2026-11-01",
+      "fin": "2026-11-26",
+      "estado": "ok",
+      "registros": 17,
+      "archivo": "sniim__limon-c-semilla-5-primera-nuevo-leon-mercado-de-abasto-estrella-de-san-nicolas-de-los-garz__2026-11-01_2026-11-26__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "san_luis_potosi",
+      "inicio": "2025-11-01",
+      "fin": "2025-11-30",
+      "estado": "ok",
+      "registros": 19,
+      "archivo": "sniim__limon-c-semilla-5-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2025-11-01_2025-11-30__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "san_luis_potosi",
+      "inicio": "2025-12-01",
+      "fin": "2025-12-31",
+      "estado": "ok",
+      "registros": 22,
+      "archivo": "sniim__limon-c-semilla-5-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2025-12-01_2025-12-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "san_luis_potosi",
+      "inicio": "2026-01-01",
+      "fin": "2026-01-31",
+      "estado": "ok",
+      "registros": 21,
+      "archivo": "sniim__limon-c-semilla-5-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-01-01_2026-01-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "san_luis_potosi",
+      "inicio": "2026-02-01",
+      "fin": "2026-02-28",
+      "estado": "ok",
+      "registros": 19,
+      "archivo": "sniim__limon-c-semilla-5-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-02-01_2026-02-28__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "san_luis_potosi",
+      "inicio": "2026-03-01",
+      "fin": "2026-03-31",
+      "estado": "ok",
+      "registros": 21,
+      "archivo": "sniim__limon-c-semilla-5-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-03-01_2026-03-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "san_luis_potosi",
+      "inicio": "2026-04-01",
+      "fin": "2026-04-30",
+      "estado": "ok",
+      "registros": 20,
+      "archivo": "sniim__limon-c-semilla-5-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-04-01_2026-04-30__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "san_luis_potosi",
+      "inicio": "2026-05-01",
+      "fin": "2026-05-31",
+      "estado": "ok",
+      "registros": 19,
+      "archivo": "sniim__limon-c-semilla-5-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-05-01_2026-05-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "san_luis_potosi",
+      "inicio": "2026-06-01",
+      "fin": "2026-06-30",
+      "estado": "ok",
+      "registros": 22,
+      "archivo": "sniim__limon-c-semilla-5-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-06-01_2026-06-30__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "san_luis_potosi",
+      "inicio": "2026-07-01",
+      "fin": "2026-07-31",
+      "estado": "ok",
+      "registros": 23,
+      "archivo": "sniim__limon-c-semilla-5-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-07-01_2026-07-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "san_luis_potosi",
+      "inicio": "2026-08-01",
+      "fin": "2026-08-31",
+      "estado": "ok",
+      "registros": 21,
+      "archivo": "sniim__limon-c-semilla-5-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-08-01_2026-08-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "san_luis_potosi",
+      "inicio": "2026-09-01",
+      "fin": "2026-09-30",
+      "estado": "ok",
+      "registros": 21,
+      "archivo": "sniim__limon-c-semilla-5-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-09-01_2026-09-30__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "san_luis_potosi",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "ok",
+      "registros": 22,
+      "archivo": "sniim__limon-c-semilla-5-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-10-01_2026-10-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "san_luis_potosi",
+      "inicio": "2026-11-01",
+      "fin": "2026-11-26",
+      "estado": "ok",
+      "registros": 17,
+      "archivo": "sniim__limon-c-semilla-5-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-11-01_2026-11-26__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "hermosillo",
+      "inicio": "2025-11-01",
+      "fin": "2025-11-30",
+      "estado": "ok",
+      "registros": 19,
+      "archivo": "sniim__limon-c-semilla-5-primera-sonora-mercado-de-abasto-francisco-i-madero-de-hermosillo__2025-11-01_2025-11-30__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "hermosillo",
+      "inicio": "2025-12-01",
+      "fin": "2025-12-31",
+      "estado": "ok",
+      "registros": 22,
+      "archivo": "sniim__limon-c-semilla-5-primera-sonora-mercado-de-abasto-francisco-i-madero-de-hermosillo__2025-12-01_2025-12-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "hermosillo",
+      "inicio": "2026-01-01",
+      "fin": "2026-01-31",
+      "estado": "ok",
+      "registros": 21,
+      "archivo": "sniim__limon-c-semilla-5-primera-sonora-mercado-de-abasto-francisco-i-madero-de-hermosillo__2026-01-01_2026-01-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "hermosillo",
+      "inicio": "2026-02-01",
+      "fin": "2026-02-28",
+      "estado": "ok",
+      "registros": 19,
+      "archivo": "sniim__limon-c-semilla-5-primera-sonora-mercado-de-abasto-francisco-i-madero-de-hermosillo__2026-02-01_2026-02-28__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "hermosillo",
+      "inicio": "2026-03-01",
+      "fin": "2026-03-31",
+      "estado": "ok",
+      "registros": 21,
+      "archivo": "sniim__limon-c-semilla-5-primera-sonora-mercado-de-abasto-francisco-i-madero-de-hermosillo__2026-03-01_2026-03-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "hermosillo",
+      "inicio": "2026-04-01",
+      "fin": "2026-04-30",
+      "estado": "ok",
+      "registros": 20,
+      "archivo": "sniim__limon-c-semilla-5-primera-sonora-mercado-de-abasto-francisco-i-madero-de-hermosillo__2026-04-01_2026-04-30__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "hermosillo",
+      "inicio": "2026-05-01",
+      "fin": "2026-05-31",
+      "estado": "ok",
+      "registros": 19,
+      "archivo": "sniim__limon-c-semilla-5-primera-sonora-mercado-de-abasto-francisco-i-madero-de-hermosillo__2026-05-01_2026-05-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "hermosillo",
+      "inicio": "2026-06-01",
+      "fin": "2026-06-30",
+      "estado": "ok",
+      "registros": 22,
+      "archivo": "sniim__limon-c-semilla-5-primera-sonora-mercado-de-abasto-francisco-i-madero-de-hermosillo__2026-06-01_2026-06-30__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "hermosillo",
+      "inicio": "2026-07-01",
+      "fin": "2026-07-31",
+      "estado": "ok",
+      "registros": 23,
+      "archivo": "sniim__limon-c-semilla-5-primera-sonora-mercado-de-abasto-francisco-i-madero-de-hermosillo__2026-07-01_2026-07-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "hermosillo",
+      "inicio": "2026-08-01",
+      "fin": "2026-08-31",
+      "estado": "ok",
+      "registros": 21,
+      "archivo": "sniim__limon-c-semilla-5-primera-sonora-mercado-de-abasto-francisco-i-madero-de-hermosillo__2026-08-01_2026-08-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "hermosillo",
+      "inicio": "2026-09-01",
+      "fin": "2026-09-30",
+      "estado": "ok",
+      "registros": 20,
+      "archivo": "sniim__limon-c-semilla-5-primera-sonora-mercado-de-abasto-francisco-i-madero-de-hermosillo__2026-09-01_2026-09-30__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "hermosillo",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "ok",
+      "registros": 22,
+      "archivo": "sniim__limon-c-semilla-5-primera-sonora-mercado-de-abasto-francisco-i-madero-de-hermosillo__2026-10-01_2026-10-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "hermosillo",
+      "inicio": "2026-11-01",
+      "fin": "2026-11-26",
+      "estado": "ok",
+      "registros": 17,
+      "archivo": "sniim__limon-c-semilla-5-primera-sonora-mercado-de-abasto-francisco-i-madero-de-hermosillo__2026-11-01_2026-11-26__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "cd_obregon",
+      "inicio": "2025-11-01",
+      "fin": "2025-11-30",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-5-primera-sonora-central-de-abasto-de-cd-obregon__2025-11-01_2025-11-30__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "cd_obregon",
+      "inicio": "2025-12-01",
+      "fin": "2025-12-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-5-primera-sonora-central-de-abasto-de-cd-obregon__2025-12-01_2025-12-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "cd_obregon",
+      "inicio": "2026-01-01",
+      "fin": "2026-01-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-5-primera-sonora-central-de-abasto-de-cd-obregon__2026-01-01_2026-01-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "cd_obregon",
+      "inicio": "2026-02-01",
+      "fin": "2026-02-28",
+      "estado": "ok",
+      "registros": 19,
+      "archivo": "sniim__limon-c-semilla-5-primera-sonora-central-de-abasto-de-cd-obregon__2026-02-01_2026-02-28__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "cd_obregon",
+      "inicio": "2026-03-01",
+      "fin": "2026-03-31",
+      "estado": "ok",
+      "registros": 21,
+      "archivo": "sniim__limon-c-semilla-5-primera-sonora-central-de-abasto-de-cd-obregon__2026-03-01_2026-03-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "cd_obregon",
+      "inicio": "2026-04-01",
+      "fin": "2026-04-30",
+      "estado": "ok",
+      "registros": 20,
+      "archivo": "sniim__limon-c-semilla-5-primera-sonora-central-de-abasto-de-cd-obregon__2026-04-01_2026-04-30__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "cd_obregon",
+      "inicio": "2026-05-01",
+      "fin": "2026-05-31",
+      "estado": "ok",
+      "registros": 19,
+      "archivo": "sniim__limon-c-semilla-5-primera-sonora-central-de-abasto-de-cd-obregon__2026-05-01_2026-05-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "cd_obregon",
+      "inicio": "2026-06-01",
+      "fin": "2026-06-30",
+      "estado": "ok",
+      "registros": 22,
+      "archivo": "sniim__limon-c-semilla-5-primera-sonora-central-de-abasto-de-cd-obregon__2026-06-01_2026-06-30__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "cd_obregon",
+      "inicio": "2026-07-01",
+      "fin": "2026-07-31",
+      "estado": "ok",
+      "registros": 23,
+      "archivo": "sniim__limon-c-semilla-5-primera-sonora-central-de-abasto-de-cd-obregon__2026-07-01_2026-07-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "cd_obregon",
+      "inicio": "2026-08-01",
+      "fin": "2026-08-31",
+      "estado": "ok",
+      "registros": 21,
+      "archivo": "sniim__limon-c-semilla-5-primera-sonora-central-de-abasto-de-cd-obregon__2026-08-01_2026-08-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "cd_obregon",
+      "inicio": "2026-09-01",
+      "fin": "2026-09-30",
+      "estado": "ok",
+      "registros": 21,
+      "archivo": "sniim__limon-c-semilla-5-primera-sonora-central-de-abasto-de-cd-obregon__2026-09-01_2026-09-30__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "cd_obregon",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "ok",
+      "registros": 4,
+      "archivo": "sniim__limon-c-semilla-5-primera-sonora-central-de-abasto-de-cd-obregon__2026-10-01_2026-10-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "cd_obregon",
+      "inicio": "2026-11-01",
+      "fin": "2026-11-26",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-5-primera-sonora-central-de-abasto-de-cd-obregon__2026-11-01_2026-11-26__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "villahermosa",
+      "inicio": "2025-11-01",
+      "fin": "2025-11-30",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-5-primera-tabasco-central-de-abasto-de-villahermosa__2025-11-01_2025-11-30__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "villahermosa",
+      "inicio": "2025-12-01",
+      "fin": "2025-12-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-5-primera-tabasco-central-de-abasto-de-villahermosa__2025-12-01_2025-12-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "villahermosa",
+      "inicio": "2026-01-01",
+      "fin": "2026-01-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-5-primera-tabasco-central-de-abasto-de-villahermosa__2026-01-01_2026-01-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "villahermosa",
+      "inicio": "2026-02-01",
+      "fin": "2026-02-28",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-5-primera-tabasco-central-de-abasto-de-villahermosa__2026-02-01_2026-02-28__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "villahermosa",
+      "inicio": "2026-03-01",
+      "fin": "2026-03-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-5-primera-tabasco-central-de-abasto-de-villahermosa__2026-03-01_2026-03-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "villahermosa",
+      "inicio": "2026-04-01",
+      "fin": "2026-04-30",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-5-primera-tabasco-central-de-abasto-de-villahermosa__2026-04-01_2026-04-30__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "villahermosa",
+      "inicio": "2026-05-01",
+      "fin": "2026-05-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-5-primera-tabasco-central-de-abasto-de-villahermosa__2026-05-01_2026-05-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "villahermosa",
+      "inicio": "2026-06-01",
+      "fin": "2026-06-30",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-5-primera-tabasco-central-de-abasto-de-villahermosa__2026-06-01_2026-06-30__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "villahermosa",
+      "inicio": "2026-07-01",
+      "fin": "2026-07-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-5-primera-tabasco-central-de-abasto-de-villahermosa__2026-07-01_2026-07-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "villahermosa",
+      "inicio": "2026-08-01",
+      "fin": "2026-08-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-5-primera-tabasco-central-de-abasto-de-villahermosa__2026-08-01_2026-08-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "villahermosa",
+      "inicio": "2026-09-01",
+      "fin": "2026-09-30",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-5-primera-tabasco-central-de-abasto-de-villahermosa__2026-09-01_2026-09-30__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "villahermosa",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-5-primera-tabasco-central-de-abasto-de-villahermosa__2026-10-01_2026-10-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "villahermosa",
+      "inicio": "2026-11-01",
+      "fin": "2026-11-26",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-5-primera-tabasco-central-de-abasto-de-villahermosa__2026-11-01_2026-11-26__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "veracruz",
+      "inicio": "2025-11-01",
+      "fin": "2025-11-30",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-5-primera-veracruz-mercado-malibran__2025-11-01_2025-11-30__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "veracruz",
+      "inicio": "2025-12-01",
+      "fin": "2025-12-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-5-primera-veracruz-mercado-malibran__2025-12-01_2025-12-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "veracruz",
+      "inicio": "2026-01-01",
+      "fin": "2026-01-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-5-primera-veracruz-mercado-malibran__2026-01-01_2026-01-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "veracruz",
+      "inicio": "2026-02-01",
+      "fin": "2026-02-28",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-5-primera-veracruz-mercado-malibran__2026-02-01_2026-02-28__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "veracruz",
+      "inicio": "2026-03-01",
+      "fin": "2026-03-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-5-primera-veracruz-mercado-malibran__2026-03-01_2026-03-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "veracruz",
+      "inicio": "2026-04-01",
+      "fin": "2026-04-30",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-5-primera-veracruz-mercado-malibran__2026-04-01_2026-04-30__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "veracruz",
+      "inicio": "2026-05-01",
+      "fin": "2026-05-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-5-primera-veracruz-mercado-malibran__2026-05-01_2026-05-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "veracruz",
+      "inicio": "2026-06-01",
+      "fin": "2026-06-30",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-5-primera-veracruz-mercado-malibran__2026-06-01_2026-06-30__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "veracruz",
+      "inicio": "2026-07-01",
+      "fin": "2026-07-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-5-primera-veracruz-mercado-malibran__2026-07-01_2026-07-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "veracruz",
+      "inicio": "2026-08-01",
+      "fin": "2026-08-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-5-primera-veracruz-mercado-malibran__2026-08-01_2026-08-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "veracruz",
+      "inicio": "2026-09-01",
+      "fin": "2026-09-30",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-5-primera-veracruz-mercado-malibran__2026-09-01_2026-09-30__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "veracruz",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-5-primera-veracruz-mercado-malibran__2026-10-01_2026-10-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "veracruz",
+      "inicio": "2026-11-01",
+      "fin": "2026-11-26",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-5-primera-veracruz-mercado-malibran__2026-11-01_2026-11-26__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "zacatecas",
+      "inicio": "2025-11-01",
+      "fin": "2025-11-30",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-5-primera-zacatecas-mercado-de-abasto-de-zacatecas__2025-11-01_2025-11-30__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "zacatecas",
+      "inicio": "2025-12-01",
+      "fin": "2025-12-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-5-primera-zacatecas-mercado-de-abasto-de-zacatecas__2025-12-01_2025-12-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "zacatecas",
+      "inicio": "2026-01-01",
+      "fin": "2026-01-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-5-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-01-01_2026-01-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "zacatecas",
+      "inicio": "2026-02-01",
+      "fin": "2026-02-28",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-5-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-02-01_2026-02-28__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "zacatecas",
+      "inicio": "2026-03-01",
+      "fin": "2026-03-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-5-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-03-01_2026-03-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "zacatecas",
+      "inicio": "2026-04-01",
+      "fin": "2026-04-30",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-5-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-04-01_2026-04-30__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "zacatecas",
+      "inicio": "2026-05-01",
+      "fin": "2026-05-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-5-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-05-01_2026-05-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "zacatecas",
+      "inicio": "2026-06-01",
+      "fin": "2026-06-30",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-5-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-06-01_2026-06-30__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "zacatecas",
+      "inicio": "2026-07-01",
+      "fin": "2026-07-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-5-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-07-01_2026-07-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "zacatecas",
+      "inicio": "2026-08-01",
+      "fin": "2026-08-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-5-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-08-01_2026-08-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "zacatecas",
+      "inicio": "2026-09-01",
+      "fin": "2026-09-30",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-5-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-09-01_2026-09-30__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "zacatecas",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-5-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-10-01_2026-10-31__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "limon_c5",
+      "producto": "Limón c/semilla # 5 - Primera",
+      "mercado_clave": "zacatecas",
+      "inicio": "2026-11-01",
+      "fin": "2026-11-26",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__limon-c-semilla-5-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-11-01_2026-11-26__20261127T163300Z-b2933e.html",
+      "error": null,
+      "advertencias": []
+    }
+  ],
+  "archivos": [
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__catalogo-formulario__2026-11-27_2026-11-27__20261127T163300Z-b2933e.html",
+      "sha256": "0b7309043ab6c99dd2c634866bf0cfc75ae0301215a714035ea2a060fb889383",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/Consultas/MercadosNacionales/PreciosDeMercado/Agricolas/ConsultaFrutasYHortalizas.aspx",
+      "bytes": 67149
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/11/sniim__limon-c-semilla-5-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2025-11-01_2025-11-30__20261127T163300Z-b2933e.html",
+      "sha256": "e7fad59f846026ebfe235935ec56ce2d4b620db1764a840f88ced1241f6e29ba",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F11%2F2025&fechaFinal=30%2F11%2F2025&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=141&Destino=Jalisco%3A+Mercado+Felipe+%C3%81ngeles+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 25024
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/12/sniim__limon-c-semilla-5-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2025-12-01_2025-12-31__20261127T163300Z-b2933e.html",
+      "sha256": "28e910e2d8496432fa95fe1912ade0ab618fde38e9ce733776f8705bae822066",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F12%2F2025&fechaFinal=31%2F12%2F2025&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=141&Destino=Jalisco%3A+Mercado+Felipe+%C3%81ngeles+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26708
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/01/sniim__limon-c-semilla-5-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-01-01_2026-01-31__20261127T163300Z-b2933e.html",
+      "sha256": "4b9ef9075e2caf2017047771b3bbd095de4539f98287ee72397e92d0206a9ecd",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F01%2F2026&fechaFinal=31%2F01%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=141&Destino=Jalisco%3A+Mercado+Felipe+%C3%81ngeles+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26148
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/02/sniim__limon-c-semilla-5-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-02-01_2026-02-28__20261127T163300Z-b2933e.html",
+      "sha256": "eed97de8256dc41aa2935ac3ca8ba6bf5ba53c682196d665892307263b713528",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F02%2F2026&fechaFinal=28%2F02%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=141&Destino=Jalisco%3A+Mercado+Felipe+%C3%81ngeles+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 24464
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/03/sniim__limon-c-semilla-5-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-03-01_2026-03-31__20261127T163300Z-b2933e.html",
+      "sha256": "b3a7799df0d11b32cbb2700b0a3daad9bd3c61ac942eab7739a22b65910ee0b8",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F03%2F2026&fechaFinal=31%2F03%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=141&Destino=Jalisco%3A+Mercado+Felipe+%C3%81ngeles+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26239
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/04/sniim__limon-c-semilla-5-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-04-01_2026-04-30__20261127T163300Z-b2933e.html",
+      "sha256": "f2a2f97e5b6be031eedebcf507b1c6feab8f05fdf66058284387db62ee4cd965",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F04%2F2026&fechaFinal=30%2F04%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=141&Destino=Jalisco%3A+Mercado+Felipe+%C3%81ngeles+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 25728
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/05/sniim__limon-c-semilla-5-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-05-01_2026-05-31__20261127T163300Z-b2933e.html",
+      "sha256": "39f649f90f11cc2ed7730573d053874c0d4bc5f45d33fba027c8ef27f39f6a76",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F05%2F2026&fechaFinal=31%2F05%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=141&Destino=Jalisco%3A+Mercado+Felipe+%C3%81ngeles+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 25153
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/06/sniim__limon-c-semilla-5-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-06-01_2026-06-30__20261127T163300Z-b2933e.html",
+      "sha256": "0406a2de683acb3847d463bedcd803e06267dcec11656d8b5c25abf16c70acb3",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F06%2F2026&fechaFinal=30%2F06%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=141&Destino=Jalisco%3A+Mercado+Felipe+%C3%81ngeles+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26862
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/07/sniim__limon-c-semilla-5-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-07-01_2026-07-31__20261127T163300Z-b2933e.html",
+      "sha256": "f2cee4cafc00eb7d59a2d2f4776f4d6b45d5578a8b1f7a3fa1846244519f33d5",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F07%2F2026&fechaFinal=31%2F07%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=141&Destino=Jalisco%3A+Mercado+Felipe+%C3%81ngeles+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 27433
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/08/sniim__limon-c-semilla-5-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-08-01_2026-08-31__20261127T163300Z-b2933e.html",
+      "sha256": "ffb8bc61883fac6b68da0eb1f16926271966675af4ead99b24e5d4a9c12ab3a0",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F08%2F2026&fechaFinal=31%2F08%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=141&Destino=Jalisco%3A+Mercado+Felipe+%C3%81ngeles+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26295
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/09/sniim__limon-c-semilla-5-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-09-01_2026-09-30__20261127T163300Z-b2933e.html",
+      "sha256": "984c39e9255991307e170d70ab98f5b987fa0b55e76c7c9c976857f037d3d42e",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F09%2F2026&fechaFinal=30%2F09%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=141&Destino=Jalisco%3A+Mercado+Felipe+%C3%81ngeles+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26295
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__limon-c-semilla-5-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-10-01_2026-10-31__20261127T163300Z-b2933e.html",
+      "sha256": "727cb723c026972c569f98fce4d01a6db5797df3639837779df9adf840b75c9c",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=141&Destino=Jalisco%3A+Mercado+Felipe+%C3%81ngeles+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26862
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__limon-c-semilla-5-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2026-11-01_2026-11-26__20261127T163300Z-b2933e.html",
+      "sha256": "7575742bc491fd2db5429924548f31b2dde8311742e0d58a29d3e52246cacd4f",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F11%2F2026&fechaFinal=26%2F11%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=141&Destino=Jalisco%3A+Mercado+Felipe+%C3%81ngeles+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 24023
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/11/sniim__limon-c-semilla-5-primera-aguascalientes-centro-comercial-agropecuario-de-aguascalientes__2025-11-01_2025-11-30__20261127T163300Z-b2933e.html",
+      "sha256": "79f491b01a7bc4459c1482874db8d9c3b368509058619066c5d725da544d4981",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F11%2F2025&fechaFinal=30%2F11%2F2025&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=10&Destino=Aguascalientes%3A+Centro+Comercial+Agropecuario+de+Aguascalientes&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 35872
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/12/sniim__limon-c-semilla-5-primera-aguascalientes-centro-comercial-agropecuario-de-aguascalientes__2025-12-01_2025-12-31__20261127T163300Z-b2933e.html",
+      "sha256": "07fce520f449c5bed119ec20d9d7076af8f18eb4de70f72acc2387060dd25b5d",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F12%2F2025&fechaFinal=31%2F12%2F2025&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=10&Destino=Aguascalientes%3A+Centro+Comercial+Agropecuario+de+Aguascalientes&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 39261
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/01/sniim__limon-c-semilla-5-primera-aguascalientes-centro-comercial-agropecuario-de-aguascalientes__2026-01-01_2026-01-31__20261127T163300Z-b2933e.html",
+      "sha256": "136f63835219de495d1393c7835f62185a8dddcf22d5229ac1c59ea2fd88cf79",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F01%2F2026&fechaFinal=31%2F01%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=10&Destino=Aguascalientes%3A+Centro+Comercial+Agropecuario+de+Aguascalientes&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 38130
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/02/sniim__limon-c-semilla-5-primera-aguascalientes-centro-comercial-agropecuario-de-aguascalientes__2026-02-01_2026-02-28__20261127T163300Z-b2933e.html",
+      "sha256": "70794fa78ee2a1ad0d88335f6edca6c363e645c985eb365f0a8bfecfd052a88e",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F02%2F2026&fechaFinal=28%2F02%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=10&Destino=Aguascalientes%3A+Centro+Comercial+Agropecuario+de+Aguascalientes&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 35872
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/03/sniim__limon-c-semilla-5-primera-aguascalientes-centro-comercial-agropecuario-de-aguascalientes__2026-03-01_2026-03-31__20261127T163300Z-b2933e.html",
+      "sha256": "da5d80860a3a49f470622a807bfa12d20856363ad76ab431f951933826121153",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F03%2F2026&fechaFinal=31%2F03%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=10&Destino=Aguascalientes%3A+Centro+Comercial+Agropecuario+de+Aguascalientes&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 38130
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/04/sniim__limon-c-semilla-5-primera-aguascalientes-centro-comercial-agropecuario-de-aguascalientes__2026-04-01_2026-04-30__20261127T163300Z-b2933e.html",
+      "sha256": "6875fe426b8c966ed7806577abea87ed505f61e0f21e4c15988b550fdd453be8",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F04%2F2026&fechaFinal=30%2F04%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=10&Destino=Aguascalientes%3A+Centro+Comercial+Agropecuario+de+Aguascalientes&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 37003
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/05/sniim__limon-c-semilla-5-primera-aguascalientes-centro-comercial-agropecuario-de-aguascalientes__2026-05-01_2026-05-31__20261127T163300Z-b2933e.html",
+      "sha256": "3096cba2c0efc7daf240041312c56363b76ad65148241ad8c645d3e59d247079",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F05%2F2026&fechaFinal=31%2F05%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=10&Destino=Aguascalientes%3A+Centro+Comercial+Agropecuario+de+Aguascalientes&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 35872
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/06/sniim__limon-c-semilla-5-primera-aguascalientes-centro-comercial-agropecuario-de-aguascalientes__2026-06-01_2026-06-30__20261127T163300Z-b2933e.html",
+      "sha256": "70524aeae71e2c81c9e737e90c4fb75273df785f675fbaef5d0eadee0c8fe7a2",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F06%2F2026&fechaFinal=30%2F06%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=10&Destino=Aguascalientes%3A+Centro+Comercial+Agropecuario+de+Aguascalientes&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 39261
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/07/sniim__limon-c-semilla-5-primera-aguascalientes-centro-comercial-agropecuario-de-aguascalientes__2026-07-01_2026-07-31__20261127T163300Z-b2933e.html",
+      "sha256": "6d077e63851ac36a82dfb5e42151dbf70fdc7884cf3c020d622536e2f5cee912",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F07%2F2026&fechaFinal=31%2F07%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=10&Destino=Aguascalientes%3A+Centro+Comercial+Agropecuario+de+Aguascalientes&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 40392
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/08/sniim__limon-c-semilla-5-primera-aguascalientes-centro-comercial-agropecuario-de-aguascalientes__2026-08-01_2026-08-31__20261127T163300Z-b2933e.html",
+      "sha256": "159910663b2701b7ae1920156bce67872db15b4764f829d5b2cefbf92e0d927f",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F08%2F2026&fechaFinal=31%2F08%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=10&Destino=Aguascalientes%3A+Centro+Comercial+Agropecuario+de+Aguascalientes&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 38130
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/09/sniim__limon-c-semilla-5-primera-aguascalientes-centro-comercial-agropecuario-de-aguascalientes__2026-09-01_2026-09-30__20261127T163300Z-b2933e.html",
+      "sha256": "235b9e41fcbd802f147e1ebe090d9036ab82d088465ca67ac9cb47ed0e2b5892",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F09%2F2026&fechaFinal=30%2F09%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=10&Destino=Aguascalientes%3A+Centro+Comercial+Agropecuario+de+Aguascalientes&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 38242
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__limon-c-semilla-5-primera-aguascalientes-centro-comercial-agropecuario-de-aguascalientes__2026-10-01_2026-10-31__20261127T163300Z-b2933e.html",
+      "sha256": "57b4a0507991f8e0db15d52fcc45da053d9940a2ce67723e75ab257bc75bf06f",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=10&Destino=Aguascalientes%3A+Centro+Comercial+Agropecuario+de+Aguascalientes&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 39465
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__limon-c-semilla-5-primera-aguascalientes-centro-comercial-agropecuario-de-aguascalientes__2026-11-01_2026-11-26__20261127T163300Z-b2933e.html",
+      "sha256": "661b83ed825c3470f7227c4932868ef49e8b8d0a2db028de889e7edf27957cbd",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F11%2F2026&fechaFinal=26%2F11%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=10&Destino=Aguascalientes%3A+Centro+Comercial+Agropecuario+de+Aguascalientes&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 33775
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/11/sniim__limon-c-semilla-5-primera-coahuila-central-de-abasto-de-la-laguna-torreon__2025-11-01_2025-11-30__20261127T163300Z-b2933e.html",
+      "sha256": "82ffc79b548299f6960d62e6fdee9f22387db9605489e9d7fbc7bd3dfd9e60f8",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F11%2F2025&fechaFinal=30%2F11%2F2025&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=50&Destino=Coahuila%3A+Central+de+Abasto+de+La+Laguna%2C+Torre%C3%B3n&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 35836
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/12/sniim__limon-c-semilla-5-primera-coahuila-central-de-abasto-de-la-laguna-torreon__2025-12-01_2025-12-31__20261127T163300Z-b2933e.html",
+      "sha256": "6a07f985a552839c74b1d49c5ce51619345d472ce760933c8747cc0a611a3a44",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F12%2F2025&fechaFinal=31%2F12%2F2025&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=50&Destino=Coahuila%3A+Central+de+Abasto+de+La+Laguna%2C+Torre%C3%B3n&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 39225
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/01/sniim__limon-c-semilla-5-primera-coahuila-central-de-abasto-de-la-laguna-torreon__2026-01-01_2026-01-31__20261127T163300Z-b2933e.html",
+      "sha256": "27f91a862bf6978b270e4d32c01edc96fcc44d168cadcd88128ad75e11899d9b",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F01%2F2026&fechaFinal=31%2F01%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=50&Destino=Coahuila%3A+Central+de+Abasto+de+La+Laguna%2C+Torre%C3%B3n&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 36963
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/02/sniim__limon-c-semilla-5-primera-coahuila-central-de-abasto-de-la-laguna-torreon__2026-02-01_2026-02-28__20261127T163300Z-b2933e.html",
+      "sha256": "c3eb503850cf44b385e77c6774afba23f8142522132825ec946c165bfd2e7203",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F02%2F2026&fechaFinal=28%2F02%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=50&Destino=Coahuila%3A+Central+de+Abasto+de+La+Laguna%2C+Torre%C3%B3n&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 34705
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/03/sniim__limon-c-semilla-5-primera-coahuila-central-de-abasto-de-la-laguna-torreon__2026-03-01_2026-03-31__20261127T163300Z-b2933e.html",
+      "sha256": "63952d6d693bc50e5231fde13cd02b19e2351d8e06afed813e73bbcf587cdb02",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F03%2F2026&fechaFinal=31%2F03%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=50&Destino=Coahuila%3A+Central+de+Abasto+de+La+Laguna%2C+Torre%C3%B3n&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 38094
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/04/sniim__limon-c-semilla-5-primera-coahuila-central-de-abasto-de-la-laguna-torreon__2026-04-01_2026-04-30__20261127T163300Z-b2933e.html",
+      "sha256": "1b9714cb0e0e0721efbca456ce0231a4b2bbd5bba198eb1b53c288cd7360bd0a",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F04%2F2026&fechaFinal=30%2F04%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=50&Destino=Coahuila%3A+Central+de+Abasto+de+La+Laguna%2C+Torre%C3%B3n&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 36963
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/05/sniim__limon-c-semilla-5-primera-coahuila-central-de-abasto-de-la-laguna-torreon__2026-05-01_2026-05-31__20261127T163300Z-b2933e.html",
+      "sha256": "14004fca6800443998613a6109d058a82bdd45c2d7bca5fe012ced060f8ce4e0",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F05%2F2026&fechaFinal=31%2F05%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=50&Destino=Coahuila%3A+Central+de+Abasto+de+La+Laguna%2C+Torre%C3%B3n&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 35836
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/06/sniim__limon-c-semilla-5-primera-coahuila-central-de-abasto-de-la-laguna-torreon__2026-06-01_2026-06-30__20261127T163300Z-b2933e.html",
+      "sha256": "5f400669ba1f6b84449e89421f7a1984ff3575bea10bbaec9a59a12e5ee8a550",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F06%2F2026&fechaFinal=30%2F06%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=50&Destino=Coahuila%3A+Central+de+Abasto+de+La+Laguna%2C+Torre%C3%B3n&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 39225
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/07/sniim__limon-c-semilla-5-primera-coahuila-central-de-abasto-de-la-laguna-torreon__2026-07-01_2026-07-31__20261127T163300Z-b2933e.html",
+      "sha256": "d54eaa39c486cba65d88bd2dd3d4210421a84e8479b0fdee07f6b8fd57c7e92a",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F07%2F2026&fechaFinal=31%2F07%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=50&Destino=Coahuila%3A+Central+de+Abasto+de+La+Laguna%2C+Torre%C3%B3n&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 40352
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/08/sniim__limon-c-semilla-5-primera-coahuila-central-de-abasto-de-la-laguna-torreon__2026-08-01_2026-08-31__20261127T163300Z-b2933e.html",
+      "sha256": "6ba2f6b9459e231daf5493f35ee8a8c2b96adce34410c593bc36ce58663e2d2b",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F08%2F2026&fechaFinal=31%2F08%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=50&Destino=Coahuila%3A+Central+de+Abasto+de+La+Laguna%2C+Torre%C3%B3n&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 38094
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/09/sniim__limon-c-semilla-5-primera-coahuila-central-de-abasto-de-la-laguna-torreon__2026-09-01_2026-09-30__20261127T163300Z-b2933e.html",
+      "sha256": "7e93dc9ac182464bb5d9404eedac38bf75aaeadfe8a22f5bb1e15c920ff6d237",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F09%2F2026&fechaFinal=30%2F09%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=50&Destino=Coahuila%3A+Central+de+Abasto+de+La+Laguna%2C+Torre%C3%B3n&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 38090
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__limon-c-semilla-5-primera-coahuila-central-de-abasto-de-la-laguna-torreon__2026-10-01_2026-10-31__20261127T163300Z-b2933e.html",
+      "sha256": "00876948a1edf52b499e2cca823ab78a97b67c8a4d647c03add2e45f04d9d098",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=50&Destino=Coahuila%3A+Central+de+Abasto+de+La+Laguna%2C+Torre%C3%B3n&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 36963
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__limon-c-semilla-5-primera-coahuila-central-de-abasto-de-la-laguna-torreon__2026-11-01_2026-11-26__20261127T163300Z-b2933e.html",
+      "sha256": "ad8b92f21bdd2983426a1a3b920558cf779c778c1f4ff382379f30cc28a2e9be",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F11%2F2026&fechaFinal=26%2F11%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=50&Destino=Coahuila%3A+Central+de+Abasto+de+La+Laguna%2C+Torre%C3%B3n&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 33574
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/11/sniim__limon-c-semilla-5-primera-chihuahua-central-de-abasto-de-chihuahua__2025-11-01_2025-11-30__20261127T163300Z-b2933e.html",
+      "sha256": "886a99b82214ec0c1f8128b1df5debf8e5ab2abe155ca9e664351306001e77cd",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F11%2F2025&fechaFinal=30%2F11%2F2025&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=61&Destino=Chihuahua%3A+Central+de+Abasto+de+Chihuahua&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9424
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/12/sniim__limon-c-semilla-5-primera-chihuahua-central-de-abasto-de-chihuahua__2025-12-01_2025-12-31__20261127T163300Z-b2933e.html",
+      "sha256": "715f86ed2e8aef4cb02128fc9fbbebdc82536c68cb2a45dafe51e3faee5bd3a4",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F12%2F2025&fechaFinal=31%2F12%2F2025&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=61&Destino=Chihuahua%3A+Central+de+Abasto+de+Chihuahua&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9424
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/01/sniim__limon-c-semilla-5-primera-chihuahua-central-de-abasto-de-chihuahua__2026-01-01_2026-01-31__20261127T163300Z-b2933e.html",
+      "sha256": "4966b45af131f47b72ba094cd67a6a432a950b2456a25c8a0ddeb540ab6f4529",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F01%2F2026&fechaFinal=31%2F01%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=61&Destino=Chihuahua%3A+Central+de+Abasto+de+Chihuahua&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9424
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/02/sniim__limon-c-semilla-5-primera-chihuahua-central-de-abasto-de-chihuahua__2026-02-01_2026-02-28__20261127T163300Z-b2933e.html",
+      "sha256": "206902901194fc9041b691075aad8b87183e8db858180f7c9f5b24bb46f4e0de",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F02%2F2026&fechaFinal=28%2F02%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=61&Destino=Chihuahua%3A+Central+de+Abasto+de+Chihuahua&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9424
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/03/sniim__limon-c-semilla-5-primera-chihuahua-central-de-abasto-de-chihuahua__2026-03-01_2026-03-31__20261127T163300Z-b2933e.html",
+      "sha256": "88fa20dd36e5a4cc5b381199224a65f21829397923fd1a4d45f9e8dbec548668",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F03%2F2026&fechaFinal=31%2F03%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=61&Destino=Chihuahua%3A+Central+de+Abasto+de+Chihuahua&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9424
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/04/sniim__limon-c-semilla-5-primera-chihuahua-central-de-abasto-de-chihuahua__2026-04-01_2026-04-30__20261127T163300Z-b2933e.html",
+      "sha256": "fe9bcc3f41d76f7517143293b0f7cf11ca8cb59b250de7d8e47fdc7ed6c480dd",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F04%2F2026&fechaFinal=30%2F04%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=61&Destino=Chihuahua%3A+Central+de+Abasto+de+Chihuahua&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9424
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/05/sniim__limon-c-semilla-5-primera-chihuahua-central-de-abasto-de-chihuahua__2026-05-01_2026-05-31__20261127T163300Z-b2933e.html",
+      "sha256": "24565c3ce4f73ad411d3ae9535228461f46100ea9b21eff6419a8149855d8c5f",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F05%2F2026&fechaFinal=31%2F05%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=61&Destino=Chihuahua%3A+Central+de+Abasto+de+Chihuahua&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9424
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/06/sniim__limon-c-semilla-5-primera-chihuahua-central-de-abasto-de-chihuahua__2026-06-01_2026-06-30__20261127T163300Z-b2933e.html",
+      "sha256": "dcc4703b1236cc18b25d3b5cc89f4ab5d0eb1eae272207fde86951296d11fe78",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F06%2F2026&fechaFinal=30%2F06%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=61&Destino=Chihuahua%3A+Central+de+Abasto+de+Chihuahua&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9424
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/07/sniim__limon-c-semilla-5-primera-chihuahua-central-de-abasto-de-chihuahua__2026-07-01_2026-07-31__20261127T163300Z-b2933e.html",
+      "sha256": "423fe1cf057c138477c055c7ae39f362194112faf7cc26137d0adfaa958541ba",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F07%2F2026&fechaFinal=31%2F07%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=61&Destino=Chihuahua%3A+Central+de+Abasto+de+Chihuahua&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9424
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/08/sniim__limon-c-semilla-5-primera-chihuahua-central-de-abasto-de-chihuahua__2026-08-01_2026-08-31__20261127T163300Z-b2933e.html",
+      "sha256": "7fecf4da3e54f55a088cfdde0409cbfd82031964fad9faf9f851a32a569bd8f8",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F08%2F2026&fechaFinal=31%2F08%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=61&Destino=Chihuahua%3A+Central+de+Abasto+de+Chihuahua&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9424
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/09/sniim__limon-c-semilla-5-primera-chihuahua-central-de-abasto-de-chihuahua__2026-09-01_2026-09-30__20261127T163300Z-b2933e.html",
+      "sha256": "5350f1fd5ff5e099fb35e7183499bab6c3cb60528db554a0c1a7ecc328f74838",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F09%2F2026&fechaFinal=30%2F09%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=61&Destino=Chihuahua%3A+Central+de+Abasto+de+Chihuahua&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9424
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__limon-c-semilla-5-primera-chihuahua-central-de-abasto-de-chihuahua__2026-10-01_2026-10-31__20261127T163300Z-b2933e.html",
+      "sha256": "a007e89762c36144ad9083af7cb6ceb0c29e78580b264be5e67fc61ee0f869ac",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=61&Destino=Chihuahua%3A+Central+de+Abasto+de+Chihuahua&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9424
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__limon-c-semilla-5-primera-chihuahua-central-de-abasto-de-chihuahua__2026-11-01_2026-11-26__20261127T163300Z-b2933e.html",
+      "sha256": "014194bf8388ca492540085e8106e775a2cef6a465c843cfe3786b184ba39b68",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F11%2F2026&fechaFinal=26%2F11%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=61&Destino=Chihuahua%3A+Central+de+Abasto+de+Chihuahua&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9424
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/11/sniim__limon-c-semilla-5-primera-chihuahua-mercado-de-abasto-de-cd-juarez__2025-11-01_2025-11-30__20261127T163300Z-b2933e.html",
+      "sha256": "144a7ab06d2dc1472961f240888327210ba565f33a8bf8db581cd8912b9aceb6",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F11%2F2025&fechaFinal=30%2F11%2F2025&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=63&Destino=Chihuahua%3A+Mercado+de+Abasto+de+Cd.+Ju%C3%A1rez&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9430
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/12/sniim__limon-c-semilla-5-primera-chihuahua-mercado-de-abasto-de-cd-juarez__2025-12-01_2025-12-31__20261127T163300Z-b2933e.html",
+      "sha256": "bcd1ad62a337cbb77a6fc74bedc487338da60110c7cc1eb96099d6ba7901c53b",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F12%2F2025&fechaFinal=31%2F12%2F2025&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=63&Destino=Chihuahua%3A+Mercado+de+Abasto+de+Cd.+Ju%C3%A1rez&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9430
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/01/sniim__limon-c-semilla-5-primera-chihuahua-mercado-de-abasto-de-cd-juarez__2026-01-01_2026-01-31__20261127T163300Z-b2933e.html",
+      "sha256": "e9cf690a6d9950740059e97f76b56894b8a56dadd7216d456bfecaf0ad784f4b",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F01%2F2026&fechaFinal=31%2F01%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=63&Destino=Chihuahua%3A+Mercado+de+Abasto+de+Cd.+Ju%C3%A1rez&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9430
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/02/sniim__limon-c-semilla-5-primera-chihuahua-mercado-de-abasto-de-cd-juarez__2026-02-01_2026-02-28__20261127T163300Z-b2933e.html",
+      "sha256": "faa8a77b4ffd8d804d0e0df1a2bffe0d66cb4218e180a7f857f83c2619ffe026",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F02%2F2026&fechaFinal=28%2F02%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=63&Destino=Chihuahua%3A+Mercado+de+Abasto+de+Cd.+Ju%C3%A1rez&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9430
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/03/sniim__limon-c-semilla-5-primera-chihuahua-mercado-de-abasto-de-cd-juarez__2026-03-01_2026-03-31__20261127T163300Z-b2933e.html",
+      "sha256": "1715bd722f5cc61e889b35ad5cd196125578eb9f4fed7c6f0f289fe27c9bacfb",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F03%2F2026&fechaFinal=31%2F03%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=63&Destino=Chihuahua%3A+Mercado+de+Abasto+de+Cd.+Ju%C3%A1rez&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9430
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/04/sniim__limon-c-semilla-5-primera-chihuahua-mercado-de-abasto-de-cd-juarez__2026-04-01_2026-04-30__20261127T163300Z-b2933e.html",
+      "sha256": "a2fe208291e0745af08b7c78ac4a610dd1d3b0ffca2996e58b10214e272c675c",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F04%2F2026&fechaFinal=30%2F04%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=63&Destino=Chihuahua%3A+Mercado+de+Abasto+de+Cd.+Ju%C3%A1rez&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9430
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/05/sniim__limon-c-semilla-5-primera-chihuahua-mercado-de-abasto-de-cd-juarez__2026-05-01_2026-05-31__20261127T163300Z-b2933e.html",
+      "sha256": "29e970145ceb6eef3687678579a97cf2f722741bed914d9593a34e9c47573ca1",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F05%2F2026&fechaFinal=31%2F05%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=63&Destino=Chihuahua%3A+Mercado+de+Abasto+de+Cd.+Ju%C3%A1rez&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9430
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/06/sniim__limon-c-semilla-5-primera-chihuahua-mercado-de-abasto-de-cd-juarez__2026-06-01_2026-06-30__20261127T163300Z-b2933e.html",
+      "sha256": "4eee71f6c414253e2e00c97f099d0e58ede1a6321f7092245d3a9475e3e59257",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F06%2F2026&fechaFinal=30%2F06%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=63&Destino=Chihuahua%3A+Mercado+de+Abasto+de+Cd.+Ju%C3%A1rez&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9430
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/07/sniim__limon-c-semilla-5-primera-chihuahua-mercado-de-abasto-de-cd-juarez__2026-07-01_2026-07-31__20261127T163300Z-b2933e.html",
+      "sha256": "6b0706594bfd6371bb8d387e92b802107785c10eeea22f8523f0e2cc07ae217c",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F07%2F2026&fechaFinal=31%2F07%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=63&Destino=Chihuahua%3A+Mercado+de+Abasto+de+Cd.+Ju%C3%A1rez&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9430
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/08/sniim__limon-c-semilla-5-primera-chihuahua-mercado-de-abasto-de-cd-juarez__2026-08-01_2026-08-31__20261127T163300Z-b2933e.html",
+      "sha256": "53c92e8e5b0ab5cdf4b3256ce4ee815561d5f39518734428a303a4219bd67439",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F08%2F2026&fechaFinal=31%2F08%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=63&Destino=Chihuahua%3A+Mercado+de+Abasto+de+Cd.+Ju%C3%A1rez&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9430
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/09/sniim__limon-c-semilla-5-primera-chihuahua-mercado-de-abasto-de-cd-juarez__2026-09-01_2026-09-30__20261127T163300Z-b2933e.html",
+      "sha256": "f4763a0709589cba760a4c797bb203aa5a522b0f3075c880d0ce63444998988f",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F09%2F2026&fechaFinal=30%2F09%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=63&Destino=Chihuahua%3A+Mercado+de+Abasto+de+Cd.+Ju%C3%A1rez&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9430
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__limon-c-semilla-5-primera-chihuahua-mercado-de-abasto-de-cd-juarez__2026-10-01_2026-10-31__20261127T163300Z-b2933e.html",
+      "sha256": "7ffcfcca348cb9bbabd276fd722b278c3c79675f9da800d70755bf0f8ada912f",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=63&Destino=Chihuahua%3A+Mercado+de+Abasto+de+Cd.+Ju%C3%A1rez&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9430
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__limon-c-semilla-5-primera-chihuahua-mercado-de-abasto-de-cd-juarez__2026-11-01_2026-11-26__20261127T163300Z-b2933e.html",
+      "sha256": "26ea624b1952360f0ad4e88640167be8b3d5e4c98fb2ade1f259a27456035417",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F11%2F2026&fechaFinal=26%2F11%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=63&Destino=Chihuahua%3A+Mercado+de+Abasto+de+Cd.+Ju%C3%A1rez&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9430
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/11/sniim__limon-c-semilla-5-primera-durango-centro-de-distribucion-y-abasto-de-gomez-palacio__2025-11-01_2025-11-30__20261127T163300Z-b2933e.html",
+      "sha256": "82b8dddf5a6c9fbe64f16be6e5eb281d217b209bbac12ac46f18e25dc3eab327",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F11%2F2025&fechaFinal=30%2F11%2F2025&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=101&Destino=Durango%3A+Centro+de+Distribuci%C3%B3n+y+Abasto+de+G%C3%B3mez+Palacio&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 46044
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/12/sniim__limon-c-semilla-5-primera-durango-centro-de-distribucion-y-abasto-de-gomez-palacio__2025-12-01_2025-12-31__20261127T163300Z-b2933e.html",
+      "sha256": "4fb24caf80311551a2fb558e2e59b1cf08ee2f6c99649194aa4d1541fd4debfb",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F12%2F2025&fechaFinal=31%2F12%2F2025&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=101&Destino=Durango%3A+Centro+de+Distribuci%C3%B3n+y+Abasto+de+G%C3%B3mez+Palacio&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 51044
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/01/sniim__limon-c-semilla-5-primera-durango-centro-de-distribucion-y-abasto-de-gomez-palacio__2026-01-01_2026-01-31__20261127T163300Z-b2933e.html",
+      "sha256": "2cc1f6866f59b8aa656f85165e23f7c9835e0700d167717761de43218d27d5ee",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F01%2F2026&fechaFinal=31%2F01%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=101&Destino=Durango%3A+Centro+de+Distribuci%C3%B3n+y+Abasto+de+G%C3%B3mez+Palacio&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 46044
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/02/sniim__limon-c-semilla-5-primera-durango-centro-de-distribucion-y-abasto-de-gomez-palacio__2026-02-01_2026-02-28__20261127T163300Z-b2933e.html",
+      "sha256": "ff8e467977ba78ab101679647d49356236bfbca08b1588fb2de4f3fcf100b5ff",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F02%2F2026&fechaFinal=28%2F02%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=101&Destino=Durango%3A+Centro+de+Distribuci%C3%B3n+y+Abasto+de+G%C3%B3mez+Palacio&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 46044
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/03/sniim__limon-c-semilla-5-primera-durango-centro-de-distribucion-y-abasto-de-gomez-palacio__2026-03-01_2026-03-31__20261127T163300Z-b2933e.html",
+      "sha256": "72fcc487ad86da8cce9b0ca9a961ce1f915f9c68a3ac889e6e0f80d9f0019863",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F03%2F2026&fechaFinal=31%2F03%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=101&Destino=Durango%3A+Centro+de+Distribuci%C3%B3n+y+Abasto+de+G%C3%B3mez+Palacio&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 49376
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/04/sniim__limon-c-semilla-5-primera-durango-centro-de-distribucion-y-abasto-de-gomez-palacio__2026-04-01_2026-04-30__20261127T163300Z-b2933e.html",
+      "sha256": "380f00ceb3f20f9832936f7536e947e96313a8a24d323d494408a0774c8d2cb7",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F04%2F2026&fechaFinal=30%2F04%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=101&Destino=Durango%3A+Centro+de+Distribuci%C3%B3n+y+Abasto+de+G%C3%B3mez+Palacio&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 47712
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/05/sniim__limon-c-semilla-5-primera-durango-centro-de-distribucion-y-abasto-de-gomez-palacio__2026-05-01_2026-05-31__20261127T163300Z-b2933e.html",
+      "sha256": "14d53985106f60eee9929f68e894169ba60cc59f18470f0a3d3580a36de313f1",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F05%2F2026&fechaFinal=31%2F05%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=101&Destino=Durango%3A+Centro+de+Distribuci%C3%B3n+y+Abasto+de+G%C3%B3mez+Palacio&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 46044
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/06/sniim__limon-c-semilla-5-primera-durango-centro-de-distribucion-y-abasto-de-gomez-palacio__2026-06-01_2026-06-30__20261127T163300Z-b2933e.html",
+      "sha256": "3eb3452dd0225f3a10c0896da2d81e13fc21d3f8631660c4e240f35a8514731b",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F06%2F2026&fechaFinal=30%2F06%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=101&Destino=Durango%3A+Centro+de+Distribuci%C3%B3n+y+Abasto+de+G%C3%B3mez+Palacio&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 51044
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/07/sniim__limon-c-semilla-5-primera-durango-centro-de-distribucion-y-abasto-de-gomez-palacio__2026-07-01_2026-07-31__20261127T163300Z-b2933e.html",
+      "sha256": "2d10afe38b6dbbf7eba84e7bada4d4e138334a6a5427998a00365942db8aef70",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F07%2F2026&fechaFinal=31%2F07%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=101&Destino=Durango%3A+Centro+de+Distribuci%C3%B3n+y+Abasto+de+G%C3%B3mez+Palacio&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 52708
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/08/sniim__limon-c-semilla-5-primera-durango-centro-de-distribucion-y-abasto-de-gomez-palacio__2026-08-01_2026-08-31__20261127T163300Z-b2933e.html",
+      "sha256": "356f7278956b78e8a9fea52b5738c1c12b4ae64522f27408cd068c6560b87937",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F08%2F2026&fechaFinal=31%2F08%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=101&Destino=Durango%3A+Centro+de+Distribuci%C3%B3n+y+Abasto+de+G%C3%B3mez+Palacio&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 49376
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/09/sniim__limon-c-semilla-5-primera-durango-centro-de-distribucion-y-abasto-de-gomez-palacio__2026-09-01_2026-09-30__20261127T163300Z-b2933e.html",
+      "sha256": "f84624ab2a872702e91c3c5a52de1bcfd4d64693f07a8cb39caf1a0169abef2b",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F09%2F2026&fechaFinal=30%2F09%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=101&Destino=Durango%3A+Centro+de+Distribuci%C3%B3n+y+Abasto+de+G%C3%B3mez+Palacio&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 49376
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__limon-c-semilla-5-primera-durango-centro-de-distribucion-y-abasto-de-gomez-palacio__2026-10-01_2026-10-31__20261127T163300Z-b2933e.html",
+      "sha256": "45ee17dec705dc93883eb42276742fc8df3c353b06ef6b9c3f7d5072fe754a35",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=101&Destino=Durango%3A+Centro+de+Distribuci%C3%B3n+y+Abasto+de+G%C3%B3mez+Palacio&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 51044
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__limon-c-semilla-5-primera-durango-centro-de-distribucion-y-abasto-de-gomez-palacio__2026-11-01_2026-11-26__20261127T163300Z-b2933e.html",
+      "sha256": "ac6bfaa0d7eab50b6529e97d03da725240c537238634cf8686d52dc206b63756",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F11%2F2026&fechaFinal=26%2F11%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=101&Destino=Durango%3A+Centro+de+Distribuci%C3%B3n+y+Abasto+de+G%C3%B3mez+Palacio&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 42716
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/11/sniim__limon-c-semilla-5-primera-nuevo-leon-mercado-de-abasto-estrella-de-san-nicolas-de-los-garz__2025-11-01_2025-11-30__20261127T163300Z-b2933e.html",
+      "sha256": "de908ca723347f5ec777385e9bd79246becb4a70c874060be7b1171157259c10",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F11%2F2025&fechaFinal=30%2F11%2F2025&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=190&Destino=Nuevo+Le%C3%B3n%3A+Mercado+de+Abasto+%22Estrella%22+de+San+Nicol%C3%A1s+de+los+Garza&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 25110
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/12/sniim__limon-c-semilla-5-primera-nuevo-leon-mercado-de-abasto-estrella-de-san-nicolas-de-los-garz__2025-12-01_2025-12-31__20261127T163300Z-b2933e.html",
+      "sha256": "5bbf63c677f8d48004b5192f5a8559f4a24e15fdff957685e795034146781c7b",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F12%2F2025&fechaFinal=31%2F12%2F2025&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=190&Destino=Nuevo+Le%C3%B3n%3A+Mercado+de+Abasto+%22Estrella%22+de+San+Nicol%C3%A1s+de+los+Garza&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26794
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/01/sniim__limon-c-semilla-5-primera-nuevo-leon-mercado-de-abasto-estrella-de-san-nicolas-de-los-garz__2026-01-01_2026-01-31__20261127T163300Z-b2933e.html",
+      "sha256": "47218344372ee9b09e03af7e7231a18343f03c84a89dd5431a3218eb62d50b98",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F01%2F2026&fechaFinal=31%2F01%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=190&Destino=Nuevo+Le%C3%B3n%3A+Mercado+de+Abasto+%22Estrella%22+de+San+Nicol%C3%A1s+de+los+Garza&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26283
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/02/sniim__limon-c-semilla-5-primera-nuevo-leon-mercado-de-abasto-estrella-de-san-nicolas-de-los-garz__2026-02-01_2026-02-28__20261127T163300Z-b2933e.html",
+      "sha256": "f4f19a384b7af44a482005298fb2a9576144cf1589f1ae71870038cc71030c41",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F02%2F2026&fechaFinal=28%2F02%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=190&Destino=Nuevo+Le%C3%B3n%3A+Mercado+de+Abasto+%22Estrella%22+de+San+Nicol%C3%A1s+de+los+Garza&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 25110
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/03/sniim__limon-c-semilla-5-primera-nuevo-leon-mercado-de-abasto-estrella-de-san-nicolas-de-los-garz__2026-03-01_2026-03-31__20261127T163300Z-b2933e.html",
+      "sha256": "2f150e8d30fa6db099e5d8070ce1bd5bd2969a920936358d64cb0963dbd42028",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F03%2F2026&fechaFinal=31%2F03%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=190&Destino=Nuevo+Le%C3%B3n%3A+Mercado+de+Abasto+%22Estrella%22+de+San+Nicol%C3%A1s+de+los+Garza&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26234
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/04/sniim__limon-c-semilla-5-primera-nuevo-leon-mercado-de-abasto-estrella-de-san-nicolas-de-los-garz__2026-04-01_2026-04-30__20261127T163300Z-b2933e.html",
+      "sha256": "7853b0fd805a880e1f9634c1433ed3ee91a089f56d8824f885876b4d6ddfb75c",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F04%2F2026&fechaFinal=30%2F04%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=190&Destino=Nuevo+Le%C3%B3n%3A+Mercado+de+Abasto+%22Estrella%22+de+San+Nicol%C3%A1s+de+los+Garza&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 25739
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/05/sniim__limon-c-semilla-5-primera-nuevo-leon-mercado-de-abasto-estrella-de-san-nicolas-de-los-garz__2026-05-01_2026-05-31__20261127T163300Z-b2933e.html",
+      "sha256": "37ab0559aeae1c0209bbf384a9bbec2e71eaaa76f3f6963ae2d3d439dbcca46d",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F05%2F2026&fechaFinal=31%2F05%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=190&Destino=Nuevo+Le%C3%B3n%3A+Mercado+de+Abasto+%22Estrella%22+de+San+Nicol%C3%A1s+de+los+Garza&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 25110
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/06/sniim__limon-c-semilla-5-primera-nuevo-leon-mercado-de-abasto-estrella-de-san-nicolas-de-los-garz__2026-06-01_2026-06-30__20261127T163300Z-b2933e.html",
+      "sha256": "c64c3b47a4d4f96e8a9e8b577f86f6b918964038dd87f687daafa54f76b87793",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F06%2F2026&fechaFinal=30%2F06%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=190&Destino=Nuevo+Le%C3%B3n%3A+Mercado+de+Abasto+%22Estrella%22+de+San+Nicol%C3%A1s+de+los+Garza&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26794
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/07/sniim__limon-c-semilla-5-primera-nuevo-leon-mercado-de-abasto-estrella-de-san-nicolas-de-los-garz__2026-07-01_2026-07-31__20261127T163300Z-b2933e.html",
+      "sha256": "c1d733cb6c90cdefe8a734e264f4dd3701f50cfbbeb161586350000986b470fb",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F07%2F2026&fechaFinal=31%2F07%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=190&Destino=Nuevo+Le%C3%B3n%3A+Mercado+de+Abasto+%22Estrella%22+de+San+Nicol%C3%A1s+de+los+Garza&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 27387
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/08/sniim__limon-c-semilla-5-primera-nuevo-leon-mercado-de-abasto-estrella-de-san-nicolas-de-los-garz__2026-08-01_2026-08-31__20261127T163300Z-b2933e.html",
+      "sha256": "37b909b2324adc308e667bc5158dc978245ffb1324d8f113f851c5d6375552c9",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F08%2F2026&fechaFinal=31%2F08%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=190&Destino=Nuevo+Le%C3%B3n%3A+Mercado+de+Abasto+%22Estrella%22+de+San+Nicol%C3%A1s+de+los+Garza&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26236
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/09/sniim__limon-c-semilla-5-primera-nuevo-leon-mercado-de-abasto-estrella-de-san-nicolas-de-los-garz__2026-09-01_2026-09-30__20261127T163300Z-b2933e.html",
+      "sha256": "784c424a8218940b2a163479295cc6e6b02e3ce769997744e7d189024c6ccd58",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F09%2F2026&fechaFinal=30%2F09%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=190&Destino=Nuevo+Le%C3%B3n%3A+Mercado+de+Abasto+%22Estrella%22+de+San+Nicol%C3%A1s+de+los+Garza&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26236
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__limon-c-semilla-5-primera-nuevo-leon-mercado-de-abasto-estrella-de-san-nicolas-de-los-garz__2026-10-01_2026-10-31__20261127T163300Z-b2933e.html",
+      "sha256": "afe4c5df904ec8da9158d385605e4272b9291ea3d4d53567c507bf58495af667",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=190&Destino=Nuevo+Le%C3%B3n%3A+Mercado+de+Abasto+%22Estrella%22+de+San+Nicol%C3%A1s+de+los+Garza&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26303
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__limon-c-semilla-5-primera-nuevo-leon-mercado-de-abasto-estrella-de-san-nicolas-de-los-garz__2026-11-01_2026-11-26__20261127T163300Z-b2933e.html",
+      "sha256": "c1f1216ebc15a20bba9bc8d564d9a956d755736f4eaf286fc23080282b42c1ce",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F11%2F2026&fechaFinal=26%2F11%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=190&Destino=Nuevo+Le%C3%B3n%3A+Mercado+de+Abasto+%22Estrella%22+de+San+Nicol%C3%A1s+de+los+Garza&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 24055
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/11/sniim__limon-c-semilla-5-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2025-11-01_2025-11-30__20261127T163300Z-b2933e.html",
+      "sha256": "7aed0538d7ccb34212f61175c91ae17f62662f223520f2f5cbc021f3df1aaf84",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F11%2F2025&fechaFinal=30%2F11%2F2025&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=240&Destino=San+Luis+Potos%C3%AD%3A+Centro+de+Abasto+de+San+Luis+Potos%C3%AD&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 25050
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/12/sniim__limon-c-semilla-5-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2025-12-01_2025-12-31__20261127T163300Z-b2933e.html",
+      "sha256": "e8d852d101433c0064b89a16714171468e83884875be6391175258f60913c30a",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F12%2F2025&fechaFinal=31%2F12%2F2025&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=240&Destino=San+Luis+Potos%C3%AD%3A+Centro+de+Abasto+de+San+Luis+Potos%C3%AD&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26738
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/01/sniim__limon-c-semilla-5-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-01-01_2026-01-31__20261127T163300Z-b2933e.html",
+      "sha256": "edf44b899c3e2eb0f812893d3bcc853a5d27625ccdc6a288addf6ea5846b6f15",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F01%2F2026&fechaFinal=31%2F01%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=240&Destino=San+Luis+Potos%C3%AD%3A+Centro+de+Abasto+de+San+Luis+Potos%C3%AD&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26174
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/02/sniim__limon-c-semilla-5-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-02-01_2026-02-28__20261127T163300Z-b2933e.html",
+      "sha256": "80765e9b610268c09ed4cdb9aff15ebf8614e0412e8e1f442b8a8d546ff74fc5",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F02%2F2026&fechaFinal=28%2F02%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=240&Destino=San+Luis+Potos%C3%AD%3A+Centro+de+Abasto+de+San+Luis+Potos%C3%AD&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 25054
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/03/sniim__limon-c-semilla-5-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-03-01_2026-03-31__20261127T163300Z-b2933e.html",
+      "sha256": "ad492a60ac37a9aa2c128fea28217b03dbfdc082d755c05b00a43ca5f7fe41d0",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F03%2F2026&fechaFinal=31%2F03%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=240&Destino=San+Luis+Potos%C3%AD%3A+Centro+de+Abasto+de+San+Luis+Potos%C3%AD&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26174
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/04/sniim__limon-c-semilla-5-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-04-01_2026-04-30__20261127T163300Z-b2933e.html",
+      "sha256": "861efbc244a2f424b17248428027920a93e6d34e9eb321293854943a2ff8d467",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F04%2F2026&fechaFinal=30%2F04%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=240&Destino=San+Luis+Potos%C3%AD%3A+Centro+de+Abasto+de+San+Luis+Potos%C3%AD&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 25614
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/05/sniim__limon-c-semilla-5-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-05-01_2026-05-31__20261127T163300Z-b2933e.html",
+      "sha256": "50db8b6aca48b71f66aa6b046813d1e53e3377c497899fc19e3410593ecc17e5",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F05%2F2026&fechaFinal=31%2F05%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=240&Destino=San+Luis+Potos%C3%AD%3A+Centro+de+Abasto+de+San+Luis+Potos%C3%AD&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 25054
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/06/sniim__limon-c-semilla-5-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-06-01_2026-06-30__20261127T163300Z-b2933e.html",
+      "sha256": "861e822849048c79057b1d55fd4942083802cf7e5cca60090cd797de91820f08",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F06%2F2026&fechaFinal=30%2F06%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=240&Destino=San+Luis+Potos%C3%AD%3A+Centro+de+Abasto+de+San+Luis+Potos%C3%AD&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26738
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/07/sniim__limon-c-semilla-5-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-07-01_2026-07-31__20261127T163300Z-b2933e.html",
+      "sha256": "b992467daa068009633e545a57e910b8c52f1d3385b1331c98e4d4f9eb4c1aab",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F07%2F2026&fechaFinal=31%2F07%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=240&Destino=San+Luis+Potos%C3%AD%3A+Centro+de+Abasto+de+San+Luis+Potos%C3%AD&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 27298
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/08/sniim__limon-c-semilla-5-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-08-01_2026-08-31__20261127T163300Z-b2933e.html",
+      "sha256": "861c623f64e704c58a0a087305343936fece1bffd42ea26a57c598cabab094a5",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F08%2F2026&fechaFinal=31%2F08%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=240&Destino=San+Luis+Potos%C3%AD%3A+Centro+de+Abasto+de+San+Luis+Potos%C3%AD&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26174
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/09/sniim__limon-c-semilla-5-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-09-01_2026-09-30__20261127T163300Z-b2933e.html",
+      "sha256": "106436de13d95597a23864d78e4ab5e2b54d206a6b3c8f6a8fe63fb97d13b567",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F09%2F2026&fechaFinal=30%2F09%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=240&Destino=San+Luis+Potos%C3%AD%3A+Centro+de+Abasto+de+San+Luis+Potos%C3%AD&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26174
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__limon-c-semilla-5-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-10-01_2026-10-31__20261127T163300Z-b2933e.html",
+      "sha256": "967b03de55fd4d6b40650ffdc28e5f8d9c59e738aa679429dd70675a7835b078",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=240&Destino=San+Luis+Potos%C3%AD%3A+Centro+de+Abasto+de+San+Luis+Potos%C3%AD&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26738
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__limon-c-semilla-5-primera-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-11-01_2026-11-26__20261127T163300Z-b2933e.html",
+      "sha256": "0f34c150ce89d285d24f0557c0daee8c37798bc37f4a32d9b1c3f40d576fc691",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F11%2F2026&fechaFinal=26%2F11%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=240&Destino=San+Luis+Potos%C3%AD%3A+Centro+de+Abasto+de+San+Luis+Potos%C3%AD&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 23930
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/11/sniim__limon-c-semilla-5-primera-sonora-mercado-de-abasto-francisco-i-madero-de-hermosillo__2025-11-01_2025-11-30__20261127T163300Z-b2933e.html",
+      "sha256": "920e15fcaf701d471c23b9dbad7e02c718c2ea0fe6f978c341b064a3f498548b",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F11%2F2025&fechaFinal=30%2F11%2F2025&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=260&Destino=Sonora%3A+Mercado+de+Abasto+%22Francisco+I.+Madero%22+de+Hermosillo&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 25072
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/12/sniim__limon-c-semilla-5-primera-sonora-mercado-de-abasto-francisco-i-madero-de-hermosillo__2025-12-01_2025-12-31__20261127T163300Z-b2933e.html",
+      "sha256": "26e591066eab2b63e1d7b3041a616c903360a0637db6c4e1150c9257c2523875",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F12%2F2025&fechaFinal=31%2F12%2F2025&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=260&Destino=Sonora%3A+Mercado+de+Abasto+%22Francisco+I.+Madero%22+de+Hermosillo&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26756
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/01/sniim__limon-c-semilla-5-primera-sonora-mercado-de-abasto-francisco-i-madero-de-hermosillo__2026-01-01_2026-01-31__20261127T163300Z-b2933e.html",
+      "sha256": "c58bd1e6208c6433ab3944530f2662bb98be5c71e547713dd7118cfd174c7099",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F01%2F2026&fechaFinal=31%2F01%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=260&Destino=Sonora%3A+Mercado+de+Abasto+%22Francisco+I.+Madero%22+de+Hermosillo&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26196
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/02/sniim__limon-c-semilla-5-primera-sonora-mercado-de-abasto-francisco-i-madero-de-hermosillo__2026-02-01_2026-02-28__20261127T163300Z-b2933e.html",
+      "sha256": "dee88f53da2ba3de69831cf9bf7e2c1fe89e8bde51e60ad2490721d0040d5d7a",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F02%2F2026&fechaFinal=28%2F02%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=260&Destino=Sonora%3A+Mercado+de+Abasto+%22Francisco+I.+Madero%22+de+Hermosillo&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 25068
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/03/sniim__limon-c-semilla-5-primera-sonora-mercado-de-abasto-francisco-i-madero-de-hermosillo__2026-03-01_2026-03-31__20261127T163300Z-b2933e.html",
+      "sha256": "52adef1c0d973026a33f3c1b086edb4c06a004f5be4019ec3226dc56c99e3b12",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F03%2F2026&fechaFinal=31%2F03%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=260&Destino=Sonora%3A+Mercado+de+Abasto+%22Francisco+I.+Madero%22+de+Hermosillo&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26196
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/04/sniim__limon-c-semilla-5-primera-sonora-mercado-de-abasto-francisco-i-madero-de-hermosillo__2026-04-01_2026-04-30__20261127T163300Z-b2933e.html",
+      "sha256": "30f0660cbfab57ff85815423de984f5b65f9e9cab9f3182784bf15e54155d845",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F04%2F2026&fechaFinal=30%2F04%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=260&Destino=Sonora%3A+Mercado+de+Abasto+%22Francisco+I.+Madero%22+de+Hermosillo&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 25632
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/05/sniim__limon-c-semilla-5-primera-sonora-mercado-de-abasto-francisco-i-madero-de-hermosillo__2026-05-01_2026-05-31__20261127T163300Z-b2933e.html",
+      "sha256": "aaa261fe37954d2bcee3e36caadb82ee8cd23ac485a9222b59581dab7d4aa7f4",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F05%2F2026&fechaFinal=31%2F05%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=260&Destino=Sonora%3A+Mercado+de+Abasto+%22Francisco+I.+Madero%22+de+Hermosillo&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 25072
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/06/sniim__limon-c-semilla-5-primera-sonora-mercado-de-abasto-francisco-i-madero-de-hermosillo__2026-06-01_2026-06-30__20261127T163300Z-b2933e.html",
+      "sha256": "8471864f00e533d4cc493227d3e62bda62168fc8b69fa932583fcc43efa78f13",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F06%2F2026&fechaFinal=30%2F06%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=260&Destino=Sonora%3A+Mercado+de+Abasto+%22Francisco+I.+Madero%22+de+Hermosillo&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26756
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/07/sniim__limon-c-semilla-5-primera-sonora-mercado-de-abasto-francisco-i-madero-de-hermosillo__2026-07-01_2026-07-31__20261127T163300Z-b2933e.html",
+      "sha256": "7f2d1fe0141475fa686b6d692bc0c0d4ff36a29f02c7592210552083739374be",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F07%2F2026&fechaFinal=31%2F07%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=260&Destino=Sonora%3A+Mercado+de+Abasto+%22Francisco+I.+Madero%22+de+Hermosillo&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 27316
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/08/sniim__limon-c-semilla-5-primera-sonora-mercado-de-abasto-francisco-i-madero-de-hermosillo__2026-08-01_2026-08-31__20261127T163300Z-b2933e.html",
+      "sha256": "8b4ebc1ac973d7c9fa0089a39b20af86b2bf63ede51234fed9d63d8ae4ee6dd0",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F08%2F2026&fechaFinal=31%2F08%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=260&Destino=Sonora%3A+Mercado+de+Abasto+%22Francisco+I.+Madero%22+de+Hermosillo&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26196
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/09/sniim__limon-c-semilla-5-primera-sonora-mercado-de-abasto-francisco-i-madero-de-hermosillo__2026-09-01_2026-09-30__20261127T163300Z-b2933e.html",
+      "sha256": "9b1fbe587cc09c2eeb5a9c378e3f91fd610f3eecfddceafbf32546ae99a6091c",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F09%2F2026&fechaFinal=30%2F09%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=260&Destino=Sonora%3A+Mercado+de+Abasto+%22Francisco+I.+Madero%22+de+Hermosillo&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 25632
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__limon-c-semilla-5-primera-sonora-mercado-de-abasto-francisco-i-madero-de-hermosillo__2026-10-01_2026-10-31__20261127T163300Z-b2933e.html",
+      "sha256": "d45514ea4f78c5e7d130b26d67008249290509b584cdc7a369a11d2fcb8fda9e",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=260&Destino=Sonora%3A+Mercado+de+Abasto+%22Francisco+I.+Madero%22+de+Hermosillo&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26756
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__limon-c-semilla-5-primera-sonora-mercado-de-abasto-francisco-i-madero-de-hermosillo__2026-11-01_2026-11-26__20261127T163300Z-b2933e.html",
+      "sha256": "48ce7dd386c39f55f64014fd92338b1cf32069ae34c75e065d0d9a48f62edb30",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F11%2F2026&fechaFinal=26%2F11%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=260&Destino=Sonora%3A+Mercado+de+Abasto+%22Francisco+I.+Madero%22+de+Hermosillo&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 23948
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/11/sniim__limon-c-semilla-5-primera-sonora-central-de-abasto-de-cd-obregon__2025-11-01_2025-11-30__20261127T163300Z-b2933e.html",
+      "sha256": "b18020f429c67e782929582a44370340a968e8437c02a4794982f8036b5cb924",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F11%2F2025&fechaFinal=30%2F11%2F2025&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=261&Destino=Sonora%3A+Central+de+Abasto+de+Cd.+Obreg%C3%B3n&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9429
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/12/sniim__limon-c-semilla-5-primera-sonora-central-de-abasto-de-cd-obregon__2025-12-01_2025-12-31__20261127T163300Z-b2933e.html",
+      "sha256": "11f71ba721c5a932f20057cfff1a2233dcf3a549d6141eea582e273c4a172d0c",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F12%2F2025&fechaFinal=31%2F12%2F2025&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=261&Destino=Sonora%3A+Central+de+Abasto+de+Cd.+Obreg%C3%B3n&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9429
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/01/sniim__limon-c-semilla-5-primera-sonora-central-de-abasto-de-cd-obregon__2026-01-01_2026-01-31__20261127T163300Z-b2933e.html",
+      "sha256": "a3cebb43015f1d5d18ad646e5a5bf0ef4e5b451f67b1fb5407c4cb9ea41c43dc",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F01%2F2026&fechaFinal=31%2F01%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=261&Destino=Sonora%3A+Central+de+Abasto+de+Cd.+Obreg%C3%B3n&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9429
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/02/sniim__limon-c-semilla-5-primera-sonora-central-de-abasto-de-cd-obregon__2026-02-01_2026-02-28__20261127T163300Z-b2933e.html",
+      "sha256": "666a7726d6cdb045c1b88ef442cf56d7c8c3392346ef40dac7e77c90f0a47384",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F02%2F2026&fechaFinal=28%2F02%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=261&Destino=Sonora%3A+Central+de+Abasto+de+Cd.+Obreg%C3%B3n&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 25004
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/03/sniim__limon-c-semilla-5-primera-sonora-central-de-abasto-de-cd-obregon__2026-03-01_2026-03-31__20261127T163300Z-b2933e.html",
+      "sha256": "d8d08f4595ffb708c0ddd6e71a61e4bfcb899e65b80ec69917e3d1ab5787d86f",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F03%2F2026&fechaFinal=31%2F03%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=261&Destino=Sonora%3A+Central+de+Abasto+de+Cd.+Obreg%C3%B3n&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26128
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/04/sniim__limon-c-semilla-5-primera-sonora-central-de-abasto-de-cd-obregon__2026-04-01_2026-04-30__20261127T163300Z-b2933e.html",
+      "sha256": "4cda9e66a010149007ce6cc70eb9d1029991ba749564e55f92ab966a0bf3f819",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F04%2F2026&fechaFinal=30%2F04%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=261&Destino=Sonora%3A+Central+de+Abasto+de+Cd.+Obreg%C3%B3n&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 25568
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/05/sniim__limon-c-semilla-5-primera-sonora-central-de-abasto-de-cd-obregon__2026-05-01_2026-05-31__20261127T163300Z-b2933e.html",
+      "sha256": "c95bc25904b5d4bf3fba1273fd93a6486caebeaf4c4c2d20dbb64ed59d294357",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F05%2F2026&fechaFinal=31%2F05%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=261&Destino=Sonora%3A+Central+de+Abasto+de+Cd.+Obreg%C3%B3n&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 25004
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/06/sniim__limon-c-semilla-5-primera-sonora-central-de-abasto-de-cd-obregon__2026-06-01_2026-06-30__20261127T163300Z-b2933e.html",
+      "sha256": "1473c3070b1205ec7ec2d758791c9861c51ef384dedf8194cd49b36278ae3f25",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F06%2F2026&fechaFinal=30%2F06%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=261&Destino=Sonora%3A+Central+de+Abasto+de+Cd.+Obreg%C3%B3n&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26684
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/07/sniim__limon-c-semilla-5-primera-sonora-central-de-abasto-de-cd-obregon__2026-07-01_2026-07-31__20261127T163300Z-b2933e.html",
+      "sha256": "29b738f98b8ee3b2b636e9a65eeed754fe6cec7e12b1085086deabc63ed7b3a1",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F07%2F2026&fechaFinal=31%2F07%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=261&Destino=Sonora%3A+Central+de+Abasto+de+Cd.+Obreg%C3%B3n&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 27252
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/08/sniim__limon-c-semilla-5-primera-sonora-central-de-abasto-de-cd-obregon__2026-08-01_2026-08-31__20261127T163300Z-b2933e.html",
+      "sha256": "fea0904e80122b7409ad1e42f016271a76f707229aadc59c23c08bcedb1b6d07",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F08%2F2026&fechaFinal=31%2F08%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=261&Destino=Sonora%3A+Central+de+Abasto+de+Cd.+Obreg%C3%B3n&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26128
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/09/sniim__limon-c-semilla-5-primera-sonora-central-de-abasto-de-cd-obregon__2026-09-01_2026-09-30__20261127T163300Z-b2933e.html",
+      "sha256": "d23a830a87d8a8009795b6ebefc711365e3a8ca41fb07549abad667d9c88197e",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F09%2F2026&fechaFinal=30%2F09%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=261&Destino=Sonora%3A+Central+de+Abasto+de+Cd.+Obreg%C3%B3n&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26128
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__limon-c-semilla-5-primera-sonora-central-de-abasto-de-cd-obregon__2026-10-01_2026-10-31__20261127T163300Z-b2933e.html",
+      "sha256": "506925ce4c3602fc1603c2458bee1838502ad667cd648cd513d0293f4edff21c",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=261&Destino=Sonora%3A+Central+de+Abasto+de+Cd.+Obreg%C3%B3n&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 16584
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__limon-c-semilla-5-primera-sonora-central-de-abasto-de-cd-obregon__2026-11-01_2026-11-26__20261127T163300Z-b2933e.html",
+      "sha256": "7dabeccd28c33ecc27cea7807eb8272b4799b042323dfb48e6c112c6cb9fb74e",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F11%2F2026&fechaFinal=26%2F11%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=261&Destino=Sonora%3A+Central+de+Abasto+de+Cd.+Obreg%C3%B3n&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9429
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/11/sniim__limon-c-semilla-5-primera-tabasco-central-de-abasto-de-villahermosa__2025-11-01_2025-11-30__20261127T163300Z-b2933e.html",
+      "sha256": "393206cd3ca34bf066cdc55c3cd03e85d2c7bbfa92385c8a0305f6e6ec96f0be",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F11%2F2025&fechaFinal=30%2F11%2F2025&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=270&Destino=Tabasco%3A+Central+de+Abasto+de+Villahermosa&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9426
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/12/sniim__limon-c-semilla-5-primera-tabasco-central-de-abasto-de-villahermosa__2025-12-01_2025-12-31__20261127T163300Z-b2933e.html",
+      "sha256": "2f5cd2a164c032da4cf496615d2955b6cbe0512349c8704bf71096fc9ae8b9bb",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F12%2F2025&fechaFinal=31%2F12%2F2025&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=270&Destino=Tabasco%3A+Central+de+Abasto+de+Villahermosa&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9426
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/01/sniim__limon-c-semilla-5-primera-tabasco-central-de-abasto-de-villahermosa__2026-01-01_2026-01-31__20261127T163300Z-b2933e.html",
+      "sha256": "1b12c168295004e7c9a7af089888619043722c5bf85d94a71521d5f7595c4e27",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F01%2F2026&fechaFinal=31%2F01%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=270&Destino=Tabasco%3A+Central+de+Abasto+de+Villahermosa&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9426
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/02/sniim__limon-c-semilla-5-primera-tabasco-central-de-abasto-de-villahermosa__2026-02-01_2026-02-28__20261127T163300Z-b2933e.html",
+      "sha256": "4c15081a8e95c0ad3656c6ca325e5bb98606479bbc694e35172622fe217c9031",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F02%2F2026&fechaFinal=28%2F02%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=270&Destino=Tabasco%3A+Central+de+Abasto+de+Villahermosa&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9426
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/03/sniim__limon-c-semilla-5-primera-tabasco-central-de-abasto-de-villahermosa__2026-03-01_2026-03-31__20261127T163300Z-b2933e.html",
+      "sha256": "4071eb08d2d6d5bc1b14ba1113b5e5f2d19c1e361b66c7848e8adb5ab1e7e28a",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F03%2F2026&fechaFinal=31%2F03%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=270&Destino=Tabasco%3A+Central+de+Abasto+de+Villahermosa&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9426
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/04/sniim__limon-c-semilla-5-primera-tabasco-central-de-abasto-de-villahermosa__2026-04-01_2026-04-30__20261127T163300Z-b2933e.html",
+      "sha256": "2b074a2a82d3e7b7b3dc0a7c811c72cf0b675baa438d9d45c2aa8bf932e4835b",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F04%2F2026&fechaFinal=30%2F04%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=270&Destino=Tabasco%3A+Central+de+Abasto+de+Villahermosa&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9426
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/05/sniim__limon-c-semilla-5-primera-tabasco-central-de-abasto-de-villahermosa__2026-05-01_2026-05-31__20261127T163300Z-b2933e.html",
+      "sha256": "a629df45fd22faf9abd64fc0c2a00ae59caf381fe8e76c4d6a909bfb0462ffd9",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F05%2F2026&fechaFinal=31%2F05%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=270&Destino=Tabasco%3A+Central+de+Abasto+de+Villahermosa&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9426
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/06/sniim__limon-c-semilla-5-primera-tabasco-central-de-abasto-de-villahermosa__2026-06-01_2026-06-30__20261127T163300Z-b2933e.html",
+      "sha256": "8adfd66555a5d7178bd9cfcdcec7ed344887643b56ae772776365f3ce3f1c23c",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F06%2F2026&fechaFinal=30%2F06%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=270&Destino=Tabasco%3A+Central+de+Abasto+de+Villahermosa&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9426
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/07/sniim__limon-c-semilla-5-primera-tabasco-central-de-abasto-de-villahermosa__2026-07-01_2026-07-31__20261127T163300Z-b2933e.html",
+      "sha256": "6068af0e8dae5e4ca8c7ddf23961c84d16af35b6ed6e7c34e1af765f1cb25517",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F07%2F2026&fechaFinal=31%2F07%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=270&Destino=Tabasco%3A+Central+de+Abasto+de+Villahermosa&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9426
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/08/sniim__limon-c-semilla-5-primera-tabasco-central-de-abasto-de-villahermosa__2026-08-01_2026-08-31__20261127T163300Z-b2933e.html",
+      "sha256": "6aedc79511bd0e8e29a8ddf306281d85dede0727eec98119336f04969d42461d",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F08%2F2026&fechaFinal=31%2F08%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=270&Destino=Tabasco%3A+Central+de+Abasto+de+Villahermosa&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9426
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/09/sniim__limon-c-semilla-5-primera-tabasco-central-de-abasto-de-villahermosa__2026-09-01_2026-09-30__20261127T163300Z-b2933e.html",
+      "sha256": "a98efe2dc84c71429cc759253d7d2267e4f3e3fe90e078b877b53799b4b2c88b",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F09%2F2026&fechaFinal=30%2F09%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=270&Destino=Tabasco%3A+Central+de+Abasto+de+Villahermosa&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9426
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__limon-c-semilla-5-primera-tabasco-central-de-abasto-de-villahermosa__2026-10-01_2026-10-31__20261127T163300Z-b2933e.html",
+      "sha256": "c8bae6389060d7cc37c108fc599c1e3fc4b0cb5facb6f9b35cce9f1ae3f61327",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=270&Destino=Tabasco%3A+Central+de+Abasto+de+Villahermosa&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9426
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__limon-c-semilla-5-primera-tabasco-central-de-abasto-de-villahermosa__2026-11-01_2026-11-26__20261127T163300Z-b2933e.html",
+      "sha256": "e0c4583a8341ec6b821613205a4fd2c0012becaead396d9389f50461e310a90c",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F11%2F2026&fechaFinal=26%2F11%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=270&Destino=Tabasco%3A+Central+de+Abasto+de+Villahermosa&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9426
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/11/sniim__limon-c-semilla-5-primera-veracruz-mercado-malibran__2025-11-01_2025-11-30__20261127T163300Z-b2933e.html",
+      "sha256": "aabc8b08295c5f3611f7beb094c21125e44248069aa1c2d0e2567efd530da2ac",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F11%2F2025&fechaFinal=30%2F11%2F2025&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=306&Destino=Veracruz%3A+Mercado+Malibr%C3%A1n&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9415
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/12/sniim__limon-c-semilla-5-primera-veracruz-mercado-malibran__2025-12-01_2025-12-31__20261127T163300Z-b2933e.html",
+      "sha256": "b37949033f99e56f789e257d6741a47c118938cbd01a7e7b8a5e1b7cf8b5b463",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F12%2F2025&fechaFinal=31%2F12%2F2025&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=306&Destino=Veracruz%3A+Mercado+Malibr%C3%A1n&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9415
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/01/sniim__limon-c-semilla-5-primera-veracruz-mercado-malibran__2026-01-01_2026-01-31__20261127T163300Z-b2933e.html",
+      "sha256": "d1c35b470fdc0917106a8bc356e9bb694bd7849c25434dde4e045cf2b605637f",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F01%2F2026&fechaFinal=31%2F01%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=306&Destino=Veracruz%3A+Mercado+Malibr%C3%A1n&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9415
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/02/sniim__limon-c-semilla-5-primera-veracruz-mercado-malibran__2026-02-01_2026-02-28__20261127T163300Z-b2933e.html",
+      "sha256": "6fc9beecbfc2cd436088ac1d6fa664b9343953d9d4eeb86e0dae6dae122c9b3c",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F02%2F2026&fechaFinal=28%2F02%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=306&Destino=Veracruz%3A+Mercado+Malibr%C3%A1n&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9415
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/03/sniim__limon-c-semilla-5-primera-veracruz-mercado-malibran__2026-03-01_2026-03-31__20261127T163300Z-b2933e.html",
+      "sha256": "3d66e425d6018eed99ec55e8cf4638f8e6d09a7cb79a193c3f7b41dc20bf80a6",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F03%2F2026&fechaFinal=31%2F03%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=306&Destino=Veracruz%3A+Mercado+Malibr%C3%A1n&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9415
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/04/sniim__limon-c-semilla-5-primera-veracruz-mercado-malibran__2026-04-01_2026-04-30__20261127T163300Z-b2933e.html",
+      "sha256": "5257a204a719399b4aeb5d370c16b4f54a97ed177636fb2213554d2caba1b49d",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F04%2F2026&fechaFinal=30%2F04%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=306&Destino=Veracruz%3A+Mercado+Malibr%C3%A1n&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9415
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/05/sniim__limon-c-semilla-5-primera-veracruz-mercado-malibran__2026-05-01_2026-05-31__20261127T163300Z-b2933e.html",
+      "sha256": "d787f49f29875428618098202f7c42daa54f00444601985c7c76b1c3a064d8fa",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F05%2F2026&fechaFinal=31%2F05%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=306&Destino=Veracruz%3A+Mercado+Malibr%C3%A1n&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9415
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/06/sniim__limon-c-semilla-5-primera-veracruz-mercado-malibran__2026-06-01_2026-06-30__20261127T163300Z-b2933e.html",
+      "sha256": "f1524b897561f39b8c71803de2ea90fa4d50f98b36f6ca43d9e3d5ceb002336a",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F06%2F2026&fechaFinal=30%2F06%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=306&Destino=Veracruz%3A+Mercado+Malibr%C3%A1n&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9415
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/07/sniim__limon-c-semilla-5-primera-veracruz-mercado-malibran__2026-07-01_2026-07-31__20261127T163300Z-b2933e.html",
+      "sha256": "0a113a08f312270f21ea2c47a1fe6f8b220cf16fa8c39fc96a4b1db2a845da70",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F07%2F2026&fechaFinal=31%2F07%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=306&Destino=Veracruz%3A+Mercado+Malibr%C3%A1n&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9415
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/08/sniim__limon-c-semilla-5-primera-veracruz-mercado-malibran__2026-08-01_2026-08-31__20261127T163300Z-b2933e.html",
+      "sha256": "d015add1f6d69c64e34ef97d9feb1c2275fe3d2400224c3b591842a1f4a7099e",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F08%2F2026&fechaFinal=31%2F08%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=306&Destino=Veracruz%3A+Mercado+Malibr%C3%A1n&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9415
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/09/sniim__limon-c-semilla-5-primera-veracruz-mercado-malibran__2026-09-01_2026-09-30__20261127T163300Z-b2933e.html",
+      "sha256": "c740657f124e1505733ccd98d54c1102d5acd0da9d9c1bcbdc70c05d6bcf91a0",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F09%2F2026&fechaFinal=30%2F09%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=306&Destino=Veracruz%3A+Mercado+Malibr%C3%A1n&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9415
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__limon-c-semilla-5-primera-veracruz-mercado-malibran__2026-10-01_2026-10-31__20261127T163300Z-b2933e.html",
+      "sha256": "30b6f45fe53fa784e057292e59c0a2ca08de5a6474fe4861a4659212c47d1444",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=306&Destino=Veracruz%3A+Mercado+Malibr%C3%A1n&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9415
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__limon-c-semilla-5-primera-veracruz-mercado-malibran__2026-11-01_2026-11-26__20261127T163300Z-b2933e.html",
+      "sha256": "239f324581b93219225a5e67bb3c6f20640ad43cb56ad19148a1f6c02e6b1bba",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F11%2F2026&fechaFinal=26%2F11%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=306&Destino=Veracruz%3A+Mercado+Malibr%C3%A1n&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9415
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/11/sniim__limon-c-semilla-5-primera-zacatecas-mercado-de-abasto-de-zacatecas__2025-11-01_2025-11-30__20261127T163300Z-b2933e.html",
+      "sha256": "4d5e369edad6f9a97a360a732473c0dc112adbde952d5d9269143d1b402348a9",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F11%2F2025&fechaFinal=30%2F11%2F2025&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=320&Destino=Zacatecas%3A+Mercado+de+Abasto+de+Zacatecas&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9425
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/12/sniim__limon-c-semilla-5-primera-zacatecas-mercado-de-abasto-de-zacatecas__2025-12-01_2025-12-31__20261127T163300Z-b2933e.html",
+      "sha256": "ac15ac6c2f293f6fe98546d52e5f1b19e0822be2a75b277f319e479daec378b5",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F12%2F2025&fechaFinal=31%2F12%2F2025&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=320&Destino=Zacatecas%3A+Mercado+de+Abasto+de+Zacatecas&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9425
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/01/sniim__limon-c-semilla-5-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-01-01_2026-01-31__20261127T163300Z-b2933e.html",
+      "sha256": "4c7a86bb791ed61d70263c15ed4969e6abf282e6db3333d7e56cb389066a82b3",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F01%2F2026&fechaFinal=31%2F01%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=320&Destino=Zacatecas%3A+Mercado+de+Abasto+de+Zacatecas&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9425
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/02/sniim__limon-c-semilla-5-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-02-01_2026-02-28__20261127T163300Z-b2933e.html",
+      "sha256": "8e7635310117a69ef046b8b71f1cea6962bbcd5b642485ea79cddcaf0029f35c",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F02%2F2026&fechaFinal=28%2F02%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=320&Destino=Zacatecas%3A+Mercado+de+Abasto+de+Zacatecas&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9425
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/03/sniim__limon-c-semilla-5-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-03-01_2026-03-31__20261127T163300Z-b2933e.html",
+      "sha256": "0cf2e5fecd272a5d55a9ad1d550de4ee9ccbfdc86e98aa7342adcd780bf6032d",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F03%2F2026&fechaFinal=31%2F03%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=320&Destino=Zacatecas%3A+Mercado+de+Abasto+de+Zacatecas&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9425
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/04/sniim__limon-c-semilla-5-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-04-01_2026-04-30__20261127T163300Z-b2933e.html",
+      "sha256": "7c10ef38ab81cc6d5e0cdc406e5ebde45c2a41712f486dfc34ce500a0b95a9f3",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F04%2F2026&fechaFinal=30%2F04%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=320&Destino=Zacatecas%3A+Mercado+de+Abasto+de+Zacatecas&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9425
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/05/sniim__limon-c-semilla-5-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-05-01_2026-05-31__20261127T163300Z-b2933e.html",
+      "sha256": "f56fd038a2b1bf02e451e8436330f13d6930688de6e29e9ec74e7dd4e05679e3",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F05%2F2026&fechaFinal=31%2F05%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=320&Destino=Zacatecas%3A+Mercado+de+Abasto+de+Zacatecas&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9425
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/06/sniim__limon-c-semilla-5-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-06-01_2026-06-30__20261127T163300Z-b2933e.html",
+      "sha256": "0fe9ef4b16f2f5af3754bf582b770315e7ac24395920113f6e9ef0c7475f3dc0",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F06%2F2026&fechaFinal=30%2F06%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=320&Destino=Zacatecas%3A+Mercado+de+Abasto+de+Zacatecas&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9425
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/07/sniim__limon-c-semilla-5-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-07-01_2026-07-31__20261127T163300Z-b2933e.html",
+      "sha256": "6c839a468f18fdee79dbe3d288447a77fff41a697d7ff22190dfbe7e05bae1d2",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F07%2F2026&fechaFinal=31%2F07%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=320&Destino=Zacatecas%3A+Mercado+de+Abasto+de+Zacatecas&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9425
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/08/sniim__limon-c-semilla-5-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-08-01_2026-08-31__20261127T163300Z-b2933e.html",
+      "sha256": "bd314a60b87ff477951ea95ffaef51bfb7fa83602815fa173688a7e9d284284f",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F08%2F2026&fechaFinal=31%2F08%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=320&Destino=Zacatecas%3A+Mercado+de+Abasto+de+Zacatecas&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9425
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/09/sniim__limon-c-semilla-5-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-09-01_2026-09-30__20261127T163300Z-b2933e.html",
+      "sha256": "3faeaa4e09c558e873dd8d8f34c6ade45e7b73005791abedc16133fb7296bf71",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F09%2F2026&fechaFinal=30%2F09%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=320&Destino=Zacatecas%3A+Mercado+de+Abasto+de+Zacatecas&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9425
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__limon-c-semilla-5-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-10-01_2026-10-31__20261127T163300Z-b2933e.html",
+      "sha256": "d2794abfc9aecb0fcf98c8725e66bf2db116e8a884908be0aabc10d439a95605",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=320&Destino=Zacatecas%3A+Mercado+de+Abasto+de+Zacatecas&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9425
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__limon-c-semilla-5-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-11-01_2026-11-26__20261127T163300Z-b2933e.html",
+      "sha256": "7119e7f0653d5c65897f3c22fbaa7d3eff6d184a124dbc6f7b20f8fff15432ba",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F11%2F2026&fechaFinal=26%2F11%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=320&Destino=Zacatecas%3A+Mercado+de+Abasto+de+Zacatecas&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9425
+    }
+  ],
+  "errores": [],
+  "parametros": {
+    "productos": [
+      "limon_c5"
+    ],
+    "mercados": [
+      "guadalajara_felipe_angeles",
+      "aguascalientes",
+      "torreon",
+      "chihuahua",
+      "cd_juarez",
+      "gomez_palacio",
+      "monterrey",
+      "san_luis_potosi",
+      "hermosillo",
+      "cd_obregon",
+      "villahermosa",
+      "veracruz",
+      "zacatecas"
+    ],
+    "periodos": [
+      [
+        "2025-11-01",
+        "2025-11-30"
+      ],
+      [
+        "2025-12-01",
+        "2025-12-31"
+      ],
+      [
+        "2026-01-01",
+        "2026-01-31"
+      ],
+      [
+        "2026-02-01",
+        "2026-02-28"
+      ],
+      [
+        "2026-03-01",
+        "2026-03-31"
+      ],
+      [
+        "2026-04-01",
+        "2026-04-30"
+      ],
+      [
+        "2026-05-01",
+        "2026-05-31"
+      ],
+      [
+        "2026-06-01",
+        "2026-06-30"
+      ],
+      [
+        "2026-07-01",
+        "2026-07-31"
+      ],
+      [
+        "2026-08-01",
+        "2026-08-31"
+      ],
+      [
+        "2026-09-01",
+        "2026-09-30"
+      ],
+      [
+        "2026-10-01",
+        "2026-10-31"
+      ],
+      [
+        "2026-11-01",
+        "2026-11-26"
+      ]
+    ]
+  },
+  "esquema": "tdl-manifest/1",
+  "archivos_generados": 170
+}

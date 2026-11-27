@@ -1,0 +1,39 @@
+{
+  "esquema": "tdl-bronce-meta/1",
+  "contenido_original": {
+    "archivo": "sniim__limon-c-semilla-5-primera-durango-centro-de-distribucion-y-abasto-de-gomez-palacio__2026-04-01_2026-04-30__20261127T163300Z-b2933e.html",
+    "descripcion": "Bytes tal como los entregó la fuente; no se modifican."
+  },
+  "metadatos_captura": {
+    "fuente": "sniim",
+    "fuente_url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F04%2F2026&fechaFinal=30%2F04%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=101&Destino=Durango%3A+Centro+de+Distribuci%C3%B3n+y+Abasto+de+G%C3%B3mez+Palacio&PreciosPorId=1&RegistrosPorPagina=500",
+    "fecha_captura": "2026-11-27T16:35:41Z",
+    "identificador_ejecucion": "20261127T163300Z-b2933e",
+    "formato_original": "html",
+    "sha256": "380f00ceb3f20f9832936f7536e947e96313a8a24d323d494408a0774c8d2cb7",
+    "bytes": 47712,
+    "http_status": 200,
+    "registros_detectados": 60,
+    "estado_captura": "ok",
+    "advertencias": [],
+    "colision_nombre": false,
+    "etiqueta": "Limón c/semilla # 5 - Primera__Durango: Centro de Distribución y Abasto de Gómez Palacio",
+    "producto": "Limón c/semilla # 5 - Primera",
+    "producto_id": "421",
+    "mercado": "Durango: Centro de Distribución y Abasto de Gómez Palacio",
+    "mercado_id": "101",
+    "fecha_ref_inicio": "2026-04-01",
+    "fecha_ref_fin": "2026-04-30",
+    "parametros": {
+      "fechaInicio": "01/04/2026",
+      "fechaFinal": "30/04/2026",
+      "ProductoId": "421",
+      "OrigenId": "-1",
+      "Origen": "Todos",
+      "DestinoId": "101",
+      "Destino": "Durango: Centro de Distribución y Abasto de Gómez Palacio",
+      "PreciosPorId": "1",
+      "RegistrosPorPagina": "500"
+    }
+  }
+}

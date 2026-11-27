@@ -1,0 +1,39 @@
+{
+  "esquema": "tdl-bronce-meta/1",
+  "contenido_original": {
+    "archivo": "sniim__platano-veracruz-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-04-01_2026-04-30__20261127T164543Z-fb45cf.html",
+    "descripcion": "Bytes tal como los entregó la fuente; no se modifican."
+  },
+  "metadatos_captura": {
+    "fuente": "sniim",
+    "fuente_url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F04%2F2026&fechaFinal=30%2F04%2F2026&ProductoId=736&OrigenId=-1&Origen=Todos&DestinoId=320&Destino=Zacatecas%3A+Mercado+de+Abasto+de+Zacatecas&PreciosPorId=1&RegistrosPorPagina=500",
+    "fecha_captura": "2026-11-27T17:30:07Z",
+    "identificador_ejecucion": "20261127T164543Z-fb45cf",
+    "formato_original": "html",
+    "sha256": "7a4a19f235d37d4b989f6d2ac0f849f22b6bd1e80998d66d67a63ba0b33d2e38",
+    "bytes": 9425,
+    "http_status": 200,
+    "registros_detectados": 0,
+    "estado_captura": "sin_resultados",
+    "advertencias": [],
+    "colision_nombre": false,
+    "etiqueta": "Plátano Veracruz - Primera__Zacatecas: Mercado de Abasto de Zacatecas",
+    "producto": "Plátano Veracruz - Primera",
+    "producto_id": "736",
+    "mercado": "Zacatecas: Mercado de Abasto de Zacatecas",
+    "mercado_id": "320",
+    "fecha_ref_inicio": "2026-04-01",
+    "fecha_ref_fin": "2026-04-30",
+    "parametros": {
+      "fechaInicio": "01/04/2026",
+      "fechaFinal": "30/04/2026",
+      "ProductoId": "736",
+      "OrigenId": "-1",
+      "Origen": "Todos",
+      "DestinoId": "320",
+      "Destino": "Zacatecas: Mercado de Abasto de Zacatecas",
+      "PreciosPorId": "1",
+      "RegistrosPorPagina": "500"
+    }
+  }
+}

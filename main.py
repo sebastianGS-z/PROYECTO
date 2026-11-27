@@ -8,8 +8,13 @@
     python main.py capas      [--bronze-dir ... --data-dir ...] (pipeline E1)
     python main.py e2         [--solo-procesar] (captura INEGI, E1 y productos geoespaciales)
     python main.py observatorio [--horizonte 3] (pronósticos, backtest, exportación y tablero)
+    python main.py inteligencia [--corte AAAA-MM] (margen del productor, plazas, calendario y señales)
+    python main.py reporte (reporte de inteligencia imprimible y API estática de datos)
+    python main.py preguntas (preguntas del agricultor respondidas con datos y calculadora de precio)
+    python main.py portal (página de inicio para clientes y panel de administración)
     python main.py comercial  <subcomando> (seguimiento local de oportunidades y costeo)
     python main.py siap [archivo.csv] (producción municipal SIAP + mapa INEGI)
+    python main.py siap-captura --anios 2016 ... 2025 (cierres agrícolas anuales SIAP a Bronce)
     python main.py comercio-intl [--solo-procesar] (comercio mundial UN Comtrade)
     python main.py precios-catalogo [--fecha AAAA-MM-DD] [--solo-procesar] (frutas publicadas en SNIIM por mercado)
     python main.py mapa-mercados [--solo-procesar] (geografía de plazas nacionales)
@@ -55,10 +60,20 @@ def main(argv: list[str] | None = None) -> int:
         from src.tdl_e1.pipeline import main as f
     elif cmd == "e2":
         from src.tdl_e2.geoespacial import main as f
+    elif cmd == "portal":
+        from src.inteligencia.portal import main as f
+    elif cmd == "preguntas":
+        from src.inteligencia.preguntas import main as f
+    elif cmd == "reporte":
+        from src.inteligencia.reporte import main as f
+    elif cmd == "inteligencia":
+        from src.inteligencia.comercial import main as f
     elif cmd == "observatorio":
         from src.tdl_e4.observatorio import main as f
     elif cmd == "comercial":
         from scripts.comercial import main as f
+    elif cmd == "siap-captura":
+        from scripts.capturar_siap import main as f
     elif cmd == "siap":
         from scripts.integrar_siap_colima import main as f
     elif cmd == "comercio-intl":

@@ -1,0 +1,39 @@
+{
+  "esquema": "tdl-bronce-meta/1",
+  "contenido_original": {
+    "archivo": "sniim__platano-macho-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-03-01_2026-03-31__20261127T164543Z-fb45cf.html",
+    "descripcion": "Bytes tal como los entregó la fuente; no se modifican."
+  },
+  "metadatos_captura": {
+    "fuente": "sniim",
+    "fuente_url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F03%2F2026&fechaFinal=31%2F03%2F2026&ProductoId=723&OrigenId=-1&Origen=Todos&DestinoId=320&Destino=Zacatecas%3A+Mercado+de+Abasto+de+Zacatecas&PreciosPorId=1&RegistrosPorPagina=500",
+    "fecha_captura": "2026-11-27T16:56:21Z",
+    "identificador_ejecucion": "20261127T164543Z-fb45cf",
+    "formato_original": "html",
+    "sha256": "88fd0845c42d5833344192359952a20caa5d64339970731baa74f4e86ba30711",
+    "bytes": 9425,
+    "http_status": 200,
+    "registros_detectados": 0,
+    "estado_captura": "sin_resultados",
+    "advertencias": [],
+    "colision_nombre": false,
+    "etiqueta": "Plátano Macho - Primera__Zacatecas: Mercado de Abasto de Zacatecas",
+    "producto": "Plátano Macho - Primera",
+    "producto_id": "723",
+    "mercado": "Zacatecas: Mercado de Abasto de Zacatecas",
+    "mercado_id": "320",
+    "fecha_ref_inicio": "2026-03-01",
+    "fecha_ref_fin": "2026-03-31",
+    "parametros": {
+      "fechaInicio": "01/03/2026",
+      "fechaFinal": "31/03/2026",
+      "ProductoId": "723",
+      "OrigenId": "-1",
+      "Origen": "Todos",
+      "DestinoId": "320",
+      "Destino": "Zacatecas: Mercado de Abasto de Zacatecas",
+      "PreciosPorId": "1",
+      "RegistrosPorPagina": "500"
+    }
+  }
+}

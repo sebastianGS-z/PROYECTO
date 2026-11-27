@@ -1,0 +1,39 @@
+{
+  "esquema": "tdl-bronce-meta/1",
+  "contenido_original": {
+    "archivo": "sniim__papaya-maradol-primera-zacatecas-mercado-de-abasto-de-zacatecas__2026-07-01_2026-07-31__20261127T163936Z-08c1f0.html",
+    "descripcion": "Bytes tal como los entregó la fuente; no se modifican."
+  },
+  "metadatos_captura": {
+    "fuente": "sniim",
+    "fuente_url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F07%2F2026&fechaFinal=31%2F07%2F2026&ProductoId=609&OrigenId=-1&Origen=Todos&DestinoId=320&Destino=Zacatecas%3A+Mercado+de+Abasto+de+Zacatecas&PreciosPorId=1&RegistrosPorPagina=500",
+    "fecha_captura": "2026-11-27T16:43:56Z",
+    "identificador_ejecucion": "20261127T163936Z-08c1f0",
+    "formato_original": "html",
+    "sha256": "4afdb996cd0b608e4eb7e0fbfd7c1855c31fd5c21d6ef6eb8f1142bf8cc5cf32",
+    "bytes": 26802,
+    "http_status": 200,
+    "registros_detectados": 23,
+    "estado_captura": "ok",
+    "advertencias": [],
+    "colision_nombre": false,
+    "etiqueta": "Papaya Maradol - Primera__Zacatecas: Mercado de Abasto de Zacatecas",
+    "producto": "Papaya Maradol - Primera",
+    "producto_id": "609",
+    "mercado": "Zacatecas: Mercado de Abasto de Zacatecas",
+    "mercado_id": "320",
+    "fecha_ref_inicio": "2026-07-01",
+    "fecha_ref_fin": "2026-07-31",
+    "parametros": {
+      "fechaInicio": "01/07/2026",
+      "fechaFinal": "31/07/2026",
+      "ProductoId": "609",
+      "OrigenId": "-1",
+      "Origen": "Todos",
+      "DestinoId": "320",
+      "Destino": "Zacatecas: Mercado de Abasto de Zacatecas",
+      "PreciosPorId": "1",
+      "RegistrosPorPagina": "500"
+    }
+  }
+}

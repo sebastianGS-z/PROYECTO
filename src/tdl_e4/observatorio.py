@@ -23,15 +23,17 @@ import numpy as np
 import pandas as pd
 from statsmodels.tsa.arima.model import ARIMA
 from statsmodels.tsa.holtwinters import ExponentialSmoothing, Holt, SimpleExpSmoothing
+from statsmodels.tsa.stattools import adfuller
 
 from config.settings import BASE_DIR
 
 LOG = logging.getLogger("tdl.e4")
 KEYS = ["cultivo", "variante_id", "variante", "origen"]
 MIN_MONTHS = 36
+REFERENCIA_CULTIVOS = ("limon", "papaya", "platano")
 SELECTION_STEPS = 6
 HOLDOUT_STEPS = 6
-MODEL_NAMES = ("suavizamiento_simple", "holt", "holt_winters_aditivo", "arima_111")
+MODEL_NAMES = ("suavizamiento_simple", "holt", "holt_winters_aditivo", "arima_aic")
 MARKET_NAMES = {
     "80": "Colima · Centros de distribución",
     "100": "CDMX · Central de Abasto de Iztapalapa",
@@ -40,6 +42,21 @@ MARKET_NAMES = {
     "160": "Morelia · Mercado de Abasto",
     "180": "Tepic · Mercado Adolfo López Mateos",
     "181": "Tepic · Nayarabastos",
+    "10": "Aguascalientes · Centro Comercial Agropecuario",
+    "20": "La Paz · Unión de Comerciantes",
+    "33": "Tijuana · Central de Abasto INDIA",
+    "50": "Torreón · Central de Abasto de La Laguna",
+    "61": "Chihuahua · Central de Abasto",
+    "63": "Cd. Juárez · Mercado de Abasto",
+    "101": "Gómez Palacio · Centro de Distribución y Abasto",
+    "190": "Monterrey · Mercado de Abasto Estrella",
+    "220": "Querétaro · Mercado de Abasto",
+    "240": "San Luis Potosí · Centro de Abasto",
+    "260": "Hermosillo · Mercado de Abasto Francisco I. Madero",
+    "261": "Cd. Obregón · Central de Abasto",
+    "270": "Villahermosa · Central de Abasto",
+    "306": "Veracruz · Mercado Malibrán",
+    "320": "Zacatecas · Mercado de Abasto",
 }
 
 
@@ -51,6 +68,27 @@ def _market_id(value: Any) -> str:
     except (TypeError, ValueError):
         pass
     return str(value)
+
+
+def _arima_por_aic(series: pd.Series):
+    """ARIMA con d por Dickey-Fuller aumentada y (p, q) ∈ {0, 1, 2} por menor AIC.
+
+    Se reestima en cada punto de validación con los datos disponibles hasta ese momento, igual que
+    el laboratorio E1 (laboratorio/e1_series.py), para que el pronóstico publicado use la misma regla.
+    """
+    d = 0 if adfuller(series, autolag="AIC")[1] < 0.05 else 1
+    mejor, mejor_aic = None, math.inf
+    for p_ar in range(3):
+        for q_ma in range(3):
+            try:
+                ajuste = ARIMA(series, order=(p_ar, d, q_ma), trend="c" if d == 0 else "n").fit()
+            except Exception:  # noqa: BLE001 - combinación que no converge
+                continue
+            if np.isfinite(ajuste.aic) and ajuste.aic < mejor_aic:
+                mejor, mejor_aic = ajuste, ajuste.aic
+    if mejor is None:
+        raise ValueError("ningún orden ARIMA convergió")
+    return mejor
 
 
 def _fit_predict(model: str, values: np.ndarray, steps: int) -> np.ndarray:
@@ -68,9 +106,8 @@ def _fit_predict(model: str, values: np.ndarray, steps: int) -> np.ndarray:
                 series, trend="add", seasonal="add", seasonal_periods=12,
                 initialization_method="estimated",
             ).fit(optimized=True, use_brute=False)
-        elif model == "arima_111":
-            fitted = ARIMA(series, order=(1, 1, 1), trend="t",
-                           enforce_stationarity=False, enforce_invertibility=False).fit()
+        elif model == "arima_aic":
+            fitted = _arima_por_aic(series)
         else:
             raise ValueError(f"Modelo no soportado: {model}")
     forecast = np.asarray(fitted.forecast(steps=steps), dtype="float64")
@@ -155,6 +192,30 @@ def _backtest(series: pd.Series) -> tuple[pd.DataFrame, pd.DataFrame]:
     return pd.DataFrame(rows), pd.DataFrame(predictions)
 
 
+def _intervalo_empirico(errores_seleccion: np.ndarray, errores_holdout: np.ndarray) -> dict[str, Any]:
+    """Intervalo de predicción conformal (empírico) a partir de errores fuera de muestra a un paso.
+
+    No supone normalidad ni un modelo concreto: usa el cuantil con corrección de muestra finita
+    ``ceil((n+1)(1-α))/n`` de |error| en los 12 meses de validación y lo amplía con sqrt(h) por horizonte.
+    La cobertura se audita calibrando solo con la ventana de selección y contando aciertos en el holdout.
+    """
+    todos = np.abs(np.concatenate([errores_seleccion, errores_holdout]))
+    todos = todos[np.isfinite(todos)]
+
+    def cuantil(valores: np.ndarray, nivel: float) -> float:
+        n = len(valores)
+        if n == 0:
+            return math.nan
+        q = min(1.0, math.ceil((n + 1) * nivel) / n)
+        return float(np.quantile(valores, q, method="higher"))
+
+    sel = np.abs(errores_seleccion[np.isfinite(errores_seleccion)])
+    hold = np.abs(errores_holdout[np.isfinite(errores_holdout)])
+    cobertura80 = float(np.mean(hold <= cuantil(sel, 0.80))) if len(sel) and len(hold) else math.nan
+    return {"q80": cuantil(todos, 0.80), "q95": cuantil(todos, 0.95), "n_errores": int(len(todos)),
+            "cobertura_80_holdout": cobertura80}
+
+
 def _comparar_mercados(monthly: pd.DataFrame) -> pd.DataFrame:
     columns = [*KEYS, "meses_comunes", "mercados_observados", "mercado_con_mayor_precio_medio",
                "diferencia_mxn_kg", "estado_comparacion"]
@@ -200,87 +261,121 @@ def generar_observatorio(gold_path: Path | None = None, output_dir: Path | None 
     history_rows: list[dict[str, Any]] = []
     eligibility: list[dict[str, Any]] = []
     series_keys = [*KEYS, "mercado"]
-    for key, group in monthly.groupby(series_keys, dropna=False):
-        group = group.sort_values("mes").drop_duplicates("mes", keep="last")
-        periods = pd.period_range(group["mes"].min(), group["mes"].max(), freq="M")
-        indexed = group.set_index("mes")["precio_frecuente_kg"].reindex(periods)
-        meta = dict(zip(series_keys, key if isinstance(key, tuple) else (key,), strict=True))
-        meta["nombre_mercado"] = MARKET_NAMES.get(str(meta["mercado"]), str(meta["mercado"]))
-        # Retenemos observaciones reales aunque la cobertura todavía no alcance
-        # el umbral de pronóstico. Esto permite mostrar nuevos cultivos con su
-        # estado de cobertura explícito, sin completar meses faltantes.
-        for period, price in indexed.dropna().items():
-            history_rows.append(meta | {"fecha": str(period), "precio_frecuente_mxn_kg": float(price)})
-        if len(indexed) < MIN_MONTHS or indexed.isna().any():
-            eligibility.append(meta | {"meses": int(len(indexed)), "pronosticable": False,
-                                       "motivo": "requiere_36_meses_contiguos_sin_imputacion"})
+    def _procesar(monthly_df: pd.DataFrame, tipo_serie: str) -> None:
+        for key, group in monthly_df.groupby(series_keys, dropna=False):
+            group = group.sort_values("mes").drop_duplicates("mes", keep="last")
+            periods = pd.period_range(group["mes"].min(), group["mes"].max(), freq="M")
+            indexed = group.set_index("mes")["precio_frecuente_kg"].reindex(periods)
+            meta = dict(zip(series_keys, key if isinstance(key, tuple) else (key,), strict=True))
+            meta["nombre_mercado"] = MARKET_NAMES.get(str(meta["mercado"]), str(meta["mercado"]))
+            meta["tipo_serie"] = tipo_serie
+            # Retenemos observaciones reales aunque la cobertura todavía no alcance
+            # el umbral de pronóstico. Esto permite mostrar nuevos cultivos con su
+            # estado de cobertura explícito, sin completar meses faltantes.
+            for period, price in indexed.dropna().items():
+                history_rows.append(meta | {"fecha": str(period), "precio_frecuente_mxn_kg": float(price)})
+            if len(indexed) < MIN_MONTHS or indexed.isna().any():
+                eligibility.append(meta | {"meses": int(len(indexed)), "pronosticable": False,
+                                           "motivo": "requiere_36_meses_contiguos_sin_imputacion"})
+                continue
+            score_table, predictions = _backtest(indexed)
+            if score_table.empty:
+                eligibility.append(meta | {"meses": int(len(indexed)), "pronosticable": False,
+                                           "motivo": "ningun_modelo_obtuvo_validaciones_suficientes"})
+                continue
+            selection_scores = score_table[score_table["segmento"].eq("seleccion")].sort_values(
+                ["mae_mxn_kg", "rmse_mxn_kg"], kind="stable")
+            holdout_scores = score_table[score_table["segmento"].eq("holdout")]
+            if selection_scores.empty:
+                eligibility.append(meta | {"meses": int(len(indexed)), "pronosticable": False,
+                                           "motivo": "sin_modelo_con_validacion_de_seleccion"})
+                continue
+            winner = str(selection_scores.iloc[0]["modelo"])
+            winner_holdout = holdout_scores[holdout_scores["modelo"].eq(winner)]
+            if winner_holdout.empty:
+                eligibility.append(meta | {"meses": int(len(indexed)), "pronosticable": False,
+                                           "motivo": "modelo_elegido_sin_resultado_holdout"})
+                continue
+            winner_holdout = winner_holdout.iloc[0]
+            try:
+                future = _fit_predict(winner, indexed.to_numpy(dtype="float64"), horizon)
+            except Exception as exc:
+                eligibility.append(meta | {"meses": int(len(indexed)), "pronosticable": False,
+                                           "motivo": f"fallo_ajuste_final_{type(exc).__name__}"})
+                continue
+            metric_table = score_table.assign(**meta, modelo_elegido=score_table["modelo"].eq(winner))
+            metric_rows.extend(metric_table.to_dict("records"))
+            if not predictions.empty:
+                predictions = predictions.assign(**meta)
+                validation_rows.extend(predictions.to_dict("records"))
+            last = periods[-1]
+            selection_start = len(periods) - SELECTION_STEPS - HOLDOUT_STEPS
+            holdout_start = len(periods) - HOLDOUT_STEPS
+            selection_first_month = str(periods[selection_start])
+            selection_last_month = str(periods[holdout_start - 1])
+            holdout_first_month = str(periods[holdout_start])
+            holdout_last_month = str(periods[-1])
+            input_lineage = ""
+            if "linaje_mes_sha256" in group:
+                lineage_rows = group.sort_values("mes")[["mes", "linaje_mes_sha256"]].to_dict("records")
+                input_lineage = hashlib.sha256(json.dumps(lineage_rows, ensure_ascii=False, default=str,
+                                                           sort_keys=True).encode("utf-8")).hexdigest()
+            winner_preds = predictions[predictions["modelo"].eq(winner)] if not predictions.empty else predictions
+            intervalo = _intervalo_empirico(
+                winner_preds.loc[winner_preds["segmento"].eq("seleccion"), "error_mxn_kg"].to_numpy(dtype="float64") if len(winner_preds) else np.array([]),
+                winner_preds.loc[winner_preds["segmento"].eq("holdout"), "error_mxn_kg"].to_numpy(dtype="float64") if len(winner_preds) else np.array([]))
+            for step, point in enumerate(future, start=1):
+                ancho80, ancho95 = intervalo["q80"] * math.sqrt(step), intervalo["q95"] * math.sqrt(step)
+                forecast_rows.append(meta | {
+                    "li80_mxn_kg": max(0.0, float(point) - ancho80), "ls80_mxn_kg": float(point) + ancho80,
+                    "li95_mxn_kg": max(0.0, float(point) - ancho95), "ls95_mxn_kg": float(point) + ancho95,
+                    "metodo_intervalo": "conformal empírico: cuantil de |error| a un paso en 12 meses fuera de muestra × √h",
+                    "n_errores_intervalo": intervalo["n_errores"],
+                    "cobertura_80_holdout": intervalo["cobertura_80_holdout"],
+                    "modelo_elegido": winner, "meses_entrenamiento": int(len(indexed)),
+                    "fecha_pronostico": str(last + step), "horizonte_meses": step,
+                    "precio_frecuente_mxn_kg": max(0.0, float(point)),
+                    "mae_backtest_mxn_kg": float(winner_holdout["mae_mxn_kg"]),
+                    "rmse_backtest_mxn_kg": float(winner_holdout["rmse_mxn_kg"]),
+                    "mape_backtest_pct": float(winner_holdout["mape_pct"]),
+                    "n_validaciones": int(winner_holdout["n_validaciones"]),
+                    "n_validaciones_seleccion": int(selection_scores.iloc[0]["n_validaciones"]),
+                    "fecha_inicio_holdout": holdout_first_month,
+                    "fecha_fin_holdout": holdout_last_month,
+                    "fecha_primer_dato": str(periods[0]), "linaje_serie_sha256": input_lineage,
+                    "fecha_ultimo_dato": str(last),
+                    "nota": "estimacion con intervalo empirico 80/95 %; sin garantia; validar antes de uso comercial",
+                })
+            eligibility.append(meta | {"meses": int(len(indexed)), "pronosticable": True,
+                                       "modelo_elegido": winner,
+                                       "n_validaciones_seleccion": int(selection_scores.iloc[0]["n_validaciones"]),
+                                       "n_validaciones_holdout": int(winner_holdout["n_validaciones"]),
+                                       "periodo_seleccion": [selection_first_month, selection_last_month],
+                                       "periodo_holdout": [holdout_first_month, holdout_last_month],
+                                       "fecha_primer_dato": str(periods[0]), "fecha_ultimo_dato": str(periods[-1]),
+                                       "linaje_serie_sha256": input_lineage})
+
+    _procesar(monthly, "origen_colima")
+    # Referencia de mercado: si un producto principal no tiene 36 meses de origen Colima en ninguna plaza,
+    # se pronostica su serie más completa en Guadalajara (cualquier origen) para que el productor tenga
+    # una referencia de precio; se marca como tal y nunca sustituye a la serie de origen Colima.
+    con_colima = {e["cultivo"] for e in eligibility if e.get("pronosticable")}
+    general = _mensual_colima(gold, origen_objetivo=None)
+    general = general[general["mes"].le(last_closed_month) & general["mercado"].map(_market_id).eq("140")]
+    for cultivo in REFERENCIA_CULTIVOS:
+        if cultivo in con_colima:
             continue
-        score_table, predictions = _backtest(indexed)
-        if score_table.empty:
-            eligibility.append(meta | {"meses": int(len(indexed)), "pronosticable": False,
-                                       "motivo": "ningun_modelo_obtuvo_validaciones_suficientes"})
-            continue
-        selection_scores = score_table[score_table["segmento"].eq("seleccion")].sort_values(
-            ["mae_mxn_kg", "rmse_mxn_kg"], kind="stable")
-        holdout_scores = score_table[score_table["segmento"].eq("holdout")]
-        if selection_scores.empty:
-            eligibility.append(meta | {"meses": int(len(indexed)), "pronosticable": False,
-                                       "motivo": "sin_modelo_con_validacion_de_seleccion"})
-            continue
-        winner = str(selection_scores.iloc[0]["modelo"])
-        winner_holdout = holdout_scores[holdout_scores["modelo"].eq(winner)]
-        if winner_holdout.empty:
-            eligibility.append(meta | {"meses": int(len(indexed)), "pronosticable": False,
-                                       "motivo": "modelo_elegido_sin_resultado_holdout"})
-            continue
-        winner_holdout = winner_holdout.iloc[0]
-        try:
-            future = _fit_predict(winner, indexed.to_numpy(dtype="float64"), horizon)
-        except Exception as exc:
-            eligibility.append(meta | {"meses": int(len(indexed)), "pronosticable": False,
-                                       "motivo": f"fallo_ajuste_final_{type(exc).__name__}"})
-            continue
-        metric_table = score_table.assign(**meta, modelo_elegido=score_table["modelo"].eq(winner))
-        metric_rows.extend(metric_table.to_dict("records"))
-        if not predictions.empty:
-            predictions = predictions.assign(**meta)
-            validation_rows.extend(predictions.to_dict("records"))
-        last = periods[-1]
-        selection_start = len(periods) - SELECTION_STEPS - HOLDOUT_STEPS
-        holdout_start = len(periods) - HOLDOUT_STEPS
-        selection_first_month = str(periods[selection_start])
-        selection_last_month = str(periods[holdout_start - 1])
-        holdout_first_month = str(periods[holdout_start])
-        holdout_last_month = str(periods[-1])
-        input_lineage = ""
-        if "linaje_mes_sha256" in group:
-            lineage_rows = group.sort_values("mes")[["mes", "linaje_mes_sha256"]].to_dict("records")
-            input_lineage = hashlib.sha256(json.dumps(lineage_rows, ensure_ascii=False, default=str,
-                                                       sort_keys=True).encode("utf-8")).hexdigest()
-        for step, point in enumerate(future, start=1):
-            forecast_rows.append(meta | {
-                "modelo_elegido": winner, "meses_entrenamiento": int(len(indexed)),
-                "fecha_pronostico": str(last + step), "horizonte_meses": step,
-                "precio_frecuente_mxn_kg": max(0.0, float(point)),
-                "mae_backtest_mxn_kg": float(winner_holdout["mae_mxn_kg"]),
-                "rmse_backtest_mxn_kg": float(winner_holdout["rmse_mxn_kg"]),
-                "mape_backtest_pct": float(winner_holdout["mape_pct"]),
-                "n_validaciones": int(winner_holdout["n_validaciones"]),
-                "n_validaciones_seleccion": int(selection_scores.iloc[0]["n_validaciones"]),
-                "fecha_inicio_holdout": holdout_first_month,
-                "fecha_fin_holdout": holdout_last_month,
-                "fecha_primer_dato": str(periods[0]), "linaje_serie_sha256": input_lineage,
-                "fecha_ultimo_dato": str(last),
-                "nota": "estimacion puntual; sin garantia; validar antes de uso comercial",
-            })
-        eligibility.append(meta | {"meses": int(len(indexed)), "pronosticable": True,
-                                   "modelo_elegido": winner,
-                                   "n_validaciones_seleccion": int(selection_scores.iloc[0]["n_validaciones"]),
-                                   "n_validaciones_holdout": int(winner_holdout["n_validaciones"]),
-                                   "periodo_seleccion": [selection_first_month, selection_last_month],
-                                   "periodo_holdout": [holdout_first_month, holdout_last_month],
-                                   "fecha_primer_dato": str(periods[0]), "fecha_ultimo_dato": str(periods[-1]),
-                                   "linaje_serie_sha256": input_lineage})
+        candidatos = []
+        for key, g in general[general["cultivo"].eq(cultivo)].groupby([*KEYS, "mercado"], dropna=False):
+            g = g.sort_values("mes").drop_duplicates("mes", keep="last")
+            periodo = pd.period_range(g["mes"].min(), g["mes"].max(), freq="M")
+            serie = g.set_index("mes")["precio_frecuente_kg"].reindex(periodo)
+            if len(serie) >= MIN_MONTHS and serie.notna().all():
+                candidatos.append((int(g["n_observaciones"].sum()), key))
+        if candidatos:
+            _, elegido = max(candidatos)
+            mask = np.logical_and.reduce([general[k].astype(str).eq(str(v)) for k, v in zip([*KEYS, "mercado"], elegido, strict=True)])
+            _procesar(general[mask], "referencia_mercado")
 
     forecasts = pd.DataFrame(forecast_rows)
     metrics = pd.DataFrame(metric_rows)
@@ -391,7 +486,7 @@ def generar_observatorio(gold_path: Path | None = None, output_dir: Path | None 
                                "uso": "contexto descriptivo; no es predictor ni clima local de las plazas mayoristas"},
         "limitacion_comparacion": "Se compara solo cuando coinciden origen Colima, cultivo, variante y mes en al menos dos mercados; sin par no se declara un mejor mercado.",
         "series": eligibility,
-        "advertencia": "Pronósticos académicos exploratorios, no consejo comercial ni garantía. Sin intervalo predictivo validado; factores de transporte, calidad, volumen y precio en parcela no están modelados.",
+        "advertencia": "Pronósticos académicos exploratorios, no consejo comercial ni garantía. Cada estimación incluye un intervalo empírico de 80 % y 95 % construido con errores fuera de muestra; su cobertura real se audita en el holdout. El precio en parcela proviene de SIAP (anual) y el flete es un supuesto editable.",
     }
     report_path = output_dir / "reporte_observatorio_e4.json"
     report_path.write_text(json.dumps(report, ensure_ascii=False, indent=2, default=str) + "\n", encoding="utf-8")

@@ -1,0 +1,39 @@
+{
+  "esquema": "tdl-bronce-meta/1",
+  "contenido_original": {
+    "archivo": "sniim__limon-c-semilla-5-primera-sonora-mercado-de-abasto-francisco-i-madero-de-hermosillo__2026-11-01_2026-11-26__20261127T163300Z-b2933e.html",
+    "descripcion": "Bytes tal como los entregó la fuente; no se modifican."
+  },
+  "metadatos_captura": {
+    "fuente": "sniim",
+    "fuente_url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F11%2F2026&fechaFinal=26%2F11%2F2026&ProductoId=421&OrigenId=-1&Origen=Todos&DestinoId=260&Destino=Sonora%3A+Mercado+de+Abasto+%22Francisco+I.+Madero%22+de+Hermosillo&PreciosPorId=1&RegistrosPorPagina=500",
+    "fecha_captura": "2026-11-27T16:37:36Z",
+    "identificador_ejecucion": "20261127T163300Z-b2933e",
+    "formato_original": "html",
+    "sha256": "48ce7dd386c39f55f64014fd92338b1cf32069ae34c75e065d0d9a48f62edb30",
+    "bytes": 23948,
+    "http_status": 200,
+    "registros_detectados": 17,
+    "estado_captura": "ok",
+    "advertencias": [],
+    "colision_nombre": false,
+    "etiqueta": "Limón c/semilla # 5 - Primera__Sonora: Mercado de Abasto \"Francisco I. Madero\" de Hermosillo",
+    "producto": "Limón c/semilla # 5 - Primera",
+    "producto_id": "421",
+    "mercado": "Sonora: Mercado de Abasto \"Francisco I. Madero\" de Hermosillo",
+    "mercado_id": "260",
+    "fecha_ref_inicio": "2026-11-01",
+    "fecha_ref_fin": "2026-11-26",
+    "parametros": {
+      "fechaInicio": "01/11/2026",
+      "fechaFinal": "26/11/2026",
+      "ProductoId": "421",
+      "OrigenId": "-1",
+      "Origen": "Todos",
+      "DestinoId": "260",
+      "Destino": "Sonora: Mercado de Abasto \"Francisco I. Madero\" de Hermosillo",
+      "PreciosPorId": "1",
+      "RegistrosPorPagina": "500"
+    }
+  }
+}

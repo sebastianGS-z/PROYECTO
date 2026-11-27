@@ -1,0 +1,39 @@
+{
+  "esquema": "tdl-bronce-meta/1",
+  "contenido_original": {
+    "archivo": "sniim__papaya-maradol-primera-jalisco-mercado-felipe-angeles-de-guadalajara__2025-12-01_2025-12-31__20261127T163936Z-08c1f0.html",
+    "descripcion": "Bytes tal como los entregó la fuente; no se modifican."
+  },
+  "metadatos_captura": {
+    "fuente": "sniim",
+    "fuente_url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F12%2F2025&fechaFinal=31%2F12%2F2025&ProductoId=609&OrigenId=-1&Origen=Todos&DestinoId=141&Destino=Jalisco%3A+Mercado+Felipe+%C3%81ngeles+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+    "fecha_captura": "2026-11-27T16:41:42Z",
+    "identificador_ejecucion": "20261127T163936Z-08c1f0",
+    "formato_original": "html",
+    "sha256": "c3774526619857d7c4e44a4dea65c8735145b1b84500f7cfbcd3752cf6208ba2",
+    "bytes": 50266,
+    "http_status": 200,
+    "registros_detectados": 66,
+    "estado_captura": "ok",
+    "advertencias": [],
+    "colision_nombre": false,
+    "etiqueta": "Papaya Maradol - Primera__Jalisco: Mercado Felipe Ángeles de Guadalajara",
+    "producto": "Papaya Maradol - Primera",
+    "producto_id": "609",
+    "mercado": "Jalisco: Mercado Felipe Ángeles de Guadalajara",
+    "mercado_id": "141",
+    "fecha_ref_inicio": "2025-12-01",
+    "fecha_ref_fin": "2025-12-31",
+    "parametros": {
+      "fechaInicio": "01/12/2025",
+      "fechaFinal": "31/12/2025",
+      "ProductoId": "609",
+      "OrigenId": "-1",
+      "Origen": "Todos",
+      "DestinoId": "141",
+      "Destino": "Jalisco: Mercado Felipe Ángeles de Guadalajara",
+      "PreciosPorId": "1",
+      "RegistrosPorPagina": "500"
+    }
+  }
+}

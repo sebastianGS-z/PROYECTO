@@ -1,0 +1,39 @@
+{
+  "esquema": "tdl-bronce-meta/1",
+  "contenido_original": {
+    "archivo": "sniim__platano-pera-primera-baja-california-central-de-abasto-india-tijuana__2025-12-01_2025-12-31__20261127T164543Z-fb45cf.html",
+    "descripcion": "Bytes tal como los entregó la fuente; no se modifican."
+  },
+  "metadatos_captura": {
+    "fuente": "sniim",
+    "fuente_url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F12%2F2025&fechaFinal=31%2F12%2F2025&ProductoId=731&OrigenId=-1&Origen=Todos&DestinoId=33&Destino=Baja+California+%3A+Central+de+Abasto+INDIA%2C+Tijuana&PreciosPorId=1&RegistrosPorPagina=500",
+    "fecha_captura": "2026-11-27T17:24:41Z",
+    "identificador_ejecucion": "20261127T164543Z-fb45cf",
+    "formato_original": "html",
+    "sha256": "8b780f626fe5d7212e2e724676bb83a2b31a07e86e0c32b01f4e9a00d9a95cd3",
+    "bytes": 9435,
+    "http_status": 200,
+    "registros_detectados": 0,
+    "estado_captura": "sin_resultados",
+    "advertencias": [],
+    "colision_nombre": false,
+    "etiqueta": "Plátano Pera - Primera__Baja California : Central de Abasto INDIA, Tijuana",
+    "producto": "Plátano Pera - Primera",
+    "producto_id": "731",
+    "mercado": "Baja California : Central de Abasto INDIA, Tijuana",
+    "mercado_id": "33",
+    "fecha_ref_inicio": "2025-12-01",
+    "fecha_ref_fin": "2025-12-31",
+    "parametros": {
+      "fechaInicio": "01/12/2025",
+      "fechaFinal": "31/12/2025",
+      "ProductoId": "731",
+      "OrigenId": "-1",
+      "Origen": "Todos",
+      "DestinoId": "33",
+      "Destino": "Baja California : Central de Abasto INDIA, Tijuana",
+      "PreciosPorId": "1",
+      "RegistrosPorPagina": "500"
+    }
+  }
+}

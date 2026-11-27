@@ -1,0 +1,14 @@
+producto,mercado,periodos_esperados,periodos_con_datos,cumple_36
+limon_c5,aguascalientes,13,13,False
+limon_c5,cd_juarez,13,0,False
+limon_c5,cd_obregon,13,9,False
+limon_c5,chihuahua,13,0,False
+limon_c5,gomez_palacio,13,13,False
+limon_c5,guadalajara_felipe_angeles,13,13,False
+limon_c5,hermosillo,13,13,False
+limon_c5,monterrey,13,13,False
+limon_c5,san_luis_potosi,13,13,False
+limon_c5,torreon,13,13,False
+limon_c5,veracruz,13,0,False
+limon_c5,villahermosa,13,0,False
+limon_c5,zacatecas,13,0,False

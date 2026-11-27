@@ -1,145 +1,193 @@
-segmento,modelo,mes_validacion,real_mxn_kg,pronostico_mxn_kg,error_mxn_kg,cultivo,variante_id,variante,origen,mercado,nombre_mercado
-seleccion,suavizamiento_simple,2025-11,17.614035087719298,23.992117916894298,6.378082829175,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto
-seleccion,suavizamiento_simple,2025-12,22.56060606060606,23.73699449798973,1.1763884373836717,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto
-seleccion,suavizamiento_simple,2026-01,28.6031746031746,23.691748717499742,-4.911425885674859,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto
-seleccion,suavizamiento_simple,2026-02,37.2962962962963,23.87365362916617,-13.422642667130127,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto
-seleccion,suavizamiento_simple,2026-03,40.539682539682545,24.35303377874593,-16.186648760936613,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto
-seleccion,suavizamiento_simple,2026-04,37.33333333333333,40.53968249135232,3.2063491580189947,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto
-holdout,suavizamiento_simple,2026-05,34.73684210526316,37.33333338111165,2.596491275848493,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto
-holdout,suavizamiento_simple,2026-06,28.825757575757567,34.73684214395389,5.911084568196326,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto
-holdout,suavizamiento_simple,2026-07,21.666666666666668,28.825757663839592,7.159090997172925,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto
-holdout,suavizamiento_simple,2026-08,27.936507936507933,21.666666773345437,-6.269841163162496,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto
-holdout,suavizamiento_simple,2026-09,34.38095238095238,27.93650784308002,-6.444444537872361,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto
-holdout,suavizamiento_simple,2026-10,23.651515151515152,34.38095228492267,10.729437133407519,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto
-seleccion,holt,2025-11,17.614035087719298,28.32003131556226,10.705996227842963,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto
-seleccion,holt,2025-12,22.56060606060606,26.95329462196699,4.392688561360931,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto
-seleccion,holt,2026-01,28.6031746031746,26.52491352124091,-2.0782610819336895,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto
-seleccion,holt,2026-02,37.2962962962963,27.0426666680751,-10.253629628221198,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto
-seleccion,holt,2026-03,40.539682539682545,28.733828811896306,-11.80585372778624,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto
-seleccion,holt,2026-04,37.33333333333333,30.664346010800458,-6.668987322532871,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto
-holdout,holt,2026-05,34.73684210526316,37.46206915995685,2.72522705469369,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto
-holdout,holt,2026-06,28.825757575757567,34.774743053469635,5.948985477712068,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto
-holdout,holt,2026-07,21.666666666666668,28.671748347300838,7.00508168063417,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto
-holdout,holt,2026-08,27.936507936507933,21.293752506009746,-6.6427554304981875,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto
-holdout,holt,2026-09,34.38095238095238,27.764886358729584,-6.616066022222796,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto
-holdout,holt,2026-10,23.651515151515152,34.40392083741591,10.752405685900758,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto
-seleccion,holt_winters_aditivo,2025-11,17.614035087719298,15.110028340637154,-2.504006747082144,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto
-seleccion,holt_winters_aditivo,2025-12,22.56060606060606,9.188025788182202,-13.372580272423857,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto
-seleccion,holt_winters_aditivo,2026-01,28.6031746031746,25.526123132041764,-3.0770514711328367,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto
-seleccion,holt_winters_aditivo,2026-02,37.2962962962963,24.156285700348953,-13.140010595947345,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto
-seleccion,holt_winters_aditivo,2026-03,40.539682539682545,30.863820411951078,-9.675862127731467,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto
-seleccion,holt_winters_aditivo,2026-04,37.33333333333333,37.83370506385771,0.5003717305243782,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto
-holdout,holt_winters_aditivo,2026-05,34.73684210526316,38.85099957924043,4.114157473977272,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto
-holdout,holt_winters_aditivo,2026-06,28.825757575757567,34.77955770172235,5.953800125964779,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto
-holdout,holt_winters_aditivo,2026-07,21.666666666666668,29.566618026316966,7.899951359650299,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto
-holdout,holt_winters_aditivo,2026-08,27.936507936507933,37.74479852753974,9.80829059103181,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto
-holdout,holt_winters_aditivo,2026-09,34.38095238095238,39.342576102674386,4.961623721722006,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto
-holdout,holt_winters_aditivo,2026-10,23.651515151515152,28.38485345467205,4.7333383031568985,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto
-seleccion,arima_111,2025-11,17.614035087719298,25.233767617822767,7.6197325301034695,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto
-seleccion,arima_111,2025-12,22.56060606060606,15.107710580147241,-7.4528954804588174,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto
-seleccion,arima_111,2026-01,28.6031746031746,25.638804714798624,-2.964369888375977,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto
-seleccion,arima_111,2026-02,37.2962962962963,29.041058292415542,-8.255238003880756,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto
-seleccion,arima_111,2026-03,40.539682539682545,40.1346861490166,-0.40499639066594284,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto
-seleccion,arima_111,2026-04,37.33333333333333,40.903864829349075,3.5705314960157466,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto
-holdout,arima_111,2026-05,34.73684210526316,37.16127825263587,2.4244361473727096,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto
-holdout,arima_111,2026-06,28.825757575757567,34.82253108370122,5.996773507943654,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto
-holdout,arima_111,2026-07,21.666666666666668,27.481171030814416,5.814504364147748,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto
-holdout,arima_111,2026-08,27.936507936507933,20.33029133430428,-7.606216602203652,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto
-holdout,arima_111,2026-09,34.38095238095238,30.835811319086886,-3.5451410618654933,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto
-holdout,arima_111,2026-10,23.651515151515152,35.191844039171066,11.540328887655914,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto
-seleccion,suavizamiento_simple,2025-11,19.63157894736842,19.10876261448217,-0.5228163328862507,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto
-seleccion,suavizamiento_simple,2025-12,17.704545454545453,19.129675323254396,1.425129868708943,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto
-seleccion,suavizamiento_simple,2026-01,20.73809523809524,19.074862582183048,-1.6632326559121928,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto
-seleccion,suavizamiento_simple,2026-02,20.33333333333333,19.13646378652694,-1.19686954680639,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto
-seleccion,suavizamiento_simple,2026-03,17.095238095238095,19.17920889163071,2.0839707963926166,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto
-seleccion,suavizamiento_simple,2026-04,16.225,19.107348134329076,2.8823481343290744,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto
-holdout,suavizamiento_simple,2026-05,17.17105263157895,19.01126964545764,1.8402170138786929,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto
-holdout,suavizamiento_simple,2026-06,16.772727272727273,18.951907944717696,2.179180671990423,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto
-holdout,suavizamiento_simple,2026-07,16.58695652173913,18.883808497487323,2.2968519757481936,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto
-holdout,suavizamiento_simple,2026-08,17.11904761904762,18.814207014251824,1.695159395204204,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto
-holdout,suavizamiento_simple,2026-09,18.166666666666668,18.76434931868627,0.5976826520196035,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto
-holdout,suavizamiento_simple,2026-10,18.272727272727277,18.747272751731284,0.4745454790040071,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto
-seleccion,holt,2025-11,19.63157894736842,18.75443212868719,-0.8771468186812328,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto
-seleccion,holt,2025-12,17.704545454545453,18.866429927780565,1.1618844732351121,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto
-seleccion,holt,2026-01,20.73809523809524,18.667427449737204,-2.070667788358037,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto
-seleccion,holt,2026-02,20.33333333333333,18.94401254771047,-1.389320785622857,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto
-seleccion,holt,2026-03,17.095238095238095,19.128740638505363,2.033502543267268,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto
-seleccion,holt,2026-04,16.225,18.844776783514874,2.6197767835148724,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto
-holdout,holt,2026-05,17.17105263157895,18.477967761637384,1.3069151300584352,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto
-holdout,holt,2026-06,16.772727272727273,18.274927716536315,1.5022004438090413,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto
-holdout,holt,2026-07,16.58695652173913,18.044841266300107,1.4578847445609782,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto
-holdout,holt,2026-08,17.11904761904762,17.817281294524125,0.6982336754765051,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto
-holdout,holt,2026-09,18.166666666666668,17.676493911613925,-0.49017275505274327,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto
-holdout,holt,2026-10,18.272727272727277,17.67035013456736,-0.6023771381599161,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto
-seleccion,holt_winters_aditivo,2025-11,19.63157894736842,24.886492490973858,5.254913543605436,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto
-seleccion,holt_winters_aditivo,2025-12,17.704545454545453,19.083176747143472,1.378631292598019,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto
-seleccion,holt_winters_aditivo,2026-01,20.73809523809524,17.078573438480156,-3.659521799615085,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto
-seleccion,holt_winters_aditivo,2026-02,20.33333333333333,21.119973918910237,0.7866405855769081,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto
-seleccion,holt_winters_aditivo,2026-03,17.095238095238095,17.28786991966146,0.19263182442336557,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto
-seleccion,holt_winters_aditivo,2026-04,16.225,18.209160431753773,1.9841604317537715,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto
-holdout,holt_winters_aditivo,2026-05,17.17105263157895,19.110105300251863,1.9390526686729146,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto
-holdout,holt_winters_aditivo,2026-06,16.772727272727273,15.618439844018027,-1.154287428709246,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto
-holdout,holt_winters_aditivo,2026-07,16.58695652173913,14.495353181460267,-2.091603340278862,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto
-holdout,holt_winters_aditivo,2026-08,17.11904761904762,17.947990237709217,0.8289426186615962,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto
-holdout,holt_winters_aditivo,2026-09,18.166666666666668,19.051478989815173,0.8848123231485054,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto
-holdout,holt_winters_aditivo,2026-10,18.272727272727277,20.978675596885946,2.705948324158669,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto
-seleccion,arima_111,2025-11,19.63157894736842,18.248975022624343,-1.3826039247440782,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto
-seleccion,arima_111,2025-12,17.704545454545453,19.149676630938586,1.445131176393133,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto
-seleccion,arima_111,2026-01,20.73809523809524,18.202915972127826,-2.5351792659674146,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto
-seleccion,arima_111,2026-02,20.33333333333333,19.64709854148193,-0.6862347918513976,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto
-seleccion,arima_111,2026-03,17.095238095238095,19.60516423114579,2.509926135907694,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto
-seleccion,arima_111,2026-04,16.225,18.10748427091366,1.8824842709136576,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto
-holdout,arima_111,2026-05,17.17105263157895,17.496817010833702,0.3257643792547533,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto
-holdout,arima_111,2026-06,16.772727272727273,17.757686257184208,0.9849589844569344,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto
-holdout,arima_111,2026-07,16.58695652173913,17.44710768340697,0.8601511616678401,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto
-holdout,arima_111,2026-08,17.11904761904762,17.226538927345846,0.10749130829822562,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto
-holdout,arima_111,2026-09,18.166666666666668,17.364813094466903,-0.8018535721997644,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto
-holdout,arima_111,2026-10,18.272727272727277,17.799940911188504,-0.4727863615387733,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto
-seleccion,suavizamiento_simple,2025-11,41.625,41.97094818087574,0.3459481808757374,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución
-seleccion,suavizamiento_simple,2025-12,41.66666666666666,41.63553588958705,-0.03113077707961054,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución
-seleccion,suavizamiento_simple,2026-01,42.888888888888886,41.66536713486775,-1.2235217540211352,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución
-seleccion,suavizamiento_simple,2026-02,42.375,42.83801316780877,0.4630131678087679,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución
-seleccion,suavizamiento_simple,2026-03,42.0,42.395126044216674,0.3951260442166742,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución
-seleccion,suavizamiento_simple,2026-04,42.0,42.017022573153035,0.017022573153035125,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución
-holdout,suavizamiento_simple,2026-05,42.0,42.00073289097325,0.0007328909732464695,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución
-holdout,suavizamiento_simple,2026-06,41.888888888888886,42.00003157430692,0.11114268541803085,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución
-holdout,suavizamiento_simple,2026-07,41.888888888888886,41.893677001275876,0.004788112386989951,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución
-holdout,suavizamiento_simple,2026-08,41.625,41.88909514398387,0.264095143983873,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución
-holdout,suavizamiento_simple,2026-09,41.44444444444444,41.636374489255296,0.19193004481085296,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución
-holdout,suavizamiento_simple,2026-10,42.22222222222222,41.45267192105266,-0.7695503011695592,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución
-seleccion,holt,2025-11,41.625,42.61939727194853,0.9943972719485288,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución
-seleccion,holt,2025-12,41.66666666666666,42.11979559342282,0.4531289267561647,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución
-seleccion,holt,2026-01,42.888888888888886,42.13194492006659,-0.7569439688222985,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución
-seleccion,holt,2026-02,42.375,43.32758013903056,0.9525801390305588,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución
-seleccion,holt,2026-03,42.0,42.859208363603294,0.8592083636032939,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución
-seleccion,holt,2026-04,42.0,42.449648217157446,0.44964821715744563,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución
-holdout,holt,2026-05,42.0,42.41543655089243,0.41543655089243003,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución
-holdout,holt,2026-06,41.888888888888886,42.40064017551624,0.5117512866273515,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución
-holdout,holt,2026-07,41.888888888888886,42.27817922175084,0.3892903328619539,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución
-holdout,holt,2026-08,41.625,42.26090690457995,0.6359069045799473,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución
-holdout,holt,2026-09,41.44444444444444,41.9898070201316,0.5453625756871574,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución
-holdout,holt,2026-10,42.22222222222222,41.78960651595219,-0.43261570627003465,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución
-seleccion,holt_winters_aditivo,2025-11,41.625,34.298664210982935,-7.326335789017065,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución
-seleccion,holt_winters_aditivo,2025-12,41.66666666666666,39.017348659009954,-2.649318007656703,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución
-seleccion,holt_winters_aditivo,2026-01,42.888888888888886,36.33446438742721,-6.554424501461675,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución
-seleccion,holt_winters_aditivo,2026-02,42.375,36.03472542802985,-6.3402745719701485,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución
-seleccion,holt_winters_aditivo,2026-03,42.0,38.531927440193144,-3.4680725598068562,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución
-seleccion,holt_winters_aditivo,2026-04,42.0,42.631985940316824,0.6319859403168238,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución
-holdout,holt_winters_aditivo,2026-05,42.0,41.44453614480376,-0.555463855196237,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución
-holdout,holt_winters_aditivo,2026-06,41.888888888888886,42.23610278457306,0.3472138956841775,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución
-holdout,holt_winters_aditivo,2026-07,41.888888888888886,41.59724595825135,-0.2916429306375363,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución
-holdout,holt_winters_aditivo,2026-08,41.625,41.44474037894171,-0.18025962105829052,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución
-holdout,holt_winters_aditivo,2026-09,41.44444444444444,43.09730519843352,1.6528607539890743,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución
-holdout,holt_winters_aditivo,2026-10,42.22222222222222,46.44443812681607,4.222215904593845,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución
-seleccion,arima_111,2025-11,41.625,44.55940792874353,2.934407928743532,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución
-seleccion,arima_111,2025-12,41.66666666666666,39.68706712310427,-1.9795995435623865,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución
-seleccion,arima_111,2026-01,42.888888888888886,43.95170742746586,1.0628185385769768,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución
-seleccion,arima_111,2026-02,42.375,41.89615130619627,-0.47884869380372663,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución
-seleccion,arima_111,2026-03,42.0,43.55778933497403,1.5577893349740322,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución
-seleccion,arima_111,2026-04,42.0,41.20773341102229,-0.7922665889777107,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución
-holdout,arima_111,2026-05,42.0,43.09271445693023,1.0927144569302314,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución
-holdout,arima_111,2026-06,41.888888888888886,41.521702971602615,-0.36718591728627104,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución
-holdout,arima_111,2026-07,41.888888888888886,42.65828919218833,0.7694003032994416,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución
-holdout,arima_111,2026-08,41.625,41.627145650703554,0.0021456507035537697,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución
-holdout,arima_111,2026-09,41.44444444444444,42.11461675566352,0.6701723112190763,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución
-holdout,arima_111,2026-10,42.22222222222222,41.291042779221904,-0.9311794430003175,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución
+segmento,modelo,mes_validacion,real_mxn_kg,pronostico_mxn_kg,error_mxn_kg,cultivo,variante_id,variante,origen,mercado,nombre_mercado,tipo_serie
+seleccion,suavizamiento_simple,2025-11,17.614035087719298,23.992117916894298,6.378082829175,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+seleccion,suavizamiento_simple,2025-12,22.56060606060606,23.73699449798973,1.1763884373836717,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+seleccion,suavizamiento_simple,2026-01,28.6031746031746,23.691748717499742,-4.911425885674859,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+seleccion,suavizamiento_simple,2026-02,37.2962962962963,23.87365362916617,-13.422642667130127,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+seleccion,suavizamiento_simple,2026-03,40.539682539682545,24.35303377874593,-16.186648760936613,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+seleccion,suavizamiento_simple,2026-04,37.33333333333333,40.53968249135232,3.2063491580189947,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+holdout,suavizamiento_simple,2026-05,34.73684210526316,37.33333338111165,2.596491275848493,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+holdout,suavizamiento_simple,2026-06,28.825757575757567,34.73684214395389,5.911084568196326,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+holdout,suavizamiento_simple,2026-07,21.666666666666668,28.825757663839592,7.159090997172925,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+holdout,suavizamiento_simple,2026-08,27.936507936507933,21.666666773345437,-6.269841163162496,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+holdout,suavizamiento_simple,2026-09,34.38095238095238,27.93650784308002,-6.444444537872361,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+holdout,suavizamiento_simple,2026-10,23.651515151515152,34.38095228492267,10.729437133407519,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+seleccion,holt,2025-11,17.614035087719298,28.32003131556226,10.705996227842963,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+seleccion,holt,2025-12,22.56060606060606,26.95329462196699,4.392688561360931,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+seleccion,holt,2026-01,28.6031746031746,26.52491352124091,-2.0782610819336895,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+seleccion,holt,2026-02,37.2962962962963,27.0426666680751,-10.253629628221198,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+seleccion,holt,2026-03,40.539682539682545,28.733828811896306,-11.80585372778624,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+seleccion,holt,2026-04,37.33333333333333,30.664346010800458,-6.668987322532871,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+holdout,holt,2026-05,34.73684210526316,37.46206915995685,2.72522705469369,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+holdout,holt,2026-06,28.825757575757567,34.774743053469635,5.948985477712068,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+holdout,holt,2026-07,21.666666666666668,28.671748347300838,7.00508168063417,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+holdout,holt,2026-08,27.936507936507933,21.293752506009746,-6.6427554304981875,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+holdout,holt,2026-09,34.38095238095238,27.764886358729584,-6.616066022222796,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+holdout,holt,2026-10,23.651515151515152,34.40392083741591,10.752405685900758,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+seleccion,holt_winters_aditivo,2025-11,17.614035087719298,15.110028340637154,-2.504006747082144,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+seleccion,holt_winters_aditivo,2025-12,22.56060606060606,9.188025788182202,-13.372580272423857,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+seleccion,holt_winters_aditivo,2026-01,28.6031746031746,25.526123132041764,-3.0770514711328367,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+seleccion,holt_winters_aditivo,2026-02,37.2962962962963,24.156285700348953,-13.140010595947345,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+seleccion,holt_winters_aditivo,2026-03,40.539682539682545,30.863820411951078,-9.675862127731467,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+seleccion,holt_winters_aditivo,2026-04,37.33333333333333,37.83370506385771,0.5003717305243782,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+holdout,holt_winters_aditivo,2026-05,34.73684210526316,38.85099957924043,4.114157473977272,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+holdout,holt_winters_aditivo,2026-06,28.825757575757567,34.77955770172235,5.953800125964779,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+holdout,holt_winters_aditivo,2026-07,21.666666666666668,29.566618026316966,7.899951359650299,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+holdout,holt_winters_aditivo,2026-08,27.936507936507933,37.74479852753974,9.80829059103181,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+holdout,holt_winters_aditivo,2026-09,34.38095238095238,39.342576102674386,4.961623721722006,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+holdout,holt_winters_aditivo,2026-10,23.651515151515152,28.38485345467205,4.7333383031568985,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+seleccion,arima_aic,2025-11,17.614035087719298,24.71267727703454,7.0986421893152425,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+seleccion,arima_aic,2025-12,22.56060606060606,19.493645908471557,-3.0669601521345022,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+seleccion,arima_aic,2026-01,28.6031746031746,25.855386910557698,-2.747787692616903,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+seleccion,arima_aic,2026-02,37.2962962962963,25.875620673635023,-11.420675622661275,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+seleccion,arima_aic,2026-03,40.539682539682545,31.80725170846023,-8.732430831222313,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+seleccion,arima_aic,2026-04,37.33333333333333,30.64954602462191,-6.68378730871142,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+holdout,arima_aic,2026-05,34.73684210526316,28.990408995197164,-5.746433110065993,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+holdout,arima_aic,2026-06,28.825757575757567,29.00060441852698,0.1748468427694121,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+holdout,arima_aic,2026-07,21.666666666666668,25.912748370524323,4.246081703857655,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+holdout,arima_aic,2026-08,27.936507936507933,21.201531887779765,-6.734976048728168,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+holdout,arima_aic,2026-09,34.38095238095238,29.544161620480384,-4.836790760471995,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+holdout,arima_aic,2026-10,23.651515151515152,29.609481838493437,5.957966686978285,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+seleccion,suavizamiento_simple,2025-11,19.63157894736842,19.10876261448217,-0.5228163328862507,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+seleccion,suavizamiento_simple,2025-12,17.704545454545453,19.129675323254396,1.425129868708943,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+seleccion,suavizamiento_simple,2026-01,20.73809523809524,19.074862582183048,-1.6632326559121928,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+seleccion,suavizamiento_simple,2026-02,20.33333333333333,19.13646378652694,-1.19686954680639,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+seleccion,suavizamiento_simple,2026-03,17.095238095238095,19.17920889163071,2.0839707963926166,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+seleccion,suavizamiento_simple,2026-04,16.225,19.107348134329076,2.8823481343290744,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+holdout,suavizamiento_simple,2026-05,17.17105263157895,19.01126964545764,1.8402170138786929,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+holdout,suavizamiento_simple,2026-06,16.772727272727273,18.951907944717696,2.179180671990423,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+holdout,suavizamiento_simple,2026-07,16.58695652173913,18.883808497487323,2.2968519757481936,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+holdout,suavizamiento_simple,2026-08,17.11904761904762,18.814207014251824,1.695159395204204,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+holdout,suavizamiento_simple,2026-09,18.166666666666668,18.76434931868627,0.5976826520196035,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+holdout,suavizamiento_simple,2026-10,18.272727272727277,18.747272751731284,0.4745454790040071,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+seleccion,holt,2025-11,19.63157894736842,18.75443212868719,-0.8771468186812328,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+seleccion,holt,2025-12,17.704545454545453,18.866429927780565,1.1618844732351121,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+seleccion,holt,2026-01,20.73809523809524,18.667427449737204,-2.070667788358037,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+seleccion,holt,2026-02,20.33333333333333,18.94401254771047,-1.389320785622857,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+seleccion,holt,2026-03,17.095238095238095,19.128740638505363,2.033502543267268,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+seleccion,holt,2026-04,16.225,18.844776783514874,2.6197767835148724,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+holdout,holt,2026-05,17.17105263157895,18.477967761637384,1.3069151300584352,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+holdout,holt,2026-06,16.772727272727273,18.274927716536315,1.5022004438090413,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+holdout,holt,2026-07,16.58695652173913,18.044841266300107,1.4578847445609782,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+holdout,holt,2026-08,17.11904761904762,17.817281294524125,0.6982336754765051,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+holdout,holt,2026-09,18.166666666666668,17.676493911613925,-0.49017275505274327,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+holdout,holt,2026-10,18.272727272727277,17.67035013456736,-0.6023771381599161,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+seleccion,holt_winters_aditivo,2025-11,19.63157894736842,24.886492490973858,5.254913543605436,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+seleccion,holt_winters_aditivo,2025-12,17.704545454545453,19.083176747143472,1.378631292598019,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+seleccion,holt_winters_aditivo,2026-01,20.73809523809524,17.078573438480156,-3.659521799615085,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+seleccion,holt_winters_aditivo,2026-02,20.33333333333333,21.119973918910237,0.7866405855769081,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+seleccion,holt_winters_aditivo,2026-03,17.095238095238095,17.28786991966146,0.19263182442336557,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+seleccion,holt_winters_aditivo,2026-04,16.225,18.209160431753773,1.9841604317537715,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+holdout,holt_winters_aditivo,2026-05,17.17105263157895,19.110105300251863,1.9390526686729146,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+holdout,holt_winters_aditivo,2026-06,16.772727272727273,15.618439844018027,-1.154287428709246,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+holdout,holt_winters_aditivo,2026-07,16.58695652173913,14.495353181460267,-2.091603340278862,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+holdout,holt_winters_aditivo,2026-08,17.11904761904762,17.947990237709217,0.8289426186615962,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+holdout,holt_winters_aditivo,2026-09,18.166666666666668,19.051478989815173,0.8848123231485054,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+holdout,holt_winters_aditivo,2026-10,18.272727272727277,20.978675596885946,2.705948324158669,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+seleccion,arima_aic,2025-11,19.63157894736842,19.3286555551286,-0.3029233922398227,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+seleccion,arima_aic,2025-12,17.704545454545453,20.2263168582156,2.5217714036701473,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+seleccion,arima_aic,2026-01,20.73809523809524,19.414576786430544,-1.3235184516646967,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+seleccion,arima_aic,2026-02,20.33333333333333,20.577177092510293,0.24384375917696488,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+seleccion,arima_aic,2026-03,17.095238095238095,19.83083976561399,2.735601670375896,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+seleccion,arima_aic,2026-04,16.225,18.627141675564513,2.4021416755645113,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+holdout,arima_aic,2026-05,17.17105263157895,19.035841605052585,1.8647889734736367,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+holdout,arima_aic,2026-06,16.772727272727273,20.04061786698141,3.267890594254137,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+holdout,arima_aic,2026-07,16.58695652173913,20.135132776099084,3.548176254359955,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+holdout,arima_aic,2026-08,17.11904761904762,19.654398706488852,2.5353510874412315,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+holdout,arima_aic,2026-09,18.166666666666668,18.194305981795676,0.02763931512900797,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+holdout,arima_aic,2026-10,18.272727272727277,18.71766752460733,0.4449402518800518,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima
+seleccion,suavizamiento_simple,2025-11,41.625,41.97094818087574,0.3459481808757374,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución,origen_colima
+seleccion,suavizamiento_simple,2025-12,41.66666666666666,41.63553588958705,-0.03113077707961054,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución,origen_colima
+seleccion,suavizamiento_simple,2026-01,42.888888888888886,41.66536713486775,-1.2235217540211352,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución,origen_colima
+seleccion,suavizamiento_simple,2026-02,42.375,42.83801316780877,0.4630131678087679,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución,origen_colima
+seleccion,suavizamiento_simple,2026-03,42.0,42.395126044216674,0.3951260442166742,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución,origen_colima
+seleccion,suavizamiento_simple,2026-04,42.0,42.017022573153035,0.017022573153035125,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución,origen_colima
+holdout,suavizamiento_simple,2026-05,42.0,42.00073289097325,0.0007328909732464695,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución,origen_colima
+holdout,suavizamiento_simple,2026-06,41.888888888888886,42.00003157430692,0.11114268541803085,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución,origen_colima
+holdout,suavizamiento_simple,2026-07,41.888888888888886,41.893677001275876,0.004788112386989951,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución,origen_colima
+holdout,suavizamiento_simple,2026-08,41.625,41.88909514398387,0.264095143983873,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución,origen_colima
+holdout,suavizamiento_simple,2026-09,41.44444444444444,41.636374489255296,0.19193004481085296,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución,origen_colima
+holdout,suavizamiento_simple,2026-10,42.22222222222222,41.45267192105266,-0.7695503011695592,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución,origen_colima
+seleccion,holt,2025-11,41.625,42.61939727194853,0.9943972719485288,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución,origen_colima
+seleccion,holt,2025-12,41.66666666666666,42.11979559342282,0.4531289267561647,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución,origen_colima
+seleccion,holt,2026-01,42.888888888888886,42.13194492006659,-0.7569439688222985,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución,origen_colima
+seleccion,holt,2026-02,42.375,43.32758013903056,0.9525801390305588,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución,origen_colima
+seleccion,holt,2026-03,42.0,42.859208363603294,0.8592083636032939,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución,origen_colima
+seleccion,holt,2026-04,42.0,42.449648217157446,0.44964821715744563,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución,origen_colima
+holdout,holt,2026-05,42.0,42.41543655089243,0.41543655089243003,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución,origen_colima
+holdout,holt,2026-06,41.888888888888886,42.40064017551624,0.5117512866273515,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución,origen_colima
+holdout,holt,2026-07,41.888888888888886,42.27817922175084,0.3892903328619539,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución,origen_colima
+holdout,holt,2026-08,41.625,42.26090690457995,0.6359069045799473,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución,origen_colima
+holdout,holt,2026-09,41.44444444444444,41.9898070201316,0.5453625756871574,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución,origen_colima
+holdout,holt,2026-10,42.22222222222222,41.78960651595219,-0.43261570627003465,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución,origen_colima
+seleccion,holt_winters_aditivo,2025-11,41.625,34.298664210982935,-7.326335789017065,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución,origen_colima
+seleccion,holt_winters_aditivo,2025-12,41.66666666666666,39.017348659009954,-2.649318007656703,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución,origen_colima
+seleccion,holt_winters_aditivo,2026-01,42.888888888888886,36.33446438742721,-6.554424501461675,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución,origen_colima
+seleccion,holt_winters_aditivo,2026-02,42.375,36.03472542802985,-6.3402745719701485,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución,origen_colima
+seleccion,holt_winters_aditivo,2026-03,42.0,38.531927440193144,-3.4680725598068562,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución,origen_colima
+seleccion,holt_winters_aditivo,2026-04,42.0,42.631985940316824,0.6319859403168238,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución,origen_colima
+holdout,holt_winters_aditivo,2026-05,42.0,41.44453614480376,-0.555463855196237,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución,origen_colima
+holdout,holt_winters_aditivo,2026-06,41.888888888888886,42.23610278457306,0.3472138956841775,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución,origen_colima
+holdout,holt_winters_aditivo,2026-07,41.888888888888886,41.59724595825135,-0.2916429306375363,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución,origen_colima
+holdout,holt_winters_aditivo,2026-08,41.625,41.44474037894171,-0.18025962105829052,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución,origen_colima
+holdout,holt_winters_aditivo,2026-09,41.44444444444444,43.09730519843352,1.6528607539890743,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución,origen_colima
+holdout,holt_winters_aditivo,2026-10,42.22222222222222,46.44443812681607,4.222215904593845,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución,origen_colima
+seleccion,arima_aic,2025-11,41.625,40.823693240661264,-0.8013067593387362,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución,origen_colima
+seleccion,arima_aic,2025-12,41.66666666666666,41.625,-0.04166666666665719,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución,origen_colima
+seleccion,arima_aic,2026-01,42.888888888888886,35.54107158771018,-7.347817301178708,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución,origen_colima
+seleccion,arima_aic,2026-02,42.375,34.714174124317395,-7.660825875682605,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución,origen_colima
+seleccion,arima_aic,2026-03,42.0,42.375,0.375,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución,origen_colima
+seleccion,arima_aic,2026-04,42.0,42.0,0.0,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución,origen_colima
+holdout,arima_aic,2026-05,42.0,42.0,0.0,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución,origen_colima
+holdout,arima_aic,2026-06,41.888888888888886,42.0,0.11111111111111427,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución,origen_colima
+holdout,arima_aic,2026-07,41.888888888888886,41.888888888888886,0.0,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución,origen_colima
+holdout,arima_aic,2026-08,41.625,41.888888888888886,0.26388888888888573,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución,origen_colima
+holdout,arima_aic,2026-09,41.44444444444444,41.625,0.18055555555555713,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución,origen_colima
+holdout,arima_aic,2026-10,42.22222222222222,41.44444444444444,-0.7777777777777786,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución,origen_colima
+seleccion,suavizamiento_simple,2025-11,7.631578947368421,8.217391340135297,0.5858123927668757,platano,732,Plátano Tabasco - Primera,Michoacán,140,Guadalajara · Mercado de Abasto,referencia_mercado
+seleccion,suavizamiento_simple,2025-12,8.693181818181818,7.631578956097706,-1.0616028620841123,platano,732,Plátano Tabasco - Primera,Michoacán,140,Guadalajara · Mercado de Abasto,referencia_mercado
+seleccion,suavizamiento_simple,2026-01,11.63095238095238,8.693181802362702,-2.937770578589678,platano,732,Plátano Tabasco - Primera,Michoacán,140,Guadalajara · Mercado de Abasto,referencia_mercado
+seleccion,suavizamiento_simple,2026-02,16.86111111111111,11.630952337176186,-5.2301587739349245,platano,732,Plátano Tabasco - Primera,Michoacán,140,Guadalajara · Mercado de Abasto,referencia_mercado
+seleccion,suavizamiento_simple,2026-03,14.238095238095235,16.86111103317567,2.623015795080436,platano,732,Plátano Tabasco - Primera,Michoacán,140,Guadalajara · Mercado de Abasto,referencia_mercado
+seleccion,suavizamiento_simple,2026-04,12.725,14.238095277181216,1.5130952771812165,platano,732,Plátano Tabasco - Primera,Michoacán,140,Guadalajara · Mercado de Abasto,referencia_mercado
+holdout,suavizamiento_simple,2026-05,11.18421052631579,12.725000022546876,1.5407894962310866,platano,732,Plátano Tabasco - Primera,Michoacán,140,Guadalajara · Mercado de Abasto,referencia_mercado
+holdout,suavizamiento_simple,2026-06,11.227272727272728,11.184210549275342,-0.04306217799738654,platano,732,Plátano Tabasco - Primera,Michoacán,140,Guadalajara · Mercado de Abasto,referencia_mercado
+holdout,suavizamiento_simple,2026-07,13.043478260869565,11.227272726631051,-1.816205534238513,platano,732,Plátano Tabasco - Primera,Michoacán,140,Guadalajara · Mercado de Abasto,referencia_mercado
+holdout,suavizamiento_simple,2026-08,13.595238095238098,13.043478233805994,-0.5517598614321049,platano,732,Plátano Tabasco - Primera,Michoacán,140,Guadalajara · Mercado de Abasto,referencia_mercado
+holdout,suavizamiento_simple,2026-09,13.619047619047619,13.595238087016236,-0.023809532031382474,platano,732,Plátano Tabasco - Primera,Michoacán,140,Guadalajara · Mercado de Abasto,referencia_mercado
+holdout,suavizamiento_simple,2026-10,13.886363636363637,13.619047618692829,-0.26731601767080804,platano,732,Plátano Tabasco - Primera,Michoacán,140,Guadalajara · Mercado de Abasto,referencia_mercado
+seleccion,holt,2025-11,7.631578947368421,8.122495848697541,0.49091690132912014,platano,732,Plátano Tabasco - Primera,Michoacán,140,Guadalajara · Mercado de Abasto,referencia_mercado
+seleccion,holt,2025-12,8.693181818181818,7.516228186554138,-1.17695363162768,platano,732,Plátano Tabasco - Primera,Michoacán,140,Guadalajara · Mercado de Abasto,referencia_mercado
+seleccion,holt,2026-01,11.63095238095238,8.624906911151337,-3.006045469801043,platano,732,Plátano Tabasco - Primera,Michoacán,140,Guadalajara · Mercado de Abasto,referencia_mercado
+seleccion,holt,2026-02,16.86111111111111,11.678297800293755,-5.182813310817355,platano,732,Plátano Tabasco - Primera,Michoacán,140,Guadalajara · Mercado de Abasto,referencia_mercado
+seleccion,holt,2026-03,14.238095238095235,17.100411376173568,2.8623161380783326,platano,732,Plátano Tabasco - Primera,Michoacán,140,Guadalajara · Mercado de Abasto,referencia_mercado
+seleccion,holt,2026-04,12.725,14.375170842250979,1.6501708422509793,platano,732,Plátano Tabasco - Primera,Michoacán,140,Guadalajara · Mercado de Abasto,referencia_mercado
+holdout,holt,2026-05,11.18421052631579,12.805174804939115,1.620964278623326,platano,732,Plátano Tabasco - Primera,Michoacán,140,Guadalajara · Mercado de Abasto,referencia_mercado
+holdout,holt,2026-06,11.227272727272728,11.21035107711064,-0.016921650162087687,platano,732,Plátano Tabasco - Primera,Michoacán,140,Guadalajara · Mercado de Abasto,referencia_mercado
+holdout,holt,2026-07,13.043478260869565,11.253959130379389,-1.7895191304901754,platano,732,Plátano Tabasco - Primera,Michoacán,140,Guadalajara · Mercado de Abasto,referencia_mercado
+holdout,holt,2026-08,13.595238095238098,13.12608706164182,-0.46915103359627786,platano,732,Plátano Tabasco - Primera,Michoacán,140,Guadalajara · Mercado de Abasto,referencia_mercado
+holdout,holt,2026-09,13.619047619047619,13.69206558055657,0.07301796150895079,platano,732,Plátano Tabasco - Primera,Michoacán,140,Guadalajara · Mercado de Abasto,referencia_mercado
+holdout,holt,2026-10,13.886363636363637,13.713727738568629,-0.17263589779500776,platano,732,Plátano Tabasco - Primera,Michoacán,140,Guadalajara · Mercado de Abasto,referencia_mercado
+seleccion,holt_winters_aditivo,2025-11,7.631578947368421,7.9763778735684925,0.34479892620007124,platano,732,Plátano Tabasco - Primera,Michoacán,140,Guadalajara · Mercado de Abasto,referencia_mercado
+seleccion,holt_winters_aditivo,2025-12,8.693181818181818,7.258665547964695,-1.4345162702171237,platano,732,Plátano Tabasco - Primera,Michoacán,140,Guadalajara · Mercado de Abasto,referencia_mercado
+seleccion,holt_winters_aditivo,2026-01,11.63095238095238,12.748826239347032,1.1178738583946526,platano,732,Plátano Tabasco - Primera,Michoacán,140,Guadalajara · Mercado de Abasto,referencia_mercado
+seleccion,holt_winters_aditivo,2026-02,16.86111111111111,14.035534075041346,-2.825577036069765,platano,732,Plátano Tabasco - Primera,Michoacán,140,Guadalajara · Mercado de Abasto,referencia_mercado
+seleccion,holt_winters_aditivo,2026-03,14.238095238095235,13.661272982539915,-0.5768222555553209,platano,732,Plátano Tabasco - Primera,Michoacán,140,Guadalajara · Mercado de Abasto,referencia_mercado
+seleccion,holt_winters_aditivo,2026-04,12.725,12.008858761619546,-0.7161412383804535,platano,732,Plátano Tabasco - Primera,Michoacán,140,Guadalajara · Mercado de Abasto,referencia_mercado
+holdout,holt_winters_aditivo,2026-05,11.18421052631579,13.740929512367208,2.5567189860514183,platano,732,Plátano Tabasco - Primera,Michoacán,140,Guadalajara · Mercado de Abasto,referencia_mercado
+holdout,holt_winters_aditivo,2026-06,11.227272727272728,12.58265533474311,1.355382607470382,platano,732,Plátano Tabasco - Primera,Michoacán,140,Guadalajara · Mercado de Abasto,referencia_mercado
+holdout,holt_winters_aditivo,2026-07,13.043478260869565,14.769770842582515,1.7262925817129506,platano,732,Plátano Tabasco - Primera,Michoacán,140,Guadalajara · Mercado de Abasto,referencia_mercado
+holdout,holt_winters_aditivo,2026-08,13.595238095238098,14.553381835826219,0.9581437405881204,platano,732,Plátano Tabasco - Primera,Michoacán,140,Guadalajara · Mercado de Abasto,referencia_mercado
+holdout,holt_winters_aditivo,2026-09,13.619047619047619,10.651438964855092,-2.967608654192526,platano,732,Plátano Tabasco - Primera,Michoacán,140,Guadalajara · Mercado de Abasto,referencia_mercado
+holdout,holt_winters_aditivo,2026-10,13.886363636363637,7.769670343092568,-6.1166932932710685,platano,732,Plátano Tabasco - Primera,Michoacán,140,Guadalajara · Mercado de Abasto,referencia_mercado
+seleccion,arima_aic,2025-11,7.631578947368421,10.591533774971627,2.9599548276032053,platano,732,Plátano Tabasco - Primera,Michoacán,140,Guadalajara · Mercado de Abasto,referencia_mercado
+seleccion,arima_aic,2025-12,8.693181818181818,10.678962652418745,1.9857808342369268,platano,732,Plátano Tabasco - Primera,Michoacán,140,Guadalajara · Mercado de Abasto,referencia_mercado
+seleccion,arima_aic,2026-01,11.63095238095238,12.210171688224422,0.5792193072720426,platano,732,Plátano Tabasco - Primera,Michoacán,140,Guadalajara · Mercado de Abasto,referencia_mercado
+seleccion,arima_aic,2026-02,16.86111111111111,14.647210911814557,-2.2139001992965532,platano,732,Plátano Tabasco - Primera,Michoacán,140,Guadalajara · Mercado de Abasto,referencia_mercado
+seleccion,arima_aic,2026-03,14.238095238095235,18.065031629773728,3.826936391678492,platano,732,Plátano Tabasco - Primera,Michoacán,140,Guadalajara · Mercado de Abasto,referencia_mercado
+seleccion,arima_aic,2026-04,12.725,14.757093221957843,2.032093221957844,platano,732,Plátano Tabasco - Primera,Michoacán,140,Guadalajara · Mercado de Abasto,referencia_mercado
+holdout,arima_aic,2026-05,11.18421052631579,13.442892255560983,2.2586817292451933,platano,732,Plátano Tabasco - Primera,Michoacán,140,Guadalajara · Mercado de Abasto,referencia_mercado
+holdout,arima_aic,2026-06,11.227272727272728,12.534085699211783,1.3068129719390544,platano,732,Plátano Tabasco - Primera,Michoacán,140,Guadalajara · Mercado de Abasto,referencia_mercado
+holdout,arima_aic,2026-07,13.043478260869565,12.19526071488555,-0.8482175459840153,platano,732,Plátano Tabasco - Primera,Michoacán,140,Guadalajara · Mercado de Abasto,referencia_mercado
+holdout,arima_aic,2026-08,13.595238095238098,13.982125377053508,0.3868872818154099,platano,732,Plátano Tabasco - Primera,Michoacán,140,Guadalajara · Mercado de Abasto,referencia_mercado
+holdout,arima_aic,2026-09,13.619047619047619,13.339784172034998,-0.27926344701262096,platano,732,Plátano Tabasco - Primera,Michoacán,140,Guadalajara · Mercado de Abasto,referencia_mercado
+holdout,arima_aic,2026-10,13.886363636363637,13.130176870247325,-0.7561867661163113,platano,732,Plátano Tabasco - Primera,Michoacán,140,Guadalajara · Mercado de Abasto,referencia_mercado
