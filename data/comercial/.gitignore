@@ -1,0 +1,7 @@
+# Datos comerciales reales — NO subir al repositorio público.
+# Solo el esquema y documentación se versionan.
+*.csv
+reporte_seguimiento.json
+.privado/
+!.gitignore
+!README.md

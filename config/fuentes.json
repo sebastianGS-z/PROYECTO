@@ -13,6 +13,62 @@
       {
         "clave": "papaya",
         "busqueda": "Papaya"
+      },
+      {
+        "clave": "mango_ataulfo",
+        "busqueda": "Mango Ataulfo"
+      },
+      {
+        "clave": "mango_manila",
+        "busqueda": "Mango Manila"
+      },
+      {
+        "clave": "aguacate_hass",
+        "busqueda": "Aguacate Hass - Primera"
+      },
+      {
+        "clave": "coco",
+        "busqueda": "Coco"
+      },
+      {
+        "clave": "tamarindo",
+        "busqueda": "Tamarindo"
+      },
+      {
+        "clave": "guayaba",
+        "busqueda": "Guayaba"
+      },
+      {
+        "clave": "guanabana",
+        "busqueda": "Guanabana"
+      },
+      {
+        "clave": "sandia",
+        "busqueda": "Sandía Charleston"
+      },
+      {
+        "clave": "sandia_blanca",
+        "busqueda": "Sandía Blanca"
+      },
+      {
+        "clave": "sandia_jubilee",
+        "busqueda": "Sandía Jubilee"
+      },
+      {
+        "clave": "sandia_peacock",
+        "busqueda": "Sandía Peacock"
+      },
+      {
+        "clave": "sandia_negra",
+        "busqueda": "Sandía Negra"
+      },
+      {
+        "clave": "sandia_rayada",
+        "busqueda": "Sandía Rayada"
+      },
+      {
+        "clave": "sandia_sangria",
+        "busqueda": "Sandía Sangría"
       }
     ],
     "mercados": [
@@ -23,16 +79,24 @@
       {
         "clave": "cdmx",
         "etiqueta_formulario": "DF: Central de Abasto de Iztapalapa DF"
-      }
-    ],
-    "mercados_opcionales": [
+      },
       {
         "clave": "colima",
         "etiqueta_formulario": "Colima: Centros de distribución de Colima"
       },
       {
+        "clave": "morelia",
+        "etiqueta_formulario": "Michoacán: Mercado de Abasto de Morelia"
+      }
+    ],
+    "mercados_opcionales": [
+      {
         "clave": "guadalajara_felipe_angeles",
         "etiqueta_formulario": "Jalisco: Mercado Felipe Ángeles de Guadalajara"
+      },
+      {
+        "clave": "tepic",
+        "etiqueta_formulario": "Nayarit: Mercado de abasto 'Adolfo López Mateos' de Tepic"
       }
     ],
     "precios_por": "presentacion"

@@ -7,6 +7,12 @@
     python main.py psp        <subcomando de calidad.psp>
     python main.py capas      [--bronze-dir ... --data-dir ...] (pipeline E1)
     python main.py e2         [--solo-procesar] (captura INEGI, E1 y productos geoespaciales)
+    python main.py observatorio [--horizonte 3] (pronósticos, backtest, exportación y tablero)
+    python main.py comercial  <subcomando> (seguimiento local de oportunidades y costeo)
+    python main.py siap [archivo.csv] (producción municipal SIAP + mapa INEGI)
+    python main.py comercio-intl [--solo-procesar] (comercio mundial UN Comtrade)
+    python main.py precios-catalogo [--fecha AAAA-MM-DD] [--solo-procesar] (frutas publicadas en SNIIM por mercado)
+    python main.py mapa-mercados [--solo-procesar] (geografía de plazas nacionales)
 """
 from __future__ import annotations
 
@@ -49,6 +55,18 @@ def main(argv: list[str] | None = None) -> int:
         from src.tdl_e1.pipeline import main as f
     elif cmd == "e2":
         from src.tdl_e2.geoespacial import main as f
+    elif cmd == "observatorio":
+        from src.tdl_e4.observatorio import main as f
+    elif cmd == "comercial":
+        from scripts.comercial import main as f
+    elif cmd == "siap":
+        from scripts.integrar_siap_colima import main as f
+    elif cmd == "comercio-intl":
+        from scripts.capturar_comercio_internacional import main as f
+    elif cmd == "precios-catalogo":
+        from scripts.capturar_sniim_catalogo import main as f
+    elif cmd == "mapa-mercados":
+        from scripts.preparar_mapa_mercados import main as f
     else:
         print(f"Comando desconocido: {cmd}\n{__doc__}", file=sys.stderr)
         return 2
