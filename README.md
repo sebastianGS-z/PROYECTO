@@ -76,14 +76,21 @@ Sitio: **<https://sebastiangs-z.github.io/PROYECTO/>** (se publica con GitHub Pa
 | Vista | Para quién | Qué muestra |
 |---|---|---|
 | [`tablero/inicio.html`](tablero/inicio.html) | Cliente | Precio, pronóstico con rango y confianza por producto; hallazgos; accesos |
-| [`tablero/preguntas.html`](tablero/preguntas.html) | Productor | 14 preguntas por producto respondidas con datos, nivel de confianza, qué hacer y calculadora de precio justo |
+| [`tablero/preguntas.html`](tablero/preguntas.html) | Productor | 14 preguntas para cada una de las 10 frutas, con índice de confianza (0–100 %), qué hacer y calculadora de precio justo |
+| [`tablero/mapa.html`](tablero/mapa.html) | Productor / comprador | Producción municipal por cultivo y año (SIAP 2016–2025), centrales con diferencia de precio comprobada frente a la referencia, y países que compran cada fruta a México |
 | [`tablero/inteligencia.html`](tablero/inteligencia.html) | Cliente | Reporte imprimible: pronóstico, plazas, margen del productor, calendario, señales |
 | [`tablero/cliente.html`](tablero/cliente.html) | Comprador | Comparación de plazas, simulador de margen y flete, mapa SIAP, comercio exterior |
 | [`tablero/index.html`](tablero/index.html) | Analista | Serie, pronóstico con banda de 80 %, evaluación de modelos, calidad y linaje |
 | [`tablero/laboratorio.html`](tablero/laboratorio.html) | Docentes / analista | Resultados de E1–E3 |
 | [`tablero/admin.html`](tablero/admin.html) | Operador | Alertas, disponibilidad, estado por fuente, puerta de calidad, ISO/IEC 25012, salud de pronósticos, inventario de Bronce |
 
-Regenerar todo desde Bronce: `python main.py capas && python main.py observatorio && python -m calidad.metricas && python main.py inteligencia && python main.py reporte && python main.py preguntas && python main.py portal`. Fuentes históricas adicionales: `python main.py siap-captura --anios 2016 ... 2025` (cierres agrícolas SIAP) y `python main.py historica --inicio 2016-11-01 ...` (SNIIM).
+**Índice de confianza (0–100 %).** Pronósticos: 50 % precisión en meses no vistos (1 − MAPE/40), 30 % acierto del rango de 80 %, 20 % historia (meses/120). Comparaciones con prueba estadística: 60 % (1 − p) + 40 % datos (n/objetivo), con tope de 60 % si p ≥ 0.05 y de 40 % si p ≥ 0.20. Datos oficiales observados: según cobertura. ≥ 75 alta, 50–74 media, < 50 baja. Implementación: `src/inteligencia/comercial.py::confianza_pct` y `src/inteligencia/preguntas.py`.
+
+**Catálogo de frutas.** `src/inteligencia/catalogo.py` es la fuente única: limón, papaya, plátano, mango, coco, tamarindo, guayaba, aguacate, sandía y guanábana, con su nombre en SIAP y su código HS. Cobertura de 10 años por fruta: `data/publico/cobertura_frutas.csv` y el panel de administración.
+
+**Mercados extranjeros.** `python main.py comtrade-captura` (UN Comtrade 2019–2024: importaciones desde México, importaciones mundiales y exportadores, con pausa de 6 s por la cuota del API) y `python main.py exportacion` (destinos, crecimiento, oportunidades y prima de exportación en MXN/kg con tipo de cambio del BCE).
+
+Regenerar todo desde Bronce: `python main.py capas && python main.py observatorio && python -m calidad.metricas && python main.py exportacion && python main.py inteligencia && python main.py reporte && python main.py preguntas && python main.py mapa && python main.py portal`. Fuentes históricas adicionales: `python main.py siap-captura --anios 2016 ... 2025` (cierres agrícolas SIAP) y `python main.py historica --inicio 2016-11-01 ...` (SNIIM).
 
 ## Mapa de evidencias por materia
 

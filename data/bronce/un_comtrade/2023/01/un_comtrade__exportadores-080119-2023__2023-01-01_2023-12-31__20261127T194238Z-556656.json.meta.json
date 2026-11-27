@@ -1,0 +1,30 @@
+{
+  "esquema": "tdl-bronce-meta/1",
+  "contenido_original": {
+    "archivo": "un_comtrade__exportadores-080119-2023__2023-01-01_2023-12-31__20261127T194238Z-556656.json",
+    "descripcion": "Bytes tal como los entregó la fuente; no se modifican."
+  },
+  "metadatos_captura": {
+    "fuente": "un_comtrade",
+    "fuente_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2023&cmdCode=080119&maxRecords=500&flowCode=X&partnerCode=0",
+    "fecha_captura": "2026-11-27T19:49:11Z",
+    "identificador_ejecucion": "20261127T194238Z-556656",
+    "formato_original": "json",
+    "sha256": "d676c7b813e1db6f867017cf96215863cbc128ec59a372bb75474433479f8c64",
+    "bytes": 93585,
+    "http_status": 200,
+    "registros_detectados": 104,
+    "estado_captura": "ok",
+    "advertencias": [],
+    "colision_nombre": false,
+    "etiqueta": "exportadores-080119-2023",
+    "fecha_ref_inicio": "2023-01-01",
+    "fecha_ref_fin": "2023-12-31",
+    "codigo_hs": "080119",
+    "tipo_consulta": "exportadores",
+    "periodo": 2023,
+    "limite_preview": 500,
+    "truncamiento_posible": false,
+    "nota": "Datos aduanales de comercio de mercancías; no equivalen a cotizaciones ni a oportunidad rentable."
+  }
+}

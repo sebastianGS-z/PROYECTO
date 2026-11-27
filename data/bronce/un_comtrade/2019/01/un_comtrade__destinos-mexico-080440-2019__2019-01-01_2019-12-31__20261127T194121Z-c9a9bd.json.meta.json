@@ -1,0 +1,30 @@
+{
+  "esquema": "tdl-bronce-meta/1",
+  "contenido_original": {
+    "archivo": "un_comtrade__destinos-mexico-080440-2019__2019-01-01_2019-12-31__20261127T194121Z-c9a9bd.json",
+    "descripcion": "Bytes tal como los entregó la fuente; no se modifican."
+  },
+  "metadatos_captura": {
+    "fuente": "un_comtrade",
+    "fuente_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2019&cmdCode=080440&maxRecords=500&flowCode=M&partnerCode=484",
+    "fecha_captura": "2026-11-27T19:41:26Z",
+    "identificador_ejecucion": "20261127T194121Z-c9a9bd",
+    "formato_original": "json",
+    "sha256": "ec00dabeff1e33380c5c59a2008d82899d2874eef6c5eba8d0b49d8b2ce24d77",
+    "bytes": 59760,
+    "http_status": 200,
+    "registros_detectados": 66,
+    "estado_captura": "ok",
+    "advertencias": [],
+    "colision_nombre": false,
+    "etiqueta": "destinos-mexico-080440-2019",
+    "fecha_ref_inicio": "2019-01-01",
+    "fecha_ref_fin": "2019-12-31",
+    "codigo_hs": "080440",
+    "tipo_consulta": "destinos_mexico",
+    "periodo": 2019,
+    "limite_preview": 500,
+    "truncamiento_posible": false,
+    "nota": "Datos aduanales de comercio de mercancías; no equivalen a cotizaciones ni a oportunidad rentable."
+  }
+}

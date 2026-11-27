@@ -13,6 +13,8 @@
     python main.py preguntas (preguntas del agricultor respondidas con datos y calculadora de precio)
     python main.py portal (página de inicio para clientes y panel de administración)
     python main.py mapa (mapa interactivo: producción municipal y centrales de abasto)
+    python main.py exportacion (mercados extranjeros por fruta: destinos, oportunidades y prima de exportación)
+    python main.py comtrade-captura [--anios ...] (UN Comtrade por fruta y año + tipo de cambio USD/MXN)
     python main.py comercial  <subcomando> (seguimiento local de oportunidades y costeo)
     python main.py siap [archivo.csv] (producción municipal SIAP + mapa INEGI)
     python main.py siap-captura --anios 2016 ... 2025 (cierres agrícolas anuales SIAP a Bronce)
@@ -61,6 +63,8 @@ def main(argv: list[str] | None = None) -> int:
         from src.tdl_e1.pipeline import main as f
     elif cmd == "e2":
         from src.tdl_e2.geoespacial import main as f
+    elif cmd == "exportacion":
+        from src.inteligencia.exportacion import main as f
     elif cmd == "mapa":
         from src.inteligencia.mapa import main as f
     elif cmd == "portal":
@@ -79,6 +83,8 @@ def main(argv: list[str] | None = None) -> int:
         from scripts.capturar_siap import main as f
     elif cmd == "siap":
         from scripts.integrar_siap_colima import main as f
+    elif cmd == "comtrade-captura":
+        from scripts.capturar_comtrade import main as f
     elif cmd == "comercio-intl":
         from scripts.capturar_comercio_internacional import main as f
     elif cmd == "precios-catalogo":

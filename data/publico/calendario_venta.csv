@@ -1,49 +1,95 @@
-cultivo,variante_id,variante,mercado,nombre_mercado,mes,mes_nombre,indice_estacional,anios_observados,lectura,p_estacionalidad_kruskal,confianza_patron,motivo_confianza
-limon,421,Limón c/semilla # 5 - Primera,140,Guadalajara · Mercado de Abasto,1,ene,0.888,3,-11 % frente a la tendencia,0.3105,baja,"no se distingue del azar (p = 0.311, 36 observaciones)"
-limon,421,Limón c/semilla # 5 - Primera,140,Guadalajara · Mercado de Abasto,2,feb,1.031,3,+3 % frente a la tendencia,0.3105,baja,"no se distingue del azar (p = 0.311, 36 observaciones)"
-limon,421,Limón c/semilla # 5 - Primera,140,Guadalajara · Mercado de Abasto,3,mar,1.187,3,+19 % frente a la tendencia,0.3105,baja,"no se distingue del azar (p = 0.311, 36 observaciones)"
-limon,421,Limón c/semilla # 5 - Primera,140,Guadalajara · Mercado de Abasto,4,abr,1.065,3,+6 % frente a la tendencia,0.3105,baja,"no se distingue del azar (p = 0.311, 36 observaciones)"
-limon,421,Limón c/semilla # 5 - Primera,140,Guadalajara · Mercado de Abasto,5,may,1.073,3,+7 % frente a la tendencia,0.3105,baja,"no se distingue del azar (p = 0.311, 36 observaciones)"
-limon,421,Limón c/semilla # 5 - Primera,140,Guadalajara · Mercado de Abasto,6,jun,1.008,3,+1 % frente a la tendencia,0.3105,baja,"no se distingue del azar (p = 0.311, 36 observaciones)"
-limon,421,Limón c/semilla # 5 - Primera,140,Guadalajara · Mercado de Abasto,7,jul,0.866,3,-13 % frente a la tendencia,0.3105,baja,"no se distingue del azar (p = 0.311, 36 observaciones)"
-limon,421,Limón c/semilla # 5 - Primera,140,Guadalajara · Mercado de Abasto,8,ago,1.187,3,+19 % frente a la tendencia,0.3105,baja,"no se distingue del azar (p = 0.311, 36 observaciones)"
-limon,421,Limón c/semilla # 5 - Primera,140,Guadalajara · Mercado de Abasto,9,sep,1.321,3,+32 % frente a la tendencia,0.3105,baja,"no se distingue del azar (p = 0.311, 36 observaciones)"
-limon,421,Limón c/semilla # 5 - Primera,140,Guadalajara · Mercado de Abasto,10,oct,0.872,3,-13 % frente a la tendencia,0.3105,baja,"no se distingue del azar (p = 0.311, 36 observaciones)"
-limon,421,Limón c/semilla # 5 - Primera,140,Guadalajara · Mercado de Abasto,11,nov,0.904,3,-10 % frente a la tendencia,0.3105,baja,"no se distingue del azar (p = 0.311, 36 observaciones)"
-limon,421,Limón c/semilla # 5 - Primera,140,Guadalajara · Mercado de Abasto,12,dic,0.695,3,-30 % frente a la tendencia,0.3105,baja,"no se distingue del azar (p = 0.311, 36 observaciones)"
-papaya,609,Papaya Maradol - Primera,140,Guadalajara · Mercado de Abasto,1,ene,0.997,3,-0 % frente a la tendencia,0.2598,baja,"no se distingue del azar (p = 0.260, 36 observaciones)"
-papaya,609,Papaya Maradol - Primera,140,Guadalajara · Mercado de Abasto,2,feb,1.12,3,+12 % frente a la tendencia,0.2598,baja,"no se distingue del azar (p = 0.260, 36 observaciones)"
-papaya,609,Papaya Maradol - Primera,140,Guadalajara · Mercado de Abasto,3,mar,0.933,3,-7 % frente a la tendencia,0.2598,baja,"no se distingue del azar (p = 0.260, 36 observaciones)"
-papaya,609,Papaya Maradol - Primera,140,Guadalajara · Mercado de Abasto,4,abr,0.948,3,-5 % frente a la tendencia,0.2598,baja,"no se distingue del azar (p = 0.260, 36 observaciones)"
-papaya,609,Papaya Maradol - Primera,140,Guadalajara · Mercado de Abasto,5,may,1.001,3,+0 % frente a la tendencia,0.2598,baja,"no se distingue del azar (p = 0.260, 36 observaciones)"
-papaya,609,Papaya Maradol - Primera,140,Guadalajara · Mercado de Abasto,6,jun,0.882,3,-12 % frente a la tendencia,0.2598,baja,"no se distingue del azar (p = 0.260, 36 observaciones)"
-papaya,609,Papaya Maradol - Primera,140,Guadalajara · Mercado de Abasto,7,jul,0.837,3,-16 % frente a la tendencia,0.2598,baja,"no se distingue del azar (p = 0.260, 36 observaciones)"
-papaya,609,Papaya Maradol - Primera,140,Guadalajara · Mercado de Abasto,8,ago,0.968,3,-3 % frente a la tendencia,0.2598,baja,"no se distingue del azar (p = 0.260, 36 observaciones)"
-papaya,609,Papaya Maradol - Primera,140,Guadalajara · Mercado de Abasto,9,sep,1.038,3,+4 % frente a la tendencia,0.2598,baja,"no se distingue del azar (p = 0.260, 36 observaciones)"
-papaya,609,Papaya Maradol - Primera,140,Guadalajara · Mercado de Abasto,10,oct,1.113,3,+11 % frente a la tendencia,0.2598,baja,"no se distingue del azar (p = 0.260, 36 observaciones)"
-papaya,609,Papaya Maradol - Primera,140,Guadalajara · Mercado de Abasto,11,nov,1.191,3,+19 % frente a la tendencia,0.2598,baja,"no se distingue del azar (p = 0.260, 36 observaciones)"
-papaya,609,Papaya Maradol - Primera,140,Guadalajara · Mercado de Abasto,12,dic,0.996,3,-0 % frente a la tendencia,0.2598,baja,"no se distingue del azar (p = 0.260, 36 observaciones)"
-tamarindo,800,Tamarindo - Primera,140,Guadalajara · Mercado de Abasto,1,ene,1.127,3,+13 % frente a la tendencia,0.5771,baja,"no se distingue del azar (p = 0.577, 27 observaciones)"
-tamarindo,800,Tamarindo - Primera,140,Guadalajara · Mercado de Abasto,2,feb,1.012,2,+1 % frente a la tendencia,0.5771,baja,"no se distingue del azar (p = 0.577, 27 observaciones)"
-tamarindo,800,Tamarindo - Primera,140,Guadalajara · Mercado de Abasto,3,mar,0.962,2,-4 % frente a la tendencia,0.5771,baja,"no se distingue del azar (p = 0.577, 27 observaciones)"
-tamarindo,800,Tamarindo - Primera,140,Guadalajara · Mercado de Abasto,4,abr,0.971,2,-3 % frente a la tendencia,0.5771,baja,"no se distingue del azar (p = 0.577, 27 observaciones)"
-tamarindo,800,Tamarindo - Primera,140,Guadalajara · Mercado de Abasto,5,may,0.976,2,-2 % frente a la tendencia,0.5771,baja,"no se distingue del azar (p = 0.577, 27 observaciones)"
-tamarindo,800,Tamarindo - Primera,140,Guadalajara · Mercado de Abasto,6,jun,0.975,2,-2 % frente a la tendencia,0.5771,baja,"no se distingue del azar (p = 0.577, 27 observaciones)"
-tamarindo,800,Tamarindo - Primera,140,Guadalajara · Mercado de Abasto,7,jul,0.971,2,-3 % frente a la tendencia,0.5771,baja,"no se distingue del azar (p = 0.577, 27 observaciones)"
-tamarindo,800,Tamarindo - Primera,140,Guadalajara · Mercado de Abasto,8,ago,0.992,2,-1 % frente a la tendencia,0.5771,baja,"no se distingue del azar (p = 0.577, 27 observaciones)"
-tamarindo,800,Tamarindo - Primera,140,Guadalajara · Mercado de Abasto,9,sep,0.931,2,-7 % frente a la tendencia,0.5771,baja,"no se distingue del azar (p = 0.577, 27 observaciones)"
-tamarindo,800,Tamarindo - Primera,140,Guadalajara · Mercado de Abasto,10,oct,1.001,2,+0 % frente a la tendencia,0.5771,baja,"no se distingue del azar (p = 0.577, 27 observaciones)"
-tamarindo,800,Tamarindo - Primera,140,Guadalajara · Mercado de Abasto,11,nov,1.042,3,+4 % frente a la tendencia,0.5771,baja,"no se distingue del azar (p = 0.577, 27 observaciones)"
-tamarindo,800,Tamarindo - Primera,140,Guadalajara · Mercado de Abasto,12,dic,1.082,3,+8 % frente a la tendencia,0.5771,baja,"no se distingue del azar (p = 0.577, 27 observaciones)"
-tamarindo,800,Tamarindo - Primera,80,Colima · Centros de distribución,1,ene,1.073,3,+7 % frente a la tendencia,0.2095,baja,"no se distingue del azar (p = 0.210, 36 observaciones)"
-tamarindo,800,Tamarindo - Primera,80,Colima · Centros de distribución,2,feb,1.037,3,+4 % frente a la tendencia,0.2095,baja,"no se distingue del azar (p = 0.210, 36 observaciones)"
-tamarindo,800,Tamarindo - Primera,80,Colima · Centros de distribución,3,mar,0.965,3,-3 % frente a la tendencia,0.2095,baja,"no se distingue del azar (p = 0.210, 36 observaciones)"
-tamarindo,800,Tamarindo - Primera,80,Colima · Centros de distribución,4,abr,0.973,3,-3 % frente a la tendencia,0.2095,baja,"no se distingue del azar (p = 0.210, 36 observaciones)"
-tamarindo,800,Tamarindo - Primera,80,Colima · Centros de distribución,5,may,0.954,3,-5 % frente a la tendencia,0.2095,baja,"no se distingue del azar (p = 0.210, 36 observaciones)"
-tamarindo,800,Tamarindo - Primera,80,Colima · Centros de distribución,6,jun,0.949,3,-5 % frente a la tendencia,0.2095,baja,"no se distingue del azar (p = 0.210, 36 observaciones)"
-tamarindo,800,Tamarindo - Primera,80,Colima · Centros de distribución,7,jul,0.942,3,-6 % frente a la tendencia,0.2095,baja,"no se distingue del azar (p = 0.210, 36 observaciones)"
-tamarindo,800,Tamarindo - Primera,80,Colima · Centros de distribución,8,ago,0.924,3,-8 % frente a la tendencia,0.2095,baja,"no se distingue del azar (p = 0.210, 36 observaciones)"
-tamarindo,800,Tamarindo - Primera,80,Colima · Centros de distribución,9,sep,0.944,3,-6 % frente a la tendencia,0.2095,baja,"no se distingue del azar (p = 0.210, 36 observaciones)"
-tamarindo,800,Tamarindo - Primera,80,Colima · Centros de distribución,10,oct,1.037,3,+4 % frente a la tendencia,0.2095,baja,"no se distingue del azar (p = 0.210, 36 observaciones)"
-tamarindo,800,Tamarindo - Primera,80,Colima · Centros de distribución,11,nov,1.065,3,+7 % frente a la tendencia,0.2095,baja,"no se distingue del azar (p = 0.210, 36 observaciones)"
-tamarindo,800,Tamarindo - Primera,80,Colima · Centros de distribución,12,dic,1.161,3,+16 % frente a la tendencia,0.2095,baja,"no se distingue del azar (p = 0.210, 36 observaciones)"
+cultivo,variante_id,variante,mercado,base,nombre_mercado,mes,mes_nombre,indice_estacional,anios_observados,lectura,p_estacionalidad_kruskal,confianza_patron,confianza_pct,motivo_confianza
+guayaba,378,Guayaba - Primera,140,todos los orígenes,Guadalajara · Mercado de Abasto,1,ene,0.813,3,-19 % frente a la tendencia,0.0146,media,71,p = 0.015 con 36 observaciones
+guayaba,378,Guayaba - Primera,140,todos los orígenes,Guadalajara · Mercado de Abasto,2,feb,0.793,3,-21 % frente a la tendencia,0.0146,media,71,p = 0.015 con 36 observaciones
+guayaba,378,Guayaba - Primera,140,todos los orígenes,Guadalajara · Mercado de Abasto,3,mar,0.977,3,-2 % frente a la tendencia,0.0146,media,71,p = 0.015 con 36 observaciones
+guayaba,378,Guayaba - Primera,140,todos los orígenes,Guadalajara · Mercado de Abasto,4,abr,1.228,3,+23 % frente a la tendencia,0.0146,media,71,p = 0.015 con 36 observaciones
+guayaba,378,Guayaba - Primera,140,todos los orígenes,Guadalajara · Mercado de Abasto,5,may,1.345,3,+35 % frente a la tendencia,0.0146,media,71,p = 0.015 con 36 observaciones
+guayaba,378,Guayaba - Primera,140,todos los orígenes,Guadalajara · Mercado de Abasto,6,jun,1.188,3,+19 % frente a la tendencia,0.0146,media,71,p = 0.015 con 36 observaciones
+guayaba,378,Guayaba - Primera,140,todos los orígenes,Guadalajara · Mercado de Abasto,7,jul,1.093,3,+9 % frente a la tendencia,0.0146,media,71,p = 0.015 con 36 observaciones
+guayaba,378,Guayaba - Primera,140,todos los orígenes,Guadalajara · Mercado de Abasto,8,ago,0.905,3,-10 % frente a la tendencia,0.0146,media,71,p = 0.015 con 36 observaciones
+guayaba,378,Guayaba - Primera,140,todos los orígenes,Guadalajara · Mercado de Abasto,9,sep,0.883,3,-12 % frente a la tendencia,0.0146,media,71,p = 0.015 con 36 observaciones
+guayaba,378,Guayaba - Primera,140,todos los orígenes,Guadalajara · Mercado de Abasto,10,oct,0.883,3,-12 % frente a la tendencia,0.0146,media,71,p = 0.015 con 36 observaciones
+guayaba,378,Guayaba - Primera,140,todos los orígenes,Guadalajara · Mercado de Abasto,11,nov,0.962,3,-4 % frente a la tendencia,0.0146,media,71,p = 0.015 con 36 observaciones
+guayaba,378,Guayaba - Primera,140,todos los orígenes,Guadalajara · Mercado de Abasto,12,dic,0.874,3,-13 % frente a la tendencia,0.0146,media,71,p = 0.015 con 36 observaciones
+guayaba,378,Guayaba - Primera,80,todos los orígenes,Colima · Centros de distribución,1,ene,0.935,3,-6 % frente a la tendencia,0.0353,media,70,p = 0.035 con 36 observaciones
+guayaba,378,Guayaba - Primera,80,todos los orígenes,Colima · Centros de distribución,2,feb,0.969,3,-3 % frente a la tendencia,0.0353,media,70,p = 0.035 con 36 observaciones
+guayaba,378,Guayaba - Primera,80,todos los orígenes,Colima · Centros de distribución,3,mar,0.957,3,-4 % frente a la tendencia,0.0353,media,70,p = 0.035 con 36 observaciones
+guayaba,378,Guayaba - Primera,80,todos los orígenes,Colima · Centros de distribución,4,abr,0.974,3,-3 % frente a la tendencia,0.0353,media,70,p = 0.035 con 36 observaciones
+guayaba,378,Guayaba - Primera,80,todos los orígenes,Colima · Centros de distribución,5,may,1.126,3,+13 % frente a la tendencia,0.0353,media,70,p = 0.035 con 36 observaciones
+guayaba,378,Guayaba - Primera,80,todos los orígenes,Colima · Centros de distribución,6,jun,1.126,3,+13 % frente a la tendencia,0.0353,media,70,p = 0.035 con 36 observaciones
+guayaba,378,Guayaba - Primera,80,todos los orígenes,Colima · Centros de distribución,7,jul,1.089,3,+9 % frente a la tendencia,0.0353,media,70,p = 0.035 con 36 observaciones
+guayaba,378,Guayaba - Primera,80,todos los orígenes,Colima · Centros de distribución,8,ago,1.006,3,+1 % frente a la tendencia,0.0353,media,70,p = 0.035 con 36 observaciones
+guayaba,378,Guayaba - Primera,80,todos los orígenes,Colima · Centros de distribución,9,sep,0.948,3,-5 % frente a la tendencia,0.0353,media,70,p = 0.035 con 36 observaciones
+guayaba,378,Guayaba - Primera,80,todos los orígenes,Colima · Centros de distribución,10,oct,0.912,3,-9 % frente a la tendencia,0.0353,media,70,p = 0.035 con 36 observaciones
+guayaba,378,Guayaba - Primera,80,todos los orígenes,Colima · Centros de distribución,11,nov,0.951,3,-5 % frente a la tendencia,0.0353,media,70,p = 0.035 con 36 observaciones
+guayaba,378,Guayaba - Primera,80,todos los orígenes,Colima · Centros de distribución,12,dic,0.939,3,-6 % frente a la tendencia,0.0353,media,70,p = 0.035 con 36 observaciones
+limon,421,Limón c/semilla # 5 - Primera,140,origen Colima,Guadalajara · Mercado de Abasto,1,ene,0.92,9,-8 % frente a la tendencia,0.0001,alta,99,p < 0.001 con 117 observaciones
+limon,421,Limón c/semilla # 5 - Primera,140,origen Colima,Guadalajara · Mercado de Abasto,2,feb,1.069,9,+7 % frente a la tendencia,0.0001,alta,99,p < 0.001 con 117 observaciones
+limon,421,Limón c/semilla # 5 - Primera,140,origen Colima,Guadalajara · Mercado de Abasto,3,mar,1.355,10,+36 % frente a la tendencia,0.0001,alta,99,p < 0.001 con 117 observaciones
+limon,421,Limón c/semilla # 5 - Primera,140,origen Colima,Guadalajara · Mercado de Abasto,4,abr,1.259,10,+26 % frente a la tendencia,0.0001,alta,99,p < 0.001 con 117 observaciones
+limon,421,Limón c/semilla # 5 - Primera,140,origen Colima,Guadalajara · Mercado de Abasto,5,may,0.923,10,-8 % frente a la tendencia,0.0001,alta,99,p < 0.001 con 117 observaciones
+limon,421,Limón c/semilla # 5 - Primera,140,origen Colima,Guadalajara · Mercado de Abasto,6,jun,0.855,9,-14 % frente a la tendencia,0.0001,alta,99,p < 0.001 con 117 observaciones
+limon,421,Limón c/semilla # 5 - Primera,140,origen Colima,Guadalajara · Mercado de Abasto,7,jul,0.864,10,-14 % frente a la tendencia,0.0001,alta,99,p < 0.001 con 117 observaciones
+limon,421,Limón c/semilla # 5 - Primera,140,origen Colima,Guadalajara · Mercado de Abasto,8,ago,1.019,10,+2 % frente a la tendencia,0.0001,alta,99,p < 0.001 con 117 observaciones
+limon,421,Limón c/semilla # 5 - Primera,140,origen Colima,Guadalajara · Mercado de Abasto,9,sep,1.115,10,+11 % frente a la tendencia,0.0001,alta,99,p < 0.001 con 117 observaciones
+limon,421,Limón c/semilla # 5 - Primera,140,origen Colima,Guadalajara · Mercado de Abasto,10,oct,1.026,10,+3 % frente a la tendencia,0.0001,alta,99,p < 0.001 con 117 observaciones
+limon,421,Limón c/semilla # 5 - Primera,140,origen Colima,Guadalajara · Mercado de Abasto,11,nov,0.776,10,-22 % frente a la tendencia,0.0001,alta,99,p < 0.001 con 117 observaciones
+limon,421,Limón c/semilla # 5 - Primera,140,origen Colima,Guadalajara · Mercado de Abasto,12,dic,0.776,10,-22 % frente a la tendencia,0.0001,alta,99,p < 0.001 con 117 observaciones
+mango_ataulfo,465,Mango Ataulfo - Primera,140,todos los orígenes,Guadalajara · Mercado de Abasto,1,ene,1.55,3,+55 % frente a la tendencia,0.0001,alta,81,p < 0.001 con 63 observaciones
+mango_ataulfo,465,Mango Ataulfo - Primera,140,todos los orígenes,Guadalajara · Mercado de Abasto,2,feb,1.149,5,+15 % frente a la tendencia,0.0001,alta,81,p < 0.001 con 63 observaciones
+mango_ataulfo,465,Mango Ataulfo - Primera,140,todos los orígenes,Guadalajara · Mercado de Abasto,3,mar,1.12,8,+12 % frente a la tendencia,0.0001,alta,81,p < 0.001 con 63 observaciones
+mango_ataulfo,465,Mango Ataulfo - Primera,140,todos los orígenes,Guadalajara · Mercado de Abasto,4,abr,1.0,8,-0 % frente a la tendencia,0.0001,alta,81,p < 0.001 con 63 observaciones
+mango_ataulfo,465,Mango Ataulfo - Primera,140,todos los orígenes,Guadalajara · Mercado de Abasto,5,may,0.83,8,-17 % frente a la tendencia,0.0001,alta,81,p < 0.001 con 63 observaciones
+mango_ataulfo,465,Mango Ataulfo - Primera,140,todos los orígenes,Guadalajara · Mercado de Abasto,6,jun,0.772,8,-23 % frente a la tendencia,0.0001,alta,81,p < 0.001 con 63 observaciones
+mango_ataulfo,465,Mango Ataulfo - Primera,140,todos los orígenes,Guadalajara · Mercado de Abasto,7,jul,0.898,8,-10 % frente a la tendencia,0.0001,alta,81,p < 0.001 con 63 observaciones
+mango_ataulfo,465,Mango Ataulfo - Primera,140,todos los orígenes,Guadalajara · Mercado de Abasto,8,ago,1.016,8,+2 % frente a la tendencia,0.0001,alta,81,p < 0.001 con 63 observaciones
+mango_ataulfo,465,Mango Ataulfo - Primera,140,todos los orígenes,Guadalajara · Mercado de Abasto,9,sep,1.055,6,+5 % frente a la tendencia,0.0001,alta,81,p < 0.001 con 63 observaciones
+mango_ataulfo,465,Mango Ataulfo - Primera,140,todos los orígenes,Guadalajara · Mercado de Abasto,12,dic,1.98,1,+98 % frente a la tendencia,0.0001,alta,81,p < 0.001 con 63 observaciones
+papaya,609,Papaya Maradol - Primera,140,origen Colima,Guadalajara · Mercado de Abasto,1,ene,1.036,10,+4 % frente a la tendencia,0.0014,alta,100,p = 0.001 con 119 observaciones
+papaya,609,Papaya Maradol - Primera,140,origen Colima,Guadalajara · Mercado de Abasto,2,feb,1.083,10,+8 % frente a la tendencia,0.0014,alta,100,p = 0.001 con 119 observaciones
+papaya,609,Papaya Maradol - Primera,140,origen Colima,Guadalajara · Mercado de Abasto,3,mar,0.951,10,-5 % frente a la tendencia,0.0014,alta,100,p = 0.001 con 119 observaciones
+papaya,609,Papaya Maradol - Primera,140,origen Colima,Guadalajara · Mercado de Abasto,4,abr,0.957,10,-4 % frente a la tendencia,0.0014,alta,100,p = 0.001 con 119 observaciones
+papaya,609,Papaya Maradol - Primera,140,origen Colima,Guadalajara · Mercado de Abasto,5,may,0.982,10,-2 % frente a la tendencia,0.0014,alta,100,p = 0.001 con 119 observaciones
+papaya,609,Papaya Maradol - Primera,140,origen Colima,Guadalajara · Mercado de Abasto,6,jun,0.914,9,-9 % frente a la tendencia,0.0014,alta,100,p = 0.001 con 119 observaciones
+papaya,609,Papaya Maradol - Primera,140,origen Colima,Guadalajara · Mercado de Abasto,7,jul,0.895,10,-11 % frente a la tendencia,0.0014,alta,100,p = 0.001 con 119 observaciones
+papaya,609,Papaya Maradol - Primera,140,origen Colima,Guadalajara · Mercado de Abasto,8,ago,1.004,10,+0 % frente a la tendencia,0.0014,alta,100,p = 0.001 con 119 observaciones
+papaya,609,Papaya Maradol - Primera,140,origen Colima,Guadalajara · Mercado de Abasto,9,sep,1.036,10,+4 % frente a la tendencia,0.0014,alta,100,p = 0.001 con 119 observaciones
+papaya,609,Papaya Maradol - Primera,140,origen Colima,Guadalajara · Mercado de Abasto,10,oct,1.063,10,+6 % frente a la tendencia,0.0014,alta,100,p = 0.001 con 119 observaciones
+papaya,609,Papaya Maradol - Primera,140,origen Colima,Guadalajara · Mercado de Abasto,11,nov,1.104,10,+10 % frente a la tendencia,0.0014,alta,100,p = 0.001 con 119 observaciones
+papaya,609,Papaya Maradol - Primera,140,origen Colima,Guadalajara · Mercado de Abasto,12,dic,0.997,10,-0 % frente a la tendencia,0.0014,alta,100,p = 0.001 con 119 observaciones
+platano,732,Plátano Tabasco - Primera,140,origen Colima,Guadalajara · Mercado de Abasto,1,ene,1.048,5,+5 % frente a la tendencia,0.0005,alta,80,p < 0.001 con 60 observaciones
+platano,732,Plátano Tabasco - Primera,140,origen Colima,Guadalajara · Mercado de Abasto,2,feb,1.227,5,+23 % frente a la tendencia,0.0005,alta,80,p < 0.001 con 60 observaciones
+platano,732,Plátano Tabasco - Primera,140,origen Colima,Guadalajara · Mercado de Abasto,3,mar,1.155,5,+15 % frente a la tendencia,0.0005,alta,80,p < 0.001 con 60 observaciones
+platano,732,Plátano Tabasco - Primera,140,origen Colima,Guadalajara · Mercado de Abasto,4,abr,1.11,5,+11 % frente a la tendencia,0.0005,alta,80,p < 0.001 con 60 observaciones
+platano,732,Plátano Tabasco - Primera,140,origen Colima,Guadalajara · Mercado de Abasto,5,may,1.124,5,+12 % frente a la tendencia,0.0005,alta,80,p < 0.001 con 60 observaciones
+platano,732,Plátano Tabasco - Primera,140,origen Colima,Guadalajara · Mercado de Abasto,6,jun,1.017,4,+2 % frente a la tendencia,0.0005,alta,80,p < 0.001 con 60 observaciones
+platano,732,Plátano Tabasco - Primera,140,origen Colima,Guadalajara · Mercado de Abasto,7,jul,1.138,5,+14 % frente a la tendencia,0.0005,alta,80,p < 0.001 con 60 observaciones
+platano,732,Plátano Tabasco - Primera,140,origen Colima,Guadalajara · Mercado de Abasto,8,ago,0.929,5,-7 % frente a la tendencia,0.0005,alta,80,p < 0.001 con 60 observaciones
+platano,732,Plátano Tabasco - Primera,140,origen Colima,Guadalajara · Mercado de Abasto,9,sep,0.83,5,-17 % frente a la tendencia,0.0005,alta,80,p < 0.001 con 60 observaciones
+platano,732,Plátano Tabasco - Primera,140,origen Colima,Guadalajara · Mercado de Abasto,10,oct,0.799,5,-20 % frente a la tendencia,0.0005,alta,80,p < 0.001 con 60 observaciones
+platano,732,Plátano Tabasco - Primera,140,origen Colima,Guadalajara · Mercado de Abasto,11,nov,0.847,6,-15 % frente a la tendencia,0.0005,alta,80,p < 0.001 con 60 observaciones
+platano,732,Plátano Tabasco - Primera,140,origen Colima,Guadalajara · Mercado de Abasto,12,dic,0.808,5,-19 % frente a la tendencia,0.0005,alta,80,p < 0.001 con 60 observaciones
+tamarindo,800,Tamarindo - Primera,140,origen Colima,Guadalajara · Mercado de Abasto,1,ene,1.127,3,+13 % frente a la tendencia,0.5771,baja,34,"no se distingue del azar (p = 0.577, 27 observaciones)"
+tamarindo,800,Tamarindo - Primera,140,origen Colima,Guadalajara · Mercado de Abasto,2,feb,1.012,2,+1 % frente a la tendencia,0.5771,baja,34,"no se distingue del azar (p = 0.577, 27 observaciones)"
+tamarindo,800,Tamarindo - Primera,140,origen Colima,Guadalajara · Mercado de Abasto,3,mar,0.962,2,-4 % frente a la tendencia,0.5771,baja,34,"no se distingue del azar (p = 0.577, 27 observaciones)"
+tamarindo,800,Tamarindo - Primera,140,origen Colima,Guadalajara · Mercado de Abasto,4,abr,0.971,2,-3 % frente a la tendencia,0.5771,baja,34,"no se distingue del azar (p = 0.577, 27 observaciones)"
+tamarindo,800,Tamarindo - Primera,140,origen Colima,Guadalajara · Mercado de Abasto,5,may,0.976,2,-2 % frente a la tendencia,0.5771,baja,34,"no se distingue del azar (p = 0.577, 27 observaciones)"
+tamarindo,800,Tamarindo - Primera,140,origen Colima,Guadalajara · Mercado de Abasto,6,jun,0.975,2,-2 % frente a la tendencia,0.5771,baja,34,"no se distingue del azar (p = 0.577, 27 observaciones)"
+tamarindo,800,Tamarindo - Primera,140,origen Colima,Guadalajara · Mercado de Abasto,7,jul,0.971,2,-3 % frente a la tendencia,0.5771,baja,34,"no se distingue del azar (p = 0.577, 27 observaciones)"
+tamarindo,800,Tamarindo - Primera,140,origen Colima,Guadalajara · Mercado de Abasto,8,ago,0.992,2,-1 % frente a la tendencia,0.5771,baja,34,"no se distingue del azar (p = 0.577, 27 observaciones)"
+tamarindo,800,Tamarindo - Primera,140,origen Colima,Guadalajara · Mercado de Abasto,9,sep,0.931,2,-7 % frente a la tendencia,0.5771,baja,34,"no se distingue del azar (p = 0.577, 27 observaciones)"
+tamarindo,800,Tamarindo - Primera,140,origen Colima,Guadalajara · Mercado de Abasto,10,oct,1.001,2,+0 % frente a la tendencia,0.5771,baja,34,"no se distingue del azar (p = 0.577, 27 observaciones)"
+tamarindo,800,Tamarindo - Primera,140,origen Colima,Guadalajara · Mercado de Abasto,11,nov,1.042,3,+4 % frente a la tendencia,0.5771,baja,34,"no se distingue del azar (p = 0.577, 27 observaciones)"
+tamarindo,800,Tamarindo - Primera,140,origen Colima,Guadalajara · Mercado de Abasto,12,dic,1.082,3,+8 % frente a la tendencia,0.5771,baja,34,"no se distingue del azar (p = 0.577, 27 observaciones)"
+tamarindo,800,Tamarindo - Primera,80,origen Colima,Colima · Centros de distribución,1,ene,1.073,3,+7 % frente a la tendencia,0.2095,baja,40,"no se distingue del azar (p = 0.210, 36 observaciones)"
+tamarindo,800,Tamarindo - Primera,80,origen Colima,Colima · Centros de distribución,2,feb,1.037,3,+4 % frente a la tendencia,0.2095,baja,40,"no se distingue del azar (p = 0.210, 36 observaciones)"
+tamarindo,800,Tamarindo - Primera,80,origen Colima,Colima · Centros de distribución,3,mar,0.965,3,-3 % frente a la tendencia,0.2095,baja,40,"no se distingue del azar (p = 0.210, 36 observaciones)"
+tamarindo,800,Tamarindo - Primera,80,origen Colima,Colima · Centros de distribución,4,abr,0.973,3,-3 % frente a la tendencia,0.2095,baja,40,"no se distingue del azar (p = 0.210, 36 observaciones)"
+tamarindo,800,Tamarindo - Primera,80,origen Colima,Colima · Centros de distribución,5,may,0.954,3,-5 % frente a la tendencia,0.2095,baja,40,"no se distingue del azar (p = 0.210, 36 observaciones)"
+tamarindo,800,Tamarindo - Primera,80,origen Colima,Colima · Centros de distribución,6,jun,0.949,3,-5 % frente a la tendencia,0.2095,baja,40,"no se distingue del azar (p = 0.210, 36 observaciones)"
+tamarindo,800,Tamarindo - Primera,80,origen Colima,Colima · Centros de distribución,7,jul,0.942,3,-6 % frente a la tendencia,0.2095,baja,40,"no se distingue del azar (p = 0.210, 36 observaciones)"
+tamarindo,800,Tamarindo - Primera,80,origen Colima,Colima · Centros de distribución,8,ago,0.924,3,-8 % frente a la tendencia,0.2095,baja,40,"no se distingue del azar (p = 0.210, 36 observaciones)"
+tamarindo,800,Tamarindo - Primera,80,origen Colima,Colima · Centros de distribución,9,sep,0.944,3,-6 % frente a la tendencia,0.2095,baja,40,"no se distingue del azar (p = 0.210, 36 observaciones)"
+tamarindo,800,Tamarindo - Primera,80,origen Colima,Colima · Centros de distribución,10,oct,1.037,3,+4 % frente a la tendencia,0.2095,baja,40,"no se distingue del azar (p = 0.210, 36 observaciones)"
+tamarindo,800,Tamarindo - Primera,80,origen Colima,Colima · Centros de distribución,11,nov,1.065,3,+7 % frente a la tendencia,0.2095,baja,40,"no se distingue del azar (p = 0.210, 36 observaciones)"
+tamarindo,800,Tamarindo - Primera,80,origen Colima,Colima · Centros de distribución,12,dic,1.161,3,+16 % frente a la tendencia,0.2095,baja,40,"no se distingue del azar (p = 0.210, 36 observaciones)"

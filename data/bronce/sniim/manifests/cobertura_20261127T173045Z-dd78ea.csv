@@ -1,0 +1,4 @@
+producto,mercado,periodos_esperados,periodos_con_datos,cumple_36
+limon_c5,guadalajara,84,83,True
+papaya,guadalajara,84,83,True
+platano,guadalajara,84,83,True

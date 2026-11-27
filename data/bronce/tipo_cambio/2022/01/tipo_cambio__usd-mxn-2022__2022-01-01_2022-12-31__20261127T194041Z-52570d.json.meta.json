@@ -1,0 +1,26 @@
+{
+  "esquema": "tdl-bronce-meta/1",
+  "contenido_original": {
+    "archivo": "tipo_cambio__usd-mxn-2022__2022-01-01_2022-12-31__20261127T194041Z-52570d.json",
+    "descripcion": "Bytes tal como los entregó la fuente; no se modifican."
+  },
+  "metadatos_captura": {
+    "fuente": "tipo_cambio",
+    "fuente_url": "https://api.frankfurter.dev/v1/2022-01-01..2022-12-31?base=USD&symbols=MXN",
+    "fecha_captura": "2026-11-27T19:40:59Z",
+    "identificador_ejecucion": "20261127T194041Z-52570d",
+    "formato_original": "json",
+    "sha256": "e6ec9a34aed1ca568ba3f0138a28b37579a95c7c66b215e15a79b4eed7f66e30",
+    "bytes": 7395,
+    "http_status": 200,
+    "registros_detectados": 258,
+    "estado_captura": "ok",
+    "advertencias": [],
+    "colision_nombre": false,
+    "etiqueta": "usd-mxn-2022",
+    "fecha_ref_inicio": "2022-01-01",
+    "fecha_ref_fin": "2022-12-31",
+    "periodo": 2022,
+    "nota": "Tipos de referencia diarios del Banco Central Europeo publicados por Frankfurter."
+  }
+}

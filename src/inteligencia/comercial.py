@@ -39,7 +39,9 @@ CIUDAD_MERCADO = {
     "270": "Villahermosa", "306": "Veracruz",
 }
 SIAP_CULTIVO = {"Limón": "limon", "Papaya": "papaya", "Plátano": "platano"}
-NOMBRE_CULTIVO = {"limon": "Limón", "platano": "Plátano", "papaya": "Papaya", "tamarindo": "Tamarindo", "guayaba": "Guayaba"}
+from src.inteligencia.catalogo import FRUTAS as _FRUTAS  # noqa: E402
+
+NOMBRE_CULTIVO = {clave: v["nombre"] for v in _FRUTAS.values() for clave in v["claves"]}
 MESES_LARGOS = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"]
 MESES = ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"]
 MIN_MESES_PAREADOS = 3
@@ -62,6 +64,29 @@ def nivel_confianza(p: float | None, n: int, n_alto: int, n_medio: int) -> tuple
     if p < 0.20 and n >= n_alto:
         return "media", f"tendencia no concluyente ({ptxt}) con {n} observaciones"
     return "baja", f"no se distingue del azar ({ptxt}, {n} observaciones)"
+
+
+def confianza_pct(p: float | None, n: int, n_objetivo: int) -> int:
+    """Índice de confianza 0–100 de un resultado con prueba estadística.
+
+    60 % pesa la evidencia contra el azar (1 − p) y 40 % la cantidad de datos frente a la deseable (n / n_objetivo).
+    Un resultado no significativo al 5 % no puede pasar de 60, y con p ≥ 0.20 no pasa de 40. Es un índice,
+    no una probabilidad de acierto.
+    """
+    if p is None or (isinstance(p, float) and math.isnan(p)):
+        return int(round(30 * min(1.0, n / n_objetivo)))
+    pct = 100 * (0.6 * (1 - min(max(p, 0.0), 1.0)) + 0.4 * min(1.0, n / n_objetivo))
+    if p >= 0.20:
+        pct = min(pct, 40)
+    elif p >= ALFA:
+        pct = min(pct, 60)
+    return int(round(pct))
+
+
+def nivel_de_pct(pct: float | None) -> str:
+    if pct is None:
+        return "no aplica"
+    return "alta" if pct >= 75 else "media" if pct >= 50 else "baja"
 
 
 def prueba_diferencia(dif: pd.Series) -> tuple[float | None, str]:
@@ -106,7 +131,23 @@ def mensual(gold: pd.DataFrame, corte: pd.Period) -> pd.DataFrame:
     m = _mensual_colima(gold)
     m = m[m["mes"].le(corte)].copy()
     m["mercado"] = m["mercado"].map(_market_id)
-    return m[["cultivo", "variante_id", "variante", "mercado", "mes", "precio_frecuente_kg", "n_observaciones"]]
+    m["base"] = "origen Colima"
+    return m[["cultivo", "variante_id", "variante", "mercado", "mes", "precio_frecuente_kg", "n_observaciones", "base"]]
+
+
+def mensual_referencia(gold: pd.DataFrame, corte: pd.Period, excluir: set[str]) -> pd.DataFrame:
+    """Referencia de mercado para frutas que no se cotizan con origen Colima: todos los orígenes, ponderados
+    por número de cotizaciones, por variante, plaza y mes. Se marca con ``base = 'todos los orígenes'``."""
+    m = _mensual_colima(gold, origen_objetivo=None)
+    m = m[m["mes"].le(corte) & ~m["cultivo"].isin(excluir)].copy()
+    if m.empty:
+        return pd.DataFrame(columns=["cultivo", "variante_id", "variante", "mercado", "mes", "precio_frecuente_kg", "n_observaciones", "base"])
+    m["mercado"] = m["mercado"].map(_market_id)
+    m["_v"] = m["precio_frecuente_kg"] * m["n_observaciones"]
+    g = m.groupby(["cultivo", "variante_id", "variante", "mercado", "mes"], as_index=False).agg(_v=("_v", "sum"), n_observaciones=("n_observaciones", "sum"))
+    g["precio_frecuente_kg"] = g["_v"] / g["n_observaciones"]
+    g["base"] = "todos los orígenes"
+    return g.drop(columns="_v")
 
 
 # --------------------------------------------------------------------------------------------------
@@ -162,7 +203,9 @@ def comparar_plazas(m: pd.DataFrame, dist: dict[str, float], referencia: str = R
             dif = par[mercado] - par[ref]
             ultimos = dif.tail(3)
             p_dif, prueba = prueba_diferencia(dif)
-            confianza, motivo = nivel_confianza(p_dif, len(par), 9, MIN_MESES_PAREADOS)
+            _, motivo = nivel_confianza(p_dif, len(par), 9, MIN_MESES_PAREADOS)
+            pct = confianza_pct(p_dif, len(par), 24)
+            confianza = nivel_de_pct(pct)
             d_ref, d_mer = dist.get(ref), dist.get(mercado)
             km_extra = (d_mer - d_ref) if d_ref is not None and d_mer is not None else None
             filas.append({
@@ -178,7 +221,7 @@ def comparar_plazas(m: pd.DataFrame, dist: dict[str, float], referencia: str = R
                 "flete_equilibrio_mxn_ton_km_extra": round(float(dif.mean()) * 1000 / km_extra, 2) if km_extra and km_extra > 0 and dif.mean() > 0 else None,
                 "evidencia": "suficiente" if len(par) >= MIN_MESES_PAREADOS else "insuficiente (menos de 3 meses pareados)",
                 "prueba": prueba, "p_valor": round(p_dif, 4) if p_dif is not None else None,
-                "confianza": confianza, "motivo_confianza": motivo,
+                "confianza": confianza, "confianza_pct": pct, "motivo_confianza": motivo,
             })
     out = pd.DataFrame(filas)
     if out.empty:
@@ -204,14 +247,17 @@ def calendario_venta(m: pd.DataFrame, min_meses: int = 24) -> pd.DataFrame:
         por_mes = ratio.groupby(ratio.index.month).agg(["mean", "count"])
         grupos = [v.to_numpy() for _, v in ratio.groupby(ratio.index.month) if len(v) >= 2]
         p_est = float(stats.kruskal(*grupos).pvalue) if len(grupos) >= 3 else None
-        confianza, motivo = nivel_confianza(p_est, len(ratio), 36, 24)
+        _, motivo = nivel_confianza(p_est, len(ratio), 36, 24)
+        pct_est = confianza_pct(p_est, len(ratio), 120)
+        confianza = nivel_de_pct(pct_est)
         for mes, fila in por_mes.iterrows():
             filas.append({"cultivo": cultivo, "variante_id": vid, "variante": g["variante"].iloc[0], "mercado": mercado,
+                          "base": str(g["base"].iloc[0]) if "base" in g else "origen Colima",
                           "nombre_mercado": _nombre(mercado), "mes": int(mes), "mes_nombre": MESES[int(mes) - 1],
                           "indice_estacional": round(float(fila["mean"]), 3), "anios_observados": int(fila["count"]),
                           "lectura": f"{(fila['mean'] - 1) * 100:+.0f} % frente a la tendencia",
                           "p_estacionalidad_kruskal": round(p_est, 4) if p_est is not None else None,
-                          "confianza_patron": confianza, "motivo_confianza": motivo})
+                          "confianza_patron": confianza, "confianza_pct": pct_est, "motivo_confianza": motivo})
     return pd.DataFrame(filas)
 
 
@@ -225,13 +271,14 @@ def senales(m: pd.DataFrame, pronosticos: pd.DataFrame) -> pd.DataFrame:
         pct = float((s < ultimo).mean() * 100)
         f = pronosticos[(pronosticos["variante_id"].astype(float) == float(vid)) & (pronosticos["mercado"].map(_market_id) == mercado)] if not pronosticos.empty else pd.DataFrame()
         prox = f.sort_values("fecha_pronostico").iloc[0] if len(f) else None
+        base_txt = str(g["base"].iloc[0]) if "base" in g else "origen Colima"
         if pct >= 75:
             lectura = "precio alto respecto a su historia: buen momento para vender, mal momento para comprar inventario"
         elif pct <= 25:
             lectura = "precio bajo respecto a su historia: conviene revisar si se puede esperar o almacenar"
         else:
             lectura = "precio en rango normal"
-        filas.append({"cultivo": cultivo, "variante_id": vid, "variante": g["variante"].iloc[0], "mercado": mercado,
+        filas.append({"cultivo": cultivo, "variante_id": vid, "variante": g["variante"].iloc[0], "mercado": mercado, "base": base_txt,
                       "nombre_mercado": _nombre(mercado), "ultimo_mes": str(s.index[-1]), "ultimo_precio_mxn_kg": round(ultimo, 2),
                       "percentil_historico": round(pct, 0), "meses_historia": int(len(s)), "lectura": lectura,
                       "pronostico_siguiente_mes": round(float(prox["precio_frecuente_mxn_kg"]), 2) if prox is not None else None,
@@ -247,6 +294,9 @@ def ejecutar(base: Path = BASE_DIR, corte: pd.Period | None = None) -> dict[str,
     gold = pd.read_csv(base / "data/oro/panel_mensual.csv")
     corte = corte or (pd.Period(date.today(), freq="M") - 1)
     m = mensual(gold, corte)
+    # Frutas sin cotizaciones de origen Colima: referencia de mercado (todos los orígenes) para señales y calendario.
+    m_ref = mensual_referencia(gold, corte, set(m["cultivo"].unique()))
+    m_todo = pd.concat([m, m_ref], ignore_index=True)
     siap_path = base / "data/oro/produccion_municipal_siap_colima.csv"
     siap = pd.read_csv(siap_path) if siap_path.is_file() else pd.DataFrame(columns=["Nomcultivo", "Nomunidad"])
     pron_path = base / "data/oro/pronosticos_colima.csv"
@@ -255,8 +305,8 @@ def ejecutar(base: Path = BASE_DIR, corte: pd.Period | None = None) -> dict[str,
     productos = {
         "margen_productor": margen_productor(m, siap),
         "plazas_colima": comparar_plazas(m, dist),
-        "calendario_venta": calendario_venta(m),
-        "senales_mercado": senales(m, pron),
+        "calendario_venta": calendario_venta(m_todo),
+        "senales_mercado": senales(m_todo, pron),
     }
     resumen: dict[str, Any] = {"esquema": "oaic-inteligencia/1", "generado_utc": pd.Timestamp.now(tz="UTC").isoformat(timespec="seconds"),
                                "ultimo_mes_cerrado": str(corte), "plaza_referencia": _nombre(REFERENCIA), "archivos": {}}
@@ -271,11 +321,20 @@ def ejecutar(base: Path = BASE_DIR, corte: pd.Period | None = None) -> dict[str,
     return resumen | {"_productos": productos}
 
 
-def hallazgos(p: dict[str, pd.DataFrame]) -> list[str]:
+def hallazgos(p: dict[str, pd.DataFrame], base: Path = BASE_DIR) -> list[str]:
     out = []
+    exp_p = base / "data/publico/exportacion_resumen.json"
+    if exp_p.is_file():
+        for v in json.loads(exp_p.read_text(encoding="utf-8")).get("frutas", {}).values():
+            if v.get("disponible") and v.get("prima_exportacion_pct") is not None and v["prima_exportacion_pct"] >= 20 and v["destinos"]:
+                out.append(f"{v['nombre']}: el valor de exportación de México en {v['anio']} ({v['valor_unitario_exportacion_mxn_kg']:.2f} MXN/kg) superó en "
+                           f"{v['prima_exportacion_pct']:.0f} % al precio mayorista nacional ({v['precio_mayorista_nacional_mxn_kg']:.2f} MXN/kg); principal comprador: "
+                           f"{v['destinos'][0]['pais']}. Es valor aduanal: descuente certificación, empaque y logística antes de comparar."
+                           + (f" ({v['hs_nota']}.)" if v.get("hs_nota") else ""))
     mg = p["margen_productor"]
     if not mg.empty:
         ref = mg[mg["mercado"].eq(REFERENCIA) & mg["meses_mayorista"].ge(6)]  # años con < 6 meses cotizados sesgan por estacionalidad
+        ref = ref.sort_values("anio").groupby("cultivo").tail(1)  # el año más reciente por fruta
         for _, r in ref.iterrows():
             out.append(f"{NOMBRE_CULTIVO.get(r['cultivo'], r['cultivo'])} {r['anio']}: el productor de Colima recibió en promedio {r['precio_productor_mxn_kg']:.2f} MXN/kg "
                        f"(SIAP) mientras el mayorista de origen Colima se cotizó en {r['precio_mayorista_mxn_kg']:.2f} MXN/kg en Guadalajara: "

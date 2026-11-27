@@ -1,0 +1,39 @@
+{
+  "esquema": "tdl-bronce-meta/1",
+  "contenido_original": {
+    "archivo": "sniim__coco-primera-jalisco-mercado-de-abasto-de-guadalajara__2017-04-01_2017-04-30__20261127T194122Z-918ed6.html",
+    "descripcion": "Bytes tal como los entregó la fuente; no se modifican."
+  },
+  "metadatos_captura": {
+    "fuente": "sniim",
+    "fuente_url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F04%2F2017&fechaFinal=30%2F04%2F2017&ProductoId=250&OrigenId=-1&Origen=Todos&DestinoId=140&Destino=Jalisco%3A+Mercado+de+Abasto+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+    "fecha_captura": "2026-11-27T19:52:25Z",
+    "identificador_ejecucion": "20261127T194122Z-918ed6",
+    "formato_original": "html",
+    "sha256": "ed3efab1a2f779e25f2e2784c088661a0b3ce0749cff12b96d2537f62b90c236",
+    "bytes": 24013,
+    "http_status": 200,
+    "registros_detectados": 18,
+    "estado_captura": "ok",
+    "advertencias": [],
+    "colision_nombre": false,
+    "etiqueta": "Coco - Primera__Jalisco: Mercado de Abasto de Guadalajara",
+    "producto": "Coco - Primera",
+    "producto_id": "250",
+    "mercado": "Jalisco: Mercado de Abasto de Guadalajara",
+    "mercado_id": "140",
+    "fecha_ref_inicio": "2017-04-01",
+    "fecha_ref_fin": "2017-04-30",
+    "parametros": {
+      "fechaInicio": "01/04/2017",
+      "fechaFinal": "30/04/2017",
+      "ProductoId": "250",
+      "OrigenId": "-1",
+      "Origen": "Todos",
+      "DestinoId": "140",
+      "Destino": "Jalisco: Mercado de Abasto de Guadalajara",
+      "PreciosPorId": "1",
+      "RegistrosPorPagina": "500"
+    }
+  }
+}

@@ -57,3 +57,4 @@ run_id,fuente,modo,disparador,inicio_utc,fin_utc,duracion_s,estado,solicitudes,r
 20261127T163300Z-b2933e,sniim,historica,local,2026-11-27T16:33:00Z,2026-11-27T16:39:36Z,396.33,exitosa,171,3090,170,0,
 20261127T163936Z-08c1f0,sniim,historica,local,2026-11-27T16:39:36Z,2026-11-27T16:45:43Z,366.99,exitosa,160,1581,157,0,
 20261127T164543Z-fb45cf,sniim,historica,local,2026-11-27T16:45:43Z,2026-11-27T17:30:34Z,2690.14,exitosa,653,2960,651,0,
+20261127T173045Z-dd78ea,sniim,historica,local,2026-11-27T17:30:45Z,2026-11-27T19:41:10Z,7825.08,exitosa,1181,13538,1177,0,

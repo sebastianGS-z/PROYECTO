@@ -30,10 +30,11 @@ from config.settings import BASE_DIR
 LOG = logging.getLogger("tdl.e4")
 KEYS = ["cultivo", "variante_id", "variante", "origen"]
 MIN_MONTHS = 36
-REFERENCIA_CULTIVOS = ("limon", "papaya", "platano")
+REFERENCIA_CULTIVOS = ("limon", "papaya", "platano", "mango_ataulfo", "mango_manila", "aguacate_hass", "coco", "tamarindo", "guayaba",
+                       "guanabana", "sandia", "sandia_blanca", "sandia_jubilee", "sandia_peacock", "sandia_negra", "sandia_rayada", "sandia_sangria")
 SELECTION_STEPS = 6
 HOLDOUT_STEPS = 6
-MODEL_NAMES = ("suavizamiento_simple", "holt", "holt_winters_aditivo", "arima_aic")
+MODEL_NAMES = ("suavizamiento_simple", "holt", "holt_winters_aditivo", "arima_aic", "sarima_aic")
 MARKET_NAMES = {
     "80": "Colima · Centros de distribución",
     "100": "CDMX · Central de Abasto de Iztapalapa",
@@ -91,6 +92,25 @@ def _arima_por_aic(series: pd.Series):
     return mejor
 
 
+def _sarima_por_aic(series: pd.Series):
+    """SARIMA mensual (s = 12) con orden pequeño elegido por AIC; requiere al menos 3 ciclos anuales."""
+    if len(series) < 36:
+        raise ValueError("SARIMA requiere al menos 36 meses")
+    d = 0 if adfuller(series, autolag="AIC")[1] < 0.05 else 1
+    mejor, mejor_aic = None, math.inf
+    for orden in ((1, d, 0), (0, d, 1), (1, d, 1)):
+        for estacional in ((1, 0, 0, 12), (0, 1, 1, 12), (1, 1, 0, 12)):
+            try:
+                ajuste = ARIMA(series, order=orden, seasonal_order=estacional, trend="c" if d == 0 and estacional[1] == 0 else "n").fit()
+            except Exception:  # noqa: BLE001 - combinación que no converge
+                continue
+            if np.isfinite(ajuste.aic) and ajuste.aic < mejor_aic:
+                mejor, mejor_aic = ajuste, ajuste.aic
+    if mejor is None:
+        raise ValueError("ningún SARIMA convergió")
+    return mejor
+
+
 def _fit_predict(model: str, values: np.ndarray, steps: int) -> np.ndarray:
     series = pd.Series(values, dtype="float64")
     with warnings.catch_warnings():
@@ -108,6 +128,8 @@ def _fit_predict(model: str, values: np.ndarray, steps: int) -> np.ndarray:
             ).fit(optimized=True, use_brute=False)
         elif model == "arima_aic":
             fitted = _arima_por_aic(series)
+        elif model == "sarima_aic":
+            fitted = _sarima_por_aic(series)
         else:
             raise ValueError(f"Modelo no soportado: {model}")
     forecast = np.asarray(fitted.forecast(steps=steps), dtype="float64")
@@ -274,7 +296,13 @@ def generar_observatorio(gold_path: Path | None = None, output_dir: Path | None 
             # estado de cobertura explícito, sin completar meses faltantes.
             for period, price in indexed.dropna().items():
                 history_rows.append(meta | {"fecha": str(period), "precio_frecuente_mxn_kg": float(price)})
-            if len(indexed) < MIN_MONTHS or indexed.isna().any():
+            # Se usa el tramo continuo más reciente (sin meses faltantes ni imputación): una historia larga
+            # con un hueco antiguo no debe perder su pronóstico, pero tampoco se rellenan meses.
+            faltantes = indexed.isna().to_numpy().nonzero()[0]
+            if len(faltantes):
+                indexed = indexed.iloc[faltantes[-1] + 1:]
+                periods = indexed.index
+            if len(indexed) < MIN_MONTHS:
                 eligibility.append(meta | {"meses": int(len(indexed)), "pronosticable": False,
                                            "motivo": "requiere_36_meses_contiguos_sin_imputacion"})
                 continue

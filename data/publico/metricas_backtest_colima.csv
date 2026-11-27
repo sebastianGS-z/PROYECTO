@@ -1,20 +1,24 @@
 segmento,modelo,mae_mxn_kg,rmse_mxn_kg,mape_pct,n_validaciones,errores_ajuste,cultivo,variante_id,variante,origen,mercado,nombre_mercado,tipo_serie,modelo_elegido
-seleccion,suavizamiento_simple,7.5469229563865445,9.29732527634002,23.8501747723721,6,,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima,False
+seleccion,suavizamiento_simple,5.564587827317539,5.916002496849488,20.690033519154163,6,,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima,False
 holdout,suavizamiento_simple,6.518398279276686,6.938994480908509,24.595844755060515,6,,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima,False
-seleccion,holt,7.650902758279649,8.438243615183426,26.999157283637704,6,,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima,False
-holdout,holt,6.615086891943612,7.016661331193954,24.88291568564885,6,,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima,False
-seleccion,holt_winters_aditivo,7.044980490807004,8.76638234899891,24.114508829833646,6,,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima,False
-holdout,holt_winters_aditivo,6.2451935959171765,6.557540505805407,23.085486012190515,6,,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima,False
-seleccion,arima_aic,6.625047299443608,7.288203887088454,22.26114717274049,6,,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima,True
-holdout,arima_aic,4.616182525478584,5.0881085061706415,16.685606988487987,6,,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima,True
-seleccion,suavizamiento_simple,1.6290612225059113,1.7867119096295214,9.095715595155392,6,,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima,False
-holdout,suavizamiento_simple,1.5139395313075206,1.6766404602240077,8.890985023187204,6,,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima,False
-seleccion,holt,1.6920498654465632,1.79516027115003,9.3149889614804,6,,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima,False
-holdout,holt,1.0096306478529364,1.0939773817682066,5.905031816806414,6,,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima,False
-seleccion,holt_winters_aditivo,2.209416579595431,2.8136466090334067,11.570913226240583,6,,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima,False
-holdout,holt_winters_aditivo,1.6007744506049655,1.7444819812901269,9.217641503339847,6,,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima,False
-seleccion,arima_aic,1.5883000587820064,1.8936761247710905,9.02921487267475,6,,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima,True
-holdout,arima_aic,1.9481310794230033,2.358419049549955,11.522008893652151,6,,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima,True
+seleccion,holt,5.580142256020303,5.921933141930149,20.778776001572695,6,,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima,False
+holdout,holt,6.610029212641659,7.020542497305166,24.933358587499015,6,,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima,False
+seleccion,holt_winters_aditivo,3.7707850642149396,4.391059351166094,14.601245761819717,6,,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima,False
+holdout,holt_winters_aditivo,4.916555442380122,5.676227542536835,19.171706905296872,6,,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima,False
+seleccion,arima_aic,4.636552126789383,5.562278960503049,17.742201857068064,6,,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima,False
+holdout,arima_aic,4.532271794721075,5.082547468491248,17.458912634820376,6,,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima,False
+seleccion,sarima_aic,2.6306406977067978,3.6820659122386745,9.176890230191075,6,,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima,True
+holdout,sarima_aic,4.089226692501399,4.948702172190973,15.61147835047544,6,,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima,True
+seleccion,suavizamiento_simple,1.8166831007949125,1.9100533009240308,9.987868668773633,6,,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima,False
+holdout,suavizamiento_simple,0.7804623437455476,0.8551880880034198,4.483995109353995,6,,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima,False
+seleccion,holt,1.7425011314521324,2.296270147873788,10.163690519410782,6,,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima,False
+holdout,holt,1.8755216336013074,2.3153751798766073,11.079787115126132,6,,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima,False
+seleccion,holt_winters_aditivo,2.4720211480831336,2.660053986074411,13.652970211106693,6,,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima,False
+holdout,holt_winters_aditivo,1.7082971554566064,2.0292281683745506,9.877046707083247,6,,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima,False
+seleccion,arima_aic,1.7148711592215669,1.8933886034606735,9.238188187280967,6,,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima,True
+holdout,arima_aic,0.5772391674669498,0.7211546074593962,3.390023696848462,6,,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima,True
+seleccion,sarima_aic,1.887185670986998,1.9389319848842708,10.174472123627744,6,,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima,False
+holdout,sarima_aic,1.2269844022830465,1.4394934610881056,7.040181525183726,6,,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto,origen_colima,False
 seleccion,suavizamiento_simple,0.41262708285916005,0.5756808004550128,0.9720923683229457,6,,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución,origen_colima,True
 holdout,suavizamiento_simple,0.2237065297904254,0.34427876613737945,0.5331144631281229,6,,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución,origen_colima,True
 seleccion,holt,0.7443178145530484,0.7762030858837268,1.7676081674904847,6,,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución,origen_colima,False
@@ -25,9 +29,19 @@ seleccion,arima_aic,2.704436100477784,4.348622882068574,6.354796677707829,6,,tam
 holdout,arima_aic,0.22222222222222263,0.34629505842519914,0.529496898273819,6,,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución,origen_colima,False
 seleccion,suavizamiento_simple,2.3252426132728736,2.7876185400316635,17.746431324465906,6,,platano,732,Plátano Tabasco - Primera,Michoacán,140,Guadalajara · Mercado de Abasto,referencia_mercado,False
 holdout,suavizamiento_simple,0.7071571032668803,1.004237094952767,5.707098731703305,6,,platano,732,Plátano Tabasco - Primera,Michoacán,140,Guadalajara · Mercado de Abasto,referencia_mercado,False
-seleccion,holt,2.394869382317418,2.8413611737812117,18.27102891847212,6,,platano,732,Plátano Tabasco - Primera,Michoacán,140,Guadalajara · Mercado de Abasto,referencia_mercado,False
-holdout,holt,0.6903683253626376,1.0070938156764269,5.598982015276112,6,,platano,732,Plátano Tabasco - Primera,Michoacán,140,Guadalajara · Mercado de Abasto,referencia_mercado,False
-seleccion,holt_winters_aditivo,1.1692882641362312,1.4292091616745215,9.51131994491707,6,,platano,732,Plátano Tabasco - Primera,Michoacán,140,Guadalajara · Mercado de Abasto,referencia_mercado,True
-holdout,holt_winters_aditivo,2.6134733105477443,3.1223025013591066,20.17553255982937,6,,platano,732,Plátano Tabasco - Primera,Michoacán,140,Guadalajara · Mercado de Abasto,referencia_mercado,True
-seleccion,arima_aic,2.266314130340844,2.473740494679951,20.431038023715654,6,,platano,732,Plátano Tabasco - Primera,Michoacán,140,Guadalajara · Mercado de Abasto,referencia_mercado,False
-holdout,arima_aic,0.9726749570187675,1.1781599049567875,8.113288213128651,6,,platano,732,Plátano Tabasco - Primera,Michoacán,140,Guadalajara · Mercado de Abasto,referencia_mercado,False
+seleccion,holt,2.3712260948800585,2.8226495526219617,18.093423467824817,6,,platano,732,Plátano Tabasco - Primera,Michoacán,140,Guadalajara · Mercado de Abasto,referencia_mercado,False
+holdout,holt,0.6930919596339681,1.0053446720942711,5.614067563944273,6,,platano,732,Plátano Tabasco - Primera,Michoacán,140,Guadalajara · Mercado de Abasto,referencia_mercado,False
+seleccion,holt_winters_aditivo,1.018389893396843,1.3597725792708424,8.541486050061065,6,,platano,732,Plátano Tabasco - Primera,Michoacán,140,Guadalajara · Mercado de Abasto,referencia_mercado,True
+holdout,holt_winters_aditivo,2.4123866840516697,2.847123981055899,18.647152690465482,6,,platano,732,Plátano Tabasco - Primera,Michoacán,140,Guadalajara · Mercado de Abasto,referencia_mercado,True
+seleccion,arima_aic,2.556514926319623,3.112288855383726,21.45748258630762,6,,platano,732,Plátano Tabasco - Primera,Michoacán,140,Guadalajara · Mercado de Abasto,referencia_mercado,False
+holdout,arima_aic,0.5343526973150196,0.6545133664129508,4.375634971278344,6,,platano,732,Plátano Tabasco - Primera,Michoacán,140,Guadalajara · Mercado de Abasto,referencia_mercado,False
+seleccion,sarima_aic,1.0397353381243575,1.413824694713147,8.080501077864218,6,,platano,732,Plátano Tabasco - Primera,Michoacán,140,Guadalajara · Mercado de Abasto,referencia_mercado,False
+holdout,sarima_aic,2.545383536575872,2.9973716184074766,19.6934972348214,6,,platano,732,Plátano Tabasco - Primera,Michoacán,140,Guadalajara · Mercado de Abasto,referencia_mercado,False
+seleccion,suavizamiento_simple,2.4780331060458116,2.8478308142521076,13.58855791257532,6,,guayaba,378,Guayaba - Primera,Michoacán,140,Guadalajara · Mercado de Abasto,referencia_mercado,False
+holdout,suavizamiento_simple,1.2104394996806753,1.6039115636903984,6.133403371395586,6,,guayaba,378,Guayaba - Primera,Michoacán,140,Guadalajara · Mercado de Abasto,referencia_mercado,False
+seleccion,holt,2.490868149340175,2.883809045962886,13.683615698961518,6,,guayaba,378,Guayaba - Primera,Michoacán,140,Guadalajara · Mercado de Abasto,referencia_mercado,False
+holdout,holt,1.2440032903950324,1.640005186190611,6.318107552334125,6,,guayaba,378,Guayaba - Primera,Michoacán,140,Guadalajara · Mercado de Abasto,referencia_mercado,False
+seleccion,holt_winters_aditivo,4.566167294390598,4.835130221509184,25.706661543493155,6,,guayaba,378,Guayaba - Primera,Michoacán,140,Guadalajara · Mercado de Abasto,referencia_mercado,False
+holdout,holt_winters_aditivo,3.741821360885012,5.115850340130193,18.110448704300268,6,,guayaba,378,Guayaba - Primera,Michoacán,140,Guadalajara · Mercado de Abasto,referencia_mercado,False
+seleccion,arima_aic,2.333145633181768,3.061151781342397,13.753500151763415,6,,guayaba,378,Guayaba - Primera,Michoacán,140,Guadalajara · Mercado de Abasto,referencia_mercado,True
+holdout,arima_aic,1.104761126677546,1.332958581219512,5.502094062313137,6,,guayaba,378,Guayaba - Primera,Michoacán,140,Guadalajara · Mercado de Abasto,referencia_mercado,True

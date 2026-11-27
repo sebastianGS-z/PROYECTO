@@ -92,6 +92,21 @@ def _tabla(df: pd.DataFrame, cols: list[tuple[str, str]], nd: int = 2) -> str:
     return f"<table><thead><tr>{head}</tr></thead><tbody>{''.join(filas)}</tbody></table>"
 
 
+def _tabla_export(e: dict[str, Any]) -> str:
+    filas = []
+    for v in e.get("frutas", {}).values():
+        if not v.get("disponible"):
+            continue
+        filas.append({"Fruta": v["nombre"], "Año": v["anio"], "Exportaciones de México (USD millones)": round(v["exportaciones_mexico_usd"] / 1e6, 1),
+                      "Exportación MXN/kg": v.get("valor_unitario_exportacion_mxn_kg"), "Nacional MXN/kg": v.get("precio_mayorista_nacional_mxn_kg"),
+                      "Prima %": v.get("prima_exportacion_pct"), "Principal destino": v["destinos"][0]["pais"] if v["destinos"] else "—",
+                      "Oportunidad": v["oportunidades"][0]["pais"] if v.get("oportunidades") else "—"})
+    df = pd.DataFrame(filas)
+    if df.empty:
+        return '<p class="muted">Sin datos de comercio exterior.</p>'
+    return _tabla(df, [(c, c) for c in df.columns], 1)
+
+
 def datos_reporte(base: Path = BASE_DIR) -> dict[str, Any]:
     intel = json.loads((base / "data/publico/inteligencia.json").read_text(encoding="utf-8")) if (base / "data/publico/inteligencia.json").is_file() else {}
     fiab = json.loads((base / "calidad/reportes/fiabilidad.json").read_text(encoding="utf-8")) if (base / "calidad/reportes/fiabilidad.json").is_file() else {}
@@ -99,7 +114,8 @@ def datos_reporte(base: Path = BASE_DIR) -> dict[str, Any]:
     return {"intel": intel, "fiab": fiab, "iso": iso,
             "pron": _leer(base, "data/publico/pronosticos_colima.csv"), "plazas": _leer(base, "data/publico/plazas_colima.csv"),
             "margen": _leer(base, "data/publico/margen_productor.csv"), "cal": _leer(base, "data/publico/calendario_venta.csv"),
-            "senales": _leer(base, "data/publico/senales_mercado.csv")}
+            "senales": _leer(base, "data/publico/senales_mercado.csv"),
+            "export": json.loads((base / "data/publico/exportacion_resumen.json").read_text(encoding="utf-8")) if (base / "data/publico/exportacion_resumen.json").is_file() else {}}
 
 
 def _calendario_html(cal: pd.DataFrame) -> str:
@@ -181,6 +197,9 @@ h2{{break-after:avoid}}table{{break-inside:avoid}}.kpi{{border-color:#999}}@page
 {_calendario_html(d['cal'])}
 <h2>5. Señales del último mes</h2>
 <div class="wrap">{_tabla(d['senales'].head(8), [('variante', 'Producto'), ('nombre_mercado', 'Plaza'), ('ultimo_mes', 'Mes'), ('ultimo_precio_mxn_kg', 'Precio MXN/kg'), ('percentil_historico', 'Percentil histórico'), ('lectura', 'Lectura')], 0)}</div>
+<h2>6. ¿Conviene exportar?</h2>
+{_tabla_export(d.get("export", {}))}
+<p class="muted">Valor aduanal promedio de las exportaciones de México (UN Comtrade) convertido a pesos con el tipo de cambio promedio del año (BCE), frente al precio mayorista nacional de los últimos 12 meses. Detalle por país en el <a href="mapa.html#exp">mapa de exportación</a>.</p>
 <h2>Por qué confiar en estas cifras</h2>
 <p>Cada cotización se descarga de la fuente oficial, se guarda sin modificar con su huella SHA-256 y pasa una puerta de calidad automática antes de entrar al análisis; los registros inválidos se apartan con su motivo. Cada cifra se puede rastrear hasta el archivo original. Los modelos se eligen por su error en meses que no vieron. Detalle técnico y metodología: <a href="laboratorio.html">laboratorio estadístico</a> y la documentación de calidad del repositorio.</p>
 <p class="muted">Límites: precios mayoristas de plaza (no precio en huerta, salvo el SIAP anual); el clima de la estación de Manzanillo llega con ~2 semanas de rezago; la comparación de plazas usa solo meses en que ambas plazas cotizaron producto de origen Colima. No es asesoría financiera.</p>

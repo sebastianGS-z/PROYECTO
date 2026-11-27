@@ -74,6 +74,7 @@ jobs:
 
       - name: Inteligencia comercial, reporte para clientes y API de datos
         run: |
+          python main.py exportacion
           python main.py inteligencia
           python -m calidad.metricas
           python main.py reporte

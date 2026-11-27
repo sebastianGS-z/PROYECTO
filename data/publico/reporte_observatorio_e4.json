@@ -1,6 +1,6 @@
 {
   "esquema": "oaic-e4-observatorio/1",
-  "generado_utc": "2026-11-27T19:30:32.924998+00:00",
+  "generado_utc": "2026-11-27T19:51:21.811354+00:00",
   "capa_oro": "data/oro/panel_mensual.csv",
   "origen_objetivo": "Colima",
   "horizonte_meses": 3,
@@ -18,12 +18,13 @@
     "suavizamiento_simple",
     "holt",
     "holt_winters_aditivo",
-    "arima_aic"
+    "arima_aic",
+    "sarima_aic"
   ],
   "minimo_meses_contiguos": 36,
-  "series_pronosticadas": 4,
-  "filas_pronostico": 12,
-  "comparaciones_pareadas": 6,
+  "series_pronosticadas": 5,
+  "filas_pronostico": 15,
+  "comparaciones_pareadas": 5,
   "contexto_climatico": {
     "meses_con_observaciones": 33,
     "ultimo_mes_con_observacion": "2026-11",
@@ -66,9 +67,9 @@
       "mercado": "140",
       "nombre_mercado": "Guadalajara · Mercado de Abasto",
       "tipo_serie": "origen_colima",
-      "meses": 36,
+      "meses": 76,
       "pronosticable": true,
-      "modelo_elegido": "arima_aic",
+      "modelo_elegido": "sarima_aic",
       "n_validaciones_seleccion": 6,
       "n_validaciones_holdout": 6,
       "periodo_seleccion": [
@@ -79,9 +80,9 @@
         "2026-05",
         "2026-10"
       ],
-      "fecha_primer_dato": "2023-11",
+      "fecha_primer_dato": "2020-07",
       "fecha_ultimo_dato": "2026-10",
-      "linaje_serie_sha256": "133547bc41a48bcd98d0919a86ce1f9ccf5b32756409591b1b692fed9baaa13c"
+      "linaje_serie_sha256": "3a3494849f6baab4e22c4159041ac5fe8060d116b69860d5437c53e8e0f9dd09"
     },
     {
       "cultivo": "limon",
@@ -163,7 +164,7 @@
       "mercado": "140",
       "nombre_mercado": "Guadalajara · Mercado de Abasto",
       "tipo_serie": "origen_colima",
-      "meses": 36,
+      "meses": 76,
       "pronosticable": true,
       "modelo_elegido": "arima_aic",
       "n_validaciones_seleccion": 6,
@@ -176,9 +177,9 @@
         "2026-05",
         "2026-10"
       ],
-      "fecha_primer_dato": "2023-11",
+      "fecha_primer_dato": "2020-07",
       "fecha_ultimo_dato": "2026-10",
-      "linaje_serie_sha256": "392f33934d23e578ab3c4bbd6e13ea42e5af1b4a40a6743cace9597c386e9bed"
+      "linaje_serie_sha256": "40fa8ba21a1cc85eaf0bde433cb9e03a79ccfcdeb0c26ccb2768ac28f7f06335"
     },
     {
       "cultivo": "papaya",
@@ -305,6 +306,18 @@
       "variante_id": "732",
       "variante": "Plátano Tabasco - Primera",
       "origen": "Colima",
+      "mercado": "140",
+      "nombre_mercado": "Guadalajara · Mercado de Abasto",
+      "tipo_serie": "origen_colima",
+      "meses": 17,
+      "pronosticable": false,
+      "motivo": "requiere_36_meses_contiguos_sin_imputacion"
+    },
+    {
+      "cultivo": "platano",
+      "variante_id": "732",
+      "variante": "Plátano Tabasco - Primera",
+      "origen": "Colima",
       "mercado": "220",
       "nombre_mercado": "Querétaro · Mercado de Abasto",
       "tipo_serie": "origen_colima",
@@ -393,7 +406,7 @@
       "mercado": "140",
       "nombre_mercado": "Guadalajara · Mercado de Abasto",
       "tipo_serie": "referencia_mercado",
-      "meses": 36,
+      "meses": 50,
       "pronosticable": true,
       "modelo_elegido": "holt_winters_aditivo",
       "n_validaciones_seleccion": 6,
@@ -406,9 +419,34 @@
         "2026-05",
         "2026-10"
       ],
+      "fecha_primer_dato": "2022-09",
+      "fecha_ultimo_dato": "2026-10",
+      "linaje_serie_sha256": "1fa7e1f46c95f0f87f95fe5701c46a076eb833d3e99b21a701a26a4f471a1783"
+    },
+    {
+      "cultivo": "guayaba",
+      "variante_id": "378",
+      "variante": "Guayaba - Primera",
+      "origen": "Michoacán",
+      "mercado": "140",
+      "nombre_mercado": "Guadalajara · Mercado de Abasto",
+      "tipo_serie": "referencia_mercado",
+      "meses": 36,
+      "pronosticable": true,
+      "modelo_elegido": "arima_aic",
+      "n_validaciones_seleccion": 6,
+      "n_validaciones_holdout": 6,
+      "periodo_seleccion": [
+        "2025-11",
+        "2026-04"
+      ],
+      "periodo_holdout": [
+        "2026-05",
+        "2026-10"
+      ],
       "fecha_primer_dato": "2023-11",
       "fecha_ultimo_dato": "2026-10",
-      "linaje_serie_sha256": "d796d4cfca18f201657b1eec6d8191140fddd4f1b526930a2b66d3eac1ab39e1"
+      "linaje_serie_sha256": "0b06167c28278cc20b446767406d6843f6684bb5c6b5ba59603b84d7a03f71e7"
     },
     {
       "cultivo": "aguacate_hass",

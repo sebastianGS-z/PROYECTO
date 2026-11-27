@@ -25,7 +25,9 @@ import pandas as pd
 from config.settings import BASE_DIR
 
 REPO = "https://github.com/sebastianGS-z/PROYECTO"
-PRODUCTOS = {"limon": "Limón", "papaya": "Papaya", "platano": "Plátano"}
+from src.inteligencia.catalogo import FRUTAS  # noqa: E402
+
+PRODUCTOS = {k: v["nombre"] for k, v in FRUTAS.items()}
 NAV = [("inicio.html", "Inicio"), ("preguntas.html", "Preguntas del productor"), ("mapa.html", "Mapa"), ("inteligencia.html", "Reporte de inteligencia"),
        ("cliente.html", "Vista de cliente"), ("index.html", "Panel técnico"), ("laboratorio.html", "Laboratorio"), ("admin.html", "Administración")]
 
@@ -85,9 +87,10 @@ def _resumen(texto: str, maximo: int = 230) -> str:
     return "".join(f"<b>{p}</b>" if i % 2 else p for i, p in enumerate(partes))
 
 
-def _pill(nivel: str) -> str:
+def _pill(nivel: str, pct: int | None = None) -> str:
     clase = {"alta": "alta", "media": "media", "baja": "baja"}.get(nivel, "na")
-    return f'<span class="pill {clase}">Confianza {html.escape(nivel)}</span>'
+    texto = f"Confianza {pct} %" if pct is not None else ("Sin datos suficientes" if nivel == "no aplica" else f"Confianza {nivel}")
+    return f'<span class="pill {clase}">{html.escape(texto)}</span>'
 
 
 # --------------------------------------------------------------------------------------------------
@@ -102,15 +105,18 @@ def inicio(base: Path = BASE_DIR) -> str:
     senales = _csv(base, "data/publico/senales_mercado.csv")
     tarjetas = []
     for c, nombre in PRODUCTOS.items():
-        p = pron[pron["cultivo"].eq(c) & pron["horizonte_meses"].eq(1)] if not pron.empty else pron
+        claves = FRUTAS[c]["claves"]
+        p = pron[pron["cultivo"].isin(claves) & pron["horizonte_meses"].eq(1)] if not pron.empty else pron
         if "tipo_serie" in p and p["tipo_serie"].eq("origen_colima").any():
             p = p[p["tipo_serie"].eq("origen_colima")]
-        s = senales[senales["cultivo"].eq(c)].sort_values("meses_historia", ascending=False) if not senales.empty else senales
+        s = senales[senales["cultivo"].isin(claves)].sort_values("meses_historia", ascending=False) if not senales.empty else senales
         if not p.empty and not s.empty and "variante_id" in s:
             misma = s[(s["variante_id"].astype(float) == float(p.iloc[0]["variante_id"])) & (s["mercado"].astype(str) == str(int(float(p.iloc[0]["mercado"]))))]
             s = misma if not misma.empty else s  # el último precio y el pronóstico deben ser de la misma serie
         resp = {r["pregunta"]: r for r in preg.get("respuestas", {}).get(c, [])}
-        conf_pron = next((r["confianza"] for q, r in resp.items() if "próximo mes" in q), "no aplica")
+        r_pron = next((r for q, r in resp.items() if "próximo mes" in q), {})
+        conf_pron = r_pron.get("confianza", "no aplica")
+        pct_pron = r_pron.get("confianza_pct")
         filas = []
         if not s.empty:
             r = s.iloc[0]
@@ -136,10 +142,11 @@ def inicio(base: Path = BASE_DIR) -> str:
             r_ = next((r for q, r in resp.items() if clave in q), None)
             if r_ and r_.get("confianza") != "no aplica":
                 txt = _resumen(r_.get("veredicto") or r_["respuesta"])
-                decisiones.append(f'<div class="decision"><div class="muted">{etiqueta} {_pill(r_["confianza"])}</div><p>{txt}</p></div>')
+                decisiones.append(f'<div class="decision"><div class="muted">{etiqueta} {_pill(r_["confianza"], r_.get("confianza_pct"))}</div><p>{txt}</p></div>')
         filas.append("".join(decisiones))
-        tarjetas.append(f'<article class="card"><h3>{nombre}</h3><div class="muted">Pronóstico en {plaza}</div>{"".join(filas)}'
-                        f'<p>{_pill(conf_pron)}</p><a class="cta" href="preguntas.html">{len(resp) or "Ver"} respuestas sobre {nombre.lower()} →</a></article>')
+        encabezado = f"Pronóstico en {plaza}" if plaza != "—" else "Aún sin 36 meses continuos para pronosticar"
+        tarjetas.append(f'<article class="card"><h3>{nombre}</h3><div class="muted">{encabezado}</div>{"".join(filas)}'
+                        f'<p>Pronóstico: {_pill(conf_pron, pct_pron)}</p><a class="cta" href="preguntas.html#{c}">{len(resp) or "Ver"} respuestas sobre {nombre.lower()} →</a></article>')
     hallazgos = "".join(f"<li>{html.escape(h)}</li>" for h in intel.get("hallazgos", [])[:5])
     v = fiab.get("periodos", {}).get("ventana_sello_14_dias", {})
     cuerpo = (f'<h2>Precio por producto</h2><div class="grid">{"".join(tarjetas)}</div>'
@@ -160,6 +167,30 @@ def inicio(base: Path = BASE_DIR) -> str:
 # --------------------------------------------------------------------------------------------------
 # Administración
 # --------------------------------------------------------------------------------------------------
+
+def cobertura_frutas(base: Path, anios: int = 10) -> pd.DataFrame:
+    """Meses con precio por fruta en los últimos ``anios`` años (todas las centrales y solo origen Colima)."""
+    g = _csv(base, "data/oro/panel_mensual.csv")
+    if g.empty:
+        return pd.DataFrame()
+    g["mes"] = pd.to_datetime(g["fecha_mes"]).dt.to_period("M")
+    fin = g["mes"].max()
+    ini = fin - (12 * anios - 1)
+    ventana = 12 * anios
+    filas = []
+    for v in FRUTAS.values():
+        x = g[g["cultivo"].isin(v["claves"]) & g["mes"].ge(ini)]
+        col = x[x["origen"].eq("Colima")]
+        gdl = x[x["mercado"].astype(str).eq("140")]
+        filas.append({"fruta": v["nombre"], "meses con precio (cualquier central)": int(x["mes"].nunique()),
+                      "meses en Guadalajara": int(gdl["mes"].nunique()), "meses con origen Colima": int(col["mes"].nunique()),
+                      "desde": str(x["mes"].min()) if len(x) else "—", "hasta": str(x["mes"].max()) if len(x) else "—",
+                      "cobertura 10 años": f"{x['mes'].nunique() / ventana * 100:.0f} %",
+                      "centrales": int(x["mercado"].nunique())})
+    out = pd.DataFrame(filas)
+    out.to_csv(base / "data/publico/cobertura_frutas.csv", index=False)
+    return out
+
 
 def inventario_bronce(base: Path) -> pd.DataFrame:
     filas = []
@@ -246,6 +277,8 @@ def admin(base: Path = BASE_DIR) -> str:
               f'<h2>Calidad de datos · ISO/IEC 25012</h2>{_tabla(medidas)}'
               f'<h2>Salud de los pronósticos</h2>{_tabla(salud)}'
               f'<h2>Comparación de plazas · resultados por nivel de confianza</h2>{_tabla(pl)}'
+              f'<h2>Cobertura de historia por fruta (últimos 10 años)</h2>{_tabla(cobertura_frutas(base))}'
+              '<p class="muted">Un mes sin precio significa que el SNIIM no publicó esa fruta en las centrales capturadas ese mes; no se rellena.</p>'
               f'<h2>Inventario de Bronce</h2>{_tabla(inv, nd=1)}'
               f'<h2>Enlaces de operación</h2><div class="card"><div class="row"><span>Ejecuciones de GitHub Actions</span><a href="{REPO}/actions">Abrir</a></div>'
               f'<div class="row"><span>Lanzar captura manual (demo en vivo)</span><a href="{REPO}/actions/workflows/captura_diaria.yml">Run workflow</a></div>'

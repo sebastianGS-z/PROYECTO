@@ -1,0 +1,1643 @@
+{
+  "esquema": "oaic-exportacion/1",
+  "generado_utc": "2026-11-27T19:59:18+00:00",
+  "fuente": "UN Comtrade (API pública) · tipo de cambio BCE vía Frankfurter",
+  "anios": [
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "consultas_con_posible_truncamiento": 0,
+  "frutas": {
+    "limon": {
+      "nombre": "Limón",
+      "hs": "080550",
+      "hs_nota": "HS 080550 agrupa limones y limas",
+      "disponible": true,
+      "anio": 2024,
+      "anio_base_crecimiento": 2019,
+      "exportaciones_mexico_usd": 885777575,
+      "paises_destino": 50,
+      "valor_unitario_exportacion_usd_kg": 1.19,
+      "valor_unitario_exportacion_mxn_kg": 21.73,
+      "tipo_cambio_usd_mxn": 18.32,
+      "precio_mayorista_nacional_mxn_kg": 24.94,
+      "base_precio_nacional": "origen Colima",
+      "prima_exportacion_pct": -13.0,
+      "destinos": [
+        {
+          "pais": "USA",
+          "iso": 840,
+          "valor_usd": 811301054,
+          "toneladas": 705687,
+          "usd_kg": 1.15,
+          "mxn_kg": 21.06,
+          "participacion_mexico_pct": 70.3,
+          "share_de_exportaciones_mx_pct": 91.6,
+          "crecimiento_pct": 50.0
+        },
+        {
+          "pais": "Canada",
+          "iso": 124,
+          "valor_usd": 45502443,
+          "toneladas": 30567,
+          "usd_kg": 1.49,
+          "mxn_kg": 27.27,
+          "participacion_mexico_pct": 29.2,
+          "share_de_exportaciones_mx_pct": 5.1,
+          "crecimiento_pct": 22.0
+        },
+        {
+          "pais": "Japan",
+          "iso": 392,
+          "valor_usd": 10118460,
+          "toneladas": 2033,
+          "usd_kg": 4.98,
+          "mxn_kg": 91.17,
+          "participacion_mexico_pct": 11.5,
+          "share_de_exportaciones_mx_pct": 1.1,
+          "crecimiento_pct": 0.0
+        },
+        {
+          "pais": "Netherlands",
+          "iso": 528,
+          "valor_usd": 5940918,
+          "toneladas": 3011,
+          "usd_kg": 1.97,
+          "mxn_kg": 36.15,
+          "participacion_mexico_pct": 2.2,
+          "share_de_exportaciones_mx_pct": 0.7,
+          "crecimiento_pct": -82.0
+        },
+        {
+          "pais": "Rep. of Korea",
+          "iso": 410,
+          "valor_usd": 3238488,
+          "toneladas": 1027,
+          "usd_kg": 3.15,
+          "mxn_kg": 57.74,
+          "participacion_mexico_pct": 5.1,
+          "share_de_exportaciones_mx_pct": 0.4,
+          "crecimiento_pct": 31.0
+        },
+        {
+          "pais": "Germany",
+          "iso": 276,
+          "valor_usd": 2308527,
+          "toneladas": 753,
+          "usd_kg": 3.06,
+          "mxn_kg": 56.15,
+          "participacion_mexico_pct": 0.5,
+          "share_de_exportaciones_mx_pct": 0.3,
+          "crecimiento_pct": -80.0
+        },
+        {
+          "pais": "France",
+          "iso": 250,
+          "valor_usd": 2081462,
+          "toneladas": 593,
+          "usd_kg": 3.51,
+          "mxn_kg": 64.29,
+          "participacion_mexico_pct": 0.9,
+          "share_de_exportaciones_mx_pct": 0.2,
+          "crecimiento_pct": -76.0
+        },
+        {
+          "pais": "Poland",
+          "iso": 616,
+          "valor_usd": 1269795,
+          "toneladas": 396,
+          "usd_kg": 3.21,
+          "mxn_kg": 58.75,
+          "participacion_mexico_pct": 0.7,
+          "share_de_exportaciones_mx_pct": 0.1,
+          "crecimiento_pct": -59.0
+        }
+      ],
+      "oportunidades": [
+        {
+          "pais": "Germany",
+          "iso": 276,
+          "importa_del_mundo_usd": 427823134,
+          "usd_kg_mundo": 1.7,
+          "mxn_kg_mundo": 31.11,
+          "participacion_mexico_pct": 0.5
+        },
+        {
+          "pais": "Netherlands",
+          "iso": 528,
+          "importa_del_mundo_usd": 270162167,
+          "usd_kg_mundo": 1.33,
+          "mxn_kg_mundo": 24.45,
+          "participacion_mexico_pct": 2.2
+        },
+        {
+          "pais": "France",
+          "iso": 250,
+          "importa_del_mundo_usd": 244839238,
+          "usd_kg_mundo": 1.51,
+          "mxn_kg_mundo": 27.72,
+          "participacion_mexico_pct": 0.9
+        },
+        {
+          "pais": "United Kingdom",
+          "iso": 826,
+          "importa_del_mundo_usd": 186462413,
+          "usd_kg_mundo": 1.21,
+          "mxn_kg_mundo": 22.18,
+          "participacion_mexico_pct": 0.4
+        },
+        {
+          "pais": "Poland",
+          "iso": 616,
+          "importa_del_mundo_usd": 177469799,
+          "usd_kg_mundo": 1.22,
+          "mxn_kg_mundo": 22.35,
+          "participacion_mexico_pct": 0.7
+        },
+        {
+          "pais": "Italy",
+          "iso": 380,
+          "importa_del_mundo_usd": 111603481,
+          "usd_kg_mundo": 1.26,
+          "mxn_kg_mundo": 23.01,
+          "participacion_mexico_pct": 0.0
+        },
+        {
+          "pais": "Saudi Arabia",
+          "iso": 682,
+          "importa_del_mundo_usd": 77769817,
+          "usd_kg_mundo": 0.55,
+          "mxn_kg_mundo": 10.01,
+          "participacion_mexico_pct": 0.0
+        },
+        {
+          "pais": "Romania",
+          "iso": 642,
+          "importa_del_mundo_usd": 76243192,
+          "usd_kg_mundo": 1.12,
+          "mxn_kg_mundo": 20.49,
+          "participacion_mexico_pct": 0.0
+        }
+      ],
+      "serie_exportaciones": {
+        "2019": 673201734,
+        "2020": 628460052,
+        "2021": 767797431,
+        "2022": 876639251,
+        "2023": 931456063,
+        "2024": 885777575
+      },
+      "limites": [
+        "Valores aduanales declarados por los países importadores; no son precio al productor ni precio de venta final.",
+        "HS 080550 agrupa limones y limas",
+        "Exportar requiere certificación fitosanitaria, empaque, logística en frío y un comprador confirmado."
+      ]
+    },
+    "papaya": {
+      "nombre": "Papaya",
+      "hs": "080720",
+      "hs_nota": "",
+      "disponible": true,
+      "anio": 2024,
+      "anio_base_crecimiento": 2019,
+      "exportaciones_mexico_usd": 153885999,
+      "paises_destino": 12,
+      "valor_unitario_exportacion_usd_kg": 0.73,
+      "valor_unitario_exportacion_mxn_kg": 13.32,
+      "tipo_cambio_usd_mxn": 18.32,
+      "precio_mayorista_nacional_mxn_kg": 20.4,
+      "base_precio_nacional": "origen Colima",
+      "prima_exportacion_pct": -35.0,
+      "destinos": [
+        {
+          "pais": "USA",
+          "iso": 840,
+          "valor_usd": 135433315,
+          "toneladas": 199571,
+          "usd_kg": 0.68,
+          "mxn_kg": 12.43,
+          "participacion_mexico_pct": 82.8,
+          "share_de_exportaciones_mx_pct": 88.0,
+          "crecimiento_pct": 47.0
+        },
+        {
+          "pais": "Canada",
+          "iso": 124,
+          "valor_usd": 17351837,
+          "toneladas": 11732,
+          "usd_kg": 1.48,
+          "mxn_kg": 27.1,
+          "participacion_mexico_pct": 65.5,
+          "share_de_exportaciones_mx_pct": 11.3,
+          "crecimiento_pct": 61.0
+        },
+        {
+          "pais": "Germany",
+          "iso": 276,
+          "valor_usd": 1019586,
+          "toneladas": 378,
+          "usd_kg": 2.69,
+          "mxn_kg": 49.36,
+          "participacion_mexico_pct": 4.0,
+          "share_de_exportaciones_mx_pct": 0.7,
+          "crecimiento_pct": 93.0
+        },
+        {
+          "pais": "Netherlands",
+          "iso": 528,
+          "valor_usd": 46586,
+          "toneladas": 16,
+          "usd_kg": 2.85,
+          "mxn_kg": 52.14,
+          "participacion_mexico_pct": 0.3,
+          "share_de_exportaciones_mx_pct": 0.0,
+          "crecimiento_pct": -61.0
+        },
+        {
+          "pais": "United Kingdom",
+          "iso": 826,
+          "valor_usd": 11510,
+          "toneladas": 10,
+          "usd_kg": 1.12,
+          "mxn_kg": 20.49,
+          "participacion_mexico_pct": 0.1,
+          "share_de_exportaciones_mx_pct": 0.0,
+          "crecimiento_pct": -51.0
+        },
+        {
+          "pais": "Finland",
+          "iso": 246,
+          "valor_usd": 10178,
+          "toneladas": 2,
+          "usd_kg": 4.36,
+          "mxn_kg": 79.85,
+          "participacion_mexico_pct": 1.5,
+          "share_de_exportaciones_mx_pct": 0.0,
+          "crecimiento_pct": null
+        },
+        {
+          "pais": "Antigua and Barbuda",
+          "iso": 28,
+          "valor_usd": 8199,
+          "toneladas": 7,
+          "usd_kg": 1.18,
+          "mxn_kg": 21.62,
+          "participacion_mexico_pct": 32.8,
+          "share_de_exportaciones_mx_pct": 0.0,
+          "crecimiento_pct": 175.0
+        },
+        {
+          "pais": "Luxembourg",
+          "iso": 442,
+          "valor_usd": 3233,
+          "toneladas": 1,
+          "usd_kg": 3.52,
+          "mxn_kg": 64.52,
+          "participacion_mexico_pct": 0.5,
+          "share_de_exportaciones_mx_pct": 0.0,
+          "crecimiento_pct": null
+        }
+      ],
+      "oportunidades": [
+        {
+          "pais": "Portugal",
+          "iso": 620,
+          "importa_del_mundo_usd": 33514264,
+          "usd_kg_mundo": 2.25,
+          "mxn_kg_mundo": 41.23,
+          "participacion_mexico_pct": 0.0
+        },
+        {
+          "pais": "Germany",
+          "iso": 276,
+          "importa_del_mundo_usd": 25709339,
+          "usd_kg_mundo": 2.95,
+          "mxn_kg_mundo": 54.13,
+          "participacion_mexico_pct": 4.0
+        },
+        {
+          "pais": "Spain",
+          "iso": 724,
+          "importa_del_mundo_usd": 22276268,
+          "usd_kg_mundo": 2.41,
+          "mxn_kg_mundo": 44.23,
+          "participacion_mexico_pct": 0.0
+        },
+        {
+          "pais": "United Kingdom",
+          "iso": 826,
+          "importa_del_mundo_usd": 16578047,
+          "usd_kg_mundo": 2.23,
+          "mxn_kg_mundo": 40.82,
+          "participacion_mexico_pct": 0.1
+        },
+        {
+          "pais": "Netherlands",
+          "iso": 528,
+          "importa_del_mundo_usd": 13773877,
+          "usd_kg_mundo": 2.6,
+          "mxn_kg_mundo": 47.7,
+          "participacion_mexico_pct": 0.3
+        },
+        {
+          "pais": "France",
+          "iso": 250,
+          "importa_del_mundo_usd": 10014155,
+          "usd_kg_mundo": 2.93,
+          "mxn_kg_mundo": 53.66,
+          "participacion_mexico_pct": 0.0
+        },
+        {
+          "pais": "Italy",
+          "iso": 380,
+          "importa_del_mundo_usd": 9126629,
+          "usd_kg_mundo": 2.68,
+          "mxn_kg_mundo": 49.19,
+          "participacion_mexico_pct": 0.0
+        },
+        {
+          "pais": "Singapore",
+          "iso": 702,
+          "importa_del_mundo_usd": 8054494,
+          "usd_kg_mundo": 0.47,
+          "mxn_kg_mundo": 8.62,
+          "participacion_mexico_pct": 0.0
+        }
+      ],
+      "serie_exportaciones": {
+        "2019": 103796707,
+        "2020": 105114355,
+        "2021": 124555263,
+        "2022": 133092114,
+        "2023": 146812716,
+        "2024": 153885999
+      },
+      "limites": [
+        "Valores aduanales declarados por los países importadores; no son precio al productor ni precio de venta final.",
+        "El código HS corresponde a la fruta.",
+        "Exportar requiere certificación fitosanitaria, empaque, logística en frío y un comprador confirmado."
+      ]
+    },
+    "platano": {
+      "nombre": "Plátano",
+      "hs": "080390",
+      "hs_nota": "HS 080390 son plátanos frescos o secos, excepto plátano macho",
+      "disponible": true,
+      "anio": 2024,
+      "anio_base_crecimiento": 2019,
+      "exportaciones_mexico_usd": 299020484,
+      "paises_destino": 21,
+      "valor_unitario_exportacion_usd_kg": 0.75,
+      "valor_unitario_exportacion_mxn_kg": 13.68,
+      "tipo_cambio_usd_mxn": 18.32,
+      "precio_mayorista_nacional_mxn_kg": 21.56,
+      "base_precio_nacional": "origen Colima",
+      "prima_exportacion_pct": -37.0,
+      "destinos": [
+        {
+          "pais": "USA",
+          "iso": 840,
+          "valor_usd": 197866236,
+          "toneladas": 295480,
+          "usd_kg": 0.67,
+          "mxn_kg": 12.27,
+          "participacion_mexico_pct": 7.0,
+          "share_de_exportaciones_mx_pct": 66.2,
+          "crecimiento_pct": -19.0
+        },
+        {
+          "pais": "Japan",
+          "iso": 392,
+          "valor_usd": 62276435,
+          "toneladas": 63555,
+          "usd_kg": 0.98,
+          "mxn_kg": 17.95,
+          "participacion_mexico_pct": 6.4,
+          "share_de_exportaciones_mx_pct": 20.8,
+          "crecimiento_pct": 30.0
+        },
+        {
+          "pais": "Canada",
+          "iso": 124,
+          "valor_usd": 24379305,
+          "toneladas": 25428,
+          "usd_kg": 0.96,
+          "mxn_kg": 17.56,
+          "participacion_mexico_pct": 5.0,
+          "share_de_exportaciones_mx_pct": 8.2,
+          "crecimiento_pct": 24.0
+        },
+        {
+          "pais": "China",
+          "iso": 156,
+          "valor_usd": 13329741,
+          "toneladas": 14488,
+          "usd_kg": 0.92,
+          "mxn_kg": 16.86,
+          "participacion_mexico_pct": 1.5,
+          "share_de_exportaciones_mx_pct": 4.5,
+          "crecimiento_pct": null
+        },
+        {
+          "pais": "Guatemala",
+          "iso": 320,
+          "valor_usd": 563207,
+          "toneladas": 799,
+          "usd_kg": 0.7,
+          "mxn_kg": 12.91,
+          "participacion_mexico_pct": 68.0,
+          "share_de_exportaciones_mx_pct": 0.2,
+          "crecimiento_pct": 35478.0
+        },
+        {
+          "pais": "New Zealand",
+          "iso": 554,
+          "valor_usd": 478564,
+          "toneladas": 493,
+          "usd_kg": 0.97,
+          "mxn_kg": 17.78,
+          "participacion_mexico_pct": 0.6,
+          "share_de_exportaciones_mx_pct": 0.2,
+          "crecimiento_pct": -94.0
+        },
+        {
+          "pais": "Germany",
+          "iso": 276,
+          "valor_usd": 42604,
+          "toneladas": 21,
+          "usd_kg": 2.06,
+          "mxn_kg": 37.73,
+          "participacion_mexico_pct": 0.0,
+          "share_de_exportaciones_mx_pct": 0.0,
+          "crecimiento_pct": -85.0
+        },
+        {
+          "pais": "France",
+          "iso": 250,
+          "valor_usd": 35545,
+          "toneladas": 13,
+          "usd_kg": 2.72,
+          "mxn_kg": 49.85,
+          "participacion_mexico_pct": 0.0,
+          "share_de_exportaciones_mx_pct": 0.0,
+          "crecimiento_pct": -87.0
+        }
+      ],
+      "oportunidades": [
+        {
+          "pais": "USA",
+          "iso": 840,
+          "importa_del_mundo_usd": 2828668153,
+          "usd_kg_mundo": 0.6,
+          "mxn_kg_mundo": 10.95,
+          "participacion_mexico_pct": 7.0
+        },
+        {
+          "pais": "Germany",
+          "iso": 276,
+          "importa_del_mundo_usd": 1090429379,
+          "usd_kg_mundo": 0.81,
+          "mxn_kg_mundo": 14.83,
+          "participacion_mexico_pct": 0.0
+        },
+        {
+          "pais": "Japan",
+          "iso": 392,
+          "importa_del_mundo_usd": 973086409,
+          "usd_kg_mundo": 0.93,
+          "mxn_kg_mundo": 17.12,
+          "participacion_mexico_pct": 6.4
+        },
+        {
+          "pais": "China",
+          "iso": 156,
+          "importa_del_mundo_usd": 907476489,
+          "usd_kg_mundo": 0.54,
+          "mxn_kg_mundo": 9.86,
+          "participacion_mexico_pct": 1.5
+        },
+        {
+          "pais": "Netherlands",
+          "iso": 528,
+          "importa_del_mundo_usd": 895712634,
+          "usd_kg_mundo": 0.8,
+          "mxn_kg_mundo": 14.58,
+          "participacion_mexico_pct": 0.0
+        },
+        {
+          "pais": "France",
+          "iso": 250,
+          "importa_del_mundo_usd": 831082157,
+          "usd_kg_mundo": 1.0,
+          "mxn_kg_mundo": 18.34,
+          "participacion_mexico_pct": 0.0
+        },
+        {
+          "pais": "United Kingdom",
+          "iso": 826,
+          "importa_del_mundo_usd": 652968065,
+          "usd_kg_mundo": 0.81,
+          "mxn_kg_mundo": 14.82,
+          "participacion_mexico_pct": 0.0
+        },
+        {
+          "pais": "Italy",
+          "iso": 380,
+          "importa_del_mundo_usd": 562471865,
+          "usd_kg_mundo": 0.71,
+          "mxn_kg_mundo": 13.06,
+          "participacion_mexico_pct": 0.0
+        }
+      ],
+      "serie_exportaciones": {
+        "2019": 352860322,
+        "2020": 343432592,
+        "2021": 339190594,
+        "2022": 349146539,
+        "2023": 315264713,
+        "2024": 299020484
+      },
+      "limites": [
+        "Valores aduanales declarados por los países importadores; no son precio al productor ni precio de venta final.",
+        "HS 080390 son plátanos frescos o secos, excepto plátano macho",
+        "Exportar requiere certificación fitosanitaria, empaque, logística en frío y un comprador confirmado."
+      ]
+    },
+    "mango": {
+      "nombre": "Mango",
+      "hs": "080450",
+      "hs_nota": "HS 080450 agrupa guayaba, mango y mangostán",
+      "disponible": true,
+      "anio": 2024,
+      "anio_base_crecimiento": 2019,
+      "exportaciones_mexico_usd": 725119401,
+      "paises_destino": 54,
+      "valor_unitario_exportacion_usd_kg": 1.64,
+      "valor_unitario_exportacion_mxn_kg": 30.08,
+      "tipo_cambio_usd_mxn": 18.32,
+      "precio_mayorista_nacional_mxn_kg": 30.49,
+      "base_precio_nacional": "todos los orígenes",
+      "prima_exportacion_pct": -1.0,
+      "destinos": [
+        {
+          "pais": "USA",
+          "iso": 840,
+          "valor_usd": 571287443,
+          "toneladas": 382365,
+          "usd_kg": 1.49,
+          "mxn_kg": 27.37,
+          "participacion_mexico_pct": 56.9,
+          "share_de_exportaciones_mx_pct": 78.8,
+          "crecimiento_pct": 53.0
+        },
+        {
+          "pais": "Canada",
+          "iso": 124,
+          "valor_usd": 101070517,
+          "toneladas": 47784,
+          "usd_kg": 2.12,
+          "mxn_kg": 38.75,
+          "participacion_mexico_pct": 55.9,
+          "share_de_exportaciones_mx_pct": 13.9,
+          "crecimiento_pct": 47.0
+        },
+        {
+          "pais": "Spain",
+          "iso": 724,
+          "valor_usd": 13795186,
+          "toneladas": 2500,
+          "usd_kg": 5.52,
+          "mxn_kg": 101.09,
+          "participacion_mexico_pct": 8.1,
+          "share_de_exportaciones_mx_pct": 1.9,
+          "crecimiento_pct": 85.0
+        },
+        {
+          "pais": "Germany",
+          "iso": 276,
+          "valor_usd": 10574291,
+          "toneladas": 2670,
+          "usd_kg": 3.96,
+          "mxn_kg": 72.55,
+          "participacion_mexico_pct": 4.3,
+          "share_de_exportaciones_mx_pct": 1.5,
+          "crecimiento_pct": 572.0
+        },
+        {
+          "pais": "France",
+          "iso": 250,
+          "valor_usd": 8421158,
+          "toneladas": 1522,
+          "usd_kg": 5.53,
+          "mxn_kg": 101.33,
+          "participacion_mexico_pct": 5.8,
+          "share_de_exportaciones_mx_pct": 1.2,
+          "crecimiento_pct": 3.0
+        },
+        {
+          "pais": "Japan",
+          "iso": 392,
+          "valor_usd": 7979120,
+          "toneladas": 1643,
+          "usd_kg": 4.86,
+          "mxn_kg": 88.96,
+          "participacion_mexico_pct": 27.5,
+          "share_de_exportaciones_mx_pct": 1.1,
+          "crecimiento_pct": -33.0
+        },
+        {
+          "pais": "United Kingdom",
+          "iso": 826,
+          "valor_usd": 4699148,
+          "toneladas": 1121,
+          "usd_kg": 4.19,
+          "mxn_kg": 76.79,
+          "participacion_mexico_pct": 1.7,
+          "share_de_exportaciones_mx_pct": 0.6,
+          "crecimiento_pct": 489.0
+        },
+        {
+          "pais": "Netherlands",
+          "iso": 528,
+          "valor_usd": 1837001,
+          "toneladas": 425,
+          "usd_kg": 4.33,
+          "mxn_kg": 79.26,
+          "participacion_mexico_pct": 0.6,
+          "share_de_exportaciones_mx_pct": 0.3,
+          "crecimiento_pct": -29.0
+        }
+      ],
+      "oportunidades": [
+        {
+          "pais": "China",
+          "iso": 156,
+          "importa_del_mundo_usd": 675637576,
+          "usd_kg_mundo": 2.31,
+          "mxn_kg_mundo": 42.3,
+          "participacion_mexico_pct": 0.0
+        },
+        {
+          "pais": "Netherlands",
+          "iso": 528,
+          "importa_del_mundo_usd": 308593371,
+          "usd_kg_mundo": 1.69,
+          "mxn_kg_mundo": 30.95,
+          "participacion_mexico_pct": 0.6
+        },
+        {
+          "pais": "United Kingdom",
+          "iso": 826,
+          "importa_del_mundo_usd": 284731611,
+          "usd_kg_mundo": 3.28,
+          "mxn_kg_mundo": 60.17,
+          "participacion_mexico_pct": 1.7
+        },
+        {
+          "pais": "Germany",
+          "iso": 276,
+          "importa_del_mundo_usd": 245720700,
+          "usd_kg_mundo": 2.82,
+          "mxn_kg_mundo": 51.71,
+          "participacion_mexico_pct": 4.3
+        },
+        {
+          "pais": "Rep. of Korea",
+          "iso": 410,
+          "importa_del_mundo_usd": 171161075,
+          "usd_kg_mundo": 4.6,
+          "mxn_kg_mundo": 84.26,
+          "participacion_mexico_pct": 0.0
+        },
+        {
+          "pais": "Spain",
+          "iso": 724,
+          "importa_del_mundo_usd": 170347693,
+          "usd_kg_mundo": 2.23,
+          "mxn_kg_mundo": 40.92,
+          "participacion_mexico_pct": 8.1
+        },
+        {
+          "pais": "France",
+          "iso": 250,
+          "importa_del_mundo_usd": 146172179,
+          "usd_kg_mundo": 2.55,
+          "mxn_kg_mundo": 46.65,
+          "participacion_mexico_pct": 5.8
+        },
+        {
+          "pais": "Portugal",
+          "iso": 620,
+          "importa_del_mundo_usd": 91951373,
+          "usd_kg_mundo": 2.06,
+          "mxn_kg_mundo": 37.7,
+          "participacion_mexico_pct": 0.0
+        }
+      ],
+      "serie_exportaciones": {
+        "2019": 479812842,
+        "2020": 516695651,
+        "2021": 565951737,
+        "2022": 628082142,
+        "2023": 668560789,
+        "2024": 725119401
+      },
+      "limites": [
+        "Valores aduanales declarados por los países importadores; no son precio al productor ni precio de venta final.",
+        "HS 080450 agrupa guayaba, mango y mangostán",
+        "Exportar requiere certificación fitosanitaria, empaque, logística en frío y un comprador confirmado."
+      ]
+    },
+    "coco": {
+      "nombre": "Coco",
+      "hs": "080119",
+      "hs_nota": "HS 080119: cocos frescos",
+      "disponible": true,
+      "anio": 2024,
+      "anio_base_crecimiento": 2019,
+      "exportaciones_mexico_usd": 31136065,
+      "paises_destino": 4,
+      "valor_unitario_exportacion_usd_kg": 0.87,
+      "valor_unitario_exportacion_mxn_kg": 15.99,
+      "tipo_cambio_usd_mxn": 18.32,
+      "precio_mayorista_nacional_mxn_kg": null,
+      "base_precio_nacional": "",
+      "prima_exportacion_pct": null,
+      "destinos": [
+        {
+          "pais": "USA",
+          "iso": 840,
+          "valor_usd": 30855477,
+          "toneladas": 35504,
+          "usd_kg": 0.87,
+          "mxn_kg": 15.92,
+          "participacion_mexico_pct": 42.6,
+          "share_de_exportaciones_mx_pct": 99.1,
+          "crecimiento_pct": 89.0
+        },
+        {
+          "pais": "Canada",
+          "iso": 124,
+          "valor_usd": 280546,
+          "toneladas": 169,
+          "usd_kg": 1.66,
+          "mxn_kg": 30.48,
+          "participacion_mexico_pct": 2.4,
+          "share_de_exportaciones_mx_pct": 0.9,
+          "crecimiento_pct": 10.0
+        },
+        {
+          "pais": "Honduras",
+          "iso": 340,
+          "valor_usd": 32,
+          "toneladas": 0,
+          "usd_kg": 2.57,
+          "mxn_kg": 47.13,
+          "participacion_mexico_pct": 0.0,
+          "share_de_exportaciones_mx_pct": 0.0,
+          "crecimiento_pct": -75.0
+        },
+        {
+          "pais": "Hungary",
+          "iso": 348,
+          "valor_usd": 10,
+          "toneladas": 0,
+          "usd_kg": 9.78,
+          "mxn_kg": 179.22,
+          "participacion_mexico_pct": 0.0,
+          "share_de_exportaciones_mx_pct": 0.0,
+          "crecimiento_pct": null
+        }
+      ],
+      "oportunidades": [
+        {
+          "pais": "Thailand",
+          "iso": 764,
+          "importa_del_mundo_usd": 138061638,
+          "usd_kg_mundo": 0.35,
+          "mxn_kg_mundo": 6.44,
+          "participacion_mexico_pct": 0.0
+        },
+        {
+          "pais": "Malaysia",
+          "iso": 458,
+          "importa_del_mundo_usd": 78058351,
+          "usd_kg_mundo": 0.26,
+          "mxn_kg_mundo": 4.68,
+          "participacion_mexico_pct": 0.0
+        },
+        {
+          "pais": "Singapore",
+          "iso": 702,
+          "importa_del_mundo_usd": 22507097,
+          "usd_kg_mundo": 1.53,
+          "mxn_kg_mundo": 27.96,
+          "participacion_mexico_pct": 0.0
+        },
+        {
+          "pais": "Canada",
+          "iso": 124,
+          "importa_del_mundo_usd": 11727298,
+          "usd_kg_mundo": 1.27,
+          "mxn_kg_mundo": 23.24,
+          "participacion_mexico_pct": 2.4
+        },
+        {
+          "pais": "United Kingdom",
+          "iso": 826,
+          "importa_del_mundo_usd": 10648679,
+          "usd_kg_mundo": null,
+          "mxn_kg_mundo": null,
+          "participacion_mexico_pct": 0.0
+        },
+        {
+          "pais": "Netherlands",
+          "iso": 528,
+          "importa_del_mundo_usd": 9412319,
+          "usd_kg_mundo": 1.27,
+          "mxn_kg_mundo": 23.36,
+          "participacion_mexico_pct": 0.0
+        },
+        {
+          "pais": "Germany",
+          "iso": 276,
+          "importa_del_mundo_usd": 7997531,
+          "usd_kg_mundo": 2.1,
+          "mxn_kg_mundo": 38.55,
+          "participacion_mexico_pct": 0.0
+        },
+        {
+          "pais": "Spain",
+          "iso": 724,
+          "importa_del_mundo_usd": 4897066,
+          "usd_kg_mundo": 1.99,
+          "mxn_kg_mundo": 36.5,
+          "participacion_mexico_pct": 0.0
+        }
+      ],
+      "serie_exportaciones": {
+        "2019": 16630526,
+        "2020": 12720726,
+        "2021": 19762172,
+        "2022": 21235777,
+        "2023": 26862635,
+        "2024": 31136065
+      },
+      "limites": [
+        "Valores aduanales declarados por los países importadores; no son precio al productor ni precio de venta final.",
+        "HS 080119: cocos frescos",
+        "Exportar requiere certificación fitosanitaria, empaque, logística en frío y un comprador confirmado."
+      ]
+    },
+    "tamarindo": {
+      "nombre": "Tamarindo",
+      "hs": "081340",
+      "hs_nota": "HS 081340 agrupa tamarindo y otras frutas secas",
+      "disponible": true,
+      "anio": 2024,
+      "anio_base_crecimiento": 2019,
+      "exportaciones_mexico_usd": 5132850,
+      "paises_destino": 22,
+      "valor_unitario_exportacion_usd_kg": 3.57,
+      "valor_unitario_exportacion_mxn_kg": 65.34,
+      "tipo_cambio_usd_mxn": 18.32,
+      "precio_mayorista_nacional_mxn_kg": 51.5,
+      "base_precio_nacional": "origen Colima",
+      "prima_exportacion_pct": 27.0,
+      "destinos": [
+        {
+          "pais": "USA",
+          "iso": 840,
+          "valor_usd": 4415280,
+          "toneladas": 1375,
+          "usd_kg": 3.21,
+          "mxn_kg": 58.83,
+          "participacion_mexico_pct": 2.1,
+          "share_de_exportaciones_mx_pct": 86.0,
+          "crecimiento_pct": -30.0
+        },
+        {
+          "pais": "Canada",
+          "iso": 124,
+          "valor_usd": 463969,
+          "toneladas": 31,
+          "usd_kg": 14.95,
+          "mxn_kg": 273.91,
+          "participacion_mexico_pct": 1.0,
+          "share_de_exportaciones_mx_pct": 9.0,
+          "crecimiento_pct": -43.0
+        },
+        {
+          "pais": "Saudi Arabia",
+          "iso": 682,
+          "valor_usd": 119606,
+          "toneladas": 18,
+          "usd_kg": 6.73,
+          "mxn_kg": 123.2,
+          "participacion_mexico_pct": 1.0,
+          "share_de_exportaciones_mx_pct": 2.3,
+          "crecimiento_pct": null
+        },
+        {
+          "pais": "United Kingdom",
+          "iso": 826,
+          "valor_usd": 50907,
+          "toneladas": 9,
+          "usd_kg": 5.87,
+          "mxn_kg": 107.53,
+          "participacion_mexico_pct": 0.1,
+          "share_de_exportaciones_mx_pct": 1.0,
+          "crecimiento_pct": null
+        },
+        {
+          "pais": "Colombia",
+          "iso": 170,
+          "valor_usd": 39567,
+          "toneladas": 2,
+          "usd_kg": 23.27,
+          "mxn_kg": 426.4,
+          "participacion_mexico_pct": 9.5,
+          "share_de_exportaciones_mx_pct": 0.8,
+          "crecimiento_pct": 12.0
+        },
+        {
+          "pais": "Austria",
+          "iso": 40,
+          "valor_usd": 11523,
+          "toneladas": 0,
+          "usd_kg": 38.41,
+          "mxn_kg": 703.67,
+          "participacion_mexico_pct": 0.0,
+          "share_de_exportaciones_mx_pct": 0.2,
+          "crecimiento_pct": 12.0
+        },
+        {
+          "pais": "Guatemala",
+          "iso": 320,
+          "valor_usd": 10594,
+          "toneladas": 2,
+          "usd_kg": 6.82,
+          "mxn_kg": 124.89,
+          "participacion_mexico_pct": 1.2,
+          "share_de_exportaciones_mx_pct": 0.2,
+          "crecimiento_pct": null
+        },
+        {
+          "pais": "Honduras",
+          "iso": 340,
+          "valor_usd": 8468,
+          "toneladas": 1,
+          "usd_kg": 8.14,
+          "mxn_kg": 149.17,
+          "participacion_mexico_pct": 3.6,
+          "share_de_exportaciones_mx_pct": 0.2,
+          "crecimiento_pct": null
+        }
+      ],
+      "oportunidades": [
+        {
+          "pais": "USA",
+          "iso": 840,
+          "importa_del_mundo_usd": 207867548,
+          "usd_kg_mundo": 11.51,
+          "mxn_kg_mundo": 210.84,
+          "participacion_mexico_pct": 2.1
+        },
+        {
+          "pais": "China",
+          "iso": 156,
+          "importa_del_mundo_usd": 196000069,
+          "usd_kg_mundo": 1.72,
+          "mxn_kg_mundo": 31.46,
+          "participacion_mexico_pct": 0.0
+        },
+        {
+          "pais": "Germany",
+          "iso": 276,
+          "importa_del_mundo_usd": 126871491,
+          "usd_kg_mundo": 11.26,
+          "mxn_kg_mundo": 206.35,
+          "participacion_mexico_pct": 0.0
+        },
+        {
+          "pais": "United Kingdom",
+          "iso": 826,
+          "importa_del_mundo_usd": 46420499,
+          "usd_kg_mundo": 7.59,
+          "mxn_kg_mundo": 139.14,
+          "participacion_mexico_pct": 0.1
+        },
+        {
+          "pais": "Canada",
+          "iso": 124,
+          "importa_del_mundo_usd": 45697692,
+          "usd_kg_mundo": 11.9,
+          "mxn_kg_mundo": 218.03,
+          "participacion_mexico_pct": 1.0
+        },
+        {
+          "pais": "Italy",
+          "iso": 380,
+          "importa_del_mundo_usd": 41096194,
+          "usd_kg_mundo": 1.79,
+          "mxn_kg_mundo": 32.88,
+          "participacion_mexico_pct": 0.0
+        },
+        {
+          "pais": "Netherlands",
+          "iso": 528,
+          "importa_del_mundo_usd": 29609551,
+          "usd_kg_mundo": 6.73,
+          "mxn_kg_mundo": 123.27,
+          "participacion_mexico_pct": 0.0
+        },
+        {
+          "pais": "Austria",
+          "iso": 40,
+          "importa_del_mundo_usd": 28891382,
+          "usd_kg_mundo": 8.2,
+          "mxn_kg_mundo": 150.31,
+          "participacion_mexico_pct": 0.0
+        }
+      ],
+      "serie_exportaciones": {
+        "2019": 7152026,
+        "2020": 5953123,
+        "2021": 7492605,
+        "2022": 6335367,
+        "2023": 5220985,
+        "2024": 5132850
+      },
+      "limites": [
+        "Valores aduanales declarados por los países importadores; no son precio al productor ni precio de venta final.",
+        "HS 081340 agrupa tamarindo y otras frutas secas",
+        "Exportar requiere certificación fitosanitaria, empaque, logística en frío y un comprador confirmado."
+      ]
+    },
+    "guayaba": {
+      "nombre": "Guayaba",
+      "hs": "080450",
+      "hs_nota": "HS 080450 agrupa guayaba, mango y mangostán",
+      "disponible": true,
+      "anio": 2024,
+      "anio_base_crecimiento": 2019,
+      "exportaciones_mexico_usd": 725119401,
+      "paises_destino": 54,
+      "valor_unitario_exportacion_usd_kg": 1.64,
+      "valor_unitario_exportacion_mxn_kg": 30.08,
+      "tipo_cambio_usd_mxn": 18.32,
+      "precio_mayorista_nacional_mxn_kg": 23.66,
+      "base_precio_nacional": "todos los orígenes",
+      "prima_exportacion_pct": 27.0,
+      "destinos": [
+        {
+          "pais": "USA",
+          "iso": 840,
+          "valor_usd": 571287443,
+          "toneladas": 382365,
+          "usd_kg": 1.49,
+          "mxn_kg": 27.37,
+          "participacion_mexico_pct": 56.9,
+          "share_de_exportaciones_mx_pct": 78.8,
+          "crecimiento_pct": 53.0
+        },
+        {
+          "pais": "Canada",
+          "iso": 124,
+          "valor_usd": 101070517,
+          "toneladas": 47784,
+          "usd_kg": 2.12,
+          "mxn_kg": 38.75,
+          "participacion_mexico_pct": 55.9,
+          "share_de_exportaciones_mx_pct": 13.9,
+          "crecimiento_pct": 47.0
+        },
+        {
+          "pais": "Spain",
+          "iso": 724,
+          "valor_usd": 13795186,
+          "toneladas": 2500,
+          "usd_kg": 5.52,
+          "mxn_kg": 101.09,
+          "participacion_mexico_pct": 8.1,
+          "share_de_exportaciones_mx_pct": 1.9,
+          "crecimiento_pct": 85.0
+        },
+        {
+          "pais": "Germany",
+          "iso": 276,
+          "valor_usd": 10574291,
+          "toneladas": 2670,
+          "usd_kg": 3.96,
+          "mxn_kg": 72.55,
+          "participacion_mexico_pct": 4.3,
+          "share_de_exportaciones_mx_pct": 1.5,
+          "crecimiento_pct": 572.0
+        },
+        {
+          "pais": "France",
+          "iso": 250,
+          "valor_usd": 8421158,
+          "toneladas": 1522,
+          "usd_kg": 5.53,
+          "mxn_kg": 101.33,
+          "participacion_mexico_pct": 5.8,
+          "share_de_exportaciones_mx_pct": 1.2,
+          "crecimiento_pct": 3.0
+        },
+        {
+          "pais": "Japan",
+          "iso": 392,
+          "valor_usd": 7979120,
+          "toneladas": 1643,
+          "usd_kg": 4.86,
+          "mxn_kg": 88.96,
+          "participacion_mexico_pct": 27.5,
+          "share_de_exportaciones_mx_pct": 1.1,
+          "crecimiento_pct": -33.0
+        },
+        {
+          "pais": "United Kingdom",
+          "iso": 826,
+          "valor_usd": 4699148,
+          "toneladas": 1121,
+          "usd_kg": 4.19,
+          "mxn_kg": 76.79,
+          "participacion_mexico_pct": 1.7,
+          "share_de_exportaciones_mx_pct": 0.6,
+          "crecimiento_pct": 489.0
+        },
+        {
+          "pais": "Netherlands",
+          "iso": 528,
+          "valor_usd": 1837001,
+          "toneladas": 425,
+          "usd_kg": 4.33,
+          "mxn_kg": 79.26,
+          "participacion_mexico_pct": 0.6,
+          "share_de_exportaciones_mx_pct": 0.3,
+          "crecimiento_pct": -29.0
+        }
+      ],
+      "oportunidades": [
+        {
+          "pais": "China",
+          "iso": 156,
+          "importa_del_mundo_usd": 675637576,
+          "usd_kg_mundo": 2.31,
+          "mxn_kg_mundo": 42.3,
+          "participacion_mexico_pct": 0.0
+        },
+        {
+          "pais": "Netherlands",
+          "iso": 528,
+          "importa_del_mundo_usd": 308593371,
+          "usd_kg_mundo": 1.69,
+          "mxn_kg_mundo": 30.95,
+          "participacion_mexico_pct": 0.6
+        },
+        {
+          "pais": "United Kingdom",
+          "iso": 826,
+          "importa_del_mundo_usd": 284731611,
+          "usd_kg_mundo": 3.28,
+          "mxn_kg_mundo": 60.17,
+          "participacion_mexico_pct": 1.7
+        },
+        {
+          "pais": "Germany",
+          "iso": 276,
+          "importa_del_mundo_usd": 245720700,
+          "usd_kg_mundo": 2.82,
+          "mxn_kg_mundo": 51.71,
+          "participacion_mexico_pct": 4.3
+        },
+        {
+          "pais": "Rep. of Korea",
+          "iso": 410,
+          "importa_del_mundo_usd": 171161075,
+          "usd_kg_mundo": 4.6,
+          "mxn_kg_mundo": 84.26,
+          "participacion_mexico_pct": 0.0
+        },
+        {
+          "pais": "Spain",
+          "iso": 724,
+          "importa_del_mundo_usd": 170347693,
+          "usd_kg_mundo": 2.23,
+          "mxn_kg_mundo": 40.92,
+          "participacion_mexico_pct": 8.1
+        },
+        {
+          "pais": "France",
+          "iso": 250,
+          "importa_del_mundo_usd": 146172179,
+          "usd_kg_mundo": 2.55,
+          "mxn_kg_mundo": 46.65,
+          "participacion_mexico_pct": 5.8
+        },
+        {
+          "pais": "Portugal",
+          "iso": 620,
+          "importa_del_mundo_usd": 91951373,
+          "usd_kg_mundo": 2.06,
+          "mxn_kg_mundo": 37.7,
+          "participacion_mexico_pct": 0.0
+        }
+      ],
+      "serie_exportaciones": {
+        "2019": 479812842,
+        "2020": 516695651,
+        "2021": 565951737,
+        "2022": 628082142,
+        "2023": 668560789,
+        "2024": 725119401
+      },
+      "limites": [
+        "Valores aduanales declarados por los países importadores; no son precio al productor ni precio de venta final.",
+        "HS 080450 agrupa guayaba, mango y mangostán",
+        "Exportar requiere certificación fitosanitaria, empaque, logística en frío y un comprador confirmado."
+      ]
+    },
+    "aguacate": {
+      "nombre": "Aguacate",
+      "hs": "080440",
+      "hs_nota": "",
+      "disponible": true,
+      "anio": 2024,
+      "anio_base_crecimiento": 2019,
+      "exportaciones_mexico_usd": 4024213091,
+      "paises_destino": 56,
+      "valor_unitario_exportacion_usd_kg": 3.17,
+      "valor_unitario_exportacion_mxn_kg": 58.13,
+      "tipo_cambio_usd_mxn": 18.32,
+      "precio_mayorista_nacional_mxn_kg": 35.43,
+      "base_precio_nacional": "todos los orígenes",
+      "prima_exportacion_pct": 64.0,
+      "destinos": [
+        {
+          "pais": "USA",
+          "iso": 840,
+          "valor_usd": 3494303194,
+          "toneladas": 1066359,
+          "usd_kg": 3.28,
+          "mxn_kg": 60.03,
+          "participacion_mexico_pct": 90.1,
+          "share_de_exportaciones_mx_pct": 86.8,
+          "crecimiento_pct": 38.0
+        },
+        {
+          "pais": "Canada",
+          "iso": 124,
+          "valor_usd": 284712077,
+          "toneladas": 103898,
+          "usd_kg": 2.74,
+          "mxn_kg": 50.2,
+          "participacion_mexico_pct": 92.7,
+          "share_de_exportaciones_mx_pct": 7.1,
+          "crecimiento_pct": 27.0
+        },
+        {
+          "pais": "Japan",
+          "iso": 392,
+          "valor_usd": 107805596,
+          "toneladas": 35548,
+          "usd_kg": 3.03,
+          "mxn_kg": 55.56,
+          "participacion_mexico_pct": 74.7,
+          "share_de_exportaciones_mx_pct": 2.7,
+          "crecimiento_pct": -50.0
+        },
+        {
+          "pais": "Honduras",
+          "iso": 340,
+          "valor_usd": 27810057,
+          "toneladas": 13858,
+          "usd_kg": 2.01,
+          "mxn_kg": 36.77,
+          "participacion_mexico_pct": 98.7,
+          "share_de_exportaciones_mx_pct": 0.7,
+          "crecimiento_pct": 94.0
+        },
+        {
+          "pais": "Costa Rica",
+          "iso": 188,
+          "valor_usd": 25587770,
+          "toneladas": 8198,
+          "usd_kg": 3.12,
+          "mxn_kg": 57.18,
+          "participacion_mexico_pct": 67.1,
+          "share_de_exportaciones_mx_pct": 0.6,
+          "crecimiento_pct": null
+        },
+        {
+          "pais": "El Salvador",
+          "iso": 222,
+          "valor_usd": 23094951,
+          "toneladas": 17183,
+          "usd_kg": 1.34,
+          "mxn_kg": 24.62,
+          "participacion_mexico_pct": 94.3,
+          "share_de_exportaciones_mx_pct": 0.6,
+          "crecimiento_pct": 60.0
+        },
+        {
+          "pais": "Kuwait",
+          "iso": 414,
+          "valor_usd": 9889543,
+          "toneladas": 3116,
+          "usd_kg": 3.17,
+          "mxn_kg": 58.14,
+          "participacion_mexico_pct": 52.0,
+          "share_de_exportaciones_mx_pct": 0.2,
+          "crecimiento_pct": 62.0
+        },
+        {
+          "pais": "Spain",
+          "iso": 724,
+          "valor_usd": 7977455,
+          "toneladas": 3225,
+          "usd_kg": 2.47,
+          "mxn_kg": 45.32,
+          "participacion_mexico_pct": 1.2,
+          "share_de_exportaciones_mx_pct": 0.2,
+          "crecimiento_pct": -89.0
+        }
+      ],
+      "oportunidades": [
+        {
+          "pais": "Netherlands",
+          "iso": 528,
+          "importa_del_mundo_usd": 1298500059,
+          "usd_kg_mundo": 3.4,
+          "mxn_kg_mundo": 62.25,
+          "participacion_mexico_pct": 0.4
+        },
+        {
+          "pais": "France",
+          "iso": 250,
+          "importa_del_mundo_usd": 696377799,
+          "usd_kg_mundo": 3.44,
+          "mxn_kg_mundo": 63.09,
+          "participacion_mexico_pct": 0.7
+        },
+        {
+          "pais": "Spain",
+          "iso": 724,
+          "importa_del_mundo_usd": 665253475,
+          "usd_kg_mundo": 2.54,
+          "mxn_kg_mundo": 46.56,
+          "participacion_mexico_pct": 1.2
+        },
+        {
+          "pais": "Germany",
+          "iso": 276,
+          "importa_del_mundo_usd": 604317074,
+          "usd_kg_mundo": 3.7,
+          "mxn_kg_mundo": 67.87,
+          "participacion_mexico_pct": 0.4
+        },
+        {
+          "pais": "United Kingdom",
+          "iso": 826,
+          "importa_del_mundo_usd": 378600219,
+          "usd_kg_mundo": 2.82,
+          "mxn_kg_mundo": 51.65,
+          "participacion_mexico_pct": 0.4
+        },
+        {
+          "pais": "Italy",
+          "iso": 380,
+          "importa_del_mundo_usd": 166964983,
+          "usd_kg_mundo": 3.06,
+          "mxn_kg_mundo": 56.06,
+          "participacion_mexico_pct": 0.1
+        },
+        {
+          "pais": "Poland",
+          "iso": 616,
+          "importa_del_mundo_usd": 145196753,
+          "usd_kg_mundo": 3.14,
+          "mxn_kg_mundo": 57.58,
+          "participacion_mexico_pct": 0.2
+        },
+        {
+          "pais": "China",
+          "iso": 156,
+          "importa_del_mundo_usd": 122431587,
+          "usd_kg_mundo": 2.5,
+          "mxn_kg_mundo": 45.79,
+          "participacion_mexico_pct": 1.6
+        }
+      ],
+      "serie_exportaciones": {
+        "2019": 3401086469,
+        "2020": 3076192523,
+        "2021": 3691314481,
+        "2022": 3472520136,
+        "2023": 3355589562,
+        "2024": 4024213091
+      },
+      "limites": [
+        "Valores aduanales declarados por los países importadores; no son precio al productor ni precio de venta final.",
+        "El código HS corresponde a la fruta.",
+        "Exportar requiere certificación fitosanitaria, empaque, logística en frío y un comprador confirmado."
+      ]
+    },
+    "sandia": {
+      "nombre": "Sandía",
+      "hs": "080711",
+      "hs_nota": "",
+      "disponible": true,
+      "anio": 2024,
+      "anio_base_crecimiento": 2019,
+      "exportaciones_mexico_usd": 413095130,
+      "paises_destino": 10,
+      "valor_unitario_exportacion_usd_kg": 0.58,
+      "valor_unitario_exportacion_mxn_kg": 10.58,
+      "tipo_cambio_usd_mxn": 18.32,
+      "precio_mayorista_nacional_mxn_kg": 16.94,
+      "base_precio_nacional": "origen Colima",
+      "prima_exportacion_pct": -38.0,
+      "destinos": [
+        {
+          "pais": "USA",
+          "iso": 840,
+          "valor_usd": 371036950,
+          "toneladas": 656745,
+          "usd_kg": 0.56,
+          "mxn_kg": 10.35,
+          "participacion_mexico_pct": 75.5,
+          "share_de_exportaciones_mx_pct": 89.8,
+          "crecimiento_pct": 9.0
+        },
+        {
+          "pais": "Canada",
+          "iso": 124,
+          "valor_usd": 41635646,
+          "toneladas": 58392,
+          "usd_kg": 0.71,
+          "mxn_kg": 13.06,
+          "participacion_mexico_pct": 26.4,
+          "share_de_exportaciones_mx_pct": 10.1,
+          "crecimiento_pct": 18.0
+        },
+        {
+          "pais": "Japan",
+          "iso": 392,
+          "valor_usd": 354128,
+          "toneladas": 244,
+          "usd_kg": 1.45,
+          "mxn_kg": 26.6,
+          "participacion_mexico_pct": 26.2,
+          "share_de_exportaciones_mx_pct": 0.1,
+          "crecimiento_pct": 594.0
+        },
+        {
+          "pais": "Antigua and Barbuda",
+          "iso": 28,
+          "valor_usd": 27961,
+          "toneladas": 5,
+          "usd_kg": 5.1,
+          "mxn_kg": 93.39,
+          "participacion_mexico_pct": 5.2,
+          "share_de_exportaciones_mx_pct": 0.0,
+          "crecimiento_pct": 1461.0
+        },
+        {
+          "pais": "Kuwait",
+          "iso": 414,
+          "valor_usd": 18949,
+          "toneladas": 23,
+          "usd_kg": 0.83,
+          "mxn_kg": 15.22,
+          "participacion_mexico_pct": 0.1,
+          "share_de_exportaciones_mx_pct": 0.0,
+          "crecimiento_pct": null
+        },
+        {
+          "pais": "Saudi Arabia",
+          "iso": 682,
+          "valor_usd": 11957,
+          "toneladas": 7,
+          "usd_kg": 1.8,
+          "mxn_kg": 32.9,
+          "participacion_mexico_pct": 0.1,
+          "share_de_exportaciones_mx_pct": 0.0,
+          "crecimiento_pct": null
+        },
+        {
+          "pais": "Bahrain",
+          "iso": 48,
+          "valor_usd": 8529,
+          "toneladas": 2,
+          "usd_kg": 4.67,
+          "mxn_kg": 85.48,
+          "participacion_mexico_pct": 0.1,
+          "share_de_exportaciones_mx_pct": 0.0,
+          "crecimiento_pct": 93.0
+        },
+        {
+          "pais": "Bahamas",
+          "iso": 44,
+          "valor_usd": 639,
+          "toneladas": 0,
+          "usd_kg": null,
+          "mxn_kg": null,
+          "participacion_mexico_pct": 0.0,
+          "share_de_exportaciones_mx_pct": 0.0,
+          "crecimiento_pct": null
+        }
+      ],
+      "oportunidades": [
+        {
+          "pais": "Germany",
+          "iso": 276,
+          "importa_del_mundo_usd": 388783046,
+          "usd_kg_mundo": 0.81,
+          "mxn_kg_mundo": 14.77,
+          "participacion_mexico_pct": 0.0
+        },
+        {
+          "pais": "France",
+          "iso": 250,
+          "importa_del_mundo_usd": 169767214,
+          "usd_kg_mundo": 0.84,
+          "mxn_kg_mundo": 15.45,
+          "participacion_mexico_pct": 0.0
+        },
+        {
+          "pais": "United Kingdom",
+          "iso": 826,
+          "importa_del_mundo_usd": 167951844,
+          "usd_kg_mundo": 0.87,
+          "mxn_kg_mundo": 15.93,
+          "participacion_mexico_pct": 0.0
+        },
+        {
+          "pais": "Netherlands",
+          "iso": 528,
+          "importa_del_mundo_usd": 142556104,
+          "usd_kg_mundo": 0.76,
+          "mxn_kg_mundo": 13.97,
+          "participacion_mexico_pct": 0.0
+        },
+        {
+          "pais": "Poland",
+          "iso": 616,
+          "importa_del_mundo_usd": 131823078,
+          "usd_kg_mundo": 0.64,
+          "mxn_kg_mundo": 11.8,
+          "participacion_mexico_pct": 0.0
+        },
+        {
+          "pais": "Iraq",
+          "iso": 368,
+          "importa_del_mundo_usd": 89271449,
+          "usd_kg_mundo": 0.31,
+          "mxn_kg_mundo": 5.6,
+          "participacion_mexico_pct": 0.0
+        },
+        {
+          "pais": "Spain",
+          "iso": 724,
+          "importa_del_mundo_usd": 60173963,
+          "usd_kg_mundo": 0.76,
+          "mxn_kg_mundo": 14.01,
+          "participacion_mexico_pct": 0.0
+        },
+        {
+          "pais": "Czechia",
+          "iso": 203,
+          "importa_del_mundo_usd": 55818199,
+          "usd_kg_mundo": 0.57,
+          "mxn_kg_mundo": 10.44,
+          "participacion_mexico_pct": 0.0
+        }
+      ],
+      "serie_exportaciones": {
+        "2019": 374510698,
+        "2020": 338489810,
+        "2021": 373937703,
+        "2022": 392563775,
+        "2023": 407720510,
+        "2024": 413095130
+      },
+      "limites": [
+        "Valores aduanales declarados por los países importadores; no son precio al productor ni precio de venta final.",
+        "El código HS corresponde a la fruta.",
+        "Exportar requiere certificación fitosanitaria, empaque, logística en frío y un comprador confirmado."
+      ]
+    },
+    "guanabana": {
+      "nombre": "Guanábana",
+      "hs": null,
+      "disponible": false,
+      "nota": "UN Comtrade no tiene un código HS propio para guanábana"
+    }
+  }
+}

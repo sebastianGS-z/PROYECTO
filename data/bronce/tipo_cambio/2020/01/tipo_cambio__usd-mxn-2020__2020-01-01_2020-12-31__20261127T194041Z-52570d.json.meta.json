@@ -1,0 +1,26 @@
+{
+  "esquema": "tdl-bronce-meta/1",
+  "contenido_original": {
+    "archivo": "tipo_cambio__usd-mxn-2020__2020-01-01_2020-12-31__20261127T194041Z-52570d.json",
+    "descripcion": "Bytes tal como los entregó la fuente; no se modifican."
+  },
+  "metadatos_captura": {
+    "fuente": "tipo_cambio",
+    "fuente_url": "https://api.frankfurter.dev/v1/2020-01-01..2020-12-31?base=USD&symbols=MXN",
+    "fecha_captura": "2026-11-27T19:40:49Z",
+    "identificador_ejecucion": "20261127T194041Z-52570d",
+    "formato_original": "json",
+    "sha256": "b579aaeab5c7d32fe3851ef2a7f038aab77a15ccbc3329afda655dc6f687e562",
+    "bytes": 7345,
+    "http_status": 200,
+    "registros_detectados": 258,
+    "estado_captura": "ok",
+    "advertencias": [],
+    "colision_nombre": false,
+    "etiqueta": "usd-mxn-2020",
+    "fecha_ref_inicio": "2020-01-01",
+    "fecha_ref_fin": "2020-12-31",
+    "periodo": 2020,
+    "nota": "Tipos de referencia diarios del Banco Central Europeo publicados por Frankfurter."
+  }
+}

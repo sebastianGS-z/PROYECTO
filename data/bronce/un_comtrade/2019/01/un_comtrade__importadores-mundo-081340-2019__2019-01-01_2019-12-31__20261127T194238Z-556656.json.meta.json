@@ -1,0 +1,30 @@
+{
+  "esquema": "tdl-bronce-meta/1",
+  "contenido_original": {
+    "archivo": "un_comtrade__importadores-mundo-081340-2019__2019-01-01_2019-12-31__20261127T194238Z-556656.json",
+    "descripcion": "Bytes tal como los entregó la fuente; no se modifican."
+  },
+  "metadatos_captura": {
+    "fuente": "un_comtrade",
+    "fuente_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2019&cmdCode=081340&maxRecords=500&flowCode=M&partnerCode=0",
+    "fecha_captura": "2026-11-27T19:54:58Z",
+    "identificador_ejecucion": "20261127T194238Z-556656",
+    "formato_original": "json",
+    "sha256": "99c81a1dea5a0cb1c2ace12114d73cc84080896115595b63066ae1697c815cd0",
+    "bytes": 152740,
+    "http_status": 200,
+    "registros_detectados": 169,
+    "estado_captura": "ok",
+    "advertencias": [],
+    "colision_nombre": false,
+    "etiqueta": "importadores-mundo-081340-2019",
+    "fecha_ref_inicio": "2019-01-01",
+    "fecha_ref_fin": "2019-12-31",
+    "codigo_hs": "081340",
+    "tipo_consulta": "importadores_mundo",
+    "periodo": 2019,
+    "limite_preview": 500,
+    "truncamiento_posible": false,
+    "nota": "Datos aduanales de comercio de mercancías; no equivalen a cotizaciones ni a oportunidad rentable."
+  }
+}

@@ -80,7 +80,7 @@ def test_senales_y_hallazgos():
     assert s["percentil_historico"] >= 90 and "alto" in s["lectura"] and s["rango_80_siguiente_mes"] == "22.0–30.0"
     h = ic.hallazgos({"margen_productor": pd.DataFrame(), "plazas_colima": ic.comparar_plazas(_m(list(range(20, 30)), list(range(24, 34))), {}),
                       "calendario_venta": pd.DataFrame()})
-    assert h and "flete" in h[0]
+    assert any("flete" in x for x in h)
 
 
 def test_intervalo_empirico_cobertura_y_cuantil():

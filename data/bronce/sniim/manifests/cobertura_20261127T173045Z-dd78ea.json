@@ -1,0 +1,45 @@
+{
+  "run_id": "20261127T173045Z-dd78ea",
+  "nota": "Un periodo cuenta solo si la fuente devolvió registros reales; archivos vacíos o fallidos no cuentan.",
+  "cobertura": [
+    {
+      "producto": "limon_c5",
+      "mercado": "guadalajara",
+      "periodos_esperados": 84,
+      "periodos_con_datos": 83,
+      "periodos_sin_datos": [
+        "2020-06"
+      ],
+      "periodos_fallidos": [],
+      "cumple_36": true,
+      "primer_periodo": "2016-11",
+      "ultimo_periodo": "2023-10"
+    },
+    {
+      "producto": "papaya",
+      "mercado": "guadalajara",
+      "periodos_esperados": 84,
+      "periodos_con_datos": 83,
+      "periodos_sin_datos": [
+        "2020-06"
+      ],
+      "periodos_fallidos": [],
+      "cumple_36": true,
+      "primer_periodo": "2016-11",
+      "ultimo_periodo": "2023-10"
+    },
+    {
+      "producto": "platano",
+      "mercado": "guadalajara",
+      "periodos_esperados": 84,
+      "periodos_con_datos": 83,
+      "periodos_sin_datos": [
+        "2020-06"
+      ],
+      "periodos_fallidos": [],
+      "cumple_36": true,
+      "primer_periodo": "2016-11",
+      "ultimo_periodo": "2023-10"
+    }
+  ]
+}

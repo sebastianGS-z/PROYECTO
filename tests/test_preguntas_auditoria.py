@@ -44,6 +44,11 @@ def _datos():
                                    "valor_comercio_usd": 8e8, "valor_unitario_aduanal_usd_kg": 1.15}]),
         "fiab": {"periodos": {"ventana_sello_14_dias": {"disponibilidad": 1.0, "dias": 14, "hasta": "2025-12-31"}}}, "iso": {"medidas": {"completitud": {"valor": 1.0}}},
         "e1": {"correlacion_cruzada": [{"variable": "temperatura media", "n": 31, "corr_max": -0.26, "rezago_max": 4, "significativa": False}]},
+        "export": {"frutas": {"limon": {"disponible": True, "anio": 2024, "anio_base_crecimiento": 2019, "exportaciones_mexico_usd": 8.9e8, "paises_destino": 40,
+                                        "hs": "080550", "hs_nota": "HS 080550 agrupa limones y limas", "valor_unitario_exportacion_mxn_kg": 21.7,
+                                        "precio_mayorista_nacional_mxn_kg": 24.9, "base_precio_nacional": "origen Colima", "prima_exportacion_pct": -13.0,
+                                        "destinos": [{"pais": "USA", "valor_usd": 8.1e8, "mxn_kg": 21.0, "crecimiento_pct": 12.0}],
+                                        "oportunidades": [{"pais": "Netherlands", "importa_del_mundo_usd": 3e8, "participacion_mexico_pct": 1.5}]}}},
     }
 
 

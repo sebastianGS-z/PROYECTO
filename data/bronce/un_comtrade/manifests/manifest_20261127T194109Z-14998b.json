@@ -1,0 +1,40 @@
+{
+  "run_id": "20261127T194109Z-14998b",
+  "fuente": "un_comtrade",
+  "modo": "historica",
+  "disparador": "local",
+  "inicio": "2026-11-27T19:41:09Z",
+  "fin": "2026-11-27T19:41:13Z",
+  "duracion_s": 3.81,
+  "estado": "exitosa",
+  "solicitudes": 2,
+  "registros": 12,
+  "consultas": [
+    {
+      "codigo_hs": "080720",
+      "tipo": "destinos_mexico",
+      "anio": 2024,
+      "estado": "ok",
+      "registros": 12,
+      "archivo": "un_comtrade__destinos-mexico-080720-2024__2024-01-01_2024-12-31__20261127T194109Z-14998b.json",
+      "error": null,
+      "advertencias": []
+    }
+  ],
+  "archivos": [
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2024/01/un_comtrade__destinos-mexico-080720-2024__2024-01-01_2024-12-31__20261127T194109Z-14998b.json",
+      "sha256": "17483992e30afa64899dbf6875ab4d8a7d4f60f45f2ebebbda9befe17250c7da",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2024&cmdCode=080720&maxRecords=500&flowCode=M&partnerCode=484",
+      "bytes": 10861
+    }
+  ],
+  "errores": [],
+  "parametros": {
+    "anios": [
+      2024
+    ]
+  },
+  "esquema": "tdl-manifest/1",
+  "archivos_generados": 1
+}

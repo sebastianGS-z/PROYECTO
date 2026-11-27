@@ -78,6 +78,7 @@ jobs:
         run: python -m calidad.metricas
       - name: Inteligencia comercial, preguntas, reporte, API y portal (sin red)
         run: |
+          python main.py exportacion
           python main.py inteligencia
           python main.py reporte
           python main.py preguntas

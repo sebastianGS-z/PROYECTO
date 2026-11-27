@@ -1,0 +1,1981 @@
+{
+  "run_id": "20261127T194238Z-556656",
+  "fuente": "un_comtrade",
+  "modo": "historica",
+  "disparador": "local",
+  "inicio": "2026-11-27T19:42:38Z",
+  "fin": "2026-11-27T19:59:11Z",
+  "duracion_s": 992.43,
+  "estado": "exitosa",
+  "solicitudes": 123,
+  "registros": 11855,
+  "consultas": [
+    {
+      "codigo_hs": "080450",
+      "tipo": "destinos_mexico",
+      "anio": 2020,
+      "estado": "ok",
+      "registros": 50,
+      "archivo": "un_comtrade__destinos-mexico-080450-2020__2020-01-01_2020-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080450",
+      "tipo": "destinos_mexico",
+      "anio": 2021,
+      "estado": "ok",
+      "registros": 53,
+      "archivo": "un_comtrade__destinos-mexico-080450-2021__2021-01-01_2021-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080450",
+      "tipo": "destinos_mexico",
+      "anio": 2022,
+      "estado": "ok",
+      "registros": 49,
+      "archivo": "un_comtrade__destinos-mexico-080450-2022__2022-01-01_2022-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080450",
+      "tipo": "destinos_mexico",
+      "anio": 2023,
+      "estado": "ok",
+      "registros": 46,
+      "archivo": "un_comtrade__destinos-mexico-080450-2023__2023-01-01_2023-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080450",
+      "tipo": "destinos_mexico",
+      "anio": 2024,
+      "estado": "ok",
+      "registros": 54,
+      "archivo": "un_comtrade__destinos-mexico-080450-2024__2024-01-01_2024-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080450",
+      "tipo": "importadores_mundo",
+      "anio": 2019,
+      "estado": "ok",
+      "registros": 165,
+      "archivo": "un_comtrade__importadores-mundo-080450-2019__2019-01-01_2019-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080450",
+      "tipo": "importadores_mundo",
+      "anio": 2020,
+      "estado": "ok",
+      "registros": 156,
+      "archivo": "un_comtrade__importadores-mundo-080450-2020__2020-01-01_2020-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080450",
+      "tipo": "importadores_mundo",
+      "anio": 2021,
+      "estado": "ok",
+      "registros": 159,
+      "archivo": "un_comtrade__importadores-mundo-080450-2021__2021-01-01_2021-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080450",
+      "tipo": "importadores_mundo",
+      "anio": 2022,
+      "estado": "ok",
+      "registros": 157,
+      "archivo": "un_comtrade__importadores-mundo-080450-2022__2022-01-01_2022-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080450",
+      "tipo": "importadores_mundo",
+      "anio": 2023,
+      "estado": "ok",
+      "registros": 155,
+      "archivo": "un_comtrade__importadores-mundo-080450-2023__2023-01-01_2023-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080450",
+      "tipo": "importadores_mundo",
+      "anio": 2024,
+      "estado": "ok",
+      "registros": 140,
+      "archivo": "un_comtrade__importadores-mundo-080450-2024__2024-01-01_2024-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080450",
+      "tipo": "exportadores",
+      "anio": 2019,
+      "estado": "ok",
+      "registros": 127,
+      "archivo": "un_comtrade__exportadores-080450-2019__2019-01-01_2019-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080450",
+      "tipo": "exportadores",
+      "anio": 2020,
+      "estado": "ok",
+      "registros": 121,
+      "archivo": "un_comtrade__exportadores-080450-2020__2020-01-01_2020-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080450",
+      "tipo": "exportadores",
+      "anio": 2021,
+      "estado": "ok",
+      "registros": 127,
+      "archivo": "un_comtrade__exportadores-080450-2021__2021-01-01_2021-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080450",
+      "tipo": "exportadores",
+      "anio": 2022,
+      "estado": "ok",
+      "registros": 126,
+      "archivo": "un_comtrade__exportadores-080450-2022__2022-01-01_2022-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080450",
+      "tipo": "exportadores",
+      "anio": 2023,
+      "estado": "ok",
+      "registros": 128,
+      "archivo": "un_comtrade__exportadores-080450-2023__2023-01-01_2023-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080550",
+      "tipo": "destinos_mexico",
+      "anio": 2019,
+      "estado": "ok",
+      "registros": 56,
+      "archivo": "un_comtrade__destinos-mexico-080550-2019__2019-01-01_2019-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080550",
+      "tipo": "destinos_mexico",
+      "anio": 2020,
+      "estado": "ok",
+      "registros": 59,
+      "archivo": "un_comtrade__destinos-mexico-080550-2020__2020-01-01_2020-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080550",
+      "tipo": "destinos_mexico",
+      "anio": 2021,
+      "estado": "ok",
+      "registros": 57,
+      "archivo": "un_comtrade__destinos-mexico-080550-2021__2021-01-01_2021-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080550",
+      "tipo": "destinos_mexico",
+      "anio": 2022,
+      "estado": "ok",
+      "registros": 49,
+      "archivo": "un_comtrade__destinos-mexico-080550-2022__2022-01-01_2022-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080550",
+      "tipo": "destinos_mexico",
+      "anio": 2023,
+      "estado": "ok",
+      "registros": 44,
+      "archivo": "un_comtrade__destinos-mexico-080550-2023__2023-01-01_2023-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080550",
+      "tipo": "destinos_mexico",
+      "anio": 2024,
+      "estado": "ok",
+      "registros": 50,
+      "archivo": "un_comtrade__destinos-mexico-080550-2024__2024-01-01_2024-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080550",
+      "tipo": "importadores_mundo",
+      "anio": 2019,
+      "estado": "ok",
+      "registros": 161,
+      "archivo": "un_comtrade__importadores-mundo-080550-2019__2019-01-01_2019-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080550",
+      "tipo": "importadores_mundo",
+      "anio": 2020,
+      "estado": "ok",
+      "registros": 159,
+      "archivo": "un_comtrade__importadores-mundo-080550-2020__2020-01-01_2020-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080550",
+      "tipo": "importadores_mundo",
+      "anio": 2021,
+      "estado": "ok",
+      "registros": 160,
+      "archivo": "un_comtrade__importadores-mundo-080550-2021__2021-01-01_2021-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080550",
+      "tipo": "importadores_mundo",
+      "anio": 2022,
+      "estado": "ok",
+      "registros": 155,
+      "archivo": "un_comtrade__importadores-mundo-080550-2022__2022-01-01_2022-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080550",
+      "tipo": "importadores_mundo",
+      "anio": 2023,
+      "estado": "ok",
+      "registros": 159,
+      "archivo": "un_comtrade__importadores-mundo-080550-2023__2023-01-01_2023-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080550",
+      "tipo": "importadores_mundo",
+      "anio": 2024,
+      "estado": "ok",
+      "registros": 144,
+      "archivo": "un_comtrade__importadores-mundo-080550-2024__2024-01-01_2024-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080550",
+      "tipo": "exportadores",
+      "anio": 2019,
+      "estado": "ok",
+      "registros": 125,
+      "archivo": "un_comtrade__exportadores-080550-2019__2019-01-01_2019-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080550",
+      "tipo": "exportadores",
+      "anio": 2020,
+      "estado": "ok",
+      "registros": 121,
+      "archivo": "un_comtrade__exportadores-080550-2020__2020-01-01_2020-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080550",
+      "tipo": "exportadores",
+      "anio": 2021,
+      "estado": "ok",
+      "registros": 126,
+      "archivo": "un_comtrade__exportadores-080550-2021__2021-01-01_2021-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080550",
+      "tipo": "exportadores",
+      "anio": 2022,
+      "estado": "ok",
+      "registros": 120,
+      "archivo": "un_comtrade__exportadores-080550-2022__2022-01-01_2022-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080550",
+      "tipo": "exportadores",
+      "anio": 2023,
+      "estado": "ok",
+      "registros": 123,
+      "archivo": "un_comtrade__exportadores-080550-2023__2023-01-01_2023-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080119",
+      "tipo": "destinos_mexico",
+      "anio": 2019,
+      "estado": "ok",
+      "registros": 9,
+      "archivo": "un_comtrade__destinos-mexico-080119-2019__2019-01-01_2019-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080119",
+      "tipo": "destinos_mexico",
+      "anio": 2020,
+      "estado": "ok",
+      "registros": 9,
+      "archivo": "un_comtrade__destinos-mexico-080119-2020__2020-01-01_2020-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080119",
+      "tipo": "destinos_mexico",
+      "anio": 2021,
+      "estado": "ok",
+      "registros": 6,
+      "archivo": "un_comtrade__destinos-mexico-080119-2021__2021-01-01_2021-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080119",
+      "tipo": "destinos_mexico",
+      "anio": 2022,
+      "estado": "ok",
+      "registros": 9,
+      "archivo": "un_comtrade__destinos-mexico-080119-2022__2022-01-01_2022-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080119",
+      "tipo": "destinos_mexico",
+      "anio": 2023,
+      "estado": "ok",
+      "registros": 7,
+      "archivo": "un_comtrade__destinos-mexico-080119-2023__2023-01-01_2023-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080119",
+      "tipo": "destinos_mexico",
+      "anio": 2024,
+      "estado": "ok",
+      "registros": 4,
+      "archivo": "un_comtrade__destinos-mexico-080119-2024__2024-01-01_2024-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080119",
+      "tipo": "importadores_mundo",
+      "anio": 2019,
+      "estado": "ok",
+      "registros": 163,
+      "archivo": "un_comtrade__importadores-mundo-080119-2019__2019-01-01_2019-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080119",
+      "tipo": "importadores_mundo",
+      "anio": 2020,
+      "estado": "ok",
+      "registros": 163,
+      "archivo": "un_comtrade__importadores-mundo-080119-2020__2020-01-01_2020-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080119",
+      "tipo": "importadores_mundo",
+      "anio": 2021,
+      "estado": "ok",
+      "registros": 160,
+      "archivo": "un_comtrade__importadores-mundo-080119-2021__2021-01-01_2021-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080119",
+      "tipo": "importadores_mundo",
+      "anio": 2022,
+      "estado": "ok",
+      "registros": 153,
+      "archivo": "un_comtrade__importadores-mundo-080119-2022__2022-01-01_2022-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080119",
+      "tipo": "importadores_mundo",
+      "anio": 2023,
+      "estado": "ok",
+      "registros": 149,
+      "archivo": "un_comtrade__importadores-mundo-080119-2023__2023-01-01_2023-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080119",
+      "tipo": "importadores_mundo",
+      "anio": 2024,
+      "estado": "ok",
+      "registros": 133,
+      "archivo": "un_comtrade__importadores-mundo-080119-2024__2024-01-01_2024-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080119",
+      "tipo": "exportadores",
+      "anio": 2019,
+      "estado": "ok",
+      "registros": 105,
+      "archivo": "un_comtrade__exportadores-080119-2019__2019-01-01_2019-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080119",
+      "tipo": "exportadores",
+      "anio": 2020,
+      "estado": "ok",
+      "registros": 106,
+      "archivo": "un_comtrade__exportadores-080119-2020__2020-01-01_2020-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080119",
+      "tipo": "exportadores",
+      "anio": 2021,
+      "estado": "ok",
+      "registros": 108,
+      "archivo": "un_comtrade__exportadores-080119-2021__2021-01-01_2021-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080119",
+      "tipo": "exportadores",
+      "anio": 2022,
+      "estado": "ok",
+      "registros": 105,
+      "archivo": "un_comtrade__exportadores-080119-2022__2022-01-01_2022-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080119",
+      "tipo": "exportadores",
+      "anio": 2023,
+      "estado": "ok",
+      "registros": 104,
+      "archivo": "un_comtrade__exportadores-080119-2023__2023-01-01_2023-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080119",
+      "tipo": "exportadores",
+      "anio": 2024,
+      "estado": "ok",
+      "registros": 97,
+      "archivo": "un_comtrade__exportadores-080119-2024__2024-01-01_2024-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080720",
+      "tipo": "destinos_mexico",
+      "anio": 2019,
+      "estado": "ok",
+      "registros": 13,
+      "archivo": "un_comtrade__destinos-mexico-080720-2019__2019-01-01_2019-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080720",
+      "tipo": "destinos_mexico",
+      "anio": 2020,
+      "estado": "ok",
+      "registros": 18,
+      "archivo": "un_comtrade__destinos-mexico-080720-2020__2020-01-01_2020-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080720",
+      "tipo": "destinos_mexico",
+      "anio": 2021,
+      "estado": "ok",
+      "registros": 19,
+      "archivo": "un_comtrade__destinos-mexico-080720-2021__2021-01-01_2021-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080720",
+      "tipo": "destinos_mexico",
+      "anio": 2022,
+      "estado": "ok",
+      "registros": 16,
+      "archivo": "un_comtrade__destinos-mexico-080720-2022__2022-01-01_2022-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080720",
+      "tipo": "destinos_mexico",
+      "anio": 2023,
+      "estado": "ok",
+      "registros": 14,
+      "archivo": "un_comtrade__destinos-mexico-080720-2023__2023-01-01_2023-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080720",
+      "tipo": "importadores_mundo",
+      "anio": 2019,
+      "estado": "ok",
+      "registros": 117,
+      "archivo": "un_comtrade__importadores-mundo-080720-2019__2019-01-01_2019-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080720",
+      "tipo": "importadores_mundo",
+      "anio": 2020,
+      "estado": "ok",
+      "registros": 115,
+      "archivo": "un_comtrade__importadores-mundo-080720-2020__2020-01-01_2020-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080720",
+      "tipo": "importadores_mundo",
+      "anio": 2021,
+      "estado": "ok",
+      "registros": 116,
+      "archivo": "un_comtrade__importadores-mundo-080720-2021__2021-01-01_2021-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080720",
+      "tipo": "importadores_mundo",
+      "anio": 2022,
+      "estado": "ok",
+      "registros": 117,
+      "archivo": "un_comtrade__importadores-mundo-080720-2022__2022-01-01_2022-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080720",
+      "tipo": "importadores_mundo",
+      "anio": 2023,
+      "estado": "ok",
+      "registros": 116,
+      "archivo": "un_comtrade__importadores-mundo-080720-2023__2023-01-01_2023-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080720",
+      "tipo": "importadores_mundo",
+      "anio": 2024,
+      "estado": "ok",
+      "registros": 107,
+      "archivo": "un_comtrade__importadores-mundo-080720-2024__2024-01-01_2024-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080720",
+      "tipo": "exportadores",
+      "anio": 2019,
+      "estado": "ok",
+      "registros": 96,
+      "archivo": "un_comtrade__exportadores-080720-2019__2019-01-01_2019-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080720",
+      "tipo": "exportadores",
+      "anio": 2020,
+      "estado": "ok",
+      "registros": 100,
+      "archivo": "un_comtrade__exportadores-080720-2020__2020-01-01_2020-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080720",
+      "tipo": "exportadores",
+      "anio": 2021,
+      "estado": "ok",
+      "registros": 99,
+      "archivo": "un_comtrade__exportadores-080720-2021__2021-01-01_2021-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080720",
+      "tipo": "exportadores",
+      "anio": 2022,
+      "estado": "ok",
+      "registros": 97,
+      "archivo": "un_comtrade__exportadores-080720-2022__2022-01-01_2022-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080720",
+      "tipo": "exportadores",
+      "anio": 2023,
+      "estado": "ok",
+      "registros": 92,
+      "archivo": "un_comtrade__exportadores-080720-2023__2023-01-01_2023-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080720",
+      "tipo": "exportadores",
+      "anio": 2024,
+      "estado": "ok",
+      "registros": 89,
+      "archivo": "un_comtrade__exportadores-080720-2024__2024-01-01_2024-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080390",
+      "tipo": "destinos_mexico",
+      "anio": 2019,
+      "estado": "ok",
+      "registros": 33,
+      "archivo": "un_comtrade__destinos-mexico-080390-2019__2019-01-01_2019-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080390",
+      "tipo": "destinos_mexico",
+      "anio": 2020,
+      "estado": "ok",
+      "registros": 38,
+      "archivo": "un_comtrade__destinos-mexico-080390-2020__2020-01-01_2020-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080390",
+      "tipo": "destinos_mexico",
+      "anio": 2021,
+      "estado": "ok",
+      "registros": 32,
+      "archivo": "un_comtrade__destinos-mexico-080390-2021__2021-01-01_2021-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080390",
+      "tipo": "destinos_mexico",
+      "anio": 2022,
+      "estado": "ok",
+      "registros": 30,
+      "archivo": "un_comtrade__destinos-mexico-080390-2022__2022-01-01_2022-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080390",
+      "tipo": "destinos_mexico",
+      "anio": 2023,
+      "estado": "ok",
+      "registros": 23,
+      "archivo": "un_comtrade__destinos-mexico-080390-2023__2023-01-01_2023-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080390",
+      "tipo": "destinos_mexico",
+      "anio": 2024,
+      "estado": "ok",
+      "registros": 21,
+      "archivo": "un_comtrade__destinos-mexico-080390-2024__2024-01-01_2024-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080390",
+      "tipo": "importadores_mundo",
+      "anio": 2019,
+      "estado": "ok",
+      "registros": 148,
+      "archivo": "un_comtrade__importadores-mundo-080390-2019__2019-01-01_2019-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080390",
+      "tipo": "importadores_mundo",
+      "anio": 2020,
+      "estado": "ok",
+      "registros": 144,
+      "archivo": "un_comtrade__importadores-mundo-080390-2020__2020-01-01_2020-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080390",
+      "tipo": "importadores_mundo",
+      "anio": 2021,
+      "estado": "ok",
+      "registros": 144,
+      "archivo": "un_comtrade__importadores-mundo-080390-2021__2021-01-01_2021-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080390",
+      "tipo": "importadores_mundo",
+      "anio": 2022,
+      "estado": "ok",
+      "registros": 140,
+      "archivo": "un_comtrade__importadores-mundo-080390-2022__2022-01-01_2022-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080390",
+      "tipo": "importadores_mundo",
+      "anio": 2023,
+      "estado": "ok",
+      "registros": 145,
+      "archivo": "un_comtrade__importadores-mundo-080390-2023__2023-01-01_2023-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080390",
+      "tipo": "importadores_mundo",
+      "anio": 2024,
+      "estado": "ok",
+      "registros": 128,
+      "archivo": "un_comtrade__importadores-mundo-080390-2024__2024-01-01_2024-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080390",
+      "tipo": "exportadores",
+      "anio": 2019,
+      "estado": "ok",
+      "registros": 124,
+      "archivo": "un_comtrade__exportadores-080390-2019__2019-01-01_2019-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080390",
+      "tipo": "exportadores",
+      "anio": 2020,
+      "estado": "ok",
+      "registros": 116,
+      "archivo": "un_comtrade__exportadores-080390-2020__2020-01-01_2020-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080390",
+      "tipo": "exportadores",
+      "anio": 2021,
+      "estado": "ok",
+      "registros": 120,
+      "archivo": "un_comtrade__exportadores-080390-2021__2021-01-01_2021-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080390",
+      "tipo": "exportadores",
+      "anio": 2022,
+      "estado": "ok",
+      "registros": 118,
+      "archivo": "un_comtrade__exportadores-080390-2022__2022-01-01_2022-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080390",
+      "tipo": "exportadores",
+      "anio": 2023,
+      "estado": "ok",
+      "registros": 121,
+      "archivo": "un_comtrade__exportadores-080390-2023__2023-01-01_2023-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080390",
+      "tipo": "exportadores",
+      "anio": 2024,
+      "estado": "ok",
+      "registros": 111,
+      "archivo": "un_comtrade__exportadores-080390-2024__2024-01-01_2024-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "081340",
+      "tipo": "destinos_mexico",
+      "anio": 2019,
+      "estado": "ok",
+      "registros": 19,
+      "archivo": "un_comtrade__destinos-mexico-081340-2019__2019-01-01_2019-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "081340",
+      "tipo": "destinos_mexico",
+      "anio": 2020,
+      "estado": "ok",
+      "registros": 23,
+      "archivo": "un_comtrade__destinos-mexico-081340-2020__2020-01-01_2020-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "081340",
+      "tipo": "destinos_mexico",
+      "anio": 2021,
+      "estado": "ok",
+      "registros": 28,
+      "archivo": "un_comtrade__destinos-mexico-081340-2021__2021-01-01_2021-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "081340",
+      "tipo": "destinos_mexico",
+      "anio": 2022,
+      "estado": "ok",
+      "registros": 30,
+      "archivo": "un_comtrade__destinos-mexico-081340-2022__2022-01-01_2022-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "081340",
+      "tipo": "destinos_mexico",
+      "anio": 2023,
+      "estado": "ok",
+      "registros": 27,
+      "archivo": "un_comtrade__destinos-mexico-081340-2023__2023-01-01_2023-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "081340",
+      "tipo": "destinos_mexico",
+      "anio": 2024,
+      "estado": "ok",
+      "registros": 22,
+      "archivo": "un_comtrade__destinos-mexico-081340-2024__2024-01-01_2024-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "081340",
+      "tipo": "importadores_mundo",
+      "anio": 2019,
+      "estado": "ok",
+      "registros": 169,
+      "archivo": "un_comtrade__importadores-mundo-081340-2019__2019-01-01_2019-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "081340",
+      "tipo": "importadores_mundo",
+      "anio": 2020,
+      "estado": "ok",
+      "registros": 166,
+      "archivo": "un_comtrade__importadores-mundo-081340-2020__2020-01-01_2020-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "081340",
+      "tipo": "importadores_mundo",
+      "anio": 2021,
+      "estado": "ok",
+      "registros": 168,
+      "archivo": "un_comtrade__importadores-mundo-081340-2021__2021-01-01_2021-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "081340",
+      "tipo": "importadores_mundo",
+      "anio": 2022,
+      "estado": "ok",
+      "registros": 167,
+      "archivo": "un_comtrade__importadores-mundo-081340-2022__2022-01-01_2022-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "081340",
+      "tipo": "importadores_mundo",
+      "anio": 2023,
+      "estado": "ok",
+      "registros": 166,
+      "archivo": "un_comtrade__importadores-mundo-081340-2023__2023-01-01_2023-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "081340",
+      "tipo": "importadores_mundo",
+      "anio": 2024,
+      "estado": "ok",
+      "registros": 147,
+      "archivo": "un_comtrade__importadores-mundo-081340-2024__2024-01-01_2024-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "081340",
+      "tipo": "exportadores",
+      "anio": 2019,
+      "estado": "ok",
+      "registros": 128,
+      "archivo": "un_comtrade__exportadores-081340-2019__2019-01-01_2019-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "081340",
+      "tipo": "exportadores",
+      "anio": 2020,
+      "estado": "ok",
+      "registros": 124,
+      "archivo": "un_comtrade__exportadores-081340-2020__2020-01-01_2020-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "081340",
+      "tipo": "exportadores",
+      "anio": 2021,
+      "estado": "ok",
+      "registros": 134,
+      "archivo": "un_comtrade__exportadores-081340-2021__2021-01-01_2021-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "081340",
+      "tipo": "exportadores",
+      "anio": 2022,
+      "estado": "ok",
+      "registros": 138,
+      "archivo": "un_comtrade__exportadores-081340-2022__2022-01-01_2022-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "081340",
+      "tipo": "exportadores",
+      "anio": 2023,
+      "estado": "ok",
+      "registros": 128,
+      "archivo": "un_comtrade__exportadores-081340-2023__2023-01-01_2023-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "081340",
+      "tipo": "exportadores",
+      "anio": 2024,
+      "estado": "ok",
+      "registros": 122,
+      "archivo": "un_comtrade__exportadores-081340-2024__2024-01-01_2024-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080711",
+      "tipo": "destinos_mexico",
+      "anio": 2019,
+      "estado": "ok",
+      "registros": 13,
+      "archivo": "un_comtrade__destinos-mexico-080711-2019__2019-01-01_2019-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080711",
+      "tipo": "destinos_mexico",
+      "anio": 2020,
+      "estado": "ok",
+      "registros": 11,
+      "archivo": "un_comtrade__destinos-mexico-080711-2020__2020-01-01_2020-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080711",
+      "tipo": "destinos_mexico",
+      "anio": 2021,
+      "estado": "ok",
+      "registros": 11,
+      "archivo": "un_comtrade__destinos-mexico-080711-2021__2021-01-01_2021-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080711",
+      "tipo": "destinos_mexico",
+      "anio": 2022,
+      "estado": "ok",
+      "registros": 12,
+      "archivo": "un_comtrade__destinos-mexico-080711-2022__2022-01-01_2022-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080711",
+      "tipo": "destinos_mexico",
+      "anio": 2023,
+      "estado": "ok",
+      "registros": 10,
+      "archivo": "un_comtrade__destinos-mexico-080711-2023__2023-01-01_2023-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080711",
+      "tipo": "destinos_mexico",
+      "anio": 2024,
+      "estado": "ok",
+      "registros": 10,
+      "archivo": "un_comtrade__destinos-mexico-080711-2024__2024-01-01_2024-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080711",
+      "tipo": "importadores_mundo",
+      "anio": 2019,
+      "estado": "ok",
+      "registros": 148,
+      "archivo": "un_comtrade__importadores-mundo-080711-2019__2019-01-01_2019-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080711",
+      "tipo": "importadores_mundo",
+      "anio": 2020,
+      "estado": "ok",
+      "registros": 143,
+      "archivo": "un_comtrade__importadores-mundo-080711-2020__2020-01-01_2020-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080711",
+      "tipo": "importadores_mundo",
+      "anio": 2021,
+      "estado": "ok",
+      "registros": 143,
+      "archivo": "un_comtrade__importadores-mundo-080711-2021__2021-01-01_2021-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080711",
+      "tipo": "importadores_mundo",
+      "anio": 2022,
+      "estado": "ok",
+      "registros": 139,
+      "archivo": "un_comtrade__importadores-mundo-080711-2022__2022-01-01_2022-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080711",
+      "tipo": "importadores_mundo",
+      "anio": 2023,
+      "estado": "ok",
+      "registros": 141,
+      "archivo": "un_comtrade__importadores-mundo-080711-2023__2023-01-01_2023-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080711",
+      "tipo": "importadores_mundo",
+      "anio": 2024,
+      "estado": "ok",
+      "registros": 123,
+      "archivo": "un_comtrade__importadores-mundo-080711-2024__2024-01-01_2024-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080711",
+      "tipo": "exportadores",
+      "anio": 2019,
+      "estado": "ok",
+      "registros": 118,
+      "archivo": "un_comtrade__exportadores-080711-2019__2019-01-01_2019-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080711",
+      "tipo": "exportadores",
+      "anio": 2020,
+      "estado": "ok",
+      "registros": 122,
+      "archivo": "un_comtrade__exportadores-080711-2020__2020-01-01_2020-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080711",
+      "tipo": "exportadores",
+      "anio": 2021,
+      "estado": "ok",
+      "registros": 121,
+      "archivo": "un_comtrade__exportadores-080711-2021__2021-01-01_2021-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080711",
+      "tipo": "exportadores",
+      "anio": 2022,
+      "estado": "ok",
+      "registros": 111,
+      "archivo": "un_comtrade__exportadores-080711-2022__2022-01-01_2022-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080711",
+      "tipo": "exportadores",
+      "anio": 2023,
+      "estado": "ok",
+      "registros": 117,
+      "archivo": "un_comtrade__exportadores-080711-2023__2023-01-01_2023-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "codigo_hs": "080711",
+      "tipo": "exportadores",
+      "anio": 2024,
+      "estado": "ok",
+      "registros": 108,
+      "archivo": "un_comtrade__exportadores-080711-2024__2024-01-01_2024-12-31__20261127T194238Z-556656.json",
+      "error": null,
+      "advertencias": []
+    }
+  ],
+  "archivos": [
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2020/01/un_comtrade__destinos-mexico-080450-2020__2020-01-01_2020-12-31__20261127T194238Z-556656.json",
+      "sha256": "28b2e887bee48fff1f309a380a1699afc6711410821aef00d60360b25429e32f",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2020&cmdCode=080450&maxRecords=500&flowCode=M&partnerCode=484",
+      "bytes": 44967
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2021/01/un_comtrade__destinos-mexico-080450-2021__2021-01-01_2021-12-31__20261127T194238Z-556656.json",
+      "sha256": "9ce77531a921d6c8c71beb9bd54b1d20e316f4247e81aacf6d7174d000c5e284",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2021&cmdCode=080450&maxRecords=500&flowCode=M&partnerCode=484",
+      "bytes": 47732
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2022/01/un_comtrade__destinos-mexico-080450-2022__2022-01-01_2022-12-31__20261127T194238Z-556656.json",
+      "sha256": "d16cbb20f14a34716386c44025626d4373b2d57cff29cca0ca391547aa71ba39",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2022&cmdCode=080450&maxRecords=500&flowCode=M&partnerCode=484",
+      "bytes": 44175
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2023/01/un_comtrade__destinos-mexico-080450-2023__2023-01-01_2023-12-31__20261127T194238Z-556656.json",
+      "sha256": "74024da0a7cf70f375e0c3bfa245d32732bca31536b879de55c95d61964160bc",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2023&cmdCode=080450&maxRecords=500&flowCode=M&partnerCode=484",
+      "bytes": 41543
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2024/01/un_comtrade__destinos-mexico-080450-2024__2024-01-01_2024-12-31__20261127T194238Z-556656.json",
+      "sha256": "166912fe705478bd89e4a5d7a7ab378ba22b6d4ba152b4a6ef6feedef385c633",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2024&cmdCode=080450&maxRecords=500&flowCode=M&partnerCode=484",
+      "bytes": 48679
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2019/01/un_comtrade__importadores-mundo-080450-2019__2019-01-01_2019-12-31__20261127T194238Z-556656.json",
+      "sha256": "d01a31f093994702b8fade87d8bf3d397f36e421ad88107fd6b6aa00316b71b4",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2019&cmdCode=080450&maxRecords=500&flowCode=M&partnerCode=0",
+      "bytes": 149215
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2020/01/un_comtrade__importadores-mundo-080450-2020__2020-01-01_2020-12-31__20261127T194238Z-556656.json",
+      "sha256": "d9323c38439367cc8fba0ccdf5897971a9c751966d38ada7cd98eefde9f15f54",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2020&cmdCode=080450&maxRecords=500&flowCode=M&partnerCode=0",
+      "bytes": 141124
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2021/01/un_comtrade__importadores-mundo-080450-2021__2021-01-01_2021-12-31__20261127T194238Z-556656.json",
+      "sha256": "2fad3588cb067a680a37cbd01e34349533e924ef35f83e19ee6adbac1bb9bc74",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2021&cmdCode=080450&maxRecords=500&flowCode=M&partnerCode=0",
+      "bytes": 143997
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2022/01/un_comtrade__importadores-mundo-080450-2022__2022-01-01_2022-12-31__20261127T194238Z-556656.json",
+      "sha256": "7fa1f4cfa8478eb6ac3e66b033101b573ca65363d72a34df78f869d9ac83def4",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2022&cmdCode=080450&maxRecords=500&flowCode=M&partnerCode=0",
+      "bytes": 142235
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2023/01/un_comtrade__importadores-mundo-080450-2023__2023-01-01_2023-12-31__20261127T194238Z-556656.json",
+      "sha256": "3bc90b6eacb6a091d997c6384fb7f90de0241ac5dc4aff3b2b99be965066932f",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2023&cmdCode=080450&maxRecords=500&flowCode=M&partnerCode=0",
+      "bytes": 140473
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2024/01/un_comtrade__importadores-mundo-080450-2024__2024-01-01_2024-12-31__20261127T194238Z-556656.json",
+      "sha256": "9c293d3c530951ed13f40bc310bc416e08382b55f0aedc2aa4ad54db4e485b15",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2024&cmdCode=080450&maxRecords=500&flowCode=M&partnerCode=0",
+      "bytes": 127019
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2019/01/un_comtrade__exportadores-080450-2019__2019-01-01_2019-12-31__20261127T194238Z-556656.json",
+      "sha256": "29673d9617312e1f7cb826655674731efcbf5115584a1e3aa05fa5e76a0501aa",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2019&cmdCode=080450&maxRecords=500&flowCode=X&partnerCode=0",
+      "bytes": 114708
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2020/01/un_comtrade__exportadores-080450-2020__2020-01-01_2020-12-31__20261127T194238Z-556656.json",
+      "sha256": "c7dd5127b1078771ea31836725c30797ace17e37472119ff529bae5fea34b929",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2020&cmdCode=080450&maxRecords=500&flowCode=X&partnerCode=0",
+      "bytes": 109321
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2021/01/un_comtrade__exportadores-080450-2021__2021-01-01_2021-12-31__20261127T194238Z-556656.json",
+      "sha256": "e8fb2837fbda9c8462c84340f190adc86b414907eed74338c4841a9a813f12eb",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2021&cmdCode=080450&maxRecords=500&flowCode=X&partnerCode=0",
+      "bytes": 114806
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2022/01/un_comtrade__exportadores-080450-2022__2022-01-01_2022-12-31__20261127T194238Z-556656.json",
+      "sha256": "481fb5135be6791fe3ea9a383b69d08c17f5cafefaf87946d161e0ec6d9b7a99",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2022&cmdCode=080450&maxRecords=500&flowCode=X&partnerCode=0",
+      "bytes": 113901
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2023/01/un_comtrade__exportadores-080450-2023__2023-01-01_2023-12-31__20261127T194238Z-556656.json",
+      "sha256": "643e1094e4340c2c5537526e7a4784affcd04ab65961dd2c05e8bd3c195d1b4e",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2023&cmdCode=080450&maxRecords=500&flowCode=X&partnerCode=0",
+      "bytes": 115758
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2019/01/un_comtrade__destinos-mexico-080550-2019__2019-01-01_2019-12-31__20261127T194238Z-556656.json",
+      "sha256": "8def52772a18d22579e60cbed68c44b5f6e74e3029df6b0659bca659a4f31c50",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2019&cmdCode=080550&maxRecords=500&flowCode=M&partnerCode=484",
+      "bytes": 50604
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2020/01/un_comtrade__destinos-mexico-080550-2020__2020-01-01_2020-12-31__20261127T194238Z-556656.json",
+      "sha256": "f36e4120e8fd1eb0dcec9f439048245e858e3d4b54ac56c09ffd3c792222accc",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2020&cmdCode=080550&maxRecords=500&flowCode=M&partnerCode=484",
+      "bytes": 53278
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2021/01/un_comtrade__destinos-mexico-080550-2021__2021-01-01_2021-12-31__20261127T194238Z-556656.json",
+      "sha256": "458cdba8767994c534c7729ca694bc380a1608f00c463ba290c0b85baa67b72e",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2021&cmdCode=080550&maxRecords=500&flowCode=M&partnerCode=484",
+      "bytes": 51438
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2022/01/un_comtrade__destinos-mexico-080550-2022__2022-01-01_2022-12-31__20261127T194238Z-556656.json",
+      "sha256": "4dcb2a050b014d2b02dae605bd5cabfb8f8048d13602dbe9eb2dda1ada6d6bca",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2022&cmdCode=080550&maxRecords=500&flowCode=M&partnerCode=484",
+      "bytes": 44303
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2023/01/un_comtrade__destinos-mexico-080550-2023__2023-01-01_2023-12-31__20261127T194238Z-556656.json",
+      "sha256": "dee4a36cb543e42ad4da160f98c84d510c3435d8fffaa98a12cabac314ebc993",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2023&cmdCode=080550&maxRecords=500&flowCode=M&partnerCode=484",
+      "bytes": 39801
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2024/01/un_comtrade__destinos-mexico-080550-2024__2024-01-01_2024-12-31__20261127T194238Z-556656.json",
+      "sha256": "1e555fd547fc98f1fc9545ca3046e869ac88e8a484fa5828bb70372da832d9ff",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2024&cmdCode=080550&maxRecords=500&flowCode=M&partnerCode=484",
+      "bytes": 45092
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2019/01/un_comtrade__importadores-mundo-080550-2019__2019-01-01_2019-12-31__20261127T194238Z-556656.json",
+      "sha256": "a5f491164160acd477ab7d10d4b5d442af7eee0c4cf163726f455fa201e4b1fc",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2019&cmdCode=080550&maxRecords=500&flowCode=M&partnerCode=0",
+      "bytes": 145961
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2020/01/un_comtrade__importadores-mundo-080550-2020__2020-01-01_2020-12-31__20261127T194238Z-556656.json",
+      "sha256": "cb0b591175910488c8c75fd5283b4faa7a798a019ed1f668ceff7ef798d1625f",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2020&cmdCode=080550&maxRecords=500&flowCode=M&partnerCode=0",
+      "bytes": 144232
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2021/01/un_comtrade__importadores-mundo-080550-2021__2021-01-01_2021-12-31__20261127T194238Z-556656.json",
+      "sha256": "7f9824a2f05a67497a7146c08c3665f423739af2df4651020902f8be7c363e1f",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2021&cmdCode=080550&maxRecords=500&flowCode=M&partnerCode=0",
+      "bytes": 145119
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2022/01/un_comtrade__importadores-mundo-080550-2022__2022-01-01_2022-12-31__20261127T194238Z-556656.json",
+      "sha256": "2396acfa13679c12e86073268c89cb173fc1b51c4f5d495ec82acbeb2a5479f8",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2022&cmdCode=080550&maxRecords=500&flowCode=M&partnerCode=0",
+      "bytes": 140682
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2023/01/un_comtrade__importadores-mundo-080550-2023__2023-01-01_2023-12-31__20261127T194238Z-556656.json",
+      "sha256": "b1c07396ca74836ad218882b282c0a8172150f3faf7490aa49de65f1c6a5a142",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2023&cmdCode=080550&maxRecords=500&flowCode=M&partnerCode=0",
+      "bytes": 144282
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2024/01/un_comtrade__importadores-mundo-080550-2024__2024-01-01_2024-12-31__20261127T194238Z-556656.json",
+      "sha256": "18f9caf6071bc7e02f38677d32d44f0fd4e8e4342bab3f8172547dfdf087de83",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2024&cmdCode=080550&maxRecords=500&flowCode=M&partnerCode=0",
+      "bytes": 130827
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2019/01/un_comtrade__exportadores-080550-2019__2019-01-01_2019-12-31__20261127T194238Z-556656.json",
+      "sha256": "8fd484464d31a4e11667d7ce88d6bb00ee9ac364cd96060d662cabb5e9a2d928",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2019&cmdCode=080550&maxRecords=500&flowCode=X&partnerCode=0",
+      "bytes": 112908
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2020/01/un_comtrade__exportadores-080550-2020__2020-01-01_2020-12-31__20261127T194238Z-556656.json",
+      "sha256": "e528c6b7104db5069af880c14a93cc4d0cd5a0b6d0b1065c6be0cf9dc350bdf4",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2020&cmdCode=080550&maxRecords=500&flowCode=X&partnerCode=0",
+      "bytes": 109423
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2021/01/un_comtrade__exportadores-080550-2021__2021-01-01_2021-12-31__20261127T194238Z-556656.json",
+      "sha256": "4f568d4fe2de410e6e8f047a818be56e0212fce858575850813bc4562a194aaa",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2021&cmdCode=080550&maxRecords=500&flowCode=X&partnerCode=0",
+      "bytes": 113890
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2022/01/un_comtrade__exportadores-080550-2022__2022-01-01_2022-12-31__20261127T194238Z-556656.json",
+      "sha256": "a595211bccf1943d92776c6ecc02be2067e4e02e2bad39da32855f108f0d76b6",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2022&cmdCode=080550&maxRecords=500&flowCode=X&partnerCode=0",
+      "bytes": 108482
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2023/01/un_comtrade__exportadores-080550-2023__2023-01-01_2023-12-31__20261127T194238Z-556656.json",
+      "sha256": "362092fe337e618bdeac02d92575d094aa83cb075e21e1c37652ecfeba9f3222",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2023&cmdCode=080550&maxRecords=500&flowCode=X&partnerCode=0",
+      "bytes": 111261
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2019/01/un_comtrade__destinos-mexico-080119-2019__2019-01-01_2019-12-31__20261127T194238Z-556656.json",
+      "sha256": "df005a4363580a83a72691fa199274ed1ce2116e4afc025ceb2545d01442c195",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2019&cmdCode=080119&maxRecords=500&flowCode=M&partnerCode=484",
+      "bytes": 8102
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2020/01/un_comtrade__destinos-mexico-080119-2020__2020-01-01_2020-12-31__20261127T194238Z-556656.json",
+      "sha256": "b93e2f73509e2ccf49d0039091624a61dc613c24d0f221cb47c31e8bb09331be",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2020&cmdCode=080119&maxRecords=500&flowCode=M&partnerCode=484",
+      "bytes": 8101
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2021/01/un_comtrade__destinos-mexico-080119-2021__2021-01-01_2021-12-31__20261127T194238Z-556656.json",
+      "sha256": "6910dede8bddbbb55fff4d629007e11290df4c5185bb73c22eb1f5a9e4216bf5",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2021&cmdCode=080119&maxRecords=500&flowCode=M&partnerCode=484",
+      "bytes": 5443
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2022/01/un_comtrade__destinos-mexico-080119-2022__2022-01-01_2022-12-31__20261127T194238Z-556656.json",
+      "sha256": "a219eac822134c64e12ff7d4cc19023dc2c92b27dd69eb957b84c79148a7c07f",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2022&cmdCode=080119&maxRecords=500&flowCode=M&partnerCode=484",
+      "bytes": 8108
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2023/01/un_comtrade__destinos-mexico-080119-2023__2023-01-01_2023-12-31__20261127T194238Z-556656.json",
+      "sha256": "70d79b65556211fe9a5085d391e903fff46e8d8a53a5e2f1f0aea403f7a543ed",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2023&cmdCode=080119&maxRecords=500&flowCode=M&partnerCode=484",
+      "bytes": 6322
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2024/01/un_comtrade__destinos-mexico-080119-2024__2024-01-01_2024-12-31__20261127T194238Z-556656.json",
+      "sha256": "17842edc844faff00345a369ddc903de5964d54f4e46288d5a7b5ecf1d6e7d52",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2024&cmdCode=080119&maxRecords=500&flowCode=M&partnerCode=484",
+      "bytes": 3651
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2019/01/un_comtrade__importadores-mundo-080119-2019__2019-01-01_2019-12-31__20261127T194238Z-556656.json",
+      "sha256": "f6392266386f1c812013963e03897ce59bea01ec7132c6f3ea7d17f98bc87e5f",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2019&cmdCode=080119&maxRecords=500&flowCode=M&partnerCode=0",
+      "bytes": 146908
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2020/01/un_comtrade__importadores-mundo-080119-2020__2020-01-01_2020-12-31__20261127T194238Z-556656.json",
+      "sha256": "1853645927612a9ecf4251d3e475d823d3ba9ab971e8bc9f5d8facb950650a77",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2020&cmdCode=080119&maxRecords=500&flowCode=M&partnerCode=0",
+      "bytes": 146815
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2021/01/un_comtrade__importadores-mundo-080119-2021__2021-01-01_2021-12-31__20261127T194238Z-556656.json",
+      "sha256": "c0b920945ad22ff73303d5f86477dba05aba464e0b0efe2bd6518905b2dc9f9e",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2021&cmdCode=080119&maxRecords=500&flowCode=M&partnerCode=0",
+      "bytes": 144205
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2022/01/un_comtrade__importadores-mundo-080119-2022__2022-01-01_2022-12-31__20261127T194238Z-556656.json",
+      "sha256": "34e781dee6098ac0cdcaa881d962cb3dcd9092c6db891d7f5301f2d1c76a34b2",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2022&cmdCode=080119&maxRecords=500&flowCode=M&partnerCode=0",
+      "bytes": 138014
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2023/01/un_comtrade__importadores-mundo-080119-2023__2023-01-01_2023-12-31__20261127T194238Z-556656.json",
+      "sha256": "09fcb59dd1e8094a517626603ac4a4810a7aa1c60ebcc0e3e47071776a666dea",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2023&cmdCode=080119&maxRecords=500&flowCode=M&partnerCode=0",
+      "bytes": 134263
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2024/01/un_comtrade__importadores-mundo-080119-2024__2024-01-01_2024-12-31__20261127T194238Z-556656.json",
+      "sha256": "f5ff849ace0876bb98dc3e5f52f7cc3ea59ebc9a322d7d6ec6e19194bdce9d66",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2024&cmdCode=080119&maxRecords=500&flowCode=M&partnerCode=0",
+      "bytes": 120072
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2019/01/un_comtrade__exportadores-080119-2019__2019-01-01_2019-12-31__20261127T194238Z-556656.json",
+      "sha256": "efa603acd924650018ec719bbc64a7cab31872c3312d88552e9365cad50c7086",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2019&cmdCode=080119&maxRecords=500&flowCode=X&partnerCode=0",
+      "bytes": 94384
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2020/01/un_comtrade__exportadores-080119-2020__2020-01-01_2020-12-31__20261127T194238Z-556656.json",
+      "sha256": "0d1e64bc5051acd6466f9f2abbccd7b425ba8c86f7b67bcd0ed3e5530aa5683d",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2020&cmdCode=080119&maxRecords=500&flowCode=X&partnerCode=0",
+      "bytes": 95310
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2021/01/un_comtrade__exportadores-080119-2021__2021-01-01_2021-12-31__20261127T194238Z-556656.json",
+      "sha256": "1cc5f250d678d543b856a22bf4f9c5ac557948479cce9f8f6dd9da8a54a370d7",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2021&cmdCode=080119&maxRecords=500&flowCode=X&partnerCode=0",
+      "bytes": 97129
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2022/01/un_comtrade__exportadores-080119-2022__2022-01-01_2022-12-31__20261127T194238Z-556656.json",
+      "sha256": "e1a1c3fc9630a9542d91c300aed7aca031f96e1c2fb5989972cc071873f250a4",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2022&cmdCode=080119&maxRecords=500&flowCode=X&partnerCode=0",
+      "bytes": 94483
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2023/01/un_comtrade__exportadores-080119-2023__2023-01-01_2023-12-31__20261127T194238Z-556656.json",
+      "sha256": "d676c7b813e1db6f867017cf96215863cbc128ec59a372bb75474433479f8c64",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2023&cmdCode=080119&maxRecords=500&flowCode=X&partnerCode=0",
+      "bytes": 93585
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2024/01/un_comtrade__exportadores-080119-2024__2024-01-01_2024-12-31__20261127T194238Z-556656.json",
+      "sha256": "afb689e6d45a2d5beed2e998d01e27390cfb0cda91d3a6f55d7a577bdd49614f",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2024&cmdCode=080119&maxRecords=500&flowCode=X&partnerCode=0",
+      "bytes": 87264
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2019/01/un_comtrade__destinos-mexico-080720-2019__2019-01-01_2019-12-31__20261127T194238Z-556656.json",
+      "sha256": "ac565cd2ea83c5b396392f23b80159da4cf8c6897ff46cc1013cb3a1be812dd3",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2019&cmdCode=080720&maxRecords=500&flowCode=M&partnerCode=484",
+      "bytes": 11730
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2020/01/un_comtrade__destinos-mexico-080720-2020__2020-01-01_2020-12-31__20261127T194238Z-556656.json",
+      "sha256": "fc503e6c385acca1e8eb2810d4c6120cf59099e8f67e9cef6884b6a11229c6fd",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2020&cmdCode=080720&maxRecords=500&flowCode=M&partnerCode=484",
+      "bytes": 16190
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2021/01/un_comtrade__destinos-mexico-080720-2021__2021-01-01_2021-12-31__20261127T194238Z-556656.json",
+      "sha256": "ae121029e9068caeceb6c3bee81a582dede91f8ebaf00d1d1c62f284649d7c1d",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2021&cmdCode=080720&maxRecords=500&flowCode=M&partnerCode=484",
+      "bytes": 17084
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2022/01/un_comtrade__destinos-mexico-080720-2022__2022-01-01_2022-12-31__20261127T194238Z-556656.json",
+      "sha256": "536303c5924ecee5d4d902ee132375cb0ae10f30da321940636d83c45bb31205",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2022&cmdCode=080720&maxRecords=500&flowCode=M&partnerCode=484",
+      "bytes": 14430
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2023/01/un_comtrade__destinos-mexico-080720-2023__2023-01-01_2023-12-31__20261127T194238Z-556656.json",
+      "sha256": "24607b2946c1102514afc6e47cf2185be221a4acdc955af852aa3b437d888deb",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2023&cmdCode=080720&maxRecords=500&flowCode=M&partnerCode=484",
+      "bytes": 12666
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2019/01/un_comtrade__importadores-mundo-080720-2019__2019-01-01_2019-12-31__20261127T194238Z-556656.json",
+      "sha256": "d7c196d5a2d8fee0711da1afde4927b97b627ac900f8f281d40a09ecd8f0ed36",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2019&cmdCode=080720&maxRecords=500&flowCode=M&partnerCode=0",
+      "bytes": 105364
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2020/01/un_comtrade__importadores-mundo-080720-2020__2020-01-01_2020-12-31__20261127T194238Z-556656.json",
+      "sha256": "7916bcb92c4df77571becebafd3249e5d697be22576ee916cfaf60ac0645a12b",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2020&cmdCode=080720&maxRecords=500&flowCode=M&partnerCode=0",
+      "bytes": 103642
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2021/01/un_comtrade__importadores-mundo-080720-2021__2021-01-01_2021-12-31__20261127T194238Z-556656.json",
+      "sha256": "33c3ddf64dc0ee3b1306d5dac582211b74075b9d49fe4f5343ec0839518a00bf",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2021&cmdCode=080720&maxRecords=500&flowCode=M&partnerCode=0",
+      "bytes": 104587
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2022/01/un_comtrade__importadores-mundo-080720-2022__2022-01-01_2022-12-31__20261127T194238Z-556656.json",
+      "sha256": "d79373f33be6c879493a985827081ab71d6a5f5894ba232f6bcc09306523e9e4",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2022&cmdCode=080720&maxRecords=500&flowCode=M&partnerCode=0",
+      "bytes": 105474
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2023/01/un_comtrade__importadores-mundo-080720-2023__2023-01-01_2023-12-31__20261127T194238Z-556656.json",
+      "sha256": "4d72beaab7b43693d718759606c09f874a241b126ad159cda2c5d4836d630f06",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2023&cmdCode=080720&maxRecords=500&flowCode=M&partnerCode=0",
+      "bytes": 104600
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2024/01/un_comtrade__importadores-mundo-080720-2024__2024-01-01_2024-12-31__20261127T194238Z-556656.json",
+      "sha256": "42f1fb062c907b04430227ed8bc0f6d03660891324a30d6d67eb45f4781cc471",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2024&cmdCode=080720&maxRecords=500&flowCode=M&partnerCode=0",
+      "bytes": 96451
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2019/01/un_comtrade__exportadores-080720-2019__2019-01-01_2019-12-31__20261127T194238Z-556656.json",
+      "sha256": "dc77ab9712d9450a5471fc093066a778f034ba751381cde8d48885606eee625d",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2019&cmdCode=080720&maxRecords=500&flowCode=X&partnerCode=0",
+      "bytes": 86228
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2020/01/un_comtrade__exportadores-080720-2020__2020-01-01_2020-12-31__20261127T194238Z-556656.json",
+      "sha256": "0b981c4523fa9d554d83e7c658a96aae9bddcaf82df7ccc0c05b77033db4d0e8",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2020&cmdCode=080720&maxRecords=500&flowCode=X&partnerCode=0",
+      "bytes": 89785
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2021/01/un_comtrade__exportadores-080720-2021__2021-01-01_2021-12-31__20261127T194238Z-556656.json",
+      "sha256": "47eb3f3671db3745a4e67d0048b58c828df8c3f77f12d596e9de94ccd259845a",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2021&cmdCode=080720&maxRecords=500&flowCode=X&partnerCode=0",
+      "bytes": 89022
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2022/01/un_comtrade__exportadores-080720-2022__2022-01-01_2022-12-31__20261127T194238Z-556656.json",
+      "sha256": "9fc261b748dbde28c5d25e9784b44d78b7a325096b81bfcae1d96f34fcf0ff87",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2022&cmdCode=080720&maxRecords=500&flowCode=X&partnerCode=0",
+      "bytes": 87198
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2023/01/un_comtrade__exportadores-080720-2023__2023-01-01_2023-12-31__20261127T194238Z-556656.json",
+      "sha256": "daeab6fb30b68c3bfe0e9a08cc10839354ece615958c8550f0c883c762676d41",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2023&cmdCode=080720&maxRecords=500&flowCode=X&partnerCode=0",
+      "bytes": 82849
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2024/01/un_comtrade__exportadores-080720-2024__2024-01-01_2024-12-31__20261127T194238Z-556656.json",
+      "sha256": "1867da4c3c2bb0417a690f84da862d29ce712a75d573ff8b827451cf4d41d5bb",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2024&cmdCode=080720&maxRecords=500&flowCode=X&partnerCode=0",
+      "bytes": 80108
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2019/01/un_comtrade__destinos-mexico-080390-2019__2019-01-01_2019-12-31__20261127T194238Z-556656.json",
+      "sha256": "ebd97721e6080cf1634ec35570d080896f88e0f974232e50bb2bc5b2b03ead2e",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2019&cmdCode=080390&maxRecords=500&flowCode=M&partnerCode=484",
+      "bytes": 29967
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2020/01/un_comtrade__destinos-mexico-080390-2020__2020-01-01_2020-12-31__20261127T194238Z-556656.json",
+      "sha256": "9ae8067a2fab5d77330abee377e1fdb067544e60165d7bc10ecf27664f1bace8",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2020&cmdCode=080390&maxRecords=500&flowCode=M&partnerCode=484",
+      "bytes": 34390
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2021/01/un_comtrade__destinos-mexico-080390-2021__2021-01-01_2021-12-31__20261127T194238Z-556656.json",
+      "sha256": "ac68080c93a540fe233c0d25027b8098b72c1a3d2063c71859f5d7b2a2a08ecf",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2021&cmdCode=080390&maxRecords=500&flowCode=M&partnerCode=484",
+      "bytes": 28924
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2022/01/un_comtrade__destinos-mexico-080390-2022__2022-01-01_2022-12-31__20261127T194238Z-556656.json",
+      "sha256": "7afcd6d811b2ca706ac58e85a3ea7673b2f987048a6712872a5de4072d3cd56b",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2022&cmdCode=080390&maxRecords=500&flowCode=M&partnerCode=484",
+      "bytes": 27134
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2023/01/un_comtrade__destinos-mexico-080390-2023__2023-01-01_2023-12-31__20261127T194238Z-556656.json",
+      "sha256": "d1adb0d119b9516a727c450aedad9611475bfc932a7942a9136d653f17a81727",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2023&cmdCode=080390&maxRecords=500&flowCode=M&partnerCode=484",
+      "bytes": 20847
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2024/01/un_comtrade__destinos-mexico-080390-2024__2024-01-01_2024-12-31__20261127T194238Z-556656.json",
+      "sha256": "a7effdb80cc6c0311956d241b140cf4cf0dc9b8be528a6c05e04b92dae45dedd",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2024&cmdCode=080390&maxRecords=500&flowCode=M&partnerCode=484",
+      "bytes": 18958
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2019/01/un_comtrade__importadores-mundo-080390-2019__2019-01-01_2019-12-31__20261127T194238Z-556656.json",
+      "sha256": "ce09fb9095ebc6350fe3629b0080d635b1d164e8f8b1580b0b19d697b4eb930c",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2019&cmdCode=080390&maxRecords=500&flowCode=M&partnerCode=0",
+      "bytes": 134350
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2020/01/un_comtrade__importadores-mundo-080390-2020__2020-01-01_2020-12-31__20261127T194238Z-556656.json",
+      "sha256": "1b02f9fe80168340f6a444a9bededaf5bf04d4bd36bf561eff8bb7d62a73dbd6",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2020&cmdCode=080390&maxRecords=500&flowCode=M&partnerCode=0",
+      "bytes": 130738
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2021/01/un_comtrade__importadores-mundo-080390-2021__2021-01-01_2021-12-31__20261127T194238Z-556656.json",
+      "sha256": "3b4b16ce150dc6a9245927ea971b7e57d9a25f5dd0beab0d250ce738d6b29c63",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2021&cmdCode=080390&maxRecords=500&flowCode=M&partnerCode=0",
+      "bytes": 130794
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2022/01/un_comtrade__importadores-mundo-080390-2022__2022-01-01_2022-12-31__20261127T194238Z-556656.json",
+      "sha256": "38f7acd9ede54f0b3855d1ad03797d7bc1d3f7d4d55c65aae10f0bf38b396dc8",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2022&cmdCode=080390&maxRecords=500&flowCode=M&partnerCode=0",
+      "bytes": 127184
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2023/01/un_comtrade__importadores-mundo-080390-2023__2023-01-01_2023-12-31__20261127T194238Z-556656.json",
+      "sha256": "3027184cc18f57977bf85e8b445188cefccea518c9a4c9d168d962cc10b60fca",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2023&cmdCode=080390&maxRecords=500&flowCode=M&partnerCode=0",
+      "bytes": 131670
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2024/01/un_comtrade__importadores-mundo-080390-2024__2024-01-01_2024-12-31__20261127T194238Z-556656.json",
+      "sha256": "67004b727291e1b8ad2a77cff54c663e267aec77c04e5145b1033193445ba33c",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2024&cmdCode=080390&maxRecords=500&flowCode=M&partnerCode=0",
+      "bytes": 116528
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2019/01/un_comtrade__exportadores-080390-2019__2019-01-01_2019-12-31__20261127T194238Z-556656.json",
+      "sha256": "fff85a732f9ee4158edbaaf59dfe9263263a9f51d27059371c2e80079b62f3b3",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2019&cmdCode=080390&maxRecords=500&flowCode=X&partnerCode=0",
+      "bytes": 112372
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2020/01/un_comtrade__exportadores-080390-2020__2020-01-01_2020-12-31__20261127T194238Z-556656.json",
+      "sha256": "d0ee7ec247ca372f85f8f37285a616b97015a8c1a98df5628899609ab330354d",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2020&cmdCode=080390&maxRecords=500&flowCode=X&partnerCode=0",
+      "bytes": 105220
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2021/01/un_comtrade__exportadores-080390-2021__2021-01-01_2021-12-31__20261127T194238Z-556656.json",
+      "sha256": "34811df2122aea2ee540ce49d10f1a4bab661e48a11bdfb8cce4fb89c6e359fd",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2021&cmdCode=080390&maxRecords=500&flowCode=X&partnerCode=0",
+      "bytes": 108776
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2022/01/un_comtrade__exportadores-080390-2022__2022-01-01_2022-12-31__20261127T194238Z-556656.json",
+      "sha256": "ff8023be19785d18436e04b4a5843604e97d04016055d56c1905219aa519c26a",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2022&cmdCode=080390&maxRecords=500&flowCode=X&partnerCode=0",
+      "bytes": 107031
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2023/01/un_comtrade__exportadores-080390-2023__2023-01-01_2023-12-31__20261127T194238Z-556656.json",
+      "sha256": "97f76855e3f12884e700424363192815a4b73b74083b080482c989b5fe4a55c1",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2023&cmdCode=080390&maxRecords=500&flowCode=X&partnerCode=0",
+      "bytes": 109819
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2024/01/un_comtrade__exportadores-080390-2024__2024-01-01_2024-12-31__20261127T194238Z-556656.json",
+      "sha256": "bcddf1416c9f66f82d8f07d7f1cf157322ef9899ac6780b54ac9dfb6de8e9f99",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2024&cmdCode=080390&maxRecords=500&flowCode=X&partnerCode=0",
+      "bytes": 100767
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2019/01/un_comtrade__destinos-mexico-081340-2019__2019-01-01_2019-12-31__20261127T194238Z-556656.json",
+      "sha256": "aa6e2de7919657ac837fc2091952685be39a7653f9315bfd363d7fc17f7e2d4e",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2019&cmdCode=081340&maxRecords=500&flowCode=M&partnerCode=484",
+      "bytes": 16979
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2020/01/un_comtrade__destinos-mexico-081340-2020__2020-01-01_2020-12-31__20261127T194238Z-556656.json",
+      "sha256": "ce685f1a2f878023daaa7bbe79f5bbaf07a43fcaa05c757fb82a31541302abec",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2020&cmdCode=081340&maxRecords=500&flowCode=M&partnerCode=484",
+      "bytes": 20550
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2021/01/un_comtrade__destinos-mexico-081340-2021__2021-01-01_2021-12-31__20261127T194238Z-556656.json",
+      "sha256": "b4500853c345087b9263208ac83e0f039f5b10886bfd854e6d96eb3b0b0cb702",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2021&cmdCode=081340&maxRecords=500&flowCode=M&partnerCode=484",
+      "bytes": 24988
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2022/01/un_comtrade__destinos-mexico-081340-2022__2022-01-01_2022-12-31__20261127T194238Z-556656.json",
+      "sha256": "1261765e113810aeecdce0b11646ae095ac821e387284b2998258ec60a571e7c",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2022&cmdCode=081340&maxRecords=500&flowCode=M&partnerCode=484",
+      "bytes": 26803
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2023/01/un_comtrade__destinos-mexico-081340-2023__2023-01-01_2023-12-31__20261127T194238Z-556656.json",
+      "sha256": "79ca0d46a3013fcbec40f16ab053f4203d2848152c791f1b411f19c999d1eb35",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2023&cmdCode=081340&maxRecords=500&flowCode=M&partnerCode=484",
+      "bytes": 24138
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2024/01/un_comtrade__destinos-mexico-081340-2024__2024-01-01_2024-12-31__20261127T194238Z-556656.json",
+      "sha256": "83f59d4597957c7ce82742c28b045debb57b3455d8ca1ba687238a2a75a96aba",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2024&cmdCode=081340&maxRecords=500&flowCode=M&partnerCode=484",
+      "bytes": 19686
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2019/01/un_comtrade__importadores-mundo-081340-2019__2019-01-01_2019-12-31__20261127T194238Z-556656.json",
+      "sha256": "99c81a1dea5a0cb1c2ace12114d73cc84080896115595b63066ae1697c815cd0",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2019&cmdCode=081340&maxRecords=500&flowCode=M&partnerCode=0",
+      "bytes": 152740
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2020/01/un_comtrade__importadores-mundo-081340-2020__2020-01-01_2020-12-31__20261127T194238Z-556656.json",
+      "sha256": "f240b71e0b799d4dca7f94710b632d5fcbde0ff7cc6984be99fc993bd27217e8",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2020&cmdCode=081340&maxRecords=500&flowCode=M&partnerCode=0",
+      "bytes": 149979
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2021/01/un_comtrade__importadores-mundo-081340-2021__2021-01-01_2021-12-31__20261127T194238Z-556656.json",
+      "sha256": "bcdf45ec865f1988ec84d921cf1cbea3287ff4813b83ff4f2b71019215ef3ca1",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2021&cmdCode=081340&maxRecords=500&flowCode=M&partnerCode=0",
+      "bytes": 151906
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2022/01/un_comtrade__importadores-mundo-081340-2022__2022-01-01_2022-12-31__20261127T194238Z-556656.json",
+      "sha256": "b0deb71f1195fc861aa8ffe0066cc39415aaddef4c42de4ddc24e6a213fe3200",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2022&cmdCode=081340&maxRecords=500&flowCode=M&partnerCode=0",
+      "bytes": 151034
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2023/01/un_comtrade__importadores-mundo-081340-2023__2023-01-01_2023-12-31__20261127T194238Z-556656.json",
+      "sha256": "1c34ac648505e84001a28ff7779a36ab9ee816da7b56c5b5b4504426bc014e77",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2023&cmdCode=081340&maxRecords=500&flowCode=M&partnerCode=0",
+      "bytes": 150119
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2024/01/un_comtrade__importadores-mundo-081340-2024__2024-01-01_2024-12-31__20261127T194238Z-556656.json",
+      "sha256": "8565b41c4e26e98f0dd236a398c7e1a8ab870270d00725e07e6c5ac69be48ea9",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2024&cmdCode=081340&maxRecords=500&flowCode=M&partnerCode=0",
+      "bytes": 133098
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2019/01/un_comtrade__exportadores-081340-2019__2019-01-01_2019-12-31__20261127T194238Z-556656.json",
+      "sha256": "c6cb0113c9767b422e2f7c408154164c53b792f894448dee9b32e0b7110713e5",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2019&cmdCode=081340&maxRecords=500&flowCode=X&partnerCode=0",
+      "bytes": 115407
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2020/01/un_comtrade__exportadores-081340-2020__2020-01-01_2020-12-31__20261127T194238Z-556656.json",
+      "sha256": "72167d00542033b06237829abd19b2d303c0ab987f75b87928d3e1540d622d79",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2020&cmdCode=081340&maxRecords=500&flowCode=X&partnerCode=0",
+      "bytes": 111840
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2021/01/un_comtrade__exportadores-081340-2021__2021-01-01_2021-12-31__20261127T194238Z-556656.json",
+      "sha256": "9e8e3bf2bbf5aa7ce5e3bc55825fd0effd3f68eac43fc388e8e468e7dd7df6fa",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2021&cmdCode=081340&maxRecords=500&flowCode=X&partnerCode=0",
+      "bytes": 120713
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2022/01/un_comtrade__exportadores-081340-2022__2022-01-01_2022-12-31__20261127T194238Z-556656.json",
+      "sha256": "c231124cc9a92ef8f547abfa181eb68358b377b0898e880dc97b3665a13714ff",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2022&cmdCode=081340&maxRecords=500&flowCode=X&partnerCode=0",
+      "bytes": 124319
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2023/01/un_comtrade__exportadores-081340-2023__2023-01-01_2023-12-31__20261127T194238Z-556656.json",
+      "sha256": "07192e5fea43b55b4cd01a86d5fca8358b85907043f3aef0fba85eae50c3658b",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2023&cmdCode=081340&maxRecords=500&flowCode=X&partnerCode=0",
+      "bytes": 115548
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2024/01/un_comtrade__exportadores-081340-2024__2024-01-01_2024-12-31__20261127T194238Z-556656.json",
+      "sha256": "f04307cd3a32e398c45e8aaf1f0bc67223ef31e1fbe0d49b5da5a270df8d9a4b",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2024&cmdCode=081340&maxRecords=500&flowCode=X&partnerCode=0",
+      "bytes": 110100
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2019/01/un_comtrade__destinos-mexico-080711-2019__2019-01-01_2019-12-31__20261127T194238Z-556656.json",
+      "sha256": "b8f476e1c0c4bcbca6ca6f5bb27c2b8288711dd75bf5edd51595786fee8a3083",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2019&cmdCode=080711&maxRecords=500&flowCode=M&partnerCode=484",
+      "bytes": 11742
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2020/01/un_comtrade__destinos-mexico-080711-2020__2020-01-01_2020-12-31__20261127T194238Z-556656.json",
+      "sha256": "fec4f500062cc24016b075cb72c8e45216aed332a92236884028628b9e17fae3",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2020&cmdCode=080711&maxRecords=500&flowCode=M&partnerCode=484",
+      "bytes": 9963
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2021/01/un_comtrade__destinos-mexico-080711-2021__2021-01-01_2021-12-31__20261127T194238Z-556656.json",
+      "sha256": "a4bb0d1597f958eafa8f483f93b7a2c5b847c6b9529b36a43197accbed50ed62",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2021&cmdCode=080711&maxRecords=500&flowCode=M&partnerCode=484",
+      "bytes": 9962
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2022/01/un_comtrade__destinos-mexico-080711-2022__2022-01-01_2022-12-31__20261127T194238Z-556656.json",
+      "sha256": "28b3c66edd831c426b80d6a64b1dfd2392defea02e938e407ee53893fa380dbb",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2022&cmdCode=080711&maxRecords=500&flowCode=M&partnerCode=484",
+      "bytes": 10900
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2023/01/un_comtrade__destinos-mexico-080711-2023__2023-01-01_2023-12-31__20261127T194238Z-556656.json",
+      "sha256": "7589ab5d3347647b7aa63d459ff92530ba94256482c64444a61fbcf467e33fd5",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2023&cmdCode=080711&maxRecords=500&flowCode=M&partnerCode=484",
+      "bytes": 9076
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2024/01/un_comtrade__destinos-mexico-080711-2024__2024-01-01_2024-12-31__20261127T194238Z-556656.json",
+      "sha256": "2e1796ee2445d6faee70321c2961500ccf690b674a339798540d89e6e21fd302",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2024&cmdCode=080711&maxRecords=500&flowCode=M&partnerCode=484",
+      "bytes": 9068
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2019/01/un_comtrade__importadores-mundo-080711-2019__2019-01-01_2019-12-31__20261127T194238Z-556656.json",
+      "sha256": "8736042162b4f1cfa2c85a773420f7bbeff91a4866d5cec793a3476ade747169",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2019&cmdCode=080711&maxRecords=500&flowCode=M&partnerCode=0",
+      "bytes": 134030
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2020/01/un_comtrade__importadores-mundo-080711-2020__2020-01-01_2020-12-31__20261127T194238Z-556656.json",
+      "sha256": "4699034a095a85bc8a053a96d43fad417f4622688074597733a22f27d431158c",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2020&cmdCode=080711&maxRecords=500&flowCode=M&partnerCode=0",
+      "bytes": 129481
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2021/01/un_comtrade__importadores-mundo-080711-2021__2021-01-01_2021-12-31__20261127T194238Z-556656.json",
+      "sha256": "932b5c8ee170bd5382815509ef409094a3574e8526d4cc75470695d57ac9b155",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2021&cmdCode=080711&maxRecords=500&flowCode=M&partnerCode=0",
+      "bytes": 129548
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2022/01/un_comtrade__importadores-mundo-080711-2022__2022-01-01_2022-12-31__20261127T194238Z-556656.json",
+      "sha256": "694ee90002e93b90598ba4c7110cd991d1c2ab80a746970132ef1d12006dce26",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2022&cmdCode=080711&maxRecords=500&flowCode=M&partnerCode=0",
+      "bytes": 126019
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2023/01/un_comtrade__importadores-mundo-080711-2023__2023-01-01_2023-12-31__20261127T194238Z-556656.json",
+      "sha256": "33661bd7315e3e1dedd2a2cd2ed311ce665fb8db66d7b034162b113a12211b7d",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2023&cmdCode=080711&maxRecords=500&flowCode=M&partnerCode=0",
+      "bytes": 127870
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2024/01/un_comtrade__importadores-mundo-080711-2024__2024-01-01_2024-12-31__20261127T194238Z-556656.json",
+      "sha256": "0e2fe06d1048f551eb54d33b10e3695d0a68de8e1aa92fe62b02347d8853ae06",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2024&cmdCode=080711&maxRecords=500&flowCode=M&partnerCode=0",
+      "bytes": 111675
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2019/01/un_comtrade__exportadores-080711-2019__2019-01-01_2019-12-31__20261127T194238Z-556656.json",
+      "sha256": "bba0433ba3b43ead78c995afc8317f003b9ec40728f6c716ca4e39f797a1c3af",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2019&cmdCode=080711&maxRecords=500&flowCode=X&partnerCode=0",
+      "bytes": 106712
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2020/01/un_comtrade__exportadores-080711-2020__2020-01-01_2020-12-31__20261127T194238Z-556656.json",
+      "sha256": "cee4be40b64aafa9c338b1483ecea40db3a33344b6607a84afecb59ae1a69d6e",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2020&cmdCode=080711&maxRecords=500&flowCode=X&partnerCode=0",
+      "bytes": 110299
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2021/01/un_comtrade__exportadores-080711-2021__2021-01-01_2021-12-31__20261127T194238Z-556656.json",
+      "sha256": "dd852d44bc2e8db3971258f589eda1864772d7ca6084160de161fdcd9095a4ae",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2021&cmdCode=080711&maxRecords=500&flowCode=X&partnerCode=0",
+      "bytes": 109461
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2022/01/un_comtrade__exportadores-080711-2022__2022-01-01_2022-12-31__20261127T194238Z-556656.json",
+      "sha256": "ad76236208d0f32886a4c2c7be370d0b17a6f994caa7c5dce79c6f0436c2db68",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2022&cmdCode=080711&maxRecords=500&flowCode=X&partnerCode=0",
+      "bytes": 100606
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2023/01/un_comtrade__exportadores-080711-2023__2023-01-01_2023-12-31__20261127T194238Z-556656.json",
+      "sha256": "5dc9d2b3734e57b9391070affad9c6408657f9e45491f1671c3c38fc964308af",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2023&cmdCode=080711&maxRecords=500&flowCode=X&partnerCode=0",
+      "bytes": 106037
+    },
+    {
+      "ruta": "/home/sebas/Escritorio/tdl-equipo-agrocolima/data/bronce/un_comtrade/2024/01/un_comtrade__exportadores-080711-2024__2024-01-01_2024-12-31__20261127T194238Z-556656.json",
+      "sha256": "b9b75a27b9e7419d88684e42a2f608270294777fab586b497d634e5b25c6a211",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2024&cmdCode=080711&maxRecords=500&flowCode=X&partnerCode=0",
+      "bytes": 97898
+    }
+  ],
+  "errores": [],
+  "parametros": {
+    "anios": [
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024
+    ]
+  },
+  "esquema": "tdl-manifest/1",
+  "archivos_generados": 122
+}

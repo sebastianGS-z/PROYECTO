@@ -1,0 +1,39 @@
+{
+  "esquema": "tdl-bronce-meta/1",
+  "contenido_original": {
+    "archivo": "sniim__papaya-maradol-primera-jalisco-mercado-de-abasto-de-guadalajara__2021-06-01_2021-06-30__20261127T173045Z-dd78ea.html",
+    "descripcion": "Bytes tal como los entregó la fuente; no se modifican."
+  },
+  "metadatos_captura": {
+    "fuente": "sniim",
+    "fuente_url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F06%2F2021&fechaFinal=30%2F06%2F2021&ProductoId=609&OrigenId=-1&Origen=Todos&DestinoId=140&Destino=Jalisco%3A+Mercado+de+Abasto+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+    "fecha_captura": "2026-11-27T19:36:28Z",
+    "identificador_ejecucion": "20261127T173045Z-dd78ea",
+    "formato_original": "html",
+    "sha256": "96f88a4e47fd263f7d779158c2a503c487a5dcb22a394575a9579a8b6c5e9966",
+    "bytes": 50242,
+    "http_status": 200,
+    "registros_detectados": 66,
+    "estado_captura": "ok",
+    "advertencias": [],
+    "colision_nombre": false,
+    "etiqueta": "Papaya Maradol - Primera__Jalisco: Mercado de Abasto de Guadalajara",
+    "producto": "Papaya Maradol - Primera",
+    "producto_id": "609",
+    "mercado": "Jalisco: Mercado de Abasto de Guadalajara",
+    "mercado_id": "140",
+    "fecha_ref_inicio": "2021-06-01",
+    "fecha_ref_fin": "2021-06-30",
+    "parametros": {
+      "fechaInicio": "01/06/2021",
+      "fechaFinal": "30/06/2021",
+      "ProductoId": "609",
+      "OrigenId": "-1",
+      "Origen": "Todos",
+      "DestinoId": "140",
+      "Destino": "Jalisco: Mercado de Abasto de Guadalajara",
+      "PreciosPorId": "1",
+      "RegistrosPorPagina": "500"
+    }
+  }
+}

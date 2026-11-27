@@ -1,0 +1,26 @@
+{
+  "esquema": "tdl-bronce-meta/1",
+  "contenido_original": {
+    "archivo": "tipo_cambio__usd-mxn-2024__2024-01-01_2024-12-31__20261127T194041Z-52570d.json",
+    "descripcion": "Bytes tal como los entregó la fuente; no se modifican."
+  },
+  "metadatos_captura": {
+    "fuente": "tipo_cambio",
+    "fuente_url": "https://api.frankfurter.dev/v1/2024-01-01..2024-12-31?base=USD&symbols=MXN",
+    "fecha_captura": "2026-11-27T19:41:08Z",
+    "identificador_ejecucion": "20261127T194041Z-52570d",
+    "formato_original": "json",
+    "sha256": "91f3fa02be84e7a76dcf73769df0dd67ccc96a86feee8233b323c606ab42840a",
+    "bytes": 7453,
+    "http_status": 200,
+    "registros_detectados": 257,
+    "estado_captura": "ok",
+    "advertencias": [],
+    "colision_nombre": false,
+    "etiqueta": "usd-mxn-2024",
+    "fecha_ref_inicio": "2024-01-01",
+    "fecha_ref_fin": "2024-12-31",
+    "periodo": 2024,
+    "nota": "Tipos de referencia diarios del Banco Central Europeo publicados por Frankfurter."
+  }
+}

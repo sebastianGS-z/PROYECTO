@@ -27,14 +27,17 @@ import numpy as np
 import pandas as pd
 
 from config.settings import BASE_DIR
-from src.inteligencia.comercial import MESES_LARGOS, REFERENCIA, mensual
+from src.inteligencia.catalogo import FRUTAS
+from src.inteligencia.comercial import MESES_LARGOS, REFERENCIA, mensual, mensual_referencia, nivel_de_pct
 from src.tdl_e4.observatorio import MARKET_NAMES, _market_id
 
-PRODUCTOS = {
-    "limon": {"nombre": "Limón", "articulo": "el limón", "sniim": "Limón", "siap": "Limón", "comtrade": "limon"},
-    "papaya": {"nombre": "Papaya", "articulo": "la papaya", "sniim": "Papaya", "siap": "Papaya", "comtrade": None},
-    "platano": {"nombre": "Plátano", "articulo": "el plátano", "sniim": "Plátano", "siap": "Plátano", "comtrade": None},
-}
+PRODUCTOS = {k: {"nombre": v["nombre"], "articulo": v["articulo"], "sniim": v["sniim"], "siap": v["siap"], "hs": v["hs"],
+                 "hs_nota": v["hs_nota"], "claves": v["claves"]} for k, v in FRUTAS.items()}
+
+
+def _de(df: pd.DataFrame, c: str) -> pd.DataFrame:
+    """Filas de una fruta del catálogo (una fruta puede tener varias claves de cultivo, p. ej. mango)."""
+    return df[df["cultivo"].isin(PRODUCTOS[c]["claves"])] if not df.empty and "cultivo" in df else df
 
 NO_RESPONDE = [
     ("¿Qué plaga o enfermedad viene y cómo la controlo?", "El observatorio no captura datos fitosanitarios (SENASICA). Consulte a su técnico o junta local de sanidad vegetal."),
@@ -67,8 +70,11 @@ def _json(base: Path, rel: str) -> dict[str, Any]:
 def cargar(base: Path = BASE_DIR, corte: pd.Period | None = None) -> dict[str, Any]:
     gold = _leer(base, "data/oro/panel_mensual.csv")
     corte = corte or (pd.Period(pd.Timestamp.today(), freq="M") - 1)
+    m = mensual(gold, corte) if not gold.empty else pd.DataFrame()
+    if not m.empty:
+        m = pd.concat([m, mensual_referencia(gold, corte, set(m["cultivo"].unique()))], ignore_index=True)
     return {
-        "gold": gold, "corte": corte, "m": mensual(gold, corte) if not gold.empty else pd.DataFrame(),
+        "gold": gold, "corte": corte, "m": m,
         "pron": _leer(base, "data/publico/pronosticos_colima.csv"), "val": _leer(base, "data/publico/validaciones_pronostico_colima.csv"),
         "senales": _leer(base, "data/publico/senales_mercado.csv"), "cal": _leer(base, "data/publico/calendario_venta.csv"),
         "plazas": _leer(base, "data/publico/plazas_colima.csv"), "margen": _leer(base, "data/publico/margen_productor.csv"),
@@ -76,14 +82,31 @@ def cargar(base: Path = BASE_DIR, corte: pd.Period | None = None) -> dict[str, A
         "comercio": _leer(base, "data/oro/comercio_fruticola_mundial.csv"),
         "fiab": _json(base, "calidad/reportes/fiabilidad.json"), "iso": _json(base, "calidad/reportes/iso25012.json"),
         "e1": _json(base, "laboratorio/resultados/e1/resultados.json"),
+        "export": _json(base, "data/publico/exportacion_resumen.json"),
     }
 
 
-def _r(pregunta: str, respuesta: str, confianza: str, motivo: str, accion: str, fuente: str, actualizado: str = "—",
+def _nota_base(df: pd.DataFrame) -> str:
+    """Aclaración cuando el dato es referencia de mercado y no fruta de origen Colima."""
+    if "base" in df and len(df) and str(df["base"].iloc[0]) == "todos los orígenes":
+        return " (Referencia de mercado: no hay cotizaciones de esta fruta con origen Colima; se usa la fruta de todos los orígenes en la central.)"
+    return ""
+
+
+def _evidencia(n: float, objetivo: float, techo: float = 95) -> int:
+    """Índice para datos observados o descriptivos: techo × (datos disponibles / datos deseables)."""
+    return int(round(techo * min(1.0, n / objetivo)))
+
+
+def _r(pregunta: str, respuesta: str, confianza: str | float, motivo: str, accion: str, fuente: str, actualizado: str = "—",
        veredicto: str | None = None) -> dict[str, Any]:
     """``veredicto``: la conclusión en una frase, para tarjetas y resúmenes (por defecto, la primera oración)."""
     primera = respuesta.split(". ")[0].rstrip(".") + "."
-    return {"pregunta": pregunta, "respuesta": respuesta, "confianza": confianza, "motivo": motivo,
+    pct = None
+    if isinstance(confianza, (int, float)) and not isinstance(confianza, bool):
+        pct = int(max(0, min(100, round(confianza))))
+        confianza = nivel_de_pct(pct)
+    return {"pregunta": pregunta, "respuesta": respuesta, "confianza": confianza, "confianza_pct": pct, "motivo": motivo,
             "accion": accion, "fuente": fuente, "actualizado": actualizado, "veredicto": veredicto or primera}
 
 
@@ -91,23 +114,24 @@ def _pronostico(d: dict[str, Any], c: str) -> pd.DataFrame:
     p = d["pron"]
     if p.empty:
         return p
-    p = p[p["cultivo"].eq(c)]
+    p = p[p["cultivo"].isin(PRODUCTOS[c]["claves"])]
     if "tipo_serie" in p and p["tipo_serie"].eq("origen_colima").any():
         p = p[p["tipo_serie"].eq("origen_colima")]
     return p
 
 
-def _confianza_pronostico(r: pd.Series) -> tuple[str, str]:
-    mape, cob = float(r.get("mape_backtest_pct", math.nan)), float(r.get("cobertura_80_holdout", math.nan))
-    if mape < 10 and cob >= 0.8:
-        nivel = "alta"
-    elif mape < 20:
-        nivel = "media"
-    else:
-        nivel = "baja"
-    if r.get("tipo_serie") == "referencia_mercado" and nivel == "alta":
-        nivel = "media"
-    return nivel, f"error típico {mape:.0f} % en 6 meses no vistos; el rango de 80 % acertó en {cob * 100:.0f} % de esos meses"
+def _confianza_pronostico(r: pd.Series) -> tuple[int, str]:
+    """Índice 0–100: 50 % precisión (1 − MAPE/40), 30 % acierto del rango de 80 % en meses no vistos,
+    20 % historia disponible (meses / 120). Una serie de referencia de otro origen se descuenta 15 %."""
+    mape = float(r.get("mape_backtest_pct", math.nan))
+    cob = float(r.get("cobertura_80_holdout", math.nan))
+    meses = float(r.get("meses_entrenamiento", 36) or 36)
+    mape, cob = (40.0 if math.isnan(mape) else mape), (0.0 if math.isnan(cob) else cob)
+    pct = 100 * (0.5 * max(0.0, 1 - mape / 40) + 0.3 * cob + 0.2 * min(1.0, meses / 120))
+    if r.get("tipo_serie") == "referencia_mercado":
+        pct *= 0.85
+    return int(round(pct)), (f"error típico {mape:.0f} % en 6 meses no vistos; el rango de 80 % acertó en {cob * 100:.0f} % de esos meses; "
+                             f"{int(meses)} meses de historia")
 
 
 # --------------------------------------------------------------------------------------------------
@@ -151,7 +175,7 @@ def r_vender_o_esperar(d: dict[str, Any], c: str) -> dict[str, Any]:
     cambio = (float(r["precio_frecuente_mxn_kg"]) / ultimo - 1) * 100
     lectura = ("es más probable que suba" if prob >= 0.65 else "es más probable que baje" if prob <= 0.35 else "subir o bajar es casi igual de probable")
     conf, motivo = _confianza_pronostico(r)
-    conf = "baja" if len(sel) < 12 else conf
+    conf = min(conf, 45) if len(sel) < 12 else conf
     return _r(q, f"Último precio observado ({sel['mes_validacion'].iloc[-1]}) en {r['nombre_mercado']}: {_f(ultimo)} MXN/kg. Para {r['fecha_pronostico']} el pronóstico es "
                  f"{_f(r['precio_frecuente_mxn_kg'])} ({cambio:+.0f} %). Aplicando los {len(sel)} errores reales del modelo, en **{prob * 100:.0f} %** de los escenarios el precio "
                  f"queda por encima del actual: {lectura}.",
@@ -165,14 +189,15 @@ def r_vender_o_esperar(d: dict[str, Any], c: str) -> dict[str, Any]:
 def r_caro_o_barato(d: dict[str, Any], c: str) -> dict[str, Any]:
     q = "¿El precio de hoy está caro o barato comparado con otros años?"
     s = d["senales"]
-    s = s[s["cultivo"].eq(c)] if not s.empty else s
+    s = s[s["cultivo"].isin(PRODUCTOS[c]["claves"])] if not s.empty else s
     if s.empty:
         return _r(q, "No hay al menos 12 meses de historia de origen Colima para comparar.", "no aplica", "historia insuficiente", "—", "SNIIM")
     r = s.sort_values("meses_historia", ascending=False).iloc[0]
     n = int(r["meses_historia"])
-    conf = "alta" if n >= 36 else "media" if n >= 24 else "baja"
+    conf = _evidencia(n, 60) * (0.9 if str(r.get("base")) == "todos los orígenes" else 1)
+    nota = _nota_base(s.loc[[r.name]])
     return _r(q, f"En {r['nombre_mercado']} el último precio ({r['ultimo_mes']}) fue {_f(r['ultimo_precio_mxn_kg'])} MXN/kg: más alto que el **{_f(r['percentil_historico'], 0)} %** "
-                 f"de los últimos {n} meses. Lectura: {r['lectura']}.",
+                 f"de los últimos {n} meses. Lectura: {r['lectura']}.{nota}",
               conf, f"comparación directa con {n} meses observados", "Por encima del percentil 75 es buen momento para vender; por debajo del 25, evalúe esperar o almacenar.",
               "SNIIM · historia mensual de origen Colima", str(r["ultimo_mes"]))
 
@@ -180,16 +205,16 @@ def r_caro_o_barato(d: dict[str, Any], c: str) -> dict[str, Any]:
 def r_mejor_mes(d: dict[str, Any], c: str) -> dict[str, Any]:
     q = "¿En qué meses suele pagarse mejor?"
     cal = d["cal"]
-    cal = cal[cal["cultivo"].eq(c) & cal["mercado"].astype(str).eq(REFERENCIA)] if not cal.empty else cal
+    cal = cal[cal["cultivo"].isin(PRODUCTOS[c]["claves"]) & cal["mercado"].astype(str).eq(REFERENCIA)] if not cal.empty else cal
     if cal.empty:
         return _r(q, "Se necesitan al menos 24 meses en Guadalajara para estimar el patrón por mes; aún no se reúnen.", "no aplica", "historia insuficiente", "—", "SNIIM")
     orden = cal.sort_values("indice_estacional", ascending=False)
     altos = ", ".join(f"{MESES_LARGOS[int(x['mes']) - 1]} ({(x['indice_estacional'] - 1) * 100:+.0f} %)" for _, x in orden.head(3).iterrows())
     bajos = ", ".join(f"{MESES_LARGOS[int(x['mes']) - 1]} ({(x['indice_estacional'] - 1) * 100:+.0f} %)" for _, x in orden.tail(3).iloc[::-1].iterrows())
-    conf = str(cal["confianza_patron"].iloc[0]) if "confianza_patron" in cal else "baja"
+    conf = int(cal["confianza_pct"].iloc[0]) if "confianza_pct" in cal and pd.notna(cal["confianza_pct"].iloc[0]) else 30
     motivo = str(cal["motivo_confianza"].iloc[0]) if "motivo_confianza" in cal else "pocos años"
-    texto = f"En Guadalajara, frente a su tendencia, los meses que más pagaron en promedio fueron {altos}; los que menos, {bajos}."
-    if conf == "baja":
+    texto = f"En Guadalajara, frente a su tendencia, los meses que más pagaron en promedio fueron {altos}; los que menos, {bajos}.{_nota_base(cal)}"
+    if nivel_de_pct(conf) == "baja":
         texto += " **Pero con 3 años la diferencia entre meses no se distingue estadísticamente del azar**: no es un patrón comprobado."
     return _r(q, texto, conf, f"prueba de Kruskal-Wallis entre meses: {motivo}",
               "Úselo como pista para planear, no para decidir sola la fecha de corte; combine con el pronóstico del próximo mes.",
@@ -199,7 +224,7 @@ def r_mejor_mes(d: dict[str, Any], c: str) -> dict[str, Any]:
 def r_que_plaza(d: dict[str, Any], c: str) -> dict[str, Any]:
     q = "¿A qué central de abasto me conviene mandar mi fruta?"
     pl = d["plazas"]
-    pl = pl[pl["cultivo"].eq(c) & pl["evidencia"].eq("suficiente")] if not pl.empty else pl
+    pl = pl[pl["cultivo"].isin(PRODUCTOS[c]["claves"]) & pl["evidencia"].eq("suficiente")] if not pl.empty else pl
     if pl.empty:
         return _r(q, "Todavía no hay al menos 3 meses en que dos centrales coticen el mismo producto de origen Colima. La captura diaria del catálogo nacional acumula esa historia.",
                   "no aplica", "sin meses pareados", "Mientras tanto compare precios del día por central (pregunta 6).", "SNIIM")
@@ -225,14 +250,16 @@ def r_que_plaza(d: dict[str, Any], c: str) -> dict[str, Any]:
     if not dudosas.empty:
         partes.append(f"En {len(dudosas)} comparaciones la diferencia no se distingue del azar ({'; '.join(etiqueta(x) for _, x in dudosas.head(4).iterrows())}).")
     if not mas.empty:
-        conf, motivo = str(mas.iloc[0]["confianza"]), str(mas.iloc[0]["motivo_confianza"])
+        conf = int(mas.iloc[0]["confianza_pct"]) if "confianza_pct" in mas else 50
+        motivo = str(mas.iloc[0]["motivo_confianza"])
         accion = (f"Pida a su transportista el costo por kilo a {mas.iloc[0]['nombre_mercado'].split(' · ')[0]} y réstele el costo a {ref.split(' · ')[0]}: si la diferencia es menor que "
                   "el \"flete extra máximo\", esa central le deja más. Sume mermas por más días de viaje y confirme comprador antes de enviar.")
     elif not menos.empty:
-        conf, motivo = "alta", f"{len(menos)} centrales pagan menos con diferencia comprobada (Wilcoxon / prueba de signos)"
+        conf = int(menos["confianza_pct"].min()) if "confianza_pct" in menos else 75
+        motivo = f"{len(menos)} centrales pagan menos con diferencia comprobada (Wilcoxon / prueba de signos)"
         accion = f"Mantenga {ref.split(' · ')[0]} como destino principal; otra central solo conviene con un comprador que pague por arriba de lo publicado."
     else:
-        conf, motivo = "baja", "ninguna diferencia es estadísticamente distinguible del azar"
+        conf, motivo = 30, "ninguna diferencia es estadísticamente distinguible del azar"
         accion = "Decida por costo de flete y por comprador confirmado; los precios publicados no separan a las centrales."
     if not mas.empty:
         top = mas.iloc[0]
@@ -249,7 +276,7 @@ def _margen_cultivo(d: dict[str, Any], c: str) -> pd.DataFrame:
     mg = d["margen"]
     if mg.empty:
         return mg
-    mg = mg[mg["cultivo"].eq(c) & mg["meses_mayorista"].ge(6)]  # un año con pocos meses cotizados sesga el promedio
+    mg = mg[mg["cultivo"].isin(PRODUCTOS[c]["claves"]) & mg["meses_mayorista"].ge(6)]  # un año con pocos meses cotizados sesga el promedio
     ref = mg[mg["mercado"].astype(str).eq(REFERENCIA)]
     if not ref.empty:
         return ref.sort_values("anio")
@@ -266,7 +293,7 @@ def r_cuanto_me_queda(d: dict[str, Any], c: str) -> dict[str, Any]:
     return _r(q, f"En {int(r['anio'])} el productor de Colima recibió en promedio **{_f(r['precio_productor_mxn_kg'])} MXN/kg** (SIAP) y {r['nombre_mercado']} cotizó el producto de "
                  f"origen Colima en {_f(r['precio_mayorista_mxn_kg'])} MXN/kg: al productor le llegó el **{_f(r['participacion_productor_pct'], 0)} %**. Los otros "
                  f"{_f(r['diferencia_mxn_kg'])} MXN/kg cubren empaque, flete, mermas, comisiones e intermediación.",
-              "media" if meses >= 6 else "baja", f"promedios anuales oficiales; {meses} meses de cotización mayorista; no distingue calidades",
+              _evidencia(meses, 12, 85), f"promedios anuales oficiales; {meses} meses de cotización mayorista; no distingue calidades",
               "Use este porcentaje para revisar si una oferta en huerta está en línea con el mercado (calculadora de arriba).",
               "SIAP (precio medio rural) · SNIIM", str(int(r["anio"])))
 
@@ -286,27 +313,28 @@ def r_precio_hoy_otras(d: dict[str, Any], c: str) -> dict[str, Any]:
     top = "; ".join(f"{m.split(':')[0]} {_f(v)}" for m, v in g.head(4).items())
     return _r(q, f"Cotizaciones del {fecha} ({'producto de origen Colima' if not col.empty else 'todos los orígenes'}; MXN/kg, mediana por central): más altas en {top}; "
                  f"la más baja, {g.index[-1].split(':')[0]} {_f(g.iloc[-1])}. Cotizó en {len(g)} centrales.",
-              "alta" if len(g) >= 3 else "media", "dato oficial observado, pero de un solo día",
+              90 if len(g) >= 3 else 70, "dato oficial observado, pero de un solo día",
               "Sirve para saber dónde está el precio hoy; para decidir destino use la comparación de varios meses (pregunta 5).", "SNIIM · catálogo nacional", fecha)
 
 
 def r_riesgo(d: dict[str, Any], c: str) -> dict[str, Any]:
     q = "¿Qué tanto puede bajar el precio de un mes a otro?"
     m = d["m"]
-    s = m[m["cultivo"].eq(c)] if not m.empty else m
+    s = m[m["cultivo"].isin(PRODUCTOS[c]["claves"])] if not m.empty else m
     if s.empty:
         return _r(q, "No hay serie de origen Colima en ninguna central para medirlo.", "no aplica", "sin serie", "—", "SNIIM")
     plaza = REFERENCIA if s["mercado"].eq(REFERENCIA).any() else s.groupby("mercado")["mes"].nunique().idxmax()
     s = s[s["mercado"].eq(plaza)]
+    nota = _nota_base(s)
     serie = s.groupby("mes")["precio_frecuente_kg"].mean().sort_index()
     cambios = serie.pct_change().dropna() * 100
     if len(cambios) < 6:
-        return _r(q, "Hay muy pocos meses para medir variaciones.", "baja", f"{len(cambios)} cambios mensuales", "—", "SNIIM")
+        return _r(q, f"Hay muy pocos meses ({len(cambios)}) para medir variaciones; se necesitan al menos 6.", "no aplica", f"{len(cambios)} cambios mensuales", "—", "SNIIM")
     peor = cambios.idxmin()
     n = len(cambios)
     return _r(q, f"En {MARKET_NAMES.get(plaza, plaza)} el precio cambió en promedio **{_f(cambios.abs().mean(), 0)} %** de un mes al siguiente. La peor caída fue de {_f(cambios.min(), 0)} % ({peor}); "
-                 f"en {_f((cambios < -15).mean() * 100, 0)} % de los meses cayó más de 15 % y en {_f((cambios > 15).mean() * 100, 0)} % subió más de 15 %.",
-              "alta" if n >= 24 else "media", f"{n} cambios mensuales observados",
+                 f"en {_f((cambios < -15).mean() * 100, 0)} % de los meses cayó más de 15 % y en {_f((cambios > 15).mean() * 100, 0)} % subió más de 15 %.{nota}",
+              _evidencia(n, 60), f"{n} cambios mensuales observados (índice: meses / 60)",
               "No comprometa toda la cosecha a un solo precio o fecha: escalone ventas o acuerde parte del volumen a precio fijo.", "SNIIM · variación mensual", str(serie.index[-1]))
 
 
@@ -315,7 +343,7 @@ def r_competencia(d: dict[str, Any], c: str) -> dict[str, Any]:
     g = d["gold"]
     if g.empty:
         return _r(q, "Sin datos.", "no aplica", "sin datos", "—", "SNIIM")
-    g = g[g["cultivo"].eq(c) & g["mercado"].map(_market_id).eq(REFERENCIA)].copy()
+    g = g[g["cultivo"].isin(PRODUCTOS[c]["claves"]) & g["mercado"].map(_market_id).eq(REFERENCIA)].copy()
     if g.empty:
         return _r(q, "No hay cotizaciones de este producto en Guadalajara.", "no aplica", "sin datos", "—", "SNIIM")
     g["fecha_mes"] = pd.to_datetime(g["fecha_mes"])
@@ -323,7 +351,7 @@ def r_competencia(d: dict[str, Any], c: str) -> dict[str, Any]:
     part = (g.groupby("origen")["n_observaciones_precio"].sum() / g["n_observaciones_precio"].sum() * 100).sort_values(ascending=False)
     txt = ", ".join(f"{o} {v:.0f} %" for o, v in part.head(5).items())
     return _r(q, f"En los últimos 12 meses las cotizaciones de {PRODUCTOS[c]['nombre'].lower()} en Guadalajara se repartieron así por estado de origen: {txt}.",
-              "media", "mide presencia en cotizaciones publicadas, no toneladas vendidas",
+              65, "mide presencia en cotizaciones publicadas, no toneladas vendidas",
               "Si otro estado domina, su fruta compite por precio: diferénciese por calidad o por calendario.", "SNIIM · origen reportado", str(g["fecha_mes"].max().date()))
 
 
@@ -338,7 +366,7 @@ def r_mi_municipio(d: dict[str, Any], c: str) -> dict[str, Any]:
     anio = int(s["Anio"].max())
     s = s[s["Anio"].eq(anio)].sort_values("volumen_produccion", ascending=False)
     txt = "; ".join(f"{x['Nommunicipio']}: {x['volumen_produccion']:,.0f} t a {x['precio_medio_rural_mxn_unidad'] / 1000:.2f} MXN/kg" for _, x in s.head(4).iterrows())
-    return _r(q, f"Cierre agrícola {anio}: {txt}. Total Colima: {s['volumen_produccion'].sum():,.0f} t.", "alta", "estadística oficial anual de SADER-SIAP",
+    return _r(q, f"Cierre agrícola {anio}: {txt}. Total Colima: {s['volumen_produccion'].sum():,.0f} t.", 95, "estadística oficial anual de SADER-SIAP",
               "Compare su rendimiento y precio con el promedio de su municipio; el mapa por municipio está en la vista de cliente.", "SIAP · cierre de la producción agrícola", str(anio))
 
 
@@ -358,22 +386,35 @@ def r_historia_productor(d: dict[str, Any], c: str) -> dict[str, Any]:
     vol = (g["volumen_produccion"].iloc[-1] / g["volumen_produccion"].iloc[0] - 1) * 100
     return _r(q, f"Precio medio rural en Colima (MXN/kg, SIAP): {serie}. De {ini} a {fin} cambió **{cambio:+.0f} %** ({anual:+.1f} % por año en promedio); "
                  f"el año más alto fue {maxi} ({precio.max():.2f}) y el más bajo {mini} ({precio.min():.2f}). La producción del estado cambió {vol:+.0f} % en el mismo periodo.",
-              "alta", f"estadística oficial de {len(precio)} años (cierres agrícolas SIAP), ponderada por volumen de todos los municipios",
+              _evidencia(len(precio), 10), f"estadística oficial de {len(precio)} años (cierres agrícolas SIAP), ponderada por volumen de todos los municipios",
               "Compare su precio de venta de cada año con esta serie; para comparar contra la inflación use el INPC de INEGI.", "SIAP · cierres 2016 en adelante", str(fin))
 
 
 def r_exportar(d: dict[str, Any], c: str) -> dict[str, Any]:
-    q = "¿Hay mercado para exportar?"
-    grupo, co = PRODUCTOS[c]["comtrade"], d["comercio"]
-    if not grupo or co.empty:
-        return _r(q, "El observatorio todavía no integra datos de comercio exterior para este producto.", "no aplica", "sin datos", "—", "UN Comtrade")
-    x = co[co["grupo_fruta"].eq(grupo) & co["tipo_consulta"].eq("destinos_mexico")].sort_values("valor_comercio_usd", ascending=False)
-    if x.empty:
-        return _r(q, "Sin registros de países que importen este grupo desde México.", "no aplica", "sin datos", "—", "UN Comtrade")
-    txt = "; ".join(f"{r['pais_reportante']} (USD {r['valor_comercio_usd'] / 1e6:,.1f} millones, {r['valor_unitario_aduanal_usd_kg']:.2f} USD/kg)" for _, r in x.head(4).iterrows())
-    return _r(q, f"En {int(x['anio'].max())} los países que más reportaron importar limones y limas de México fueron: {txt}.", "media",
-              "dato oficial, pero agrupa limones y limas de todo México y el valor es aduanal",
-              "Exportar exige certificación, empaque y un comprador confirmado; empiece por un empacador exportador de la zona.", "UN Comtrade (HS 080550)", str(int(x["anio"].max())))
+    q = "¿Podría exportar? ¿A qué países y cuánto pagan?"
+    e = d.get("export", {}).get("frutas", {}).get(c)
+    if not e or not e.get("disponible"):
+        nota = (e or {}).get("nota") or PRODUCTOS[c]["hs_nota"] or "Sin datos de comercio exterior."
+        return _r(q, f"No hay datos de exportación para {PRODUCTOS[c]['articulo']}: {nota}", "no aplica", "sin datos de UN Comtrade", "—", "UN Comtrade")
+    dest = "; ".join(f"{x['pais']} (USD {x['valor_usd'] / 1e6:,.1f} millones, {_f(x['mxn_kg'])} MXN/kg"
+                     + (f", {x['crecimiento_pct']:+.0f} % desde {e['anio_base_crecimiento']}" if x.get("crecimiento_pct") is not None else "") + ")"
+                     for x in e["destinos"][:4])
+    texto = (f"En {e['anio']} México exportó USD {e['exportaciones_mexico_usd'] / 1e6:,.1f} millones a {e['paises_destino']} países "
+             f"(código HS {e['hs']}). Principales compradores: {dest}.")
+    if e.get("prima_exportacion_pct") is not None:
+        texto += (f" El valor promedio de exportación fue **{_f(e['valor_unitario_exportacion_mxn_kg'])} MXN/kg** frente a {_f(e['precio_mayorista_nacional_mxn_kg'])} "
+                  f"MXN/kg en las centrales nacionales ({e['base_precio_nacional']}, últimos 12 meses): **{e['prima_exportacion_pct']:+.0f} %**.")
+    if e.get("oportunidades"):
+        texto += " Mercados grandes donde México vende poco: " + "; ".join(
+            f"{o['pais']} (importa USD {o['importa_del_mundo_usd'] / 1e6:,.0f} millones; México tiene {o['participacion_mexico_pct']:.1f} %)" for o in e["oportunidades"][:3]) + "."
+    if e.get("hs_nota"):
+        texto += f" Nota: {e['hs_nota']}."
+    pct = 70 if not e.get("hs_nota") else 55
+    return _r(q, texto, pct, "dato oficial de aduanas; valor unitario aduanal (no precio al productor)" + ("; el código HS agrupa varias frutas" if e.get("hs_nota") else ""),
+              "Exportar exige certificación fitosanitaria, empaque, logística en frío y un comprador confirmado; empiece con un empacador exportador de la zona. "
+              "Vea el detalle por país en la página de mercados extranjeros.", "UN Comtrade · tipo de cambio BCE", str(e["anio"]),
+              veredicto=(f"Exportación {e['prima_exportacion_pct']:+.0f} % frente al mercado nacional; principal destino: {e['destinos'][0]['pais']}."
+                         if e.get("prima_exportacion_pct") is not None and e["destinos"] else None))
 
 
 def r_clima(d: dict[str, Any], c: str) -> dict[str, Any]:
@@ -386,7 +427,7 @@ def r_clima(d: dict[str, Any], c: str) -> dict[str, Any]:
              f"{_f(cc['corr_max'])} con {abs(int(cc['rezago_max']))} meses de desfase ({cc['n']} meses de datos). ")
     texto += ("Es estadísticamente significativa." if sig else
               "**No es estadísticamente significativa**: con una estación y 3 años no se puede demostrar que el clima mueva el precio; por eso el pronóstico no lo usa.")
-    return _r(q, texto, "media" if cc["n"] >= 24 else "baja", f"correlación cruzada con banda de significancia ±{_f(cc.get('banda_95'), 2)}",
+    return _r(q, texto, _evidencia(cc["n"], 60, 80), f"correlación cruzada con banda de significancia ±{_f(cc.get('banda_95'), 2)}",
               "No base decisiones de precio en el clima de la costa; las alertas climáticas para su huerta deben venir del SMN.", "NOAA · laboratorio E1")
 
 
@@ -397,7 +438,7 @@ def r_confianza(d: dict[str, Any], c: str) -> dict[str, Any]:
               f"Vienen de fuentes oficiales (SNIIM de la Secretaría de Economía y SIAP de Agricultura), se descargan solos cada día y cada cifra se puede rastrear al archivo original "
               f"con su huella SHA-256. La captura funcionó el {_f((v.get('disponibilidad') or 0) * 100, 0)} % de los últimos {v.get('dias', 14)} días y el "
               f"{_f((comp or 0) * 100, 0)} % de los datos obligatorios está completo. Cada respuesta de esta página declara su nivel de confianza.",
-              "alta", "métricas medidas automáticamente (ISO/IEC 25012)", "Si una respuesta dice confianza baja, úsela como pista y no como base de una decisión grande.",
+              int(round(50 * (v.get("disponibilidad") or 0) + 50 * (comp or 0))), "índice = 50 % disponibilidad de la captura + 50 % completitud ISO/IEC 25012", "Si una respuesta dice confianza baja, úsela como pista y no como base de una decisión grande.",
               "Métricas de calidad OAIC", str(v.get("hasta", "—")))
 
 
@@ -418,7 +459,7 @@ def referencias_calculadora(d: dict[str, Any]) -> dict[str, dict[str, Any]]:
         part = float(mg.iloc[-1]["participacion_productor_pct"]) / 100 if not mg.empty else None
         plaza = str(mg.iloc[-1]["mercado"]) if not mg.empty else REFERENCIA
         s = d["senales"]
-        s = s[s["cultivo"].eq(c) & s["mercado"].astype(str).eq(plaza)] if not s.empty else s
+        s = s[s["cultivo"].isin(PRODUCTOS[c]["claves"]) & s["mercado"].astype(str).eq(plaza)] if not s.empty else s
         mayorista = float(s.iloc[0]["ultimo_precio_mxn_kg"]) if not s.empty else None
         out[c] = {"plaza_referencia": MARKET_NAMES.get(plaza, plaza), "rural_anual": rural, "participacion": part, "mayorista_ultimo": mayorista,
                   "rural_estimado_hoy": round(mayorista * part, 2) if mayorista and part else None}
@@ -437,7 +478,7 @@ def html_preguntas(resp: dict[str, list[dict[str, Any]]], calc: dict[str, Any], 
         items = []
         for j, r in enumerate(lista, 1):
             items.append(f'<details {"open" if j <= 3 else ""}><summary><span class="n">{j}</span>{html.escape(r["pregunta"])}'
-                         f'<span class="conf {r["confianza"].replace(" ", "-")}">Confianza {html.escape(r["confianza"])}</span></summary>'
+                         f'<span class="conf {r["confianza"].replace(" ", "-")}">{("Confianza " + str(r["confianza_pct"]) + " %") if r.get("confianza_pct") is not None else "Sin datos suficientes"}</span></summary>'
                          f'<p>{_md_a_html(r["respuesta"])}</p>'
                          f'<p class="accion"><b>Qué hacer:</b> {html.escape(r["accion"])}</p>'
                          f'<p class="meta">Por qué esta confianza: {html.escape(r["motivo"])} · Fuente: {html.escape(r["fuente"])} · Datos a: {html.escape(str(r["actualizado"]))}</p></details>')
@@ -463,7 +504,7 @@ summary{{font-weight:700;cursor:pointer;padding:10px 0;display:flex;gap:10px;ali
 <h1>Preguntas que se hace un productor de Colima</h1><div>Respuestas calculadas con datos oficiales · último mes cerrado {html.escape(corte)} · se actualiza cada día</div></div></header>
 <main>
 <div class="tabs" role="group" aria-label="Producto">{botones}</div>
-<p class="leyenda"><b>Confianza alta</b>: dato oficial observado o resultado estadísticamente significativo con evidencia amplia. <b>Media</b>: útil pero con un límite conocido. <b>Baja</b>: pista, no base para decidir.</p>
+<p class="leyenda"><b>Índice de confianza (0–100 %)</b>. Pronósticos: 50 % precisión en meses no vistos, 30 % acierto del rango, 20 % años de historia. Comparaciones: 60 % evidencia contra el azar (prueba estadística), 40 % cantidad de datos; si no es significativa al 5 %, no pasa de 60 %. Datos oficiales: según cobertura. ≥ 75 % alta, 50–74 % media, &lt; 50 % baja. Es un índice, no la probabilidad de acertar.</p>
 <div class="calc"><label for="oferta">¿Me están ofreciendo un buen precio en la huerta?</label><br>
 <span>Precio que le ofrecen:</span><input id="oferta" type="number" min="0" step="0.1" inputmode="decimal" placeholder="MXN/kg"> MXN/kg
 <div id="veredicto" aria-live="polite">Escriba el precio por kilo que le ofrecen.</div>
@@ -482,6 +523,7 @@ const ref=r.rural_estimado_hoy??r.rural_anual,dif=(v-ref)/ref*100;
 let t=dif>=10?"Está por ENCIMA de lo habitual":dif<=-10?"Está por DEBAJO de lo habitual: vale la pena negociar o comparar con otro comprador":"Está dentro de lo habitual";
 o.innerHTML=`<b>${{t}}</b> (${{dif>=0?'+':''}}${{dif.toFixed(0)}} % frente a ${{fmt(ref)}} MXN/kg). Referencias: precio medio rural del último año ${{fmt(r.rural_anual)}} MXN/kg; mayorista actual en ${{r.plaza_referencia}} ${{fmt(r.mayorista_ultimo)}} MXN/kg, del que normalmente llega al productor ${{r.participacion?(r.participacion*100).toFixed(0):'—'}} %.`;}}
 document.getElementById('oferta').addEventListener('input',veredicto);
+const desdeHash=location.hash.slice(1);if(REF[desdeHash]){{actual=desdeHash;document.querySelectorAll('.tabs button').forEach(x=>x.setAttribute('aria-pressed',x.dataset.p===actual));document.querySelectorAll('section.prod').forEach(s=>s.hidden=s.dataset.p!==actual);}}
 document.querySelectorAll('.tabs button').forEach(b=>b.addEventListener('click',()=>{{actual=b.dataset.p;
 document.querySelectorAll('.tabs button').forEach(x=>x.setAttribute('aria-pressed',x===b));
 document.querySelectorAll('section.prod').forEach(s=>s.hidden=s.dataset.p!==actual);veredicto();}}));

@@ -23,7 +23,8 @@ import geopandas as gpd
 import pandas as pd
 
 from config.settings import BASE_DIR
-from src.inteligencia.comercial import NOMBRE_CULTIVO, TECOMAN, _haversine
+from src.inteligencia.catalogo import FRUTAS, fruta_de
+from src.inteligencia.comercial import TECOMAN, _haversine
 
 CULTIVOS_MAPA = 14  # cultivos con más volumen que se ofrecen en el selector
 PRIORITARIOS = ["Limón", "Papaya", "Plátano", "Mango", "Coco fruta", "Sandía", "Tamarindo", "Guayaba", "Aguacate", "Guanábana"]
@@ -56,6 +57,34 @@ def produccion(base: Path) -> dict[str, Any]:
             "fuente_bronce": sorted(s["archivo_bronce"].unique().tolist())}
 
 
+def exportacion(base: Path) -> dict[str, Any]:
+    """Por fruta: importaciones desde México por país (último año) y oportunidades, para el mapa mundial."""
+    res_p, des_p = base / "data/publico/exportacion_resumen.json", base / "data/publico/exportacion_destinos.csv"
+    if not res_p.is_file() or not des_p.is_file():
+        return {}
+    res = json.loads(res_p.read_text(encoding="utf-8"))["frutas"]
+    des = pd.read_csv(des_p)
+    out = {}
+    for fruta, r in res.items():
+        if not r.get("disponible"):
+            out[fruta] = {"nombre": r["nombre"], "disponible": False, "nota": r.get("nota", "")}
+            continue
+        a = des[des["codigo_hs"].astype(str).str.zfill(6).eq(str(r["hs"])) & des["anio"].eq(r["anio"])]
+        paises = {}
+        for _, x in a.iterrows():
+            paises[str(int(x["iso_numerico"])).zfill(3)] = {
+                "pais": x["pais"], "desde_mexico_usd": round(float(x["valor_usd"])) if pd.notna(x["valor_usd"]) else 0,
+                "toneladas": round(float(x["kg"]) / 1000) if pd.notna(x["kg"]) else 0,
+                "mxn_kg": round(float(x["mxn_kg_desde_mexico"]), 2) if pd.notna(x["mxn_kg_desde_mexico"]) else None,
+                "mundo_usd": round(float(x["mundo_usd"])) if pd.notna(x["mundo_usd"]) else None,
+                "participacion_mexico_pct": round(float(x["participacion_mexico_pct"]), 1) if pd.notna(x["participacion_mexico_pct"]) else None}
+        out[fruta] = {"nombre": r["nombre"], "disponible": True, "anio": r["anio"], "hs": r["hs"], "hs_nota": r.get("hs_nota", ""),
+                      "prima_exportacion_pct": r.get("prima_exportacion_pct"), "valor_unitario_exportacion_mxn_kg": r.get("valor_unitario_exportacion_mxn_kg"),
+                      "precio_mayorista_nacional_mxn_kg": r.get("precio_mayorista_nacional_mxn_kg"), "destinos": r["destinos"],
+                      "oportunidades": r["oportunidades"], "paises": paises}
+    return out
+
+
 def centrales(base: Path) -> dict[str, Any]:
     g = json.loads((base / "data/publico/mapa_mercados_sniim.geojson").read_text(encoding="utf-8"))
     puntos = [f for f in g["features"] if f["geometry"]["type"] == "Point"]
@@ -64,10 +93,12 @@ def centrales(base: Path) -> dict[str, Any]:
     if not plazas.empty:
         for _, r in plazas.iterrows():
             comparaciones.setdefault(str(int(r["mercado"])), []).append({
-                "cultivo": r["cultivo"], "producto": NOMBRE_CULTIVO.get(r["cultivo"], r["cultivo"]), "variante": r["variante"],
+                "cultivo": r["cultivo"], "producto": FRUTAS.get(fruta_de(r["cultivo"]), {}).get("nombre", r["cultivo"]), "variante": r["variante"],
                 "referencia": r.get("plaza_referencia"), "diferencia_mxn_kg": r["diferencia_media_mxn_kg"], "meses": int(r["meses_pareados"]),
                 "pct_mayor": r["pct_meses_plaza_mayor"], "flete_equilibrio_mxn_kg": r["flete_equilibrio_mxn_kg"],
-                "confianza": r.get("confianza", "baja"), "precio_plaza": r["precio_plaza_mxn_kg"]})
+                "confianza": r.get("confianza", "baja"), "confianza_pct": int(r["confianza_pct"]) if "confianza_pct" in r and pd.notna(r["confianza_pct"]) else None,
+                "precio_plaza": r["precio_plaza_mxn_kg"], "precio_referencia": r.get("precio_referencia_mxn_kg"),
+                "desde": r.get("desde"), "hasta": r.get("hasta")})
     feats = []
     for f in puntos:
         p = f["properties"]
@@ -100,15 +131,17 @@ table{width:100%;border-collapse:collapse;font-size:12.5px;margin-top:8px}td,th{
 .muted{color:var(--muted);font-size:12px}
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .base{filter:invert(1) hue-rotate(180deg) brightness(.85) contrast(.9)}}
 .leaflet-popup-content{font:13px/1.45 Inter,system-ui,sans-serif}.leaflet-popup-content h4{margin:0 0 4px;font-size:14px}
+.explica{background:#fff7e8;border:1px solid #ecd6a6;border-left:5px solid #c08a32;border-radius:10px;padding:9px 11px;margin:10px 0;color:#4d3b10;font-size:13px}
 .pill{display:inline-block;border-radius:999px;padding:1px 8px;font-size:11px;font-weight:700}.alta{background:#dcefd3;color:#1f5a2c}.media{background:#f6ecd3;color:#7a5a12}.baja{background:#f4dcd5;color:#8a2f1d}
 @media(max-width:820px){.layout{grid-template-columns:1fr;grid-template-rows:auto 60vh}aside{border-right:0;border-bottom:1px solid var(--line);max-height:none}#map{grid-row:2}.tabs{margin-left:0}}
 </style></head><body>
 <header><a href="inicio.html">← Inicio</a><h1>Mapa del observatorio</h1>
-<div class="tabs" role="group" aria-label="Capa"><button id="t-prod" aria-pressed="true">Producción en Colima</button><button id="t-cen" aria-pressed="false">Centrales de abasto</button></div></header>
+<div class="tabs" role="group" aria-label="Capa"><button id="t-prod" aria-pressed="true">Producción en Colima</button><button id="t-cen" aria-pressed="false">Centrales de abasto</button><button id="t-exp" aria-pressed="false">Exportación</button></div></header>
 <div class="layout"><aside id="panel"></aside><div id="map" role="region" aria-label="Mapa interactivo"></div></div>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
 <script>
-const MUN=__MUN__, PROD=__PROD__, CEN=__CEN__;
+const MUN=__MUN__, PROD=__PROD__, CEN=__CEN__, EXP=__EXP__, SIN_COMP=__SINCOMP__;
 const oscuro=matchMedia('(prefers-color-scheme: dark)').matches;
 const map=L.map('map',{zoomControl:true,scrollWheelZoom:true,zoomSnap:0.25});
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,className:'base',
@@ -160,23 +193,54 @@ function vistaCen(){
   const comps=p.comparaciones.filter(c=>c.producto===prodCen);const mejor=comps.sort((a,b)=>({alta:0,media:1,baja:2}[a.confianza]-({alta:0,media:1,baja:2}[b.confianza])))[0];
   const col=colorDif(mejor);const r=mejor?7+Math.min(10,Math.abs(mejor.diferencia_mxn_kg)):4;
   if(mejor)L.polyline([[o.lat,o.lon],[lat,lon]],{color:col,weight:mejor.confianza==='baja'?1:2.5,opacity:.6,dashArray:mejor.confianza==='baja'?'4 6':null}).addTo(capaCen);
-  const html=`<h4>${esc(p.mercado)}</h4>${fmt(p.km_desde_tecoman)} km en línea recta desde Tecomán · ${fmt(p.cotizaciones_ultimo_dia)} cotizaciones el ${esc(p.fecha_corte)}<br>${comps.length?comps.map(c=>`<hr style="border:0;border-top:1px solid #ddd"><b>${esc(c.variante)}</b><br>Frente a ${esc(c.referencia)}: <b>${c.diferencia_mxn_kg>0?'+':''}${fmt(c.diferencia_mxn_kg,2)} MXN/kg</b> en ${c.meses} meses (mayor en ${fmt(c.pct_mayor)} %)<br>Flete extra máximo: ${fmt(c.flete_equilibrio_mxn_kg,2)} MXN/kg · <span class="pill ${esc(c.confianza)}">confianza ${esc(c.confianza)}</span>`).join(''):'<br>Sin comparación pareada para este producto.'}`;
+  const html=`<h4>${esc(p.mercado)}</h4>${fmt(p.km_desde_tecoman)} km en línea recta desde Tecomán · ${fmt(p.cotizaciones_ultimo_dia)} cotizaciones el ${esc(p.fecha_corte)}<br>${comps.length?comps.map(c=>`<hr style="border:0;border-top:1px solid #ddd"><b>${esc(c.variante)}</b> de origen Colima, ${esc(c.desde)} a ${esc(c.hasta)}<br>Precio promedio aquí: <b>${fmt(c.precio_plaza,2)} MXN/kg</b><br>En ${esc(c.referencia)} (referencia), mismos meses: <b>${fmt(c.precio_referencia,2)} MXN/kg</b><br>Diferencia: <b>${c.diferencia_mxn_kg>0?'+':''}${fmt(c.diferencia_mxn_kg,2)} MXN/kg</b> en ${c.meses} meses (aquí pagó más en ${fmt(c.pct_mayor)} % de ellos)<br>Flete extra máximo para que convenga: ${fmt(c.flete_equilibrio_mxn_kg,2)} MXN/kg<br><span class="pill ${esc(c.confianza)}">confianza ${c.confianza_pct??'—'} % (${esc(c.confianza)})</span>`).join(''):'<br>Sin comparación pareada para este producto.'}`;
   L.circleMarker([lat,lon],{radius:r,color:'#fff',weight:1.5,fillColor:col,fillOpacity:mejor?.95:.55}).bindTooltip(esc(p.ciudad)).bindPopup(html).addTo(capaCen);
-  if(mejor)filas.push({n:(p.mercado.split(':')[1]||p.mercado).trim(),d:mejor.diferencia_mxn_kg,c:mejor.confianza,k:p.km_desde_tecoman,ref:mejor.referencia});}
+  if(mejor)filas.push({n:(p.mercado.split(':')[1]||p.mercado).trim(),d:mejor.diferencia_mxn_kg,c:mejor.confianza,pc:mejor.confianza_pct,pp:mejor.precio_plaza,pr:mejor.precio_referencia,k:p.km_desde_tecoman,ref:mejor.referencia,meses:mejor.meses});}
  filas.sort((a,b)=>b.d-a.d);
- panel.innerHTML=`<label for="s-pc">Producto de Colima</label><select id="s-pc">${productosCen.map(p=>`<option ${p===prodCen?'selected':''}>${esc(p)}</option>`).join('')}</select>
- <p class="muted">Diferencia promedio de precio frente a <b>${esc(filas[0]?.ref||'la plaza de referencia')}</b> en meses en que ambas cotizaron el producto de origen Colima.</p>
- <table><thead><tr><th>Central</th><th>Dif. MXN/kg</th><th>Conf.</th><th>km</th></tr></thead><tbody>${filas.map(x=>`<tr><td>${esc(x.n)}</td><td style="color:${x.c==='baja'?'inherit':x.d>0?'#1d7a3a':'#b34a37'};font-weight:700">${x.d>0?'+':''}${fmt(x.d,2)}</td><td><span class="pill ${esc(x.c)}">${esc(x.c)}</span></td><td>${fmt(x.k)}</td></tr>`).join('')||'<tr><td colspan="4">Sin comparaciones</td></tr>'}</tbody></table>
+ const ref=filas[0]?.ref||'la plaza de referencia';
+ panel.innerHTML=`<label for="s-pc">Fruta de origen Colima</label><select id="s-pc">${productosCen.map(p=>`<option ${p===prodCen?'selected':''}>${esc(p)}</option>`).join('')}</select>
+ <div class="explica"><b>¿Contra qué se compara?</b> Contra <b>${esc(ref)}</b>. Para cada central se toman solo los meses en que ella y ${esc(ref)} cotizaron la misma variedad de ${esc(prodCen.toLowerCase())} de origen Colima (SNIIM), y se resta: <b>precio en la central − precio en ${esc(ref)}</b>. Verde: esa central pagó más; rojo: pagó menos. El porcentaje es la confianza de esa diferencia (prueba estadística y número de meses).</div>
+ <table><thead><tr><th>Central</th><th>Ahí</th><th>${esc(ref.split(' · ')[0])}</th><th>Diferencia</th><th>Confianza</th></tr></thead><tbody>${filas.map(x=>`<tr><td>${esc(x.n)}<br><span class="muted">${fmt(x.k)} km · ${x.meses} meses</span></td><td>${fmt(x.pp,2)}</td><td>${fmt(x.pr,2)}</td><td style="color:${x.c==='baja'?'inherit':x.d>0?'#1d7a3a':'#b34a37'};font-weight:700">${x.d>0?'+':''}${fmt(x.d,2)}</td><td><span class="pill ${esc(x.c)}">${x.pc??'—'} %</span></td></tr>`).join('')||'<tr><td colspan="5">Sin comparaciones</td></tr>'}</tbody></table><p class="muted">Precios en MXN/kg, promedio de los meses comparados.</p>
+ ${SIN_COMP.length?`<p class="muted"><b>Frutas sin comparación de centrales:</b> ${SIN_COMP.map(esc).join(', ')}. No hay al menos 3 meses en que dos centrales coticen la misma fruta de origen Colima.</p>`:''}
  <p class="muted">Una central conviene si su "flete extra máximo" (en la ventana emergente) es mayor que lo que de verdad cuesta enviar ahí frente a la plaza de referencia. ${esc(CEN.properties.nota)}</p>`;
  document.getElementById('s-pc').onchange=e=>{prodCen=e.target.value;vistaCen()};
- setLeyenda(`<b>${esc(prodCen)}</b> frente a la referencia<br><i style="background:#1d7a3a"></i>paga más (comprobado)<br><i style="background:#b34a37"></i>paga menos (comprobado)<br><i style="background:#c9b98a"></i>no distinguible del azar<br><i style="background:#8a9690"></i>sin comparación<br><i style="background:#c08a32;border-radius:50%"></i>Tecomán`);
+ setLeyenda(`<b>${esc(prodCen)}</b>: precio en la central − precio en ${esc(ref.split(' · ')[0])}<br><i style="background:#1d7a3a"></i>paga más (comprobado)<br><i style="background:#b34a37"></i>paga menos (comprobado)<br><i style="background:#c9b98a"></i>no distinguible del azar<br><i style="background:#8a9690"></i>sin comparación<br><i style="background:#c08a32;border-radius:50%"></i>Tecomán`);
 }
-function capa(c){document.getElementById('t-prod').setAttribute('aria-pressed',c==='prod');document.getElementById('t-cen').setAttribute('aria-pressed',c==='cen');
- if(c==='prod'){if(capaCen){capaCen.remove();capaCen=null}vistaProd();map.invalidateSize();map.fitBounds(COLIMA,{padding:[10,10]});}
- else{if(capaProd){capaProd.remove();capaProd=null}vistaCen();map.invalidateSize();map.fitBounds(L.latLngBounds([16.5,-112],[30.5,-90]),{padding:[4,4]});}
+// ---------------- Exportación ----------------
+const frutasExp=Object.entries(EXP).filter(([k,v])=>v.disponible).map(([k,v])=>k);let frutaExp=frutasExp.includes('limon')?'limon':frutasExp[0];let mundo=null,capaExp=null;
+async function vistaExp(){
+ if(!mundo){try{const t=await fetch('https://cdn.jsdelivr.net/npm/world-atlas@2.0.2/countries-110m.json').then(r=>r.json());mundo=topojson.feature(t,t.objects.countries);
+   // Polígonos que cruzan el meridiano 180 (Rusia, Fiyi) dibujan bandas en Leaflet: se desplazan sus longitudes
+   // negativas y se omite la Antártida.
+   const corregir=c=>typeof c[0]==='number'?(c[0]<-150?[c[0]+360,c[1]]:c):c.map(corregir);
+   mundo.features=mundo.features.filter(f=>String(f.id)!=='010').map(f=>['643','242'].includes(String(f.id))?{...f,geometry:{...f.geometry,coordinates:corregir(f.geometry.coordinates)}}:f);}catch(e){panel.innerHTML='<p>No se pudo cargar el mapa mundial (sin conexión a internet).</p>';return;}}
+ const e=EXP[frutaExp]||{};const paises=e.paises||{};const opp=new Set((e.oportunidades||[]).map(o=>String(o.iso).padStart(3,'0')));
+ const vals=Object.values(paises).map(x=>x.desde_mexico_usd||0);const max=Math.max(1,...vals);
+ if(capaExp)capaExp.remove();
+ capaExp=L.geoJSON(mundo,{style:f=>{const id=String(f.id).padStart(3,'0'),x=paises[id];const v=x?.desde_mexico_usd||0;
+   return {color:opp.has(id)?'#2563eb':(oscuro?'#4b5a52':'#9aa8a0'),weight:opp.has(id)?2.2:.6,dashArray:opp.has(id)?'4 3':null,fillOpacity:v?.85:(opp.has(id)?.25:.1),fillColor:v?colorPor(v,max):(opp.has(id)?'#93c5fd':'#cbd5d0')}},
+  onEachFeature:(f,l)=>{const id=String(f.id).padStart(3,'0'),x=paises[id];const nombre=x?.pais||f.properties.name;
+   l.bindTooltip(`<b>${esc(nombre)}</b>${x?.desde_mexico_usd?'<br>USD '+fmt(x.desde_mexico_usd/1e6,1)+' millones desde México':''}`,{sticky:true});
+   if(x)l.bindPopup(`<h4>${esc(nombre)} · ${esc(e.nombre)} ${e.anio}</h4>Compró a México: <b>USD ${fmt(x.desde_mexico_usd/1e6,2)} millones</b> (${fmt(x.toneladas)} t)<br>Valor por kilo: <b>${fmt(x.mxn_kg,2)} MXN/kg</b><br>Importó del mundo: USD ${fmt((x.mundo_usd||0)/1e6,1)} millones<br>Participación de México: <b>${fmt(x.participacion_mexico_pct,1)} %</b>${opp.has(id)?'<br><b style="color:#2563eb">Oportunidad: mercado grande donde México vende poco</b>':''}`);}}).addTo(map);
+ const fila=x=>`<tr><td>${esc(x.pais)}</td><td>${fmt(x.valor_usd/1e6,1)}</td><td>${fmt(x.mxn_kg,2)}</td><td>${x.crecimiento_pct==null?'—':(x.crecimiento_pct>0?'+':'')+fmt(x.crecimiento_pct)+' %'}</td></tr>`;
+ panel.innerHTML=`<label for="s-ef">Fruta</label><select id="s-ef">${frutasExp.map(k=>`<option value="${k}" ${k===frutaExp?'selected':''}>${esc(EXP[k].nombre)}</option>`).join('')}</select>
+ <div class="explica"><b>¿Qué se ve?</b> Países que reportaron comprar ${esc((e.nombre||'').toLowerCase())} a México en ${e.anio} (UN Comtrade, código HS ${esc(e.hs)}). Más verde = compraron más. <span style="color:#2563eb;font-weight:700">Borde azul</span> = oportunidad: importan mucho del mundo y menos del 10 % viene de México.</div>
+ <div class="kpi"><div><span>Valor de exportación</span><b>${fmt(e.valor_unitario_exportacion_mxn_kg,2)} MXN/kg</b></div><div><span>Mercado nacional</span><b>${fmt(e.precio_mayorista_nacional_mxn_kg,2)} MXN/kg</b></div></div>
+ ${e.prima_exportacion_pct!=null?`<p>La exportación pagó <b>${e.prima_exportacion_pct>0?'+':''}${fmt(e.prima_exportacion_pct)} %</b> frente a las centrales nacionales.</p>`:''}
+ <div class="muted">Principales compradores (USD millones, MXN/kg, crecimiento)</div><table><tbody>${(e.destinos||[]).map(fila).join('')}</tbody></table>
+ ${(e.oportunidades||[]).length?`<div class="muted" style="margin-top:8px">Oportunidades (importan del mundo, USD millones · % de México)</div><table><tbody>${e.oportunidades.map(o=>`<tr><td>${esc(o.pais)}</td><td>${fmt(o.importa_del_mundo_usd/1e6,0)}</td><td>${fmt(o.participacion_mexico_pct,1)} %</td></tr>`).join('')}</tbody></table>`:''}
+ <p class="muted">${esc(e.hs_nota||'')} Valores aduanales (no precio al productor). Exportar requiere certificación fitosanitaria, empaque, logística en frío y un comprador confirmado. Frutas sin datos: ${Object.entries(EXP).filter(([k,v])=>!v.disponible).map(([k,v])=>esc(v.nombre)).join(', ')||'ninguna'}.</p>`;
+ document.getElementById('s-ef').onchange=ev=>{frutaExp=ev.target.value;vistaExp()};
+ setLeyenda(`<b>${esc(e.nombre||'')} ${e.anio||''}</b> · compras a México<br>${escala.map((c,i)=>`<i style="background:${c}"></i>${i===0?'menos':i===escala.length-1?'más':''}`).join('<br>')}<br><i style="background:#93c5fd;border:2px dashed #2563eb"></i>oportunidad`);
+}
+function capa(c){for(const k of ['prod','cen','exp'])document.getElementById('t-'+k).setAttribute('aria-pressed',c===k);
+ for(const l of [capaProd,capaCen,capaExp])if(l)l.remove();capaProd=capaCen=capaExp=null;map.invalidateSize();
+ if(c==='prod'){vistaProd();map.fitBounds(COLIMA,{padding:[10,10]});}
+ else if(c==='cen'){vistaCen();map.fitBounds(L.latLngBounds([16.5,-112],[30.5,-90]),{padding:[4,4]});}
+ else{vistaExp();map.setView([25,-30],2);}
  try{history.replaceState(null,'','#'+c)}catch(e){}}
-document.getElementById('t-prod').onclick=()=>capa('prod');document.getElementById('t-cen').onclick=()=>capa('cen');
-capa(location.hash==='#cen'?'cen':'prod');
+document.getElementById('t-prod').onclick=()=>capa('prod');document.getElementById('t-cen').onclick=()=>capa('cen');document.getElementById('t-exp').onclick=()=>capa('exp');
+capa(['#cen','#exp'].includes(location.hash)?location.hash.slice(1):'prod');
 </script></body></html>
 """
 
@@ -184,12 +248,16 @@ capa(location.hash==='#cen'?'cen':'prod');
 def ejecutar(base: Path = BASE_DIR) -> dict[str, Any]:
     geo = base / "data/publico/geo"
     geo.mkdir(parents=True, exist_ok=True)
-    mun, prod, cen = municipios(base), produccion(base), centrales(base)
+    mun, prod, cen, exp = municipios(base), produccion(base), centrales(base), exportacion(base)
+    con_comp = {c["producto"] for f in cen["features"] for c in f["properties"]["comparaciones"]}
+    sin_comp = [v["nombre"] for v in FRUTAS.values() if v["nombre"] not in con_comp]
     for nombre, obj in (("municipios_colima.geojson", mun), ("produccion_municipal.json", prod), ("centrales.geojson", cen)):
         (geo / nombre).write_text(json.dumps(obj, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     pagina = (HTML.replace("__MUN__", json.dumps(mun, ensure_ascii=False, separators=(",", ":")))
               .replace("__PROD__", json.dumps(prod, ensure_ascii=False, separators=(",", ":")))
-              .replace("__CEN__", json.dumps(cen, ensure_ascii=False, separators=(",", ":"))))
+              .replace("__CEN__", json.dumps(cen, ensure_ascii=False, separators=(",", ":")))
+              .replace("__EXP__", json.dumps(exp, ensure_ascii=False, separators=(",", ":")))
+              .replace("__SINCOMP__", json.dumps(sin_comp, ensure_ascii=False)))
     (base / "tablero/mapa.html").write_text(pagina, encoding="utf-8")
     return {"municipios": len(mun["features"]), "cultivos": len(prod["cultivos"]), "anios": prod["anios"],
             "centrales": len(cen["features"]), "kb_pagina": round(len(pagina.encode()) / 1024)}

@@ -7,12 +7,13 @@ guayaba,378,Guayaba - Primera,Michoacán,1,CDMX · Central de Abasto de Iztapala
 limon,418,Limón c/semilla # 3 - Primera,Michoacán,36,CDMX · Central de Abasto de Iztapalapa,,,sin_dos_mercados_con_origen_variante_y_mes_comunes
 limon,419,Limón c/semilla # 4 - Primera,Michoacán,36,CDMX · Central de Abasto de Iztapalapa,,,sin_dos_mercados_con_origen_variante_y_mes_comunes
 limon,421,Limón c/semilla # 5 - Primera,Colima,9,Cd. Obregón · Central de Abasto | Guadalajara · Mercado de Abasto | Gómez Palacio · Centro de Distribución y Abasto | Hermosillo · Mercado de Abasto Francisco I. Madero | Monterrey · Mercado de Abasto Estrella | Torreón · Central de Abasto de La Laguna | Aguascalientes · Centro Comercial Agropecuario | San Luis Potosí · Centro de Abasto | Guadalajara · Mercado Felipe Ángeles,Cd. Obregón · Central de Abasto,12.95820376792014,comparacion_descriptiva_meses_pareados
-limon,421,Limón c/semilla # 5 - Primera,Michoacán,2,CDMX · Central de Abasto de Iztapalapa | Aguascalientes · Centro Comercial Agropecuario,CDMX · Central de Abasto de Iztapalapa,6.515692640692642,comparacion_descriptiva_meses_pareados
+limon,421,Limón c/semilla # 5 - Primera,Michoacán,0,Aguascalientes · Centro Comercial Agropecuario | CDMX · Central de Abasto de Iztapalapa | Guadalajara · Mercado de Abasto,,,sin_dos_mercados_con_origen_variante_y_mes_comunes
 limon,426,Limón s/semilla - Primera,Jalisco,36,Guadalajara · Mercado de Abasto,,,sin_dos_mercados_con_origen_variante_y_mes_comunes
 limon,426,Limón s/semilla - Primera,Veracruz,36,CDMX · Central de Abasto de Iztapalapa,,,sin_dos_mercados_con_origen_variante_y_mes_comunes
+mango_ataulfo,465,Mango Ataulfo - Primera,Chiapas,42,Guadalajara · Mercado de Abasto,,,sin_dos_mercados_con_origen_variante_y_mes_comunes
 mango_ataulfo,465,Mango Ataulfo - Primera,Guerrero,1,CDMX · Central de Abasto de Iztapalapa,,,sin_dos_mercados_con_origen_variante_y_mes_comunes
 mango_ataulfo,465,Mango Ataulfo - Primera,Michoacán,1,Morelia · Mercado de Abasto,,,sin_dos_mercados_con_origen_variante_y_mes_comunes
-mango_ataulfo,465,Mango Ataulfo - Primera,Nayarit,10,Guadalajara · Mercado de Abasto,,,sin_dos_mercados_con_origen_variante_y_mes_comunes
+mango_ataulfo,465,Mango Ataulfo - Primera,Nayarit,25,Guadalajara · Mercado de Abasto,,,sin_dos_mercados_con_origen_variante_y_mes_comunes
 mango_manila,480,Mango Manila - Primera,Guerrero,1,CDMX · Central de Abasto de Iztapalapa,,,sin_dos_mercados_con_origen_variante_y_mes_comunes
 mango_manila,480,Mango Manila - Primera,Veracruz,1,Morelia · Mercado de Abasto,,,sin_dos_mercados_con_origen_variante_y_mes_comunes
 papaya,609,Papaya Maradol - Primera,Chiapas,12,Guadalajara · Mercado de Abasto | Guadalajara · Mercado Felipe Ángeles,Guadalajara · Mercado de Abasto,0.1961878048176331,comparacion_descriptiva_meses_pareados
@@ -23,7 +24,7 @@ papaya,609,Papaya Maradol - Primera,Oaxaca,36,CDMX · Central de Abasto de Iztap
 platano,663,Plátano Chiapas - Primera,Chiapas,36,Guadalajara · Mercado de Abasto | CDMX · Central de Abasto de Iztapalapa,Guadalajara · Mercado de Abasto,10.193843816292226,comparacion_descriptiva_meses_pareados
 platano,663,Plátano Chiapas - Primera,Colima,3,La Paz · Unión de Comerciantes | Tijuana · Central de Abasto INDIA | Zacatecas · Mercado de Abasto,La Paz · Unión de Comerciantes,5.791300642177832,comparacion_descriptiva_meses_pareados
 platano,663,Plátano Chiapas - Primera,Michoacán,10,Tijuana · Central de Abasto INDIA,,,sin_dos_mercados_con_origen_variante_y_mes_comunes
-platano,665,Plátano Chiapas calidad exportación - Primera,Chiapas,36,CDMX · Central de Abasto de Iztapalapa,,,sin_dos_mercados_con_origen_variante_y_mes_comunes
+platano,665,Plátano Chiapas calidad exportación - Primera,Chiapas,0,CDMX · Central de Abasto de Iztapalapa | Guadalajara · Mercado de Abasto,,,sin_dos_mercados_con_origen_variante_y_mes_comunes
 platano,666,Plátano Dominico - Primera,Chiapas,36,CDMX · Central de Abasto de Iztapalapa,,,sin_dos_mercados_con_origen_variante_y_mes_comunes
 platano,666,Plátano Dominico - Primera,Colima,12,Tijuana · Central de Abasto INDIA | Querétaro · Mercado de Abasto,Tijuana · Central de Abasto INDIA,21.154339318115778,comparacion_descriptiva_meses_pareados
 platano,666,Plátano Dominico - Primera,Jalisco,12,La Paz · Unión de Comerciantes,,,sin_dos_mercados_con_origen_variante_y_mes_comunes
@@ -32,11 +33,11 @@ platano,723,Plátano Macho - Primera,Chiapas,36,CDMX · Central de Abasto de Izt
 platano,723,Plátano Macho - Primera,Colima,12,Querétaro · Mercado de Abasto,,,sin_dos_mercados_con_origen_variante_y_mes_comunes
 platano,723,Plátano Macho - Primera,Jalisco,12,La Paz · Unión de Comerciantes,,,sin_dos_mercados_con_origen_variante_y_mes_comunes
 platano,723,Plátano Macho - Primera,Tabasco,12,Tijuana · Central de Abasto INDIA,,,sin_dos_mercados_con_origen_variante_y_mes_comunes
-platano,723,Plátano Macho - Primera,Veracruz,36,Guadalajara · Mercado de Abasto,,,sin_dos_mercados_con_origen_variante_y_mes_comunes
-platano,732,Plátano Tabasco - Primera,Chiapas,1,CDMX · Central de Abasto de Iztapalapa,,,sin_dos_mercados_con_origen_variante_y_mes_comunes
-platano,732,Plátano Tabasco - Primera,Colima,12,Querétaro · Mercado de Abasto | San Luis Potosí · Centro de Abasto,Querétaro · Mercado de Abasto,0.08092305450715287,comparacion_descriptiva_meses_pareados
-platano,732,Plátano Tabasco - Primera,Michoacán,36,Guadalajara · Mercado de Abasto,,,sin_dos_mercados_con_origen_variante_y_mes_comunes
-platano,732,Plátano Tabasco - Primera,Tabasco,2,Tijuana · Central de Abasto INDIA | CDMX · Central de Abasto de Iztapalapa,Tijuana · Central de Abasto INDIA,24.18227956254272,comparacion_descriptiva_meses_pareados
+platano,723,Plátano Macho - Primera,Veracruz,119,Guadalajara · Mercado de Abasto,,,sin_dos_mercados_con_origen_variante_y_mes_comunes
+platano,732,Plátano Tabasco - Primera,Chiapas,0,CDMX · Central de Abasto de Iztapalapa | Guadalajara · Mercado de Abasto,,,sin_dos_mercados_con_origen_variante_y_mes_comunes
+platano,732,Plátano Tabasco - Primera,Colima,0,Guadalajara · Mercado de Abasto | Querétaro · Mercado de Abasto | San Luis Potosí · Centro de Abasto,,,sin_dos_mercados_con_origen_variante_y_mes_comunes
+platano,732,Plátano Tabasco - Primera,Michoacán,50,Guadalajara · Mercado de Abasto,,,sin_dos_mercados_con_origen_variante_y_mes_comunes
+platano,732,Plátano Tabasco - Primera,Tabasco,0,CDMX · Central de Abasto de Iztapalapa | Guadalajara · Mercado de Abasto | Tijuana · Central de Abasto INDIA,,,sin_dos_mercados_con_origen_variante_y_mes_comunes
 sandia_jubilee,791,Sandía Jubilee - Primera,Colima,1,Colima · Centros de distribución,,,sin_dos_mercados_con_origen_variante_y_mes_comunes
 sandia_peacock,796,Sandía Peacock - Primera,Colima,1,Colima · Centros de distribución,,,sin_dos_mercados_con_origen_variante_y_mes_comunes
 sandia_rayada,799,Sandía Rayada - Primera,Sinaloa,1,Morelia · Mercado de Abasto,,,sin_dos_mercados_con_origen_variante_y_mes_comunes
