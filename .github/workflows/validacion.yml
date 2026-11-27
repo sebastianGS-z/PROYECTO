@@ -49,16 +49,20 @@ jobs:
         run: pip-audit -r requirements-dev.txt --progress-spinner off
       - name: Pruebas unitarias sin red con cobertura mínima de 60 %
         run: python -m pytest -q --cov --cov-report=term --cov-report=xml
-      - name: Puerta de datos: regenerar Plata y Oro desde Bronce versionado
+      - name: "Puerta de datos: regenerar Plata y Oro desde Bronce versionado"
         run: python main.py capas
       - name: Rechazar si la puerta de calidad envió registros a cuarentena sin reportarlos
         run: |
           python - <<'PY'
           import json, sys
           r = json.load(open("data/plata/reporte_calidad.json", encoding="utf-8"))
-          print({k: r[k] for k in ("registros_bronce_parseados", "registros_plata_validos", "registros_cuarentena", "filas_oro")})
-          if r["registros_plata_validos"] + r["registros_cuarentena"] < r["registros_bronce_parseados"]:
-              sys.exit("Registros perdidos entre Bronce y Plata sin pasar por cuarentena")
+          claves = ("registros_bronce_parseados", "registros_rechazados_por_reglas", "registros_duplicados_descartados", "registros_plata_validos", "filas_oro")
+          print({k: r[k] for k in claves})
+          # Cada registro parseado termina en Plata, rechazado por la puerta (con motivo en cuarentena)
+          # o descartado como versión anterior de un duplicado (documentado en conflictos_resueltos.csv).
+          cuenta = r["registros_plata_validos"] + r["registros_rechazados_por_reglas"] + r["registros_duplicados_descartados"]
+          if cuenta != r["registros_bronce_parseados"]:
+              sys.exit(f"Registros sin explicar entre Bronce y Plata: {r['registros_bronce_parseados'] - cuenta}")
           if r["filas_oro"] == 0:
               sys.exit("Oro vacío")
           PY

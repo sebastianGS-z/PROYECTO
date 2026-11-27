@@ -1,10 +1,12 @@
 {
   "esquema": "tdl-e1-quality/1",
-  "generado_utc": "2026-11-27T16:14:37.477439+00:00",
+  "generado_utc": "2026-11-27T16:23:14.921518+00:00",
   "bronce": "data/bronce",
   "registros_bronce_parseados": 19058,
   "registros_plata_validos": 18156,
   "registros_cuarentena": 0,
+  "registros_rechazados_por_reglas": 0,
+  "registros_duplicados_descartados": 902,
   "conflictos_duplicados": 809,
   "filas_oro": 895,
   "integridad": "Pandera estricto; SHA-256 Bronce verificado antes de parsear",

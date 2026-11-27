@@ -637,7 +637,9 @@ def ejecutar(bronze_dir: Path, data_dir: Path) -> dict[str, Any]:
     if raw.empty and not quarantine:
         raise RuntimeError(f"No se encontraron datos Bronce en {bronze_dir}")
     clean, quarantine = puerta_calidad(raw, quarantine)
+    validos_puerta = len(clean)
     clean, conflicts = resolver_duplicados(clean)
+    duplicados_descartados = validos_puerta - len(clean)
     missing_report = diagnostico_faltantes(clean, climate_expected)
     transformed, climate_model, transform_report = transformar_estadisticamente(clean, climate_expected)
     gold = construir_oro(clean)
@@ -653,7 +655,8 @@ def ejecutar(bronze_dir: Path, data_dir: Path) -> dict[str, Any]:
     report = {
         "esquema": "tdl-e1-quality/1", "generado_utc": pd.Timestamp.now(tz="UTC").isoformat(),
         "bronce": _display_path(bronze_dir), "registros_bronce_parseados": len(raw), "registros_plata_validos": len(clean),
-        "registros_cuarentena": len(quarantine), "conflictos_duplicados": len(conflicts),
+        "registros_cuarentena": len(quarantine), "registros_rechazados_por_reglas": len(raw) - validos_puerta,
+        "registros_duplicados_descartados": duplicados_descartados, "conflictos_duplicados": len(conflicts),
         "filas_oro": len(gold), "integridad": "Pandera estricto; SHA-256 Bronce verificado antes de parsear",
         "linaje_oro": lineage_report,
         "faltantes": missing_report, "transformaciones": transform_report,
