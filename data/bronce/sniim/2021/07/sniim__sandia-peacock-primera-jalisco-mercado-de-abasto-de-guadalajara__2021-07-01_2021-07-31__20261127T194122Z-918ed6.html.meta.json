@@ -1,0 +1,39 @@
+{
+  "esquema": "tdl-bronce-meta/1",
+  "contenido_original": {
+    "archivo": "sniim__sandia-peacock-primera-jalisco-mercado-de-abasto-de-guadalajara__2021-07-01_2021-07-31__20261127T194122Z-918ed6.html",
+    "descripcion": "Bytes tal como los entregó la fuente; no se modifican."
+  },
+  "metadatos_captura": {
+    "fuente": "sniim",
+    "fuente_url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F07%2F2021&fechaFinal=31%2F07%2F2021&ProductoId=796&OrigenId=-1&Origen=Todos&DestinoId=140&Destino=Jalisco%3A+Mercado+de+Abasto+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+    "fecha_captura": "2026-11-27T20:19:18Z",
+    "identificador_ejecucion": "20261127T194122Z-918ed6",
+    "formato_original": "html",
+    "sha256": "e90b89b312c4040bac70f059f1a81d525684e68d69c34e0f801f04ffa45e9c32",
+    "bytes": 9425,
+    "http_status": 200,
+    "registros_detectados": 0,
+    "estado_captura": "sin_resultados",
+    "advertencias": [],
+    "colision_nombre": false,
+    "etiqueta": "Sandía Peacock - Primera__Jalisco: Mercado de Abasto de Guadalajara",
+    "producto": "Sandía Peacock - Primera",
+    "producto_id": "796",
+    "mercado": "Jalisco: Mercado de Abasto de Guadalajara",
+    "mercado_id": "140",
+    "fecha_ref_inicio": "2021-07-01",
+    "fecha_ref_fin": "2021-07-31",
+    "parametros": {
+      "fechaInicio": "01/07/2021",
+      "fechaFinal": "31/07/2021",
+      "ProductoId": "796",
+      "OrigenId": "-1",
+      "Origen": "Todos",
+      "DestinoId": "140",
+      "Destino": "Jalisco: Mercado de Abasto de Guadalajara",
+      "PreciosPorId": "1",
+      "RegistrosPorPagina": "500"
+    }
+  }
+}

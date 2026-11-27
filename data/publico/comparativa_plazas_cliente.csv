@@ -1,7 +1,9 @@
 cultivo,variante_id,variante,origen,meses_comunes,mercados_observados,mercado_con_mayor_precio_medio,diferencia_mxn_kg,estado_comparacion
 aguacate_hass,133,Aguacate Hass - Primera,Jalisco,1,Colima · Centros de distribución | Guadalajara · Mercado de Abasto,Colima · Centros de distribución,21.11111111111111,comparacion_descriptiva_meses_pareados
 aguacate_hass,133,Aguacate Hass - Primera,Michoacán,1,Morelia · Mercado de Abasto | CDMX · Central de Abasto de Iztapalapa | Guadalajara · Mercado de Abasto,Morelia · Mercado de Abasto,8.779638490164807,comparacion_descriptiva_meses_pareados
-guanabana,374,Guanabana - Primera,Michoacán,1,Morelia · Mercado de Abasto,,,sin_dos_mercados_con_origen_variante_y_mes_comunes
+guanabana,374,Guanabana - Primera,Chiapas,15,Guadalajara · Mercado de Abasto,,,sin_dos_mercados_con_origen_variante_y_mes_comunes
+guanabana,374,Guanabana - Primera,Michoacán,0,Guadalajara · Mercado de Abasto | Morelia · Mercado de Abasto,,,sin_dos_mercados_con_origen_variante_y_mes_comunes
+guanabana,374,Guanabana - Primera,Nayarit,31,Guadalajara · Mercado de Abasto,,,sin_dos_mercados_con_origen_variante_y_mes_comunes
 guayaba,378,Guayaba - Primera,Jalisco,36,Colima · Centros de distribución,,,sin_dos_mercados_con_origen_variante_y_mes_comunes
 guayaba,378,Guayaba - Primera,Michoacán,1,CDMX · Central de Abasto de Iztapalapa | Morelia · Mercado de Abasto | Guadalajara · Mercado de Abasto,CDMX · Central de Abasto de Iztapalapa,10.937500000000004,comparacion_descriptiva_meses_pareados
 limon,418,Limón c/semilla # 3 - Primera,Michoacán,36,CDMX · Central de Abasto de Iztapalapa,,,sin_dos_mercados_con_origen_variante_y_mes_comunes
@@ -10,10 +12,10 @@ limon,421,Limón c/semilla # 5 - Primera,Colima,9,Cd. Obregón · Central de Aba
 limon,421,Limón c/semilla # 5 - Primera,Michoacán,0,Aguascalientes · Centro Comercial Agropecuario | CDMX · Central de Abasto de Iztapalapa | Guadalajara · Mercado de Abasto,,,sin_dos_mercados_con_origen_variante_y_mes_comunes
 limon,426,Limón s/semilla - Primera,Jalisco,36,Guadalajara · Mercado de Abasto,,,sin_dos_mercados_con_origen_variante_y_mes_comunes
 limon,426,Limón s/semilla - Primera,Veracruz,36,CDMX · Central de Abasto de Iztapalapa,,,sin_dos_mercados_con_origen_variante_y_mes_comunes
-mango_ataulfo,465,Mango Ataulfo - Primera,Chiapas,42,Guadalajara · Mercado de Abasto,,,sin_dos_mercados_con_origen_variante_y_mes_comunes
+mango_ataulfo,465,Mango Ataulfo - Primera,Chiapas,43,Guadalajara · Mercado de Abasto,,,sin_dos_mercados_con_origen_variante_y_mes_comunes
 mango_ataulfo,465,Mango Ataulfo - Primera,Guerrero,1,CDMX · Central de Abasto de Iztapalapa,,,sin_dos_mercados_con_origen_variante_y_mes_comunes
 mango_ataulfo,465,Mango Ataulfo - Primera,Michoacán,1,Morelia · Mercado de Abasto,,,sin_dos_mercados_con_origen_variante_y_mes_comunes
-mango_ataulfo,465,Mango Ataulfo - Primera,Nayarit,25,Guadalajara · Mercado de Abasto,,,sin_dos_mercados_con_origen_variante_y_mes_comunes
+mango_ataulfo,465,Mango Ataulfo - Primera,Nayarit,27,Guadalajara · Mercado de Abasto,,,sin_dos_mercados_con_origen_variante_y_mes_comunes
 mango_manila,480,Mango Manila - Primera,Guerrero,1,CDMX · Central de Abasto de Iztapalapa,,,sin_dos_mercados_con_origen_variante_y_mes_comunes
 mango_manila,480,Mango Manila - Primera,Veracruz,1,Morelia · Mercado de Abasto,,,sin_dos_mercados_con_origen_variante_y_mes_comunes
 papaya,609,Papaya Maradol - Primera,Chiapas,12,Guadalajara · Mercado de Abasto | Guadalajara · Mercado Felipe Ángeles,Guadalajara · Mercado de Abasto,0.1961878048176331,comparacion_descriptiva_meses_pareados
@@ -41,7 +43,11 @@ platano,732,Plátano Tabasco - Primera,Tabasco,0,CDMX · Central de Abasto de Iz
 sandia_jubilee,791,Sandía Jubilee - Primera,Colima,1,Colima · Centros de distribución,,,sin_dos_mercados_con_origen_variante_y_mes_comunes
 sandia_peacock,796,Sandía Peacock - Primera,Colima,1,Colima · Centros de distribución,,,sin_dos_mercados_con_origen_variante_y_mes_comunes
 sandia_rayada,799,Sandía Rayada - Primera,Sinaloa,1,Morelia · Mercado de Abasto,,,sin_dos_mercados_con_origen_variante_y_mes_comunes
-sandia_sangria,787,Sandía Sangría - Primera,Nayarit,1,CDMX · Central de Abasto de Iztapalapa,,,sin_dos_mercados_con_origen_variante_y_mes_comunes
+sandia_sangria,787,Sandía Sangría - Primera,Campeche,2,Guadalajara · Mercado de Abasto,,,sin_dos_mercados_con_origen_variante_y_mes_comunes
+sandia_sangria,787,Sandía Sangría - Primera,Chihuahua,52,Guadalajara · Mercado de Abasto,,,sin_dos_mercados_con_origen_variante_y_mes_comunes
+sandia_sangria,787,Sandía Sangría - Primera,Coahuila,1,Guadalajara · Mercado de Abasto,,,sin_dos_mercados_con_origen_variante_y_mes_comunes
+sandia_sangria,787,Sandía Sangría - Primera,Jalisco,49,Guadalajara · Mercado de Abasto,,,sin_dos_mercados_con_origen_variante_y_mes_comunes
+sandia_sangria,787,Sandía Sangría - Primera,Nayarit,0,CDMX · Central de Abasto de Iztapalapa | Guadalajara · Mercado de Abasto,,,sin_dos_mercados_con_origen_variante_y_mes_comunes
 sandia_sangria,787,Sandía Sangría - Primera,Sonora,1,Guadalajara · Mercado de Abasto | Morelia · Mercado de Abasto,Guadalajara · Mercado de Abasto,2.227272727272725,comparacion_descriptiva_meses_pareados
 tamarindo,800,Tamarindo - Primera,Baja California Sur,3,Guadalajara · Mercado de Abasto,,,sin_dos_mercados_con_origen_variante_y_mes_comunes
 tamarindo,800,Tamarindo - Primera,Colima,27,Guadalajara · Mercado de Abasto | Colima · Centros de distribución,Guadalajara · Mercado de Abasto,12.257897873801774,comparacion_descriptiva_meses_pareados

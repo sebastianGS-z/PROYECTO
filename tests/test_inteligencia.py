@@ -123,3 +123,33 @@ def test_nivel_confianza_y_prueba_diferencia():
     p, nombre = ic.prueba_diferencia(pd.Series([2.0, 3, 1, 4, 2, 3, 5, 2]))
     assert nombre.startswith("Wilcoxon") and p < 0.05
     assert ic.prueba_diferencia(pd.Series([1.0, 0]))[0] is None
+
+
+def test_cache_y_combinacion_de_modelos():
+    from src.tdl_e4 import observatorio as ob
+    rng = np.random.default_rng(5)
+    valores = 20 + 3 * np.sin(np.arange(40) * 2 * np.pi / 12) + rng.normal(0, 0.3, 40)
+    ob._CACHE_AJUSTES.clear()
+    a = ob._fit_predict("holt", valores, 3)
+    assert len(ob._CACHE_AJUSTES) == 1
+    a[0] = -999  # el resultado devuelto es una copia: no contamina la caché
+    assert ob._fit_predict("holt", valores, 3)[0] != -999 and len(ob._CACHE_AJUSTES) == 1
+    comb = ob._fit_predict("combinacion", valores, 3)
+    individuales = [ob._CACHE_AJUSTES[(m, valores.astype("float64").tobytes(), 3)] for m in ob.MODEL_NAMES
+                    if m != "combinacion" and (m, valores.astype("float64").tobytes(), 3) in ob._CACHE_AJUSTES]
+    assert len(individuales) >= 2 and np.allclose(comb, np.mean(individuales, axis=0))
+
+
+def test_verificacion_con_dato_parcial_del_mes():
+    from src.inteligencia import preguntas as pq
+    gold = pd.DataFrame([{"variante_id": 421, "mercado": 140, "origen": "Colima", "fecha_mes": "2026-11-01",
+                          "precio_frecuente_kg_mean": 20.0, "precio_frecuente_kg_count": 10}])
+    r = pd.Series({"variante_id": 421, "mercado": 140, "origen": "Colima", "fecha_pronostico": "2026-11",
+                   "precio_frecuente_mxn_kg": 12.0, "li80_mxn_kg": 5.0, "ls80_mxn_kg": 18.0})
+    texto, castigo = pq._verificacion_parcial({"gold": gold}, r)
+    assert "20.00 MXN/kg" in texto and "se aleja" in texto and castigo == 20
+    r2 = r.copy()
+    r2["precio_frecuente_mxn_kg"], r2["ls80_mxn_kg"] = 19.0, 25.0
+    texto2, castigo2 = pq._verificacion_parcial({"gold": gold}, r2)
+    assert "en línea" in texto2 and castigo2 == 0
+    assert pq._verificacion_parcial({"gold": gold.assign(precio_frecuente_kg_count=2)}, r) == ("", 0)

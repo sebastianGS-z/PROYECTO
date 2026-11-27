@@ -26,8 +26,14 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import sys
-from datetime import date, timedelta
+
+# Las series del observatorio son cortas: los hilos de BLAS/OpenMP solo agregan sobrecarga (y saturan los
+# runners de GitHub Actions). Se fija un hilo antes de importar NumPy, salvo que el usuario lo defina.
+for _var in ("OMP_NUM_THREADS", "OPENBLAS_NUM_THREADS", "MKL_NUM_THREADS"):
+    os.environ.setdefault(_var, "1")
+from datetime import date, timedelta  # noqa: E402 - después de fijar los hilos
 
 
 def _objetivos(argv: list[str]) -> int:

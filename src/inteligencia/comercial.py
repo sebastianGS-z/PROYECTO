@@ -27,6 +27,7 @@ import pandas as pd
 from scipy import stats
 
 from config.settings import BASE_DIR
+from src.inteligencia.catalogo import FRUTAS as _FRUTAS
 from src.tdl_e4.observatorio import MARKET_NAMES, _market_id, _mensual_colima
 
 REFERENCIA = "140"  # Guadalajara · Mercado de Abasto: plaza con 36 meses continuos de origen Colima
@@ -38,9 +39,7 @@ CIUDAD_MERCADO = {
     "220": "Santiago de Querétaro", "240": "San Luis Potosí", "260": "Hermosillo", "261": "Ciudad Obregón",
     "270": "Villahermosa", "306": "Veracruz",
 }
-SIAP_CULTIVO = {"Limón": "limon", "Papaya": "papaya", "Plátano": "platano"}
-from src.inteligencia.catalogo import FRUTAS as _FRUTAS  # noqa: E402
-
+SIAP_CULTIVO = {v["siap"]: v["claves"] for v in _FRUTAS.values()}
 NOMBRE_CULTIVO = {clave: v["nombre"] for v in _FRUTAS.values() for clave in v["claves"]}
 MESES_LARGOS = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"]
 MESES = ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"]
@@ -160,16 +159,18 @@ def margen_productor(m: pd.DataFrame, siap: pd.DataFrame) -> pd.DataFrame:
         return pd.DataFrame()
     filas = []
     for (anio, cultivo_siap), g in siap.groupby(["Anio", "Nomcultivo"]):
-        cultivo = SIAP_CULTIVO[cultivo_siap]
+        claves = SIAP_CULTIVO[cultivo_siap]
         g = g[g["volumen_produccion"].gt(0) & g["precio_medio_rural_mxn_unidad"].gt(0)]
         if g.empty:
             continue
         productor = float(np.average(g["precio_medio_rural_mxn_unidad"], weights=g["volumen_produccion"])) / 1000
-        anual = m[m["cultivo"].eq(cultivo) & m["mes"].map(lambda p: p.year).eq(int(anio))]
+        anual = m[m["cultivo"].isin(claves) & m["mes"].map(lambda p: p.year).eq(int(anio))]
+        cultivo = claves[0] if len(anual) == 0 else str(anual["cultivo"].mode().iloc[0])
         for mercado, gm in anual.groupby("mercado"):
             meses = gm["mes"].nunique()
             mayorista = float(np.average(gm["precio_frecuente_kg"], weights=gm["n_observaciones"]))
             filas.append({"anio": int(anio), "cultivo": cultivo, "mercado": mercado, "nombre_mercado": _nombre(mercado),
+                          "base": str(gm["base"].iloc[0]) if "base" in gm else "origen Colima",
                           "precio_productor_mxn_kg": round(productor, 2), "precio_mayorista_mxn_kg": round(mayorista, 2),
                           "diferencia_mxn_kg": round(mayorista - productor, 2),
                           "participacion_productor_pct": round(productor / mayorista * 100, 1),
@@ -303,7 +304,7 @@ def ejecutar(base: Path = BASE_DIR, corte: pd.Period | None = None) -> dict[str,
     pron = pd.read_csv(pron_path) if pron_path.is_file() else pd.DataFrame()
     dist = distancias_km(base / "data/publico/mercados_ciudad_sniim.geojson")
     productos = {
-        "margen_productor": margen_productor(m, siap),
+        "margen_productor": margen_productor(m_todo, siap),
         "plazas_colima": comparar_plazas(m, dist),
         "calendario_venta": calendario_venta(m_todo),
         "senales_mercado": senales(m_todo, pron),

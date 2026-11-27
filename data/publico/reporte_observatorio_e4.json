@@ -1,6 +1,6 @@
 {
   "esquema": "oaic-e4-observatorio/1",
-  "generado_utc": "2026-11-27T19:51:21.811354+00:00",
+  "generado_utc": "2026-11-27T21:27:49.742514+00:00",
   "capa_oro": "data/oro/panel_mensual.csv",
   "origen_objetivo": "Colima",
   "horizonte_meses": 3,
@@ -19,11 +19,12 @@
     "holt",
     "holt_winters_aditivo",
     "arima_aic",
-    "sarima_aic"
+    "sarima_aic",
+    "combinacion"
   ],
   "minimo_meses_contiguos": 36,
-  "series_pronosticadas": 5,
-  "filas_pronostico": 15,
+  "series_pronosticadas": 8,
+  "filas_pronostico": 24,
   "comparaciones_pareadas": 5,
   "contexto_climatico": {
     "meses_con_observaciones": 33,
@@ -166,7 +167,7 @@
       "tipo_serie": "origen_colima",
       "meses": 76,
       "pronosticable": true,
-      "modelo_elegido": "arima_aic",
+      "modelo_elegido": "combinacion",
       "n_validaciones_seleccion": 6,
       "n_validaciones_holdout": 6,
       "periodo_seleccion": [
@@ -369,9 +370,22 @@
       "mercado": "140",
       "nombre_mercado": "Guadalajara · Mercado de Abasto",
       "tipo_serie": "origen_colima",
-      "meses": 27,
-      "pronosticable": false,
-      "motivo": "requiere_36_meses_contiguos_sin_imputacion"
+      "meses": 67,
+      "pronosticable": true,
+      "modelo_elegido": "arima_aic",
+      "n_validaciones_seleccion": 6,
+      "n_validaciones_holdout": 6,
+      "periodo_seleccion": [
+        "2025-02",
+        "2025-07"
+      ],
+      "periodo_holdout": [
+        "2025-08",
+        "2026-01"
+      ],
+      "fecha_primer_dato": "2020-07",
+      "fecha_ultimo_dato": "2026-01",
+      "linaje_serie_sha256": "67a53d99d837899ce4cc0f5eb51c329677de8f3382de2c9e9bc337ed7a611aed"
     },
     {
       "cultivo": "tamarindo",
@@ -400,15 +414,15 @@
     },
     {
       "cultivo": "platano",
-      "variante_id": "732",
-      "variante": "Plátano Tabasco - Primera",
-      "origen": "Michoacán",
+      "variante_id": "723",
+      "variante": "Plátano Macho - Primera",
+      "origen": "todos los orígenes",
       "mercado": "140",
       "nombre_mercado": "Guadalajara · Mercado de Abasto",
       "tipo_serie": "referencia_mercado",
-      "meses": 50,
+      "meses": 76,
       "pronosticable": true,
-      "modelo_elegido": "holt_winters_aditivo",
+      "modelo_elegido": "combinacion",
       "n_validaciones_seleccion": 6,
       "n_validaciones_holdout": 6,
       "periodo_seleccion": [
@@ -419,19 +433,69 @@
         "2026-05",
         "2026-10"
       ],
-      "fecha_primer_dato": "2022-09",
+      "fecha_primer_dato": "2020-07",
       "fecha_ultimo_dato": "2026-10",
-      "linaje_serie_sha256": "1fa7e1f46c95f0f87f95fe5701c46a076eb833d3e99b21a701a26a4f471a1783"
+      "linaje_serie_sha256": "e5111aba6b94cc96604c365df87dbdf7ac7b275d752f24f2153fd6869325afbe"
+    },
+    {
+      "cultivo": "aguacate_hass",
+      "variante_id": "133",
+      "variante": "Aguacate Hass - Primera",
+      "origen": "todos los orígenes",
+      "mercado": "140",
+      "nombre_mercado": "Guadalajara · Mercado de Abasto",
+      "tipo_serie": "referencia_mercado",
+      "meses": 76,
+      "pronosticable": true,
+      "modelo_elegido": "combinacion",
+      "n_validaciones_seleccion": 6,
+      "n_validaciones_holdout": 6,
+      "periodo_seleccion": [
+        "2025-11",
+        "2026-04"
+      ],
+      "periodo_holdout": [
+        "2026-05",
+        "2026-10"
+      ],
+      "fecha_primer_dato": "2020-07",
+      "fecha_ultimo_dato": "2026-10",
+      "linaje_serie_sha256": "5e24b0bfa48a60bd0fcdfe5521f4345b5360ef31f32501e5249aba6173cde5db"
     },
     {
       "cultivo": "guayaba",
       "variante_id": "378",
       "variante": "Guayaba - Primera",
-      "origen": "Michoacán",
+      "origen": "todos los orígenes",
       "mercado": "140",
       "nombre_mercado": "Guadalajara · Mercado de Abasto",
       "tipo_serie": "referencia_mercado",
-      "meses": 36,
+      "meses": 76,
+      "pronosticable": true,
+      "modelo_elegido": "combinacion",
+      "n_validaciones_seleccion": 6,
+      "n_validaciones_holdout": 6,
+      "periodo_seleccion": [
+        "2025-11",
+        "2026-04"
+      ],
+      "periodo_holdout": [
+        "2026-05",
+        "2026-10"
+      ],
+      "fecha_primer_dato": "2020-07",
+      "fecha_ultimo_dato": "2026-10",
+      "linaje_serie_sha256": "542f7d2be5bb943f5f477be8171c28b5dbdd69096e8a201f85c27c0a8f84e44c"
+    },
+    {
+      "cultivo": "sandia_sangria",
+      "variante_id": "787",
+      "variante": "Sandía Sangría - Primera",
+      "origen": "todos los orígenes",
+      "mercado": "140",
+      "nombre_mercado": "Guadalajara · Mercado de Abasto",
+      "tipo_serie": "referencia_mercado",
+      "meses": 76,
       "pronosticable": true,
       "modelo_elegido": "arima_aic",
       "n_validaciones_seleccion": 6,
@@ -444,9 +508,9 @@
         "2026-05",
         "2026-10"
       ],
-      "fecha_primer_dato": "2023-11",
+      "fecha_primer_dato": "2020-07",
       "fecha_ultimo_dato": "2026-10",
-      "linaje_serie_sha256": "0b06167c28278cc20b446767406d6843f6684bb5c6b5ba59603b84d7a03f71e7"
+      "linaje_serie_sha256": "e523c90f5ca34bed219fe4567763e20e7d5b318ea6de66d6b36313ea6fbb1752"
     },
     {
       "cultivo": "aguacate_hass",

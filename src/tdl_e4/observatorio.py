@@ -34,7 +34,7 @@ REFERENCIA_CULTIVOS = ("limon", "papaya", "platano", "mango_ataulfo", "mango_man
                        "guanabana", "sandia", "sandia_blanca", "sandia_jubilee", "sandia_peacock", "sandia_negra", "sandia_rayada", "sandia_sangria")
 SELECTION_STEPS = 6
 HOLDOUT_STEPS = 6
-MODEL_NAMES = ("suavizamiento_simple", "holt", "holt_winters_aditivo", "arima_aic", "sarima_aic")
+MODEL_NAMES = ("suavizamiento_simple", "holt", "holt_winters_aditivo", "arima_aic", "sarima_aic", "combinacion")
 MARKET_NAMES = {
     "80": "Colima · Centros de distribución",
     "100": "CDMX · Central de Abasto de Iztapalapa",
@@ -111,7 +111,33 @@ def _sarima_por_aic(series: pd.Series):
     return mejor
 
 
+_CACHE_AJUSTES: dict[tuple[str, bytes, int], np.ndarray] = {}
+
+
 def _fit_predict(model: str, values: np.ndarray, steps: int) -> np.ndarray:
+    """Pronóstico de ``steps`` meses con ``model``. Se memoriza por (modelo, datos, pasos): la combinación,
+    el backtest y la calibración del intervalo reutilizan los mismos ajustes en lugar de repetirlos."""
+    clave = (model, np.asarray(values, dtype="float64").tobytes(), int(steps))
+    if clave not in _CACHE_AJUSTES:
+        _CACHE_AJUSTES[clave] = _ajustar(model, np.asarray(values, dtype="float64"), steps)
+    return _CACHE_AJUSTES[clave].copy()
+
+
+def _ajustar(model: str, values: np.ndarray, steps: int) -> np.ndarray:
+    if model == "combinacion":
+        # Promedio simple de los modelos individuales que convergen: reduce el riesgo de que un solo modelo
+        # sobrerreaccione a un episodio extremo. Compite en la misma validación que los demás.
+        preds = []
+        for m in MODEL_NAMES:
+            if m == "combinacion":
+                continue
+            try:
+                preds.append(_fit_predict(m, values, steps))
+            except Exception:  # noqa: BLE001 - un modelo que no converge se omite
+                continue
+        if len(preds) < 2:
+            raise ValueError("combinación requiere al menos dos modelos")
+        return np.mean(preds, axis=0)
     series = pd.Series(values, dtype="float64")
     with warnings.catch_warnings():
         warnings.simplefilter("ignore")
@@ -349,15 +375,28 @@ def generar_observatorio(gold_path: Path | None = None, output_dir: Path | None 
                 input_lineage = hashlib.sha256(json.dumps(lineage_rows, ensure_ascii=False, default=str,
                                                            sort_keys=True).encode("utf-8")).hexdigest()
             winner_preds = predictions[predictions["modelo"].eq(winner)] if not predictions.empty else predictions
+            # Con 12 errores los cuantiles de 80 % y 95 % coinciden en el error máximo: si la serie es larga,
+            # se calibra el intervalo con los últimos 24 errores a un paso del modelo elegido.
+            valores = indexed.to_numpy(dtype="float64")
+            errores_cal = []
+            if len(valores) >= 24 + 24:
+                for k in range(len(valores) - 24, len(valores)):
+                    try:
+                        errores_cal.append(float(_fit_predict(winner, valores[:k], 1)[0]) - float(valores[k]))
+                    except Exception:  # noqa: BLE001
+                        continue
             intervalo = _intervalo_empirico(
                 winner_preds.loc[winner_preds["segmento"].eq("seleccion"), "error_mxn_kg"].to_numpy(dtype="float64") if len(winner_preds) else np.array([]),
                 winner_preds.loc[winner_preds["segmento"].eq("holdout"), "error_mxn_kg"].to_numpy(dtype="float64") if len(winner_preds) else np.array([]))
+            if len(errores_cal) >= 18:
+                cal = _intervalo_empirico(np.array(errores_cal[:12]), np.array(errores_cal[12:]))
+                intervalo = {**cal, "cobertura_80_holdout": intervalo["cobertura_80_holdout"]}
             for step, point in enumerate(future, start=1):
                 ancho80, ancho95 = intervalo["q80"] * math.sqrt(step), intervalo["q95"] * math.sqrt(step)
                 forecast_rows.append(meta | {
                     "li80_mxn_kg": max(0.0, float(point) - ancho80), "ls80_mxn_kg": float(point) + ancho80,
                     "li95_mxn_kg": max(0.0, float(point) - ancho95), "ls95_mxn_kg": float(point) + ancho95,
-                    "metodo_intervalo": "conformal empírico: cuantil de |error| a un paso en 12 meses fuera de muestra × √h",
+                    "metodo_intervalo": f"conformal empírico: cuantil de |error| a un paso en {intervalo['n_errores']} meses fuera de muestra × √h",
                     "n_errores_intervalo": intervalo["n_errores"],
                     "cobertura_80_holdout": intervalo["cobertura_80_holdout"],
                     "modelo_elegido": winner, "meses_entrenamiento": int(len(indexed)),
@@ -389,7 +428,18 @@ def generar_observatorio(gold_path: Path | None = None, output_dir: Path | None 
     # una referencia de precio; se marca como tal y nunca sustituye a la serie de origen Colima.
     con_colima = {e["cultivo"] for e in eligibility if e.get("pronosticable")}
     general = _mensual_colima(gold, origen_objetivo=None)
-    general = general[general["mes"].le(last_closed_month) & general["mercado"].map(_market_id).eq("140")]
+    general = general[general["mes"].le(last_closed_month) & general["mercado"].map(_market_id).eq("140")].copy()
+    # La referencia de mercado suma todos los orígenes de la misma variedad en la central (ponderado por
+    # número de cotizaciones): separarla por estado de origen deja huecos aunque la fruta se cotice cada mes.
+    if not general.empty:
+        general["_v"] = general["precio_frecuente_kg"] * general["n_observaciones"]
+        agg = {"_v": ("_v", "sum"), "n_observaciones": ("n_observaciones", "sum")}
+        if "linaje_mes_sha256" in general:
+            agg["linaje_mes_sha256"] = ("linaje_mes_sha256", lambda x: hashlib.sha256("".join(sorted(map(str, x))).encode()).hexdigest())
+        general = general.groupby(["cultivo", "variante_id", "variante", "mercado", "fecha_mes", "mes"], as_index=False, dropna=False).agg(**agg)
+        general["precio_frecuente_kg"] = general["_v"] / general["n_observaciones"]
+        general["origen"] = "todos los orígenes"
+        general = general.drop(columns="_v")
     for cultivo in REFERENCIA_CULTIVOS:
         if cultivo in con_colima:
             continue
@@ -398,10 +448,12 @@ def generar_observatorio(gold_path: Path | None = None, output_dir: Path | None 
             g = g.sort_values("mes").drop_duplicates("mes", keep="last")
             periodo = pd.period_range(g["mes"].min(), g["mes"].max(), freq="M")
             serie = g.set_index("mes")["precio_frecuente_kg"].reindex(periodo)
-            if len(serie) >= MIN_MONTHS and serie.notna().all():
-                candidatos.append((int(g["n_observaciones"].sum()), key))
+            faltan = serie.isna().to_numpy().nonzero()[0]
+            tramo = serie.iloc[faltan[-1] + 1:] if len(faltan) else serie  # tramo continuo más reciente
+            if len(tramo) >= MIN_MONTHS:
+                candidatos.append((len(tramo), int(g["n_observaciones"].sum()), key))
         if candidatos:
-            _, elegido = max(candidatos)
+            *_, elegido = max(candidatos)
             mask = np.logical_and.reduce([general[k].astype(str).eq(str(v)) for k, v in zip([*KEYS, "mercado"], elegido, strict=True)])
             _procesar(general[mask], "referencia_mercado")
 

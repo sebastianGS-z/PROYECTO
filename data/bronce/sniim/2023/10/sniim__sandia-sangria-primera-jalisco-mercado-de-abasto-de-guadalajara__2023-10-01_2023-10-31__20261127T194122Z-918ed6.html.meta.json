@@ -1,0 +1,39 @@
+{
+  "esquema": "tdl-bronce-meta/1",
+  "contenido_original": {
+    "archivo": "sniim__sandia-sangria-primera-jalisco-mercado-de-abasto-de-guadalajara__2023-10-01_2023-10-31__20261127T194122Z-918ed6.html",
+    "descripcion": "Bytes tal como los entregó la fuente; no se modifican."
+  },
+  "metadatos_captura": {
+    "fuente": "sniim",
+    "fuente_url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2023&fechaFinal=31%2F10%2F2023&ProductoId=787&OrigenId=-1&Origen=Todos&DestinoId=140&Destino=Jalisco%3A+Mercado+de+Abasto+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+    "fecha_captura": "2026-11-27T20:32:02Z",
+    "identificador_ejecucion": "20261127T194122Z-918ed6",
+    "formato_original": "html",
+    "sha256": "c0cb4def43c80813b377cf9291344961ad957437faa1e75557945df7f7ac150d",
+    "bytes": 26430,
+    "http_status": 200,
+    "registros_detectados": 22,
+    "estado_captura": "ok",
+    "advertencias": [],
+    "colision_nombre": false,
+    "etiqueta": "Sandía Sangría - Primera__Jalisco: Mercado de Abasto de Guadalajara",
+    "producto": "Sandía Sangría - Primera",
+    "producto_id": "787",
+    "mercado": "Jalisco: Mercado de Abasto de Guadalajara",
+    "mercado_id": "140",
+    "fecha_ref_inicio": "2023-10-01",
+    "fecha_ref_fin": "2023-10-31",
+    "parametros": {
+      "fechaInicio": "01/10/2023",
+      "fechaFinal": "31/10/2023",
+      "ProductoId": "787",
+      "OrigenId": "-1",
+      "Origen": "Todos",
+      "DestinoId": "140",
+      "Destino": "Jalisco: Mercado de Abasto de Guadalajara",
+      "PreciosPorId": "1",
+      "RegistrosPorPagina": "500"
+    }
+  }
+}

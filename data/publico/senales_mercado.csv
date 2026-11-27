@@ -1,27 +1,30 @@
 cultivo,variante_id,variante,mercado,base,nombre_mercado,ultimo_mes,ultimo_precio_mxn_kg,percentil_historico,meses_historia,lectura,pronostico_siguiente_mes,rango_80_siguiente_mes
-papaya,609,Papaya Maradol - Primera,140,origen Colima,Guadalajara · Mercado de Abasto,2026-10,18.27,84.0,119,"precio alto respecto a su historia: buen momento para vender, mal momento para comprar inventario",17.97,14.7–21.3
-limon,421,Limón c/semilla # 5 - Primera,140,origen Colima,Guadalajara · Mercado de Abasto,2026-10,23.65,50.0,117,precio en rango normal,11.81,2.1–21.6
-mango_ataulfo,465,Mango Ataulfo - Primera,140,todos los orígenes,Guadalajara · Mercado de Abasto,2026-08,38.74,95.0,63,"precio alto respecto a su historia: buen momento para vender, mal momento para comprar inventario",,
-platano,732,Plátano Tabasco - Primera,140,origen Colima,Guadalajara · Mercado de Abasto,2021-11,11.53,87.0,60,"precio alto respecto a su historia: buen momento para vender, mal momento para comprar inventario",8.09,3.0–13.2
+aguacate_hass,133,Aguacate Hass - Primera,140,todos los orígenes,Guadalajara · Mercado de Abasto,2026-10,30.15,0.0,119,precio bajo respecto a su historia: conviene revisar si se puede esperar o almacenar,27.49,13.8–41.2
+guayaba,378,Guayaba - Primera,140,todos los orígenes,Guadalajara · Mercado de Abasto,2026-10,21.59,88.0,119,"precio alto respecto a su historia: buen momento para vender, mal momento para comprar inventario",21.76,17.2–26.4
+papaya,609,Papaya Maradol - Primera,140,origen Colima,Guadalajara · Mercado de Abasto,2026-10,18.27,84.0,119,"precio alto respecto a su historia: buen momento para vender, mal momento para comprar inventario",19.18,14.0–24.4
+sandia_sangria,787,Sandía Sangría - Primera,140,todos los orígenes,Guadalajara · Mercado de Abasto,2026-10,16.32,93.0,119,"precio alto respecto a su historia: buen momento para vender, mal momento para comprar inventario",15.98,14.2–17.7
+limon,421,Limón c/semilla # 5 - Primera,140,origen Colima,Guadalajara · Mercado de Abasto,2026-10,23.65,50.0,117,precio en rango normal,11.81,3.9–19.7
+tamarindo,800,Tamarindo - Primera,140,origen Colima,Guadalajara · Mercado de Abasto,2026-01,80.36,99.0,109,"precio alto respecto a su historia: buen momento para vender, mal momento para comprar inventario",82.37,76.0–88.7
+guanabana,374,Guanabana - Primera,140,todos los orígenes,Guadalajara · Mercado de Abasto,2024-07,21.77,57.0,79,precio en rango normal,,
+mango_ataulfo,465,Mango Ataulfo - Primera,140,todos los orígenes,Guadalajara · Mercado de Abasto,2026-08,38.74,95.0,65,"precio alto respecto a su historia: buen momento para vender, mal momento para comprar inventario",,
+platano,732,Plátano Tabasco - Primera,140,origen Colima,Guadalajara · Mercado de Abasto,2021-11,11.53,87.0,60,"precio alto respecto a su historia: buen momento para vender, mal momento para comprar inventario",,
 guayaba,378,Guayaba - Primera,80,todos los orígenes,Colima · Centros de distribución,2026-10,25.0,0.0,36,precio bajo respecto a su historia: conviene revisar si se puede esperar o almacenar,,
-guayaba,378,Guayaba - Primera,140,todos los orígenes,Guadalajara · Mercado de Abasto,2026-10,21.59,64.0,36,precio en rango normal,21.92,15.8–28.0
 tamarindo,800,Tamarindo - Primera,80,origen Colima,Colima · Centros de distribución,2026-10,42.22,89.0,36,"precio alto respecto a su historia: buen momento para vender, mal momento para comprar inventario",42.19,41.0–43.4
-tamarindo,800,Tamarindo - Primera,140,origen Colima,Guadalajara · Mercado de Abasto,2026-01,80.36,96.0,27,"precio alto respecto a su historia: buen momento para vender, mal momento para comprar inventario",,
-limon,421,Limón c/semilla # 5 - Primera,101,origen Colima,Gómez Palacio · Centro de Distribución y Abasto,2026-10,27.9,42.0,12,precio en rango normal,,
+limon,421,Limón c/semilla # 5 - Primera,141,origen Colima,Guadalajara · Mercado Felipe Ángeles,2026-10,14.75,8.0,12,precio bajo respecto a su historia: conviene revisar si se puede esperar o almacenar,,
 limon,421,Limón c/semilla # 5 - Primera,10,origen Colima,Aguascalientes · Centro Comercial Agropecuario,2026-10,18.18,50.0,12,precio en rango normal,,
 limon,421,Limón c/semilla # 5 - Primera,50,origen Colima,Torreón · Central de Abasto de La Laguna,2026-10,16.87,0.0,12,precio bajo respecto a su historia: conviene revisar si se puede esperar o almacenar,,
 limon,421,Limón c/semilla # 5 - Primera,260,origen Colima,Hermosillo · Mercado de Abasto Francisco I. Madero,2026-10,18.17,0.0,12,precio bajo respecto a su historia: conviene revisar si se puede esperar o almacenar,,
 limon,421,Limón c/semilla # 5 - Primera,240,origen Colima,San Luis Potosí · Centro de Abasto,2026-10,16.85,25.0,12,precio bajo respecto a su historia: conviene revisar si se puede esperar o almacenar,,
 limon,421,Limón c/semilla # 5 - Primera,190,origen Colima,Monterrey · Mercado de Abasto Estrella,2026-10,24.12,42.0,12,precio en rango normal,,
-limon,421,Limón c/semilla # 5 - Primera,141,origen Colima,Guadalajara · Mercado Felipe Ángeles,2026-10,14.75,8.0,12,precio bajo respecto a su historia: conviene revisar si se puede esperar o almacenar,,
-papaya,609,Papaya Maradol - Primera,240,origen Colima,San Luis Potosí · Centro de Abasto,2026-10,19.86,8.0,12,precio bajo respecto a su historia: conviene revisar si se puede esperar o almacenar,,
+limon,421,Limón c/semilla # 5 - Primera,101,origen Colima,Gómez Palacio · Centro de Distribución y Abasto,2026-10,27.9,42.0,12,precio en rango normal,,
 papaya,609,Papaya Maradol - Primera,141,origen Colima,Guadalajara · Mercado Felipe Ángeles,2026-10,16.8,33.0,12,precio en rango normal,,
 papaya,609,Papaya Maradol - Primera,220,origen Colima,Querétaro · Mercado de Abasto,2026-10,23.36,58.0,12,precio en rango normal,,
+papaya,609,Papaya Maradol - Primera,240,origen Colima,San Luis Potosí · Centro de Abasto,2026-10,19.86,8.0,12,precio bajo respecto a su historia: conviene revisar si se puede esperar o almacenar,,
+platano,666,Plátano Dominico - Primera,220,origen Colima,Querétaro · Mercado de Abasto,2026-10,20.71,8.0,12,precio bajo respecto a su historia: conviene revisar si se puede esperar o almacenar,,
 platano,663,Plátano Chiapas - Primera,320,origen Colima,Zacatecas · Mercado de Abasto,2026-10,17.32,33.0,12,precio en rango normal,,
 platano,663,Plátano Chiapas - Primera,20,origen Colima,La Paz · Unión de Comerciantes,2026-10,22.25,42.0,12,precio en rango normal,,
 papaya,609,Papaya Maradol - Primera,320,origen Colima,Zacatecas · Mercado de Abasto,2026-10,22.53,67.0,12,precio en rango normal,,
-platano,666,Plátano Dominico - Primera,220,origen Colima,Querétaro · Mercado de Abasto,2026-10,20.71,8.0,12,precio bajo respecto a su historia: conviene revisar si se puede esperar o almacenar,,
+platano,732,Plátano Tabasco - Primera,220,origen Colima,Querétaro · Mercado de Abasto,2026-10,9.52,17.0,12,precio bajo respecto a su historia: conviene revisar si se puede esperar o almacenar,,
 platano,723,Plátano Macho - Primera,220,origen Colima,Querétaro · Mercado de Abasto,2026-10,23.0,42.0,12,precio en rango normal,,
 platano,666,Plátano Dominico - Primera,33,origen Colima,Tijuana · Central de Abasto INDIA,2026-10,43.91,50.0,12,precio en rango normal,,
 platano,732,Plátano Tabasco - Primera,240,origen Colima,San Luis Potosí · Centro de Abasto,2026-10,10.14,25.0,12,precio bajo respecto a su historia: conviene revisar si se puede esperar o almacenar,,
-platano,732,Plátano Tabasco - Primera,220,origen Colima,Querétaro · Mercado de Abasto,2026-10,9.52,17.0,12,precio bajo respecto a su historia: conviene revisar si se puede esperar o almacenar,,

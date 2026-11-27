@@ -2,7 +2,7 @@
   "regla": "No se imputan precios ni precipitación. MAR/MCAR/MNAR no se prueban solo con valores observados; se reportan asociaciones descriptivas.",
   "variables": {
     "precio_min": {
-      "n_aplicable": 39344,
+      "n_aplicable": 53672,
       "faltantes": 0,
       "porcentaje": 0.0,
       "mecanismo": "sin_faltantes",
@@ -48,7 +48,7 @@
       "decision_imputacion": "no_imputar: una cotización ausente no se deduce de las restantes"
     },
     "precio_max": {
-      "n_aplicable": 39344,
+      "n_aplicable": 53672,
       "faltantes": 0,
       "porcentaje": 0.0,
       "mecanismo": "sin_faltantes",
@@ -94,7 +94,7 @@
       "decision_imputacion": "no_imputar: una cotización ausente no se deduce de las restantes"
     },
     "precio_frecuente": {
-      "n_aplicable": 39344,
+      "n_aplicable": 53672,
       "faltantes": 0,
       "porcentaje": 0.0,
       "mecanismo": "sin_faltantes",
@@ -140,13 +140,13 @@
       "decision_imputacion": "no_imputar: una cotización ausente no se deduce de las restantes"
     },
     "precio_min_kg": {
-      "n_aplicable": 39344,
-      "faltantes": 53,
-      "porcentaje": 0.13,
+      "n_aplicable": 53672,
+      "faltantes": 2377,
+      "porcentaje": 4.43,
       "mecanismo": "MAR_compatible_asociacion_con_variables_observadas",
       "tasas_por_grupo": {
         "tipo_registro": {
-          "precio": 0.0013
+          "precio": 0.0443
         },
         "cultivo": {
           "aguacate_hass": 0.0,
@@ -168,7 +168,7 @@
           "10": 0.0,
           "100": 0.0,
           "101": 0.0,
-          "140": 0.001,
+          "140": 0.0626,
           "141": 0.0,
           "160": 0.1111,
           "190": 0.0,
@@ -186,13 +186,13 @@
       "decision_imputacion": "no_imputar: una cotización ausente no se deduce de las restantes"
     },
     "precio_max_kg": {
-      "n_aplicable": 39344,
-      "faltantes": 53,
-      "porcentaje": 0.13,
+      "n_aplicable": 53672,
+      "faltantes": 2377,
+      "porcentaje": 4.43,
       "mecanismo": "MAR_compatible_asociacion_con_variables_observadas",
       "tasas_por_grupo": {
         "tipo_registro": {
-          "precio": 0.0013
+          "precio": 0.0443
         },
         "cultivo": {
           "aguacate_hass": 0.0,
@@ -214,7 +214,7 @@
           "10": 0.0,
           "100": 0.0,
           "101": 0.0,
-          "140": 0.001,
+          "140": 0.0626,
           "141": 0.0,
           "160": 0.1111,
           "190": 0.0,
@@ -232,13 +232,13 @@
       "decision_imputacion": "no_imputar: una cotización ausente no se deduce de las restantes"
     },
     "precio_frecuente_kg": {
-      "n_aplicable": 39344,
-      "faltantes": 53,
-      "porcentaje": 0.13,
+      "n_aplicable": 53672,
+      "faltantes": 2377,
+      "porcentaje": 4.43,
       "mecanismo": "MAR_compatible_asociacion_con_variables_observadas",
       "tasas_por_grupo": {
         "tipo_registro": {
-          "precio": 0.0013
+          "precio": 0.0443
         },
         "cultivo": {
           "aguacate_hass": 0.0,
@@ -260,7 +260,7 @@
           "10": 0.0,
           "100": 0.0,
           "101": 0.0,
-          "140": 0.001,
+          "140": 0.0626,
           "141": 0.0,
           "160": 0.1111,
           "190": 0.0,

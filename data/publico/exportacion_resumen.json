@@ -1,6 +1,6 @@
 {
   "esquema": "oaic-exportacion/1",
-  "generado_utc": "2026-11-27T19:59:18+00:00",
+  "generado_utc": "2026-11-27T21:28:07+00:00",
   "fuente": "UN Comtrade (API pública) · tipo de cambio BCE vía Frankfurter",
   "anios": [
     2019,
@@ -1275,9 +1275,9 @@
       "valor_unitario_exportacion_usd_kg": 3.17,
       "valor_unitario_exportacion_mxn_kg": 58.13,
       "tipo_cambio_usd_mxn": 18.32,
-      "precio_mayorista_nacional_mxn_kg": 35.43,
+      "precio_mayorista_nacional_mxn_kg": 39.29,
       "base_precio_nacional": "todos los orígenes",
-      "prima_exportacion_pct": 64.0,
+      "prima_exportacion_pct": 48.0,
       "destinos": [
         {
           "pais": "USA",

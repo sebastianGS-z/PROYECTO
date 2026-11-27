@@ -1,19 +1,19 @@
 {
   "esquema": "tdl-e1-quality/1",
-  "generado_utc": "2026-11-27T19:45:57.896447+00:00",
+  "generado_utc": "2026-11-27T20:53:14.174694+00:00",
   "bronce": "data/bronce",
-  "registros_bronce_parseados": 41191,
-  "registros_plata_validos": 40285,
-  "registros_cuarentena": 1,
+  "registros_bronce_parseados": 55787,
+  "registros_plata_validos": 54613,
+  "registros_cuarentena": 2,
   "registros_rechazados_por_reglas": 0,
-  "registros_duplicados_descartados": 906,
+  "registros_duplicados_descartados": 1174,
   "conflictos_duplicados": 809,
-  "filas_oro": 2001,
+  "filas_oro": 2727,
   "integridad": "Pandera estricto; SHA-256 Bronce verificado antes de parsear",
   "linaje_oro": {
-    "filas_oro_verificadas": 2001,
-    "referencias_bronce_precio": 39344,
-    "referencias_bronce_clima": 30354,
+    "filas_oro_verificadas": 2727,
+    "referencias_bronce_precio": 53672,
+    "referencias_bronce_clima": 34017,
     "campos": [
       "linaje_precios_bronce",
       "linaje_clima_bronce"
@@ -29,7 +29,7 @@
     "regla": "No se imputan precios ni precipitación. MAR/MCAR/MNAR no se prueban solo con valores observados; se reportan asociaciones descriptivas.",
     "variables": {
       "precio_min": {
-        "n_aplicable": 39344,
+        "n_aplicable": 53672,
         "faltantes": 0,
         "porcentaje": 0.0,
         "mecanismo": "sin_faltantes",
@@ -75,7 +75,7 @@
         "decision_imputacion": "no_imputar: una cotización ausente no se deduce de las restantes"
       },
       "precio_max": {
-        "n_aplicable": 39344,
+        "n_aplicable": 53672,
         "faltantes": 0,
         "porcentaje": 0.0,
         "mecanismo": "sin_faltantes",
@@ -121,7 +121,7 @@
         "decision_imputacion": "no_imputar: una cotización ausente no se deduce de las restantes"
       },
       "precio_frecuente": {
-        "n_aplicable": 39344,
+        "n_aplicable": 53672,
         "faltantes": 0,
         "porcentaje": 0.0,
         "mecanismo": "sin_faltantes",
@@ -167,13 +167,13 @@
         "decision_imputacion": "no_imputar: una cotización ausente no se deduce de las restantes"
       },
       "precio_min_kg": {
-        "n_aplicable": 39344,
-        "faltantes": 53,
-        "porcentaje": 0.13,
+        "n_aplicable": 53672,
+        "faltantes": 2377,
+        "porcentaje": 4.43,
         "mecanismo": "MAR_compatible_asociacion_con_variables_observadas",
         "tasas_por_grupo": {
           "tipo_registro": {
-            "precio": 0.0013
+            "precio": 0.0443
           },
           "cultivo": {
             "aguacate_hass": 0.0,
@@ -195,7 +195,7 @@
             "10": 0.0,
             "100": 0.0,
             "101": 0.0,
-            "140": 0.001,
+            "140": 0.0626,
             "141": 0.0,
             "160": 0.1111,
             "190": 0.0,
@@ -213,13 +213,13 @@
         "decision_imputacion": "no_imputar: una cotización ausente no se deduce de las restantes"
       },
       "precio_max_kg": {
-        "n_aplicable": 39344,
-        "faltantes": 53,
-        "porcentaje": 0.13,
+        "n_aplicable": 53672,
+        "faltantes": 2377,
+        "porcentaje": 4.43,
         "mecanismo": "MAR_compatible_asociacion_con_variables_observadas",
         "tasas_por_grupo": {
           "tipo_registro": {
-            "precio": 0.0013
+            "precio": 0.0443
           },
           "cultivo": {
             "aguacate_hass": 0.0,
@@ -241,7 +241,7 @@
             "10": 0.0,
             "100": 0.0,
             "101": 0.0,
-            "140": 0.001,
+            "140": 0.0626,
             "141": 0.0,
             "160": 0.1111,
             "190": 0.0,
@@ -259,13 +259,13 @@
         "decision_imputacion": "no_imputar: una cotización ausente no se deduce de las restantes"
       },
       "precio_frecuente_kg": {
-        "n_aplicable": 39344,
-        "faltantes": 53,
-        "porcentaje": 0.13,
+        "n_aplicable": 53672,
+        "faltantes": 2377,
+        "porcentaje": 4.43,
         "mecanismo": "MAR_compatible_asociacion_con_variables_observadas",
         "tasas_por_grupo": {
           "tipo_registro": {
-            "precio": 0.0013
+            "precio": 0.0443
           },
           "cultivo": {
             "aguacate_hass": 0.0,
@@ -287,7 +287,7 @@
             "10": 0.0,
             "100": 0.0,
             "101": 0.0,
-            "140": 0.001,
+            "140": 0.0626,
             "141": 0.0,
             "160": 0.1111,
             "190": 0.0,
@@ -423,8 +423,8 @@
   "transformaciones": {
     "atipicos": {
       "precio_min": {
-        "filas_marcadas": 894,
-        "grupos_evaluados": 80,
+        "filas_marcadas": 1073,
+        "grupos_evaluados": 83,
         "metodos": [
           "IQR 1.5×",
           "Z robusto (MAD) > 3.5"
@@ -432,8 +432,8 @@
         "tratamiento": "se conserva el original; *_analisis aplica winsorización IQR para el modelado"
       },
       "precio_max": {
-        "filas_marcadas": 1019,
-        "grupos_evaluados": 80,
+        "filas_marcadas": 1426,
+        "grupos_evaluados": 83,
         "metodos": [
           "IQR 1.5×",
           "Z robusto (MAD) > 3.5"
@@ -441,8 +441,8 @@
         "tratamiento": "se conserva el original; *_analisis aplica winsorización IQR para el modelado"
       },
       "precio_frecuente": {
-        "filas_marcadas": 885,
-        "grupos_evaluados": 80,
+        "filas_marcadas": 1090,
+        "grupos_evaluados": 83,
         "metodos": [
           "IQR 1.5×",
           "Z robusto (MAD) > 3.5"
@@ -450,8 +450,8 @@
         "tratamiento": "se conserva el original; *_analisis aplica winsorización IQR para el modelado"
       },
       "precio_min_kg": {
-        "filas_marcadas": 909,
-        "grupos_evaluados": 77,
+        "filas_marcadas": 1092,
+        "grupos_evaluados": 80,
         "metodos": [
           "IQR 1.5×",
           "Z robusto (MAD) > 3.5"
@@ -459,8 +459,8 @@
         "tratamiento": "se conserva el original; *_analisis aplica winsorización IQR para el modelado"
       },
       "precio_max_kg": {
-        "filas_marcadas": 1019,
-        "grupos_evaluados": 77,
+        "filas_marcadas": 1430,
+        "grupos_evaluados": 80,
         "metodos": [
           "IQR 1.5×",
           "Z robusto (MAD) > 3.5"
@@ -468,8 +468,8 @@
         "tratamiento": "se conserva el original; *_analisis aplica winsorización IQR para el modelado"
       },
       "precio_frecuente_kg": {
-        "filas_marcadas": 881,
-        "grupos_evaluados": 77,
+        "filas_marcadas": 1090,
+        "grupos_evaluados": 80,
         "metodos": [
           "IQR 1.5×",
           "Z robusto (MAD) > 3.5"
@@ -518,43 +518,43 @@
         "metodo": "Min-Max y Z-Score poblacional sobre *_analisis (original o winsorizado); parámetros completos en el reporte",
         "minimo": 4.8,
         "maximo": 1400.0,
-        "media": 155.7775340585604,
-        "desviacion": 186.60396201140225
+        "media": 163.0144134744373,
+        "desviacion": 191.26015260120187
       },
       "precio_max": {
         "metodo": "Min-Max y Z-Score poblacional sobre *_analisis (original o winsorizado); parámetros completos en el reporte",
         "minimo": 5.0,
         "maximo": 1555.0,
-        "media": 180.5834968483123,
-        "desviacion": 218.26788860504354
+        "media": 186.8355119988076,
+        "desviacion": 219.80995723975434
       },
       "precio_frecuente": {
         "metodo": "Min-Max y Z-Score poblacional sobre *_analisis (original o winsorizado); parámetros completos en el reporte",
         "minimo": 4.8,
         "maximo": 1450.0,
-        "media": 161.80698184602483,
-        "desviacion": 193.90452234672512
+        "media": 167.76179467413178,
+        "desviacion": 196.79492462890914
       },
       "precio_min_kg": {
         "metodo": "Min-Max y Z-Score poblacional sobre *_analisis (original o winsorizado); parámetros completos en el reporte",
         "minimo": 3.3333333333333335,
-        "maximo": 80.0,
-        "media": 18.80704044845798,
-        "desviacion": 8.881361703381314
+        "maximo": 94.44444444444444,
+        "media": 20.907937359364414,
+        "desviacion": 12.464919283759198
       },
       "precio_max_kg": {
         "metodo": "Min-Max y Z-Score poblacional sobre *_analisis (original o winsorizado); parámetros completos en el reporte",
         "minimo": 3.888888888888889,
-        "maximo": 90.0,
-        "media": 21.5681005033527,
-        "desviacion": 10.517309862448416
+        "maximo": 96.66666666666667,
+        "media": 23.811512364684898,
+        "desviacion": 14.096331062728064
       },
       "precio_frecuente_kg": {
         "metodo": "Min-Max y Z-Score poblacional sobre *_analisis (original o winsorizado); parámetros completos en el reporte",
         "minimo": 3.611111111111111,
-        "maximo": 85.0,
-        "media": 19.45382808222739,
-        "desviacion": 9.329833237667778
+        "maximo": 92.5,
+        "media": 21.44085056568928,
+        "desviacion": 12.67698877371183
       },
       "tavg_c": {
         "metodo": "Min-Max y Z-Score poblacional sobre *_analisis (original o winsorizado); parámetros completos en el reporte",
@@ -641,8 +641,8 @@
   "cuarentena": "cada fila incluye ruta, hash cuando disponible, motivo y representación del registro original",
   "normalizacion_precio_kg": {
     "regla": "precio de la presentación dividido entre kg declarados explícitamente por SNIIM; sin peso verificable permanece nulo",
-    "cotizaciones_totales": 39344,
-    "cotizaciones_con_precio_frecuente_kg": 39291,
+    "cotizaciones_totales": 53672,
+    "cotizaciones_con_precio_frecuente_kg": 51295,
     "por_presentacion": {
       "Arpilla de 15 kg.": {
         "registros": 1052,
@@ -659,8 +659,8 @@
         ]
       },
       "Caja de 10 kg.": {
-        "registros": 91,
-        "convertibles": 91,
+        "registros": 1784,
+        "convertibles": 1784,
         "kg_por_unidad": [
           10.0
         ]
@@ -686,6 +686,13 @@
           16.0
         ]
       },
+      "Caja de 17 kg.": {
+        "registros": 398,
+        "convertibles": 398,
+        "kg_por_unidad": [
+          17.0
+        ]
+      },
       "Caja de 18 kg.": {
         "registros": 6303,
         "convertibles": 6303,
@@ -701,8 +708,8 @@
         ]
       },
       "Caja de 20 kg.": {
-        "registros": 1295,
-        "convertibles": 1295,
+        "registros": 1860,
+        "convertibles": 1860,
         "kg_por_unidad": [
           20.0
         ]
@@ -715,8 +722,8 @@
         ]
       },
       "Caja de 30 kg.": {
-        "registros": 493,
-        "convertibles": 493,
+        "registros": 534,
+        "convertibles": 534,
         "kg_por_unidad": [
           30.0
         ]
@@ -750,21 +757,21 @@
         ]
       },
       "Caja de 9 kg.": {
-        "registros": 66,
-        "convertibles": 66,
+        "registros": 4659,
+        "convertibles": 4659,
         "kg_por_unidad": [
           9.0
         ]
       },
       "Kilogramo": {
-        "registros": 22044,
-        "convertibles": 22044,
+        "registros": 26758,
+        "convertibles": 26758,
         "kg_por_unidad": [
           1.0
         ]
       },
       "Pieza": {
-        "registros": 53,
+        "registros": 2377,
         "convertibles": 0,
         "kg_por_unidad": []
       }

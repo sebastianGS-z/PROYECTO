@@ -138,12 +138,51 @@ def _confianza_pronostico(r: pd.Series) -> tuple[int, str]:
 # Respuestas
 # --------------------------------------------------------------------------------------------------
 
+def dato_parcial(d: dict[str, Any], r: pd.Series) -> tuple[float | None, int]:
+    """Precio frecuente del mes en curso (aún incompleto) para la misma serie del pronóstico, y cuántas cotizaciones lleva."""
+    g = d["gold"]
+    if g.empty or "precio_frecuente_kg_mean" not in g:
+        return None, 0
+    g = g[(g["variante_id"].astype(float) == float(r["variante_id"])) & (g["mercado"].map(_market_id) == _market_id(r["mercado"]))
+          & (g["fecha_mes"].astype(str).str[:7] == str(r["fecha_pronostico"]))]
+    if str(r.get("origen")) not in {"todos los orígenes", "nan"}:
+        g = g[g["origen"].astype(str).eq(str(r["origen"]))]
+    g = g[g["precio_frecuente_kg_mean"].notna()]
+    if g.empty:
+        return None, 0
+    w = g["precio_frecuente_kg_count"].clip(lower=1)
+    return float((g["precio_frecuente_kg_mean"] * w).sum() / w.sum()), int(w.sum())
+
+
+def _verificacion_parcial(d: dict[str, Any], r: pd.Series) -> tuple[str, int]:
+    """Texto de contraste con el dato parcial del mes y penalización de confianza si el pronóstico ya diverge."""
+    parcial, n = dato_parcial(d, r)
+    if parcial is None or n < 5:
+        return "", 0
+    desvio = (parcial / float(r["precio_frecuente_mxn_kg"]) - 1) * 100
+    fuera = not (float(r["li80_mxn_kg"]) <= parcial <= float(r["ls80_mxn_kg"]))
+    texto = f" En lo que va de {r['fecha_pronostico']} ({n} cotizaciones) el precio observado es **{_f(parcial)} MXN/kg** ({desvio:+.0f} % frente al pronóstico)."
+    if fuera or abs(desvio) >= 30:
+        texto += " **El dato observado ya se aleja del pronóstico: para este mes, dé más peso al precio observado.**"
+        return texto, 20
+    return texto + " Va en línea con el pronóstico.", 0
+
+
 def r_proximo_mes(d: dict[str, Any], c: str) -> dict[str, Any]:
     q = f"¿A cuánto se va a pagar {PRODUCTOS[c]['articulo']} el próximo mes?"
     p = _pronostico(d, c)
     p = p[p["horizonte_meses"].eq(1)] if not p.empty else p
     if p.empty:
-        return _r(q, f"Todavía no hay pronóstico para {PRODUCTOS[c]['articulo']}: se exigen 36 meses continuos de una misma serie y aún no se reúnen.",
+        g_ = _de(d["gold"], c)
+        meses_10 = pd.to_datetime(g_["fecha_mes"]).dt.to_period("M").nunique() if not g_.empty else 0
+        if c == "coco":
+            motivo_np = "el SNIIM lo cotiza por pieza, no por kilogramo, y el observatorio no convierte piezas a kilos sin un peso verificable"
+        elif meses_10 and meses_10 < 100:
+            motivo_np = (f"es fruta de temporada: el SNIIM la cotizó solo {meses_10} de los últimos 120 meses, así que nunca hay 36 meses seguidos. "
+                         "Para la temporada, use la pregunta de precio de hoy y el calendario de meses")
+        else:
+            motivo_np = "se exigen 36 meses continuos de una misma serie y aún no se reúnen"
+        return _r(q, f"Todavía no hay pronóstico para {PRODUCTOS[c]['articulo']}: {motivo_np}.",
                   "no aplica", "sin serie elegible", "Use el precio actual por central (pregunta 6) como referencia.", "Criterio de elegibilidad del observatorio")
     r = p.iloc[0]
     ref = r.get("tipo_serie") == "referencia_mercado"
@@ -152,7 +191,11 @@ def r_proximo_mes(d: dict[str, Any], c: str) -> dict[str, Any]:
              f"**{_f(r['precio_frecuente_mxn_kg'])} MXN/kg** para {r['fecha_pronostico']}. 4 de cada 5 veces el precio cae entre "
              f"{_f(r['li80_mxn_kg'])} y {_f(r['ls80_mxn_kg'])} MXN/kg; 19 de cada 20, entre {_f(r['li95_mxn_kg'])} y {_f(r['ls95_mxn_kg'])}.")
     if ref:
-        texto += " No hay 36 meses de plátano de origen Colima en una central, así que es una **referencia del mercado** con fruta de otro origen."
+        texto += f" No hay 36 meses continuos de {PRODUCTOS[c]['nombre'].lower()} de origen Colima en una central, así que es una **referencia del mercado** con fruta de todos los orígenes."
+    extra, castigo = _verificacion_parcial(d, r)
+    texto += extra
+    conf = conf - castigo
+    motivo += "; se descuentan 20 puntos porque el dato parcial del mes ya diverge" if castigo else ""
     return _r(q, texto, conf, motivo, "Planee con el rango, no con el número exacto; si su costo de producción está cerca del mínimo del rango, asegure parte del volumen con un acuerdo de precio.",
               f"SNIIM · modelo {r['modelo_elegido']}", str(r["fecha_ultimo_dato"]))
 
@@ -176,6 +219,8 @@ def r_vender_o_esperar(d: dict[str, Any], c: str) -> dict[str, Any]:
     lectura = ("es más probable que suba" if prob >= 0.65 else "es más probable que baje" if prob <= 0.35 else "subir o bajar es casi igual de probable")
     conf, motivo = _confianza_pronostico(r)
     conf = min(conf, 45) if len(sel) < 12 else conf
+    _, castigo = _verificacion_parcial(d, r)
+    conf -= castigo
     return _r(q, f"Último precio observado ({sel['mes_validacion'].iloc[-1]}) en {r['nombre_mercado']}: {_f(ultimo)} MXN/kg. Para {r['fecha_pronostico']} el pronóstico es "
                  f"{_f(r['precio_frecuente_mxn_kg'])} ({cambio:+.0f} %). Aplicando los {len(sel)} errores reales del modelo, en **{prob * 100:.0f} %** de los escenarios el precio "
                  f"queda por encima del actual: {lectura}.",
@@ -290,8 +335,9 @@ def r_cuanto_me_queda(d: dict[str, Any], c: str) -> dict[str, Any]:
         return _r(q, "No hay un año común entre el precio rural SIAP y cotizaciones de origen Colima en alguna central para este producto.", "no aplica", "sin año común", "—", "SIAP · SNIIM")
     r = mg.iloc[-1]
     meses = int(r["meses_mayorista"])
-    return _r(q, f"En {int(r['anio'])} el productor de Colima recibió en promedio **{_f(r['precio_productor_mxn_kg'])} MXN/kg** (SIAP) y {r['nombre_mercado']} cotizó el producto de "
-                 f"origen Colima en {_f(r['precio_mayorista_mxn_kg'])} MXN/kg: al productor le llegó el **{_f(r['participacion_productor_pct'], 0)} %**. Los otros "
+    ref_txt = "de origen Colima" if str(r.get("base", "origen Colima")) == "origen Colima" else "de todos los orígenes (no hay mayoreo de origen Colima)"
+    return _r(q, f"En {int(r['anio'])} el productor de Colima recibió en promedio **{_f(r['precio_productor_mxn_kg'])} MXN/kg** (SIAP) y {r['nombre_mercado']} cotizó la fruta "
+                 f"{ref_txt} en {_f(r['precio_mayorista_mxn_kg'])} MXN/kg: al productor le llegó el **{_f(r['participacion_productor_pct'], 0)} %**. Los otros "
                  f"{_f(r['diferencia_mxn_kg'])} MXN/kg cubren empaque, flete, mermas, comisiones e intermediación.",
               _evidencia(meses, 12, 85), f"promedios anuales oficiales; {meses} meses de cotización mayorista; no distingue calidades",
               "Use este porcentaje para revisar si una oferta en huerta está en línea con el mercado (calculadora de arriba).",

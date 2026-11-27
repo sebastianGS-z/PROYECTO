@@ -7,9 +7,9 @@
 
 ### 1. ¿A cuánto se va a pagar el limón el próximo mes?
 
-En Guadalajara · Mercado de Abasto (Limón c/semilla # 5 - Primera) se espera alrededor de **11.81 MXN/kg** para 2026-11. 4 de cada 5 veces el precio cae entre 2.06 y 21.56 MXN/kg; 19 de cada 20, entre 2.06 y 21.56.
+En Guadalajara · Mercado de Abasto (Limón c/semilla # 5 - Primera) se espera alrededor de **11.81 MXN/kg** para 2026-11. 4 de cada 5 veces el precio cae entre 3.95 y 19.68 MXN/kg; 19 de cada 20, entre 0.00 y 25.63. En lo que va de 2026-11 (11 cotizaciones) el precio observado es **20.64 MXN/kg** (+75 % frente al pronóstico). **El dato observado ya se aleja del pronóstico: para este mes, dé más peso al precio observado.**
 
-- **Confianza:** media — error típico 16 % en 6 meses no vistos; el rango de 80 % acertó en 83 % de esos meses; 76 meses de historia
+- **Confianza:** baja — error típico 16 % en 6 meses no vistos; el rango de 80 % acertó en 83 % de esos meses; 76 meses de historia; se descuentan 20 puntos porque el dato parcial del mes ya diverge
 - **Qué hacer:** Planee con el rango, no con el número exacto; si su costo de producción está cerca del mínimo del rango, asegure parte del volumen con un acuerdo de precio.
 - **Fuente:** SNIIM · modelo sarima_aic · **Datos a:** 2026-10
 
@@ -17,7 +17,7 @@ En Guadalajara · Mercado de Abasto (Limón c/semilla # 5 - Primera) se espera a
 
 Último precio observado (2026-10) en Guadalajara · Mercado de Abasto: 23.65 MXN/kg. Para 2026-11 el pronóstico es 11.81 (-50 %). Aplicando los 12 errores reales del modelo, en **0 %** de los escenarios el precio queda por encima del actual: es más probable que baje.
 
-- **Confianza:** media — error típico 16 % en 6 meses no vistos; el rango de 80 % acertó en 83 % de esos meses; 76 meses de historia; probabilidad estimada con 12 errores históricos
+- **Confianza:** baja — error típico 16 % en 6 meses no vistos; el rango de 80 % acertó en 83 % de esos meses; 76 meses de historia; probabilidad estimada con 12 errores históricos
 - **Qué hacer:** Esperar solo tiene sentido si la fruta aguanta en el árbol sin perder calidad y si la probabilidad es claramente mayor a 50 %; si es cercana a 50 %, vender por partes reduce el riesgo.
 - **Fuente:** SNIIM · pronóstico y validación fuera de muestra · **Datos a:** 2026-10
 
@@ -55,7 +55,7 @@ Cotizaciones del 2026-11-25 (producto de origen Colima; MXN/kg, mediana por cent
 
 ### 7. De lo que paga la central, ¿cuánto le llega al productor?
 
-En 2025 el productor de Colima recibió en promedio **9.80 MXN/kg** (SIAP) y Guadalajara · Mercado de Abasto cotizó el producto de origen Colima en 26.01 MXN/kg: al productor le llegó el **38 %**. Los otros 16.21 MXN/kg cubren empaque, flete, mermas, comisiones e intermediación.
+En 2025 el productor de Colima recibió en promedio **9.80 MXN/kg** (SIAP) y Guadalajara · Mercado de Abasto cotizó la fruta de origen Colima en 26.01 MXN/kg: al productor le llegó el **38 %**. Los otros 16.21 MXN/kg cubren empaque, flete, mermas, comisiones e intermediación.
 
 - **Confianza:** alta — promedios anuales oficiales; 12 meses de cotización mayorista; no distingue calidades
 - **Qué hacer:** Use este porcentaje para revisar si una oferta en huerta está en línea con el mercado (calculadora de arriba).
@@ -121,17 +121,17 @@ Vienen de fuentes oficiales (SNIIM de la Secretaría de Economía y SIAP de Agri
 
 ### 1. ¿A cuánto se va a pagar la papaya el próximo mes?
 
-En Guadalajara · Mercado de Abasto (Papaya Maradol - Primera) se espera alrededor de **17.97 MXN/kg** para 2026-11. 4 de cada 5 veces el precio cae entre 14.69 y 21.25 MXN/kg; 19 de cada 20, entre 14.69 y 21.25.
+En Guadalajara · Mercado de Abasto (Papaya Maradol - Primera) se espera alrededor de **19.18 MXN/kg** para 2026-11. 4 de cada 5 veces el precio cae entre 13.98 y 24.37 MXN/kg; 19 de cada 20, entre 11.56 y 26.79. En lo que va de 2026-11 (11 cotizaciones) el precio observado es **21.23 MXN/kg** (+11 % frente al pronóstico). Va en línea con el pronóstico.
 
-- **Confianza:** alta — error típico 3 % en 6 meses no vistos; el rango de 80 % acertó en 100 % de esos meses; 76 meses de historia
+- **Confianza:** alta — error típico 6 % en 6 meses no vistos; el rango de 80 % acertó en 100 % de esos meses; 76 meses de historia
 - **Qué hacer:** Planee con el rango, no con el número exacto; si su costo de producción está cerca del mínimo del rango, asegure parte del volumen con un acuerdo de precio.
-- **Fuente:** SNIIM · modelo arima_aic · **Datos a:** 2026-10
+- **Fuente:** SNIIM · modelo combinacion · **Datos a:** 2026-10
 
 ### 2. ¿Me conviene vender ahora o esperar un mes?
 
-Último precio observado (2026-10) en Guadalajara · Mercado de Abasto: 18.27 MXN/kg. Para 2026-11 el pronóstico es 17.97 (-2 %). Aplicando los 12 errores reales del modelo, en **25 %** de los escenarios el precio queda por encima del actual: es más probable que baje.
+Último precio observado (2026-10) en Guadalajara · Mercado de Abasto: 18.27 MXN/kg. Para 2026-11 el pronóstico es 19.18 (+5 %). Aplicando los 12 errores reales del modelo, en **42 %** de los escenarios el precio queda por encima del actual: subir o bajar es casi igual de probable.
 
-- **Confianza:** alta — error típico 3 % en 6 meses no vistos; el rango de 80 % acertó en 100 % de esos meses; 76 meses de historia; probabilidad estimada con 12 errores históricos
+- **Confianza:** alta — error típico 6 % en 6 meses no vistos; el rango de 80 % acertó en 100 % de esos meses; 76 meses de historia; probabilidad estimada con 12 errores históricos
 - **Qué hacer:** Esperar solo tiene sentido si la fruta aguanta en el árbol sin perder calidad y si la probabilidad es claramente mayor a 50 %; si es cercana a 50 %, vender por partes reduce el riesgo.
 - **Fuente:** SNIIM · pronóstico y validación fuera de muestra · **Datos a:** 2026-10
 
@@ -169,7 +169,7 @@ Cotizaciones del 2026-11-25 (producto de origen Colima; MXN/kg, mediana por cent
 
 ### 7. De lo que paga la central, ¿cuánto le llega al productor?
 
-En 2025 el productor de Colima recibió en promedio **7.47 MXN/kg** (SIAP) y Guadalajara · Mercado de Abasto cotizó el producto de origen Colima en 18.21 MXN/kg: al productor le llegó el **41 %**. Los otros 10.74 MXN/kg cubren empaque, flete, mermas, comisiones e intermediación.
+En 2025 el productor de Colima recibió en promedio **7.47 MXN/kg** (SIAP) y Guadalajara · Mercado de Abasto cotizó la fruta de origen Colima en 18.21 MXN/kg: al productor le llegó el **41 %**. Los otros 10.74 MXN/kg cubren empaque, flete, mermas, comisiones e intermediación.
 
 - **Confianza:** alta — promedios anuales oficiales; 12 meses de cotización mayorista; no distingue calidades
 - **Qué hacer:** Use este porcentaje para revisar si una oferta en huerta está en línea con el mercado (calculadora de arriba).
@@ -235,17 +235,17 @@ Vienen de fuentes oficiales (SNIIM de la Secretaría de Economía y SIAP de Agri
 
 ### 1. ¿A cuánto se va a pagar el plátano el próximo mes?
 
-En Guadalajara · Mercado de Abasto (Plátano Tabasco - Primera, origen Michoacán) se espera alrededor de **8.09 MXN/kg** para 2026-11. 4 de cada 5 veces el precio cae entre 2.98 y 13.20 MXN/kg; 19 de cada 20, entre 2.98 y 13.20. No hay 36 meses de plátano de origen Colima en una central, así que es una **referencia del mercado** con fruta de otro origen.
+En Guadalajara · Mercado de Abasto (Plátano Macho - Primera, origen todos los orígenes) se espera alrededor de **22.81 MXN/kg** para 2026-11. 4 de cada 5 veces el precio cae entre 20.90 y 24.72 MXN/kg; 19 de cada 20, entre 18.39 y 27.24. No hay 36 meses continuos de plátano de origen Colima en una central, así que es una **referencia del mercado** con fruta de todos los orígenes. En lo que va de 2026-11 (11 cotizaciones) el precio observado es **21.55 MXN/kg** (-6 % frente al pronóstico). Va en línea con el pronóstico.
 
-- **Confianza:** baja — error típico 19 % en 6 meses no vistos; el rango de 80 % acertó en 67 % de esos meses; 50 meses de historia
+- **Confianza:** media — error típico 5 % en 6 meses no vistos; el rango de 80 % acertó en 83 % de esos meses; 76 meses de historia
 - **Qué hacer:** Planee con el rango, no con el número exacto; si su costo de producción está cerca del mínimo del rango, asegure parte del volumen con un acuerdo de precio.
-- **Fuente:** SNIIM · modelo holt_winters_aditivo · **Datos a:** 2026-10
+- **Fuente:** SNIIM · modelo combinacion · **Datos a:** 2026-10
 
 ### 2. ¿Me conviene vender ahora o esperar un mes?
 
-Último precio observado (2026-10) en Guadalajara · Mercado de Abasto: 13.89 MXN/kg. Para 2026-11 el pronóstico es 8.09 (-42 %). Aplicando los 12 errores reales del modelo, en **0 %** de los escenarios el precio queda por encima del actual: es más probable que baje.
+Último precio observado (2026-10) en Guadalajara · Mercado de Abasto: 22.36 MXN/kg. Para 2026-11 el pronóstico es 22.81 (+2 %). Aplicando los 12 errores reales del modelo, en **75 %** de los escenarios el precio queda por encima del actual: es más probable que suba.
 
-- **Confianza:** baja — error típico 19 % en 6 meses no vistos; el rango de 80 % acertó en 67 % de esos meses; 50 meses de historia; probabilidad estimada con 12 errores históricos
+- **Confianza:** media — error típico 5 % en 6 meses no vistos; el rango de 80 % acertó en 83 % de esos meses; 76 meses de historia; probabilidad estimada con 12 errores históricos
 - **Qué hacer:** Esperar solo tiene sentido si la fruta aguanta en el árbol sin perder calidad y si la probabilidad es claramente mayor a 50 %; si es cercana a 50 %, vender por partes reduce el riesgo.
 - **Fuente:** SNIIM · pronóstico y validación fuera de muestra · **Datos a:** 2026-10
 
@@ -283,7 +283,7 @@ Cotizaciones del 2026-11-25 (producto de origen Colima; MXN/kg, mediana por cent
 
 ### 7. De lo que paga la central, ¿cuánto le llega al productor?
 
-En 2021 el productor de Colima recibió en promedio **5.31 MXN/kg** (SIAP) y Guadalajara · Mercado de Abasto cotizó el producto de origen Colima en 11.46 MXN/kg: al productor le llegó el **46 %**. Los otros 6.15 MXN/kg cubren empaque, flete, mermas, comisiones e intermediación.
+En 2021 el productor de Colima recibió en promedio **5.31 MXN/kg** (SIAP) y Guadalajara · Mercado de Abasto cotizó la fruta de origen Colima en 11.46 MXN/kg: al productor le llegó el **46 %**. Los otros 6.15 MXN/kg cubren empaque, flete, mermas, comisiones e intermediación.
 
 - **Confianza:** alta — promedios anuales oficiales; 11 meses de cotización mayorista; no distingue calidades
 - **Qué hacer:** Use este porcentaje para revisar si una oferta en huerta está en línea con el mercado (calculadora de arriba).
@@ -349,7 +349,7 @@ Vienen de fuentes oficiales (SNIIM de la Secretaría de Economía y SIAP de Agri
 
 ### 1. ¿A cuánto se va a pagar el mango el próximo mes?
 
-Todavía no hay pronóstico para el mango: se exigen 36 meses continuos de una misma serie y aún no se reúnen.
+Todavía no hay pronóstico para el mango: es fruta de temporada: el SNIIM la cotizó solo 66 de los últimos 120 meses, así que nunca hay 36 meses seguidos. Para la temporada, use la pregunta de precio de hoy y el calendario de meses.
 
 - **Confianza:** no aplica — sin serie elegible
 - **Qué hacer:** Use el precio actual por central (pregunta 6) como referencia.
@@ -365,17 +365,17 @@ No hay pronóstico validado para estimarlo.
 
 ### 3. ¿El precio de hoy está caro o barato comparado con otros años?
 
-En Guadalajara · Mercado de Abasto el último precio (2026-08) fue 38.74 MXN/kg: más alto que el **95 %** de los últimos 63 meses. Lectura: precio alto respecto a su historia: buen momento para vender, mal momento para comprar inventario. (Referencia de mercado: no hay cotizaciones de esta fruta con origen Colima; se usa la fruta de todos los orígenes en la central.)
+En Guadalajara · Mercado de Abasto el último precio (2026-08) fue 38.74 MXN/kg: más alto que el **95 %** de los últimos 65 meses. Lectura: precio alto respecto a su historia: buen momento para vender, mal momento para comprar inventario. (Referencia de mercado: no hay cotizaciones de esta fruta con origen Colima; se usa la fruta de todos los orígenes en la central.)
 
-- **Confianza:** alta — comparación directa con 63 meses observados
+- **Confianza:** alta — comparación directa con 65 meses observados
 - **Qué hacer:** Por encima del percentil 75 es buen momento para vender; por debajo del 25, evalúe esperar o almacenar.
 - **Fuente:** SNIIM · historia mensual de origen Colima · **Datos a:** 2026-08
 
 ### 4. ¿En qué meses suele pagarse mejor?
 
-En Guadalajara, frente a su tendencia, los meses que más pagaron en promedio fueron diciembre (+98 %), enero (+55 %), febrero (+15 %); los que menos, junio (-23 %), mayo (-17 %), julio (-10 %). (Referencia de mercado: no hay cotizaciones de esta fruta con origen Colima; se usa la fruta de todos los orígenes en la central.)
+En Guadalajara, frente a su tendencia, los meses que más pagaron en promedio fueron diciembre (+98 %), enero (+55 %), febrero (+15 %); los que menos, junio (-22 %), mayo (-17 %), julio (-11 %). (Referencia de mercado: no hay cotizaciones de esta fruta con origen Colima; se usa la fruta de todos los orígenes en la central.)
 
-- **Confianza:** alta — prueba de Kruskal-Wallis entre meses: p < 0.001 con 63 observaciones
+- **Confianza:** alta — prueba de Kruskal-Wallis entre meses: p < 0.001 con 65 observaciones
 - **Qué hacer:** Úselo como pista para planear, no para decidir sola la fecha de corte; combine con el pronóstico del próximo mes.
 - **Fuente:** SNIIM · índice estacional OAIC · **Datos a:** 2026-10
 
@@ -397,11 +397,11 @@ Cotizaciones del 2026-11-25 (todos los orígenes; MXN/kg, mediana por central): 
 
 ### 7. De lo que paga la central, ¿cuánto le llega al productor?
 
-No hay un año común entre el precio rural SIAP y cotizaciones de origen Colima en alguna central para este producto.
+En 2023 el productor de Colima recibió en promedio **5.56 MXN/kg** (SIAP) y Guadalajara · Mercado de Abasto cotizó la fruta de todos los orígenes (no hay mayoreo de origen Colima) en 22.98 MXN/kg: al productor le llegó el **24 %**. Los otros 17.42 MXN/kg cubren empaque, flete, mermas, comisiones e intermediación.
 
-- **Confianza:** no aplica — sin año común
-- **Qué hacer:** —
-- **Fuente:** SIAP · SNIIM · **Datos a:** —
+- **Confianza:** media — promedios anuales oficiales; 8 meses de cotización mayorista; no distingue calidades
+- **Qué hacer:** Use este porcentaje para revisar si una oferta en huerta está en línea con el mercado (calculadora de arriba).
+- **Fuente:** SIAP (precio medio rural) · SNIIM · **Datos a:** 2023
 
 ### 8. ¿Cómo ha cambiado lo que se le paga al productor en los últimos años?
 
@@ -413,9 +413,9 @@ Precio medio rural en Colima (MXN/kg, SIAP): 2016: 3.42, 2017: 3.77, 2018: 3.68,
 
 ### 9. ¿Qué tanto puede bajar el precio de un mes a otro?
 
-En Guadalajara · Mercado de Abasto el precio cambió en promedio **17 %** de un mes al siguiente. La peor caída fue de -51 % (2023-02); en 16 % de los meses cayó más de 15 % y en 21 % subió más de 15 %. (Referencia de mercado: no hay cotizaciones de esta fruta con origen Colima; se usa la fruta de todos los orígenes en la central.)
+En Guadalajara · Mercado de Abasto el precio cambió en promedio **18 %** de un mes al siguiente. La peor caída fue de -51 % (2023-02); en 17 % de los meses cayó más de 15 % y en 22 % subió más de 15 %. (Referencia de mercado: no hay cotizaciones de esta fruta con origen Colima; se usa la fruta de todos los orígenes en la central.)
 
-- **Confianza:** alta — 62 cambios mensuales observados (índice: meses / 60)
+- **Confianza:** alta — 64 cambios mensuales observados (índice: meses / 60)
 - **Qué hacer:** No comprometa toda la cosecha a un solo precio o fecha: escalone ventas o acuerde parte del volumen a precio fijo.
 - **Fuente:** SNIIM · variación mensual · **Datos a:** 2026-08
 
@@ -463,7 +463,7 @@ Vienen de fuentes oficiales (SNIIM de la Secretaría de Economía y SIAP de Agri
 
 ### 1. ¿A cuánto se va a pagar el coco el próximo mes?
 
-Todavía no hay pronóstico para el coco: se exigen 36 meses continuos de una misma serie y aún no se reúnen.
+Todavía no hay pronóstico para el coco: el SNIIM lo cotiza por pieza, no por kilogramo, y el observatorio no convierte piezas a kilos sin un peso verificable.
 
 - **Confianza:** no aplica — sin serie elegible
 - **Qué hacer:** Use el precio actual por central (pregunta 6) como referencia.
@@ -577,33 +577,33 @@ Vienen de fuentes oficiales (SNIIM de la Secretaría de Economía y SIAP de Agri
 
 ### 1. ¿A cuánto se va a pagar el tamarindo el próximo mes?
 
-En Colima · Centros de distribución (Tamarindo - Primera) se espera alrededor de **42.19 MXN/kg** para 2026-11. 4 de cada 5 veces el precio cae entre 40.97 y 43.41 MXN/kg; 19 de cada 20, entre 40.97 y 43.41.
+En Guadalajara · Mercado de Abasto (Tamarindo - Primera) se espera alrededor de **82.37 MXN/kg** para 2026-02. 4 de cada 5 veces el precio cae entre 76.01 y 88.73 MXN/kg; 19 de cada 20, entre 73.41 y 91.32.
 
-- **Confianza:** alta — error típico 1 % en 6 meses no vistos; el rango de 80 % acertó en 100 % de esos meses; 36 meses de historia
+- **Confianza:** media — error típico 6 % en 6 meses no vistos; el rango de 80 % acertó en 67 % de esos meses; 67 meses de historia
 - **Qué hacer:** Planee con el rango, no con el número exacto; si su costo de producción está cerca del mínimo del rango, asegure parte del volumen con un acuerdo de precio.
-- **Fuente:** SNIIM · modelo suavizamiento_simple · **Datos a:** 2026-10
+- **Fuente:** SNIIM · modelo arima_aic · **Datos a:** 2026-01
 
 ### 2. ¿Me conviene vender ahora o esperar un mes?
 
-Último precio observado (2026-10) en Colima · Centros de distribución: 42.22 MXN/kg. Para 2026-11 el pronóstico es 42.19 (-0 %). Aplicando los 12 errores reales del modelo, en **17 %** de los escenarios el precio queda por encima del actual: es más probable que baje.
+Último precio observado (2026-01) en Guadalajara · Mercado de Abasto: 80.36 MXN/kg. Para 2026-02 el pronóstico es 82.37 (+3 %). Aplicando los 12 errores reales del modelo, en **83 %** de los escenarios el precio queda por encima del actual: es más probable que suba.
 
-- **Confianza:** alta — error típico 1 % en 6 meses no vistos; el rango de 80 % acertó en 100 % de esos meses; 36 meses de historia; probabilidad estimada con 12 errores históricos
+- **Confianza:** media — error típico 6 % en 6 meses no vistos; el rango de 80 % acertó en 67 % de esos meses; 67 meses de historia; probabilidad estimada con 12 errores históricos
 - **Qué hacer:** Esperar solo tiene sentido si la fruta aguanta en el árbol sin perder calidad y si la probabilidad es claramente mayor a 50 %; si es cercana a 50 %, vender por partes reduce el riesgo.
-- **Fuente:** SNIIM · pronóstico y validación fuera de muestra · **Datos a:** 2026-10
+- **Fuente:** SNIIM · pronóstico y validación fuera de muestra · **Datos a:** 2026-01
 
 ### 3. ¿El precio de hoy está caro o barato comparado con otros años?
 
-En Colima · Centros de distribución el último precio (2026-10) fue 42.22 MXN/kg: más alto que el **89 %** de los últimos 36 meses. Lectura: precio alto respecto a su historia: buen momento para vender, mal momento para comprar inventario.
+En Guadalajara · Mercado de Abasto el último precio (2026-01) fue 80.36 MXN/kg: más alto que el **99 %** de los últimos 109 meses. Lectura: precio alto respecto a su historia: buen momento para vender, mal momento para comprar inventario.
 
-- **Confianza:** media — comparación directa con 36 meses observados
+- **Confianza:** alta — comparación directa con 109 meses observados
 - **Qué hacer:** Por encima del percentil 75 es buen momento para vender; por debajo del 25, evalúe esperar o almacenar.
-- **Fuente:** SNIIM · historia mensual de origen Colima · **Datos a:** 2026-10
+- **Fuente:** SNIIM · historia mensual de origen Colima · **Datos a:** 2026-01
 
 ### 4. ¿En qué meses suele pagarse mejor?
 
-En Guadalajara, frente a su tendencia, los meses que más pagaron en promedio fueron enero (+13 %), diciembre (+8 %), noviembre (+4 %); los que menos, septiembre (-7 %), marzo (-4 %), abril (-3 %). **Pero con 3 años la diferencia entre meses no se distingue estadísticamente del azar**: no es un patrón comprobado.
+En Guadalajara, frente a su tendencia, los meses que más pagaron en promedio fueron enero (+9 %), febrero (+7 %), diciembre (+2 %); los que menos, septiembre (-5 %), noviembre (-4 %), octubre (-4 %).
 
-- **Confianza:** baja — prueba de Kruskal-Wallis entre meses: no se distingue del azar (p = 0.577, 27 observaciones)
+- **Confianza:** media — prueba de Kruskal-Wallis entre meses: tendencia no concluyente (p = 0.153) con 109 observaciones
 - **Qué hacer:** Úselo como pista para planear, no para decidir sola la fecha de corte; combine con el pronóstico del próximo mes.
 - **Fuente:** SNIIM · índice estacional OAIC · **Datos a:** 2026-10
 
@@ -625,11 +625,11 @@ Cotizaciones del 2026-11-25 (producto de origen Colima; MXN/kg, mediana por cent
 
 ### 7. De lo que paga la central, ¿cuánto le llega al productor?
 
-No hay un año común entre el precio rural SIAP y cotizaciones de origen Colima en alguna central para este producto.
+En 2025 el productor de Colima recibió en promedio **10.91 MXN/kg** (SIAP) y Guadalajara · Mercado de Abasto cotizó la fruta de origen Colima en 57.38 MXN/kg: al productor le llegó el **19 %**. Los otros 46.47 MXN/kg cubren empaque, flete, mermas, comisiones e intermediación.
 
-- **Confianza:** no aplica — sin año común
-- **Qué hacer:** —
-- **Fuente:** SIAP · SNIIM · **Datos a:** —
+- **Confianza:** alta — promedios anuales oficiales; 12 meses de cotización mayorista; no distingue calidades
+- **Qué hacer:** Use este porcentaje para revisar si una oferta en huerta está en línea con el mercado (calculadora de arriba).
+- **Fuente:** SIAP (precio medio rural) · SNIIM · **Datos a:** 2025
 
 ### 8. ¿Cómo ha cambiado lo que se le paga al productor en los últimos años?
 
@@ -641,9 +641,9 @@ Precio medio rural en Colima (MXN/kg, SIAP): 2016: 6.82, 2017: 6.22, 2018: 6.18,
 
 ### 9. ¿Qué tanto puede bajar el precio de un mes a otro?
 
-En Guadalajara · Mercado de Abasto el precio cambió en promedio **7 %** de un mes al siguiente. La peor caída fue de -10 % (2024-05); en 0 % de los meses cayó más de 15 % y en 12 % subió más de 15 %.
+En Guadalajara · Mercado de Abasto el precio cambió en promedio **7 %** de un mes al siguiente. La peor caída fue de -23 % (2020-03); en 2 % de los meses cayó más de 15 % y en 12 % subió más de 15 %.
 
-- **Confianza:** baja — 26 cambios mensuales observados (índice: meses / 60)
+- **Confianza:** alta — 108 cambios mensuales observados (índice: meses / 60)
 - **Qué hacer:** No comprometa toda la cosecha a un solo precio o fecha: escalone ventas o acuerde parte del volumen a precio fijo.
 - **Fuente:** SNIIM · variación mensual · **Datos a:** 2026-01
 
@@ -691,33 +691,33 @@ Vienen de fuentes oficiales (SNIIM de la Secretaría de Economía y SIAP de Agri
 
 ### 1. ¿A cuánto se va a pagar la guayaba el próximo mes?
 
-En Guadalajara · Mercado de Abasto (Guayaba - Primera, origen Michoacán) se espera alrededor de **21.92 MXN/kg** para 2026-11. 4 de cada 5 veces el precio cae entre 15.84 y 28.01 MXN/kg; 19 de cada 20, entre 15.84 y 28.01. No hay 36 meses de plátano de origen Colima en una central, así que es una **referencia del mercado** con fruta de otro origen.
+En Guadalajara · Mercado de Abasto (Guayaba - Primera, origen todos los orígenes) se espera alrededor de **21.76 MXN/kg** para 2026-11. 4 de cada 5 veces el precio cae entre 17.16 y 26.36 MXN/kg; 19 de cada 20, entre 16.07 y 27.44. No hay 36 meses continuos de guayaba de origen Colima en una central, así que es una **referencia del mercado** con fruta de todos los orígenes.
 
-- **Confianza:** media — error típico 6 % en 6 meses no vistos; el rango de 80 % acertó en 100 % de esos meses; 36 meses de historia
+- **Confianza:** media — error típico 9 % en 6 meses no vistos; el rango de 80 % acertó en 100 % de esos meses; 76 meses de historia
 - **Qué hacer:** Planee con el rango, no con el número exacto; si su costo de producción está cerca del mínimo del rango, asegure parte del volumen con un acuerdo de precio.
-- **Fuente:** SNIIM · modelo arima_aic · **Datos a:** 2026-10
+- **Fuente:** SNIIM · modelo combinacion · **Datos a:** 2026-10
 
 ### 2. ¿Me conviene vender ahora o esperar un mes?
 
-Último precio observado (2026-10) en Guadalajara · Mercado de Abasto: 21.59 MXN/kg. Para 2026-11 el pronóstico es 21.92 (+2 %). Aplicando los 12 errores reales del modelo, en **58 %** de los escenarios el precio queda por encima del actual: subir o bajar es casi igual de probable.
+Último precio observado (2026-10) en Guadalajara · Mercado de Abasto: 21.59 MXN/kg. Para 2026-11 el pronóstico es 21.76 (+1 %). Aplicando los 12 errores reales del modelo, en **50 %** de los escenarios el precio queda por encima del actual: subir o bajar es casi igual de probable.
 
-- **Confianza:** media — error típico 6 % en 6 meses no vistos; el rango de 80 % acertó en 100 % de esos meses; 36 meses de historia; probabilidad estimada con 12 errores históricos
+- **Confianza:** media — error típico 9 % en 6 meses no vistos; el rango de 80 % acertó en 100 % de esos meses; 76 meses de historia; probabilidad estimada con 12 errores históricos
 - **Qué hacer:** Esperar solo tiene sentido si la fruta aguanta en el árbol sin perder calidad y si la probabilidad es claramente mayor a 50 %; si es cercana a 50 %, vender por partes reduce el riesgo.
 - **Fuente:** SNIIM · pronóstico y validación fuera de muestra · **Datos a:** 2026-10
 
 ### 3. ¿El precio de hoy está caro o barato comparado con otros años?
 
-En Colima · Centros de distribución el último precio (2026-10) fue 25.00 MXN/kg: más alto que el **0 %** de los últimos 36 meses. Lectura: precio bajo respecto a su historia: conviene revisar si se puede esperar o almacenar. (Referencia de mercado: no hay cotizaciones de esta fruta con origen Colima; se usa la fruta de todos los orígenes en la central.)
+En Guadalajara · Mercado de Abasto el último precio (2026-10) fue 21.59 MXN/kg: más alto que el **88 %** de los últimos 119 meses. Lectura: precio alto respecto a su historia: buen momento para vender, mal momento para comprar inventario. (Referencia de mercado: no hay cotizaciones de esta fruta con origen Colima; se usa la fruta de todos los orígenes en la central.)
 
-- **Confianza:** media — comparación directa con 36 meses observados
+- **Confianza:** alta — comparación directa con 119 meses observados
 - **Qué hacer:** Por encima del percentil 75 es buen momento para vender; por debajo del 25, evalúe esperar o almacenar.
 - **Fuente:** SNIIM · historia mensual de origen Colima · **Datos a:** 2026-10
 
 ### 4. ¿En qué meses suele pagarse mejor?
 
-En Guadalajara, frente a su tendencia, los meses que más pagaron en promedio fueron mayo (+34 %), abril (+23 %), junio (+19 %); los que menos, febrero (-21 %), enero (-19 %), diciembre (-13 %). (Referencia de mercado: no hay cotizaciones de esta fruta con origen Colima; se usa la fruta de todos los orígenes en la central.)
+En Guadalajara, frente a su tendencia, los meses que más pagaron en promedio fueron abril (+25 %), mayo (+24 %), junio (+13 %); los que menos, septiembre (-18 %), agosto (-14 %), octubre (-13 %). (Referencia de mercado: no hay cotizaciones de esta fruta con origen Colima; se usa la fruta de todos los orígenes en la central.)
 
-- **Confianza:** media — prueba de Kruskal-Wallis entre meses: p = 0.015 con 36 observaciones
+- **Confianza:** alta — prueba de Kruskal-Wallis entre meses: p < 0.001 con 119 observaciones
 - **Qué hacer:** Úselo como pista para planear, no para decidir sola la fecha de corte; combine con el pronóstico del próximo mes.
 - **Fuente:** SNIIM · índice estacional OAIC · **Datos a:** 2026-10
 
@@ -739,11 +739,11 @@ Cotizaciones del 2026-11-25 (todos los orígenes; MXN/kg, mediana por central): 
 
 ### 7. De lo que paga la central, ¿cuánto le llega al productor?
 
-No hay un año común entre el precio rural SIAP y cotizaciones de origen Colima en alguna central para este producto.
+En 2025 el productor de Colima recibió en promedio **5.53 MXN/kg** (SIAP) y Guadalajara · Mercado de Abasto cotizó la fruta de todos los orígenes (no hay mayoreo de origen Colima) en 22.25 MXN/kg: al productor le llegó el **25 %**. Los otros 16.73 MXN/kg cubren empaque, flete, mermas, comisiones e intermediación.
 
-- **Confianza:** no aplica — sin año común
-- **Qué hacer:** —
-- **Fuente:** SIAP · SNIIM · **Datos a:** —
+- **Confianza:** alta — promedios anuales oficiales; 12 meses de cotización mayorista; no distingue calidades
+- **Qué hacer:** Use este porcentaje para revisar si una oferta en huerta está en línea con el mercado (calculadora de arriba).
+- **Fuente:** SIAP (precio medio rural) · SNIIM · **Datos a:** 2025
 
 ### 8. ¿Cómo ha cambiado lo que se le paga al productor en los últimos años?
 
@@ -755,9 +755,9 @@ Precio medio rural en Colima (MXN/kg, SIAP): 2016: 4.95, 2017: 5.48, 2018: 5.66,
 
 ### 9. ¿Qué tanto puede bajar el precio de un mes a otro?
 
-En Guadalajara · Mercado de Abasto el precio cambió en promedio **14 %** de un mes al siguiente. La peor caída fue de -32 % (2024-08); en 14 % de los meses cayó más de 15 % y en 29 % subió más de 15 %. (Referencia de mercado: no hay cotizaciones de esta fruta con origen Colima; se usa la fruta de todos los orígenes en la central.)
+En Guadalajara · Mercado de Abasto el precio cambió en promedio **12 %** de un mes al siguiente. La peor caída fue de -32 % (2024-08); en 14 % de los meses cayó más de 15 % y en 21 % subió más de 15 %. (Referencia de mercado: no hay cotizaciones de esta fruta con origen Colima; se usa la fruta de todos los orígenes en la central.)
 
-- **Confianza:** media — 35 cambios mensuales observados (índice: meses / 60)
+- **Confianza:** alta — 118 cambios mensuales observados (índice: meses / 60)
 - **Qué hacer:** No comprometa toda la cosecha a un solo precio o fecha: escalone ventas o acuerde parte del volumen a precio fijo.
 - **Fuente:** SNIIM · variación mensual · **Datos a:** 2026-10
 
@@ -805,35 +805,35 @@ Vienen de fuentes oficiales (SNIIM de la Secretaría de Economía y SIAP de Agri
 
 ### 1. ¿A cuánto se va a pagar el aguacate el próximo mes?
 
-Todavía no hay pronóstico para el aguacate: se exigen 36 meses continuos de una misma serie y aún no se reúnen.
+En Guadalajara · Mercado de Abasto (Aguacate Hass - Primera, origen todos los orígenes) se espera alrededor de **27.49 MXN/kg** para 2026-11. 4 de cada 5 veces el precio cae entre 13.79 y 41.19 MXN/kg; 19 de cada 20, entre 12.17 y 42.82. No hay 36 meses continuos de aguacate de origen Colima en una central, así que es una **referencia del mercado** con fruta de todos los orígenes.
 
-- **Confianza:** no aplica — sin serie elegible
-- **Qué hacer:** Use el precio actual por central (pregunta 6) como referencia.
-- **Fuente:** Criterio de elegibilidad del observatorio · **Datos a:** —
+- **Confianza:** baja — error típico 20 % en 6 meses no vistos; el rango de 80 % acertó en 33 % de esos meses; 76 meses de historia
+- **Qué hacer:** Planee con el rango, no con el número exacto; si su costo de producción está cerca del mínimo del rango, asegure parte del volumen con un acuerdo de precio.
+- **Fuente:** SNIIM · modelo combinacion · **Datos a:** 2026-10
 
 ### 2. ¿Me conviene vender ahora o esperar un mes?
 
-No hay pronóstico validado para estimarlo.
+Último precio observado (2026-10) en Guadalajara · Mercado de Abasto: 30.15 MXN/kg. Para 2026-11 el pronóstico es 27.49 (-9 %). Aplicando los 12 errores reales del modelo, en **17 %** de los escenarios el precio queda por encima del actual: es más probable que baje.
 
-- **Confianza:** no aplica — sin serie elegible
-- **Qué hacer:** Compare el precio de hoy con su historia (pregunta 2).
-- **Fuente:** — · **Datos a:** —
+- **Confianza:** baja — error típico 20 % en 6 meses no vistos; el rango de 80 % acertó en 33 % de esos meses; 76 meses de historia; probabilidad estimada con 12 errores históricos
+- **Qué hacer:** Esperar solo tiene sentido si la fruta aguanta en el árbol sin perder calidad y si la probabilidad es claramente mayor a 50 %; si es cercana a 50 %, vender por partes reduce el riesgo.
+- **Fuente:** SNIIM · pronóstico y validación fuera de muestra · **Datos a:** 2026-10
 
 ### 3. ¿El precio de hoy está caro o barato comparado con otros años?
 
-No hay al menos 12 meses de historia de origen Colima para comparar.
+En Guadalajara · Mercado de Abasto el último precio (2026-10) fue 30.15 MXN/kg: más alto que el **0 %** de los últimos 119 meses. Lectura: precio bajo respecto a su historia: conviene revisar si se puede esperar o almacenar. (Referencia de mercado: no hay cotizaciones de esta fruta con origen Colima; se usa la fruta de todos los orígenes en la central.)
 
-- **Confianza:** no aplica — historia insuficiente
-- **Qué hacer:** —
-- **Fuente:** SNIIM · **Datos a:** —
+- **Confianza:** alta — comparación directa con 119 meses observados
+- **Qué hacer:** Por encima del percentil 75 es buen momento para vender; por debajo del 25, evalúe esperar o almacenar.
+- **Fuente:** SNIIM · historia mensual de origen Colima · **Datos a:** 2026-10
 
 ### 4. ¿En qué meses suele pagarse mejor?
 
-Se necesitan al menos 24 meses en Guadalajara para estimar el patrón por mes; aún no se reúnen.
+En Guadalajara, frente a su tendencia, los meses que más pagaron en promedio fueron junio (+28 %), julio (+25 %), agosto (+17 %); los que menos, diciembre (-21 %), febrero (-18 %), noviembre (-18 %). (Referencia de mercado: no hay cotizaciones de esta fruta con origen Colima; se usa la fruta de todos los orígenes en la central.)
 
-- **Confianza:** no aplica — historia insuficiente
-- **Qué hacer:** —
-- **Fuente:** SNIIM · **Datos a:** —
+- **Confianza:** alta — prueba de Kruskal-Wallis entre meses: p < 0.001 con 119 observaciones
+- **Qué hacer:** Úselo como pista para planear, no para decidir sola la fecha de corte; combine con el pronóstico del próximo mes.
+- **Fuente:** SNIIM · índice estacional OAIC · **Datos a:** 2026-10
 
 ### 5. ¿A qué central de abasto me conviene mandar mi fruta?
 
@@ -853,11 +853,11 @@ Cotizaciones del 2026-11-25 (todos los orígenes; MXN/kg, mediana por central): 
 
 ### 7. De lo que paga la central, ¿cuánto le llega al productor?
 
-No hay un año común entre el precio rural SIAP y cotizaciones de origen Colima en alguna central para este producto.
+En 2025 el productor de Colima recibió en promedio **17.89 MXN/kg** (SIAP) y Guadalajara · Mercado de Abasto cotizó la fruta de todos los orígenes (no hay mayoreo de origen Colima) en 53.66 MXN/kg: al productor le llegó el **33 %**. Los otros 35.77 MXN/kg cubren empaque, flete, mermas, comisiones e intermediación.
 
-- **Confianza:** no aplica — sin año común
-- **Qué hacer:** —
-- **Fuente:** SIAP · SNIIM · **Datos a:** —
+- **Confianza:** alta — promedios anuales oficiales; 12 meses de cotización mayorista; no distingue calidades
+- **Qué hacer:** Use este porcentaje para revisar si una oferta en huerta está en línea con el mercado (calculadora de arriba).
+- **Fuente:** SIAP (precio medio rural) · SNIIM · **Datos a:** 2025
 
 ### 8. ¿Cómo ha cambiado lo que se le paga al productor en los últimos años?
 
@@ -869,11 +869,11 @@ Precio medio rural en Colima (MXN/kg, SIAP): 2016: 15.78, 2017: 15.06, 2018: 16.
 
 ### 9. ¿Qué tanto puede bajar el precio de un mes a otro?
 
-Hay muy pocos meses (0) para medir variaciones; se necesitan al menos 6.
+En Guadalajara · Mercado de Abasto el precio cambió en promedio **11 %** de un mes al siguiente. La peor caída fue de -34 % (2023-11); en 12 % de los meses cayó más de 15 % y en 15 % subió más de 15 %. (Referencia de mercado: no hay cotizaciones de esta fruta con origen Colima; se usa la fruta de todos los orígenes en la central.)
 
-- **Confianza:** no aplica — 0 cambios mensuales
-- **Qué hacer:** —
-- **Fuente:** SNIIM · **Datos a:** —
+- **Confianza:** alta — 118 cambios mensuales observados (índice: meses / 60)
+- **Qué hacer:** No comprometa toda la cosecha a un solo precio o fecha: escalone ventas o acuerde parte del volumen a precio fijo.
+- **Fuente:** SNIIM · variación mensual · **Datos a:** 2026-10
 
 ### 10. ¿De qué otros estados llega fruta a competir en Guadalajara?
 
@@ -893,7 +893,7 @@ Cierre agrícola 2025: Comala: 3,405 t a 17.47 MXN/kg; Cuauhtémoc: 2,294 t a 17
 
 ### 12. ¿Podría exportar? ¿A qué países y cuánto pagan?
 
-En 2024 México exportó USD 4,024.2 millones a 56 países (código HS 080440). Principales compradores: USA (USD 3,494.3 millones, 60.03 MXN/kg, +38 % desde 2019); Canada (USD 284.7 millones, 50.20 MXN/kg, +27 % desde 2019); Japan (USD 107.8 millones, 55.56 MXN/kg, -50 % desde 2019); Honduras (USD 27.8 millones, 36.77 MXN/kg, +94 % desde 2019). El valor promedio de exportación fue **58.13 MXN/kg** frente a 35.43 MXN/kg en las centrales nacionales (todos los orígenes, últimos 12 meses): **+64 %**. Mercados grandes donde México vende poco: Netherlands (importa USD 1,299 millones; México tiene 0.4 %); France (importa USD 696 millones; México tiene 0.7 %); Spain (importa USD 665 millones; México tiene 1.2 %).
+En 2024 México exportó USD 4,024.2 millones a 56 países (código HS 080440). Principales compradores: USA (USD 3,494.3 millones, 60.03 MXN/kg, +38 % desde 2019); Canada (USD 284.7 millones, 50.20 MXN/kg, +27 % desde 2019); Japan (USD 107.8 millones, 55.56 MXN/kg, -50 % desde 2019); Honduras (USD 27.8 millones, 36.77 MXN/kg, +94 % desde 2019). El valor promedio de exportación fue **58.13 MXN/kg** frente a 39.29 MXN/kg en las centrales nacionales (todos los orígenes, últimos 12 meses): **+48 %**. Mercados grandes donde México vende poco: Netherlands (importa USD 1,299 millones; México tiene 0.4 %); France (importa USD 696 millones; México tiene 0.7 %); Spain (importa USD 665 millones; México tiene 1.2 %).
 
 - **Confianza:** media — dato oficial de aduanas; valor unitario aduanal (no precio al productor)
 - **Qué hacer:** Exportar exige certificación fitosanitaria, empaque, logística en frío y un comprador confirmado; empiece con un empacador exportador de la zona. Vea el detalle por país en la página de mercados extranjeros.
@@ -919,35 +919,35 @@ Vienen de fuentes oficiales (SNIIM de la Secretaría de Economía y SIAP de Agri
 
 ### 1. ¿A cuánto se va a pagar la sandía el próximo mes?
 
-Todavía no hay pronóstico para la sandía: se exigen 36 meses continuos de una misma serie y aún no se reúnen.
+En Guadalajara · Mercado de Abasto (Sandía Sangría - Primera, origen todos los orígenes) se espera alrededor de **15.98 MXN/kg** para 2026-11. 4 de cada 5 veces el precio cae entre 14.25 y 17.72 MXN/kg; 19 de cada 20, entre 11.92 y 20.05. No hay 36 meses continuos de sandía de origen Colima en una central, así que es una **referencia del mercado** con fruta de todos los orígenes.
 
-- **Confianza:** no aplica — sin serie elegible
-- **Qué hacer:** Use el precio actual por central (pregunta 6) como referencia.
-- **Fuente:** Criterio de elegibilidad del observatorio · **Datos a:** —
+- **Confianza:** media — error típico 5 % en 6 meses no vistos; el rango de 80 % acertó en 67 % de esos meses; 76 meses de historia
+- **Qué hacer:** Planee con el rango, no con el número exacto; si su costo de producción está cerca del mínimo del rango, asegure parte del volumen con un acuerdo de precio.
+- **Fuente:** SNIIM · modelo arima_aic · **Datos a:** 2026-10
 
 ### 2. ¿Me conviene vender ahora o esperar un mes?
 
-No hay pronóstico validado para estimarlo.
+Último precio observado (2026-10) en Guadalajara · Mercado de Abasto: 16.32 MXN/kg. Para 2026-11 el pronóstico es 15.98 (-2 %). Aplicando los 12 errores reales del modelo, en **33 %** de los escenarios el precio queda por encima del actual: es más probable que baje.
 
-- **Confianza:** no aplica — sin serie elegible
-- **Qué hacer:** Compare el precio de hoy con su historia (pregunta 2).
-- **Fuente:** — · **Datos a:** —
+- **Confianza:** media — error típico 5 % en 6 meses no vistos; el rango de 80 % acertó en 67 % de esos meses; 76 meses de historia; probabilidad estimada con 12 errores históricos
+- **Qué hacer:** Esperar solo tiene sentido si la fruta aguanta en el árbol sin perder calidad y si la probabilidad es claramente mayor a 50 %; si es cercana a 50 %, vender por partes reduce el riesgo.
+- **Fuente:** SNIIM · pronóstico y validación fuera de muestra · **Datos a:** 2026-10
 
 ### 3. ¿El precio de hoy está caro o barato comparado con otros años?
 
-No hay al menos 12 meses de historia de origen Colima para comparar.
+En Guadalajara · Mercado de Abasto el último precio (2026-10) fue 16.32 MXN/kg: más alto que el **93 %** de los últimos 119 meses. Lectura: precio alto respecto a su historia: buen momento para vender, mal momento para comprar inventario. (Referencia de mercado: no hay cotizaciones de esta fruta con origen Colima; se usa la fruta de todos los orígenes en la central.)
 
-- **Confianza:** no aplica — historia insuficiente
-- **Qué hacer:** —
-- **Fuente:** SNIIM · **Datos a:** —
+- **Confianza:** alta — comparación directa con 119 meses observados
+- **Qué hacer:** Por encima del percentil 75 es buen momento para vender; por debajo del 25, evalúe esperar o almacenar.
+- **Fuente:** SNIIM · historia mensual de origen Colima · **Datos a:** 2026-10
 
 ### 4. ¿En qué meses suele pagarse mejor?
 
-Se necesitan al menos 24 meses en Guadalajara para estimar el patrón por mes; aún no se reúnen.
+En Guadalajara, frente a su tendencia, los meses que más pagaron en promedio fueron diciembre (+11 %), febrero (+5 %), enero (+4 %); los que menos, julio (-6 %), junio (-6 %), mayo (-5 %). (Referencia de mercado: no hay cotizaciones de esta fruta con origen Colima; se usa la fruta de todos los orígenes en la central.)
 
-- **Confianza:** no aplica — historia insuficiente
-- **Qué hacer:** —
-- **Fuente:** SNIIM · **Datos a:** —
+- **Confianza:** alta — prueba de Kruskal-Wallis entre meses: p = 0.015 con 119 observaciones
+- **Qué hacer:** Úselo como pista para planear, no para decidir sola la fecha de corte; combine con el pronóstico del próximo mes.
+- **Fuente:** SNIIM · índice estacional OAIC · **Datos a:** 2026-10
 
 ### 5. ¿A qué central de abasto me conviene mandar mi fruta?
 
@@ -967,11 +967,11 @@ Cotizaciones del 2026-11-25 (todos los orígenes; MXN/kg, mediana por central): 
 
 ### 7. De lo que paga la central, ¿cuánto le llega al productor?
 
-No hay un año común entre el precio rural SIAP y cotizaciones de origen Colima en alguna central para este producto.
+En 2025 el productor de Colima recibió en promedio **6.05 MXN/kg** (SIAP) y Guadalajara · Mercado de Abasto cotizó la fruta de todos los orígenes (no hay mayoreo de origen Colima) en 15.47 MXN/kg: al productor le llegó el **39 %**. Los otros 9.42 MXN/kg cubren empaque, flete, mermas, comisiones e intermediación.
 
-- **Confianza:** no aplica — sin año común
-- **Qué hacer:** —
-- **Fuente:** SIAP · SNIIM · **Datos a:** —
+- **Confianza:** alta — promedios anuales oficiales; 12 meses de cotización mayorista; no distingue calidades
+- **Qué hacer:** Use este porcentaje para revisar si una oferta en huerta está en línea con el mercado (calculadora de arriba).
+- **Fuente:** SIAP (precio medio rural) · SNIIM · **Datos a:** 2025
 
 ### 8. ¿Cómo ha cambiado lo que se le paga al productor en los últimos años?
 
@@ -983,11 +983,11 @@ Precio medio rural en Colima (MXN/kg, SIAP): 2016: 3.89, 2017: 4.38, 2018: 4.02,
 
 ### 9. ¿Qué tanto puede bajar el precio de un mes a otro?
 
-Hay muy pocos meses (0) para medir variaciones; se necesitan al menos 6.
+En Guadalajara · Mercado de Abasto el precio cambió en promedio **8 %** de un mes al siguiente. La peor caída fue de -25 % (2025-03); en 3 % de los meses cayó más de 15 % y en 12 % subió más de 15 %. (Referencia de mercado: no hay cotizaciones de esta fruta con origen Colima; se usa la fruta de todos los orígenes en la central.)
 
-- **Confianza:** no aplica — 0 cambios mensuales
-- **Qué hacer:** —
-- **Fuente:** SNIIM · **Datos a:** —
+- **Confianza:** alta — 118 cambios mensuales observados (índice: meses / 60)
+- **Qué hacer:** No comprometa toda la cosecha a un solo precio o fecha: escalone ventas o acuerde parte del volumen a precio fijo.
+- **Fuente:** SNIIM · variación mensual · **Datos a:** 2026-10
 
 ### 10. ¿De qué otros estados llega fruta a competir en Guadalajara?
 
@@ -1033,7 +1033,7 @@ Vienen de fuentes oficiales (SNIIM de la Secretaría de Economía y SIAP de Agri
 
 ### 1. ¿A cuánto se va a pagar la guanábana el próximo mes?
 
-Todavía no hay pronóstico para la guanábana: se exigen 36 meses continuos de una misma serie y aún no se reúnen.
+Todavía no hay pronóstico para la guanábana: es fruta de temporada: el SNIIM la cotizó solo 80 de los últimos 120 meses, así que nunca hay 36 meses seguidos. Para la temporada, use la pregunta de precio de hoy y el calendario de meses.
 
 - **Confianza:** no aplica — sin serie elegible
 - **Qué hacer:** Use el precio actual por central (pregunta 6) como referencia.
@@ -1049,19 +1049,19 @@ No hay pronóstico validado para estimarlo.
 
 ### 3. ¿El precio de hoy está caro o barato comparado con otros años?
 
-No hay al menos 12 meses de historia de origen Colima para comparar.
+En Guadalajara · Mercado de Abasto el último precio (2024-07) fue 21.77 MXN/kg: más alto que el **57 %** de los últimos 79 meses. Lectura: precio en rango normal. (Referencia de mercado: no hay cotizaciones de esta fruta con origen Colima; se usa la fruta de todos los orígenes en la central.)
 
-- **Confianza:** no aplica — historia insuficiente
-- **Qué hacer:** —
-- **Fuente:** SNIIM · **Datos a:** —
+- **Confianza:** alta — comparación directa con 79 meses observados
+- **Qué hacer:** Por encima del percentil 75 es buen momento para vender; por debajo del 25, evalúe esperar o almacenar.
+- **Fuente:** SNIIM · historia mensual de origen Colima · **Datos a:** 2024-07
 
 ### 4. ¿En qué meses suele pagarse mejor?
 
-Se necesitan al menos 24 meses en Guadalajara para estimar el patrón por mes; aún no se reúnen.
+En Guadalajara, frente a su tendencia, los meses que más pagaron en promedio fueron enero (+7 %), febrero (+7 %), octubre (+5 %); los que menos, agosto (-7 %), septiembre (-7 %), julio (-6 %). (Referencia de mercado: no hay cotizaciones de esta fruta con origen Colima; se usa la fruta de todos los orígenes en la central.)
 
-- **Confianza:** no aplica — historia insuficiente
-- **Qué hacer:** —
-- **Fuente:** SNIIM · **Datos a:** —
+- **Confianza:** alta — prueba de Kruskal-Wallis entre meses: p = 0.012 con 79 observaciones
+- **Qué hacer:** Úselo como pista para planear, no para decidir sola la fecha de corte; combine con el pronóstico del próximo mes.
+- **Fuente:** SNIIM · índice estacional OAIC · **Datos a:** 2026-10
 
 ### 5. ¿A qué central de abasto me conviene mandar mi fruta?
 
@@ -1081,11 +1081,11 @@ Cotizaciones del 2026-11-25 (todos los orígenes; MXN/kg, mediana por central): 
 
 ### 7. De lo que paga la central, ¿cuánto le llega al productor?
 
-No hay un año común entre el precio rural SIAP y cotizaciones de origen Colima en alguna central para este producto.
+En 2023 el productor de Colima recibió en promedio **6.83 MXN/kg** (SIAP) y Guadalajara · Mercado de Abasto cotizó la fruta de todos los orígenes (no hay mayoreo de origen Colima) en 24.76 MXN/kg: al productor le llegó el **28 %**. Los otros 17.93 MXN/kg cubren empaque, flete, mermas, comisiones e intermediación.
 
-- **Confianza:** no aplica — sin año común
-- **Qué hacer:** —
-- **Fuente:** SIAP · SNIIM · **Datos a:** —
+- **Confianza:** media — promedios anuales oficiales; 8 meses de cotización mayorista; no distingue calidades
+- **Qué hacer:** Use este porcentaje para revisar si una oferta en huerta está en línea con el mercado (calculadora de arriba).
+- **Fuente:** SIAP (precio medio rural) · SNIIM · **Datos a:** 2023
 
 ### 8. ¿Cómo ha cambiado lo que se le paga al productor en los últimos años?
 
@@ -1097,19 +1097,19 @@ Precio medio rural en Colima (MXN/kg, SIAP): 2016: 6.90, 2017: 5.61, 2018: 6.73,
 
 ### 9. ¿Qué tanto puede bajar el precio de un mes a otro?
 
-Hay muy pocos meses (0) para medir variaciones; se necesitan al menos 6.
+En Guadalajara · Mercado de Abasto el precio cambió en promedio **6 %** de un mes al siguiente. La peor caída fue de -20 % (2017-03); en 3 % de los meses cayó más de 15 % y en 8 % subió más de 15 %. (Referencia de mercado: no hay cotizaciones de esta fruta con origen Colima; se usa la fruta de todos los orígenes en la central.)
 
-- **Confianza:** no aplica — 0 cambios mensuales
-- **Qué hacer:** —
-- **Fuente:** SNIIM · **Datos a:** —
+- **Confianza:** alta — 78 cambios mensuales observados (índice: meses / 60)
+- **Qué hacer:** No comprometa toda la cosecha a un solo precio o fecha: escalone ventas o acuerde parte del volumen a precio fijo.
+- **Fuente:** SNIIM · variación mensual · **Datos a:** 2024-07
 
 ### 10. ¿De qué otros estados llega fruta a competir en Guadalajara?
 
-No hay cotizaciones de este producto en Guadalajara.
+En los últimos 12 meses las cotizaciones de guanábana en Guadalajara se repartieron así por estado de origen: Nayarit 100 %.
 
-- **Confianza:** no aplica — sin datos
-- **Qué hacer:** —
-- **Fuente:** SNIIM · **Datos a:** —
+- **Confianza:** media — mide presencia en cotizaciones publicadas, no toneladas vendidas
+- **Qué hacer:** Si otro estado domina, su fruta compite por precio: diferénciese por calidad o por calendario.
+- **Fuente:** SNIIM · origen reportado · **Datos a:** 2024-07-01
 
 ### 11. ¿Cuánto se produce en mi municipio y a cuánto se pagó?
 

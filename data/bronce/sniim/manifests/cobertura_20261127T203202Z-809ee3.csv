@@ -1,0 +1,13 @@
+producto,mercado,periodos_esperados,periodos_con_datos,cumple_36
+aguacate_hass,guadalajara,36,36,True
+coco,guadalajara,36,33,False
+guanabana,guadalajara,36,4,False
+mango_ataulfo,guadalajara,36,10,False
+mango_manila,guadalajara,36,0,False
+sandia,guadalajara,36,0,False
+sandia_blanca,guadalajara,36,0,False
+sandia_jubilee,guadalajara,36,0,False
+sandia_negra,guadalajara,36,0,False
+sandia_peacock,guadalajara,36,0,False
+sandia_rayada,guadalajara,36,0,False
+sandia_sangria,guadalajara,36,36,True
