@@ -106,3 +106,14 @@ def test_number_rechaza_texto_y_no_finitos(valor):
 @pytest.mark.parametrize("etiqueta, kg", [("Kilogramo", 1.0), ("Caja de 18 kg.", 18.0), ("Arpilla de 19 kg.", 19.0), ("Pieza", None)])
 def test_peso_presentacion(etiqueta, kg):
     assert e1._peso_presentacion_kg(etiqueta)[0] == kg
+
+
+def test_capturas_de_catalogo_todos_los_productos_no_entran_al_panel(tmp_path):
+    """Regresión 2026-11-27: ProductoId=-1 mezclaba frutas distintas en una variante "Todos"."""
+    from config.settings import cargar_fuentes
+    from src.tdl_e1.pipeline import _parse_sniim
+    html = tmp_path / "sniim__todos.html"
+    html.write_text(RESULTADOS, encoding="utf-8")
+    md = {"fuente": "sniim", "producto": "Todos", "producto_id": "-1", "mercado_id": "10",
+          "fecha_ref_inicio": "2026-11-25", "fecha_ref_fin": "2026-11-25"}
+    assert _parse_sniim(html, md, "a" * 64, cargar_fuentes()) == ([], [])

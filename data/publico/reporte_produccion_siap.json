@@ -57,6 +57,6 @@
   ],
   "archivo_bronce": "data/bronce/siap/2025/01/siap__cierre-agricola-municipal-2025__2025-01-01_2025-12-31__20261126T235056Z-65fe4d.csv",
   "sha256_bronce": "1f72e2b0cde3aeb1cac40c205054ce662d65c5f4655831b997bf66c626650243",
-  "marco_geoestadistico": "data/bronce/inegi_marco/2026/11/inegi_marco__marco-municipal-colima__2026-11-20_2026-11-20__20261120T110143Z-2a37ba.geojson",
+  "marco_geoestadistico": "data/bronce/inegi_marco/2026/11/inegi_marco__marco-municipal-colima__2026-11-27_2026-11-27__20261127T115326Z-fb99fa.geojson",
   "limitacion": "Los municipios señalan producción histórica anual; no se interpretan como disponibilidad en tiempo real ni coordenadas de predios."
 }

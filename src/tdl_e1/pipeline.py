@@ -137,6 +137,10 @@ def _parse_sniim(path: Path, metadata: dict[str, Any], sha: str, sources: dict[s
     md = metadata
     if md.get("tipo") == "formulario" or md.get("etiqueta") == "catalogo-formulario":
         return [], []
+    if str(md.get("producto_id", "")).strip() == "-1" or str(md.get("producto", "")).strip().casefold() == "todos":
+        # Consultas de catálogo con todos los productos (main.py precios-catalogo): mezclan frutas distintas
+        # bajo una sola variante y tienen su propio procesamiento; no deben agregarse al panel mensual.
+        return [], []
     catalog = sources["sniim"]
     crop = next((p["clave"] for p in catalog["productos"]
                  if md.get("producto", "").casefold().startswith(p["busqueda"].casefold())), "")

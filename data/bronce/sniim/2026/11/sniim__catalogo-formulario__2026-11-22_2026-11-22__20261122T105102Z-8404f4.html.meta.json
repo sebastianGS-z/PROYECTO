@@ -1,0 +1,23 @@
+{
+  "esquema": "tdl-bronce-meta/1",
+  "contenido_original": {
+    "archivo": "sniim__catalogo-formulario__2026-11-22_2026-11-22__20261122T105102Z-8404f4.html",
+    "descripcion": "Bytes tal como los entregó la fuente; no se modifican."
+  },
+  "metadatos_captura": {
+    "fuente": "sniim",
+    "fuente_url": "https://www.economia-sniim.gob.mx/nuevo/Consultas/MercadosNacionales/PreciosDeMercado/Agricolas/ConsultaFrutasYHortalizas.aspx",
+    "fecha_captura": "2026-11-22T10:51:05Z",
+    "identificador_ejecucion": "20261122T105102Z-8404f4",
+    "formato_original": "html",
+    "sha256": "d64ef50227958d79f77025bab040b857916a558739ab7a08a14d33550728ce0f",
+    "bytes": 67149,
+    "http_status": 200,
+    "registros_detectados": 223,
+    "estado_captura": "ok",
+    "advertencias": [],
+    "colision_nombre": false,
+    "etiqueta": "catalogo-formulario",
+    "tipo": "formulario"
+  }
+}

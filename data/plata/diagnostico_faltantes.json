@@ -2,7 +2,7 @@
   "regla": "No se imputan precios ni precipitación. MAR/MCAR/MNAR no se prueban solo con valores observados; se reportan asociaciones descriptivas.",
   "variables": {
     "precio_min": {
-      "n_aplicable": 17129,
+      "n_aplicable": 17224,
       "faltantes": 0,
       "porcentaje": 0.0,
       "mecanismo": "sin_faltantes",
@@ -36,7 +36,7 @@
       "decision_imputacion": "no_imputar: una cotización ausente no se deduce de las restantes"
     },
     "precio_max": {
-      "n_aplicable": 17129,
+      "n_aplicable": 17224,
       "faltantes": 0,
       "porcentaje": 0.0,
       "mecanismo": "sin_faltantes",
@@ -70,7 +70,7 @@
       "decision_imputacion": "no_imputar: una cotización ausente no se deduce de las restantes"
     },
     "precio_frecuente": {
-      "n_aplicable": 17129,
+      "n_aplicable": 17224,
       "faltantes": 0,
       "porcentaje": 0.0,
       "mecanismo": "sin_faltantes",
@@ -104,7 +104,7 @@
       "decision_imputacion": "no_imputar: una cotización ausente no se deduce de las restantes"
     },
     "precio_min_kg": {
-      "n_aplicable": 17129,
+      "n_aplicable": 17224,
       "faltantes": 53,
       "porcentaje": 0.31,
       "mecanismo": "MAR_compatible_asociacion_con_variables_observadas",
@@ -130,7 +130,7 @@
         },
         "mercado": {
           "100": 0.0,
-          "140": 0.0026,
+          "140": 0.0025,
           "160": 0.1111,
           "80": 0.0137
         }
@@ -138,7 +138,7 @@
       "decision_imputacion": "no_imputar: una cotización ausente no se deduce de las restantes"
     },
     "precio_max_kg": {
-      "n_aplicable": 17129,
+      "n_aplicable": 17224,
       "faltantes": 53,
       "porcentaje": 0.31,
       "mecanismo": "MAR_compatible_asociacion_con_variables_observadas",
@@ -164,7 +164,7 @@
         },
         "mercado": {
           "100": 0.0,
-          "140": 0.0026,
+          "140": 0.0025,
           "160": 0.1111,
           "80": 0.0137
         }
@@ -172,7 +172,7 @@
       "decision_imputacion": "no_imputar: una cotización ausente no se deduce de las restantes"
     },
     "precio_frecuente_kg": {
-      "n_aplicable": 17129,
+      "n_aplicable": 17224,
       "faltantes": 53,
       "porcentaje": 0.31,
       "mecanismo": "MAR_compatible_asociacion_con_variables_observadas",
@@ -198,7 +198,7 @@
         },
         "mercado": {
           "100": 0.0,
-          "140": 0.0026,
+          "140": 0.0025,
           "160": 0.1111,
           "80": 0.0137
         }
@@ -206,13 +206,13 @@
       "decision_imputacion": "no_imputar: una cotización ausente no se deduce de las restantes"
     },
     "tavg_c": {
-      "n_aplicable": 1106,
-      "faltantes": 240,
-      "porcentaje": 21.7,
+      "n_aplicable": 1113,
+      "faltantes": 247,
+      "porcentaje": 22.19,
       "mecanismo": "MAR_compatible_asociacion_con_variables_observadas",
       "tasas_por_grupo": {
         "estacion": {
-          "MXM00076654": 0.217
+          "MXM00076654": 0.2219
         },
         "mes": {
           "1": 0.3763,
@@ -225,20 +225,20 @@
           "8": 0.2151,
           "9": 0.1667,
           "10": 0.1613,
-          "11": 0.14,
+          "11": 0.1963,
           "12": 0.3441
         }
       },
       "decision_imputacion": "solo feature de modelado: interpolación lineal interior de hasta 2 días, con indicador; nunca sobrescribe el valor original"
     },
     "tmax_c": {
-      "n_aplicable": 1106,
-      "faltantes": 438,
-      "porcentaje": 39.6,
+      "n_aplicable": 1113,
+      "faltantes": 445,
+      "porcentaje": 39.98,
       "mecanismo": "MAR_compatible_asociacion_con_variables_observadas",
       "tasas_por_grupo": {
         "estacion": {
-          "MXM00076654": 0.396
+          "MXM00076654": 0.3998
         },
         "mes": {
           "1": 0.4946,
@@ -251,20 +251,20 @@
           "8": 0.4839,
           "9": 0.4333,
           "10": 0.3226,
-          "11": 0.41,
+          "11": 0.4486,
           "12": 0.5269
         }
       },
       "decision_imputacion": "solo feature de modelado: interpolación lineal interior de hasta 2 días, con indicador; nunca sobrescribe el valor original"
     },
     "tmin_c": {
-      "n_aplicable": 1106,
-      "faltantes": 438,
-      "porcentaje": 39.6,
+      "n_aplicable": 1113,
+      "faltantes": 445,
+      "porcentaje": 39.98,
       "mecanismo": "MAR_compatible_asociacion_con_variables_observadas",
       "tasas_por_grupo": {
         "estacion": {
-          "MXM00076654": 0.396
+          "MXM00076654": 0.3998
         },
         "mes": {
           "1": 0.4946,
@@ -277,20 +277,20 @@
           "8": 0.4839,
           "9": 0.4333,
           "10": 0.3226,
-          "11": 0.41,
+          "11": 0.4486,
           "12": 0.5269
         }
       },
       "decision_imputacion": "solo feature de modelado: interpolación lineal interior de hasta 2 días, con indicador; nunca sobrescribe el valor original"
     },
     "prcp_mm": {
-      "n_aplicable": 1106,
-      "faltantes": 691,
-      "porcentaje": 62.48,
+      "n_aplicable": 1113,
+      "faltantes": 698,
+      "porcentaje": 62.71,
       "mecanismo": "MAR_compatible_asociacion_con_variables_observadas",
       "tasas_por_grupo": {
         "estacion": {
-          "MXM00076654": 0.6248
+          "MXM00076654": 0.6271
         },
         "mes": {
           "1": 0.6667,
@@ -303,7 +303,7 @@
           "8": 0.5699,
           "9": 0.5111,
           "10": 0.4409,
-          "11": 0.65,
+          "11": 0.6729,
           "12": 0.3656
         }
       },
@@ -312,12 +312,12 @@
   },
   "calendario_climatico": {
     "inicio_calendario_esperado": "2023-11-01",
-    "fin_calendario_esperado": "2026-11-19",
+    "fin_calendario_esperado": "2026-11-26",
     "inicio_ultima_serie_observada": "2023-11-01",
     "fin_ultima_serie_observada": "2026-10-31",
-    "dias_calendario_esperados": 1106,
+    "dias_calendario_esperados": 1113,
     "dias_con_algun_dato": 914,
-    "dias_sin_registro_util": 192,
+    "dias_sin_registro_util": 199,
     "nota": "Rango derivado de fechas válidas. No incluye posibles faltantes anteriores o posteriores al rango observado."
   }
 }

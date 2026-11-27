@@ -1,10 +1,10 @@
 {
-  "colinealidad_min": 0.949206,
-  "colinealidad_max": 0.995747,
+  "colinealidad_min": 0.9492,
+  "colinealidad_max": 0.995742,
   "par_mas_correlacionado": [
     "log_precio",
     "log_cotizaciones",
-    -0.298902
+    -0.35591
   ],
   "n": 825,
   "grupos": {
@@ -22,165 +22,165 @@
     "cambio_mensual": "cambio logarítmico del precio frente al mes anterior de la misma serie"
   },
   "media": {
-    "log_precio": 2.949086,
-    "amplitud": 0.192946,
-    "dispersion": 0.088104,
-    "log_cotizaciones": 2.919864,
-    "cambio_mensual": -0.002753
+    "log_precio": 2.949015,
+    "amplitud": 0.193004,
+    "dispersion": 0.087999,
+    "log_cotizaciones": 2.933823,
+    "cambio_mensual": -0.002825
   },
   "covarianza": {
     "log_precio": {
-      "log_precio": 0.224234,
-      "amplitud": -0.009563,
-      "dispersion": -0.009144,
-      "log_cotizaciones": -0.046558,
-      "cambio_mensual": 0.024435
+      "log_precio": 0.22439,
+      "amplitud": -0.009572,
+      "dispersion": -0.009085,
+      "log_cotizaciones": -0.049137,
+      "cambio_mensual": 0.024528
     },
     "amplitud": {
-      "log_precio": -0.009563,
-      "amplitud": 0.030431,
-      "dispersion": 0.001891,
-      "log_cotizaciones": 0.008791,
-      "cambio_mensual": -0.003845
+      "log_precio": -0.009572,
+      "amplitud": 0.03043,
+      "dispersion": 0.001909,
+      "log_cotizaciones": 0.008023,
+      "cambio_mensual": -0.00383
     },
     "dispersion": {
-      "log_precio": -0.009144,
-      "amplitud": 0.001891,
-      "dispersion": 0.004531,
-      "log_cotizaciones": 0.004946,
-      "cambio_mensual": -0.000461
+      "log_precio": -0.009085,
+      "amplitud": 0.001909,
+      "dispersion": 0.00451,
+      "log_cotizaciones": 0.004612,
+      "cambio_mensual": -0.000459
     },
     "log_cotizaciones": {
-      "log_precio": -0.046558,
-      "amplitud": 0.008791,
-      "dispersion": 0.004946,
-      "log_cotizaciones": 0.108202,
-      "cambio_mensual": -0.003208
+      "log_precio": -0.049137,
+      "amplitud": 0.008023,
+      "dispersion": 0.004612,
+      "log_cotizaciones": 0.084945,
+      "cambio_mensual": -0.002351
     },
     "cambio_mensual": {
-      "log_precio": 0.024435,
-      "amplitud": -0.003845,
-      "dispersion": -0.000461,
-      "log_cotizaciones": -0.003208,
-      "cambio_mensual": 0.04672
+      "log_precio": 0.024528,
+      "amplitud": -0.00383,
+      "dispersion": -0.000459,
+      "log_cotizaciones": -0.002351,
+      "cambio_mensual": 0.046751
     }
   },
   "correlacion": {
     "log_precio": {
       "log_precio": 1.0,
-      "amplitud": -0.115773,
-      "dispersion": -0.286859,
-      "log_cotizaciones": -0.298902,
-      "cambio_mensual": 0.238727
+      "amplitud": -0.115834,
+      "dispersion": -0.285571,
+      "log_cotizaciones": -0.35591,
+      "cambio_mensual": 0.239475
     },
     "amplitud": {
-      "log_precio": -0.115773,
+      "log_precio": -0.115834,
       "amplitud": 1.0,
-      "dispersion": 0.161003,
-      "log_cotizaciones": 0.153203,
-      "cambio_mensual": -0.101979
+      "dispersion": 0.162907,
+      "log_cotizaciones": 0.157803,
+      "cambio_mensual": -0.101552
     },
     "dispersion": {
-      "log_precio": -0.286859,
-      "amplitud": 0.161003,
+      "log_precio": -0.285571,
+      "amplitud": 0.162907,
       "dispersion": 1.0,
-      "log_cotizaciones": 0.223392,
-      "cambio_mensual": -0.031694
+      "log_cotizaciones": 0.235614,
+      "cambio_mensual": -0.031595
     },
     "log_cotizaciones": {
-      "log_precio": -0.298902,
-      "amplitud": 0.153203,
-      "dispersion": 0.223392,
+      "log_precio": -0.35591,
+      "amplitud": 0.157803,
+      "dispersion": 0.235614,
       "log_cotizaciones": 1.0,
-      "cambio_mensual": -0.045118
+      "cambio_mensual": -0.03731
     },
     "cambio_mensual": {
-      "log_precio": 0.238727,
-      "amplitud": -0.101979,
-      "dispersion": -0.031694,
-      "log_cotizaciones": -0.045118,
+      "log_precio": 0.239475,
+      "amplitud": -0.101552,
+      "dispersion": -0.031595,
+      "log_cotizaciones": -0.03731,
       "cambio_mensual": 1.0
     }
   },
   "mardia": {
-    "asimetria_b1": 20.217082,
-    "chi2_asimetria": 2779.848788,
+    "asimetria_b1": 20.021166,
+    "chi2_asimetria": 2752.910384,
     "gl": 35.0,
     "p_asimetria": 0.0,
-    "curtosis_b2": 60.31854,
+    "curtosis_b2": 59.561333,
     "curtosis_esperada": 35,
-    "z_curtosis": 43.45969,
+    "z_curtosis": 42.159931,
     "p_curtosis": 0.0
   },
   "henze_zirkler": {
-    "HZ": 24.909388,
+    "HZ": 23.746865,
     "p": 0.0
   },
   "normal_multivariada": false,
   "box_m": {
-    "M": 1189.528052,
-    "chi2": 1167.060995,
+    "M": 1460.116389,
+    "chi2": 1432.538629,
     "gl": 60.0,
     "p": 0.0
   },
   "pca": {
     "valores_propios": [
-      1.701806,
-      1.009176,
-      0.911844,
-      0.775704,
-      0.60147
+      1.739405,
+      1.011352,
+      0.917805,
+      0.766218,
+      0.565219
     ],
     "varianza_explicada": [
-      0.340361,
-      0.201835,
-      0.182369,
-      0.155141,
-      0.120294
+      0.347881,
+      0.20227,
+      0.183561,
+      0.153244,
+      0.113044
     ],
     "acumulada": [
-      0.340361,
-      0.542196,
-      0.724565,
-      0.879706,
+      0.347881,
+      0.550151,
+      0.733712,
+      0.886956,
       1.0
     ],
     "kaiser": 2,
     "cargas": {
       "CP1": {
-        "log_precio": 0.735287,
-        "amplitud": -0.460491,
-        "dispersion": -0.62672,
-        "log_cotizaciones": -0.638015,
-        "cambio_mensual": 0.386351
+        "log_precio": 0.752471,
+        "amplitud": -0.44849,
+        "dispersion": -0.619792,
+        "log_cotizaciones": -0.673872,
+        "cambio_mensual": 0.365791
       },
       "CP2": {
-        "log_precio": 0.161758,
-        "amplitud": 0.048213,
-        "dispersion": 0.370662,
-        "log_cotizaciones": 0.31079,
-        "cambio_mensual": 0.864121
+        "log_precio": 0.138085,
+        "amplitud": 0.006122,
+        "dispersion": 0.358254,
+        "log_cotizaciones": 0.29843,
+        "cambio_mensual": 0.88025
       },
       "CP3": {
-        "log_precio": 0.335359,
-        "amplitud": 0.873921,
-        "dispersion": -0.087708,
-        "log_cotizaciones": -0.166591,
-        "cambio_mensual": -0.013999
+        "log_precio": 0.336587,
+        "amplitud": 0.875824,
+        "dispersion": -0.009184,
+        "log_cotizaciones": -0.193022,
+        "cambio_mensual": 0.010286
       },
       "CP4": {
-        "log_precio": 0.022376,
-        "amplitud": 0.048267,
-        "dispersion": -0.62038,
-        "log_cotizaciones": 0.621882,
-        "cambio_mensual": 0.035562
+        "log_precio": 0.04883,
+        "amplitud": -0.128093,
+        "dispersion": 0.673004,
+        "log_cotizaciones": -0.533409,
+        "cambio_mensual": -0.099835
       },
       "CP5": {
-        "log_precio": 0.565881,
-        "amplitud": -0.139846,
-        "dispersion": 0.27797,
-        "log_cotizaciones": 0.286106,
-        "cambio_mensual": -0.320262
+        "log_precio": 0.54685,
+        "amplitud": -0.123871,
+        "dispersion": 0.185724,
+        "log_cotizaciones": 0.367496,
+        "cambio_mensual": -0.285103
       }
     },
     "nombres": {
@@ -191,92 +191,92 @@
   },
   "manova": {
     "Wilks' lambda": {
-      "valor": 0.412974,
-      "F": 41.365121,
+      "valor": 0.374092,
+      "F": 46.713646,
       "gl_num": 20.0,
       "gl_den": 2707.315703,
       "p": 0.0
     },
     "Pillai's trace": {
-      "valor": 0.709771,
-      "F": 35.335068,
+      "valor": 0.770448,
+      "F": 39.076437,
       "gl_num": 20.0,
       "gl_den": 3276.0,
       "p": 0.0
     },
     "Hotelling-Lawley trace": {
-      "valor": 1.140159,
-      "F": 46.456433,
+      "valor": 1.310659,
+      "F": 53.403565,
       "gl_num": 20.0,
       "gl_den": 1787.773585,
       "p": 0.0
     },
     "Roy's greatest root": {
-      "valor": 0.849553,
-      "F": 139.156821,
+      "valor": 0.993837,
+      "F": 162.790569,
       "gl_num": 5.0,
       "gl_den": 819.0,
       "p": 0.0
     }
   },
   "pillai_permutacion": {
-    "pillai": 0.709771,
+    "pillai": 0.770448,
     "permutaciones": 999,
     "p": 0.001
   },
   "anovas_separados": [
     {
       "variable": "log_precio",
-      "F": 118.741327,
+      "F": 118.553605,
       "p": 0.0,
       "p_bonferroni": 0.0
     },
     {
       "variable": "amplitud",
-      "F": 31.463069,
+      "F": 31.474884,
       "p": 0.0,
       "p_bonferroni": 0.0
     },
     {
       "variable": "dispersion",
-      "F": 21.057628,
+      "F": 20.768289,
       "p": 0.0,
       "p_bonferroni": 0.0
     },
     {
       "variable": "log_cotizaciones",
-      "F": 70.207808,
+      "F": 110.439558,
       "p": 0.0,
       "p_bonferroni": 0.0
     },
     {
       "variable": "cambio_mensual",
-      "F": 0.360266,
-      "p": 0.836942,
+      "F": 0.337201,
+      "p": 0.85295,
       "p_bonferroni": 1.0
     }
   ],
   "tasa_error_familia_5_anovas": 0.226219,
   "centroides": {
     "platano": {
-      "CP1": -0.256258,
-      "CP2": -0.022413
+      "CP1": -0.288313,
+      "CP2": 0.007543
     },
     "limon": {
-      "CP1": -0.666136,
-      "CP2": 0.169772
+      "CP1": -0.676223,
+      "CP2": 0.155235
     },
     "papaya": {
-      "CP1": 0.192602,
-      "CP2": 0.014963
+      "CP1": 0.161099,
+      "CP2": 0.021688
     },
     "guayaba": {
-      "CP1": 0.922666,
-      "CP2": -0.231114
+      "CP1": 1.051196,
+      "CP2": -0.287165
     },
     "tamarindo": {
-      "CP1": 1.926402,
-      "CP2": -0.219476
+      "CP1": 2.042627,
+      "CP2": -0.271482
     }
   }
 }

@@ -1,0 +1,76 @@
+{
+  "esquema": "oaic-iso25012/1",
+  "generado_utc": "2026-11-27T16:14:45+00:00",
+  "fecha_medicion": "2026-11-27",
+  "filas_oro": 895,
+  "columnas_oro": 66,
+  "medidas": {
+    "completitud": {
+      "definicion": "celdas no nulas en las columnas obligatorias de Oro / celdas totales de esas columnas",
+      "valor": 1.0,
+      "columnas_obligatorias_ausentes": [],
+      "completitud_tabla_completa": 0.9515,
+      "nota": "Las columnas de clima pueden ser nulas por diseño (NOAA sin publicación); se reportan en la completitud de tabla completa.",
+      "por_columna_clima": {
+        "tavg_c_mean": 0.8693,
+        "prcp_mm_mean": 0.495
+      }
+    },
+    "exactitud_sintactica_y_semantica": {
+      "definicion": "filas que cumplen todas las reglas de rango y dominio / filas",
+      "valor": 1.0,
+      "por_regla": {
+        "precio_frecuente_min <= mean <= max": 1.0,
+        "precio_min_mean <= precio_max_mean": 1.0,
+        "precios positivos": 1.0,
+        "temperatura media en [-10, 50] °C": 1.0,
+        "mes 1..12 y año >= 2000": 1.0
+      }
+    },
+    "consistencia": {
+      "definicion": "filas sin contradicciones internas entre campos relacionados / filas",
+      "valor": 1.0,
+      "por_regla": {
+        "precio_frecuente_count <= n_observaciones_precio": 1.0,
+        "fecha_mes coincide con anio/mes": 1.0,
+        "referencias de linaje == observaciones agregadas": 1.0
+      }
+    },
+    "unicidad": {
+      "definicion": "1 - filas con clave (variante, mercado, origen, presentación, año, mes) repetida / filas",
+      "valor": 1.0,
+      "duplicados": 0
+    },
+    "trazabilidad": {
+      "definicion": "filas con linaje a Bronce (archivo, SHA-256, ingesta, índice) / filas",
+      "valor": 1.0,
+      "archivos_bronce_referenciados": 974,
+      "archivos_bronce_presentes": 974,
+      "proporcion_archivos_presentes": 1.0
+    },
+    "credibilidad": {
+      "definicion": "filas cuyo origen es una fuente oficial (SNIIM/NOAA) verificable por linaje y hash / filas",
+      "valor": 1.0,
+      "nota": "La credibilidad se apoya en la fuente oficial y la verificación SHA-256 de Bronce (python main.py validar)."
+    },
+    "actualidad": {
+      "definicion": "meses entre el último mes con precios en Oro y la fecha de medición",
+      "ultimo_mes_precios": "2026-11",
+      "meses_de_atraso_precios": 0,
+      "ultimo_mes_con_clima": "2026-10",
+      "valor": 1.0
+    },
+    "comprensibilidad": {
+      "definicion": "columnas de Oro descritas en el datasheet / columnas",
+      "valor": 1.0,
+      "no_documentadas": []
+    },
+    "portabilidad": {
+      "definicion": "formato abierto, UTF-8, sin dependencias propietarias",
+      "valor": 1.0,
+      "evidencia": "CSV UTF-8 + licencia CC BY 4.0 (data/publico/LICENSE.md)"
+    }
+  },
+  "umbral_sello_completitud": 0.95,
+  "cumple_sello_completitud": true
+}

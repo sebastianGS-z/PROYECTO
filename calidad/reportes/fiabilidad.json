@@ -1,0 +1,319 @@
+{
+  "esquema": "oaic-fiabilidad/1",
+  "generado_utc": "2026-11-27T16:14:45+00:00",
+  "definiciones": {
+    "operativo": "≥1 ejecución diaria programada y ninguna fuente fallida/parcial",
+    "falla": "inicio de una racha de días caídos (sin ejecución o con fuente fallida/parcial)",
+    "sin_resultados": "no es falla: la fuente respondió sin datos nuevos; se mide aparte"
+  },
+  "periodos": {
+    "desde_primera_ejecucion_en_actions": {
+      "desde": "2026-11-09",
+      "hasta": "2026-11-27",
+      "dias": 19,
+      "dias_operativos": 16,
+      "n_fallas": 1,
+      "mtbf_h": 384.0,
+      "mtbf_cota_inferior_h": null,
+      "mttr_h": 72.0,
+      "disponibilidad": 0.8421052631578947,
+      "disponibilidad_formula": 0.8421,
+      "horas_observadas": 456.0,
+      "nota": "A = MTBF / (MTBF + MTTR), granularidad diaria."
+    },
+    "desde_activacion_del_schedule": {
+      "desde": "2026-11-14",
+      "hasta": "2026-11-27",
+      "dias": 14,
+      "dias_operativos": 14,
+      "n_fallas": 0,
+      "mtbf_h": null,
+      "mtbf_cota_inferior_h": 336.0,
+      "mttr_h": 0.0,
+      "disponibilidad": 1.0,
+      "disponibilidad_formula": null,
+      "horas_observadas": 336.0,
+      "nota": "Sin fallas en el periodo: MTBF no estimable, se reporta su cota inferior (horas operativas observadas)."
+    },
+    "ventana_sello_14_dias": {
+      "desde": "2026-11-14",
+      "hasta": "2026-11-27",
+      "dias": 14,
+      "dias_operativos": 14,
+      "n_fallas": 0,
+      "mtbf_h": null,
+      "mtbf_cota_inferior_h": 336.0,
+      "mttr_h": 0.0,
+      "disponibilidad": 1.0,
+      "disponibilidad_formula": null,
+      "horas_observadas": 336.0,
+      "nota": "Sin fallas en el periodo: MTBF no estimable, se reporta su cota inferior (horas operativas observadas)."
+    }
+  },
+  "por_fuente": {
+    "noaa_ncei": {
+      "ejecuciones": 17,
+      "tasa_exito_tecnico": 1.0,
+      "tasa_con_datos_nuevos": 0.0,
+      "estados": {
+        "sin_resultados": 17
+      },
+      "duracion_s_mediana": 2.02,
+      "duracion_s_max": 18.35,
+      "ultimo_dia_con_datos_nuevos": null,
+      "dias_desde_ultimo_dato_nuevo": null
+    },
+    "sniim": {
+      "ejecuciones": 17,
+      "tasa_exito_tecnico": 1.0,
+      "tasa_con_datos_nuevos": 0.5882,
+      "estados": {
+        "exitosa": 10,
+        "sin_resultados": 7
+      },
+      "duracion_s_mediana": 102.75,
+      "duracion_s_max": 133.25,
+      "ultimo_dia_con_datos_nuevos": "2026-11-27",
+      "dias_desde_ultimo_dato_nuevo": 0
+    }
+  },
+  "frescura": {
+    "regla": "alerta si una fuente no trae datos nuevos en 7 días de ejecuciones",
+    "alertas": [
+      "noaa_ncei: sin datos nuevos en las ejecuciones de los últimos 7 días (nunca en ejecuciones programadas)"
+    ]
+  },
+  "puntualidad_schedule": {
+    "cron_utc": "03:00",
+    "ejecuciones": 14,
+    "retraso_h_mediana": 8.28,
+    "retraso_h_max": 10.38
+  },
+  "objetivo_OQ1": {
+    "meta": 0.95,
+    "medido_ventana_14d": 1.0,
+    "cumple": true
+  },
+  "detalle_diario": [
+    {
+      "dia": "2026-11-09",
+      "ejecuciones": 1,
+      "operativo": true,
+      "fuentes_con_datos_nuevos": [],
+      "estados": {
+        "sniim": "sin_resultados",
+        "noaa_ncei": "sin_resultados"
+      },
+      "motivo_caida": null
+    },
+    {
+      "dia": "2026-11-10",
+      "ejecuciones": 0,
+      "operativo": false,
+      "fuentes_con_datos_nuevos": [],
+      "estados": {},
+      "motivo_caida": "sin ejecución"
+    },
+    {
+      "dia": "2026-11-11",
+      "ejecuciones": 0,
+      "operativo": false,
+      "fuentes_con_datos_nuevos": [],
+      "estados": {},
+      "motivo_caida": "sin ejecución"
+    },
+    {
+      "dia": "2026-11-12",
+      "ejecuciones": 0,
+      "operativo": false,
+      "fuentes_con_datos_nuevos": [],
+      "estados": {},
+      "motivo_caida": "sin ejecución"
+    },
+    {
+      "dia": "2026-11-13",
+      "ejecuciones": 1,
+      "operativo": true,
+      "fuentes_con_datos_nuevos": [
+        "sniim"
+      ],
+      "estados": {
+        "sniim": "exitosa",
+        "noaa_ncei": "sin_resultados"
+      },
+      "motivo_caida": null
+    },
+    {
+      "dia": "2026-11-14",
+      "ejecuciones": 1,
+      "operativo": true,
+      "fuentes_con_datos_nuevos": [
+        "sniim"
+      ],
+      "estados": {
+        "sniim": "exitosa",
+        "noaa_ncei": "sin_resultados"
+      },
+      "motivo_caida": null
+    },
+    {
+      "dia": "2026-11-15",
+      "ejecuciones": 1,
+      "operativo": true,
+      "fuentes_con_datos_nuevos": [],
+      "estados": {
+        "sniim": "sin_resultados",
+        "noaa_ncei": "sin_resultados"
+      },
+      "motivo_caida": null
+    },
+    {
+      "dia": "2026-11-16",
+      "ejecuciones": 1,
+      "operativo": true,
+      "fuentes_con_datos_nuevos": [],
+      "estados": {
+        "sniim": "sin_resultados",
+        "noaa_ncei": "sin_resultados"
+      },
+      "motivo_caida": null
+    },
+    {
+      "dia": "2026-11-17",
+      "ejecuciones": 2,
+      "operativo": true,
+      "fuentes_con_datos_nuevos": [],
+      "estados": {
+        "sniim": "sin_resultados",
+        "noaa_ncei": "sin_resultados"
+      },
+      "motivo_caida": null
+    },
+    {
+      "dia": "2026-11-18",
+      "ejecuciones": 1,
+      "operativo": true,
+      "fuentes_con_datos_nuevos": [
+        "sniim"
+      ],
+      "estados": {
+        "sniim": "exitosa",
+        "noaa_ncei": "sin_resultados"
+      },
+      "motivo_caida": null
+    },
+    {
+      "dia": "2026-11-19",
+      "ejecuciones": 1,
+      "operativo": true,
+      "fuentes_con_datos_nuevos": [
+        "sniim"
+      ],
+      "estados": {
+        "sniim": "exitosa",
+        "noaa_ncei": "sin_resultados"
+      },
+      "motivo_caida": null
+    },
+    {
+      "dia": "2026-11-20",
+      "ejecuciones": 1,
+      "operativo": true,
+      "fuentes_con_datos_nuevos": [
+        "sniim"
+      ],
+      "estados": {
+        "sniim": "exitosa",
+        "noaa_ncei": "sin_resultados"
+      },
+      "motivo_caida": null
+    },
+    {
+      "dia": "2026-11-21",
+      "ejecuciones": 1,
+      "operativo": true,
+      "fuentes_con_datos_nuevos": [
+        "sniim"
+      ],
+      "estados": {
+        "sniim": "exitosa",
+        "noaa_ncei": "sin_resultados"
+      },
+      "motivo_caida": null
+    },
+    {
+      "dia": "2026-11-22",
+      "ejecuciones": 1,
+      "operativo": true,
+      "fuentes_con_datos_nuevos": [],
+      "estados": {
+        "sniim": "sin_resultados",
+        "noaa_ncei": "sin_resultados"
+      },
+      "motivo_caida": null
+    },
+    {
+      "dia": "2026-11-23",
+      "ejecuciones": 1,
+      "operativo": true,
+      "fuentes_con_datos_nuevos": [],
+      "estados": {
+        "sniim": "sin_resultados",
+        "noaa_ncei": "sin_resultados"
+      },
+      "motivo_caida": null
+    },
+    {
+      "dia": "2026-11-24",
+      "ejecuciones": 1,
+      "operativo": true,
+      "fuentes_con_datos_nuevos": [
+        "sniim"
+      ],
+      "estados": {
+        "sniim": "exitosa",
+        "noaa_ncei": "sin_resultados"
+      },
+      "motivo_caida": null
+    },
+    {
+      "dia": "2026-11-25",
+      "ejecuciones": 1,
+      "operativo": true,
+      "fuentes_con_datos_nuevos": [
+        "sniim"
+      ],
+      "estados": {
+        "sniim": "exitosa",
+        "noaa_ncei": "sin_resultados"
+      },
+      "motivo_caida": null
+    },
+    {
+      "dia": "2026-11-26",
+      "ejecuciones": 1,
+      "operativo": true,
+      "fuentes_con_datos_nuevos": [
+        "sniim"
+      ],
+      "estados": {
+        "sniim": "exitosa",
+        "noaa_ncei": "sin_resultados"
+      },
+      "motivo_caida": null
+    },
+    {
+      "dia": "2026-11-27",
+      "ejecuciones": 1,
+      "operativo": true,
+      "fuentes_con_datos_nuevos": [
+        "sniim"
+      ],
+      "estados": {
+        "sniim": "exitosa",
+        "noaa_ncei": "sin_resultados"
+      },
+      "motivo_caida": null
+    }
+  ]
+}
