@@ -1,0 +1,17 @@
+orden,A,B,C,D,parser,arbol,formato,procesos,tiempo_s,tasa_error
+1,1,1,1,1,lxml,tablas,parquet,4,0.5666063130047405,0.0
+2,-1,1,1,-1,html.parser,tablas,parquet,1,1.4565695979981683,0.0
+3,-1,-1,1,1,html.parser,completo,parquet,4,0.7930491329971119,0.0
+4,-1,-1,-1,-1,html.parser,completo,csv,1,1.4743559179987642,0.0
+5,1,-1,1,-1,lxml,completo,parquet,1,1.1930348850000883,0.0
+6,1,-1,1,-1,lxml,completo,parquet,1,1.174838835002447,0.0
+7,-1,-1,1,1,html.parser,completo,parquet,4,0.6823254270057078,0.0
+8,-1,1,1,-1,html.parser,tablas,parquet,1,1.4320257880026475,0.0
+9,1,-1,-1,1,lxml,completo,csv,4,0.574555587998475,0.0
+10,1,1,-1,-1,lxml,tablas,csv,1,1.131894153993926,0.0
+11,1,1,1,1,lxml,tablas,parquet,4,0.5662465159985004,0.0
+12,-1,1,-1,1,html.parser,tablas,csv,4,0.7633239429997047,0.0
+13,1,-1,-1,1,lxml,completo,csv,4,0.617928572006349,0.0
+14,-1,1,-1,1,html.parser,tablas,csv,4,0.7374769750022097,0.0
+15,1,1,-1,-1,lxml,tablas,csv,1,1.153282944993407,0.0
+16,-1,-1,-1,-1,html.parser,completo,csv,1,1.457789590000175,0.0

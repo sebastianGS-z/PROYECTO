@@ -1,0 +1,6 @@
+corrida,parser,arbol,formato,procesos,tiempo_s,tasa_error
+1,lxml,tablas,csv,1,1.2036883999971906,0.0
+2,lxml,tablas,csv,1,1.154553501000919,0.0
+3,lxml,tablas,csv,1,1.134879497003567,0.0
+4,lxml,tablas,csv,1,1.1638364840036957,0.0
+5,lxml,tablas,csv,1,1.148677109995333,0.0

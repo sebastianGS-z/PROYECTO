@@ -1,0 +1,244 @@
+{
+  "anova_2k": [
+    {
+      "fuente": "bloque",
+      "SC": 0.003325,
+      "gl": 2.0,
+      "F": 5.303288,
+      "p": 0.019299,
+      "eta2_parcial": 0.431046,
+      "pct_SC": 0.60995
+    },
+    {
+      "fuente": "A",
+      "SC": 0.525903,
+      "gl": 1.0,
+      "F": 1677.493981,
+      "p": 0.0,
+      "eta2_parcial": 0.991723,
+      "pct_SC": 96.467283
+    },
+    {
+      "fuente": "B",
+      "SC": 0.008392,
+      "gl": 1.0,
+      "F": 26.769814,
+      "p": 0.000141,
+      "eta2_parcial": 0.656609,
+      "pct_SC": 1.539446
+    },
+    {
+      "fuente": "A:B",
+      "SC": 0.000763,
+      "gl": 1.0,
+      "F": 2.432827,
+      "p": 0.141133,
+      "eta2_parcial": 0.148047,
+      "pct_SC": 0.139904
+    },
+    {
+      "fuente": "C",
+      "SC": 0.00082,
+      "gl": 1.0,
+      "F": 2.614976,
+      "p": 0.128161,
+      "eta2_parcial": 0.157387,
+      "pct_SC": 0.150379
+    },
+    {
+      "fuente": "A:C",
+      "SC": 0.001218,
+      "gl": 1.0,
+      "F": 3.885235,
+      "p": 0.068811,
+      "eta2_parcial": 0.217231,
+      "pct_SC": 0.223427
+    },
+    {
+      "fuente": "B:C",
+      "SC": 0.000331,
+      "gl": 1.0,
+      "F": 1.056068,
+      "p": 0.321542,
+      "eta2_parcial": 0.070142,
+      "pct_SC": 0.060731
+    },
+    {
+      "fuente": "A:B:C",
+      "SC": 2.1e-05,
+      "gl": 1.0,
+      "F": 0.065811,
+      "p": 0.801269,
+      "eta2_parcial": 0.004679,
+      "pct_SC": 0.003785
+    },
+    {
+      "fuente": "Residual",
+      "SC": 0.004389,
+      "gl": 14.0,
+      "F": null,
+      "p": null,
+      "eta2_parcial": null,
+      "pct_SC": 0.805095
+    }
+  ],
+  "efectos_2k": [
+    {
+      "efecto": "A",
+      "estimacion_s": -0.296058
+    },
+    {
+      "efecto": "B",
+      "estimacion_s": -0.0374
+    },
+    {
+      "efecto": "AC",
+      "estimacion_s": 0.014248
+    },
+    {
+      "efecto": "C",
+      "estimacion_s": 0.011689
+    },
+    {
+      "efecto": "AB",
+      "estimacion_s": -0.011275
+    },
+    {
+      "efecto": "BC",
+      "estimacion_s": -0.007428
+    },
+    {
+      "efecto": "ABC",
+      "estimacion_s": 0.001854
+    }
+  ],
+  "supuestos_2k": {
+    "shapiro_p": 0.198857,
+    "normalidad": true,
+    "levene_p": 0.913908,
+    "homocedasticidad": true
+  },
+  "optimo": {
+    "parser": "lxml",
+    "arbol": "tablas",
+    "formato": "csv"
+  },
+  "prediccion_optimo": {
+    "media_predicha_s": 1.13642,
+    "li_pred_95": 1.09122,
+    "ls_pred_95": 1.181621
+  },
+  "confirmacion": {
+    "media_s": 1.161127,
+    "de_s": 0.026009,
+    "dentro_intervalo": true
+  },
+  "mejora_vs_base_pct": 21.370047,
+  "mejora_vs_produccion_pct": 20.462887,
+  "anova_3x2": [
+    {
+      "fuente": "C(parser)",
+      "SC": 5.284467,
+      "gl": 2.0,
+      "F": 9686.843276,
+      "p": 0.0,
+      "eta2_parcial": 0.999381,
+      "pct_SC": 99.85865
+    },
+    {
+      "fuente": "C(arbol)",
+      "SC": 0.003652,
+      "gl": 1.0,
+      "F": 13.387677,
+      "p": 0.003273,
+      "eta2_parcial": 0.52733,
+      "pct_SC": 0.069005
+    },
+    {
+      "fuente": "C(parser):C(arbol)",
+      "SC": 0.000555,
+      "gl": 2.0,
+      "F": 1.017878,
+      "p": 0.390546,
+      "eta2_parcial": 0.145041,
+      "pct_SC": 0.010493
+    },
+    {
+      "fuente": "Residual",
+      "SC": 0.003273,
+      "gl": 12.0,
+      "F": null,
+      "p": null,
+      "eta2_parcial": null,
+      "pct_SC": 0.061852
+    }
+  ],
+  "supuestos_3x2": {
+    "shapiro_p": 0.893126,
+    "normalidad": true,
+    "levene_p": 0.916909,
+    "homocedasticidad": true
+  },
+  "alias_2_4_1": {
+    "A": "BCD",
+    "B": "ACD",
+    "C": "ABD",
+    "D": "ABC",
+    "AB": "CD",
+    "AC": "BD",
+    "AD": "BC",
+    "ABCD": "I"
+  },
+  "efectos_2_4_1": [
+    {
+      "efecto": "D",
+      "estimacion_s": -0.646535,
+      "alias (confundido con)": "ABC"
+    },
+    {
+      "efecto": "A",
+      "estimacion_s": -0.227316,
+      "alias (confundido con)": "BCD"
+    },
+    {
+      "efecto": "BC",
+      "estimacion_s": 0.064606,
+      "alias (confundido con)": "AD"
+    },
+    {
+      "efecto": "AD",
+      "estimacion_s": 0.064606,
+      "alias (confundido con)": "BC"
+    },
+    {
+      "efecto": "B",
+      "estimacion_s": -0.020056,
+      "alias (confundido con)": "ACD"
+    },
+    {
+      "efecto": "AB",
+      "estimacion_s": -0.015526,
+      "alias (confundido con)": "CD"
+    },
+    {
+      "efecto": "CD",
+      "estimacion_s": -0.015526,
+      "alias (confundido con)": "AB"
+    },
+    {
+      "efecto": "BD",
+      "estimacion_s": 0.011505,
+      "alias (confundido con)": "AC"
+    },
+    {
+      "efecto": "AC",
+      "estimacion_s": 0.011505,
+      "alias (confundido con)": "BD"
+    },
+    {
+      "efecto": "C",
+      "estimacion_s": -0.005739,
+      "alias (confundido con)": "ABD"
+    }
+  ]
+}

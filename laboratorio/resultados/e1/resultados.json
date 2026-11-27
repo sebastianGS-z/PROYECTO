@@ -1,0 +1,894 @@
+{
+  "limon_c5": {
+    "nombre": "Limón c/semilla #5 · Colima → Guadalajara",
+    "caracterizacion": {
+      "n": 36,
+      "desde": "2023-11",
+      "hasta": "2026-10",
+      "media": 25.859894,
+      "mediana": 25.584783,
+      "min": 12.4,
+      "max": 40.539683,
+      "cv": 0.295581,
+      "tendencia_lineal_mxn_kg_mes": 0.316903,
+      "tendencia_r2": 0.190796,
+      "tendencia_p": 0.007731,
+      "mayor_cambio_mensual": {
+        "mes": "2024-08",
+        "cambio_pct": 76.673714
+      },
+      "mes_calendario_mas_caro": 9,
+      "mes_calendario_mas_barato": 12,
+      "corr_nivel_desviacion_anual": -0.516747
+    },
+    "descomposicion": {
+      "modelo_elegido": "aditivo",
+      "mejora_relativa_multiplicativo": 0.020411,
+      "cv_residuo_aditivo": 0.234669,
+      "cv_residuo_multiplicativo": 0.229879,
+      "fuerza_estacional": 0.316682,
+      "fuerza_tendencia": 0.044497,
+      "indices_estacionales_aditivos": {
+        "11": -2.611331,
+        "12": -6.914631,
+        "1": -2.417372,
+        "2": 1.55762,
+        "3": 6.019454,
+        "4": 3.032987,
+        "5": 1.831407,
+        "6": -0.181827,
+        "7": -4.285639,
+        "8": 3.13023,
+        "9": 6.101545,
+        "10": -5.262443
+      }
+    },
+    "estacionariedad": {
+      "d_recomendado": 0,
+      "pruebas": [
+        {
+          "d": 0,
+          "adf_estadistico": -3.637623,
+          "adf_p": 0.005081,
+          "adf_rezagos": 1,
+          "adf_valores_criticos": {
+            "1%": -3.639224,
+            "5%": -2.95123,
+            "10%": -2.614447
+          },
+          "kpss_estadistico": 0.448088,
+          "kpss_p": 0.056428,
+          "estacionaria_adf": true
+        }
+      ]
+    },
+    "autocorrelacion": {
+      "serie": "nivel",
+      "n": 36,
+      "banda_95": 0.326667,
+      "acf": [
+        1.0,
+        0.541533,
+        0.129511,
+        -0.076032,
+        -0.139804,
+        -0.04404,
+        0.075327,
+        0.091565,
+        0.056856,
+        0.155539,
+        0.249363,
+        0.243705,
+        0.134854
+      ],
+      "pacf": [
+        1.0,
+        0.541533,
+        -0.231692,
+        -0.055243,
+        -0.052362,
+        0.093994,
+        0.059957,
+        -0.02066,
+        0.004652,
+        0.22166,
+        0.132265,
+        0.052704,
+        -0.028781
+      ],
+      "rezagos_significativos_acf": [
+        1
+      ],
+      "rezagos_significativos_pacf": [
+        1
+      ],
+      "p_sugerido": 1,
+      "q_sugerido": 1
+    },
+    "arima_rejilla_aic": [
+      {
+        "orden": "(2, 0, 0)",
+        "estacional": "(0, 0, 0, 0)",
+        "aic": 201.585774,
+        "bic": 207.190564
+      },
+      {
+        "orden": "(0, 0, 1)",
+        "estacional": "(0, 0, 0, 0)",
+        "aic": 201.692231,
+        "bic": 205.895824
+      },
+      {
+        "orden": "(0, 0, 2)",
+        "estacional": "(0, 0, 0, 0)",
+        "aic": 202.561655,
+        "bic": 208.166445
+      },
+      {
+        "orden": "(1, 0, 1)",
+        "estacional": "(0, 0, 0, 0)",
+        "aic": 202.642608,
+        "bic": 208.247397
+      },
+      {
+        "orden": "(2, 0, 1)",
+        "estacional": "(0, 0, 0, 0)",
+        "aic": 203.312805,
+        "bic": 210.318792
+      },
+      {
+        "orden": "(3, 0, 0)",
+        "estacional": "(0, 0, 0, 0)",
+        "aic": 203.42024,
+        "bic": 210.426227
+      },
+      {
+        "orden": "(2, 0, 3)",
+        "estacional": "(0, 0, 0, 0)",
+        "aic": 203.503264,
+        "bic": 213.311645
+      },
+      {
+        "orden": "(2, 0, 0)",
+        "estacional": "(1, 0, 0, 12)",
+        "aic": 203.580236,
+        "bic": 210.586223
+      },
+      {
+        "orden": "(1, 0, 0)",
+        "estacional": "(0, 0, 0, 0)",
+        "aic": 203.585853,
+        "bic": 207.789445
+      },
+      {
+        "orden": "(0, 0, 1)",
+        "estacional": "(1, 0, 0, 12)",
+        "aic": 203.642906,
+        "bic": 209.247696
+      },
+      {
+        "orden": "(0, 0, 3)",
+        "estacional": "(0, 0, 0, 0)",
+        "aic": 204.395111,
+        "bic": 211.401098
+      },
+      {
+        "orden": "(1, 0, 2)",
+        "estacional": "(0, 0, 0, 0)",
+        "aic": 204.516739,
+        "bic": 211.522726
+      },
+      {
+        "orden": "(0, 0, 2)",
+        "estacional": "(1, 0, 0, 12)",
+        "aic": 204.5227,
+        "bic": 211.528687
+      },
+      {
+        "orden": "(1, 0, 1)",
+        "estacional": "(1, 0, 0, 12)",
+        "aic": 204.546507,
+        "bic": 211.552494
+      },
+      {
+        "orden": "(1, 0, 0)",
+        "estacional": "(1, 0, 0, 12)",
+        "aic": 204.916229,
+        "bic": 210.521019
+      },
+      {
+        "orden": "(3, 0, 3)",
+        "estacional": "(0, 0, 0, 0)",
+        "aic": 205.15275,
+        "bic": 216.362329
+      },
+      {
+        "orden": "(2, 0, 2)",
+        "estacional": "(0, 0, 0, 0)",
+        "aic": 205.260583,
+        "bic": 213.667768
+      },
+      {
+        "orden": "(3, 0, 1)",
+        "estacional": "(0, 0, 0, 0)",
+        "aic": 205.288889,
+        "bic": 213.696073
+      },
+      {
+        "orden": "(2, 0, 1)",
+        "estacional": "(1, 0, 0, 12)",
+        "aic": 205.306563,
+        "bic": 213.713747
+      },
+      {
+        "orden": "(2, 0, 3)",
+        "estacional": "(1, 0, 0, 12)",
+        "aic": 205.385951,
+        "bic": 216.59553
+      },
+      {
+        "orden": "(3, 0, 0)",
+        "estacional": "(1, 0, 0, 12)",
+        "aic": 205.412389,
+        "bic": 213.819573
+      },
+      {
+        "orden": "(1, 0, 3)",
+        "estacional": "(0, 0, 0, 0)",
+        "aic": 205.714973,
+        "bic": 214.122157
+      },
+      {
+        "orden": "(0, 0, 3)",
+        "estacional": "(1, 0, 0, 12)",
+        "aic": 206.249952,
+        "bic": 214.657136
+      },
+      {
+        "orden": "(1, 0, 2)",
+        "estacional": "(1, 0, 0, 12)",
+        "aic": 206.453323,
+        "bic": 214.860507
+      },
+      {
+        "orden": "(3, 0, 2)",
+        "estacional": "(0, 0, 0, 0)",
+        "aic": 206.958015,
+        "bic": 216.766397
+      },
+      {
+        "orden": "(3, 0, 3)",
+        "estacional": "(1, 0, 0, 12)",
+        "aic": 207.07404,
+        "bic": 219.684817
+      },
+      {
+        "orden": "(2, 0, 2)",
+        "estacional": "(1, 0, 0, 12)",
+        "aic": 207.250194,
+        "bic": 217.058575
+      },
+      {
+        "orden": "(3, 0, 1)",
+        "estacional": "(1, 0, 0, 12)",
+        "aic": 207.280917,
+        "bic": 217.089298
+      },
+      {
+        "orden": "(1, 0, 3)",
+        "estacional": "(1, 0, 0, 12)",
+        "aic": 207.70546,
+        "bic": 217.513841
+      },
+      {
+        "orden": "(3, 0, 2)",
+        "estacional": "(1, 0, 0, 12)",
+        "aic": 208.958153,
+        "bic": 220.167732
+      },
+      {
+        "orden": "(0, 0, 0)",
+        "estacional": "(0, 0, 0, 0)",
+        "aic": 212.778336,
+        "bic": 215.580731
+      },
+      {
+        "orden": "(0, 0, 0)",
+        "estacional": "(1, 0, 0, 12)",
+        "aic": 214.351623,
+        "bic": 218.555215
+      }
+    ],
+    "comparacion_prueba": [
+      {
+        "modelo": "ARIMA(2, 0, 0)",
+        "MAE": 4.543831,
+        "RMSE": 5.182131,
+        "MAPE_pct": 14.954642,
+        "AIC_entrenamiento": 201.585774
+      },
+      {
+        "modelo": "Holt",
+        "MAE": 5.649635,
+        "RMSE": 6.844291,
+        "MAPE_pct": 22.795061,
+        "AIC_entrenamiento": 211.283839
+      },
+      {
+        "modelo": "Suavizamiento simple",
+        "MAE": 8.800614,
+        "RMSE": 10.073132,
+        "MAPE_pct": 34.895724,
+        "AIC_entrenamiento": 208.921731
+      },
+      {
+        "modelo": "Holt-Winters aditivo",
+        "MAE": 12.370228,
+        "RMSE": 13.109108,
+        "MAPE_pct": 46.195058,
+        "AIC_entrenamiento": 217.121436
+      }
+    ],
+    "ganador": "ARIMA(2, 0, 0)",
+    "residuos": {
+      "n": 35,
+      "ljung_box": {
+        "6": {
+          "Q": 0.910587,
+          "p": 0.634262
+        },
+        "12": {
+          "Q": 3.725576,
+          "p": 0.880996
+        }
+      },
+      "sin_autocorrelacion": true,
+      "levene_mitades_p": 0.635292,
+      "arch_lm_p": 0.483258,
+      "varianza_estable": true,
+      "shapiro_p": 0.164593,
+      "normal": true
+    },
+    "supuestos_ok": true,
+    "pronostico": [
+      {
+        "mes": "2026-11",
+        "pronostico": 21.175798,
+        "li80": 13.574068,
+        "ls80": 28.777528,
+        "li95": 9.549955,
+        "ls95": 32.801641,
+        "metodo": "paramétrico ARIMA"
+      },
+      {
+        "mes": "2026-12",
+        "pronostico": 23.139144,
+        "li80": 13.551745,
+        "ls80": 32.726542,
+        "li95": 8.476483,
+        "ls95": 37.801805,
+        "metodo": "paramétrico ARIMA"
+      },
+      {
+        "mes": "2027-01",
+        "pronostico": 25.54011,
+        "li80": 15.794134,
+        "ls80": 35.286087,
+        "li95": 10.634925,
+        "ls95": 40.445296,
+        "metodo": "paramétrico ARIMA"
+      }
+    ],
+    "frase_cliente": "Para 2026-11 esperamos que el limón c/semilla #5 de Colima se cotice en Guadalajara alrededor de 21.2 MXN/kg; con 80 % de probabilidad estará entre 13.6 y 28.8 y con 95 % entre 9.5 y 32.8 MXN/kg. En los 6 meses de prueba el modelo se equivocó en promedio 4.5 MXN/kg (15 %), así que úselo como rango de referencia para planear, no como precio garantizado.",
+    "serie": {
+      "2023-11": 33.6,
+      "2023-12": 15.233333,
+      "2024-01": 20.19697,
+      "2024-02": 19.216667,
+      "2024-03": 19.277778,
+      "2024-04": 20.181818,
+      "2024-05": 18.30303,
+      "2024-06": 17.533333,
+      "2024-07": 18.695652,
+      "2024-08": 33.030303,
+      "2024-09": 40.166667,
+      "2024-10": 21.515152,
+      "2024-11": 12.4,
+      "2024-12": 14.507937,
+      "2025-01": 18.030303,
+      "2025-02": 22.596491,
+      "2025-03": 32.666667,
+      "2025-04": 26.3,
+      "2025-05": 31.2,
+      "2025-06": 31.968254,
+      "2025-07": 26.797101,
+      "2025-08": 30.031746,
+      "2025-09": 27.492063,
+      "2025-10": 24.869565,
+      "2025-11": 17.614035,
+      "2025-12": 22.560606,
+      "2026-01": 28.603175,
+      "2026-02": 37.296296,
+      "2026-03": 40.539683,
+      "2026-04": 37.333333,
+      "2026-05": 34.736842,
+      "2026-06": 28.825758,
+      "2026-07": 21.666667,
+      "2026-08": 27.936508,
+      "2026-09": 34.380952,
+      "2026-10": 23.651515
+    }
+  },
+  "papaya_maradol": {
+    "nombre": "Papaya Maradol · Colima → Guadalajara",
+    "caracterizacion": {
+      "n": 36,
+      "desde": "2023-11",
+      "hasta": "2026-10",
+      "media": 18.734091,
+      "mediana": 18.219697,
+      "min": 14.869565,
+      "max": 29.6,
+      "cv": 0.162657,
+      "tendencia_lineal_mxn_kg_mes": -0.057116,
+      "tendencia_r2": 0.038996,
+      "tendencia_p": 0.248319,
+      "mayor_cambio_mensual": {
+        "mes": "2025-08",
+        "cambio_pct": 35.734636
+      },
+      "mes_calendario_mas_caro": 11,
+      "mes_calendario_mas_barato": 7,
+      "corr_nivel_desviacion_anual": 0.997179
+    },
+    "descomposicion": {
+      "modelo_elegido": "multiplicativo",
+      "mejora_relativa_multiplicativo": 0.065451,
+      "cv_residuo_aditivo": 0.127869,
+      "cv_residuo_multiplicativo": 0.119499,
+      "fuerza_estacional": 0.376829,
+      "fuerza_tendencia": 0.0,
+      "indices_estacionales_aditivos": {
+        "11": 3.850301,
+        "12": -0.00311,
+        "1": -0.218643,
+        "2": 1.945994,
+        "3": -1.623769,
+        "4": -1.173645,
+        "5": 0.145021,
+        "6": -2.157096,
+        "7": -2.999339,
+        "8": -0.563956,
+        "9": 0.670014,
+        "10": 2.128228
+      }
+    },
+    "estacionariedad": {
+      "d_recomendado": 0,
+      "pruebas": [
+        {
+          "d": 0,
+          "adf_estadistico": -4.440976,
+          "adf_p": 0.000251,
+          "adf_rezagos": 3,
+          "adf_valores_criticos": {
+            "1%": -3.65352,
+            "5%": -2.957219,
+            "10%": -2.617588
+          },
+          "kpss_estadistico": 0.14412,
+          "kpss_p": 0.1,
+          "estacionaria_adf": true
+        }
+      ]
+    },
+    "autocorrelacion": {
+      "serie": "nivel",
+      "n": 36,
+      "banda_95": 0.326667,
+      "acf": [
+        1.0,
+        0.393458,
+        -0.088216,
+        -0.170073,
+        -0.378739,
+        -0.285002,
+        0.023109,
+        -0.005228,
+        0.058936,
+        0.22973,
+        0.051115,
+        -0.045098,
+        0.005736
+      ],
+      "pacf": [
+        1.0,
+        0.393458,
+        -0.287539,
+        -0.015799,
+        -0.402257,
+        0.016569,
+        0.010301,
+        -0.197361,
+        0.061666,
+        0.075191,
+        -0.1021,
+        0.020191,
+        -0.012005
+      ],
+      "rezagos_significativos_acf": [
+        1,
+        4
+      ],
+      "rezagos_significativos_pacf": [
+        1,
+        4
+      ],
+      "p_sugerido": 1,
+      "q_sugerido": 1
+    },
+    "arima_rejilla_aic": [
+      {
+        "orden": "(2, 0, 1)",
+        "estacional": "(0, 0, 0, 0)",
+        "aic": 151.942396,
+        "bic": 158.948383
+      },
+      {
+        "orden": "(1, 0, 2)",
+        "estacional": "(0, 0, 0, 0)",
+        "aic": 152.407563,
+        "bic": 159.413549
+      },
+      {
+        "orden": "(0, 0, 3)",
+        "estacional": "(0, 0, 0, 0)",
+        "aic": 153.097002,
+        "bic": 160.102989
+      },
+      {
+        "orden": "(2, 0, 2)",
+        "estacional": "(0, 0, 0, 0)",
+        "aic": 153.741411,
+        "bic": 162.148595
+      },
+      {
+        "orden": "(2, 0, 1)",
+        "estacional": "(1, 0, 0, 12)",
+        "aic": 153.742403,
+        "bic": 162.149587
+      },
+      {
+        "orden": "(0, 0, 1)",
+        "estacional": "(0, 0, 0, 0)",
+        "aic": 153.925186,
+        "bic": 158.128778
+      },
+      {
+        "orden": "(3, 0, 2)",
+        "estacional": "(0, 0, 0, 0)",
+        "aic": 154.011372,
+        "bic": 163.819753
+      },
+      {
+        "orden": "(1, 0, 3)",
+        "estacional": "(0, 0, 0, 0)",
+        "aic": 154.123803,
+        "bic": 162.530988
+      },
+      {
+        "orden": "(1, 0, 2)",
+        "estacional": "(1, 0, 0, 12)",
+        "aic": 154.390344,
+        "bic": 162.797529
+      },
+      {
+        "orden": "(0, 0, 3)",
+        "estacional": "(1, 0, 0, 12)",
+        "aic": 154.969285,
+        "bic": 163.376469
+      },
+      {
+        "orden": "(3, 0, 3)",
+        "estacional": "(0, 0, 0, 0)",
+        "aic": 155.356019,
+        "bic": 166.565598
+      },
+      {
+        "orden": "(0, 0, 2)",
+        "estacional": "(0, 0, 0, 0)",
+        "aic": 155.532817,
+        "bic": 161.137607
+      },
+      {
+        "orden": "(2, 0, 2)",
+        "estacional": "(1, 0, 0, 12)",
+        "aic": 155.536986,
+        "bic": 165.345367
+      },
+      {
+        "orden": "(1, 0, 1)",
+        "estacional": "(0, 0, 0, 0)",
+        "aic": 155.619918,
+        "bic": 161.224707
+      },
+      {
+        "orden": "(0, 0, 1)",
+        "estacional": "(1, 0, 0, 12)",
+        "aic": 155.903002,
+        "bic": 161.507792
+      },
+      {
+        "orden": "(3, 0, 2)",
+        "estacional": "(1, 0, 0, 12)",
+        "aic": 155.965561,
+        "bic": 167.17514
+      },
+      {
+        "orden": "(2, 0, 0)",
+        "estacional": "(0, 0, 0, 0)",
+        "aic": 156.000167,
+        "bic": 161.604956
+      },
+      {
+        "orden": "(1, 0, 3)",
+        "estacional": "(1, 0, 0, 12)",
+        "aic": 156.040684,
+        "bic": 165.849066
+      },
+      {
+        "orden": "(2, 0, 3)",
+        "estacional": "(0, 0, 0, 0)",
+        "aic": 156.200982,
+        "bic": 166.009364
+      },
+      {
+        "orden": "(1, 0, 0)",
+        "estacional": "(0, 0, 0, 0)",
+        "aic": 157.090179,
+        "bic": 161.293771
+      },
+      {
+        "orden": "(3, 0, 3)",
+        "estacional": "(1, 0, 0, 12)",
+        "aic": 157.292587,
+        "bic": 169.903363
+      },
+      {
+        "orden": "(0, 0, 2)",
+        "estacional": "(1, 0, 0, 12)",
+        "aic": 157.532463,
+        "bic": 164.53845
+      },
+      {
+        "orden": "(1, 0, 1)",
+        "estacional": "(1, 0, 0, 12)",
+        "aic": 157.619825,
+        "bic": 164.625812
+      },
+      {
+        "orden": "(2, 0, 0)",
+        "estacional": "(1, 0, 0, 12)",
+        "aic": 157.730064,
+        "bic": 164.736051
+      },
+      {
+        "orden": "(3, 0, 0)",
+        "estacional": "(0, 0, 0, 0)",
+        "aic": 157.91784,
+        "bic": 164.923827
+      },
+      {
+        "orden": "(2, 0, 3)",
+        "estacional": "(1, 0, 0, 12)",
+        "aic": 158.093392,
+        "bic": 169.302971
+      },
+      {
+        "orden": "(3, 0, 1)",
+        "estacional": "(0, 0, 0, 0)",
+        "aic": 158.632988,
+        "bic": 167.040173
+      },
+      {
+        "orden": "(0, 0, 0)",
+        "estacional": "(0, 0, 0, 0)",
+        "aic": 159.066549,
+        "bic": 161.868943
+      },
+      {
+        "orden": "(1, 0, 0)",
+        "estacional": "(1, 0, 0, 12)",
+        "aic": 159.07873,
+        "bic": 164.68352
+      },
+      {
+        "orden": "(3, 0, 0)",
+        "estacional": "(1, 0, 0, 12)",
+        "aic": 159.564214,
+        "bic": 167.971398
+      },
+      {
+        "orden": "(3, 0, 1)",
+        "estacional": "(1, 0, 0, 12)",
+        "aic": 160.573052,
+        "bic": 170.381434
+      },
+      {
+        "orden": "(0, 0, 0)",
+        "estacional": "(1, 0, 0, 12)",
+        "aic": 161.065607,
+        "bic": 165.269199
+      }
+    ],
+    "comparacion_prueba": [
+      {
+        "modelo": "Holt",
+        "MAE": 1.043757,
+        "RMSE": 1.253542,
+        "MAPE_pct": 6.171904,
+        "AIC_entrenamiento": 164.809823
+      },
+      {
+        "modelo": "Suavizamiento simple",
+        "MAE": 1.663073,
+        "RMSE": 1.784846,
+        "MAPE_pct": 9.737223,
+        "AIC_entrenamiento": 161.069548
+      },
+      {
+        "modelo": "Holt-Winters aditivo",
+        "MAE": 1.604869,
+        "RMSE": 2.037767,
+        "MAPE_pct": 9.437923,
+        "AIC_entrenamiento": 180.309157
+      },
+      {
+        "modelo": "ARIMA(2, 0, 1)",
+        "MAE": 2.457807,
+        "RMSE": 2.793282,
+        "MAPE_pct": 14.454039,
+        "AIC_entrenamiento": 151.942396
+      }
+    ],
+    "ganador": "Holt",
+    "residuos": {
+      "n": 35,
+      "ljung_box": {
+        "6": {
+          "Q": 18.610459,
+          "p": 0.004875
+        },
+        "12": {
+          "Q": 21.038196,
+          "p": 0.049824
+        }
+      },
+      "sin_autocorrelacion": false,
+      "levene_mitades_p": 0.158494,
+      "arch_lm_p": 0.812662,
+      "varianza_estable": true,
+      "shapiro_p": 0.002384,
+      "normal": false
+    },
+    "supuestos_ok": false,
+    "pronostico": [
+      {
+        "mes": "2026-11",
+        "pronostico": 17.677649,
+        "li80": 16.006813,
+        "ls80": 19.348486,
+        "li95": 15.89329,
+        "ls95": 19.462009,
+        "metodo": "empírico (errores de prueba)"
+      },
+      {
+        "mes": "2026-12",
+        "pronostico": 17.620385,
+        "li80": 15.257465,
+        "ls80": 19.983304,
+        "li95": 15.096919,
+        "ls95": 20.14385,
+        "metodo": "empírico (errores de prueba)"
+      },
+      {
+        "mes": "2027-01",
+        "pronostico": 17.56312,
+        "li80": 14.669147,
+        "ls80": 20.457093,
+        "li95": 14.472519,
+        "ls95": 20.653721,
+        "metodo": "empírico (errores de prueba)"
+      }
+    ],
+    "frase_cliente": "Para 2026-11 esperamos que la papaya Maradol de Colima se cotice en Guadalajara alrededor de 17.7 MXN/kg; con 80 % de probabilidad estará entre 16.0 y 19.3 y con 95 % entre 15.9 y 19.5 MXN/kg. En los 6 meses de prueba el modelo se equivocó en promedio 1.0 MXN/kg (6 %), así que úselo como rango de referencia para planear, no como precio garantizado.",
+    "serie": {
+      "2023-11": 19.0,
+      "2023-12": 19.0,
+      "2024-01": 19.5,
+      "2024-02": 23.85,
+      "2024-03": 19.166667,
+      "2024-04": 19.0,
+      "2024-05": 15.5,
+      "2024-06": 15.95,
+      "2024-07": 14.869565,
+      "2024-08": 16.0,
+      "2024-09": 19.85,
+      "2024-10": 25.272727,
+      "2024-11": 29.6,
+      "2024-12": 20.095238,
+      "2025-01": 16.045455,
+      "2025-02": 18.736842,
+      "2025-03": 15.95,
+      "2025-04": 18.0,
+      "2025-05": 23.7,
+      "2025-06": 16.619048,
+      "2025-07": 15.26087,
+      "2025-08": 20.714286,
+      "2025-09": 19.190476,
+      "2025-10": 17.73913,
+      "2025-11": 19.631579,
+      "2025-12": 17.704545,
+      "2026-01": 20.738095,
+      "2026-02": 20.333333,
+      "2026-03": 17.095238,
+      "2026-04": 16.225,
+      "2026-05": 17.171053,
+      "2026-06": 16.772727,
+      "2026-07": 16.586957,
+      "2026-08": 17.119048,
+      "2026-09": 18.166667,
+      "2026-10": 18.272727
+    }
+  },
+  "correlacion_cruzada": [
+    {
+      "variable": "temperatura media mensual (NOAA, Manzanillo)",
+      "n": 31,
+      "banda_95": 0.352026,
+      "ccf": {
+        "-6": -0.116275,
+        "-5": -0.002181,
+        "-4": -0.089721,
+        "-3": 0.180194,
+        "-2": 0.242049,
+        "-1": 0.069236,
+        "0": -0.053009,
+        "1": 0.218734,
+        "2": -0.050613,
+        "3": 0.030894,
+        "4": -0.256052,
+        "5": -0.229064,
+        "6": -0.0259
+      },
+      "rezago_max": 4,
+      "corr_max": -0.256052,
+      "significativa": false,
+      "ccf_statsmodels_lag0": -0.053009
+    },
+    {
+      "variable": "precio de papaya Maradol (misma plaza)",
+      "n": 35,
+      "banda_95": 0.3313,
+      "ccf": {
+        "-6": -0.123516,
+        "-5": 0.156932,
+        "-4": -0.37988,
+        "-3": 0.146562,
+        "-2": 0.344431,
+        "-1": 0.018959,
+        "0": -0.128749,
+        "1": -0.07404,
+        "2": -0.253683,
+        "3": -0.062692,
+        "4": 0.221335,
+        "5": -0.054695,
+        "6": 0.066649
+      },
+      "rezago_max": -4,
+      "corr_max": -0.37988,
+      "significativa": true,
+      "ccf_statsmodels_lag0": -0.128749
+    }
+  ]
+}
