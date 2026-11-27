@@ -1,0 +1,1353 @@
+{
+  "run_id": "20261126T221101Z-5a0d2a",
+  "fuente": "sniim",
+  "modo": "historica",
+  "disparador": "local",
+  "inicio": "2026-11-26T22:11:01Z",
+  "fin": "2026-11-26T22:15:51Z",
+  "duracion_s": 289.31,
+  "estado": "exitosa",
+  "solicitudes": 75,
+  "registros": 494,
+  "consultas": [
+    {
+      "paso": "catalogo_formulario",
+      "estado": "ok",
+      "registros": 0,
+      "archivo": "sniim__catalogo-formulario__2026-11-26_2026-11-26__20261126T221101Z-5a0d2a.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_ataulfo",
+      "producto": "Mango Ataulfo - Primera",
+      "mercado_clave": "guadalajara",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__mango-ataulfo-primera-jalisco-mercado-de-abasto-de-guadalajara__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_ataulfo",
+      "producto": "Mango Ataulfo - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "ok",
+      "registros": 22,
+      "archivo": "sniim__mango-ataulfo-primera-df-central-de-abasto-de-iztapalapa-df__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_ataulfo",
+      "producto": "Mango Ataulfo - Primera",
+      "mercado_clave": "colima",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__mango-ataulfo-primera-colima-centros-de-distribucion-de-colima__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_ataulfo",
+      "producto": "Mango Ataulfo - Primera",
+      "mercado_clave": "morelia",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "ok",
+      "registros": 22,
+      "archivo": "sniim__mango-ataulfo-primera-michoacan-mercado-de-abasto-de-morelia__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_manila",
+      "producto": "Mango Manila - Primera",
+      "mercado_clave": "guadalajara",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__mango-manila-primera-jalisco-mercado-de-abasto-de-guadalajara__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_manila",
+      "producto": "Mango Manila - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "ok",
+      "registros": 22,
+      "archivo": "sniim__mango-manila-primera-df-central-de-abasto-de-iztapalapa-df__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_manila",
+      "producto": "Mango Manila - Primera",
+      "mercado_clave": "colima",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__mango-manila-primera-colima-centros-de-distribucion-de-colima__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_manila",
+      "producto": "Mango Manila - Primera",
+      "mercado_clave": "morelia",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "ok",
+      "registros": 22,
+      "archivo": "sniim__mango-manila-primera-michoacan-mercado-de-abasto-de-morelia__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "aguacate_hass",
+      "producto": "Aguacate Hass - Primera",
+      "mercado_clave": "guadalajara",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "ok",
+      "registros": 44,
+      "archivo": "sniim__aguacate-hass-primera-jalisco-mercado-de-abasto-de-guadalajara__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "aguacate_hass",
+      "producto": "Aguacate Hass - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "ok",
+      "registros": 22,
+      "archivo": "sniim__aguacate-hass-primera-df-central-de-abasto-de-iztapalapa-df__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "aguacate_hass",
+      "producto": "Aguacate Hass - Primera",
+      "mercado_clave": "colima",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "ok",
+      "registros": 9,
+      "archivo": "sniim__aguacate-hass-primera-colima-centros-de-distribucion-de-colima__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "aguacate_hass",
+      "producto": "Aguacate Hass - Primera",
+      "mercado_clave": "morelia",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "ok",
+      "registros": 22,
+      "archivo": "sniim__aguacate-hass-primera-michoacan-mercado-de-abasto-de-morelia__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "aguacate_hass",
+      "producto": "Aguacate Hass - Calidad extra",
+      "mercado_clave": "guadalajara",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__aguacate-hass-calidad-extra-jalisco-mercado-de-abasto-de-guadalajara__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "aguacate_hass",
+      "producto": "Aguacate Hass - Calidad extra",
+      "mercado_clave": "cdmx",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__aguacate-hass-calidad-extra-df-central-de-abasto-de-iztapalapa-df__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "aguacate_hass",
+      "producto": "Aguacate Hass - Calidad extra",
+      "mercado_clave": "colima",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__aguacate-hass-calidad-extra-colima-centros-de-distribucion-de-colima__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "aguacate_hass",
+      "producto": "Aguacate Hass - Calidad extra",
+      "mercado_clave": "morelia",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__aguacate-hass-calidad-extra-michoacan-mercado-de-abasto-de-morelia__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "aguacate_hass",
+      "producto": "Aguacate Hass - Calidad super extra",
+      "mercado_clave": "guadalajara",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__aguacate-hass-calidad-super-extra-jalisco-mercado-de-abasto-de-guadalajara__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "aguacate_hass",
+      "producto": "Aguacate Hass - Calidad super extra",
+      "mercado_clave": "cdmx",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__aguacate-hass-calidad-super-extra-df-central-de-abasto-de-iztapalapa-df__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "aguacate_hass",
+      "producto": "Aguacate Hass - Calidad super extra",
+      "mercado_clave": "colima",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__aguacate-hass-calidad-super-extra-colima-centros-de-distribucion-de-colima__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "aguacate_hass",
+      "producto": "Aguacate Hass - Calidad super extra",
+      "mercado_clave": "morelia",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__aguacate-hass-calidad-super-extra-michoacan-mercado-de-abasto-de-morelia__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "aguacate_hass",
+      "producto": "Aguacate Hass adelantado - Primera",
+      "mercado_clave": "guadalajara",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__aguacate-hass-adelantado-primera-jalisco-mercado-de-abasto-de-guadalajara__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "aguacate_hass",
+      "producto": "Aguacate Hass adelantado - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__aguacate-hass-adelantado-primera-df-central-de-abasto-de-iztapalapa-df__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "aguacate_hass",
+      "producto": "Aguacate Hass adelantado - Primera",
+      "mercado_clave": "colima",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__aguacate-hass-adelantado-primera-colima-centros-de-distribucion-de-colima__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "aguacate_hass",
+      "producto": "Aguacate Hass adelantado - Primera",
+      "mercado_clave": "morelia",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__aguacate-hass-adelantado-primera-michoacan-mercado-de-abasto-de-morelia__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "aguacate_hass",
+      "producto": "Aguacate Hass flor vieja - Primera",
+      "mercado_clave": "guadalajara",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__aguacate-hass-flor-vieja-primera-jalisco-mercado-de-abasto-de-guadalajara__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "aguacate_hass",
+      "producto": "Aguacate Hass flor vieja - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__aguacate-hass-flor-vieja-primera-df-central-de-abasto-de-iztapalapa-df__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "aguacate_hass",
+      "producto": "Aguacate Hass flor vieja - Primera",
+      "mercado_clave": "colima",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__aguacate-hass-flor-vieja-primera-colima-centros-de-distribucion-de-colima__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "aguacate_hass",
+      "producto": "Aguacate Hass flor vieja - Primera",
+      "mercado_clave": "morelia",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__aguacate-hass-flor-vieja-primera-michoacan-mercado-de-abasto-de-morelia__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "coco",
+      "producto": "Coco - Primera",
+      "mercado_clave": "guadalajara",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "ok",
+      "registros": 22,
+      "archivo": "sniim__coco-primera-jalisco-mercado-de-abasto-de-guadalajara__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "coco",
+      "producto": "Coco - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__coco-primera-df-central-de-abasto-de-iztapalapa-df__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "coco",
+      "producto": "Coco - Primera",
+      "mercado_clave": "colima",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "ok",
+      "registros": 9,
+      "archivo": "sniim__coco-primera-colima-centros-de-distribucion-de-colima__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "coco",
+      "producto": "Coco - Primera",
+      "mercado_clave": "morelia",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "ok",
+      "registros": 22,
+      "archivo": "sniim__coco-primera-michoacan-mercado-de-abasto-de-morelia__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "tamarindo",
+      "producto": "Tamarindo - Primera",
+      "mercado_clave": "guadalajara",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "ok",
+      "registros": 22,
+      "archivo": "sniim__tamarindo-primera-jalisco-mercado-de-abasto-de-guadalajara__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "tamarindo",
+      "producto": "Tamarindo - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__tamarindo-primera-df-central-de-abasto-de-iztapalapa-df__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "tamarindo",
+      "producto": "Tamarindo - Primera",
+      "mercado_clave": "colima",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "ok",
+      "registros": 9,
+      "archivo": "sniim__tamarindo-primera-colima-centros-de-distribucion-de-colima__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "tamarindo",
+      "producto": "Tamarindo - Primera",
+      "mercado_clave": "morelia",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "ok",
+      "registros": 22,
+      "archivo": "sniim__tamarindo-primera-michoacan-mercado-de-abasto-de-morelia__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "guayaba",
+      "producto": "Guayaba - Primera",
+      "mercado_clave": "guadalajara",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "ok",
+      "registros": 22,
+      "archivo": "sniim__guayaba-primera-jalisco-mercado-de-abasto-de-guadalajara__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "guayaba",
+      "producto": "Guayaba - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "ok",
+      "registros": 22,
+      "archivo": "sniim__guayaba-primera-df-central-de-abasto-de-iztapalapa-df__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "guayaba",
+      "producto": "Guayaba - Primera",
+      "mercado_clave": "colima",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "ok",
+      "registros": 9,
+      "archivo": "sniim__guayaba-primera-colima-centros-de-distribucion-de-colima__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "guayaba",
+      "producto": "Guayaba - Primera",
+      "mercado_clave": "morelia",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "ok",
+      "registros": 22,
+      "archivo": "sniim__guayaba-primera-michoacan-mercado-de-abasto-de-morelia__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "guanabana",
+      "producto": "Guanabana - Primera",
+      "mercado_clave": "guadalajara",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__guanabana-primera-jalisco-mercado-de-abasto-de-guadalajara__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "guanabana",
+      "producto": "Guanabana - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__guanabana-primera-df-central-de-abasto-de-iztapalapa-df__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "guanabana",
+      "producto": "Guanabana - Primera",
+      "mercado_clave": "colima",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__guanabana-primera-colima-centros-de-distribucion-de-colima__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "guanabana",
+      "producto": "Guanabana - Primera",
+      "mercado_clave": "morelia",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "ok",
+      "registros": 22,
+      "archivo": "sniim__guanabana-primera-michoacan-mercado-de-abasto-de-morelia__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "sandia",
+      "producto": "Sandía Blanca - Primera",
+      "mercado_clave": "guadalajara",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__sandia-blanca-primera-jalisco-mercado-de-abasto-de-guadalajara__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "sandia",
+      "producto": "Sandía Blanca - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__sandia-blanca-primera-df-central-de-abasto-de-iztapalapa-df__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "sandia",
+      "producto": "Sandía Blanca - Primera",
+      "mercado_clave": "colima",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__sandia-blanca-primera-colima-centros-de-distribucion-de-colima__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "sandia",
+      "producto": "Sandía Blanca - Primera",
+      "mercado_clave": "morelia",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__sandia-blanca-primera-michoacan-mercado-de-abasto-de-morelia__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "sandia",
+      "producto": "Sandía Charleston - Primera",
+      "mercado_clave": "guadalajara",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__sandia-charleston-primera-jalisco-mercado-de-abasto-de-guadalajara__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "sandia",
+      "producto": "Sandía Charleston - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__sandia-charleston-primera-df-central-de-abasto-de-iztapalapa-df__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "sandia",
+      "producto": "Sandía Charleston - Primera",
+      "mercado_clave": "colima",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__sandia-charleston-primera-colima-centros-de-distribucion-de-colima__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "sandia",
+      "producto": "Sandía Charleston - Primera",
+      "mercado_clave": "morelia",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__sandia-charleston-primera-michoacan-mercado-de-abasto-de-morelia__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "sandia",
+      "producto": "Sandía Jubilee - Primera",
+      "mercado_clave": "guadalajara",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__sandia-jubilee-primera-jalisco-mercado-de-abasto-de-guadalajara__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "sandia",
+      "producto": "Sandía Jubilee - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__sandia-jubilee-primera-df-central-de-abasto-de-iztapalapa-df__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "sandia",
+      "producto": "Sandía Jubilee - Primera",
+      "mercado_clave": "colima",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "ok",
+      "registros": 9,
+      "archivo": "sniim__sandia-jubilee-primera-colima-centros-de-distribucion-de-colima__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "sandia",
+      "producto": "Sandía Jubilee - Primera",
+      "mercado_clave": "morelia",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__sandia-jubilee-primera-michoacan-mercado-de-abasto-de-morelia__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "sandia",
+      "producto": "Sandía Negra - Primera",
+      "mercado_clave": "guadalajara",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__sandia-negra-primera-jalisco-mercado-de-abasto-de-guadalajara__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "sandia",
+      "producto": "Sandía Negra - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__sandia-negra-primera-df-central-de-abasto-de-iztapalapa-df__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "sandia",
+      "producto": "Sandía Negra - Primera",
+      "mercado_clave": "colima",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__sandia-negra-primera-colima-centros-de-distribucion-de-colima__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "sandia",
+      "producto": "Sandía Negra - Primera",
+      "mercado_clave": "morelia",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__sandia-negra-primera-michoacan-mercado-de-abasto-de-morelia__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "sandia",
+      "producto": "Sandía Peacock - Primera",
+      "mercado_clave": "guadalajara",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__sandia-peacock-primera-jalisco-mercado-de-abasto-de-guadalajara__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "sandia",
+      "producto": "Sandía Peacock - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__sandia-peacock-primera-df-central-de-abasto-de-iztapalapa-df__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "sandia",
+      "producto": "Sandía Peacock - Primera",
+      "mercado_clave": "colima",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "ok",
+      "registros": 9,
+      "archivo": "sniim__sandia-peacock-primera-colima-centros-de-distribucion-de-colima__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "sandia",
+      "producto": "Sandía Peacock - Primera",
+      "mercado_clave": "morelia",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__sandia-peacock-primera-michoacan-mercado-de-abasto-de-morelia__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "sandia",
+      "producto": "Sandía Rayada - Primera",
+      "mercado_clave": "guadalajara",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__sandia-rayada-primera-jalisco-mercado-de-abasto-de-guadalajara__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "sandia",
+      "producto": "Sandía Rayada - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__sandia-rayada-primera-df-central-de-abasto-de-iztapalapa-df__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "sandia",
+      "producto": "Sandía Rayada - Primera",
+      "mercado_clave": "colima",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__sandia-rayada-primera-colima-centros-de-distribucion-de-colima__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "sandia",
+      "producto": "Sandía Rayada - Primera",
+      "mercado_clave": "morelia",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "ok",
+      "registros": 22,
+      "archivo": "sniim__sandia-rayada-primera-michoacan-mercado-de-abasto-de-morelia__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "sandia",
+      "producto": "Sandía Sangría - Primera",
+      "mercado_clave": "guadalajara",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "ok",
+      "registros": 22,
+      "archivo": "sniim__sandia-sangria-primera-jalisco-mercado-de-abasto-de-guadalajara__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "sandia",
+      "producto": "Sandía Sangría - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "ok",
+      "registros": 22,
+      "archivo": "sniim__sandia-sangria-primera-df-central-de-abasto-de-iztapalapa-df__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "sandia",
+      "producto": "Sandía Sangría - Primera",
+      "mercado_clave": "colima",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__sandia-sangria-primera-colima-centros-de-distribucion-de-colima__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "sandia",
+      "producto": "Sandía Sangría - Primera",
+      "mercado_clave": "morelia",
+      "inicio": "2026-10-01",
+      "fin": "2026-10-31",
+      "estado": "ok",
+      "registros": 22,
+      "archivo": "sniim__sandia-sangria-primera-michoacan-mercado-de-abasto-de-morelia__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "error": null,
+      "advertencias": []
+    }
+  ],
+  "archivos": [
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__catalogo-formulario__2026-11-26_2026-11-26__20261126T221101Z-5a0d2a.html",
+      "sha256": "adae0c214cea08ee5350510d812fb0ea8d2c6638ca9ca0d9577dce4aa3ad0924",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/Consultas/MercadosNacionales/PreciosDeMercado/Agricolas/ConsultaFrutasYHortalizas.aspx",
+      "bytes": 67149
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__mango-ataulfo-primera-jalisco-mercado-de-abasto-de-guadalajara__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "sha256": "ae69f365edeb0ae4c862d783079928b9e41d3b7bdd71de58fbf58ae886f91348",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=465&OrigenId=-1&Origen=Todos&DestinoId=140&Destino=Jalisco%3A+Mercado+de+Abasto+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9425
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__mango-ataulfo-primera-df-central-de-abasto-de-iztapalapa-df__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "sha256": "dce6ebc175c356b3dd729d0a7f627d5070af5ee7c0bf4445966eecfb5a8b05c4",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=465&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26792
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__mango-ataulfo-primera-colima-centros-de-distribucion-de-colima__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "sha256": "73da8e8caa280bfe83c870cde06dba818ab78de5b722272a00b47a975f49d14a",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=465&OrigenId=-1&Origen=Todos&DestinoId=80&Destino=Colima%3A+Centros+de+distribuci%C3%B3n+de+Colima&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9429
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__mango-ataulfo-primera-michoacan-mercado-de-abasto-de-morelia__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "sha256": "721d88661501da60c825c08cf388efbdd4448dce788adf64328c865988a99317",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=465&OrigenId=-1&Origen=Todos&DestinoId=160&Destino=Michoac%C3%A1n%3A+Mercado+de+Abasto+de+Morelia&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 27212
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__mango-manila-primera-jalisco-mercado-de-abasto-de-guadalajara__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "sha256": "a2a8a782302d8f0aa96487127fb7390a8477dfe0aa2862b76c3c9386d6ff0190",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=480&OrigenId=-1&Origen=Todos&DestinoId=140&Destino=Jalisco%3A+Mercado+de+Abasto+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9425
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__mango-manila-primera-df-central-de-abasto-de-iztapalapa-df__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "sha256": "304c6ae82cba3959695057a380136fe81832be6d1639f79d67c229a76969099b",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=480&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26791
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__mango-manila-primera-colima-centros-de-distribucion-de-colima__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "sha256": "f395b0ef3a0e35bf3efa56fceb4391ebc4c5d61f86091efc1df7015b3793aa84",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=480&OrigenId=-1&Origen=Todos&DestinoId=80&Destino=Colima%3A+Centros+de+distribuci%C3%B3n+de+Colima&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9429
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__mango-manila-primera-michoacan-mercado-de-abasto-de-morelia__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "sha256": "ac2c7f6dfd994818ee8353311f17ce93b8a61f9d4141217e30f1bf2fbe56b3f0",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=480&OrigenId=-1&Origen=Todos&DestinoId=160&Destino=Michoac%C3%A1n%3A+Mercado+de+Abasto+de+Morelia&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26391
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__aguacate-hass-primera-jalisco-mercado-de-abasto-de-guadalajara__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "sha256": "b8d271523d42d4cdd7856b363cba68332685546f846bc7aac43f0ec5b08e8b76",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=133&OrigenId=-1&Origen=Todos&DestinoId=140&Destino=Jalisco%3A+Mercado+de+Abasto+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 39171
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__aguacate-hass-primera-df-central-de-abasto-de-iztapalapa-df__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "sha256": "7a3731f0a0dc222d00fa161df9904fe3e8d7e8e9fc904165e40b2614d9d2c980",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=133&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26813
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__aguacate-hass-primera-colima-centros-de-distribucion-de-colima__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "sha256": "64957d62eef341105705c7a850be0eef41f8e52024c9bf22cdd380dbe7979c7f",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=133&OrigenId=-1&Origen=Todos&DestinoId=80&Destino=Colima%3A+Centros+de+distribuci%C3%B3n+de+Colima&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 19231
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__aguacate-hass-primera-michoacan-mercado-de-abasto-de-morelia__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "sha256": "9cbd7ce905f44affdef9408c8a77c5c759fb33d2ccaa9d53d96e4bb4fe149977",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=133&OrigenId=-1&Origen=Todos&DestinoId=160&Destino=Michoac%C3%A1n%3A+Mercado+de+Abasto+de+Morelia&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26895
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__aguacate-hass-calidad-extra-jalisco-mercado-de-abasto-de-guadalajara__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "sha256": "0b6a7de58950a58cda0547ba81b6b3afd861ccbc8eb3088a2a373b37866b2654",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=136&OrigenId=-1&Origen=Todos&DestinoId=140&Destino=Jalisco%3A+Mercado+de+Abasto+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9425
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__aguacate-hass-calidad-extra-df-central-de-abasto-de-iztapalapa-df__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "sha256": "3e62a5bab21f07174197e5e11ab29346c0383b2bb0ef6149ed5ed0a507832d88",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=136&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9422
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__aguacate-hass-calidad-extra-colima-centros-de-distribucion-de-colima__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "sha256": "18037f6c25e8e570bc6f781b21db83b64cedde31cd6f806636dfc7fb65b28cb0",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=136&OrigenId=-1&Origen=Todos&DestinoId=80&Destino=Colima%3A+Centros+de+distribuci%C3%B3n+de+Colima&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9429
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__aguacate-hass-calidad-extra-michoacan-mercado-de-abasto-de-morelia__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "sha256": "4ef233cd0667095213a057ccd329c807fa74cc05734f8a397d53741116be54f8",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=136&OrigenId=-1&Origen=Todos&DestinoId=160&Destino=Michoac%C3%A1n%3A+Mercado+de+Abasto+de+Morelia&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9428
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__aguacate-hass-calidad-super-extra-jalisco-mercado-de-abasto-de-guadalajara__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "sha256": "579a6df5af03bcb15a2dc1907dcecde2f5348b3a66d01c491b4cc5e2ccb5e790",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=137&OrigenId=-1&Origen=Todos&DestinoId=140&Destino=Jalisco%3A+Mercado+de+Abasto+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9425
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__aguacate-hass-calidad-super-extra-df-central-de-abasto-de-iztapalapa-df__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "sha256": "8f92d463d41be87648722cd5979c882c6d66a96bf4190066803c8df0b5179b58",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=137&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9422
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__aguacate-hass-calidad-super-extra-colima-centros-de-distribucion-de-colima__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "sha256": "db695d431dd85c0f2e9357c3f5f96f835b3ee36761019c1496a773dfbb4550c7",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=137&OrigenId=-1&Origen=Todos&DestinoId=80&Destino=Colima%3A+Centros+de+distribuci%C3%B3n+de+Colima&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9429
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__aguacate-hass-calidad-super-extra-michoacan-mercado-de-abasto-de-morelia__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "sha256": "27d406b5a91067191c1aa0c144aa6df891c8d179db5067c5055199377dae0cad",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=137&OrigenId=-1&Origen=Todos&DestinoId=160&Destino=Michoac%C3%A1n%3A+Mercado+de+Abasto+de+Morelia&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9428
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__aguacate-hass-adelantado-primera-jalisco-mercado-de-abasto-de-guadalajara__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "sha256": "36d1c208140108f5c74d7e2e1bf4afaeb0528f89ee90808f7f8cad445a77d5cc",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=135&OrigenId=-1&Origen=Todos&DestinoId=140&Destino=Jalisco%3A+Mercado+de+Abasto+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9425
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__aguacate-hass-adelantado-primera-df-central-de-abasto-de-iztapalapa-df__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "sha256": "539f2df69bf7780ab3c562a914fb61dc70576c5bb591d17b44e5fe8c82d5e55e",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=135&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9422
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__aguacate-hass-adelantado-primera-colima-centros-de-distribucion-de-colima__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "sha256": "1d5cfbddf84fdf75d76fa6a262c2c20ada2a13e5b8929e6adfb4f35f9335d020",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=135&OrigenId=-1&Origen=Todos&DestinoId=80&Destino=Colima%3A+Centros+de+distribuci%C3%B3n+de+Colima&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9429
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__aguacate-hass-adelantado-primera-michoacan-mercado-de-abasto-de-morelia__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "sha256": "e00195939588d3f4be5437848ec41b019ca784a400bff5245f142976aadd2e92",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=135&OrigenId=-1&Origen=Todos&DestinoId=160&Destino=Michoac%C3%A1n%3A+Mercado+de+Abasto+de+Morelia&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9428
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__aguacate-hass-flor-vieja-primera-jalisco-mercado-de-abasto-de-guadalajara__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "sha256": "fe6b9dd473b07156bb78c83e6b8bfb134eed005b6f371999419b52a341616602",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=138&OrigenId=-1&Origen=Todos&DestinoId=140&Destino=Jalisco%3A+Mercado+de+Abasto+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9425
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__aguacate-hass-flor-vieja-primera-df-central-de-abasto-de-iztapalapa-df__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "sha256": "9051a4ca00a7e110c88bb6b6d55df32c12d3b263d7d35e7b1c1efb5161baf22b",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=138&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9422
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__aguacate-hass-flor-vieja-primera-colima-centros-de-distribucion-de-colima__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "sha256": "ef529af92e5b77449a5684def0c8dd52479f4fd4617649f6b83f4955619d305c",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=138&OrigenId=-1&Origen=Todos&DestinoId=80&Destino=Colima%3A+Centros+de+distribuci%C3%B3n+de+Colima&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9429
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__aguacate-hass-flor-vieja-primera-michoacan-mercado-de-abasto-de-morelia__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "sha256": "fdfa11f3abc6851c336628aa4548b89c9d715c76f288defb46c174d0ac548132",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=138&OrigenId=-1&Origen=Todos&DestinoId=160&Destino=Michoac%C3%A1n%3A+Mercado+de+Abasto+de+Morelia&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9428
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__coco-primera-jalisco-mercado-de-abasto-de-guadalajara__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "sha256": "35a146cd54c735a779237abb529b819c2df857267063584feb6b07d43b3dc295",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=250&OrigenId=-1&Origen=Todos&DestinoId=140&Destino=Jalisco%3A+Mercado+de+Abasto+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26061
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__coco-primera-df-central-de-abasto-de-iztapalapa-df__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "sha256": "29864582078b0126407b378f1b8ca0f9b1826cd47dd81fad8fc602e12c5c753a",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=250&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9422
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__coco-primera-colima-centros-de-distribucion-de-colima__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "sha256": "3e974c615c4e2c5c5480bc353de41907cb508a1bfdd845f9e86e4ff69f764493",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=250&OrigenId=-1&Origen=Todos&DestinoId=80&Destino=Colima%3A+Centros+de+distribuci%C3%B3n+de+Colima&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 19134
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__coco-primera-michoacan-mercado-de-abasto-de-morelia__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "sha256": "1e3acc0252315ec244e46c74ca308bed4c01f716a32e856d53486ef6c4f43327",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=250&OrigenId=-1&Origen=Todos&DestinoId=160&Destino=Michoac%C3%A1n%3A+Mercado+de+Abasto+de+Morelia&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26267
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__tamarindo-primera-jalisco-mercado-de-abasto-de-guadalajara__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "sha256": "0421d4fa827072065ed46416b14d0ed6058a8e748a35e55f5dde7a8a5b919f3d",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=800&OrigenId=-1&Origen=Todos&DestinoId=140&Destino=Jalisco%3A+Mercado+de+Abasto+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26332
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__tamarindo-primera-df-central-de-abasto-de-iztapalapa-df__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "sha256": "c2a6f5189df51bbb3781243d2da9bdb02f5f499759fc2bcb4709df5f8e5276a6",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=800&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9422
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__tamarindo-primera-colima-centros-de-distribucion-de-colima__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "sha256": "d057462f7160f1edd72e9f3f26c6d1a0a72d3b64de54da19e7697f3a72390a33",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=800&OrigenId=-1&Origen=Todos&DestinoId=80&Destino=Colima%3A+Centros+de+distribuci%C3%B3n+de+Colima&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 19231
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__tamarindo-primera-michoacan-mercado-de-abasto-de-morelia__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "sha256": "8dc97f819321c4e989ae2cddb7c11783a0b32125c9bd4ec722073d74675c1524",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=800&OrigenId=-1&Origen=Todos&DestinoId=160&Destino=Michoac%C3%A1n%3A+Mercado+de+Abasto+de+Morelia&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26484
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__guayaba-primera-jalisco-mercado-de-abasto-de-guadalajara__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "sha256": "50e2e27ee30b571c97f16bbd6e86e8ed6a0cd34673adc0272bd352fa0616b6f3",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=378&OrigenId=-1&Origen=Todos&DestinoId=140&Destino=Jalisco%3A+Mercado+de+Abasto+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26831
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__guayaba-primera-df-central-de-abasto-de-iztapalapa-df__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "sha256": "05b167d4c5768568c1814787671b60d5581c2c2066f41fb3b95cc8ab70544582",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=378&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26828
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__guayaba-primera-colima-centros-de-distribucion-de-colima__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "sha256": "28a8fe24d65c0405080a7d18853b446547a64ad6bc26ae9e8c8211ac58e59729",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=378&OrigenId=-1&Origen=Todos&DestinoId=80&Destino=Colima%3A+Centros+de+distribuci%C3%B3n+de+Colima&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 19246
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__guayaba-primera-michoacan-mercado-de-abasto-de-morelia__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "sha256": "c0383868503197b75fdb78ae41730a71e8edb0d39be7bace49defc8bf82e7ae2",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=378&OrigenId=-1&Origen=Todos&DestinoId=160&Destino=Michoac%C3%A1n%3A+Mercado+de+Abasto+de+Morelia&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26886
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__guanabana-primera-jalisco-mercado-de-abasto-de-guadalajara__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "sha256": "f08f302954d6bf36b91848bc05f4dbef3f1065e0dda6b37de918958a57f94d56",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=374&OrigenId=-1&Origen=Todos&DestinoId=140&Destino=Jalisco%3A+Mercado+de+Abasto+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9425
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__guanabana-primera-df-central-de-abasto-de-iztapalapa-df__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "sha256": "40c0b8a1fa0c293c2dedb261e65c1c27692fcd1c7f00dfe5b05d98e3df63691c",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=374&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9422
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__guanabana-primera-colima-centros-de-distribucion-de-colima__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "sha256": "6873256cad9a6d90b9f8a755f8a093dde5c50ec17b267c96c3bf35b8f72e0138",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=374&OrigenId=-1&Origen=Todos&DestinoId=80&Destino=Colima%3A+Centros+de+distribuci%C3%B3n+de+Colima&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9429
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__guanabana-primera-michoacan-mercado-de-abasto-de-morelia__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "sha256": "5a551425261aaebcf9508d870830a1f5308daadd66c7d061bd7afa731ff37552",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=374&OrigenId=-1&Origen=Todos&DestinoId=160&Destino=Michoac%C3%A1n%3A+Mercado+de+Abasto+de+Morelia&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26484
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__sandia-blanca-primera-jalisco-mercado-de-abasto-de-guadalajara__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "sha256": "7c2c2639e570982afb013c8f89cf359ca276c832203b90d13d298a6b566b0594",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=783&OrigenId=-1&Origen=Todos&DestinoId=140&Destino=Jalisco%3A+Mercado+de+Abasto+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9425
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__sandia-blanca-primera-df-central-de-abasto-de-iztapalapa-df__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "sha256": "6fb67a6fbd358dc250be20f890e26664c866269c2accf713831d0727842846fa",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=783&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9422
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__sandia-blanca-primera-colima-centros-de-distribucion-de-colima__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "sha256": "ee98bdd022a1ce7a0bfd8ab588bf5f0fb686add6bb06beb047f241dbe550d21c",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=783&OrigenId=-1&Origen=Todos&DestinoId=80&Destino=Colima%3A+Centros+de+distribuci%C3%B3n+de+Colima&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9429
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__sandia-blanca-primera-michoacan-mercado-de-abasto-de-morelia__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "sha256": "8c7aab84bd2c312cc7192d4a72f6b0c8a409916f064c68751e6ead609d3fde4e",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=783&OrigenId=-1&Origen=Todos&DestinoId=160&Destino=Michoac%C3%A1n%3A+Mercado+de+Abasto+de+Morelia&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9428
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__sandia-charleston-primera-jalisco-mercado-de-abasto-de-guadalajara__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "sha256": "16befb34ee85e6c3a2ddd0b2f05ff5ea327bd54931087134bb3e452f395eda07",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=785&OrigenId=-1&Origen=Todos&DestinoId=140&Destino=Jalisco%3A+Mercado+de+Abasto+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9425
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__sandia-charleston-primera-df-central-de-abasto-de-iztapalapa-df__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "sha256": "ab81f2d3154e0be208a86534e4823aaff393118a0d26b1e558b46582bfbc1230",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=785&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9422
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__sandia-charleston-primera-colima-centros-de-distribucion-de-colima__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "sha256": "735b451372f26be4452d81c4c85758a65dc6dae143d82c1b477c27bcb5d9d431",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=785&OrigenId=-1&Origen=Todos&DestinoId=80&Destino=Colima%3A+Centros+de+distribuci%C3%B3n+de+Colima&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9429
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__sandia-charleston-primera-michoacan-mercado-de-abasto-de-morelia__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "sha256": "cd9f9485bb7a5d6d565eae5ebb48fbd18409f6af2534bb9856f5b7067f65289f",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=785&OrigenId=-1&Origen=Todos&DestinoId=160&Destino=Michoac%C3%A1n%3A+Mercado+de+Abasto+de+Morelia&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9428
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__sandia-jubilee-primera-jalisco-mercado-de-abasto-de-guadalajara__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "sha256": "301ad89da90b610c292588d23360dd6fb69f618488cee0fa2faad60cebd3405d",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=791&OrigenId=-1&Origen=Todos&DestinoId=140&Destino=Jalisco%3A+Mercado+de+Abasto+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9425
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__sandia-jubilee-primera-df-central-de-abasto-de-iztapalapa-df__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "sha256": "0837d4055a50391feac38e5e9c494b487d56b8c44c754879bc46301b46f1d9fb",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=791&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9422
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__sandia-jubilee-primera-colima-centros-de-distribucion-de-colima__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "sha256": "77805d7876d008a64f000b2edc77fe1678e0ef8505bf0a1d9e04eb75faf3dd34",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=791&OrigenId=-1&Origen=Todos&DestinoId=80&Destino=Colima%3A+Centros+de+distribuci%C3%B3n+de+Colima&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 19224
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__sandia-jubilee-primera-michoacan-mercado-de-abasto-de-morelia__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "sha256": "4d00825f6dfdf85f350545c51c15fa66092aa3ec332422de57b768f117830f9d",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=791&OrigenId=-1&Origen=Todos&DestinoId=160&Destino=Michoac%C3%A1n%3A+Mercado+de+Abasto+de+Morelia&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9428
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__sandia-negra-primera-jalisco-mercado-de-abasto-de-guadalajara__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "sha256": "61c6401a12bbc9c5844dd2fa5c2d2e31ea38a1d804085de16d485891fed88838",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=795&OrigenId=-1&Origen=Todos&DestinoId=140&Destino=Jalisco%3A+Mercado+de+Abasto+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9425
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__sandia-negra-primera-df-central-de-abasto-de-iztapalapa-df__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "sha256": "9656f0f12ea24cab6ebf3515e5ba592d26d9a20f0a0052f54e7b36889dd0bb85",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=795&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9422
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__sandia-negra-primera-colima-centros-de-distribucion-de-colima__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "sha256": "8871f7b1d05a27ac47c177b7543dbb12c8d1de97703f36b05b7c95d5e25e1b41",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=795&OrigenId=-1&Origen=Todos&DestinoId=80&Destino=Colima%3A+Centros+de+distribuci%C3%B3n+de+Colima&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9429
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__sandia-negra-primera-michoacan-mercado-de-abasto-de-morelia__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "sha256": "1ca0a6eb57b465bf032b97386ebecd77fb63fd547c17a8909a2dd44350e1d34d",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=795&OrigenId=-1&Origen=Todos&DestinoId=160&Destino=Michoac%C3%A1n%3A+Mercado+de+Abasto+de+Morelia&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9428
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__sandia-peacock-primera-jalisco-mercado-de-abasto-de-guadalajara__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "sha256": "fac5b803bf230ae941f7849aee9823621f855ec119d0937ba4c1266d301cf974",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=796&OrigenId=-1&Origen=Todos&DestinoId=140&Destino=Jalisco%3A+Mercado+de+Abasto+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9425
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__sandia-peacock-primera-df-central-de-abasto-de-iztapalapa-df__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "sha256": "0abe8e7297b83deac8c7ff13d7ef99670ec785e4d8d3d5a8f6b17bb17b49f8e9",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=796&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9422
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__sandia-peacock-primera-colima-centros-de-distribucion-de-colima__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "sha256": "2df8ba2a2a697fc35b2883db78686016baae9067d270c5135ab1ec77bc37e91a",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=796&OrigenId=-1&Origen=Todos&DestinoId=80&Destino=Colima%3A+Centros+de+distribuci%C3%B3n+de+Colima&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 19224
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__sandia-peacock-primera-michoacan-mercado-de-abasto-de-morelia__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "sha256": "f3d91f40c488c01cd8180e78944a3c7cc6f4620ae4fb68def226835e42c000d1",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=796&OrigenId=-1&Origen=Todos&DestinoId=160&Destino=Michoac%C3%A1n%3A+Mercado+de+Abasto+de+Morelia&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9428
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__sandia-rayada-primera-jalisco-mercado-de-abasto-de-guadalajara__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "sha256": "131e07e87499d0fe82f791cfbd018a97457f6a4aed4f524ae0921b840afecdb7",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=799&OrigenId=-1&Origen=Todos&DestinoId=140&Destino=Jalisco%3A+Mercado+de+Abasto+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9425
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__sandia-rayada-primera-df-central-de-abasto-de-iztapalapa-df__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "sha256": "95dabc72d42067df45bb4e781a61be028bdce0d591124b9a5588c17a76c68f4d",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=799&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9422
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__sandia-rayada-primera-colima-centros-de-distribucion-de-colima__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "sha256": "a7b5206e656d114390f771e79000506c3fb10dd05f0d90169a36833f64560c0b",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=799&OrigenId=-1&Origen=Todos&DestinoId=80&Destino=Colima%3A+Centros+de+distribuci%C3%B3n+de+Colima&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9429
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__sandia-rayada-primera-michoacan-mercado-de-abasto-de-morelia__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "sha256": "a7f151026c773d954f41d586ae045f8b98fd5053c77f4f9717a46240ab420807",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=799&OrigenId=-1&Origen=Todos&DestinoId=160&Destino=Michoac%C3%A1n%3A+Mercado+de+Abasto+de+Morelia&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26322
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__sandia-sangria-primera-jalisco-mercado-de-abasto-de-guadalajara__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "sha256": "18d2c8b92517b3a81aabe1b54f41c6a2bea73809bc99e370bae1d697340f05ae",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=787&OrigenId=-1&Origen=Todos&DestinoId=140&Destino=Jalisco%3A+Mercado+de+Abasto+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26276
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__sandia-sangria-primera-df-central-de-abasto-de-iztapalapa-df__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "sha256": "e3678db21ec98993b04762f177552cb34b0b17c3e0a131f25c49a6768c9e0060",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=787&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26316
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__sandia-sangria-primera-colima-centros-de-distribucion-de-colima__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "sha256": "dd978ce23ae5e85eb43566d8122bef84ef1434141f20cfaf4fb1c5fef54beb7f",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=787&OrigenId=-1&Origen=Todos&DestinoId=80&Destino=Colima%3A+Centros+de+distribuci%C3%B3n+de+Colima&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9429
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/10/sniim__sandia-sangria-primera-michoacan-mercado-de-abasto-de-morelia__2026-10-01_2026-10-31__20261126T221101Z-5a0d2a.html",
+      "sha256": "1c1b74a15c882727e4bb31bfeb57e41414a7ce1d83fb6005a12eed5cfff0dfb5",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=787&OrigenId=-1&Origen=Todos&DestinoId=160&Destino=Michoac%C3%A1n%3A+Mercado+de+Abasto+de+Morelia&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26274
+    }
+  ],
+  "errores": [],
+  "parametros": {
+    "productos": [
+      "mango_ataulfo",
+      "mango_manila",
+      "aguacate_hass",
+      "coco",
+      "tamarindo",
+      "guayaba",
+      "guanabana",
+      "sandia"
+    ],
+    "mercados": [
+      "guadalajara",
+      "cdmx",
+      "colima",
+      "morelia"
+    ],
+    "periodos": [
+      [
+        "2026-10-01",
+        "2026-10-31"
+      ]
+    ]
+  },
+  "esquema": "tdl-manifest/1",
+  "archivos_generados": 73
+}

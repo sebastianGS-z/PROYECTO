@@ -1,0 +1,39 @@
+{
+  "esquema": "tdl-bronce-meta/1",
+  "contenido_original": {
+    "archivo": "sniim__todos-guerrero-central-de-abastos-de-acapulco__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+    "descripcion": "Bytes tal como los entregó la fuente; no se modifican."
+  },
+  "metadatos_captura": {
+    "fuente": "sniim",
+    "fuente_url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=25%2F11%2F2026&fechaFinal=25%2F11%2F2026&ProductoId=-1&OrigenId=-1&Origen=Todos&DestinoId=121&Destino=Guerrero%3A+Central+de+Abastos+de+Acapulco&PreciosPorId=1&RegistrosPorPagina=500",
+    "fecha_captura": "2026-11-27T04:23:41Z",
+    "identificador_ejecucion": "20261127T042248Z-ee4343",
+    "formato_original": "html",
+    "sha256": "8e46363b2e5f902ee6821775a6babdf78f867a45b53121cb6ee866bff8f50c59",
+    "bytes": 40531,
+    "http_status": 200,
+    "registros_detectados": 44,
+    "estado_captura": "ok",
+    "advertencias": [],
+    "colision_nombre": false,
+    "etiqueta": "Todos__Guerrero: Central de Abastos de Acapulco",
+    "producto": "Todos",
+    "producto_id": "-1",
+    "mercado": "Guerrero: Central de Abastos de Acapulco",
+    "mercado_id": "121",
+    "fecha_ref_inicio": "2026-11-25",
+    "fecha_ref_fin": "2026-11-25",
+    "parametros": {
+      "fechaInicio": "25/11/2026",
+      "fechaFinal": "25/11/2026",
+      "ProductoId": "-1",
+      "OrigenId": "-1",
+      "Origen": "Todos",
+      "DestinoId": "121",
+      "Destino": "Guerrero: Central de Abastos de Acapulco",
+      "PreciosPorId": "1",
+      "RegistrosPorPagina": "500"
+    }
+  }
+}

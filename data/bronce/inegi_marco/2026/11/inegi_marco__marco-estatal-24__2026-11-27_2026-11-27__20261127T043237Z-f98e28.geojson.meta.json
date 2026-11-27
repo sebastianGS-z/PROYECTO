@@ -1,0 +1,29 @@
+{
+  "esquema": "tdl-bronce-meta/1",
+  "contenido_original": {
+    "archivo": "inegi_marco__marco-estatal-24__2026-11-27_2026-11-27__20261127T043237Z-f98e28.geojson",
+    "descripcion": "Bytes tal como los entregó la fuente; no se modifican."
+  },
+  "metadatos_captura": {
+    "fuente": "inegi_marco",
+    "fuente_url": "https://gaia.inegi.org.mx/wscatgeo/v2/geo/mgee/24",
+    "fecha_captura": "2026-11-27T04:34:06Z",
+    "identificador_ejecucion": "20261127T043237Z-f98e28",
+    "formato_original": "geojson",
+    "sha256": "0e4ee9e4f044513c31601ab52d04d0c7340a7f8125908f2a0a78e6fd4c5d04da",
+    "bytes": 381958,
+    "http_status": 200,
+    "registros_detectados": 1,
+    "estado_captura": "ok",
+    "advertencias": [],
+    "colision_nombre": false,
+    "etiqueta": "marco-estatal-24",
+    "tipo": "marco-estatal",
+    "cve_ent": "24",
+    "nombre_entidad": "San Luis Potosí",
+    "producto": "Marco Geoestadístico estatal",
+    "edicion_geometria": "INEGI. Marco Geoestadístico, diciembre de 2025",
+    "fecha_ref_inicio": "2026-11-27",
+    "fecha_ref_fin": "2026-11-27"
+  }
+}

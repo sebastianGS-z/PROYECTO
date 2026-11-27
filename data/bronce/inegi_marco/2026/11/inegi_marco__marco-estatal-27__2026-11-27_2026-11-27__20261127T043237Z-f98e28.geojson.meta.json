@@ -1,0 +1,29 @@
+{
+  "esquema": "tdl-bronce-meta/1",
+  "contenido_original": {
+    "archivo": "inegi_marco__marco-estatal-27__2026-11-27_2026-11-27__20261127T043237Z-f98e28.geojson",
+    "descripcion": "Bytes tal como los entregó la fuente; no se modifican."
+  },
+  "metadatos_captura": {
+    "fuente": "inegi_marco",
+    "fuente_url": "https://gaia.inegi.org.mx/wscatgeo/v2/geo/mgee/27",
+    "fecha_captura": "2026-11-27T04:34:22Z",
+    "identificador_ejecucion": "20261127T043237Z-f98e28",
+    "formato_original": "geojson",
+    "sha256": "3054a215b933452f8ce8bf66ea2ee6d11f0a1a3d4da2e3c9810fb4d945a21f7d",
+    "bytes": 602002,
+    "http_status": 200,
+    "registros_detectados": 1,
+    "estado_captura": "ok",
+    "advertencias": [],
+    "colision_nombre": false,
+    "etiqueta": "marco-estatal-27",
+    "tipo": "marco-estatal",
+    "cve_ent": "27",
+    "nombre_entidad": "Tabasco",
+    "producto": "Marco Geoestadístico estatal",
+    "edicion_geometria": "INEGI. Marco Geoestadístico, diciembre de 2025",
+    "fecha_ref_inicio": "2026-11-27",
+    "fecha_ref_fin": "2026-11-27"
+  }
+}

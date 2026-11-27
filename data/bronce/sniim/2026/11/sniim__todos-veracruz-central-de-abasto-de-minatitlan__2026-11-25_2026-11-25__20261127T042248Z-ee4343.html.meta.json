@@ -1,0 +1,39 @@
+{
+  "esquema": "tdl-bronce-meta/1",
+  "contenido_original": {
+    "archivo": "sniim__todos-veracruz-central-de-abasto-de-minatitlan__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+    "descripcion": "Bytes tal como los entregó la fuente; no se modifican."
+  },
+  "metadatos_captura": {
+    "fuente": "sniim",
+    "fuente_url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=25%2F11%2F2026&fechaFinal=25%2F11%2F2026&ProductoId=-1&OrigenId=-1&Origen=Todos&DestinoId=302&Destino=Veracruz%3A+Central+de+Abasto+de+Minatitl%C3%A1n&PreciosPorId=1&RegistrosPorPagina=500",
+    "fecha_captura": "2026-11-27T04:25:16Z",
+    "identificador_ejecucion": "20261127T042248Z-ee4343",
+    "formato_original": "html",
+    "sha256": "4038774c706ad003e5f539a8c387f24a13dff19d11a3ea7a1a3714066f29c92e",
+    "bytes": 46953,
+    "http_status": 200,
+    "registros_detectados": 54,
+    "estado_captura": "ok",
+    "advertencias": [],
+    "colision_nombre": false,
+    "etiqueta": "Todos__Veracruz: Central de Abasto de Minatitlán",
+    "producto": "Todos",
+    "producto_id": "-1",
+    "mercado": "Veracruz: Central de Abasto de Minatitlán",
+    "mercado_id": "302",
+    "fecha_ref_inicio": "2026-11-25",
+    "fecha_ref_fin": "2026-11-25",
+    "parametros": {
+      "fechaInicio": "25/11/2026",
+      "fechaFinal": "25/11/2026",
+      "ProductoId": "-1",
+      "OrigenId": "-1",
+      "Origen": "Todos",
+      "DestinoId": "302",
+      "Destino": "Veracruz: Central de Abasto de Minatitlán",
+      "PreciosPorId": "1",
+      "RegistrosPorPagina": "500"
+    }
+  }
+}

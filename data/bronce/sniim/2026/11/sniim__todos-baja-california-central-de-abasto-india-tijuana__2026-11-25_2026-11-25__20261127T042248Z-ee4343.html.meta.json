@@ -1,0 +1,39 @@
+{
+  "esquema": "tdl-bronce-meta/1",
+  "contenido_original": {
+    "archivo": "sniim__todos-baja-california-central-de-abasto-india-tijuana__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+    "descripcion": "Bytes tal como los entregó la fuente; no se modifican."
+  },
+  "metadatos_captura": {
+    "fuente": "sniim",
+    "fuente_url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=25%2F11%2F2026&fechaFinal=25%2F11%2F2026&ProductoId=-1&OrigenId=-1&Origen=Todos&DestinoId=33&Destino=Baja+California+%3A+Central+de+Abasto+INDIA%2C+Tijuana&PreciosPorId=1&RegistrosPorPagina=500",
+    "fecha_captura": "2026-11-27T04:22:56Z",
+    "identificador_ejecucion": "20261127T042248Z-ee4343",
+    "formato_original": "html",
+    "sha256": "6b0398432d5c1b75242836fd8a9dde61a4dbfe9b38b943331fcf25a682549ab4",
+    "bytes": 57707,
+    "http_status": 200,
+    "registros_detectados": 70,
+    "estado_captura": "ok",
+    "advertencias": [],
+    "colision_nombre": false,
+    "etiqueta": "Todos__Baja California : Central de Abasto INDIA, Tijuana",
+    "producto": "Todos",
+    "producto_id": "-1",
+    "mercado": "Baja California : Central de Abasto INDIA, Tijuana",
+    "mercado_id": "33",
+    "fecha_ref_inicio": "2026-11-25",
+    "fecha_ref_fin": "2026-11-25",
+    "parametros": {
+      "fechaInicio": "25/11/2026",
+      "fechaFinal": "25/11/2026",
+      "ProductoId": "-1",
+      "OrigenId": "-1",
+      "Origen": "Todos",
+      "DestinoId": "33",
+      "Destino": "Baja California : Central de Abasto INDIA, Tijuana",
+      "PreciosPorId": "1",
+      "RegistrosPorPagina": "500"
+    }
+  }
+}

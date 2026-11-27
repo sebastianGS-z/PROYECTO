@@ -1,0 +1,39 @@
+{
+  "esquema": "tdl-bronce-meta/1",
+  "contenido_original": {
+    "archivo": "sniim__todos-coahuila-central-de-abasto-de-la-laguna-torreon__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+    "descripcion": "Bytes tal como los entregó la fuente; no se modifican."
+  },
+  "metadatos_captura": {
+    "fuente": "sniim",
+    "fuente_url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=25%2F11%2F2026&fechaFinal=25%2F11%2F2026&ProductoId=-1&OrigenId=-1&Origen=Todos&DestinoId=50&Destino=Coahuila%3A+Central+de+Abasto+de+La+Laguna%2C+Torre%C3%B3n&PreciosPorId=1&RegistrosPorPagina=500",
+    "fecha_captura": "2026-11-27T04:23:12Z",
+    "identificador_ejecucion": "20261127T042248Z-ee4343",
+    "formato_original": "html",
+    "sha256": "c8aa18590cb84c52eac88f3b292d3d94922b0db6f975bed81ba0f560151fda13",
+    "bytes": 53994,
+    "http_status": 200,
+    "registros_detectados": 65,
+    "estado_captura": "ok",
+    "advertencias": [],
+    "colision_nombre": false,
+    "etiqueta": "Todos__Coahuila: Central de Abasto de La Laguna, Torreón",
+    "producto": "Todos",
+    "producto_id": "-1",
+    "mercado": "Coahuila: Central de Abasto de La Laguna, Torreón",
+    "mercado_id": "50",
+    "fecha_ref_inicio": "2026-11-25",
+    "fecha_ref_fin": "2026-11-25",
+    "parametros": {
+      "fechaInicio": "25/11/2026",
+      "fechaFinal": "25/11/2026",
+      "ProductoId": "-1",
+      "OrigenId": "-1",
+      "Origen": "Todos",
+      "DestinoId": "50",
+      "Destino": "Coahuila: Central de Abasto de La Laguna, Torreón",
+      "PreciosPorId": "1",
+      "RegistrosPorPagina": "500"
+    }
+  }
+}

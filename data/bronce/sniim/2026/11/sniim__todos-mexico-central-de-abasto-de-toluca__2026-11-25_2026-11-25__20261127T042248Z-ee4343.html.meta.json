@@ -1,0 +1,39 @@
+{
+  "esquema": "tdl-bronce-meta/1",
+  "contenido_original": {
+    "archivo": "sniim__todos-mexico-central-de-abasto-de-toluca__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+    "descripcion": "Bytes tal como los entregó la fuente; no se modifican."
+  },
+  "metadatos_captura": {
+    "fuente": "sniim",
+    "fuente_url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=25%2F11%2F2026&fechaFinal=25%2F11%2F2026&ProductoId=-1&OrigenId=-1&Origen=Todos&DestinoId=150&Destino=M%C3%A9xico%3A+Central+de+Abasto+de+Toluca&PreciosPorId=1&RegistrosPorPagina=500",
+    "fecha_captura": "2026-11-27T04:23:59Z",
+    "identificador_ejecucion": "20261127T042248Z-ee4343",
+    "formato_original": "html",
+    "sha256": "00d6eaa476ef16e2e7996544b51c52ff546e44fb60dcdc0f368bc9125e5007d9",
+    "bytes": 48286,
+    "http_status": 200,
+    "registros_detectados": 55,
+    "estado_captura": "ok",
+    "advertencias": [],
+    "colision_nombre": false,
+    "etiqueta": "Todos__México: Central de Abasto de Toluca",
+    "producto": "Todos",
+    "producto_id": "-1",
+    "mercado": "México: Central de Abasto de Toluca",
+    "mercado_id": "150",
+    "fecha_ref_inicio": "2026-11-25",
+    "fecha_ref_fin": "2026-11-25",
+    "parametros": {
+      "fechaInicio": "25/11/2026",
+      "fechaFinal": "25/11/2026",
+      "ProductoId": "-1",
+      "OrigenId": "-1",
+      "Origen": "Todos",
+      "DestinoId": "150",
+      "Destino": "México: Central de Abasto de Toluca",
+      "PreciosPorId": "1",
+      "RegistrosPorPagina": "500"
+    }
+  }
+}

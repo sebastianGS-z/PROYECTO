@@ -1,0 +1,43 @@
+{
+  "run_id": "20261127T042123Z-9cba6b",
+  "fuente": "sniim_catalogo",
+  "modo": "diaria",
+  "disparador": "local",
+  "inicio": "2026-11-27T04:21:27Z",
+  "fin": "2026-11-27T04:21:29Z",
+  "duracion_s": 2.25,
+  "estado": "exitosa",
+  "solicitudes": 0,
+  "registros": 80,
+  "consultas": [
+    {
+      "mercado_id": "100",
+      "mercado": "DF: Central de Abasto de Iztapalapa DF",
+      "fecha": "2026-11-25",
+      "estado": "ok",
+      "registros": 80,
+      "archivo": "sniim__todos-df-central-de-abasto-de-iztapalapa-df__2026-11-25_2026-11-25__20261127T042123Z-9cba6b.html",
+      "error": null,
+      "advertencias": []
+    }
+  ],
+  "archivos": [
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__todos-df-central-de-abasto-de-iztapalapa-df__2026-11-25_2026-11-25__20261127T042123Z-9cba6b.html",
+      "sha256": "675d21b377f3151f76cc4c587a412a510a700660184f33d9f82a08b5b4ed9839",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=25%2F11%2F2026&fechaFinal=25%2F11%2F2026&ProductoId=-1&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 63908
+    }
+  ],
+  "errores": [],
+  "parametros": {
+    "producto": "Todos",
+    "producto_id": "-1",
+    "fecha": "2026-11-25",
+    "mercados": [
+      "100"
+    ]
+  },
+  "esquema": "tdl-manifest/1",
+  "archivos_generados": 1
+}

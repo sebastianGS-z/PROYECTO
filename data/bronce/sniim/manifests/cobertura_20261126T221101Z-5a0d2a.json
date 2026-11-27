@@ -1,0 +1,376 @@
+{
+  "run_id": "20261126T221101Z-5a0d2a",
+  "nota": "Un periodo cuenta solo si la fuente devolvió registros reales; archivos vacíos o fallidos no cuentan.",
+  "cobertura": [
+    {
+      "producto": "aguacate_hass",
+      "mercado": "cdmx",
+      "periodos_esperados": 1,
+      "periodos_con_datos": 1,
+      "periodos_sin_datos": [],
+      "periodos_fallidos": [],
+      "cumple_36": false,
+      "primer_periodo": "2026-10",
+      "ultimo_periodo": "2026-10"
+    },
+    {
+      "producto": "aguacate_hass",
+      "mercado": "colima",
+      "periodos_esperados": 1,
+      "periodos_con_datos": 1,
+      "periodos_sin_datos": [],
+      "periodos_fallidos": [],
+      "cumple_36": false,
+      "primer_periodo": "2026-10",
+      "ultimo_periodo": "2026-10"
+    },
+    {
+      "producto": "aguacate_hass",
+      "mercado": "guadalajara",
+      "periodos_esperados": 1,
+      "periodos_con_datos": 1,
+      "periodos_sin_datos": [],
+      "periodos_fallidos": [],
+      "cumple_36": false,
+      "primer_periodo": "2026-10",
+      "ultimo_periodo": "2026-10"
+    },
+    {
+      "producto": "aguacate_hass",
+      "mercado": "morelia",
+      "periodos_esperados": 1,
+      "periodos_con_datos": 1,
+      "periodos_sin_datos": [],
+      "periodos_fallidos": [],
+      "cumple_36": false,
+      "primer_periodo": "2026-10",
+      "ultimo_periodo": "2026-10"
+    },
+    {
+      "producto": "coco",
+      "mercado": "cdmx",
+      "periodos_esperados": 1,
+      "periodos_con_datos": 0,
+      "periodos_sin_datos": [
+        "2026-10"
+      ],
+      "periodos_fallidos": [],
+      "cumple_36": false,
+      "primer_periodo": null,
+      "ultimo_periodo": null
+    },
+    {
+      "producto": "coco",
+      "mercado": "colima",
+      "periodos_esperados": 1,
+      "periodos_con_datos": 1,
+      "periodos_sin_datos": [],
+      "periodos_fallidos": [],
+      "cumple_36": false,
+      "primer_periodo": "2026-10",
+      "ultimo_periodo": "2026-10"
+    },
+    {
+      "producto": "coco",
+      "mercado": "guadalajara",
+      "periodos_esperados": 1,
+      "periodos_con_datos": 1,
+      "periodos_sin_datos": [],
+      "periodos_fallidos": [],
+      "cumple_36": false,
+      "primer_periodo": "2026-10",
+      "ultimo_periodo": "2026-10"
+    },
+    {
+      "producto": "coco",
+      "mercado": "morelia",
+      "periodos_esperados": 1,
+      "periodos_con_datos": 1,
+      "periodos_sin_datos": [],
+      "periodos_fallidos": [],
+      "cumple_36": false,
+      "primer_periodo": "2026-10",
+      "ultimo_periodo": "2026-10"
+    },
+    {
+      "producto": "guanabana",
+      "mercado": "cdmx",
+      "periodos_esperados": 1,
+      "periodos_con_datos": 0,
+      "periodos_sin_datos": [
+        "2026-10"
+      ],
+      "periodos_fallidos": [],
+      "cumple_36": false,
+      "primer_periodo": null,
+      "ultimo_periodo": null
+    },
+    {
+      "producto": "guanabana",
+      "mercado": "colima",
+      "periodos_esperados": 1,
+      "periodos_con_datos": 0,
+      "periodos_sin_datos": [
+        "2026-10"
+      ],
+      "periodos_fallidos": [],
+      "cumple_36": false,
+      "primer_periodo": null,
+      "ultimo_periodo": null
+    },
+    {
+      "producto": "guanabana",
+      "mercado": "guadalajara",
+      "periodos_esperados": 1,
+      "periodos_con_datos": 0,
+      "periodos_sin_datos": [
+        "2026-10"
+      ],
+      "periodos_fallidos": [],
+      "cumple_36": false,
+      "primer_periodo": null,
+      "ultimo_periodo": null
+    },
+    {
+      "producto": "guanabana",
+      "mercado": "morelia",
+      "periodos_esperados": 1,
+      "periodos_con_datos": 1,
+      "periodos_sin_datos": [],
+      "periodos_fallidos": [],
+      "cumple_36": false,
+      "primer_periodo": "2026-10",
+      "ultimo_periodo": "2026-10"
+    },
+    {
+      "producto": "guayaba",
+      "mercado": "cdmx",
+      "periodos_esperados": 1,
+      "periodos_con_datos": 1,
+      "periodos_sin_datos": [],
+      "periodos_fallidos": [],
+      "cumple_36": false,
+      "primer_periodo": "2026-10",
+      "ultimo_periodo": "2026-10"
+    },
+    {
+      "producto": "guayaba",
+      "mercado": "colima",
+      "periodos_esperados": 1,
+      "periodos_con_datos": 1,
+      "periodos_sin_datos": [],
+      "periodos_fallidos": [],
+      "cumple_36": false,
+      "primer_periodo": "2026-10",
+      "ultimo_periodo": "2026-10"
+    },
+    {
+      "producto": "guayaba",
+      "mercado": "guadalajara",
+      "periodos_esperados": 1,
+      "periodos_con_datos": 1,
+      "periodos_sin_datos": [],
+      "periodos_fallidos": [],
+      "cumple_36": false,
+      "primer_periodo": "2026-10",
+      "ultimo_periodo": "2026-10"
+    },
+    {
+      "producto": "guayaba",
+      "mercado": "morelia",
+      "periodos_esperados": 1,
+      "periodos_con_datos": 1,
+      "periodos_sin_datos": [],
+      "periodos_fallidos": [],
+      "cumple_36": false,
+      "primer_periodo": "2026-10",
+      "ultimo_periodo": "2026-10"
+    },
+    {
+      "producto": "mango_ataulfo",
+      "mercado": "cdmx",
+      "periodos_esperados": 1,
+      "periodos_con_datos": 1,
+      "periodos_sin_datos": [],
+      "periodos_fallidos": [],
+      "cumple_36": false,
+      "primer_periodo": "2026-10",
+      "ultimo_periodo": "2026-10"
+    },
+    {
+      "producto": "mango_ataulfo",
+      "mercado": "colima",
+      "periodos_esperados": 1,
+      "periodos_con_datos": 0,
+      "periodos_sin_datos": [
+        "2026-10"
+      ],
+      "periodos_fallidos": [],
+      "cumple_36": false,
+      "primer_periodo": null,
+      "ultimo_periodo": null
+    },
+    {
+      "producto": "mango_ataulfo",
+      "mercado": "guadalajara",
+      "periodos_esperados": 1,
+      "periodos_con_datos": 0,
+      "periodos_sin_datos": [
+        "2026-10"
+      ],
+      "periodos_fallidos": [],
+      "cumple_36": false,
+      "primer_periodo": null,
+      "ultimo_periodo": null
+    },
+    {
+      "producto": "mango_ataulfo",
+      "mercado": "morelia",
+      "periodos_esperados": 1,
+      "periodos_con_datos": 1,
+      "periodos_sin_datos": [],
+      "periodos_fallidos": [],
+      "cumple_36": false,
+      "primer_periodo": "2026-10",
+      "ultimo_periodo": "2026-10"
+    },
+    {
+      "producto": "mango_manila",
+      "mercado": "cdmx",
+      "periodos_esperados": 1,
+      "periodos_con_datos": 1,
+      "periodos_sin_datos": [],
+      "periodos_fallidos": [],
+      "cumple_36": false,
+      "primer_periodo": "2026-10",
+      "ultimo_periodo": "2026-10"
+    },
+    {
+      "producto": "mango_manila",
+      "mercado": "colima",
+      "periodos_esperados": 1,
+      "periodos_con_datos": 0,
+      "periodos_sin_datos": [
+        "2026-10"
+      ],
+      "periodos_fallidos": [],
+      "cumple_36": false,
+      "primer_periodo": null,
+      "ultimo_periodo": null
+    },
+    {
+      "producto": "mango_manila",
+      "mercado": "guadalajara",
+      "periodos_esperados": 1,
+      "periodos_con_datos": 0,
+      "periodos_sin_datos": [
+        "2026-10"
+      ],
+      "periodos_fallidos": [],
+      "cumple_36": false,
+      "primer_periodo": null,
+      "ultimo_periodo": null
+    },
+    {
+      "producto": "mango_manila",
+      "mercado": "morelia",
+      "periodos_esperados": 1,
+      "periodos_con_datos": 1,
+      "periodos_sin_datos": [],
+      "periodos_fallidos": [],
+      "cumple_36": false,
+      "primer_periodo": "2026-10",
+      "ultimo_periodo": "2026-10"
+    },
+    {
+      "producto": "sandia",
+      "mercado": "cdmx",
+      "periodos_esperados": 1,
+      "periodos_con_datos": 1,
+      "periodos_sin_datos": [],
+      "periodos_fallidos": [],
+      "cumple_36": false,
+      "primer_periodo": "2026-10",
+      "ultimo_periodo": "2026-10"
+    },
+    {
+      "producto": "sandia",
+      "mercado": "colima",
+      "periodos_esperados": 1,
+      "periodos_con_datos": 1,
+      "periodos_sin_datos": [],
+      "periodos_fallidos": [],
+      "cumple_36": false,
+      "primer_periodo": "2026-10",
+      "ultimo_periodo": "2026-10"
+    },
+    {
+      "producto": "sandia",
+      "mercado": "guadalajara",
+      "periodos_esperados": 1,
+      "periodos_con_datos": 1,
+      "periodos_sin_datos": [],
+      "periodos_fallidos": [],
+      "cumple_36": false,
+      "primer_periodo": "2026-10",
+      "ultimo_periodo": "2026-10"
+    },
+    {
+      "producto": "sandia",
+      "mercado": "morelia",
+      "periodos_esperados": 1,
+      "periodos_con_datos": 1,
+      "periodos_sin_datos": [],
+      "periodos_fallidos": [],
+      "cumple_36": false,
+      "primer_periodo": "2026-10",
+      "ultimo_periodo": "2026-10"
+    },
+    {
+      "producto": "tamarindo",
+      "mercado": "cdmx",
+      "periodos_esperados": 1,
+      "periodos_con_datos": 0,
+      "periodos_sin_datos": [
+        "2026-10"
+      ],
+      "periodos_fallidos": [],
+      "cumple_36": false,
+      "primer_periodo": null,
+      "ultimo_periodo": null
+    },
+    {
+      "producto": "tamarindo",
+      "mercado": "colima",
+      "periodos_esperados": 1,
+      "periodos_con_datos": 1,
+      "periodos_sin_datos": [],
+      "periodos_fallidos": [],
+      "cumple_36": false,
+      "primer_periodo": "2026-10",
+      "ultimo_periodo": "2026-10"
+    },
+    {
+      "producto": "tamarindo",
+      "mercado": "guadalajara",
+      "periodos_esperados": 1,
+      "periodos_con_datos": 1,
+      "periodos_sin_datos": [],
+      "periodos_fallidos": [],
+      "cumple_36": false,
+      "primer_periodo": "2026-10",
+      "ultimo_periodo": "2026-10"
+    },
+    {
+      "producto": "tamarindo",
+      "mercado": "morelia",
+      "periodos_esperados": 1,
+      "periodos_con_datos": 1,
+      "periodos_sin_datos": [],
+      "periodos_fallidos": [],
+      "cumple_36": false,
+      "primer_periodo": "2026-10",
+      "ultimo_periodo": "2026-10"
+    }
+  ]
+}

@@ -1,0 +1,536 @@
+{
+  "run_id": "20261127T043237Z-f98e28",
+  "fuente": "inegi_marco",
+  "modo": "mapa-mercados",
+  "disparador": "local",
+  "inicio": "2026-11-27T04:32:37Z",
+  "fin": "2026-11-27T04:34:47Z",
+  "duracion_s": 129.85,
+  "estado": "exitosa",
+  "solicitudes": 33,
+  "registros": 32,
+  "consultas": [
+    {
+      "cve_ent": "01",
+      "nombre": "Aguascalientes",
+      "estado": "ok",
+      "registros": 1,
+      "archivo": "inegi_marco__marco-estatal-01__2026-11-27_2026-11-27__20261127T043237Z-f98e28.geojson",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "cve_ent": "02",
+      "nombre": "Baja California",
+      "estado": "ok",
+      "registros": 1,
+      "archivo": "inegi_marco__marco-estatal-02__2026-11-27_2026-11-27__20261127T043237Z-f98e28.geojson",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "cve_ent": "03",
+      "nombre": "Baja California Sur",
+      "estado": "ok",
+      "registros": 1,
+      "archivo": "inegi_marco__marco-estatal-03__2026-11-27_2026-11-27__20261127T043237Z-f98e28.geojson",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "cve_ent": "04",
+      "nombre": "Campeche",
+      "estado": "ok",
+      "registros": 1,
+      "archivo": "inegi_marco__marco-estatal-04__2026-11-27_2026-11-27__20261127T043237Z-f98e28.geojson",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "cve_ent": "05",
+      "nombre": "Coahuila de Zaragoza",
+      "estado": "ok",
+      "registros": 1,
+      "archivo": "inegi_marco__marco-estatal-05__2026-11-27_2026-11-27__20261127T043237Z-f98e28.geojson",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "cve_ent": "06",
+      "nombre": "Colima",
+      "estado": "ok",
+      "registros": 1,
+      "archivo": "inegi_marco__marco-estatal-06__2026-11-27_2026-11-27__20261127T043237Z-f98e28.geojson",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "cve_ent": "07",
+      "nombre": "Chiapas",
+      "estado": "ok",
+      "registros": 1,
+      "archivo": "inegi_marco__marco-estatal-07__2026-11-27_2026-11-27__20261127T043237Z-f98e28.geojson",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "cve_ent": "08",
+      "nombre": "Chihuahua",
+      "estado": "ok",
+      "registros": 1,
+      "archivo": "inegi_marco__marco-estatal-08__2026-11-27_2026-11-27__20261127T043237Z-f98e28.geojson",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "cve_ent": "09",
+      "nombre": "Ciudad de México",
+      "estado": "ok",
+      "registros": 1,
+      "archivo": "inegi_marco__marco-estatal-09__2026-11-27_2026-11-27__20261127T043237Z-f98e28.geojson",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "cve_ent": "10",
+      "nombre": "Durango",
+      "estado": "ok",
+      "registros": 1,
+      "archivo": "inegi_marco__marco-estatal-10__2026-11-27_2026-11-27__20261127T043237Z-f98e28.geojson",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "cve_ent": "11",
+      "nombre": "Guanajuato",
+      "estado": "ok",
+      "registros": 1,
+      "archivo": "inegi_marco__marco-estatal-11__2026-11-27_2026-11-27__20261127T043237Z-f98e28.geojson",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "cve_ent": "12",
+      "nombre": "Guerrero",
+      "estado": "ok",
+      "registros": 1,
+      "archivo": "inegi_marco__marco-estatal-12__2026-11-27_2026-11-27__20261127T043237Z-f98e28.geojson",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "cve_ent": "13",
+      "nombre": "Hidalgo",
+      "estado": "ok",
+      "registros": 1,
+      "archivo": "inegi_marco__marco-estatal-13__2026-11-27_2026-11-27__20261127T043237Z-f98e28.geojson",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "cve_ent": "14",
+      "nombre": "Jalisco",
+      "estado": "ok",
+      "registros": 1,
+      "archivo": "inegi_marco__marco-estatal-14__2026-11-27_2026-11-27__20261127T043237Z-f98e28.geojson",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "cve_ent": "15",
+      "nombre": "México",
+      "estado": "ok",
+      "registros": 1,
+      "archivo": "inegi_marco__marco-estatal-15__2026-11-27_2026-11-27__20261127T043237Z-f98e28.geojson",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "cve_ent": "16",
+      "nombre": "Michoacán de Ocampo",
+      "estado": "ok",
+      "registros": 1,
+      "archivo": "inegi_marco__marco-estatal-16__2026-11-27_2026-11-27__20261127T043237Z-f98e28.geojson",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "cve_ent": "17",
+      "nombre": "Morelos",
+      "estado": "ok",
+      "registros": 1,
+      "archivo": "inegi_marco__marco-estatal-17__2026-11-27_2026-11-27__20261127T043237Z-f98e28.geojson",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "cve_ent": "18",
+      "nombre": "Nayarit",
+      "estado": "ok",
+      "registros": 1,
+      "archivo": "inegi_marco__marco-estatal-18__2026-11-27_2026-11-27__20261127T043237Z-f98e28.geojson",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "cve_ent": "19",
+      "nombre": "Nuevo León",
+      "estado": "ok",
+      "registros": 1,
+      "archivo": "inegi_marco__marco-estatal-19__2026-11-27_2026-11-27__20261127T043237Z-f98e28.geojson",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "cve_ent": "20",
+      "nombre": "Oaxaca",
+      "estado": "ok",
+      "registros": 1,
+      "archivo": "inegi_marco__marco-estatal-20__2026-11-27_2026-11-27__20261127T043237Z-f98e28.geojson",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "cve_ent": "21",
+      "nombre": "Puebla",
+      "estado": "ok",
+      "registros": 1,
+      "archivo": "inegi_marco__marco-estatal-21__2026-11-27_2026-11-27__20261127T043237Z-f98e28.geojson",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "cve_ent": "22",
+      "nombre": "Querétaro",
+      "estado": "ok",
+      "registros": 1,
+      "archivo": "inegi_marco__marco-estatal-22__2026-11-27_2026-11-27__20261127T043237Z-f98e28.geojson",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "cve_ent": "23",
+      "nombre": "Quintana Roo",
+      "estado": "ok",
+      "registros": 1,
+      "archivo": "inegi_marco__marco-estatal-23__2026-11-27_2026-11-27__20261127T043237Z-f98e28.geojson",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "cve_ent": "24",
+      "nombre": "San Luis Potosí",
+      "estado": "ok",
+      "registros": 1,
+      "archivo": "inegi_marco__marco-estatal-24__2026-11-27_2026-11-27__20261127T043237Z-f98e28.geojson",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "cve_ent": "25",
+      "nombre": "Sinaloa",
+      "estado": "ok",
+      "registros": 1,
+      "archivo": "inegi_marco__marco-estatal-25__2026-11-27_2026-11-27__20261127T043237Z-f98e28.geojson",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "cve_ent": "26",
+      "nombre": "Sonora",
+      "estado": "ok",
+      "registros": 1,
+      "archivo": "inegi_marco__marco-estatal-26__2026-11-27_2026-11-27__20261127T043237Z-f98e28.geojson",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "cve_ent": "27",
+      "nombre": "Tabasco",
+      "estado": "ok",
+      "registros": 1,
+      "archivo": "inegi_marco__marco-estatal-27__2026-11-27_2026-11-27__20261127T043237Z-f98e28.geojson",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "cve_ent": "28",
+      "nombre": "Tamaulipas",
+      "estado": "ok",
+      "registros": 1,
+      "archivo": "inegi_marco__marco-estatal-28__2026-11-27_2026-11-27__20261127T043237Z-f98e28.geojson",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "cve_ent": "29",
+      "nombre": "Tlaxcala",
+      "estado": "ok",
+      "registros": 1,
+      "archivo": "inegi_marco__marco-estatal-29__2026-11-27_2026-11-27__20261127T043237Z-f98e28.geojson",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "cve_ent": "30",
+      "nombre": "Veracruz de Ignacio de la Llave",
+      "estado": "ok",
+      "registros": 1,
+      "archivo": "inegi_marco__marco-estatal-30__2026-11-27_2026-11-27__20261127T043237Z-f98e28.geojson",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "cve_ent": "31",
+      "nombre": "Yucatán",
+      "estado": "ok",
+      "registros": 1,
+      "archivo": "inegi_marco__marco-estatal-31__2026-11-27_2026-11-27__20261127T043237Z-f98e28.geojson",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "cve_ent": "32",
+      "nombre": "Zacatecas",
+      "estado": "ok",
+      "registros": 1,
+      "archivo": "inegi_marco__marco-estatal-32__2026-11-27_2026-11-27__20261127T043237Z-f98e28.geojson",
+      "error": null,
+      "advertencias": []
+    }
+  ],
+  "archivos": [
+    {
+      "ruta": "data/bronce/inegi_marco/2026/11/inegi_marco__marco-estatal-01__2026-11-27_2026-11-27__20261127T043237Z-f98e28.geojson",
+      "sha256": "0847e9d31772ebef152ba51f4b981e6239585ac7c6e05610217c7e95817c0c33",
+      "url": "https://gaia.inegi.org.mx/wscatgeo/v2/geo/mgee/01",
+      "bytes": 78513
+    },
+    {
+      "ruta": "data/bronce/inegi_marco/2026/11/inegi_marco__marco-estatal-02__2026-11-27_2026-11-27__20261127T043237Z-f98e28.geojson",
+      "sha256": "f12275369cb06d28afe42274dd79363c9dccc9b3895347fbc974422d208272f5",
+      "url": "https://gaia.inegi.org.mx/wscatgeo/v2/geo/mgee/02",
+      "bytes": 2807079
+    },
+    {
+      "ruta": "data/bronce/inegi_marco/2026/11/inegi_marco__marco-estatal-03__2026-11-27_2026-11-27__20261127T043237Z-f98e28.geojson",
+      "sha256": "72b6fe4c44a298df5eb11b18d69ce7665aa6c468b406cdced4ff6f2107669225",
+      "url": "https://gaia.inegi.org.mx/wscatgeo/v2/geo/mgee/03",
+      "bytes": 5168567
+    },
+    {
+      "ruta": "data/bronce/inegi_marco/2026/11/inegi_marco__marco-estatal-04__2026-11-27_2026-11-27__20261127T043237Z-f98e28.geojson",
+      "sha256": "040ad4a4166468c0d2f74781cb6ccab55ba37fe9ff178a41c389c4191e754105",
+      "url": "https://gaia.inegi.org.mx/wscatgeo/v2/geo/mgee/04",
+      "bytes": 1304293
+    },
+    {
+      "ruta": "data/bronce/inegi_marco/2026/11/inegi_marco__marco-estatal-05__2026-11-27_2026-11-27__20261127T043237Z-f98e28.geojson",
+      "sha256": "22ed96f920fff581cafd781fbbb5580e9cca155495830ad718ce86b5ab02c2aa",
+      "url": "https://gaia.inegi.org.mx/wscatgeo/v2/geo/mgee/05",
+      "bytes": 579231
+    },
+    {
+      "ruta": "data/bronce/inegi_marco/2026/11/inegi_marco__marco-estatal-06__2026-11-27_2026-11-27__20261127T043237Z-f98e28.geojson",
+      "sha256": "8566c6f2b6832a60917fb98dd58b5826493ef94543dcbed1dd648178416e61bb",
+      "url": "https://gaia.inegi.org.mx/wscatgeo/v2/geo/mgee/06",
+      "bytes": 295431
+    },
+    {
+      "ruta": "data/bronce/inegi_marco/2026/11/inegi_marco__marco-estatal-07__2026-11-27_2026-11-27__20261127T043237Z-f98e28.geojson",
+      "sha256": "99b18e4235e0a7fddcce9165527a5062d8aef19ab270539bda4032acc2871229",
+      "url": "https://gaia.inegi.org.mx/wscatgeo/v2/geo/mgee/07",
+      "bytes": 498026
+    },
+    {
+      "ruta": "data/bronce/inegi_marco/2026/11/inegi_marco__marco-estatal-08__2026-11-27_2026-11-27__20261127T043237Z-f98e28.geojson",
+      "sha256": "316ff30cf14b60d722f527433590de9a5acd13d9ef38bfb1c48b55cdb92cecd9",
+      "url": "https://gaia.inegi.org.mx/wscatgeo/v2/geo/mgee/08",
+      "bytes": 364738
+    },
+    {
+      "ruta": "data/bronce/inegi_marco/2026/11/inegi_marco__marco-estatal-09__2026-11-27_2026-11-27__20261127T043237Z-f98e28.geojson",
+      "sha256": "fc7e082587a85595dcdad86d0c0a28320bebc46b3d0a0233244b042eedae3e02",
+      "url": "https://gaia.inegi.org.mx/wscatgeo/v2/geo/mgee/09",
+      "bytes": 79170
+    },
+    {
+      "ruta": "data/bronce/inegi_marco/2026/11/inegi_marco__marco-estatal-10__2026-11-27_2026-11-27__20261127T043237Z-f98e28.geojson",
+      "sha256": "cd2196aef1388e136cfd289721e2d12e86b3a6978bf7d725a1b346782e079506",
+      "url": "https://gaia.inegi.org.mx/wscatgeo/v2/geo/mgee/10",
+      "bytes": 583380
+    },
+    {
+      "ruta": "data/bronce/inegi_marco/2026/11/inegi_marco__marco-estatal-11__2026-11-27_2026-11-27__20261127T043237Z-f98e28.geojson",
+      "sha256": "b5a0d7ab0ffb7e5b45d0714cca631ce37e5f43e52950fd21b54ca2a5b5383226",
+      "url": "https://gaia.inegi.org.mx/wscatgeo/v2/geo/mgee/11",
+      "bytes": 345066
+    },
+    {
+      "ruta": "data/bronce/inegi_marco/2026/11/inegi_marco__marco-estatal-12__2026-11-27_2026-11-27__20261127T043237Z-f98e28.geojson",
+      "sha256": "f8db9cd6fa050638a187be370d4fc8ebcc165af46fbf803208303f36745ef038",
+      "url": "https://gaia.inegi.org.mx/wscatgeo/v2/geo/mgee/12",
+      "bytes": 823992
+    },
+    {
+      "ruta": "data/bronce/inegi_marco/2026/11/inegi_marco__marco-estatal-13__2026-11-27_2026-11-27__20261127T043237Z-f98e28.geojson",
+      "sha256": "1e1bbc161b43046231904f5c557d3c1d65bb9fd104d00eefd760659de9c4a6ef",
+      "url": "https://gaia.inegi.org.mx/wscatgeo/v2/geo/mgee/13",
+      "bytes": 839405
+    },
+    {
+      "ruta": "data/bronce/inegi_marco/2026/11/inegi_marco__marco-estatal-14__2026-11-27_2026-11-27__20261127T043237Z-f98e28.geojson",
+      "sha256": "bb9c14aa2f51359882e72613d28b35e20c9e6a897e1e7a6a6638382f212d74e6",
+      "url": "https://gaia.inegi.org.mx/wscatgeo/v2/geo/mgee/14",
+      "bytes": 1628169
+    },
+    {
+      "ruta": "data/bronce/inegi_marco/2026/11/inegi_marco__marco-estatal-15__2026-11-27_2026-11-27__20261127T043237Z-f98e28.geojson",
+      "sha256": "15661cc59fc9fb04c4ff2f12940dc4a5ffa04f6a411a389d673cc445cb435293",
+      "url": "https://gaia.inegi.org.mx/wscatgeo/v2/geo/mgee/15",
+      "bytes": 489134
+    },
+    {
+      "ruta": "data/bronce/inegi_marco/2026/11/inegi_marco__marco-estatal-16__2026-11-27_2026-11-27__20261127T043237Z-f98e28.geojson",
+      "sha256": "ef32d24476d732740fb1071ee874cd8c0179edb9deb63754baefb9a53ff6be18",
+      "url": "https://gaia.inegi.org.mx/wscatgeo/v2/geo/mgee/16",
+      "bytes": 884190
+    },
+    {
+      "ruta": "data/bronce/inegi_marco/2026/11/inegi_marco__marco-estatal-17__2026-11-27_2026-11-27__20261127T043237Z-f98e28.geojson",
+      "sha256": "6acdd0b60ff6100753189eecbcd4fe2e8222abdb2d48e407a83cfb7b60912959",
+      "url": "https://gaia.inegi.org.mx/wscatgeo/v2/geo/mgee/17",
+      "bytes": 157896
+    },
+    {
+      "ruta": "data/bronce/inegi_marco/2026/11/inegi_marco__marco-estatal-18__2026-11-27_2026-11-27__20261127T043237Z-f98e28.geojson",
+      "sha256": "264265c2e8ba7fa7715c47b18df9929c6dc45d0630fa6523b87af6e16dafb5b2",
+      "url": "https://gaia.inegi.org.mx/wscatgeo/v2/geo/mgee/18",
+      "bytes": 845580
+    },
+    {
+      "ruta": "data/bronce/inegi_marco/2026/11/inegi_marco__marco-estatal-19__2026-11-27_2026-11-27__20261127T043237Z-f98e28.geojson",
+      "sha256": "53a6fc400e6045109def3fbc290f723f66d0a15e57c1abd0c79a41b9d9ef0ece",
+      "url": "https://gaia.inegi.org.mx/wscatgeo/v2/geo/mgee/19",
+      "bytes": 694400
+    },
+    {
+      "ruta": "data/bronce/inegi_marco/2026/11/inegi_marco__marco-estatal-20__2026-11-27_2026-11-27__20261127T043237Z-f98e28.geojson",
+      "sha256": "8076c36b40dd738fc6c1d5dfaab060e9862e0baab837895284255f602bb9a946",
+      "url": "https://gaia.inegi.org.mx/wscatgeo/v2/geo/mgee/20",
+      "bytes": 862416
+    },
+    {
+      "ruta": "data/bronce/inegi_marco/2026/11/inegi_marco__marco-estatal-21__2026-11-27_2026-11-27__20261127T043237Z-f98e28.geojson",
+      "sha256": "a8afc802cd68c604deac8f549ce6b411f327cfe49f64c0c49142c1d8a48af23b",
+      "url": "https://gaia.inegi.org.mx/wscatgeo/v2/geo/mgee/21",
+      "bytes": 1031042
+    },
+    {
+      "ruta": "data/bronce/inegi_marco/2026/11/inegi_marco__marco-estatal-22__2026-11-27_2026-11-27__20261127T043237Z-f98e28.geojson",
+      "sha256": "b809129e4d0f6f94d924dad79ee3cab5fcfffe729f398f1727cbe2172857b90b",
+      "url": "https://gaia.inegi.org.mx/wscatgeo/v2/geo/mgee/22",
+      "bytes": 297649
+    },
+    {
+      "ruta": "data/bronce/inegi_marco/2026/11/inegi_marco__marco-estatal-23__2026-11-27_2026-11-27__20261127T043237Z-f98e28.geojson",
+      "sha256": "93841374fef9cc614fcc71e2fcff67259e62a287286fef6d649b4f7d65792d93",
+      "url": "https://gaia.inegi.org.mx/wscatgeo/v2/geo/mgee/23",
+      "bytes": 1231793
+    },
+    {
+      "ruta": "data/bronce/inegi_marco/2026/11/inegi_marco__marco-estatal-24__2026-11-27_2026-11-27__20261127T043237Z-f98e28.geojson",
+      "sha256": "0e4ee9e4f044513c31601ab52d04d0c7340a7f8125908f2a0a78e6fd4c5d04da",
+      "url": "https://gaia.inegi.org.mx/wscatgeo/v2/geo/mgee/24",
+      "bytes": 381958
+    },
+    {
+      "ruta": "data/bronce/inegi_marco/2026/11/inegi_marco__marco-estatal-25__2026-11-27_2026-11-27__20261127T043237Z-f98e28.geojson",
+      "sha256": "5018f9dbfbd3c2ddade9087e055dc46bf5e57ab6c588694b197378d68b23ee91",
+      "url": "https://gaia.inegi.org.mx/wscatgeo/v2/geo/mgee/25",
+      "bytes": 507859
+    },
+    {
+      "ruta": "data/bronce/inegi_marco/2026/11/inegi_marco__marco-estatal-26__2026-11-27_2026-11-27__20261127T043237Z-f98e28.geojson",
+      "sha256": "0c4de92771ad5191e632049d669ec5ac759a5b10fb02a9d17ac7c261ae8bdd41",
+      "url": "https://gaia.inegi.org.mx/wscatgeo/v2/geo/mgee/26",
+      "bytes": 1802130
+    },
+    {
+      "ruta": "data/bronce/inegi_marco/2026/11/inegi_marco__marco-estatal-27__2026-11-27_2026-11-27__20261127T043237Z-f98e28.geojson",
+      "sha256": "3054a215b933452f8ce8bf66ea2ee6d11f0a1a3d4da2e3c9810fb4d945a21f7d",
+      "url": "https://gaia.inegi.org.mx/wscatgeo/v2/geo/mgee/27",
+      "bytes": 602002
+    },
+    {
+      "ruta": "data/bronce/inegi_marco/2026/11/inegi_marco__marco-estatal-28__2026-11-27_2026-11-27__20261127T043237Z-f98e28.geojson",
+      "sha256": "4290d5a49f8dce6bb0a3dc98f846ceb772ccf7bd9a40d926befdd3d9c4369c4c",
+      "url": "https://gaia.inegi.org.mx/wscatgeo/v2/geo/mgee/28",
+      "bytes": 967546
+    },
+    {
+      "ruta": "data/bronce/inegi_marco/2026/11/inegi_marco__marco-estatal-29__2026-11-27_2026-11-27__20261127T043237Z-f98e28.geojson",
+      "sha256": "4fd1d29ce59b48569a49ff4ae5e9d26fc7f71179f0e0089444c760915cf5bd5a",
+      "url": "https://gaia.inegi.org.mx/wscatgeo/v2/geo/mgee/29",
+      "bytes": 170202
+    },
+    {
+      "ruta": "data/bronce/inegi_marco/2026/11/inegi_marco__marco-estatal-30__2026-11-27_2026-11-27__20261127T043237Z-f98e28.geojson",
+      "sha256": "9f5b80f7a159ae2ffaa7fe308bba04cfaaf37fb511eab03fa405a3095b3e8639",
+      "url": "https://gaia.inegi.org.mx/wscatgeo/v2/geo/mgee/30",
+      "bytes": 1588695
+    },
+    {
+      "ruta": "data/bronce/inegi_marco/2026/11/inegi_marco__marco-estatal-31__2026-11-27_2026-11-27__20261127T043237Z-f98e28.geojson",
+      "sha256": "bded09803dbdb7a4d16e3dfea27d72682e2c92f28acab0eb9a8b4962a2b79b27",
+      "url": "https://gaia.inegi.org.mx/wscatgeo/v2/geo/mgee/31",
+      "bytes": 249401
+    },
+    {
+      "ruta": "data/bronce/inegi_marco/2026/11/inegi_marco__marco-estatal-32__2026-11-27_2026-11-27__20261127T043237Z-f98e28.geojson",
+      "sha256": "8a84bba1f3bec2bef8750a7d8eedba24af55c40096edb96c0c3d8e704f1b6129",
+      "url": "https://gaia.inegi.org.mx/wscatgeo/v2/geo/mgee/32",
+      "bytes": 684198
+    }
+  ],
+  "errores": [],
+  "parametros": {
+    "entidades": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08",
+      "09",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32"
+    ],
+    "producto": "Marco Geoestadístico estatal"
+  },
+  "esquema": "tdl-manifest/1",
+  "archivos_generados": 32
+}

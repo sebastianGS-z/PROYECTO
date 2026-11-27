@@ -1,0 +1,39 @@
+{
+  "esquema": "tdl-bronce-meta/1",
+  "contenido_original": {
+    "archivo": "sniim__todos-sonora-mercado-de-abasto-francisco-i-madero-de-hermosillo__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+    "descripcion": "Bytes tal como los entregó la fuente; no se modifican."
+  },
+  "metadatos_captura": {
+    "fuente": "sniim",
+    "fuente_url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=25%2F11%2F2026&fechaFinal=25%2F11%2F2026&ProductoId=-1&OrigenId=-1&Origen=Todos&DestinoId=260&Destino=Sonora%3A+Mercado+de+Abasto+%22Francisco+I.+Madero%22+de+Hermosillo&PreciosPorId=1&RegistrosPorPagina=500",
+    "fecha_captura": "2026-11-27T04:25:01Z",
+    "identificador_ejecucion": "20261127T042248Z-ee4343",
+    "formato_original": "html",
+    "sha256": "69c4e6e716fcef4e75611ed8f80508d87689bc400d780ce220b7b2a5da4cc7f2",
+    "bytes": 45216,
+    "http_status": 200,
+    "registros_detectados": 51,
+    "estado_captura": "ok",
+    "advertencias": [],
+    "colision_nombre": false,
+    "etiqueta": "Todos__Sonora: Mercado de Abasto \"Francisco I. Madero\" de Hermosillo",
+    "producto": "Todos",
+    "producto_id": "-1",
+    "mercado": "Sonora: Mercado de Abasto \"Francisco I. Madero\" de Hermosillo",
+    "mercado_id": "260",
+    "fecha_ref_inicio": "2026-11-25",
+    "fecha_ref_fin": "2026-11-25",
+    "parametros": {
+      "fechaInicio": "25/11/2026",
+      "fechaFinal": "25/11/2026",
+      "ProductoId": "-1",
+      "OrigenId": "-1",
+      "Origen": "Todos",
+      "DestinoId": "260",
+      "Destino": "Sonora: Mercado de Abasto \"Francisco I. Madero\" de Hermosillo",
+      "PreciosPorId": "1",
+      "RegistrosPorPagina": "500"
+    }
+  }
+}

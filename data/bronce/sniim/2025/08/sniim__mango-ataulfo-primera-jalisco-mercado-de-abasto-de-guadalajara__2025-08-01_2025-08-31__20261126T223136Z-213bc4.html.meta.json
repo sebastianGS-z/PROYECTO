@@ -1,0 +1,39 @@
+{
+  "esquema": "tdl-bronce-meta/1",
+  "contenido_original": {
+    "archivo": "sniim__mango-ataulfo-primera-jalisco-mercado-de-abasto-de-guadalajara__2025-08-01_2025-08-31__20261126T223136Z-213bc4.html",
+    "descripcion": "Bytes tal como los entregó la fuente; no se modifican."
+  },
+  "metadatos_captura": {
+    "fuente": "sniim",
+    "fuente_url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F08%2F2025&fechaFinal=31%2F08%2F2025&ProductoId=465&OrigenId=-1&Origen=Todos&DestinoId=140&Destino=Jalisco%3A+Mercado+de+Abasto+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+    "fecha_captura": "2026-11-26T22:33:08Z",
+    "identificador_ejecucion": "20261126T223136Z-213bc4",
+    "formato_original": "html",
+    "sha256": "72643d5c00c7e2fc9265c993daeea2fdc90088b52b46bd54aef5070397b71c39",
+    "bytes": 26187,
+    "http_status": 200,
+    "registros_detectados": 21,
+    "estado_captura": "ok",
+    "advertencias": [],
+    "colision_nombre": false,
+    "etiqueta": "Mango Ataulfo - Primera__Jalisco: Mercado de Abasto de Guadalajara",
+    "producto": "Mango Ataulfo - Primera",
+    "producto_id": "465",
+    "mercado": "Jalisco: Mercado de Abasto de Guadalajara",
+    "mercado_id": "140",
+    "fecha_ref_inicio": "2025-08-01",
+    "fecha_ref_fin": "2025-08-31",
+    "parametros": {
+      "fechaInicio": "01/08/2025",
+      "fechaFinal": "31/08/2025",
+      "ProductoId": "465",
+      "OrigenId": "-1",
+      "Origen": "Todos",
+      "DestinoId": "140",
+      "Destino": "Jalisco: Mercado de Abasto de Guadalajara",
+      "PreciosPorId": "1",
+      "RegistrosPorPagina": "500"
+    }
+  }
+}

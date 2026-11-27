@@ -1,0 +1,7 @@
+producto,mercado,periodos_esperados,periodos_con_datos,cumple_36
+guayaba,colima,36,36,True
+guayaba,guadalajara,36,36,True
+mango_ataulfo,colima,36,0,False
+mango_ataulfo,guadalajara,36,10,False
+tamarindo,colima,36,36,True
+tamarindo,guadalajara,36,36,True

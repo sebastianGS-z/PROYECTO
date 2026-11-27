@@ -1,0 +1,29 @@
+{
+  "esquema": "tdl-bronce-meta/1",
+  "contenido_original": {
+    "archivo": "inegi_marco__marco-estatal-21__2026-11-27_2026-11-27__20261127T043237Z-f98e28.geojson",
+    "descripcion": "Bytes tal como los entregó la fuente; no se modifican."
+  },
+  "metadatos_captura": {
+    "fuente": "inegi_marco",
+    "fuente_url": "https://gaia.inegi.org.mx/wscatgeo/v2/geo/mgee/21",
+    "fecha_captura": "2026-11-27T04:33:53Z",
+    "identificador_ejecucion": "20261127T043237Z-f98e28",
+    "formato_original": "geojson",
+    "sha256": "a8afc802cd68c604deac8f549ce6b411f327cfe49f64c0c49142c1d8a48af23b",
+    "bytes": 1031042,
+    "http_status": 200,
+    "registros_detectados": 1,
+    "estado_captura": "ok",
+    "advertencias": [],
+    "colision_nombre": false,
+    "etiqueta": "marco-estatal-21",
+    "tipo": "marco-estatal",
+    "cve_ent": "21",
+    "nombre_entidad": "Puebla",
+    "producto": "Marco Geoestadístico estatal",
+    "edicion_geometria": "INEGI. Marco Geoestadístico, diciembre de 2025",
+    "fecha_ref_inicio": "2026-11-27",
+    "fecha_ref_fin": "2026-11-27"
+  }
+}

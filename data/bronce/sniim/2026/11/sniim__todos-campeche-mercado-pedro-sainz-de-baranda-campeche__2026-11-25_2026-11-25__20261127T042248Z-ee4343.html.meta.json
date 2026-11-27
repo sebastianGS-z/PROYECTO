@@ -1,0 +1,39 @@
+{
+  "esquema": "tdl-bronce-meta/1",
+  "contenido_original": {
+    "archivo": "sniim__todos-campeche-mercado-pedro-sainz-de-baranda-campeche__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+    "descripcion": "Bytes tal como los entregó la fuente; no se modifican."
+  },
+  "metadatos_captura": {
+    "fuente": "sniim",
+    "fuente_url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=25%2F11%2F2026&fechaFinal=25%2F11%2F2026&ProductoId=-1&OrigenId=-1&Origen=Todos&DestinoId=40&Destino=Campeche%3A+Mercado+%22Pedro+S%C3%A1inz+de+Baranda%22%2C+Campeche&PreciosPorId=1&RegistrosPorPagina=500",
+    "fecha_captura": "2026-11-27T04:23:10Z",
+    "identificador_ejecucion": "20261127T042248Z-ee4343",
+    "formato_original": "html",
+    "sha256": "9ea71921304c027ea70c8ceeaaa2c0122bf5166390c026eefa42b70802915db9",
+    "bytes": 48541,
+    "http_status": 200,
+    "registros_detectados": 55,
+    "estado_captura": "ok",
+    "advertencias": [],
+    "colision_nombre": false,
+    "etiqueta": "Todos__Campeche: Mercado \"Pedro Sáinz de Baranda\", Campeche",
+    "producto": "Todos",
+    "producto_id": "-1",
+    "mercado": "Campeche: Mercado \"Pedro Sáinz de Baranda\", Campeche",
+    "mercado_id": "40",
+    "fecha_ref_inicio": "2026-11-25",
+    "fecha_ref_fin": "2026-11-25",
+    "parametros": {
+      "fechaInicio": "25/11/2026",
+      "fechaFinal": "25/11/2026",
+      "ProductoId": "-1",
+      "OrigenId": "-1",
+      "Origen": "Todos",
+      "DestinoId": "40",
+      "Destino": "Campeche: Mercado \"Pedro Sáinz de Baranda\", Campeche",
+      "PreciosPorId": "1",
+      "RegistrosPorPagina": "500"
+    }
+  }
+}

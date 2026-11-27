@@ -1,0 +1,26 @@
+{
+  "esquema": "tdl-bronce-meta/1",
+  "contenido_original": {
+    "archivo": "nominatim_mercados__centros-ciudades-mercados-sniim__2026-11-27_2026-11-27__20261127T043117Z-35e545.geojson",
+    "descripcion": "Bytes tal como los entregó la fuente; no se modifican."
+  },
+  "metadatos_captura": {
+    "fuente": "OpenStreetMap Nominatim",
+    "fuente_url": "https://nominatim.openstreetmap.org/search",
+    "fecha_captura": "2026-11-27T04:32:37Z",
+    "identificador_ejecucion": "20261127T043117Z-35e545",
+    "formato_original": "geojson",
+    "sha256": "e1c85f7779cdd4ec6ceb83fff79dd0c67d857649d206684a6c9abb226e7e4b0f",
+    "bytes": 20137,
+    "http_status": 200,
+    "registros_detectados": 46,
+    "estado_captura": "ok",
+    "advertencias": [],
+    "colision_nombre": false,
+    "etiqueta": "centros-ciudades-mercados-sniim",
+    "tipo": "geocodificacion",
+    "fecha_ref_inicio": "2026-11-27",
+    "fecha_ref_fin": "2026-11-27",
+    "politica": "máximo 1 solicitud por segundo; resultados cacheados para uso offline"
+  }
+}

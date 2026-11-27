@@ -1,0 +1,859 @@
+{
+  "run_id": "20261127T042248Z-ee4343",
+  "fuente": "sniim_catalogo",
+  "modo": "diaria",
+  "disparador": "local",
+  "inicio": "2026-11-27T04:22:51Z",
+  "fin": "2026-11-27T04:25:31Z",
+  "duracion_s": 159.75,
+  "estado": "exitosa",
+  "solicitudes": 0,
+  "registros": 2130,
+  "consultas": [
+    {
+      "mercado_id": "10",
+      "mercado": "Aguascalientes: Centro Comercial Agropecuario de Aguascalientes",
+      "fecha": "2026-11-25",
+      "estado": "ok",
+      "registros": 56,
+      "archivo": "sniim__todos-aguascalientes-centro-comercial-agropecuario-de-aguascalientes__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "mercado_id": "33",
+      "mercado": "Baja California : Central de Abasto INDIA, Tijuana",
+      "fecha": "2026-11-25",
+      "estado": "ok",
+      "registros": 70,
+      "archivo": "sniim__todos-baja-california-central-de-abasto-india-tijuana__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "mercado_id": "20",
+      "mercado": "Baja California Sur: Unión de Comerciantes de La Paz",
+      "fecha": "2026-11-25",
+      "estado": "ok",
+      "registros": 51,
+      "archivo": "sniim__todos-baja-california-sur-union-de-comerciantes-de-la-paz__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "mercado_id": "40",
+      "mercado": "Campeche: Mercado \"Pedro Sáinz de Baranda\", Campeche",
+      "fecha": "2026-11-25",
+      "estado": "ok",
+      "registros": 55,
+      "archivo": "sniim__todos-campeche-mercado-pedro-sainz-de-baranda-campeche__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "mercado_id": "50",
+      "mercado": "Coahuila: Central de Abasto de La Laguna, Torreón",
+      "fecha": "2026-11-25",
+      "estado": "ok",
+      "registros": 65,
+      "archivo": "sniim__todos-coahuila-central-de-abasto-de-la-laguna-torreon__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "mercado_id": "80",
+      "mercado": "Colima: Centros de distribución de Colima",
+      "fecha": "2026-11-25",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__todos-colima-centros-de-distribucion-de-colima__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "mercado_id": "70",
+      "mercado": "Chiapas: Central de Abasto de Tuxtla Gutiérrez",
+      "fecha": "2026-11-25",
+      "estado": "ok",
+      "registros": 44,
+      "archivo": "sniim__todos-chiapas-central-de-abasto-de-tuxtla-gutierrez__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "mercado_id": "71",
+      "mercado": "Chiapas: Tapachula",
+      "fecha": "2026-11-25",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__todos-chiapas-tapachula__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "mercado_id": "61",
+      "mercado": "Chihuahua: Central de Abasto de Chihuahua",
+      "fecha": "2026-11-25",
+      "estado": "ok",
+      "registros": 28,
+      "archivo": "sniim__todos-chihuahua-central-de-abasto-de-chihuahua__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "mercado_id": "63",
+      "mercado": "Chihuahua: Mercado de Abasto de Cd. Juárez",
+      "fecha": "2026-11-25",
+      "estado": "ok",
+      "registros": 29,
+      "archivo": "sniim__todos-chihuahua-mercado-de-abasto-de-cd-juarez__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "mercado_id": "100",
+      "mercado": "DF: Central de Abasto de Iztapalapa DF",
+      "fecha": "2026-11-25",
+      "estado": "ok",
+      "registros": 80,
+      "archivo": "sniim__todos-df-central-de-abasto-de-iztapalapa-df__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "mercado_id": "102",
+      "mercado": "Durango: Central de Abasto \"Francisco Villa\"",
+      "fecha": "2026-11-25",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__todos-durango-central-de-abasto-francisco-villa__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "mercado_id": "101",
+      "mercado": "Durango: Centro de Distribución y Abasto de Gómez Palacio",
+      "fecha": "2026-11-25",
+      "estado": "ok",
+      "registros": 57,
+      "archivo": "sniim__todos-durango-centro-de-distribucion-y-abasto-de-gomez-palacio__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "mercado_id": "110",
+      "mercado": "Guanajuato: Central de Abasto de León",
+      "fecha": "2026-11-25",
+      "estado": "ok",
+      "registros": 55,
+      "archivo": "sniim__todos-guanajuato-central-de-abasto-de-leon__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "mercado_id": "112",
+      "mercado": "Guanajuato: Mercado de Abasto de Celaya (\"Benito Juárez\")",
+      "fecha": "2026-11-25",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__todos-guanajuato-mercado-de-abasto-de-celaya-benito-juarez__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "mercado_id": "111",
+      "mercado": "Guanajuato: Módulo de Abasto Irapuato",
+      "fecha": "2026-11-25",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__todos-guanajuato-modulo-de-abasto-irapuato__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "mercado_id": "121",
+      "mercado": "Guerrero: Central de Abastos de Acapulco",
+      "fecha": "2026-11-25",
+      "estado": "ok",
+      "registros": 44,
+      "archivo": "sniim__todos-guerrero-central-de-abastos-de-acapulco__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "mercado_id": "122",
+      "mercado": "Guerrero: Chilpancingo de los Bravo",
+      "fecha": "2026-11-25",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__todos-guerrero-chilpancingo-de-los-bravo__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "mercado_id": "130",
+      "mercado": "Hidalgo: Central de Abasto de Pachuca",
+      "fecha": "2026-11-25",
+      "estado": "ok",
+      "registros": 48,
+      "archivo": "sniim__todos-hidalgo-central-de-abasto-de-pachuca__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "mercado_id": "140",
+      "mercado": "Jalisco: Mercado de Abasto de Guadalajara",
+      "fecha": "2026-11-25",
+      "estado": "ok",
+      "registros": 88,
+      "archivo": "sniim__todos-jalisco-mercado-de-abasto-de-guadalajara__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "mercado_id": "141",
+      "mercado": "Jalisco: Mercado Felipe Ángeles de Guadalajara",
+      "fecha": "2026-11-25",
+      "estado": "ok",
+      "registros": 84,
+      "archivo": "sniim__todos-jalisco-mercado-felipe-angeles-de-guadalajara__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "mercado_id": "151",
+      "mercado": "México: Central de Abasto de Ecatepec",
+      "fecha": "2026-11-25",
+      "estado": "ok",
+      "registros": 62,
+      "archivo": "sniim__todos-mexico-central-de-abasto-de-ecatepec__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "mercado_id": "150",
+      "mercado": "México: Central de Abasto de Toluca",
+      "fecha": "2026-11-25",
+      "estado": "ok",
+      "registros": 55,
+      "archivo": "sniim__todos-mexico-central-de-abasto-de-toluca__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "mercado_id": "160",
+      "mercado": "Michoacán: Mercado de Abasto de Morelia",
+      "fecha": "2026-11-25",
+      "estado": "ok",
+      "registros": 85,
+      "archivo": "sniim__todos-michoacan-mercado-de-abasto-de-morelia__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "mercado_id": "170",
+      "mercado": "Morelos: Central de Abasto de Cuautla",
+      "fecha": "2026-11-25",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__todos-morelos-central-de-abasto-de-cuautla__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "mercado_id": "172",
+      "mercado": "Morelos: Mercado \"Adolfo López Mateos\" de Cuernavaca",
+      "fecha": "2026-11-25",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__todos-morelos-mercado-adolfo-lopez-mateos-de-cuernavaca__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "mercado_id": "180",
+      "mercado": "Nayarit: Mercado de abasto 'Adolfo López Mateos' de Tepic",
+      "fecha": "2026-11-25",
+      "estado": "ok",
+      "registros": 80,
+      "archivo": "sniim__todos-nayarit-mercado-de-abasto-adolfo-lopez-mateos-de-tepic__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "mercado_id": "181",
+      "mercado": "Nayarit: Nayarabastos de Tepic",
+      "fecha": "2026-11-25",
+      "estado": "ok",
+      "registros": 80,
+      "archivo": "sniim__todos-nayarit-nayarabastos-de-tepic__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "mercado_id": "190",
+      "mercado": "Nuevo León: Mercado de Abasto \"Estrella\" de San Nicolás de los Garza",
+      "fecha": "2026-11-25",
+      "estado": "ok",
+      "registros": 93,
+      "archivo": "sniim__todos-nuevo-leon-mercado-de-abasto-estrella-de-san-nicolas-de-los-garza__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "mercado_id": "200",
+      "mercado": "Oaxaca: Módulo de Abasto de Oaxaca",
+      "fecha": "2026-11-25",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__todos-oaxaca-modulo-de-abasto-de-oaxaca__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "mercado_id": "210",
+      "mercado": "Puebla: Central de Abasto de Puebla",
+      "fecha": "2026-11-25",
+      "estado": "ok",
+      "registros": 65,
+      "archivo": "sniim__todos-puebla-central-de-abasto-de-puebla__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "mercado_id": "220",
+      "mercado": "Querétaro: Mercado de Abasto de Querétaro",
+      "fecha": "2026-11-25",
+      "estado": "ok",
+      "registros": 60,
+      "archivo": "sniim__todos-queretaro-mercado-de-abasto-de-queretaro__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "mercado_id": "230",
+      "mercado": "Quintana Roo: Mercado de Chetumal, Quintana Roo",
+      "fecha": "2026-11-25",
+      "estado": "ok",
+      "registros": 69,
+      "archivo": "sniim__todos-quintana-roo-mercado-de-chetumal-quintana-roo__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "mercado_id": "231",
+      "mercado": "Quintana Roo: Módulo de Abasto Cancún",
+      "fecha": "2026-11-25",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__todos-quintana-roo-modulo-de-abasto-cancun__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "mercado_id": "240",
+      "mercado": "San Luis Potosí: Centro de Abasto de San Luis Potosí",
+      "fecha": "2026-11-25",
+      "estado": "ok",
+      "registros": 47,
+      "archivo": "sniim__todos-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "mercado_id": "250",
+      "mercado": "Sinaloa: Central de Abasto de Culiacán",
+      "fecha": "2026-11-25",
+      "estado": "ok",
+      "registros": 48,
+      "archivo": "sniim__todos-sinaloa-central-de-abasto-de-culiacan__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "mercado_id": "252",
+      "mercado": "Sinaloa: Zona de Abasto de Mazatlán",
+      "fecha": "2026-11-25",
+      "estado": "ok",
+      "registros": 37,
+      "archivo": "sniim__todos-sinaloa-zona-de-abasto-de-mazatlan__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "mercado_id": "261",
+      "mercado": "Sonora: Central de Abasto de Cd. Obregón",
+      "fecha": "2026-11-25",
+      "estado": "ok",
+      "registros": 52,
+      "archivo": "sniim__todos-sonora-central-de-abasto-de-cd-obregon__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "mercado_id": "260",
+      "mercado": "Sonora: Mercado de Abasto \"Francisco I. Madero\" de Hermosillo",
+      "fecha": "2026-11-25",
+      "estado": "ok",
+      "registros": 51,
+      "archivo": "sniim__todos-sonora-mercado-de-abasto-francisco-i-madero-de-hermosillo__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "mercado_id": "270",
+      "mercado": "Tabasco: Central de Abasto de Villahermosa",
+      "fecha": "2026-11-25",
+      "estado": "ok",
+      "registros": 54,
+      "archivo": "sniim__todos-tabasco-central-de-abasto-de-villahermosa__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "mercado_id": "281",
+      "mercado": "Tamaulipas: Módulo de Abasto de Reynosa",
+      "fecha": "2026-11-25",
+      "estado": "ok",
+      "registros": 39,
+      "archivo": "sniim__todos-tamaulipas-modulo-de-abasto-de-reynosa__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "mercado_id": "280",
+      "mercado": "Tamaulipas: Módulo de Abasto de Tampico, Madero y Altamira",
+      "fecha": "2026-11-25",
+      "estado": "ok",
+      "registros": 33,
+      "archivo": "sniim__todos-tamaulipas-modulo-de-abasto-de-tampico-madero-y-altamira__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "mercado_id": "301",
+      "mercado": "Veracruz: Central de Abasto de Jalapa",
+      "fecha": "2026-11-25",
+      "estado": "ok",
+      "registros": 61,
+      "archivo": "sniim__todos-veracruz-central-de-abasto-de-jalapa__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "mercado_id": "302",
+      "mercado": "Veracruz: Central de Abasto de Minatitlán",
+      "fecha": "2026-11-25",
+      "estado": "ok",
+      "registros": 54,
+      "archivo": "sniim__todos-veracruz-central-de-abasto-de-minatitlan__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "mercado_id": "306",
+      "mercado": "Veracruz: Mercado Malibrán",
+      "fecha": "2026-11-25",
+      "estado": "ok",
+      "registros": 63,
+      "archivo": "sniim__todos-veracruz-mercado-malibran__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "mercado_id": "310",
+      "mercado": "Yucatán: Central de Abasto de Mérida",
+      "fecha": "2026-11-25",
+      "estado": "ok",
+      "registros": 38,
+      "archivo": "sniim__todos-yucatan-central-de-abasto-de-merida__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "mercado_id": "311",
+      "mercado": "Yucatán: Centro Mayorista Oxkutzcab",
+      "fecha": "2026-11-25",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__todos-yucatan-centro-mayorista-oxkutzcab__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "mercado_id": "312",
+      "mercado": "Yucatán: Mercado \"Casa del Pueblo\"",
+      "fecha": "2026-11-25",
+      "estado": "ok",
+      "registros": 16,
+      "archivo": "sniim__todos-yucatan-mercado-casa-del-pueblo__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "mercado_id": "320",
+      "mercado": "Zacatecas: Mercado de Abasto de Zacatecas",
+      "fecha": "2026-11-25",
+      "estado": "ok",
+      "registros": 34,
+      "archivo": "sniim__todos-zacatecas-mercado-de-abasto-de-zacatecas__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "error": null,
+      "advertencias": []
+    }
+  ],
+  "archivos": [
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__todos-aguascalientes-centro-comercial-agropecuario-de-aguascalientes__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "sha256": "3fcbcf498dfc1d9185385457388919df92bcfe060f7201f75cc3969e13654d43",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=25%2F11%2F2026&fechaFinal=25%2F11%2F2026&ProductoId=-1&OrigenId=-1&Origen=Todos&DestinoId=10&Destino=Aguascalientes%3A+Centro+Comercial+Agropecuario+de+Aguascalientes&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 48762
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__todos-baja-california-central-de-abasto-india-tijuana__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "sha256": "6b0398432d5c1b75242836fd8a9dde61a4dbfe9b38b943331fcf25a682549ab4",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=25%2F11%2F2026&fechaFinal=25%2F11%2F2026&ProductoId=-1&OrigenId=-1&Origen=Todos&DestinoId=33&Destino=Baja+California+%3A+Central+de+Abasto+INDIA%2C+Tijuana&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 57707
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__todos-baja-california-sur-union-de-comerciantes-de-la-paz__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "sha256": "b32473992f0a65aab74d23ed959fbecb649edd364fc54e9dd6401ef12cdffe11",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=25%2F11%2F2026&fechaFinal=25%2F11%2F2026&ProductoId=-1&OrigenId=-1&Origen=Todos&DestinoId=20&Destino=Baja+California+Sur%3A+Uni%C3%B3n+de+Comerciantes+de+La+Paz&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 45520
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__todos-campeche-mercado-pedro-sainz-de-baranda-campeche__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "sha256": "9ea71921304c027ea70c8ceeaaa2c0122bf5166390c026eefa42b70802915db9",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=25%2F11%2F2026&fechaFinal=25%2F11%2F2026&ProductoId=-1&OrigenId=-1&Origen=Todos&DestinoId=40&Destino=Campeche%3A+Mercado+%22Pedro+S%C3%A1inz+de+Baranda%22%2C+Campeche&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 48541
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__todos-coahuila-central-de-abasto-de-la-laguna-torreon__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "sha256": "c8aa18590cb84c52eac88f3b292d3d94922b0db6f975bed81ba0f560151fda13",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=25%2F11%2F2026&fechaFinal=25%2F11%2F2026&ProductoId=-1&OrigenId=-1&Origen=Todos&DestinoId=50&Destino=Coahuila%3A+Central+de+Abasto+de+La+Laguna%2C+Torre%C3%B3n&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 53994
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__todos-colima-centros-de-distribucion-de-colima__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "sha256": "c6776959c25f3950ee5c8b020c313cef87ad28ec5d1aea670ab8e61d42a0e3dc",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=25%2F11%2F2026&fechaFinal=25%2F11%2F2026&ProductoId=-1&OrigenId=-1&Origen=Todos&DestinoId=80&Destino=Colima%3A+Centros+de+distribuci%C3%B3n+de+Colima&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9428
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__todos-chiapas-central-de-abasto-de-tuxtla-gutierrez__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "sha256": "0834c906ec9ea1a51afb01689fae3e6ad07ada4bb74c427dbffa830a65e60d29",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=25%2F11%2F2026&fechaFinal=25%2F11%2F2026&ProductoId=-1&OrigenId=-1&Origen=Todos&DestinoId=70&Destino=Chiapas%3A+Central+de+Abasto+de+Tuxtla+Guti%C3%A9rrez&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 40643
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__todos-chiapas-tapachula__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "sha256": "b7d44429788db138d5d4922e9fe6724c3a4f29b83b0e841a07bca2052e65709a",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=25%2F11%2F2026&fechaFinal=25%2F11%2F2026&ProductoId=-1&OrigenId=-1&Origen=Todos&DestinoId=71&Destino=Chiapas%3A+Tapachula&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9400
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__todos-chihuahua-central-de-abasto-de-chihuahua__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "sha256": "859b13c17e50b96f18502a58322dbeef4f269caeb6872475e4de7f14037a98a6",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=25%2F11%2F2026&fechaFinal=25%2F11%2F2026&ProductoId=-1&OrigenId=-1&Origen=Todos&DestinoId=61&Destino=Chihuahua%3A+Central+de+Abasto+de+Chihuahua&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 31287
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__todos-chihuahua-mercado-de-abasto-de-cd-juarez__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "sha256": "6cb4dc9f82a72b52827672ee3b5b594c378c195bb72a475ea12ac08888bfe0be",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=25%2F11%2F2026&fechaFinal=25%2F11%2F2026&ProductoId=-1&OrigenId=-1&Origen=Todos&DestinoId=63&Destino=Chihuahua%3A+Mercado+de+Abasto+de+Cd.+Ju%C3%A1rez&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 31505
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__todos-df-central-de-abasto-de-iztapalapa-df__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "sha256": "675d21b377f3151f76cc4c587a412a510a700660184f33d9f82a08b5b4ed9839",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=25%2F11%2F2026&fechaFinal=25%2F11%2F2026&ProductoId=-1&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 63908
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__todos-durango-central-de-abasto-francisco-villa__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "sha256": "5f87729ff2ef9da69a9a7fee18dc9ac74e2c9008c60f4734ec79f1af766d80b8",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=25%2F11%2F2026&fechaFinal=25%2F11%2F2026&ProductoId=-1&OrigenId=-1&Origen=Todos&DestinoId=102&Destino=Durango%3A+Central+de+Abasto+%22Francisco+Villa%22&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9431
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__todos-durango-centro-de-distribucion-y-abasto-de-gomez-palacio__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "sha256": "04befeecad4dc01c98a2dc523e7136d7d041e8627015aef7cd7433fb41645203",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=25%2F11%2F2026&fechaFinal=25%2F11%2F2026&ProductoId=-1&OrigenId=-1&Origen=Todos&DestinoId=101&Destino=Durango%3A+Centro+de+Distribuci%C3%B3n+y+Abasto+de+G%C3%B3mez+Palacio&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 49014
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__todos-guanajuato-central-de-abasto-de-leon__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "sha256": "edca818856b870d5bf987b59818ba1cabe0cb406eb671734cf11f3c6388bacca",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=25%2F11%2F2026&fechaFinal=25%2F11%2F2026&ProductoId=-1&OrigenId=-1&Origen=Todos&DestinoId=110&Destino=Guanajuato%3A+Central+de+Abasto+de+Le%C3%B3n&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 47680
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__todos-guanajuato-mercado-de-abasto-de-celaya-benito-juarez__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "sha256": "5f8f2d173b1ce3adc7159c1fe32b6fc0aef719e804cc7c0a618073d6d8b548e5",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=25%2F11%2F2026&fechaFinal=25%2F11%2F2026&ProductoId=-1&OrigenId=-1&Origen=Todos&DestinoId=112&Destino=Guanajuato%3A+Mercado+de+Abasto+de+Celaya+%28%22Benito+Ju%C3%A1rez%22%29&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9449
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__todos-guanajuato-modulo-de-abasto-irapuato__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "sha256": "598f51d68b6e01d1dd39aac192f62ea773bfb84edfd5cd427ef07cbf3d3943e3",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=25%2F11%2F2026&fechaFinal=25%2F11%2F2026&ProductoId=-1&OrigenId=-1&Origen=Todos&DestinoId=111&Destino=Guanajuato%3A+M%C3%B3dulo+de+Abasto+Irapuato&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9425
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__todos-guerrero-central-de-abastos-de-acapulco__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "sha256": "8e46363b2e5f902ee6821775a6babdf78f867a45b53121cb6ee866bff8f50c59",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=25%2F11%2F2026&fechaFinal=25%2F11%2F2026&ProductoId=-1&OrigenId=-1&Origen=Todos&DestinoId=121&Destino=Guerrero%3A+Central+de+Abastos+de+Acapulco&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 40531
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__todos-guerrero-chilpancingo-de-los-bravo__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "sha256": "0dad4fc8a6c6d85769180ea7c256715c7d30b1fc265fca36123c3b0d46a84ff5",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=25%2F11%2F2026&fechaFinal=25%2F11%2F2026&ProductoId=-1&OrigenId=-1&Origen=Todos&DestinoId=122&Destino=Guerrero%3A+Chilpancingo+de+los+Bravo&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9418
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__todos-hidalgo-central-de-abasto-de-pachuca__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "sha256": "f7ff98977262138a1c83fc244628e170f48e25b12247a42d280454aae16abc6a",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=25%2F11%2F2026&fechaFinal=25%2F11%2F2026&ProductoId=-1&OrigenId=-1&Origen=Todos&DestinoId=130&Destino=Hidalgo%3A+Central+de+Abasto+de+Pachuca&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 43597
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__todos-jalisco-mercado-de-abasto-de-guadalajara__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "sha256": "3a013833c7af3638781a17a0351cd0c7106c3b457b6a625bce4e201a1e429393",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=25%2F11%2F2026&fechaFinal=25%2F11%2F2026&ProductoId=-1&OrigenId=-1&Origen=Todos&DestinoId=140&Destino=Jalisco%3A+Mercado+de+Abasto+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 69381
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__todos-jalisco-mercado-felipe-angeles-de-guadalajara__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "sha256": "6854e4c9d6f9fcc027b6207be70de422cff8cfee44ef1fdc03eb9c72a2d15d27",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=25%2F11%2F2026&fechaFinal=25%2F11%2F2026&ProductoId=-1&OrigenId=-1&Origen=Todos&DestinoId=141&Destino=Jalisco%3A+Mercado+Felipe+%C3%81ngeles+de+Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 66839
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__todos-mexico-central-de-abasto-de-ecatepec__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "sha256": "44bc4ae41f3ef1f52be170a03f0d8f1a453758e24549a67f7c82f3c5bc70b6aa",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=25%2F11%2F2026&fechaFinal=25%2F11%2F2026&ProductoId=-1&OrigenId=-1&Origen=Todos&DestinoId=151&Destino=M%C3%A9xico%3A+Central+de+Abasto+de+Ecatepec&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 53081
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__todos-mexico-central-de-abasto-de-toluca__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "sha256": "00d6eaa476ef16e2e7996544b51c52ff546e44fb60dcdc0f368bc9125e5007d9",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=25%2F11%2F2026&fechaFinal=25%2F11%2F2026&ProductoId=-1&OrigenId=-1&Origen=Todos&DestinoId=150&Destino=M%C3%A9xico%3A+Central+de+Abasto+de+Toluca&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 48286
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__todos-michoacan-mercado-de-abasto-de-morelia__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "sha256": "4ddffe424edc903cc357ad5f9cf1b31708071b4a09865d279a382099644522c5",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=25%2F11%2F2026&fechaFinal=25%2F11%2F2026&ProductoId=-1&OrigenId=-1&Origen=Todos&DestinoId=160&Destino=Michoac%C3%A1n%3A+Mercado+de+Abasto+de+Morelia&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 66309
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__todos-morelos-central-de-abasto-de-cuautla__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "sha256": "50fdc50364d7a5348c83d677d400a7440289c6bf25bbc596356cc181e520315c",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=25%2F11%2F2026&fechaFinal=25%2F11%2F2026&ProductoId=-1&OrigenId=-1&Origen=Todos&DestinoId=170&Destino=Morelos%3A+Central+de+Abasto+de+Cuautla&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9420
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__todos-morelos-mercado-adolfo-lopez-mateos-de-cuernavaca__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "sha256": "71676a16683580d9d3631c46e23c78b3b3e3c9147c9c72a0ad9efde7f1531eee",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=25%2F11%2F2026&fechaFinal=25%2F11%2F2026&ProductoId=-1&OrigenId=-1&Origen=Todos&DestinoId=172&Destino=Morelos%3A+Mercado+%22Adolfo+L%C3%B3pez+Mateos%22+de+Cuernavaca&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9444
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__todos-nayarit-mercado-de-abasto-adolfo-lopez-mateos-de-tepic__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "sha256": "db831557be8a64578d55ce2cc8705d6d280133490284b537d78edfd71964618b",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=25%2F11%2F2026&fechaFinal=25%2F11%2F2026&ProductoId=-1&OrigenId=-1&Origen=Todos&DestinoId=180&Destino=Nayarit%3A+Mercado+de+abasto+%27Adolfo+L%C3%B3pez+Mateos%27+de+Tepic&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 62069
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__todos-nayarit-nayarabastos-de-tepic__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "sha256": "3eded1e23c462c36385564f9bfbff709aa00c976a610ca2b0b25dd51612cfdce",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=25%2F11%2F2026&fechaFinal=25%2F11%2F2026&ProductoId=-1&OrigenId=-1&Origen=Todos&DestinoId=181&Destino=Nayarit%3A+Nayarabastos+de+Tepic&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 62031
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__todos-nuevo-leon-mercado-de-abasto-estrella-de-san-nicolas-de-los-garza__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "sha256": "f787c664d0dc80c9a61914b9c5e69bcc42ff182cce54401e5a723231d2a33756",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=25%2F11%2F2026&fechaFinal=25%2F11%2F2026&ProductoId=-1&OrigenId=-1&Origen=Todos&DestinoId=190&Destino=Nuevo+Le%C3%B3n%3A+Mercado+de+Abasto+%22Estrella%22+de+San+Nicol%C3%A1s+de+los+Garza&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 71885
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__todos-oaxaca-modulo-de-abasto-de-oaxaca__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "sha256": "7ebc5213507bf08b734d945e4b9d0cdabc1a001f9439b15a260e5688d1848189",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=25%2F11%2F2026&fechaFinal=25%2F11%2F2026&ProductoId=-1&OrigenId=-1&Origen=Todos&DestinoId=200&Destino=Oaxaca%3A+M%C3%B3dulo+de+Abasto+de+Oaxaca&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9422
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__todos-puebla-central-de-abasto-de-puebla__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "sha256": "b2e1bdb6608914af990ad27faee0d5f00a2f598d6bc84119ec38a60c8cc234c5",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=25%2F11%2F2026&fechaFinal=25%2F11%2F2026&ProductoId=-1&OrigenId=-1&Origen=Todos&DestinoId=210&Destino=Puebla%3A+Central+de+Abasto+de+Puebla&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 54608
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__todos-queretaro-mercado-de-abasto-de-queretaro__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "sha256": "c9ddfcff34abb7cd7a717d3184afad4b80442673dab0fb33de656076c3c6854a",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=25%2F11%2F2026&fechaFinal=25%2F11%2F2026&ProductoId=-1&OrigenId=-1&Origen=Todos&DestinoId=220&Destino=Quer%C3%A9taro%3A+Mercado+de+Abasto+de+Quer%C3%A9taro&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 50701
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__todos-quintana-roo-mercado-de-chetumal-quintana-roo__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "sha256": "caece3bab3254d60dbf5999aaaccc6f5505c81fb4f509e3b23ba2586244930eb",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=25%2F11%2F2026&fechaFinal=25%2F11%2F2026&ProductoId=-1&OrigenId=-1&Origen=Todos&DestinoId=230&Destino=Quintana+Roo%3A+Mercado+de+Chetumal%2C+Quintana+Roo&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 56647
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__todos-quintana-roo-modulo-de-abasto-cancun__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "sha256": "0eee98ddd58d630f587713748e885c9b6315c8adf5413efeba419f7ae8d662bb",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=25%2F11%2F2026&fechaFinal=25%2F11%2F2026&ProductoId=-1&OrigenId=-1&Origen=Todos&DestinoId=231&Destino=Quintana+Roo%3A+M%C3%B3dulo+de+Abasto+Canc%C3%BAn&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9430
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__todos-san-luis-potosi-centro-de-abasto-de-san-luis-potosi__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "sha256": "7deea2a6bf900b5c1d4b904d93449d74f61b88e457bbaf51044350cdcbfe209d",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=25%2F11%2F2026&fechaFinal=25%2F11%2F2026&ProductoId=-1&OrigenId=-1&Origen=Todos&DestinoId=240&Destino=San+Luis+Potos%C3%AD%3A+Centro+de+Abasto+de+San+Luis+Potos%C3%AD&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 42833
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__todos-sinaloa-central-de-abasto-de-culiacan__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "sha256": "f7596f56ab36373b8852f4cfcc24407e212c82869c66b7f734633ad056b1dbec",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=25%2F11%2F2026&fechaFinal=25%2F11%2F2026&ProductoId=-1&OrigenId=-1&Origen=Todos&DestinoId=250&Destino=Sinaloa%3A+Central+de+Abasto+de+Culiac%C3%A1n&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 42782
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__todos-sinaloa-zona-de-abasto-de-mazatlan__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "sha256": "051cacca34cdf39ce5812a4b9c8ed4386514ad3d0115c5671269972328f395ac",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=25%2F11%2F2026&fechaFinal=25%2F11%2F2026&ProductoId=-1&OrigenId=-1&Origen=Todos&DestinoId=252&Destino=Sinaloa%3A+Zona+de+Abasto+de+Mazatl%C3%A1n&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 36537
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__todos-sonora-central-de-abasto-de-cd-obregon__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "sha256": "43214c9e65ba6d00f3a7202df3c8efcec7c06a0362870595a5dbeedc1969b44d",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=25%2F11%2F2026&fechaFinal=25%2F11%2F2026&ProductoId=-1&OrigenId=-1&Origen=Todos&DestinoId=261&Destino=Sonora%3A+Central+de+Abasto+de+Cd.+Obreg%C3%B3n&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 46135
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__todos-sonora-mercado-de-abasto-francisco-i-madero-de-hermosillo__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "sha256": "69c4e6e716fcef4e75611ed8f80508d87689bc400d780ce220b7b2a5da4cc7f2",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=25%2F11%2F2026&fechaFinal=25%2F11%2F2026&ProductoId=-1&OrigenId=-1&Origen=Todos&DestinoId=260&Destino=Sonora%3A+Mercado+de+Abasto+%22Francisco+I.+Madero%22+de+Hermosillo&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 45216
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__todos-tabasco-central-de-abasto-de-villahermosa__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "sha256": "2726271f1833e2f0477143642aec1ff1efc6c25f63444e5d67769e6e83d3928b",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=25%2F11%2F2026&fechaFinal=25%2F11%2F2026&ProductoId=-1&OrigenId=-1&Origen=Todos&DestinoId=270&Destino=Tabasco%3A+Central+de+Abasto+de+Villahermosa&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 47410
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__todos-tamaulipas-modulo-de-abasto-de-reynosa__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "sha256": "d24a89763a2f74fce51ed604d42366a9271e1ec28c457831dafb6b7f60c96f30",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=25%2F11%2F2026&fechaFinal=25%2F11%2F2026&ProductoId=-1&OrigenId=-1&Origen=Todos&DestinoId=281&Destino=Tamaulipas%3A+M%C3%B3dulo+de+Abasto+de+Reynosa&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 38539
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__todos-tamaulipas-modulo-de-abasto-de-tampico-madero-y-altamira__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "sha256": "3a5592fb4b290e6690f5ab5dbb0411d803e32e7870e5520a40fdcde91b7b8856",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=25%2F11%2F2026&fechaFinal=25%2F11%2F2026&ProductoId=-1&OrigenId=-1&Origen=Todos&DestinoId=280&Destino=Tamaulipas%3A+M%C3%B3dulo+de+Abasto+de+Tampico%2C+Madero+y+Altamira&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 34012
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__todos-veracruz-central-de-abasto-de-jalapa__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "sha256": "b0ddb9783b2b04f2c510089fe04447d3e80e7f2be9af0cebfdde8229fae48541",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=25%2F11%2F2026&fechaFinal=25%2F11%2F2026&ProductoId=-1&OrigenId=-1&Origen=Todos&DestinoId=301&Destino=Veracruz%3A+Central+de+Abasto+de+Jalapa&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 51411
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__todos-veracruz-central-de-abasto-de-minatitlan__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "sha256": "4038774c706ad003e5f539a8c387f24a13dff19d11a3ea7a1a3714066f29c92e",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=25%2F11%2F2026&fechaFinal=25%2F11%2F2026&ProductoId=-1&OrigenId=-1&Origen=Todos&DestinoId=302&Destino=Veracruz%3A+Central+de+Abasto+de+Minatitl%C3%A1n&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 46953
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__todos-veracruz-mercado-malibran__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "sha256": "c54fa702be24d4f7c351b583e981299c3944e18607ad9fd29205bf2b40738cc7",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=25%2F11%2F2026&fechaFinal=25%2F11%2F2026&ProductoId=-1&OrigenId=-1&Origen=Todos&DestinoId=306&Destino=Veracruz%3A+Mercado+Malibr%C3%A1n&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 52691
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__todos-yucatan-central-de-abasto-de-merida__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "sha256": "0196d9320e4242090125dc7cab8984709cdbafca77f2eda4b2ce9d154f60759e",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=25%2F11%2F2026&fechaFinal=25%2F11%2F2026&ProductoId=-1&OrigenId=-1&Origen=Todos&DestinoId=310&Destino=Yucat%C3%A1n%3A+Central+de+Abasto+de+M%C3%A9rida&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 37251
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__todos-yucatan-centro-mayorista-oxkutzcab__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "sha256": "aeea43a368c0aa465974846671496cabfaeb480a40676929d6c144487808b170",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=25%2F11%2F2026&fechaFinal=25%2F11%2F2026&ProductoId=-1&OrigenId=-1&Origen=Todos&DestinoId=311&Destino=Yucat%C3%A1n%3A+Centro+Mayorista+Oxkutzcab&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9423
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__todos-yucatan-mercado-casa-del-pueblo__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "sha256": "f4585b30e61506bd375a43a2b148af93b41747ed52e3cb5b725213882b6714f5",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=25%2F11%2F2026&fechaFinal=25%2F11%2F2026&ProductoId=-1&OrigenId=-1&Origen=Todos&DestinoId=312&Destino=Yucat%C3%A1n%3A+Mercado+%22Casa+del+Pueblo%22&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 23371
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__todos-zacatecas-mercado-de-abasto-de-zacatecas__2026-11-25_2026-11-25__20261127T042248Z-ee4343.html",
+      "sha256": "77778e812ae2ab3e4020d88c3645118a75d3b8ae59994583da96677e258c1258",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=25%2F11%2F2026&fechaFinal=25%2F11%2F2026&ProductoId=-1&OrigenId=-1&Origen=Todos&DestinoId=320&Destino=Zacatecas%3A+Mercado+de+Abasto+de+Zacatecas&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 34590
+    }
+  ],
+  "errores": [],
+  "parametros": {
+    "producto": "Todos",
+    "producto_id": "-1",
+    "fecha": "2026-11-25",
+    "mercados": [
+      "10",
+      "33",
+      "20",
+      "40",
+      "50",
+      "80",
+      "70",
+      "71",
+      "61",
+      "63",
+      "100",
+      "102",
+      "101",
+      "110",
+      "112",
+      "111",
+      "121",
+      "122",
+      "130",
+      "140",
+      "141",
+      "151",
+      "150",
+      "160",
+      "170",
+      "172",
+      "180",
+      "181",
+      "190",
+      "200",
+      "210",
+      "220",
+      "230",
+      "231",
+      "240",
+      "250",
+      "252",
+      "261",
+      "260",
+      "270",
+      "281",
+      "280",
+      "301",
+      "302",
+      "306",
+      "310",
+      "311",
+      "312",
+      "320"
+    ]
+  },
+  "esquema": "tdl-manifest/1",
+  "archivos_generados": 49
+}

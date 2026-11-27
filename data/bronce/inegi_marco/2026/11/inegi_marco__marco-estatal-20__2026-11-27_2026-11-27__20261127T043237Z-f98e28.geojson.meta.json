@@ -1,0 +1,29 @@
+{
+  "esquema": "tdl-bronce-meta/1",
+  "contenido_original": {
+    "archivo": "inegi_marco__marco-estatal-20__2026-11-27_2026-11-27__20261127T043237Z-f98e28.geojson",
+    "descripcion": "Bytes tal como los entregó la fuente; no se modifican."
+  },
+  "metadatos_captura": {
+    "fuente": "inegi_marco",
+    "fuente_url": "https://gaia.inegi.org.mx/wscatgeo/v2/geo/mgee/20",
+    "fecha_captura": "2026-11-27T04:33:48Z",
+    "identificador_ejecucion": "20261127T043237Z-f98e28",
+    "formato_original": "geojson",
+    "sha256": "8076c36b40dd738fc6c1d5dfaab060e9862e0baab837895284255f602bb9a946",
+    "bytes": 862416,
+    "http_status": 200,
+    "registros_detectados": 1,
+    "estado_captura": "ok",
+    "advertencias": [],
+    "colision_nombre": false,
+    "etiqueta": "marco-estatal-20",
+    "tipo": "marco-estatal",
+    "cve_ent": "20",
+    "nombre_entidad": "Oaxaca",
+    "producto": "Marco Geoestadístico estatal",
+    "edicion_geometria": "INEGI. Marco Geoestadístico, diciembre de 2025",
+    "fecha_ref_inicio": "2026-11-27",
+    "fecha_ref_fin": "2026-11-27"
+  }
+}

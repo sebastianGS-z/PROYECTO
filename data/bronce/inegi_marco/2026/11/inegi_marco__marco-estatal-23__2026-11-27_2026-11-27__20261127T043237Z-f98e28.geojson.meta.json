@@ -1,0 +1,29 @@
+{
+  "esquema": "tdl-bronce-meta/1",
+  "contenido_original": {
+    "archivo": "inegi_marco__marco-estatal-23__2026-11-27_2026-11-27__20261127T043237Z-f98e28.geojson",
+    "descripcion": "Bytes tal como los entregó la fuente; no se modifican."
+  },
+  "metadatos_captura": {
+    "fuente": "inegi_marco",
+    "fuente_url": "https://gaia.inegi.org.mx/wscatgeo/v2/geo/mgee/23",
+    "fecha_captura": "2026-11-27T04:34:03Z",
+    "identificador_ejecucion": "20261127T043237Z-f98e28",
+    "formato_original": "geojson",
+    "sha256": "93841374fef9cc614fcc71e2fcff67259e62a287286fef6d649b4f7d65792d93",
+    "bytes": 1231793,
+    "http_status": 200,
+    "registros_detectados": 1,
+    "estado_captura": "ok",
+    "advertencias": [],
+    "colision_nombre": false,
+    "etiqueta": "marco-estatal-23",
+    "tipo": "marco-estatal",
+    "cve_ent": "23",
+    "nombre_entidad": "Quintana Roo",
+    "producto": "Marco Geoestadístico estatal",
+    "edicion_geometria": "INEGI. Marco Geoestadístico, diciembre de 2025",
+    "fecha_ref_inicio": "2026-11-27",
+    "fecha_ref_fin": "2026-11-27"
+  }
+}

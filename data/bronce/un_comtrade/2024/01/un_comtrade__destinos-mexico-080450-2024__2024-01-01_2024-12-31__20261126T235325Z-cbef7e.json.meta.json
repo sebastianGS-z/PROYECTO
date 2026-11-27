@@ -1,0 +1,31 @@
+{
+  "esquema": "tdl-bronce-meta/1",
+  "contenido_original": {
+    "archivo": "un_comtrade__destinos-mexico-080450-2024__2024-01-01_2024-12-31__20261126T235325Z-cbef7e.json",
+    "descripcion": "Bytes tal como los entregó la fuente; no se modifican."
+  },
+  "metadatos_captura": {
+    "fuente": "un_comtrade",
+    "fuente_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2024&cmdCode=080450&flowCode=M&maxRecords=500&partnerCode=484",
+    "fecha_captura": "2026-11-26T23:53:53Z",
+    "identificador_ejecucion": "20261126T235325Z-cbef7e",
+    "formato_original": "json",
+    "sha256": "166912fe705478bd89e4a5d7a7ab378ba22b6d4ba152b4a6ef6feedef385c633",
+    "bytes": 48679,
+    "http_status": 200,
+    "registros_detectados": 54,
+    "estado_captura": "ok",
+    "advertencias": [],
+    "colision_nombre": false,
+    "etiqueta": "destinos_mexico-080450-2024",
+    "fecha_ref_inicio": "2024-01-01",
+    "fecha_ref_fin": "2024-12-31",
+    "codigo_hs": "080450",
+    "tipo_consulta": "destinos_mexico",
+    "periodo": 2024,
+    "limite_preview": 500,
+    "truncamiento_posible": false,
+    "fecha_captura_utc": "2026-11-26",
+    "nota": "Datos aduanales de comercio de mercancías; no equivalen a cotizaciones mayoristas/minoristas ni a oportunidad rentable."
+  }
+}

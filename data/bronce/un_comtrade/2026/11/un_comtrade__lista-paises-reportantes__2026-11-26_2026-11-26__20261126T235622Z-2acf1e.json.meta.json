@@ -1,0 +1,25 @@
+{
+  "esquema": "tdl-bronce-meta/1",
+  "contenido_original": {
+    "archivo": "un_comtrade__lista-paises-reportantes__2026-11-26_2026-11-26__20261126T235622Z-2acf1e.json",
+    "descripcion": "Bytes tal como los entregó la fuente; no se modifican."
+  },
+  "metadatos_captura": {
+    "fuente": "un_comtrade",
+    "fuente_url": "https://comtradeapi.un.org/files/v1/app/reference/Reporters.json",
+    "fecha_captura": "2026-11-26T23:56:22Z",
+    "identificador_ejecucion": "20261126T235622Z-2acf1e",
+    "formato_original": "json",
+    "sha256": "e4e1114a11f59580428ece93ab22f4a1c2522ff239860bc54d52c94ec4bcd34d",
+    "bytes": 81182,
+    "http_status": 200,
+    "registros_detectados": 81182,
+    "estado_captura": "ok",
+    "advertencias": [],
+    "colision_nombre": false,
+    "etiqueta": "lista-paises-reportantes",
+    "fecha_ref_inicio": "2026-11-26",
+    "fecha_ref_fin": "2026-11-26",
+    "nota": "Referencia oficial de códigos de países/áreas de UN Comtrade."
+  }
+}
