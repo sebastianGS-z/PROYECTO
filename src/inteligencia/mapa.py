@@ -209,7 +209,7 @@ function vistaCen(){
 // ---------------- Exportación ----------------
 const frutasExp=Object.entries(EXP).filter(([k,v])=>v.disponible).map(([k,v])=>k);let frutaExp=frutasExp.includes('limon')?'limon':frutasExp[0];let mundo=null,capaExp=null;
 async function vistaExp(){
- if(!mundo){try{const t=await fetch('https://cdn.jsdelivr.net/npm/world-atlas@2.0.2/countries-110m.json').then(r=>r.json());mundo=topojson.feature(t,t.objects.countries);
+ if(!mundo){panel.innerHTML='<p class="muted">Cargando mapa mundial…</p>';try{const t=await fetch('https://cdn.jsdelivr.net/npm/world-atlas@2.0.2/countries-110m.json').then(r=>r.json());mundo=topojson.feature(t,t.objects.countries);
    // Polígonos que cruzan el meridiano 180 (Rusia, Fiyi) dibujan bandas en Leaflet: se desplazan sus longitudes
    // negativas y se omite la Antártida.
    const corregir=c=>typeof c[0]==='number'?(c[0]<-150?[c[0]+360,c[1]]:c):c.map(corregir);
