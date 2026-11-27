@@ -15,7 +15,7 @@ Se añadieron el diagnóstico de faltantes, detección de atípicos por IQR y Z 
 1. No se imputa precio ni precipitación: su ausencia no tiene un valor sustituto defendible en la fuente disponible.
 2. Solo se interpola temperatura en una serie auxiliar de modelado para huecos interiores de hasta dos días. Mantener ambas columnas evita confundir observado con imputado.
 3. No se afirma un mecanismo de ausencia solo por observar faltantes. Las etiquetas MCAR-compatible y MAR-compatible se acompañan de su límite de inferencia, y MNAR queda como posibilidad no descartada.
-4. Los precios permanecen ligados a presentación, variante y plaza. Sin pesos de empaque confiables no se convierten a kilogramo.
+4. Los precios permanecen ligados a presentación, variante y plaza. Desde la actualización E4, Plata deriva MXN/kg cuando SNIIM declara kilogramo o el peso explícito; no asigna peso a formatos desconocidos.
 5. Ante versiones duplicadas discrepantes, se selecciona de forma reproducible la captura más reciente y se registra el conflicto; los originales Bronce no se reemplazan.
 
 ## Archivos y operación
@@ -28,9 +28,12 @@ Comando para generar o actualizar las capas:
 python main.py capas
 ```
 
-Corrida local materializada sobre el Bronce existente: 15,109 registros normalizados/validados en Plata, 0 registros inválidos en cuarentena, 0 conflictos discrepantes y 712 filas en Oro. Los datos NOAA abarcan 1,098 días consultados y 791 días con alguna variable climática; los faltantes se conservan y perfilan. Los reportes contienen el detalle por variable.
+Corrida actualizada el 2026-11-20 sobre el Bronce versionado: 15,204 registros validados en Plata, 0 en cuarentena, 0 conflictos duplicados y 712 filas Oro. Se normalizaron 14,395 cotizaciones de precio frecuente a MXN/kg a partir de sus presentaciones explícitas. NOAA contiene 791 días con datos útiles entre 1,106 días calendario; el último registro con medición útil es 2026-06-29. Los faltantes se conservan y perfilan.
 
-## Pendientes de cierre
+## Estado histórico al corte original
 
-* Revisar calidad y recuentos generados, especialmente conflictos y filas en cuarentena.
-* Registrar [el tag `e1` del repositorio](https://github.com/sebastianGS-z/PROYECTO/tree/e1) en el formulario oficial cuando se proporcione su URL.
+El tag `e1` está creado. El registro en Classroom queda a cargo del integrante designado y no se verifica desde esta relatoría.
+
+## Actualización E4
+
+La conversión de precio/kg se limita al peso explícito de SNIIM. Se agregó `python main.py observatorio`, con backtesting walk-forward de doce meses, cuatro modelos y rechazo explícito de series con cobertura insuficiente. Resultados y advertencias: [`docs/E4/ENTREGA.md`](E4/ENTREGA.md).

@@ -1,0 +1,99 @@
+{
+  "fuente": "UN Comtrade API pública",
+  "anio": 2024,
+  "filas": 479,
+  "codigos_hs": {
+    "080440": [
+      "Aguacate",
+      "aguacate"
+    ],
+    "080450": [
+      "Guayaba, mango y mangostán (grupo HS)",
+      "mango_guayaba"
+    ],
+    "080550": [
+      "Limones y limas (grupo HS)",
+      "limon"
+    ],
+    "080119": [
+      "Cocos frescos (grupo HS)",
+      "coco"
+    ],
+    "080720": [
+      "Papaya",
+      "papaya"
+    ],
+    "080390": [
+      "Plátanos (grupo HS)",
+      "platano"
+    ],
+    "081340": [
+      "Tamarindo y otras frutas secas (grupo HS)",
+      "tamarindo"
+    ],
+    "080711": [
+      "Sandías",
+      "sandia"
+    ]
+  },
+  "consultas": [
+    {
+      "codigo_hs": "080440",
+      "consulta": "destinos_mexico",
+      "filas": 56,
+      "truncamiento_posible": false,
+      "error": ""
+    },
+    {
+      "codigo_hs": "080440",
+      "consulta": "exportadores",
+      "filas": 94,
+      "truncamiento_posible": false,
+      "error": ""
+    },
+    {
+      "codigo_hs": "080450",
+      "consulta": "destinos_mexico",
+      "filas": 54,
+      "truncamiento_posible": false,
+      "error": ""
+    },
+    {
+      "codigo_hs": "080450",
+      "consulta": "exportadores",
+      "filas": 114,
+      "truncamiento_posible": false,
+      "error": ""
+    },
+    {
+      "codigo_hs": "080550",
+      "consulta": "destinos_mexico",
+      "filas": 50,
+      "truncamiento_posible": false,
+      "error": ""
+    },
+    {
+      "codigo_hs": "080550",
+      "consulta": "exportadores",
+      "filas": 111,
+      "truncamiento_posible": false,
+      "error": ""
+    }
+  ],
+  "capturas_bronce": [
+    "data/bronce/un_comtrade/2024/01/un_comtrade__destinos-mexico-080440-2024__2024-01-01_2024-12-31__20261126T235325Z-cbef7e.json",
+    "data/bronce/un_comtrade/2024/01/un_comtrade__exportadores-080440-2024__2024-01-01_2024-12-31__20261126T235325Z-cbef7e.json",
+    "data/bronce/un_comtrade/2024/01/un_comtrade__destinos-mexico-080450-2024__2024-01-01_2024-12-31__20261126T235325Z-cbef7e.json",
+    "data/bronce/un_comtrade/2024/01/un_comtrade__exportadores-080450-2024__2024-01-01_2024-12-31__20261126T235325Z-cbef7e.json",
+    "data/bronce/un_comtrade/2024/01/un_comtrade__destinos-mexico-080550-2024__2024-01-01_2024-12-31__20261126T235325Z-cbef7e.json",
+    "data/bronce/un_comtrade/2024/01/un_comtrade__exportadores-080550-2024__2024-01-01_2024-12-31__20261126T235325Z-cbef7e.json"
+  ],
+  "metodo": "USD/kg = valor comercial declarado / peso neto declarado cuando peso > 0",
+  "limitaciones": [
+    "Los códigos HS agrupan productos y calidades; no equivalen siempre a una fruta/variedad exacta.",
+    "USD/kg es valor unitario aduanal, no precio de anaquel, cotización mayorista ni precio al productor.",
+    "La API pública permite previews de hasta 500 filas; 500 filas indica posible truncamiento.",
+    "Importaciones que declaran México como socio señalan flujos comerciales agregados, no demanda disponible ni compradores confirmados.",
+    "Se comparan los registros reportados por países; no hay ajuste cambiario, calidad o logística."
+  ]
+}

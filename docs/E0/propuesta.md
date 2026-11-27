@@ -9,9 +9,9 @@ Roles: Sebastián: Data Engineer · José: Data Statistician · Quality Lead de 
 
 * **Sector:** Agroindustrial y Comercio Mayorista de Frutas y Hortalizas (Fruit & Produce).
 * **Región:** Estado de Colima (Tecomán, Armería, Manzanillo) en comparación con las principales Centrales de Abasto de cobertura nacional (Guadalajara y CDMX).
-* **Pregunta Detonadora:** ¿En qué periodo del año se maximiza el precio de venta por kilogramo del plátano, limón y papaya, y qué mercado mayorista ofrece el mejor precio a los productores de Colima?
+* **Pregunta Detonadora (alcance vigente):** ¿Cómo evoluciona y cuál es la proyección mensual del precio frecuente en MXN/kg del limón c/semilla #5 y la papaya Maradol de origen reportado Colima en el Mercado de Abasto de Guadalajara, usando cotizaciones SNIIM y validación temporal? La comparación entre plazas se reportará solo cuando existan observaciones pareadas de la misma variante y origen.
 * **Cliente Potencial:** Empacadoras locales, asociaciones de productores agrícolas (ej. Consejo Limonero, uniones plataneras) y comerciantes mayoristas de la región.
-* **Justificación de pago:** Los clientes pagarían por una suscripción a reportes y tableros inteligentes con pronóstico de precios a 30 días, lo que les permite anticipar ventanas de escasez por clima/enfermedades, negociar mejores tarifas frente a la intermediación y decidir hacia qué plaza geográfica enviar sus fletes.
+* **Justificación de pago:** Un reporte trazable de tendencias y proyecciones puede apoyar conversaciones de planeación y negociación. Los datos actuales no representan el precio en parcela ni bastan para recomendar una plaza; la decisión comercial requeriría costos de flete, calidad, volumen y precios pareados de más mercados.
 
 ---
 
@@ -56,7 +56,7 @@ Se entrevistó a tres ingenieros agrónomos de los cultivos del observatorio: li
 2. **Estacionalidad y enfermedad fitosanitaria (Noviembre a Abril):** En el limón, la producción cae al 10%-30% del volumen habitual en invierno debido a las bajas temperaturas y a la antracnosis, lo que genera escasez y empuja alzas de precio que el modelo predictivo (E1) debe capturar.
 3. **Calidad y segmentación de mercados:** Las centrales de abasto influyen de manera diferenciada; mercados más exigentes pagan sobreprecio por calidades superiores.
 4. **Factores climáticos por cultivo (datos de NOAA NCEI):** En papaya las lluvias generan 100% de susceptibilidad a hongos/bacterias; en plátano el calor de julio/agosto acelera la maduración; y en limón el frío e infecciones de antracnosis contraen la oferta en invierno.
-5. **Viabilidad comercial y red de actores:** Existe interés genuino de suscripción si la herramienta estadística ofrece 95% de confiabilidad, destacando que en el plátano se requiere la participación conjunta de la cadena (productores, empacadores y comerciantes) para evitar sesgos de datos.
+5. **Viabilidad comercial y red de actores:** La persona entrevistada mencionó 95% de confiabilidad como expectativa para evaluar una posible suscripción; esto no constituye una garantía alcanzada ni un criterio estadístico ya validado por OAIC. También señaló que en plátano se requiere la participación conjunta de productores, empacadores y comerciantes para reducir sesgos de cobertura.
 
 ---
 
@@ -64,22 +64,24 @@ Se entrevistó a tres ingenieros agrónomos de los cultivos del observatorio: li
 
 ## 3. Las 3 preguntas analíticas
 
+> Actualizado el 2026-11-27 para reflejar lo que se ejecutó. Cambios frente a la versión del tag `e0`: la pregunta 1 fija la serie (Guadalajara en lugar de Iztapalapa, porque es la plaza con 36 meses continuos de origen Colima en MXN/kg); en la 2 el factor "pausa entre peticiones" se sustituyó por "alcance del árbol HTML", porque el experimento corre sobre copias locales y una pausa de red no tiene efecto ahí; en la 3 se amplían los grupos a cinco productos.
+
 1. **Pronóstico de serie de tiempo (Análisis Estadístico, E1).**
-   * *Variable a pronosticar:* precio frecuente mensual del limón (promedio de los precios frecuentes diarios del SNIIM, por presentación comercial; la conversión a kg se hace en la capa plata) en la Central de Abasto de Iztapalapa. La variante exacta se fija con el reporte de cobertura (todas tienen 36 meses con datos).
-   * *Pregunta:* ¿Cuál será la tendencia, la estacionalidad y el precio pronosticado para los meses de menor oferta (noviembre a abril), comparando suavizamiento simple, Holt, Holt-Winters y ARIMA/SARIMA por MAE, RMSE y MAPE? Se replica después para plátano y papaya.
+   * *Variable a pronosticar:* precio frecuente mensual en MXN/kg del limón c/semilla #5 de origen Colima en el Mercado de Abasto de Guadalajara (serie secundaria: papaya Maradol, misma plaza). 36 meses continuos, sin imputación.
+   * *Pregunta:* ¿Qué precio se espera en los próximos 3 meses y con qué intervalo? Se comparan suavizamiento simple, Holt, Holt-Winters y ARIMA/SARIMA (orden elegido por ACF, PACF y AIC) en los últimos 6 meses no vistos, por MAE, RMSE y MAPE. Evidencia: [`docs/E1/laboratorio_series.md`](../E1/laboratorio_series.md).
 
 2. **Diseño de experimentos factorial 2³ (Análisis Estadístico, E2, ruta ingeniería).**
-   * *Pregunta:* ¿Qué combinación de procesos paralelos (1 vs. 4), pausa entre peticiones (1 s vs. 3 s) y formato de escritura (Parquet vs. CSV) minimiza el tiempo de procesamiento y la tasa de errores del extractor? El experimento se corre contra una **copia local de las páginas de la capa bronce**, nunca contra el sitio real, para no violar la regla de no saturar sitios ajenos.
+   * *Pregunta:* ¿Qué combinación de parser HTML (html.parser vs. lxml), alcance del árbol (documento completo vs. solo tablas) y formato de escritura (CSV vs. Parquet) minimiza el tiempo de procesamiento sin errores de extracción? Respuestas: tiempo y tasa de error. Se corre contra **copias locales de la capa bronce**, nunca contra el sitio real. Diseño de dos factores con tres niveles: parser (html.parser, lxml, html5lib) × árbol. Fraccionado 2⁴⁻¹ con D = procesos (1 vs. 4). Evidencia: [`docs/E2/experimento_factorial.md`](../E2/experimento_factorial.md).
 
 3. **Análisis multivariado PCA y MANOVA (Análisis Estadístico, E3).**
-   * *Pregunta:* ¿Difieren los tres cultivos (plátano, limón y papaya) en conjunto (Λ de Wilks y traza de Pillai) en precio mínimo, máximo y frecuente, volatilidad del precio (desviación estándar mensual) y temperatura media y precipitación mensual de la estación de Manzanillo? Unidad de análisis: producto × mercado × mes (≥ 5 variables numéricas).
+   * *Pregunta:* ¿Difieren los productos (plátano, limón, papaya, guayaba y tamarindo) en conjunto (traza de Pillai y Λ de Wilks) en nivel de precio, amplitud de cotización, volatilidad dentro del mes, número de cotizaciones y cambio mensual? Unidad de análisis: serie de cotización × mes (5 variables numéricas). Evidencia: [`docs/E3/multivariado.md`](../E3/multivariado.md).
 
 ---
 
 ## 4. Plan de recopilación de datos y análisis ético y legal
 
 ### Fuente 1: SNIIM (Sistema Nacional de Información e Integración de Mercados)
-* **Datos:** precios diarios mayoristas (mínimo, máximo y frecuente) de plátano, limón y papaya, con presentación, origen y destino. Se captura **todos los orígenes** en los destinos Guadalajara (Mercado de Abasto) y CDMX (Central de Abasto de Iztapalapa); el filtro al origen Colima se aplica en la capa plata. Los precios vienen por **presentación comercial** (caja, ciento, etc.), no por kilogramo.
+* **Datos:** precios diarios mayoristas (mínimo, máximo y frecuente) de plátano, limón y papaya, con presentación, origen y destino. Se conservan todos los orígenes capturados en Guadalajara y CDMX. Las etiquetas de esta captura incluyen kilogramo y presentaciones cuyo peso se declara en kg. Plata calcula MXN/kg solo a partir de esos pesos explícitos; otros formatos quedan sin normalizar. Los productos analíticos de origen Colima filtran por esa etiqueta y el linaje conserva los valores originales.
 * **Estructura y formato:** consulta web HTML (formulario → página de resultados con tabla). Si no hay datos, la página dice "NO HAY REGISTROS".
 * **Frecuencia:** el sitio publica de lunes a viernes; capturamos diario (GitHub Actions, 03:00 UTC = 21:00 en Colima).
 * **Método:** scraping ético en Python (`requests` + `BeautifulSoup`); no hay API oficial.
@@ -100,6 +102,8 @@ Se entrevistó a tres ingenieros agrónomos de los cultivos del observatorio: li
 * **Capa bronce:** cada captura guarda el contenido original sin modificar y un archivo `.meta.json` con fuente, URL, fecha, identificador de ejecución, formato y SHA-256; no se sobrescribe nada. Validación: `python main.py validar`.
 * **Serie histórica SNIIM:** run `20261109T001830Z-2191be` (1,368 consultas, 69 min, exitosa): **36 de 36 meses con datos reales** para cada producto y mercado. Hubo 8 errores transitorios del servidor que se reintentaron solos. Evidencia: `data/bronce/sniim/manifests/cobertura_20261109T001830Z-2191be.csv`.
 * **Clima NOAA NCEI:** run `20261109T100414Z-44eb79`: **28 de 36 meses con datos** (791 días); sin datos de dic-2025 a mar-2026 y de jul a oct-2026 porque la estación no reportó. No se rellenaron; se tratarán como valores faltantes en E1.
+
+**Corte operativo posterior (2026-11-20):** Plata confirma 791 días con al menos una medición útil dentro de 1,106 días calendario; la última fecha con observación útil es 2026-06-29. Los precios sí llegan a noviembre de 2026. El desajuste se muestra como cobertura distinta por fuente, no como clima observado hasta noviembre.
 * **Captura automática:** workflow `captura_diaria.yml` de GitHub Actions con programación diaria y habilitado en la rama por defecto. Tras corregir una prueba que esperaba nombres PSP obsoletos, la ejecución manual `43492271206` del 2026-11-13 terminó en verde: pasaron pruebas, captura diaria, pipeline E1, validación de Bronce y publicación de datos. La próxima ejecución programada posterior a la corrección confirmará el disparo automático. Captura del viernes 2026-11-06 con SNIIM exitosa y 19 registros reales.
 * **Bitácora de ejecuciones:** `calidad/bitacora_capturas.csv`.
 

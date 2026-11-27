@@ -1,0 +1,198 @@
+{
+  "esquema": "oaic-e4-observatorio/1",
+  "generado_utc": "2026-11-27T16:10:41.359167+00:00",
+  "capa_oro": "data/oro/panel_mensual.csv",
+  "origen_objetivo": "Colima",
+  "horizonte_meses": 3,
+  "mes_actual_excluido_por_incompleto": "2026-11",
+  "ultimo_mes_cerrado_usado": "2026-10",
+  "regla_normalizacion": "SNIIM declara Kilogramo o peso en kg en la presentación; se normaliza cada cotización antes de agregar. Presentaciones sin peso explícito quedan fuera del pronóstico por kg.",
+  "metodo": "36 meses contiguos mínimos; selección por MAE en seis meses walk-forward y evaluación independiente en los seis meses cerrados siguientes; reentrenamiento del modelo elegido con toda la serie",
+  "validacion": {
+    "meses_seleccion": 6,
+    "meses_holdout_independiente": 6,
+    "holdout": "Los últimos seis meses no participan en la selección del modelo; el MAE/RMSE/MAPE publicados para el modelo elegido se calculan sobre este bloque."
+  },
+  "linaje_pronostico": "Cada pronóstico incluye el periodo de Oro usado y el SHA-256 del conjunto ordenado de huellas de linaje mensual; se puede reconstruir desde la serie y periodos en panel_mensual.csv.",
+  "modelos": [
+    "suavizamiento_simple",
+    "holt",
+    "holt_winters_aditivo",
+    "arima_111"
+  ],
+  "minimo_meses_contiguos": 36,
+  "series_pronosticadas": 3,
+  "filas_pronostico": 9,
+  "comparaciones_pareadas": 1,
+  "contexto_climatico": {
+    "meses_con_observaciones": 32,
+    "ultimo_mes_con_observacion": "2026-10",
+    "estaciones": [
+      "MXM00076654"
+    ],
+    "uso": "contexto descriptivo; no es predictor ni clima local de las plazas mayoristas"
+  },
+  "limitacion_comparacion": "Se compara solo cuando coinciden origen Colima, cultivo, variante y mes en al menos dos mercados; sin par no se declara un mejor mercado.",
+  "series": [
+    {
+      "cultivo": "limon",
+      "variante_id": "421",
+      "variante": "Limón c/semilla # 5 - Primera",
+      "origen": "Colima",
+      "mercado": "140",
+      "nombre_mercado": "Guadalajara · Mercado de Abasto",
+      "meses": 36,
+      "pronosticable": true,
+      "modelo_elegido": "arima_111",
+      "n_validaciones_seleccion": 6,
+      "n_validaciones_holdout": 6,
+      "periodo_seleccion": [
+        "2025-11",
+        "2026-04"
+      ],
+      "periodo_holdout": [
+        "2026-05",
+        "2026-10"
+      ],
+      "fecha_primer_dato": "2023-11",
+      "fecha_ultimo_dato": "2026-10",
+      "linaje_serie_sha256": "133547bc41a48bcd98d0919a86ce1f9ccf5b32756409591b1b692fed9baaa13c"
+    },
+    {
+      "cultivo": "papaya",
+      "variante_id": "609",
+      "variante": "Papaya Maradol - Primera",
+      "origen": "Colima",
+      "mercado": "140",
+      "nombre_mercado": "Guadalajara · Mercado de Abasto",
+      "meses": 36,
+      "pronosticable": true,
+      "modelo_elegido": "suavizamiento_simple",
+      "n_validaciones_seleccion": 6,
+      "n_validaciones_holdout": 6,
+      "periodo_seleccion": [
+        "2025-11",
+        "2026-04"
+      ],
+      "periodo_holdout": [
+        "2026-05",
+        "2026-10"
+      ],
+      "fecha_primer_dato": "2023-11",
+      "fecha_ultimo_dato": "2026-10",
+      "linaje_serie_sha256": "392f33934d23e578ab3c4bbd6e13ea42e5af1b4a40a6743cace9597c386e9bed"
+    },
+    {
+      "cultivo": "sandia_jubilee",
+      "variante_id": "791",
+      "variante": "Sandía Jubilee - Primera",
+      "origen": "Colima",
+      "mercado": "80",
+      "nombre_mercado": "Colima · Centros de distribución",
+      "meses": 1,
+      "pronosticable": false,
+      "motivo": "requiere_36_meses_contiguos_sin_imputacion"
+    },
+    {
+      "cultivo": "sandia_peacock",
+      "variante_id": "796",
+      "variante": "Sandía Peacock - Primera",
+      "origen": "Colima",
+      "mercado": "80",
+      "nombre_mercado": "Colima · Centros de distribución",
+      "meses": 1,
+      "pronosticable": false,
+      "motivo": "requiere_36_meses_contiguos_sin_imputacion"
+    },
+    {
+      "cultivo": "tamarindo",
+      "variante_id": "800",
+      "variante": "Tamarindo - Primera",
+      "origen": "Colima",
+      "mercado": "140",
+      "nombre_mercado": "Guadalajara · Mercado de Abasto",
+      "meses": 27,
+      "pronosticable": false,
+      "motivo": "requiere_36_meses_contiguos_sin_imputacion"
+    },
+    {
+      "cultivo": "tamarindo",
+      "variante_id": "800",
+      "variante": "Tamarindo - Primera",
+      "origen": "Colima",
+      "mercado": "80",
+      "nombre_mercado": "Colima · Centros de distribución",
+      "meses": 36,
+      "pronosticable": true,
+      "modelo_elegido": "suavizamiento_simple",
+      "n_validaciones_seleccion": 6,
+      "n_validaciones_holdout": 6,
+      "periodo_seleccion": [
+        "2025-11",
+        "2026-04"
+      ],
+      "periodo_holdout": [
+        "2026-05",
+        "2026-10"
+      ],
+      "fecha_primer_dato": "2023-11",
+      "fecha_ultimo_dato": "2026-10",
+      "linaje_serie_sha256": "b6b4af014dfdde391636a43bc94c31c03747a515d1fc63d03b14b4d74dd120ea"
+    },
+    {
+      "cultivo": "aguacate_hass",
+      "origen": "Colima",
+      "pronosticable": false,
+      "motivo": "sin_cotizaciones_SNIIM_con_origen_Colima"
+    },
+    {
+      "cultivo": "coco",
+      "origen": "Colima",
+      "pronosticable": false,
+      "motivo": "sin_cotizaciones_SNIIM_con_origen_Colima"
+    },
+    {
+      "cultivo": "guanabana",
+      "origen": "Colima",
+      "pronosticable": false,
+      "motivo": "sin_cotizaciones_SNIIM_con_origen_Colima"
+    },
+    {
+      "cultivo": "guayaba",
+      "origen": "Colima",
+      "pronosticable": false,
+      "motivo": "sin_cotizaciones_SNIIM_con_origen_Colima"
+    },
+    {
+      "cultivo": "mango_ataulfo",
+      "origen": "Colima",
+      "pronosticable": false,
+      "motivo": "sin_cotizaciones_SNIIM_con_origen_Colima"
+    },
+    {
+      "cultivo": "mango_manila",
+      "origen": "Colima",
+      "pronosticable": false,
+      "motivo": "sin_cotizaciones_SNIIM_con_origen_Colima"
+    },
+    {
+      "cultivo": "platano",
+      "origen": "Colima",
+      "pronosticable": false,
+      "motivo": "sin_cotizaciones_SNIIM_con_origen_Colima"
+    },
+    {
+      "cultivo": "sandia_rayada",
+      "origen": "Colima",
+      "pronosticable": false,
+      "motivo": "sin_cotizaciones_SNIIM_con_origen_Colima"
+    },
+    {
+      "cultivo": "sandia_sangria",
+      "origen": "Colima",
+      "pronosticable": false,
+      "motivo": "sin_cotizaciones_SNIIM_con_origen_Colima"
+    }
+  ],
+  "advertencia": "Pronósticos académicos exploratorios, no consejo comercial ni garantía. Sin intervalo predictivo validado; factores de transporte, calidad, volumen y precio en parcela no están modelados."
+}

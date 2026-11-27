@@ -1,0 +1,6 @@
+cultivo,variante_id,variante,origen,meses_comunes,mercados_observados,mercado_con_mayor_precio_medio,diferencia_mxn_kg,estado_comparacion
+limon,421,Limón c/semilla # 5 - Primera,Colima,36,Guadalajara · Mercado de Abasto,,,sin_dos_mercados_con_origen_variante_y_mes_comunes
+papaya,609,Papaya Maradol - Primera,Colima,36,Guadalajara · Mercado de Abasto,,,sin_dos_mercados_con_origen_variante_y_mes_comunes
+sandia_jubilee,791,Sandía Jubilee - Primera,Colima,1,Colima · Centros de distribución,,,sin_dos_mercados_con_origen_variante_y_mes_comunes
+sandia_peacock,796,Sandía Peacock - Primera,Colima,1,Colima · Centros de distribución,,,sin_dos_mercados_con_origen_variante_y_mes_comunes
+tamarindo,800,Tamarindo - Primera,Colima,27,Guadalajara · Mercado de Abasto | Colima · Centros de distribución,Guadalajara · Mercado de Abasto,12.257897873801774,comparacion_descriptiva_meses_pareados

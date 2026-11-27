@@ -3,9 +3,10 @@
 ## A. Identificación
 
 - **Nombre:** Panel mensual agroclimático de precios mayoristas de frutas y clima de Manzanillo.
-- **Versión:** 1.0.0 · **publicación:** 2026-11-20 · **última revisión:** 2026-11-20.
+- **Versión:** 1.0.0 · **snapshot E3:** 2026-11-20 · **revisión del datasheet:** 2026-11-20.
 - **Responsables:** Grageda Sandoval Sebastián y Jose Negrete Orozco, Observatorio de Agro-Inteligencia Colimense (OAIC).
 - **Archivo:** [`data/publico/panel_mensual_e3.csv`](../../data/publico/panel_mensual_e3.csv), UTF-8, CSV, 712 filas de datos y 48 columnas.
+- **Estado:** snapshot E3 fechado el 2026-11-20. La publicación actual, con normalización derivada MXN/kg y salidas analíticas, se mantiene en `data/publico/panel_mensual_actual.csv` y `data/publico/pronosticos_colima.csv`.
 - **Descripción:** agregados mensuales de cotizaciones mayoristas observadas para plátano, limón y papaya en dos mercados, relacionados por año y mes con resúmenes diarios de la estación NOAA GHCN-Daily de Manzanillo. Cada fila conserva el linaje de las observaciones de precios y clima.
 - **Fuentes:** Sistema Nacional de Información e Integración de Mercados (SNIIM), Secretaría de Economía; NOAA NCEI, GHCN-Daily. El Marco Geoestadístico de INEGI se entrega aparte en E2 y no se une a cotizaciones de plazas externas.
 - **Licencia:** CC BY 4.0 para la contribución de selección, organización, agregación y documentación de OAIC, hasta donde OAIC tenga derechos para licenciarla. Los contenidos fuente conservan sus propios términos; ver [`data/publico/LICENSE.md`](../../data/publico/LICENSE.md) y [`docs/etica-datos.md`](../etica-datos.md).
@@ -28,7 +29,7 @@ El dataset se creó para estudiar la evolución mensual de precios mayoristas de
 
 | Variable | Tipo lógico | Unidad / significado |
 |---|---|---|
-| `cultivo` | texto | Clave normalizada: `limon`, `platano` o `papaya`. |
+| `cultivo` | texto | Clave normalizada del producto. En el snapshot E3: `limon`, `platano` o `papaya`; en el panel vivo, todo el catálogo configurado en `config/fuentes.json`. |
 | `variante` | texto | Nombre de producto/calidad comunicado por SNIIM. |
 | `variante_id` | texto | Identificador de variante en el formulario SNIIM. |
 | `mercado` | texto/código | Código de mercado SNIIM; consultar cobertura arriba. |
@@ -79,6 +80,27 @@ El dataset se creó para estudiar la evolución mensual de precios mayoristas de
 
 Los conteos climáticos aparecen como decimales en la lectura CSV por la unión con meses sin observaciones; semánticamente son conteos enteros cuando no son nulos. Los precios conservan la presentación reportada: **no convertir a precio por kg** sin peso verificable.
 
+#### Columnas adicionales del panel vivo (`data/oro/panel_mensual.csv` y `data/publico/panel_mensual_actual.csv`)
+
+El snapshot E3 (`panel_mensual_e3.csv`, 48 columnas) no cambia. El panel vivo agrega 18 columnas en MXN/kg y amplía `cultivo` a los productos del catálogo SNIIM configurado (por ejemplo `guayaba`, `tamarindo`, `mango_ataulfo`, `coco`, `sandia_*`, `aguacate_hass`).
+
+| Variable | Tipo lógico | Unidad / significado |
+|---|---|---|
+| `precio_min_kg_mean`, `precio_min_kg_median` | decimal/nulo | Media y mediana mensual del precio mínimo convertido a MXN/kg. Solo existe si SNIIM declara "Kilogramo" o el peso de la caja/arpilla; si no, nulo. |
+| `precio_min_kg_min`, `precio_min_kg_max` | decimal/nulo | Mínimo y máximo mensual del precio mínimo, MXN/kg. |
+| `precio_min_kg_std` | decimal/nulo | Desviación estándar poblacional del precio mínimo, MXN/kg. |
+| `precio_min_kg_count` | entero | Cotizaciones convertibles a kg incluidas en el precio mínimo. |
+| `precio_max_kg_mean`, `precio_max_kg_median` | decimal/nulo | Media y mediana mensual del precio máximo, MXN/kg. |
+| `precio_max_kg_min`, `precio_max_kg_max` | decimal/nulo | Mínimo y máximo mensual del precio máximo, MXN/kg. |
+| `precio_max_kg_std` | decimal/nulo | Desviación estándar poblacional del precio máximo, MXN/kg. |
+| `precio_max_kg_count` | entero | Cotizaciones convertibles a kg incluidas en el precio máximo. |
+| `precio_frecuente_kg_mean`, `precio_frecuente_kg_median` | decimal/nulo | Media y mediana mensual del precio frecuente, MXN/kg. Es la variable que pronostica el observatorio. |
+| `precio_frecuente_kg_min`, `precio_frecuente_kg_max` | decimal/nulo | Mínimo y máximo mensual del precio frecuente, MXN/kg. |
+| `precio_frecuente_kg_std` | decimal/nulo | Desviación estándar poblacional del precio frecuente, MXN/kg. |
+| `precio_frecuente_kg_count` | entero | Cotizaciones convertibles a kg incluidas en el precio frecuente. |
+
+Regla de conversión: precio de la presentación ÷ kg declarados por la propia fuente (`Kilogramo` = 1 kg; `Caja de 18 kg.` = 18 kg). No se infiere el peso de presentaciones como "pieza" o "docena".
+
 ## D. Recolección
 
 SNIIM se consulta mediante su formulario público de precios mayoristas; NOAA NCEI se consulta mediante GHCN-Daily para la estación configurada. La descarga histórica captura meses/consultas disponibles y la actualización diaria se orquesta con GitHub Actions. El código y configuración viven en `extractores/`, `config/`, `pipeline/` y `src/tdl_e1/`. Cada archivo de origen se conserva sin modificar en Bronce, con sidecar, SHA-256, fecha UTC de captura y manifiesto. Los extractores revisan `robots.txt`, usan User-Agent identificable y pausa/reintentos. SNIIM declara los precios como información pública referencial y deja su uso bajo responsabilidad de quien la utiliza; NOAA se atribuye a NCEI. Véase [`docs/etica-datos.md`](../etica-datos.md).
@@ -95,7 +117,7 @@ SNIIM se consulta mediante su formulario público de precios mayoristas; NOAA NC
 
 ## F. Calidad y limitaciones
 
-- El pipeline verifica hashes de Bronce; el validador de linaje de Oro exige ruta, hash, timestamp e índice. La comparación E3 verificó 15,147 registros procesados, cero cuarentenas y salidas CSV idénticas entre versiones.
+- El pipeline verifica hashes de Bronce; el validador de linaje de Oro exige ruta, hash, timestamp e índice. La comparación E3 verificó 15,204 registros procesados, cero cuarentenas y salidas CSV idénticas entre versiones (siete ejecuciones por versión).
 - SNIIM refleja cotizaciones informadas, no todas las transacciones ni el precio recibido en parcela. Los precios son referenciales y la cobertura cambia por producto, presentación y mercado.
 - Presentaciones heterogéneas no son comparables como unidad física común. No asumir MXN/kg salvo que la presentación y su peso lo justifiquen.
 - Una estación NOAA en Manzanillo no representa condiciones de cada huerta ni todo Colima. No inferir causalidad precio-clima a partir de la coincidencia mensual.

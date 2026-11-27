@@ -1,12 +1,12 @@
 # TRUSTED DATA LAB (TDL) — Observatorio de Agro-Inteligencia Colimense (OAIC)
 
-Entrega **E0** · Componente: **Máquina de Captura (Capa Bronce) + Sistema de Calidad Inicial (PSP)**.
+Proyecto **OAIC · E0–E4** · Captura, capas Medallion, analítica reproducible y tablero local.
 
 ## 1. Descripción
 Sistema modular en Python que captura datos crudos de dos fuentes públicas y los guarda sin alterarlos, con trazabilidad e integridad (SHA-256):
 
-* **SNIIM** (Secretaría de Economía): precios mayoristas de **plátano, limón y papaya** en **Guadalajara** (Mercado de Abasto) y **Ciudad de México** (Central de Abasto de Iztapalapa).
-* **NOAA NCEI** (GHCN-Daily, Access Data Service): temperatura media/máx/mín y precipitación de la estación de **Manzanillo, Colima** (la más cercana a las zonas productoras). *Open-Meteo y NASA POWER se descartaron porque su robots.txt prohíbe el acceso a sus APIs.*
+* **SNIIM** (Secretaría de Economía): precios mayoristas de plátano, limón y papaya, más frutas regionales como mango, coco, tamarindo, guayaba, guanábana y sandía, consultados en Colima, Guadalajara, Ciudad de México y Morelia. La cobertura depende del producto, variante, origen y mercado; las nuevas combinaciones no implican historia larga.
+* **NOAA NCEI** (GHCN-Daily, Access Data Service): temperatura media/máx/mín y precipitación de la estación de **Manzanillo, Colima**. No representa las huertas de Tecomán/Armería ni las plazas de Guadalajara/CDMX.
 
 ## 2. Objetivo
 Alimentar la Capa Bronce de una arquitectura Medallion. **No** limpia, deduplica, imputa ni transforma: eso corresponde a capas posteriores.
@@ -69,6 +69,14 @@ python main.py historica --incluir-mercados-opcionales  # añade Colima y Felipe
 Genera `data/bronce/sniim/manifests/cobertura_<run_id>.{json,csv}`: un periodo (mes) cuenta **solo** si la fuente devolvió registros reales. Los meses sin datos o fallidos se listan; la existencia de 36 archivos no equivale a 36 periodos.
 Datos sintéticos (solo pruebas): `python scripts/generar_sinteticos.py` → `data/sintetico/SINTETICO_*.csv`, nunca en `data/bronce`.
 
+## Mapa de evidencias por materia
+
+| Materia | Evidencia principal |
+|---|---|
+| Ingeniería de Datos | Pipeline Bronce → Plata → Oro (§12), geoespacial (§12.1), optimización y dataset (§12.3), [ética](docs/etica-datos.md), [datasheet](docs/E3/datasheet.md) |
+| Análisis Estadístico | [Series de tiempo E1](docs/E1/laboratorio_series.md) · [Experimento factorial E2](docs/E2/experimento_factorial.md) · [PCA y MANOVA E3](docs/E3/multivariado.md) · código en `laboratorio/` (§12.4) |
+| Calidad | [Plan SQA](docs/calidad/plan_sqa.md) · [Requerimientos](docs/calidad/requerimientos.md) · [Fiabilidad y seguridad](docs/calidad/fiabilidad_seguridad.md) · [ISO/IEC 25010](docs/calidad/iso25010.md) · [ISO/IEC 25012](docs/calidad/iso25012.md) · [Normas](docs/calidad/antecedentes_normativos.md) · [Auditoría](docs/calidad/auditoria/) · [Modelos de proceso](docs/calidad/modelos_proceso.md) · [Retrospectiva PSP](docs/calidad/retrospectiva_psp.md) · [Tendencias](docs/calidad/tendencias.md) · [Solicitud del Sello TDL](docs/calidad/sello_tdl.md) |
+
 ## 11. Validación de la Capa Bronce
 ```bash
 python main.py validar            # SHA-256 de cada archivo + manifiestos
@@ -101,15 +109,65 @@ python main.py e2 --solo-procesar  # usa el GeoJSON de INEGI ya guardado en Bron
 
 El proceso guarda la capa municipal de Colima en `data/bronce/inegi_marco/`, transforma atributos y geometría con GeoPandas en `data/plata/marco_geoestadistico_colima.csv`, publica la dimensión municipal en `data/oro/contexto_geoespacial_municipal.csv` y crea un mapa en `docs/E2/`. El reporte de proceso está en `data/plata/reporte_geoespacial_e2.json`. La dimensión geográfica permanece separada de los precios por mercado para evitar uniones entre unidades espaciales incompatibles. Términos, robots.txt, atribución, privacidad y sesgos: [docs/etica-datos.md](docs/etica-datos.md). Ficha: [docs/E2/ENTREGA.md](docs/E2/ENTREGA.md).
 
-## 12.2 Optimización y publicación E3
+## 12.2 Pronóstico y tablero local
+
+```bash
+python main.py observatorio --horizonte 3
+# repetir un corte previo: python main.py observatorio --horizonte 3 --corte 2026-11-20
+python3 scripts/servir_tablero.py --port 8000
+```
+
+Abre `http://127.0.0.1:8000/tablero/`. El servidor local evita entregar versiones viejas desde caché y la página incluye un resumen precargado si JavaScript no se ejecuta. El proceso convierte cotizaciones a MXN/kg solo si SNIIM declara kilogramo o el peso de caja/arpilla. Filtra origen reportado Colima, exige 36 meses consecutivos sin imputación y compara suavizamiento simple, Holt, Holt-Winters aditivo y ARIMA(1,1,1). Elige con seis meses walk-forward y reporta MAE/RMSE/MAPE en seis meses holdout posteriores que no participan en la selección; luego reentrena con toda la serie para proyectar de 1 a 12 meses. Si no hay dos plazas con producto, variante, origen y meses coincidentes, no declara un mercado ganador.
+
+El mes en curso se excluye del ajuste y de la comparación para no tratar una cotización parcial como un agregado mensual completo. `--corte AAAA-MM-DD` fija la fecha de referencia al reproducir una versión anterior.
+
+Salidas: `data/oro/pronosticos_colima.csv`, métricas y predicciones de backtest, `comparativa_mercados_colima.csv`, cobertura y `reporte_observatorio_e4.json`; el panel, métricas, validaciones, cobertura y reporte también se publican en `data/publico/`. El tablero en `tablero/index.html` tiene navegación por áreas, filtros interactivos de producto y ventana temporal, evaluación de modelos, calidad, cobertura y descargas; su plantilla editable está en `tablero/plantilla.html`. `panel_mensual_e3.csv` se conserva como snapshot de E3. Guion y evidencia de defensa: [docs/E4/ENTREGA.md](docs/E4/ENTREGA.md) y [docs/E4/guion_defensa.md](docs/E4/guion_defensa.md).
+
+La vista para compradores está en [`tablero/cliente.html`](tablero/cliente.html) y se publica en `/tablero/cliente.html`. Presenta filtros por producto, origen y plaza; historial y pronóstico; comparación de precios brutos en meses pareados; simulador de margen, merma, flete y punto de equilibrio a partir de costos ingresados por el cliente; mapa municipal de producción oficial SIAP; y contexto de comercio internacional con importadores que reportan a México como socio y exportadores globales por grupo HS. Las observaciones por pieza no se convierten artificialmente a kg. El precio mayorista más alto no se etiqueta como plaza más rentable: el orden neto se obtiene solo si se introducen costo de compra, flete, empaque y mermas por destino. El punto de equilibrio debe contrastarse con demanda confirmada.
+
+El contexto agrícola municipal se integra con SIAP desde su CSV oficial anual; conserva el archivo original en Bronce y produce [`data/publico/produccion_municipal_colima.geojson`](data/publico/produccion_municipal_colima.geojson) y una tabla anual municipal. Ejecuta `python main.py siap` para regenerar el mapa desde las capturas disponibles. La producción pasada describe dónde se produjo y cuánto se cosechó en el año; no es inventario o disponibilidad actual.
+
+El contexto internacional usa UN Comtrade para comercio anual reportado por país y grupos de frutas del Sistema Armonizado. Ejecuta `python main.py comercio-intl` para capturar los previews públicos, o `python main.py comercio-intl --solo-procesar` para regenerar las tablas desde Bronce. El API público limita las consultas a 500 filas; una consulta con 500 observaciones se marca con truncamiento posible. El valor USD/kg mostrado es aduanal (valor/peso neto), no una cotización mayorista o minorista. Los grupos HS de mango/guayaba/mangostán y limón/lima pueden combinar productos distintos. Para buscar compradores reales hace falta confirmar destino, demanda, logística, requisitos fitosanitarios, aranceles y contrato.
+
+Más detalle de ecuaciones, límites y sentido comercial: [`docs/comercial/analitica_decisiones.md`](docs/comercial/analitica_decisiones.md).
+
+## 12.3 Optimización y publicación E3
 
 `src/tdl_e1/pipeline.py` aplica validación vectorizada de reglas y evita recorrer grupos singleton si no hay claves duplicadas. El parser SNIIM limita el árbol HTML a tablas. La medición antes/después se reproduce con el tag de línea base `e2` y el inventario Bronce versionado:
 
 ```bash
-python benchmarks/comparativa.py --repeticiones 3
+python benchmarks/comparativa.py --repeticiones 7 --semilla 20261120
 ```
 
-El benchmark usa procesos aislados, exige igualdad SHA-256 de las salidas CSV y guarda resultados, logs y gráfica. El dataset curado está en [`data/publico/panel_mensual_e3.csv`](data/publico/panel_mensual_e3.csv); licencia y avisos en [`data/publico/LICENSE.md`](data/publico/LICENSE.md); diccionario en [`docs/E3/datasheet.md`](docs/E3/datasheet.md); resultados en [`docs/E3/ENTREGA.md`](docs/E3/ENTREGA.md).
+El benchmark compara los tags congelados `e2` y `e3` en pares aislados, aleatoriza cuál corre primero dentro de cada par, exige igualdad SHA-256 de las salidas CSV y guarda cada corrida, logs y gráfica. El snapshot E3 está en [`data/publico/panel_mensual_e3.csv`](data/publico/panel_mensual_e3.csv); la publicación viva en `data/publico/panel_mensual_actual.csv`. Licencia y avisos en [`data/publico/LICENSE.md`](data/publico/LICENSE.md); diccionario E3 en [`docs/E3/datasheet.md`](docs/E3/datasheet.md); resultados en [`docs/E3/ENTREGA.md`](docs/E3/ENTREGA.md).
+
+## 12.4 Laboratorio estadístico
+
+Los tres laboratorios son módulos de Python en formato *percent* (`# %%`), que VS Code y Jupyter (con jupytext) abren como notebooks. Cada uno lee solo datos versionados, escribe cifras en `laboratorio/resultados/eN/` y regenera su informe en `docs/`:
+
+```bash
+python -m laboratorio.e1_series --corte 2026-10   # descomposición, ADF/KPSS, ACF/PACF, 4 modelos, Ljung-Box, intervalos
+python -m laboratorio.e2_experimento              # 2³ con bloques, 3×2 con interacción, 2⁴⁻¹ y confirmación (≈ 4 min; no usar la máquina mientras corre)
+python -m laboratorio.e3_multivariado             # Mardia, Henze-Zirkler, PCA, MANOVA y permutación
+python -m laboratorio.tablero                     # publica tablero/laboratorio.html
+```
+
+El experimento E2 procesa copias locales de Bronce; no hace peticiones al SNIIM. Las métricas de calidad se calculan con `python -m calidad.metricas` (fiabilidad, frescura e ISO/IEC 25012 en `calidad/reportes/`).
+
+## 12.5 Seguimiento de oportunidades comerciales
+
+El módulo opcional `src/modelos/` y `scripts/comercial.py` organiza prospectos, proveedores, cotizaciones, rutas, oportunidades y operaciones piloto en CSV locales. Inicializa y valida las tablas, importa un CSV DENUE como prospectos **por verificar**, resume vigencias y evidencia faltante, y valida vínculos entre oportunidad, cliente, cotizaciones y ruta:
+
+```bash
+python main.py comercial inicializar
+python main.py comercial validar
+python main.py comercial importar-denue /ruta/al/denue.csv --estado-default Colima
+python main.py comercial seguimiento
+```
+
+Los CSV con registros comerciales se excluyen de Git mediante `data/comercial/.gitignore`; esa exclusión no cifra archivos ni restringe acceso local. No se guardan teléfonos ni correos. Revisa [data/comercial/README.md](data/comercial/README.md) y las guías de [entrevista](docs/comercial/entrevista_comprador.md), [cotización](docs/comercial/solicitud_cotizacion.md) y [cierre de piloto](docs/comercial/cierre_piloto.md).
+
+`src/economia/` aporta cálculo de costo puesto en destino, contribución, punto de equilibrio, escenarios y priorización multicriterio con niveles de evidencia. Son herramientas de análisis que requieren costos, pesos, cotizaciones y vigencias documentados; **no convierten automáticamente el pronóstico SNIIM en oferta ni acreditan rentabilidad**. Las tablas recién inicializadas estarán vacías hasta que el equipo registre evidencia real.
 
 ## 13. Sistema PSP
 ```bash
@@ -120,28 +178,32 @@ python -m calidad.psp defecto --archivo calidad/defectos-sebastian.csv --fecha 2
 python -m calidad.psp resumen --archivo calidad/tiempo-sebastian.csv
 python -m calidad.psp validar --tiempo calidad/tiempo-sebastian.csv --defectos calidad/defectos-sebastian.csv
 ```
-Fases (estilo del Kit; se aceptan sinónimos con acentos): planeacion, diseno, codigo, revision, compilacion, pruebas, correccion, documentacion. Tiempo neto = fin − inicio − interrupción. Los CSV están **vacíos** (solo encabezados): registren tiempos y defectos reales.
+Fases (estilo del Kit; se aceptan sinónimos con acentos): planeacion, diseno, codigo, revision, compilacion, pruebas, correccion, documentacion. Tiempo neto = fin − inicio − interrupción. En este corte Sebastián tiene 4 registros de tiempo y 3 defectos; los archivos de José solo tienen encabezados. No inventar actividades retroactivas.
 Tipos de defecto (`calidad/catalogo_defectos.json`): los diez de PSP que exige el Kit: documentacion, sintaxis, construccion, asignacion, interfaz, verificacion, datos, funcion, sistema y entorno (cada uno con un ejemplo del proyecto).
 Bitácora de capturas: `calidad/bitacora_capturas.csv` (una fila por ejecución y fuente; base de MTBF/MTTR/disponibilidad en E1).
 Objetivos (`calidad/objetivos_calidad.json`): OQ1 disponibilidad ≥ 95 %, OQ2 cero fallos no detectados, OQ3 cobertura diaria 100 %. Evaluación: `python main.py objetivos --desde AAAA-MM-DD --hasta AAAA-MM-DD` (devuelve `sin_datos` si no hay manifiestos; no hay metas "alcanzadas" sin evidencia).
 
 ## 14. Pruebas
 ```bash
-python -m pytest -q                                    # unitarias, sin red (72)
+pip install -r requirements-dev.txt                    # pytest-cov, ruff, pip-audit
+python -m pytest -q --cov                              # unitarias sin red con cobertura (umbral 60 % en pyproject.toml)
+ruff check .                                           # linter
+pip-audit -r requirements-dev.txt                      # vulnerabilidades conocidas
 RUN_INTEGRATION=1 python -m pytest -m integration -s   # contra SNIIM y NOAA NCEI reales
 ```
 Los HTML/JSON de las pruebas unitarias son *fixtures* controlados, no capturas reales.
 
 ## 15. GitHub Actions
-`.github/workflows/captura_historica.yml`: manual, descarga la serie de 36 meses en la nube. `.github/workflows/captura_diaria.yml`: diario a las **03:00 UTC = 21:00 en Colima** (UTC-6 todo el año desde 2022) y manual (`workflow_dispatch`). `concurrency` evita ejecuciones simultáneas; permisos mínimos `contents: write`; instala dependencias, corre pruebas, captura SNIIM/NOAA, ejecuta `python main.py e2` (incluye la captura INEGI y los productos E1/E2), valida Bronce y publica `data/` con `GITHUB_TOKEN` (sin PAT), sube logs como artefacto y falla el job si captura o validación no fueron correctas. Habilita *Settings → Actions → Workflow permissions → Read and write*. Los `schedule` solo corren desde la rama por defecto.
+`.github/workflows/validacion.yml` es la puerta de calidad 2: en cada push y pull request corre gitleaks sobre todo el historial, ruff, pip-audit, pruebas con cobertura mínima de 60 %, regenera Plata/Oro desde Bronce y falla si hay registros perdidos sin cuarentena, y calcula las métricas de fiabilidad e ISO/IEC 25012. Para reproducir exactamente: Python 3.12 y `pip install -r requirements-lock.txt`. Los workflows históricos y diarios actualizan las fuentes conforme a la política, ejecutan E1/E2/E4, refrescan el CSV público actual y el tablero, validan Bronce y publican con `GITHUB_TOKEN`. La captura diaria corre a las **03:00 UTC = 21:00 en Colima**; los schedules solo corren desde la rama por defecto.
 
 ## 16. Limitaciones conocidas
-* **SNIIM sin API oficial**: se usa la consulta web pública. El parser (`parse_resultados`) se escribió según la estructura observada y **debe validarse con la primera ejecución real** (`pytest -m integration`). Si el sitio cambia, solo se ajustan `parse_formulario` y `parse_resultados`; un cambio de estructura produce estado `fallida`, nunca datos inventados.
+* **SNIIM sin API oficial**: se consulta el formulario público; fixtures unitarios cubren el parser y `pytest -m integration` permite validar el sitio actual. Cambios de estructura dejan captura fallida/parcial, no generan datos inventados.
 * La URL de resultados usa el patrón observado; que acepte rangos mensuales y la paginación (`RegistrosPorPagina=500`) no está verificado: si la fuente reporta varias páginas, la captura queda `parcial`.
 * Tecomán/Armería no son mercados del SNIIM; las zonas productoras se cubren con clima. "Colima: Centros de distribución" es opcional.
 * "Ciudad de México" = Central de Abasto de Iztapalapa; "Guadalajara" = Mercado de Abasto (el Felipe Ángeles es opcional).
 * GitHub Actions puede ser bloqueado por el sitio (IPs de centros de datos): quedaría registrado como fallida.
-* NOAA NCEI: una sola estación (Manzanillo), no Tecomán; verificar el ID con `curl -s "https://www.ncei.noaa.gov/access/services/data/v1?dataset=daily-summaries&stations=MXM00076654&startDate=2024-01-01&endDate=2024-01-05&dataTypes=TMAX,TMIN,PRCP&format=json&units=metric"`.
+* El pronóstico exige 36 meses continuos; seis meses se usan para elegir el modelo y los seis meses cerrados siguientes quedan reservados como holdout para medir error fuera de muestra. En el corte local hay series para limón #5, papaya Maradol y tamarindo. Tamarindo tiene 27 meses comunes entre Colima y Guadalajara; la comparación es descriptiva y no alcanza para recomendar una plaza.
+* NOAA NCEI: una estación (Manzanillo), no Tecomán. En el corte 2026-11-20, los registros útiles terminan el 2026-06-29; los nulos posteriores se conservan.
 
 ## 17. Consideraciones éticas
 User-Agent identificable, robots.txt obligatorio (si no se puede leer, **no se hace scraping**), Crawl-delay y pausa ≥ 1.5 s por dominio, sin proxies ni evasión de protecciones y con volumen bajo. La declaración vigente de términos y límites de las tres fuentes está en [docs/etica-datos.md](docs/etica-datos.md).

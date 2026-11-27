@@ -1,34 +1,37 @@
 {
-  "generado_utc": "2026-11-20T21:49:10.831421+00:00",
+  "generado_utc": "2026-11-20T23:30:04Z",
   "baseline": {
     "referencia": "e2",
     "commit": "34b56a3d6f5dc9d5614bd8a21bbd364a879eaa44"
   },
   "optimizado": {
-    "referencia": "working_tree",
-    "codigo_sha256": "7b863c60f7a7328ee98e28440d44308b2a9155e625c398fa4985342d33a0c729"
+    "referencia": "e3",
+    "commit": "e8d401408416120ede058c2993135445beb82526",
+    "codigo_sha256": "6014b3e511e32deaef776d7cf7cc6e37540c1a780ad9f8fa183bd55f35523584"
   },
   "condiciones": {
-    "repeticiones_por_version": 3,
+    "repeticiones_por_version": 7,
     "python": "3.12.3",
     "plataforma": "linux",
+    "semilla_orden": 20261120,
+    "orden": "pares e2/e3; el orden dentro de cada par se aleatoriza con semilla fija",
     "bronce": {
       "archivos": 3736,
       "bytes": 37463948,
       "sha256_inventario": "e80946048bbf911f6be13ab49ec19a313dc808f0a47c97705e6ba84dc98ecea7"
     },
-    "metricas_resumidas": "mediana de procesos aislados"
+    "metricas_resumidas": "mediana, cuartiles y rango de procesos aislados pareados"
   },
   "metricas": {
     "tiempo_segundos": {
-      "antes": 22.104266475973418,
-      "despues": 19.289004479011055,
-      "mejora_porcentaje": 12.74
+      "antes": 33.82090965801035,
+      "despues": 21.492592146008974,
+      "mejora_porcentaje": 36.45
     },
     "memoria_max_mib": {
-      "antes": 173.6796875,
-      "despues": 155.47265625,
-      "mejora_porcentaje": 10.48
+      "antes": 175.6015625,
+      "despues": 157.46484375,
+      "mejora_porcentaje": 10.33
     },
     "errores": {
       "antes": 0,
@@ -56,9 +59,10 @@
     {
       "version": "base",
       "run": 1,
+      "orden_global": 1,
       "errors": 0,
-      "seconds": 22.150280391972046,
-      "peak_rss_kib": 177700,
+      "seconds": 21.489895257022,
+      "peak_rss_kib": 180512,
       "records_parsed": 15204,
       "records_valid": 15204,
       "records_quarantined": 0,
@@ -69,9 +73,10 @@
     {
       "version": "optimizado",
       "run": 1,
+      "orden_global": 2,
       "errors": 0,
-      "seconds": 19.463393245998304,
-      "peak_rss_kib": 159180,
+      "seconds": 19.088012933003483,
+      "peak_rss_kib": 161424,
       "records_parsed": 15204,
       "records_valid": 15204,
       "records_quarantined": 0,
@@ -82,9 +87,10 @@
     {
       "version": "base",
       "run": 2,
+      "orden_global": 3,
       "errors": 0,
-      "seconds": 22.104266475973418,
-      "peak_rss_kib": 177848,
+      "seconds": 33.82090965801035,
+      "peak_rss_kib": 179804,
       "records_parsed": 15204,
       "records_valid": 15204,
       "records_quarantined": 0,
@@ -95,9 +101,10 @@
     {
       "version": "optimizado",
       "run": 2,
+      "orden_global": 4,
       "errors": 0,
-      "seconds": 19.23108551101177,
-      "peak_rss_kib": 159204,
+      "seconds": 22.582728454988683,
+      "peak_rss_kib": 161540,
       "records_parsed": 15204,
       "records_valid": 15204,
       "records_quarantined": 0,
@@ -108,9 +115,10 @@
     {
       "version": "base",
       "run": 3,
+      "orden_global": 5,
       "errors": 0,
-      "seconds": 21.67159360399819,
-      "peak_rss_kib": 178092,
+      "seconds": 37.46082673498313,
+      "peak_rss_kib": 179816,
       "records_parsed": 15204,
       "records_valid": 15204,
       "records_quarantined": 0,
@@ -121,15 +129,128 @@
     {
       "version": "optimizado",
       "run": 3,
+      "orden_global": 6,
       "errors": 0,
-      "seconds": 19.289004479011055,
-      "peak_rss_kib": 159244,
+      "seconds": 19.005805610009702,
+      "peak_rss_kib": 161164,
       "records_parsed": 15204,
       "records_valid": 15204,
       "records_quarantined": 0,
       "gold_rows": 712,
       "duplicate_conflicts": 0,
       "log": "benchmarks/evidencias/optimizado_corrida_3.log"
+    },
+    {
+      "version": "optimizado",
+      "run": 4,
+      "orden_global": 7,
+      "errors": 0,
+      "seconds": 19.031342089001555,
+      "peak_rss_kib": 161244,
+      "records_parsed": 15204,
+      "records_valid": 15204,
+      "records_quarantined": 0,
+      "gold_rows": 712,
+      "duplicate_conflicts": 0,
+      "log": "benchmarks/evidencias/optimizado_corrida_4.log"
+    },
+    {
+      "version": "base",
+      "run": 4,
+      "orden_global": 8,
+      "errors": 0,
+      "seconds": 35.31531888997415,
+      "peak_rss_kib": 179920,
+      "records_parsed": 15204,
+      "records_valid": 15204,
+      "records_quarantined": 0,
+      "gold_rows": 712,
+      "duplicate_conflicts": 0,
+      "log": "benchmarks/evidencias/base_corrida_4.log"
+    },
+    {
+      "version": "optimizado",
+      "run": 5,
+      "orden_global": 9,
+      "errors": 0,
+      "seconds": 21.492592146008974,
+      "peak_rss_kib": 158232,
+      "records_parsed": 15204,
+      "records_valid": 15204,
+      "records_quarantined": 0,
+      "gold_rows": 712,
+      "duplicate_conflicts": 0,
+      "log": "benchmarks/evidencias/optimizado_corrida_5.log"
+    },
+    {
+      "version": "base",
+      "run": 5,
+      "orden_global": 10,
+      "errors": 0,
+      "seconds": 32.51074965498992,
+      "peak_rss_kib": 179664,
+      "records_parsed": 15204,
+      "records_valid": 15204,
+      "records_quarantined": 0,
+      "gold_rows": 712,
+      "duplicate_conflicts": 0,
+      "log": "benchmarks/evidencias/base_corrida_5.log"
+    },
+    {
+      "version": "base",
+      "run": 6,
+      "orden_global": 11,
+      "errors": 0,
+      "seconds": 35.46330796199618,
+      "peak_rss_kib": 180068,
+      "records_parsed": 15204,
+      "records_valid": 15204,
+      "records_quarantined": 0,
+      "gold_rows": 712,
+      "duplicate_conflicts": 0,
+      "log": "benchmarks/evidencias/base_corrida_6.log"
+    },
+    {
+      "version": "optimizado",
+      "run": 6,
+      "orden_global": 12,
+      "errors": 0,
+      "seconds": 32.814558179001324,
+      "peak_rss_kib": 161320,
+      "records_parsed": 15204,
+      "records_valid": 15204,
+      "records_quarantined": 0,
+      "gold_rows": 712,
+      "duplicate_conflicts": 0,
+      "log": "benchmarks/evidencias/optimizado_corrida_6.log"
+    },
+    {
+      "version": "optimizado",
+      "run": 7,
+      "orden_global": 13,
+      "errors": 0,
+      "seconds": 25.490565771993715,
+      "peak_rss_kib": 161156,
+      "records_parsed": 15204,
+      "records_valid": 15204,
+      "records_quarantined": 0,
+      "gold_rows": 712,
+      "duplicate_conflicts": 0,
+      "log": "benchmarks/evidencias/optimizado_corrida_7.log"
+    },
+    {
+      "version": "base",
+      "run": 7,
+      "orden_global": 14,
+      "errors": 0,
+      "seconds": 28.61117307198583,
+      "peak_rss_kib": 179628,
+      "records_parsed": 15204,
+      "records_valid": 15204,
+      "records_quarantined": 0,
+      "gold_rows": 712,
+      "duplicate_conflicts": 0,
+      "log": "benchmarks/evidencias/base_corrida_7.log"
     }
   ],
   "archivos_salida_sha256": {
@@ -138,5 +259,39 @@
     "plata/clima_modelado.csv": "bbcd4c477a6b8441895a7cdba0234a3c025e1978e471fb79026658958a99331c",
     "plata/conflictos_resueltos.csv": "0e27fa76417a366a56f87890fdc122ff3332cb298cc1718946b3d86a26c11afd",
     "plata/precios_clima.csv": "db95e3c3ba3a3dd3a74e0d85e91777be19eab1e2e539240a534245f1339a9fde"
+  },
+  "distribucion": {
+    "tiempo_segundos": {
+      "e2": {
+        "minimo": 21.489895257022,
+        "q1": 30.560961363487877,
+        "mediana": 33.82090965801035,
+        "q3": 33.82090965801035,
+        "maximo": 37.46082673498313
+      },
+      "e3": {
+        "minimo": 19.005805610009702,
+        "q1": 19.05967751100252,
+        "mediana": 21.492592146008974,
+        "q3": 21.492592146008974,
+        "maximo": 32.814558179001324
+      }
+    },
+    "memoria_max_mib": {
+      "e2": {
+        "minimo": 175.41796875,
+        "q1": 175.521484375,
+        "mediana": 175.6015625,
+        "q3": 175.6015625,
+        "maximo": 176.28125
+      },
+      "e3": {
+        "minimo": 154.5234375,
+        "q1": 157.3828125,
+        "mediana": 157.46484375,
+        "q3": 157.46484375,
+        "maximo": 157.75390625
+      }
+    }
   }
 }

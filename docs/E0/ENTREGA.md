@@ -3,7 +3,7 @@
 Equipo: Grageda Sandoval Sebastián y Jose Negrete Orozco · Etiqueta: `e0` · Tablero: no aplica en E0 (se publica desde E1)
 
 ## Resumen en tres líneas
-1. Observatorio de precios mayoristas de limón, plátano y papaya (SNIIM) cruzados con clima de Tecomán y Colima (NOAA NCEI) para decidir cuándo vender.
+1. Observatorio de cotizaciones mayoristas SNIIM y contexto climático de una estación NOAA en Manzanillo; la estación no representa Tecomán ni todas las huertas.
 2. Captura ética automática a la capa bronce con GitHub Actions, trazabilidad por SHA-256 y bitácora de ejecuciones.
 3. Sistema de calidad inicial (PSP) con cuatro archivos individuales inicializados y tres objetivos medibles.
 
@@ -29,7 +29,7 @@ python main.py diaria
 python main.py validar
 ```
 
-## Estado de cierre de E0 (revisión 2026-11-13)
+## Estado de cierre de E0 (corte original 2026-11-13)
 - [x] Propuesta con ficha, tres preguntas analíticas y tres entrevistas documentadas; la entrevista principal contiene cinco preguntas y duración de 18 minutos.
 - [x] robots.txt y condiciones de uso revisadas para ambas fuentes y documentadas con fecha en la propuesta.
 - [x] SNIIM: 36/36 meses por producto/mercado. NOAA: 28/36 meses; los meses faltantes están declarados y no se rellenaron.
@@ -38,6 +38,12 @@ python main.py validar
 - [ ] Colaboradores: el equipo confirma que el requisito correcto es dos profesores y el compañero. GitHub muestra un colaborador aceptado y dos invitaciones pendientes además del dueño; falta que los destinatarios acepten las invitaciones para confirmar el acceso efectivo.
 - [x] Tag `e0` creado el 2026-11-09 17:24 (hora local, antes del límite de 23:59).
 - [ ] Registro de la URL del repositorio en Classroom: el integrante responsable indicó que realizará el envío; falta marcar la tarea como entregada y verificarlo allí.
+
+## Actualización para la defensa (2026-11-20)
+
+- El equipo confirmó que el requisito vigente era dos profesores más el compañero; el estado de invitaciones pendientes del corte original no debe reutilizarse como estado actual.
+- El registro del repositorio en Classroom queda a cargo del integrante designado; esta ficha no afirma haber verificado el envío.
+- El alcance analítico vigente está corregido en [`propuesta.md`](propuesta.md): se limita a series Colima con precio/kg verificable. No hay serie SNIIM suficiente de plátano Colima ni comparación de dos mercados con origen, variante y mes coincidentes.
 
 ## Relatoría de etapa
 No aplica en E0 (se entrega desde E1).

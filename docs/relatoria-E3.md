@@ -12,7 +12,7 @@
 2. Se midió la línea base en procesos aislados y se perfiló una ejecución. El mayor costo detectado correspondió al parseo repetido de 1,672 páginas HTML con un árbol BeautifulSoup completo; también se observó iteración Python para reglas de calidad y grupos singleton en resolución de duplicados.
 3. Se implementaron tres cambios acotados: restringir el parseo estructural a tablas, vectorizar reglas relacionales y hacer una comprobación rápida de existencia de duplicados. Se conservó el procesamiento anterior para grupos con duplicados reales.
 4. Se agregaron pruebas de regresión para el camino sin duplicados y la cuarentena de reglas inválidas. La suite local terminó con **74 pruebas aprobadas y 2 pruebas de integración externas omitidas**; no se ejecutaron consultas contra servicios externos.
-5. Se compararon la revisión del tag `e2` (`34b56a3`) y el código optimizado con las mismas 3,736 capturas (15,204 registros parseados), tres procesos independientes por versión y límites de hilos equivalentes. La mediana pasó de 22.10 s a 19.29 s (12.74% menos) y la memoria máxima RSS de 173.68 MiB a 155.47 MiB (10.48% menos). Ambas versiones tuvieron cero errores, procesaron 15,204 registros, enviaron cero a cuarentena y produjeron 712 filas Oro. Los hashes de las cinco salidas CSV coinciden.
+5. Se compararon la revisión del tag `e2` (`34b56a3`) y el código optimizado del tag `e3` (`e8d4014`) con las mismas 3,736 capturas Bronce (15,204 registros parseados). Una primera medición con tres procesos por versión dio 22.10 → 19.29 s (−12.74 %); como la variación entre corridas era grande, se repitió con **siete pares aislados** y orden aleatorizado dentro de cada par, que es la cifra oficial en [`benchmarks/comparativa.json`](../benchmarks/comparativa.json): mediana **33.82 → 21.49 s (−36.45 %)** y memoria máxima RSS **175.60 → 157.46 MiB (−10.33 %)**. Los rangos observados (e2: 21.49–37.46 s; e3: 19.01–32.81 s) se traslapan, así que el porcentaje depende de la carga de la máquina en cada corrida y debe leerse junto con el rango. Ambas versiones tuvieron cero errores, procesaron 15,204 registros, enviaron cero a cuarentena y produjeron 712 filas Oro. Los hashes de las cinco salidas CSV coinciden.
 6. Se publicó como copia curada el panel mensual Oro en CSV con sus campos de linaje. Se añadió un datasheet que describe composición, variables, cobertura, métodos, nulos, usos y limitaciones, junto con una declaración de licencia por capas que preserva las condiciones de las fuentes.
 
 ## Organización y decisiones
@@ -31,7 +31,7 @@ La disponibilidad ambiental varía: algunos meses y variables NOAA no tienen cob
 
 El perfilado evitó optimizar intuiciones: localizó el costo en el parser HTML y justificó reducir tanto construcción de árboles como bucles sobre filas. Una comparación útil requiere aislar procesos, mantener entradas y condiciones iguales y confirmar que el contenido no cambió. Las mejoras medidas aplican al inventario y entorno registrados; deben recalcularse al cambiar de equipo, dependencias o tamaño de datos.
 
-La etapa queda lista para revisión cuando los cambios estén en el repositorio remoto, el tag `e3` apunte al commit de esta entrega y se registre el enlace en el formulario oficial.
+La etapa quedó publicada en el tag `e3`, que apunta al commit de esta entrega. El integrante designado registra el enlace en Classroom; esta relatoría no afirma haber verificado ese formulario.
 
 ## Evidencias
 
@@ -40,3 +40,17 @@ La etapa queda lista para revisión cuando los cambios estén en el repositorio 
 - [Dataset curado](../data/publico/panel_mensual_e3.csv)
 - [Gráfica de benchmark](E3/evidencias/comparativa.png)
 - [Resultados reproducibles](../benchmarks/comparativa.json)
+
+## Revisión del 2026-11-27 (antes de etiquetar E3)
+
+Una revisión completa del repositorio contra la guía del proyecto encontró 14 hallazgos (1 crítico: el reproceso E2 fallaba al confundir la capa municipal con polígonos estatales). Detalle, acciones y estado en [auditoría interna](calidad/auditoria/auditoria_interna_2026-11-27.md) y [cierre de hallazgos](calidad/auditoria/cierre_hallazgos.md). En esa revisión se agregaron el laboratorio estadístico de E1–E3 (`laboratorio/`), la integración continua completa y la documentación de calidad (`docs/calidad/`).
+
+## Uso de IA generativa
+
+- 2026-11-27: Claude Code (asistente de programación) para revisar el repositorio contra la guía, escribir pruebas, el laboratorio estadístico, las métricas de calidad y borradores de la documentación de calidad. Todas las cifras de los informes se generan con código del repositorio; el equipo debe poder explicar cada análisis en la defensa.
+- Etapas anteriores: **pendiente** que el equipo declare qué herramientas usó y para qué.
+
+## Pendiente del equipo para cumplir la plantilla de relatoría
+
+- Cronología con horas **por persona**: no hay registros PSP de E1–E3 (ver [retrospectiva PSP](calidad/retrospectiva_psp.md)); no se inventan.
+- Un párrafo de aprendizaje por materia escrito por cada integrante.

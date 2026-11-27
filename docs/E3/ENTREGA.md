@@ -50,19 +50,19 @@ Para las observaciones únicas, la versión anterior recorría todos los grupos 
 
 ## 3. Comparativa cuantitativa
 
-Prueba con las mismas 3,736 capturas Bronce (37,463,948 bytes; inventario SHA-256 `e80946048bbf911f6be13ab49ec19a313dc808f0a47c97705e6ba84dc98ecea7`), Python 3.12.3 en Linux, límites de hilos iguales y tres procesos aislados por versión. Se reporta la mediana. Las cifras se generan por [`benchmarks/comparativa.py`](../../benchmarks/comparativa.py) y están respaldadas por [`comparativa.json`](../../benchmarks/comparativa.json), [`resultados.csv`](../../benchmarks/resultados.csv) y logs de cada corrida.
+Prueba con las mismas capturas Bronce, Python 3.12.3 en Linux y límites de hilos iguales. Se comparan los códigos congelados en `e2` y `e3` en siete pares de procesos aislados; el orden dentro de cada par se aleatoriza con semilla registrada. Se reportan mediana, rango observado y resultados de cada ejecución. La versión E4 del árbol de trabajo no sustituye la referencia `e3`, pues incorpora cambios semánticos posteriores. Las cifras se generan por [`benchmarks/comparativa.py`](../../benchmarks/comparativa.py) y están respaldadas por [`comparativa.json`](../../benchmarks/comparativa.json), [`resultados.csv`](../../benchmarks/resultados.csv) y logs de cada corrida.
 
 | Indicador | Original (`e2`) | Optimizado | Mejora |
 |---|---:|---:|---:|
-| Tiempo de ejecución | 22.10 s | 19.29 s | 12.74% menos |
-| Memoria máxima RSS | 173.68 MiB | 155.47 MiB | 10.48% menos |
-| Errores de ejecución | 0/3 | 0/3 | Diferencia absoluta: 0; porcentaje no aplicable desde cero |
+| Tiempo de ejecución (mediana, 7 pares) | 33.82 s | 21.49 s | 36.45% menos |
+| Memoria máxima RSS (mediana, 7 pares) | 175.60 MiB | 157.46 MiB | 10.33% menos |
+| Errores de ejecución | 0/7 | 0/7 | Diferencia absoluta: 0; porcentaje no aplicable desde cero |
 | Registros Bronce procesados | 15,204 | 15,204 | Sin cambio |
 | Filas en cuarentena | 0 | 0 | Diferencia absoluta: 0; porcentaje no aplicable desde cero |
 | Agregaciones Oro | 712 | 712 | Sin cambio |
 | Salidas CSV | — | — | Cinco SHA-256 idénticos entre versiones |
 
-> Los resultados reales de cada ejecución están en `benchmarks/resultados.csv`; el gráfico comparativo se incluye en [evidencias](evidencias/comparativa.png). Baseline: commit `34b56a3` (tag `e2`). El hash SHA-256 del código optimizado está registrado en `benchmarks/comparativa.json`.
+> Los resultados reales de cada ejecución están en `benchmarks/resultados.csv`; el gráfico comparativo se incluye en [evidencias](evidencias/comparativa.png). Baseline: commit `34b56a3` (tag `e2`); versión optimizada: tag `e3`. El hash SHA-256 del código comparado está registrado en `benchmarks/comparativa.json`.
 
 ## 4. Dataset publicado
 
@@ -72,10 +72,12 @@ Prueba con las mismas 3,736 capturas Bronce (37,463,948 bytes; inventario SHA-25
 - Procedencia completa por fila: campos `linaje_precios_bronce` y `linaje_clima_bronce`; cada referencia contiene archivo, hash SHA-256, fecha UTC e índice original.
 - No se publican datos personales. Los precios son referenciales y conservan su presentación comercial; no se convierten a kg sin base verificable.
 
+Este CSV es el snapshot E3 generado el 2026-11-20 y se conserva sin mutaciones para reproducir la entrega. El pipeline E4 publica el panel actual con campos derivados de MXN/kg cuando SNIIM declara el peso, en `data/publico/panel_mensual_actual.csv`; además genera pronósticos validados y el tablero local.
+
 ## 5. Evidencias y reproducción
 
 - [Gráfica antes/después](evidencias/comparativa.png).
-- [Logs de las seis corridas](../../benchmarks/evidencias/).
+- [Logs de las catorce corridas](../../benchmarks/evidencias/).
 - [Métricas en JSON](../../benchmarks/comparativa.json) y tabla de corridas en CSV.
 - [Código optimizado](../../src/tdl_e1/pipeline.py) y parser SNIIM (`extractores/sniim_extractor.py`).
 
@@ -85,14 +87,45 @@ source .venv/bin/activate
 pip install -r requirements.txt
 python -m pytest -q
 python main.py capas
-cp data/oro/panel_mensual.csv data/publico/panel_mensual_e3.csv
-python benchmarks/comparativa.py --repeticiones 3
+python main.py observatorio --horizonte 3
+python benchmarks/comparativa.py --repeticiones 7 --semilla 20261120
 ```
 
 La comparación requiere Git, el tag `e2`, las capturas Bronce versionadas localmente y las dependencias del proyecto. Las salidas de benchmark se generan en directorios temporales; logs, CSV de métricas, resumen y gráfica se conservan como evidencia.
 
 ## 6. Conclusiones
 
-En esta muestra, la optimización redujo la mediana de tiempo y el máximo RSS sin cambiar los CSV, el número de registros aceptados, las filas Oro o los descartes. La mejora medida aplica a este conjunto de 3,481 capturas y a este equipo/entorno; no garantiza el mismo porcentaje con otros volúmenes, sistemas o versiones de Python. El dataset incluye atribución, limitaciones y linaje para facilitar su revisión y reutilización responsable.
+En esta muestra, la optimización redujo la mediana de tiempo y memoria RSS sin cambiar los CSV, el número de registros aceptados, las filas Oro o los descartes. La mejora medida aplica a este conjunto de 3,736 capturas y a este equipo/entorno; no garantiza el mismo porcentaje con otros volúmenes, sistemas o versiones de Python. El dataset incluye atribución, limitaciones y linaje para facilitar su revisión y reutilización responsable.
 
 **Referencia de entrega:** el tag `e3` debe apuntar al commit que contiene estos artefactos. El enlace del repositorio se registra en el formulario oficial de Classroom.
+
+## 7. Análisis Estadístico (agregado el 2026-11-27)
+
+| Criterio de la rúbrica | Evidencia | Nota del equipo |
+|---|---|---|
+| Matriz y normalidad multivariada | [multivariado.md §1–2](multivariado.md): 5 variables, vector de medias, covarianzas y correlaciones; Mardia, Henze-Zirkler y Q-Q de Mahalanobis | Normalidad rechazada → se usan métodos robustos |
+| Componentes principales | [§3](multivariado.md): estandarización, sedimentación, varianza explicada, cargas, biplot y nombre de negocio de cada componente | CP1 = índice de nicho (precio alto, mercado delgado) |
+| MANOVA | [§5](multivariado.md): Wilks, Pillai, Hotelling, Roy; M de Box; permutación de Pillai; contraste con 5 ANOVA y tasa de error por familia | Pillai p (permutación) = 0.001 |
+| Mapa en el tablero | [`tablero/laboratorio.html`](../../tablero/laboratorio.html) con interpretación para el comprador | |
+
+## 8. Calidad en los Sistemas de Información (agregado el 2026-11-27)
+
+| Criterio de la rúbrica | Evidencia |
+|---|---|
+| Cierre de auditoría | [cierre_hallazgos.md](../calidad/auditoria/cierre_hallazgos.md): 0 críticos abiertos en la auditoría interna; **pendiente** cargar la auditoría externa recibida |
+| Modelos de proceso | [modelos_proceso.md](../calidad/modelos_proceso.md): MoProSoft y CMMI con brechas concretas, tabla ISO 9001/MoProSoft/SPICE/CMMI/PSP-TSP |
+| Retrospectiva PSP | [retrospectiva_psp.md](../calidad/retrospectiva_psp.md) (con los registros que existen; se documenta la falta de datos) |
+| Tendencias | [tendencias.md](../calidad/tendencias.md): observabilidad de datos aplicada, con alerta de frescura implementada |
+| Solicitud del Sello TDL | [sello_tdl.md](../calidad/sello_tdl.md) |
+
+## 9. Optimización aplicada desde el experimento E2 (2026-11-27)
+
+El [experimento factorial](../E2/experimento_factorial.md) identificó el parser como el factor dominante (96 % de la suma de cuadrados) y confirmó la combinación **lxml + solo tablas** con 5 corridas nuevas (1.161 s contra 1.460 s de la configuración previa en la misma muestra de 150 capturas, −20.5 %). Se aplicó a producción tras verificar el pipeline completo sobre todo Bronce:
+
+| Indicador (una corrida por versión, misma máquina) | html.parser + tablas | lxml + tablas |
+|---|---:|---:|
+| Tiempo `python -m src.tdl_e1.pipeline` | 38.97 s | 33.68 s (−13.6 %) |
+| Memoria máxima RSS | 253.0 MiB | 253.2 MiB |
+| SHA-256 de las 5 salidas CSV | — | idénticos |
+
+La mejora de extremo a extremo es menor que la del experimento porque el parseo es solo una parte del pipeline (validación, agregación y escritura no cambian). Es una sola corrida por versión; para un porcentaje con rango debe repetirse `benchmarks/comparativa.py`.

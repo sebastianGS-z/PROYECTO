@@ -1,0 +1,25 @@
+segmento,modelo,mae_mxn_kg,rmse_mxn_kg,mape_pct,n_validaciones,errores_ajuste,cultivo,variante_id,variante,origen,mercado,nombre_mercado,modelo_elegido
+seleccion,suavizamiento_simple,7.5469229563865445,9.29732527634002,23.8501747723721,6,,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto,False
+holdout,suavizamiento_simple,6.518398279276686,6.938994480908509,24.595844755060515,6,,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto,False
+seleccion,holt,7.650902758279649,8.438243615183426,26.999157283637704,6,,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto,False
+holdout,holt,6.615086891943612,7.016661331193954,24.88291568564885,6,,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto,False
+seleccion,holt_winters_aditivo,7.044980490807004,8.76638234899891,24.114508829833646,6,,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto,False
+holdout,holt_winters_aditivo,6.2451935959171765,6.557540505805407,23.085486012190515,6,,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto,False
+seleccion,arima_111,5.044627298250118,5.823159730038906,19.89255880084798,6,,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto,True
+holdout,arima_111,6.154566761864861,6.822137875113933,23.49174610679758,6,,limon,421,Limón c/semilla # 5 - Primera,Colima,140,Guadalajara · Mercado de Abasto,True
+seleccion,suavizamiento_simple,1.6290612225059113,1.7867119096295214,9.095715595155392,6,,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto,True
+holdout,suavizamiento_simple,1.5139395313075206,1.6766404602240077,8.890985023187204,6,,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto,True
+seleccion,holt,1.6920498654465632,1.79516027115003,9.3149889614804,6,,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto,False
+holdout,holt,1.0096306478529364,1.0939773817682066,5.905031816806414,6,,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto,False
+seleccion,holt_winters_aditivo,2.209416579595431,2.8136466090334067,11.570913226240583,6,,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto,False
+holdout,holt_winters_aditivo,1.6007744506049655,1.7444819812901269,9.217641503339847,6,,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto,False
+seleccion,arima_111,1.7402599276295625,1.8592797022767265,9.51488318700698,6,,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto,False
+holdout,arima_111,0.5921676279027152,0.6700966508694179,3.4307383134061222,6,,papaya,609,Papaya Maradol - Primera,Colima,140,Guadalajara · Mercado de Abasto,False
+seleccion,suavizamiento_simple,0.41262708285916005,0.5756808004550128,0.9720923683229457,6,,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución,True
+holdout,suavizamiento_simple,0.2237065297904254,0.34427876613737945,0.5331144631281229,6,,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución,True
+seleccion,holt,0.7443178145530484,0.7762030858837268,1.7676081674904847,6,,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución,False
+holdout,holt,0.48839389281981244,0.49581215361028624,1.1680618429733824,6,,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución,False
+seleccion,holt_winters_aditivo,4.495068561704879,5.103602938142527,10.66097512699887,6,,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución,False
+holdout,holt_winters_aditivo,1.2082761601931935,1.8755311483614063,2.8781387395055753,6,,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución,False
+seleccion,arima_111,1.4676217714397275,1.6804184757977683,3.5006899230827067,6,,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución,False
+holdout,arima_111,0.6387996804064819,0.7345132055271941,1.5237757257125533,6,,tamarindo,800,Tamarindo - Primera,Colima,80,Colima · Centros de distribución,False

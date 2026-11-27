@@ -28,7 +28,11 @@ Se ejecutó `python main.py e2` localmente con las capturas más recientes de la
 - [Declaración de ética y legalidad](etica-datos.md)
 - [Mapa geoespacial E2](E2/mapa_marco_geoestadistico_colima.png)
 
-## Pendientes de cierre
+## Estado histórico al 2026-11-17
 
 1. Crear y publicar el tag `e2` en el commit con esta ficha y la evidencia del workflow exitoso.
 2. Registrar el enlace del repositorio en el formulario oficial de la entrega.
+
+## Actualización de estado al 2026-11-20
+
+El tag `e2` existe en el repositorio. El envío a Classroom queda a cargo del integrante designado; este documento no afirma que el formulario haya sido enviado. Los conteos de la ficha E2 corresponden a su corte y no al corte analítico más reciente.

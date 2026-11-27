@@ -1,8 +1,8 @@
 # Declaración de ética y legalidad de datos
 
 **Proyecto:** Observatorio de Agro-Inteligencia Colimense (OAIC)
-**Revisión:** 2026-11-17
-**Alcance:** SNIIM, NOAA NCEI y Marco Geoestadístico de INEGI. Esta declaración describe la política operativa del proyecto; no sustituye asesoría legal.
+**Revisión:** 2026-11-26
+**Alcance:** SNIIM, NOAA NCEI, INEGI, SIAP y UN Comtrade. Esta declaración describe la política operativa del proyecto; no sustituye asesoría legal.
 
 ## Fuentes, permisos y condiciones de acceso
 
@@ -11,6 +11,8 @@
 | SNIIM, Secretaría de Economía | Precios mayoristas de referencia por producto, mercado y presentación | El SNIIM informa que sus precios son referenciales, públicos y que el uso es responsabilidad de quien los utiliza. Se atribuye al Sistema Nacional de Información e Integración de Mercados / Secretaría de Economía. No se redistribuye la interfaz web. [Preguntas frecuentes](https://www.economia-sniim.gob.mx/nuevo/Preguntas%20Frecuentes.htm) | `https://www.economia-sniim.gob.mx/robots.txt`; la ruta utilizada no figura como prohibida. Se consulta antes de extraer, con pausa y User-Agent identificable. |
 | NOAA NCEI, GHCN-Daily | Observaciones meteorológicas de la estación MXM00076654 | Los datos ambientales federales de NOAA son de acceso abierto salvo restricciones específicas; NCEI solicita reconocer la fuente. Atribución: NOAA National Centers for Environmental Information (NCEI), GHCN-Daily, estación y periodo consultados. Las coordenadas de estación se verifican contra el [catálogo GHCN-Daily](https://www.ncei.noaa.gov/pub/data/ghcn/daily/ghcnd-stations.txt). [Política de datos abiertos NCEI](https://www.ncei.noaa.gov/archive) | `https://www.ncei.noaa.gov/robots.txt`; se usa la ruta `/access/services/data/v1`, no incluida entre las rutas disallow del archivo revisado. No se consultan rutas bloqueadas. |
 | INEGI, Marco Geoestadístico municipal | Polígonos municipales de Colima y atributos agregados del Censo 2020 para mapa y dimensión geográfica | Los términos del INEGI autorizan usar la información si se cita la fuente y prohíben comercializar el derecho de acceso al sitio. Atribución: “Fuente: Sitio del INEGI en Internet: www.inegi.org.mx”; OAIC identifica además Marco Geoestadístico, edición de geometría y edición de atributos. [Términos de uso](https://www.inegi.org.mx/inegi/terminos.html), [condiciones de uso](https://ci.inegi.org.mx/condiciones-de-uso/) | `https://gaia.inegi.org.mx/robots.txt` respondió 404 el 2026-11-17 (no hay archivo de reglas publicado en ese host). La consulta se limita a una petición por ejecución diaria a la capa `geo/mgem/06`; el transporte común aplica pausa mínima, reintentos limitados y User-Agent identificable. Si el host publica reglas o devuelve prohibición, la captura se detiene. |
+| SIAP, Cierre agrícola municipal | Producción y superficie agrícola por cultivo/municipio/año | Datos abiertos DGSIAP, con atribución a SIAP, cultivo, municipio y año. [Datos abiertos](https://nube.agricultura.gob.mx/datosAbiertos/Agricola.php) | Descarga de CSV oficial, una por versión anual. El original se conserva en Bronce; no se extraen datos personales ni localización de parcelas. |
+| UN Comtrade | Importaciones/exportaciones anuales por partida HS, país, valor y peso | Atribución a United Nations Statistics Division, UN Comtrade. [API pública](https://comtrade.un.org/en/api-docs), [códigos M49](https://unstats.un.org/unsd/methodology/m49/overview). La API pública ofrece previews limitados a 500 filas. | API oficial, consultas secuenciales con pausa; un HTTP 429 se respeta y no se evade. Consultas de 500 filas se marcan como posiblemente truncadas. |
 
 **Nota sobre robots.txt:** una respuesta 404 solo significa que el host no publicó ese archivo en esa ruta; no se interpreta como licencia. Los términos publicados por el proveedor y las prácticas de consulta se evalúan por separado.
 
@@ -20,6 +22,12 @@
 - INEGI se usa a nivel municipal con población y vivienda agregadas, nunca microdatos censales. La geometría delimita unidades territoriales oficiales, no predios ni parcelas individuales.
 - NOAA se limita a observaciones ambientales de una estación meteorológica y SNIIM a precios de referencia.
 - Los archivos de origen conservan solo los campos devueltos por estas fuentes públicas. Los informes y mapas no incluyen información personal.
+- La importación comercial de DENUE conserva identificador del establecimiento, razón social, actividad económica y ubicación de negocio necesaria para prospección; descarta teléfonos y correos. Los registros comerciales locales se excluyen de Git, pero el equipo debe protegerlos mediante permisos del sistema y minimizar la información capturada.
+- Las cotizaciones, rutas, proveedores, pilotos y costos son registros internos del equipo, no datos públicos del observatorio. No deben publicarse en `data/publico/` sin autorización y revisión de datos confidenciales.
+
+### Grabación de entrevista
+
+`ENTREVISTA.m4a` contiene voces identificables y, por ello, sí es dato personal aunque las transcripciones estén anonimizadas. El equipo confirmó el 2026-11-20 que la persona entrevistada autorizó publicar la grabación y usarla en la defensa. El archivo se limita a evidencia académica; no se reutiliza para identificación biométrica, entrenamiento de modelos ni difusión fuera del proyecto. Si cambia el alcance del consentimiento, debe retirarse el audio de la publicación y evaluarse por separado la eliminación del historial Git.
 
 ## Sesgos, límites y uso responsable
 
@@ -28,6 +36,9 @@
 - El Marco Geoestadístico aporta límites municipales; la población y viviendas provienen del Censo 2020, aunque la geometría reportada por el servicio sea de diciembre de 2025. Se mantienen ambos años de referencia explícitos para evitar presentar los atributos censales como actuales.
 - El mapa destaca Tecomán, Armería y Manzanillo por ser áreas de interés del observatorio; el resaltado no significa que INEGI las identifique como zonas productoras ni que el conteo de población mida producción agrícola.
 - Se documentan observaciones faltantes, procedencia y fecha de ingesta. No se sustituyen ausencias de fuente por ceros. Los modelos deben validarse temporalmente y sus resultados se presentan como apoyo, no como garantía de precio o rendimiento.
+- Los precios SNIIM y sus pronósticos son referencias mayoristas; no sustituyen cotizaciones vigentes del comprador, productor, proveedor o transportista. Los márgenes y puntajes comerciales son estimaciones condicionadas a evidencia y supuestos declarados, nunca una confirmación automática de rentabilidad.
+- SIAP es producción anual cosechada, no inventario, oferta actual, capacidad exportable ni ubicación de predios. El mapa municipal no identifica productores individuales.
+- UN Comtrade mide comercio aduanal agregado. USD/kg es un valor unitario, no precio mayorista/minorista o precio recibido por productor; una partida HS puede agrupar variedades/calidades distintas. País importador no significa comprador confirmado ni oportunidad rentable.
 
 ## Trazabilidad y retención
 
