@@ -50,7 +50,7 @@ jobs:
       - name: Pruebas unitarias sin red con cobertura mínima de 60 %
         run: python -m pytest -q --cov --cov-report=term --cov-report=xml
       - name: Pruebas del asistente de venta (Node, sin dependencias)
-        run: node --test tests/js/
+        run: node --test tests/js/motor.test.mjs
       - name: "Puerta de datos: regenerar Plata y Oro desde Bronce versionado"
         run: python main.py capas
       - name: Rechazar si la puerta de calidad envió registros a cuarentena sin reportarlos

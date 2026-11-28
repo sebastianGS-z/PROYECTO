@@ -18,4 +18,4 @@
 | 12 | **Registrar entrega**: `7800` · **Registrar cobro**: `70200` | Merma calculada, "Venta cerrada", precio logrado por kg |
 | 13 | Cerrar el navegador y volver a abrir `asistente.html` | "Bienvenido de nuevo" y la oferta en **Mis ofertas** con sus 8 estados: **recuerda todo** sin servidor |
 
-**Pruebas automáticas que respaldan la demo:** `node --test tests/js/` (154 frases, venta completa, cifras verificadas contra los datos) y `pytest tests/test_asistente.py` (directorio DENUE y paquete de datos).
+**Pruebas automáticas que respaldan la demo:** `node --test tests/js/motor.test.mjs` (154 frases, venta completa, cifras verificadas contra los datos) y `pytest tests/test_asistente.py` (directorio DENUE y paquete de datos).

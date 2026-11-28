@@ -1,4 +1,4 @@
-// Pruebas del motor del asistente (node --test tests/js). Usan los datos reales publicados en data/publico/asistente.
+// Pruebas del motor del asistente (node --test tests/js/motor.test.mjs). Usan los datos reales publicados en data/publico/asistente.
 import test from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
