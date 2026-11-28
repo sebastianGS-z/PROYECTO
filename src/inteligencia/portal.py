@@ -28,7 +28,7 @@ REPO = "https://github.com/sebastianGS-z/PROYECTO"
 from src.inteligencia.catalogo import FRUTAS  # noqa: E402
 
 PRODUCTOS = {k: v["nombre"] for k, v in FRUTAS.items()}
-NAV = [("inicio.html", "Inicio"), ("preguntas.html", "Preguntas del productor"), ("mapa.html", "Mapa"), ("inteligencia.html", "Reporte de inteligencia"),
+NAV = [("inicio.html", "Inicio"), ("asistente.html", "Asistente de venta"), ("preguntas.html", "Preguntas del productor"), ("mapa.html", "Mapa"), ("inteligencia.html", "Reporte de inteligencia"),
        ("cliente.html", "Vista de cliente"), ("index.html", "Panel técnico"), ("laboratorio.html", "Laboratorio"), ("admin.html", "Administración"),
        ("alertas.xml", "Alertas (RSS)")]
 
@@ -156,7 +156,11 @@ def inicio(base: Path = BASE_DIR) -> str:
                        '<p class="muted">Para recibirlas sin entrar al sitio, agregue <b>alertas.xml</b> a cualquier lector de RSS o a un servicio de "RSS a correo". '
                        'El observatorio no pide ni guarda datos personales.</p><a class="cta" href="alertas.xml">Suscribirse (RSS)</a> '
                        '<a class="cta" href="../data/publico/alertas.json">Alertas en JSON</a></div>')
-    cuerpo = (f'<h2>Precio por producto</h2><div class="grid">{"".join(tarjetas)}</div>'
+    asistente = ('<div class="card" style="border-left:5px solid #2e7d4f"><h2 style="margin-top:0">¿Quiere vender su cosecha?</h2>'
+                 '<p>El <b>asistente de venta</b> le dice el precio de hoy en cada central, a cuál conviene mandar, qué empresas compran (con teléfono) '
+                 'y le ayuda a ofrecer, negociar y cerrar cada venta. Es gratis y sus datos se guardan solo en su teléfono.</p>'
+                 '<a class="cta" href="asistente.html">Abrir el asistente</a> <a class="cta" href="asistente.html?q=tengo%20limon%20para%20vender">Vender limón</a></div>')
+    cuerpo = (f'{asistente}<h2>Precio por producto</h2><div class="grid">{"".join(tarjetas)}</div>'
               f'{tarjeta_alertas}<h2>Hallazgos del mes</h2><div class="card"><ul>{hallazgos or "<li>Sin hallazgos en este corte.</li>"}</ul>'
               f'<a class="cta" href="inteligencia.html">Ver reporte completo (imprimible)</a></div>'
               '<h2>¿Qué quiere hacer?</h2><div class="grid">'
@@ -330,7 +334,7 @@ def inyectar_barra(ruta: Path) -> bool:
 def ejecutar(base: Path = BASE_DIR) -> dict[str, str]:
     (base / "tablero/inicio.html").write_text(inicio(base), encoding="utf-8")
     (base / "tablero/admin.html").write_text(admin(base), encoding="utf-8")
-    for vista in ("cliente.html", "laboratorio.html"):  # index.html ya trae su menú lateral
+    for vista in ("cliente.html", "laboratorio.html", "asistente.html"):  # index.html ya trae su menú lateral
         inyectar_barra(base / "tablero" / vista)
     return {"inicio": "tablero/inicio.html", "admin": "tablero/admin.html"}
 

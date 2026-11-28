@@ -18,3 +18,6 @@ coverage.xml
 # Audio de entrevistas: la voz es dato personal (LFPDPPP). Se conserva solo la transcripción en docs/E0/entrevistas.md
 ENTREVISTA.m4a
 *.m4a
+
+# DENUE: el ZIP oficial pesa decenas de MB; se versiona solo su .meta.json (SHA-256) y el directorio filtrado
+data/bronce/denue/**/*.zip

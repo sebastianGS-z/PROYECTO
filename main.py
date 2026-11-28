@@ -21,6 +21,8 @@
     python main.py comercio-intl [--solo-procesar] (comercio mundial UN Comtrade)
     python main.py precios-catalogo [--fecha AAAA-MM-DD] [--solo-procesar] (frutas publicadas en SNIIM por mercado)
     python main.py mapa-mercados [--solo-procesar] (geografía de plazas nacionales)
+    python main.py denue-captura [--estados 06 14 ...] (directorio de empresas DENUE a Bronce)
+    python main.py asistente (datos del asistente de venta y directorio de compradores)
 """
 from __future__ import annotations
 
@@ -95,6 +97,10 @@ def main(argv: list[str] | None = None) -> int:
         from scripts.integrar_siap_colima import main as f
     elif cmd == "inflacion-captura":
         from scripts.capturar_inflacion import main as f
+    elif cmd == "denue-captura":
+        from scripts.capturar_denue import main as f
+    elif cmd == "asistente":
+        from src.inteligencia.asistente import main as f
     elif cmd == "comtrade-captura":
         from scripts.capturar_comtrade import main as f
     elif cmd == "comercio-intl":

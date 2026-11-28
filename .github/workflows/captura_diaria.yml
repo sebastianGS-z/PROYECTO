@@ -81,6 +81,7 @@ jobs:
           python main.py reporte
           python main.py preguntas
           python main.py alertas
+          python main.py asistente
           python main.py mapa
           python main.py portal
 
@@ -112,7 +113,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/ calidad/bitacora_capturas.csv calidad/reportes/ tablero/index.html tablero/cliente.html tablero/inteligencia.html tablero/preguntas.html tablero/mapa.html tablero/inicio.html tablero/admin.html tablero/alertas.xml docs/E4/reporte_inteligencia.md docs/E4/preguntas_agricultor.md
+          git add data/ calidad/bitacora_capturas.csv calidad/reportes/ tablero/index.html tablero/cliente.html tablero/inteligencia.html tablero/preguntas.html tablero/mapa.html tablero/inicio.html tablero/admin.html tablero/alertas.xml tablero/asistente.html docs/E4/reporte_inteligencia.md docs/E4/preguntas_agricultor.md
           if git diff --cached --quiet; then
             echo "Sin cambios que publicar"
           else

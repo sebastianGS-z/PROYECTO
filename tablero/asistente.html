@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Asistente de venta · OAIC</title>
+<meta name="description" content="Asistente privado para vender fruta de Colima: precios de hoy, centrales, compradores con teléfono y seguimiento de cada venta. Sus datos se guardan solo en su teléfono.">
+<style>
+:root{--ink:#17231f;--muted:#5f6d67;--line:#dde5df;--paper:#f4f7f3;--surface:#fff;--forest:#143d31;--forest2:#1d5543;--lime:#d9ed8c;--gold:#c08a32;--red:#a85242;--ok:#2e7d4f;--me:#e6f2d0}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;display:flex;flex-direction:column}
+header.top{background:var(--forest);color:#fff;padding:10px 16px;display:flex;align-items:center;gap:10px}
+header.top h1{font-size:17px;margin:0;flex:1;line-height:1.2}
+header.top h1 small{display:block;font-weight:400;font-size:12px;color:#cfe0d6}
+header.top button{background:transparent;border:1px solid #6c8f80;color:#fff;border-radius:8px;padding:6px 10px;font:inherit;font-size:13px;cursor:pointer}
+#chat{flex:1;overflow-y:auto;padding:14px 12px 8px;max-width:820px;width:100%;margin:0 auto}
+.msg{max-width:92%;margin:0 0 10px;padding:10px 12px;border-radius:14px;white-space:pre-wrap;word-wrap:break-word;box-shadow:0 1px 1px rgba(0,0,0,.04)}
+.msg.bot{background:var(--surface);border:1px solid var(--line);border-top-left-radius:4px}
+.msg.yo{background:var(--me);margin-left:auto;border-top-right-radius:4px}
+.meta{display:block;margin-top:6px;font-size:12px;color:var(--muted)}
+.pill{display:inline-block;padding:1px 8px;border-radius:999px;font-size:12px;font-weight:600}
+.pill.alta{background:#dcefdf;color:var(--ok)}.pill.media{background:#f6ebd5;color:#8a5f16}.pill.baja{background:#f5dcd6;color:var(--red)}
+.botones{display:flex;flex-wrap:wrap;gap:6px;margin:-2px 0 12px}
+.botones button,.acc button,.acc a{background:var(--surface);border:1px solid var(--forest2);color:var(--forest);border-radius:999px;padding:7px 12px;font:inherit;font-size:14px;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:4px}
+.botones button:hover,.acc button:hover,.acc a:hover{background:#eef6e3}
+.tarjetas{display:grid;gap:8px;margin:0 0 12px}
+.tj{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:10px 12px}
+.tj b{display:block}
+.tj .d{font-size:13px;color:var(--muted)}
+.tj .tag{display:inline-block;font-size:11px;padding:1px 6px;border-radius:6px;background:#eef2ef;color:var(--muted);margin:4px 4px 0 0}
+.tj .tag.c{background:#e3efe0;color:var(--ok)}.tj .tag.sv{background:#f6ebd5;color:#8a5f16}
+.acc{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.acc a.wa{border-color:#1f8f4e;color:#1f8f4e}
+.estado{font-size:12px;font-weight:700;color:var(--forest2);text-transform:uppercase;letter-spacing:.03em}
+.linea{display:flex;gap:4px;margin:6px 0}
+.linea i{flex:1;height:5px;border-radius:3px;background:var(--line)}.linea i.on{background:var(--ok)}
+footer.entrada{background:var(--surface);border-top:1px solid var(--line);padding:8px 10px calc(8px + env(safe-area-inset-bottom))}
+footer form{display:flex;gap:6px;max-width:820px;margin:0 auto}
+footer input{flex:1;min-width:0;border:1px solid var(--line);border-radius:999px;padding:11px 14px;font:inherit;background:#fbfdfb}
+footer button{border:0;border-radius:999px;padding:0 16px;font:inherit;font-weight:600;cursor:pointer}
+#enviar{background:var(--forest);color:#fff}
+#mic{background:#eef2ef;color:var(--forest);width:46px;padding:0}
+#mic.on{background:var(--red);color:#fff}
+.aviso{font-size:12px;color:var(--muted);text-align:center;max-width:820px;margin:4px auto 0}
+dialog{border:0;border-radius:14px;padding:0;max-width:760px;width:calc(100% - 24px)}
+dialog::backdrop{background:rgba(0,0,0,.45)}
+#doc{padding:22px 24px;font-size:15px}
+#doc h1{font-size:20px;margin:0 0 4px}#doc h2{font-size:16px;margin:16px 0 4px}
+#doc table{border-collapse:collapse;width:100%;margin:10px 0}#doc th,#doc td{border:1px solid #ccc;padding:6px 8px;text-align:left;vertical-align:top}#doc th{width:36%;background:#f4f7f3}
+#doc .m{font-size:12px;color:#666}#doc .f{display:flex;gap:30px;margin-top:40px}#doc .f div{flex:1;text-align:center}
+.dlg-acc{display:flex;gap:8px;justify-content:flex-end;padding:10px 16px;border-top:1px solid var(--line);background:var(--paper)}
+.dlg-acc button{border:1px solid var(--forest2);background:var(--surface);color:var(--forest);border-radius:8px;padding:8px 14px;font:inherit;cursor:pointer}
+.dlg-acc button.p{background:var(--forest);color:#fff}
+#menu{position:absolute;right:12px;top:52px;background:var(--surface);border:1px solid var(--line);border-radius:10px;box-shadow:0 6px 20px rgba(0,0,0,.12);padding:6px;display:none;z-index:5;width:240px}
+#menu.on{display:block}
+#menu button,#menu label{display:block;width:100%;text-align:left;background:none;border:0;padding:9px 10px;font:inherit;font-size:14px;cursor:pointer;border-radius:6px;color:var(--ink)}
+#menu button:hover,#menu label:hover{background:var(--paper)}
+#cargando{padding:30px;text-align:center;color:var(--muted)}
+@media print{body>*:not(dialog){display:none!important}dialog{position:static;box-shadow:none;max-width:none;width:100%}.dlg-acc{display:none}}
+</style>
+</head>
+<body><nav class="oaic-nav" aria-label="Secciones" style="background:#143d31;padding:8px 16px;display:flex;gap:6px;overflow-x:auto"><a href="inicio.html" style="color:#e7eee9;text-decoration:none;font:600 13px system-ui,sans-serif;padding:6px 10px;border-radius:8px;white-space:nowrap">Inicio</a><a href="asistente.html" style="color:#d9ed8c;text-decoration:none;font:600 13px system-ui,sans-serif;padding:6px 10px;border-radius:8px;white-space:nowrap">Asistente de venta</a><a href="preguntas.html" style="color:#e7eee9;text-decoration:none;font:600 13px system-ui,sans-serif;padding:6px 10px;border-radius:8px;white-space:nowrap">Preguntas del productor</a><a href="mapa.html" style="color:#e7eee9;text-decoration:none;font:600 13px system-ui,sans-serif;padding:6px 10px;border-radius:8px;white-space:nowrap">Mapa</a><a href="inteligencia.html" style="color:#e7eee9;text-decoration:none;font:600 13px system-ui,sans-serif;padding:6px 10px;border-radius:8px;white-space:nowrap">Reporte de inteligencia</a><a href="cliente.html" style="color:#e7eee9;text-decoration:none;font:600 13px system-ui,sans-serif;padding:6px 10px;border-radius:8px;white-space:nowrap">Vista de cliente</a><a href="index.html" style="color:#e7eee9;text-decoration:none;font:600 13px system-ui,sans-serif;padding:6px 10px;border-radius:8px;white-space:nowrap">Panel técnico</a><a href="laboratorio.html" style="color:#e7eee9;text-decoration:none;font:600 13px system-ui,sans-serif;padding:6px 10px;border-radius:8px;white-space:nowrap">Laboratorio</a><a href="admin.html" style="color:#e7eee9;text-decoration:none;font:600 13px system-ui,sans-serif;padding:6px 10px;border-radius:8px;white-space:nowrap">Administración</a><a href="alertas.xml" style="color:#e7eee9;text-decoration:none;font:600 13px system-ui,sans-serif;padding:6px 10px;border-radius:8px;white-space:nowrap">Alertas (RSS)</a></nav>
+<header class="top">
+  <h1>Asistente de venta<small>Observatorio de Agro-Inteligencia Colimense · sin costo · privado</small></h1>
+  <button id="btnMenu" aria-haspopup="true" aria-expanded="false">Mis datos ▾</button>
+</header>
+<div id="menu" role="menu">
+  <button data-m="ofertas">Mis ofertas</button>
+  <button data-m="exportar">Guardar respaldo (archivo)</button>
+  <label>Recuperar respaldo<input type="file" id="importar" accept="application/json" hidden></label>
+  <button data-m="borrar">Borrar todo de este teléfono</button>
+</div>
+<main id="chat" aria-live="polite"><div id="cargando">Cargando precios y compradores…</div></main>
+<footer class="entrada">
+  <form id="f" autocomplete="off">
+    <button type="button" id="mic" title="Dictar con la voz" aria-label="Dictar con la voz">🎤</button>
+    <input id="t" placeholder="Escriba o dicte: ¿a cuánto está el limón?" aria-label="Mensaje">
+    <button id="enviar">Enviar</button>
+  </form>
+  <p class="aviso" id="aviso">Sus datos se guardan solo en este teléfono. Precios: SNIIM · Compradores: DENUE (INEGI), sin verificar.</p>
+</footer>
+<dialog id="dlg"><div id="doc"></div><div class="dlg-acc"><button id="cerrar">Cerrar</button><button class="p" id="imprimir">Imprimir o guardar PDF</button></div></dialog>
+<script type="module">
+import * as M from "./asistente/motor.js";
+import * as Mem from "./asistente/memoria.js";
+
+const RUTA = "../data/publico/asistente/";
+const $ = (s) => document.querySelector(s);
+const chat = $("#chat");
+let D, est, historial;
+
+const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const md = (s) => esc(s).replace(/\*\*(.+?)\*\*/g, "<b>$1</b>");
+
+async function cargar() {
+  const base = await (await fetch(RUTA + "base.json")).json();
+  const frutas = Object.fromEntries(await Promise.all(base.frutas.map(async (f) => [f.clave, await (await fetch(`${RUTA}fruta_${f.clave}.json`)).json()])));
+  const compradores = await (await fetch(RUTA + "compradores.json")).json();
+  return { base, frutas, compradores };
+}
+
+function guardar() { Mem.guardar("estado", est); Mem.guardar("chat", historial.slice(-300)); }
+
+function pintar(m, quien) {
+  const d = document.createElement("div");
+  d.className = `msg ${quien}`;
+  let h = md(m.texto || "");
+  if (quien === "bot" && (m.fuente || m.confianza)) {
+    h += `<span class="meta">${m.confianza && m.confianza !== "no aplica" ? `<span class="pill ${esc(m.confianza)}">Confianza ${m.confianza_pct != null ? esc(m.confianza_pct) + " %" : esc(m.confianza)}</span> ` : ""}${m.fuente ? "Fuente: " + esc(m.fuente) : ""}</span>`;
+  }
+  if (m.accion) h += `<span class="meta"><b>Qué hacer:</b> ${md(m.accion)}</span>`;
+  d.innerHTML = h;
+  chat.appendChild(d);
+  if (m.tarjetas) chat.appendChild(tarjetas(m.tarjetas));
+  if (m.botones && m.botones.length && quien === "bot") {
+    const b = document.createElement("div");
+    b.className = "botones";
+    for (const x of m.botones) {
+      const k = document.createElement("button");
+      k.textContent = x.texto;
+      k.onclick = () => (x.accion ? hacer(x.accion) : enviar(x.enviar));
+      b.appendChild(k);
+    }
+    chat.appendChild(b);
+  }
+  if (m.escribir !== undefined) { $("#t").value = m.escribir; $("#t").focus(); }
+  chat.scrollTop = chat.scrollHeight;
+}
+
+function tarjetaComprador(c, ofertaId, fruta) {
+  const div = document.createElement("div");
+  div.className = "tj";
+  const lugar = [c.lugar, c.municipio, c.estado].filter(Boolean).join(", ");
+  div.innerHTML = `<b>${esc(c.nombre)}</b><span class="d">${esc(M.categoria(c.cat))} · ${esc(c.personal || "")}<br>${esc(lugar)}${c.km != null ? ` · ~${M.f0(c.km)} km` : ""}</span>` +
+    `${c.central ? '<span class="tag c">En central de abasto</span>' : ""}<span class="tag sv">Sin verificar · DENUE</span>` +
+    (c.previo ? `<span class="tag">Contactado: ${esc({ sin_respuesta: "sin respuesta", no_interesa: "no le interesa", muestra: "pidió muestra", contraoferta: `ofreció $${M.f2(c.previo.precio)}`, interesado: "interesado" }[c.previo.respuesta] || c.previo.respuesta)}</span>` : "");
+  const acc = document.createElement("div");
+  acc.className = "acc";
+  const boton = (txt, canal, cls) => { const a = document.createElement("a"); a.href = "#"; a.textContent = txt; if (cls) a.className = cls;
+    a.onclick = (e) => { e.preventDefault(); hacer({ tipo: "contactar", oferta: ofertaId, comprador: c.id, canal, fruta }); }; acc.appendChild(a); };
+  if (c.tel) { boton("WhatsApp", "whatsapp", "wa"); boton("Llamar", "telefono"); }
+  if (c.correo) boton("Correo", "correo");
+  if (c.www) { const a = document.createElement("a"); a.href = c.www.startsWith("http") ? c.www : `http://${c.www}`; a.target = "_blank"; a.rel = "noopener"; a.textContent = "Sitio web"; acc.appendChild(a); }
+  div.appendChild(acc);
+  return div;
+}
+
+function tarjetaOferta(o) {
+  const div = document.createElement("div");
+  div.className = "tj";
+  const pasos = ["lista", "contactando", "negociando", "acordada", "entregada", "cobrada", "cerrada"];
+  const i = pasos.indexOf(o.estado);
+  div.innerHTML = `<span class="estado">${esc(M.NOMBRE_ESTADO[o.estado])}</span><b>${esc(M.resumenOferta(D, o))}</b>` +
+    `<div class="linea">${pasos.map((_, k) => `<i class="${k <= i ? "on" : ""}"></i>`).join("")}</div>` +
+    (o.contactos.length ? `<span class="d">${o.contactos.map((c) => `${esc(c.nombre)}: ${esc({ sin_respuesta: "sin respuesta", no_interesa: "no le interesa", muestra: "pidió muestra", contraoferta: `ofreció $${M.f2(c.precio)}` }[c.respuesta] || c.respuesta)}`).join("<br>")}</span>` : "") +
+    (o.trato ? `<span class="d">Trato: ${esc(o.trato.comprador)} a $${M.f2(o.trato.precio)} · total $${M.f2(o.trato.total)}</span>` : "") +
+    (o.cobro ? `<span class="d">Cobrado: $${M.f2(o.cobro.monto)}</span>` : "");
+  const acc = document.createElement("div");
+  acc.className = "acc";
+  const b = (t, a) => { const k = document.createElement("button"); k.textContent = t; k.onclick = () => hacer(a); acc.appendChild(k); };
+  b("Ficha", { tipo: "documento", documento: "ficha", oferta: o.id });
+  if (["lista", "contactando", "negociando"].includes(o.estado)) {
+    b("Compradores", { tipo: "compradores", oferta: o.id });
+    for (const c of o.contactos.filter((x) => x.respuesta !== "no_interesa")) b(`Anotar respuesta de ${c.nombre.split(" ")[0]}`, { tipo: "anotar", oferta: o.id, comprador: c.comprador_id });
+    for (const c of o.contactos.filter((x) => x.respuesta === "contraoferta")) b(`Aceptar a ${c.nombre.split(" ")[0]} ($${M.f2(c.precio)})`, { tipo: "aceptar", oferta: o.id, comprador: c.comprador_id });
+  }
+  if (o.trato) b("Acuerdo", { tipo: "documento", documento: "acuerdo", oferta: o.id });
+  if (o.estado === "acordada") b("Registrar entrega", { tipo: "entrega", oferta: o.id });
+  if (o.estado === "entregada") b("Registrar cobro", { tipo: "cobro", oferta: o.id });
+  if (!["cerrada", "cancelada", "entregada", "cobrada"].includes(o.estado)) b("Cancelar", { tipo: "cancelar", oferta: o.id });
+  div.appendChild(acc);
+  return div;
+}
+
+function tarjetas(t) {
+  const g = document.createElement("div");
+  g.className = "tarjetas";
+  if (t.tipo === "compradores") {
+    if (!t.lista.length) g.innerHTML = '<div class="tj">No hay compradores con teléfono o correo para esta búsqueda.</div>';
+    for (const c of t.lista) g.appendChild(tarjetaComprador(c, t.oferta, t.fruta));
+  }
+  if (t.tipo === "ofertas") for (const id of t.lista) { const o = est.ofertas.find((x) => x.id === id); if (o) g.appendChild(tarjetaOferta(o)); }
+  return g;
+}
+
+function decir(mensajes) {
+  for (const m of mensajes) { pintar(m, "bot"); historial.push({ q: "bot", m: { ...m, tarjetas: m.tarjetas && m.tarjetas.tipo === "ofertas" ? m.tarjetas : m.tarjetas && { ...m.tarjetas } } }); }
+  guardar();
+}
+
+function enviar(texto) {
+  texto = String(texto || "").trim();
+  if (!texto) return;
+  pintar({ texto }, "yo");
+  historial.push({ q: "yo", m: { texto } });
+  decir(M.responder(D, est, texto, new Date()));
+}
+
+async function hacer(a) {
+  if (a.tipo === "compradores") {
+    const o = est.ofertas.find((x) => x.id === a.oferta);
+    est.oferta_activa = o.id;
+    return decir([{ texto: "Compradores para su oferta:", tarjetas: { tipo: "compradores", oferta: o.id, lista: M.compradoresSugeridos(D, est, o, 10) } }]);
+  }
+  const r = M.accion(D, est, a, new Date());
+  if (r.borrar) { await Mem.borrarTodo(); est = {}; historial = []; chat.innerHTML = ""; decir(r.mensajes); return; }
+  if (r.abrir) window.open(r.abrir, a.canal === "telefono" ? "_self" : "_blank", "noopener");
+  if (r.documento) {
+    $("#doc").innerHTML = r.documento === "acuerdo" ? M.documentoAcuerdo(D, est, r.oferta) : M.documentoFicha(D, est, r.oferta);
+    $("#dlg").showModal();
+  }
+  decir(r.mensajes || []);
+}
+
+$("#f").onsubmit = (e) => { e.preventDefault(); const t = $("#t").value; $("#t").value = ""; enviar(t); };
+$("#cerrar").onclick = () => $("#dlg").close();
+$("#imprimir").onclick = () => window.print();
+$("#btnMenu").onclick = () => { const m = $("#menu"); m.classList.toggle("on"); $("#btnMenu").setAttribute("aria-expanded", m.classList.contains("on")); };
+document.addEventListener("click", (e) => { if (!e.target.closest("#menu,#btnMenu")) $("#menu").classList.remove("on"); });
+$("#menu").onclick = (e) => {
+  const k = e.target.dataset.m;
+  if (!k) return;
+  $("#menu").classList.remove("on");
+  if (k === "ofertas") enviar("mis ofertas");
+  if (k === "exportar") Mem.exportar(est, historial);
+  if (k === "borrar") enviar("borrar mis datos");
+};
+$("#importar").onchange = async (e) => {
+  try {
+    const r = await Mem.importar(e.target.files[0]);
+    est = r.estado; historial = r.chat; chat.innerHTML = "";
+    for (const h of historial) pintar(h.m, h.q);
+    decir([{ texto: "Recuperé su respaldo." }]);
+  } catch (err) { decir([{ texto: `No pude leer el archivo: ${err.message}` }]); }
+  $("#menu").classList.remove("on");
+};
+
+// Voz: dictado del navegador (opcional). El texto aparece en la caja para revisarlo antes de enviar.
+const Rec = window.SpeechRecognition || window.webkitSpeechRecognition;
+if (!Rec) $("#mic").style.display = "none";
+else {
+  const rec = new Rec();
+  rec.lang = "es-MX"; rec.interimResults = true;
+  rec.onresult = (e) => { $("#t").value = [...e.results].map((r) => r[0].transcript).join(" "); };
+  rec.onend = () => $("#mic").classList.remove("on");
+  $("#mic").onclick = () => {
+    if ($("#mic").classList.contains("on")) { rec.stop(); return; }
+    $("#mic").classList.add("on"); $("#t").value = ""; rec.start();
+  };
+}
+
+(async () => {
+  try { D = await cargar(); } catch (e) { $("#cargando").textContent = "No pude cargar los datos del observatorio. Revise su conexión e intente de nuevo."; return; }
+  est = await Mem.leer("estado", {});
+  historial = await Mem.leer("chat", []);
+  chat.innerHTML = "";
+  for (const h of historial.slice(-60)) pintar(h.m, h.q);
+  if (!Mem.persistente()) $("#aviso").textContent = "Este navegador no permite guardar datos: la conversación se perderá al cerrar. Use \"Guardar respaldo\".";
+  const q = new URLSearchParams(location.search).get("q");
+  if (q) enviar(q);
+  else if (!historial.length) decir(M.responder(D, est, "hola", new Date()));
+  else {
+    const n = (est.ofertas || []).filter((o) => !["cerrada", "cancelada"].includes(o.estado)).length;
+    // El saludo de regreso no se guarda en el historial (si no, se acumula uno por cada visita).
+    pintar({ texto: `Bienvenido de nuevo${est.perfil && est.perfil.nombre ? `, ${est.perfil.nombre}` : ""}.${n ? ` Tiene ${n} oferta${n > 1 ? "s" : ""} en curso.` : ""} ¿En qué le ayudo?`, botones: M.menu(D, est) }, "bot");
+  }
+})();
+</script>
+</body>
+</html>

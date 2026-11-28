@@ -1,0 +1,28 @@
+{
+  "esquema": "tdl-bronce-meta/1",
+  "contenido_original": {
+    "archivo": "denue__denue-16-michoacan__2026-11-28_2026-11-28__20261128T002834Z-ae90ed.zip",
+    "descripcion": "Bytes tal como los entregó la fuente; no se modifican."
+  },
+  "metadatos_captura": {
+    "fuente": "denue",
+    "fuente_url": "https://www.inegi.org.mx/contenidos/masiva/denue/denue_16_csv.zip",
+    "fecha_captura": "2026-11-28T00:32:07Z",
+    "identificador_ejecucion": "20261128T002834Z-ae90ed",
+    "formato_original": "zip",
+    "sha256": "9bac8137e17caaca8bf419d8d8c2850b91b8092b935f18922c486ad14235b1fd",
+    "bytes": 28544594,
+    "http_status": 200,
+    "registros_detectados": 1,
+    "estado_captura": "ok",
+    "advertencias": [],
+    "colision_nombre": false,
+    "etiqueta": "denue-16-Michoacán",
+    "estado_clave": "16",
+    "estado": "Michoacán",
+    "archivos_csv": [
+      "conjunto_de_datos/denue_inegi_16_.csv"
+    ],
+    "nota": "Descarga masiva oficial del DENUE (INEGI). Información pública declarada por cada unidad económica."
+  }
+}

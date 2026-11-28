@@ -1,0 +1,28 @@
+{
+  "esquema": "tdl-bronce-meta/1",
+  "contenido_original": {
+    "archivo": "denue__denue-06-colima__2026-11-28_2026-11-28__20261128T002834Z-ae90ed.zip",
+    "descripcion": "Bytes tal como los entregó la fuente; no se modifican."
+  },
+  "metadatos_captura": {
+    "fuente": "denue",
+    "fuente_url": "https://www.inegi.org.mx/contenidos/masiva/denue/denue_06_csv.zip",
+    "fecha_captura": "2026-11-28T00:28:44Z",
+    "identificador_ejecucion": "20261128T002834Z-ae90ed",
+    "formato_original": "zip",
+    "sha256": "f353b2575cd08d8d020b9cd02c61f04953ec9b8e381d19a531a3523b1f655189",
+    "bytes": 4055493,
+    "http_status": 200,
+    "registros_detectados": 1,
+    "estado_captura": "ok",
+    "advertencias": [],
+    "colision_nombre": false,
+    "etiqueta": "denue-06-Colima",
+    "estado_clave": "06",
+    "estado": "Colima",
+    "archivos_csv": [
+      "conjunto_de_datos/denue_inegi_06_.csv"
+    ],
+    "nota": "Descarga masiva oficial del DENUE (INEGI). Información pública declarada por cada unidad económica."
+  }
+}

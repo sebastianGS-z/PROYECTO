@@ -1,0 +1,28 @@
+{
+  "esquema": "tdl-bronce-meta/1",
+  "contenido_original": {
+    "archivo": "denue__denue-19-nuevo-leon__2026-11-28_2026-11-28__20261128T002834Z-ae90ed.zip",
+    "descripcion": "Bytes tal como los entregó la fuente; no se modifican."
+  },
+  "metadatos_captura": {
+    "fuente": "denue",
+    "fuente_url": "https://www.inegi.org.mx/contenidos/masiva/denue/denue_19_csv.zip",
+    "fecha_captura": "2026-11-28T00:35:41Z",
+    "identificador_ejecucion": "20261128T002834Z-ae90ed",
+    "formato_original": "zip",
+    "sha256": "c74f5cae5baa22ee8223c3a07dc5a761ba3e96f2c38e545b3e38c5e824f57d07",
+    "bytes": 22796450,
+    "http_status": 200,
+    "registros_detectados": 1,
+    "estado_captura": "ok",
+    "advertencias": [],
+    "colision_nombre": false,
+    "etiqueta": "denue-19-Nuevo León",
+    "estado_clave": "19",
+    "estado": "Nuevo León",
+    "archivos_csv": [
+      "conjunto_de_datos/denue_inegi_19_.csv"
+    ],
+    "nota": "Descarga masiva oficial del DENUE (INEGI). Información pública declarada por cada unidad económica."
+  }
+}

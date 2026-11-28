@@ -49,6 +49,8 @@ jobs:
         run: pip-audit -r requirements-dev.txt --progress-spinner off
       - name: Pruebas unitarias sin red con cobertura mínima de 60 %
         run: python -m pytest -q --cov --cov-report=term --cov-report=xml
+      - name: Pruebas del asistente de venta (Node, sin dependencias)
+        run: node --test tests/js/
       - name: "Puerta de datos: regenerar Plata y Oro desde Bronce versionado"
         run: python main.py capas
       - name: Rechazar si la puerta de calidad envió registros a cuarentena sin reportarlos
@@ -84,6 +86,7 @@ jobs:
           python main.py reporte
           python main.py preguntas
           python main.py alertas
+          python main.py asistente
           python main.py mapa
           python main.py portal
       - name: Verificar artefactos del observatorio
@@ -101,6 +104,9 @@ jobs:
           test -s data/publico/plazas_colima.csv
           test -s tablero/preguntas.html
           test -s tablero/alertas.xml
+          test -s data/publico/asistente/base.json
+          test -s data/publico/asistente/compradores.json
+          test -s tablero/asistente.html
           test -s data/publico/aciertos_resumen.json
           test -s tablero/inicio.html
           test -s tablero/admin.html

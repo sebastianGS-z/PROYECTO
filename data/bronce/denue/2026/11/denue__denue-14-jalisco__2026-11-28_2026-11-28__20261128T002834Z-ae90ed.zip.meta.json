@@ -1,0 +1,28 @@
+{
+  "esquema": "tdl-bronce-meta/1",
+  "contenido_original": {
+    "archivo": "denue__denue-14-jalisco__2026-11-28_2026-11-28__20261128T002834Z-ae90ed.zip",
+    "descripcion": "Bytes tal como los entregó la fuente; no se modifican."
+  },
+  "metadatos_captura": {
+    "fuente": "denue",
+    "fuente_url": "https://www.inegi.org.mx/contenidos/masiva/denue/denue_14_csv.zip",
+    "fecha_captura": "2026-11-28T00:30:37Z",
+    "identificador_ejecucion": "20261128T002834Z-ae90ed",
+    "formato_original": "zip",
+    "sha256": "77ea719510c2c6c6359e291fb77427050df7ef8a84718832931056df91a60858",
+    "bytes": 41956392,
+    "http_status": 200,
+    "registros_detectados": 1,
+    "estado_captura": "ok",
+    "advertencias": [],
+    "colision_nombre": false,
+    "etiqueta": "denue-14-Jalisco",
+    "estado_clave": "14",
+    "estado": "Jalisco",
+    "archivos_csv": [
+      "conjunto_de_datos/denue_inegi_14_.csv"
+    ],
+    "nota": "Descarga masiva oficial del DENUE (INEGI). Información pública declarada por cada unidad económica."
+  }
+}
