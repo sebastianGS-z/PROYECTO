@@ -69,6 +69,10 @@ def main(argv: list[str] | None = None) -> int:
         from src.tdl_e1.pipeline import main as f
     elif cmd == "e2":
         from src.tdl_e2.geoespacial import main as f
+    elif cmd == "alertas":
+        from src.inteligencia.alertas import main as f
+    elif cmd == "aciertos":
+        from src.inteligencia.aciertos import main as f
     elif cmd == "exportacion":
         from src.inteligencia.exportacion import main as f
     elif cmd == "mapa":
@@ -89,6 +93,8 @@ def main(argv: list[str] | None = None) -> int:
         from scripts.capturar_siap import main as f
     elif cmd == "siap":
         from scripts.integrar_siap_colima import main as f
+    elif cmd == "inflacion-captura":
+        from scripts.capturar_inflacion import main as f
     elif cmd == "comtrade-captura":
         from scripts.capturar_comtrade import main as f
     elif cmd == "comercio-intl":

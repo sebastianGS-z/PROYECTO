@@ -1,0 +1,39 @@
+{
+  "esquema": "tdl-bronce-meta/1",
+  "contenido_original": {
+    "archivo": "sniim__mango-manila-primera-df-central-de-abasto-de-iztapalapa-df__2020-06-01_2020-06-30__20261127T214434Z-efd520.html",
+    "descripcion": "Bytes tal como los entregó la fuente; no se modifican."
+  },
+  "metadatos_captura": {
+    "fuente": "sniim",
+    "fuente_url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F06%2F2020&fechaFinal=30%2F06%2F2020&ProductoId=480&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+    "fecha_captura": "2026-11-27T22:47:49Z",
+    "identificador_ejecucion": "20261127T214434Z-efd520",
+    "formato_original": "html",
+    "sha256": "625d919cfd40df8b93c38e728f5828abcfd8e3090d2d1216f9c2e7b2b51dca14",
+    "bytes": 9422,
+    "http_status": 200,
+    "registros_detectados": 0,
+    "estado_captura": "sin_resultados",
+    "advertencias": [],
+    "colision_nombre": false,
+    "etiqueta": "Mango Manila - Primera__DF: Central de Abasto de Iztapalapa DF",
+    "producto": "Mango Manila - Primera",
+    "producto_id": "480",
+    "mercado": "DF: Central de Abasto de Iztapalapa DF",
+    "mercado_id": "100",
+    "fecha_ref_inicio": "2020-06-01",
+    "fecha_ref_fin": "2020-06-30",
+    "parametros": {
+      "fechaInicio": "01/06/2020",
+      "fechaFinal": "30/06/2020",
+      "ProductoId": "480",
+      "OrigenId": "-1",
+      "Origen": "Todos",
+      "DestinoId": "100",
+      "Destino": "DF: Central de Abasto de Iztapalapa DF",
+      "PreciosPorId": "1",
+      "RegistrosPorPagina": "500"
+    }
+  }
+}

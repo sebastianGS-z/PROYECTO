@@ -27,6 +27,7 @@ import numpy as np
 import pandas as pd
 
 from config.settings import BASE_DIR
+from scripts.capturar_inflacion import a_pesos_de, indice
 from src.inteligencia.catalogo import FRUTAS
 from src.inteligencia.comercial import MESES_LARGOS, REFERENCIA, mensual, mensual_referencia, nivel_de_pct
 from src.tdl_e4.observatorio import MARKET_NAMES, _market_id
@@ -83,6 +84,8 @@ def cargar(base: Path = BASE_DIR, corte: pd.Period | None = None) -> dict[str, A
         "fiab": _json(base, "calidad/reportes/fiabilidad.json"), "iso": _json(base, "calidad/reportes/iso25012.json"),
         "e1": _json(base, "laboratorio/resultados/e1/resultados.json"),
         "export": _json(base, "data/publico/exportacion_resumen.json"),
+        "deflactor": a_pesos_de(indice(base / "data/bronce")),
+        "aciertos": _json(base, "data/publico/aciertos_resumen.json"),
     }
 
 
@@ -168,6 +171,37 @@ def _verificacion_parcial(d: dict[str, Any], r: pd.Series) -> tuple[str, int]:
     return texto + " Va en línea con el pronóstico.", 0
 
 
+def referencia_estacional(d: dict[str, Any], c: str) -> dict[str, Any] | None:
+    """Precio del mismo mes calendario en años anteriores (mediana y rango) para frutas sin pronóstico.
+
+    Para el coco se usa su unidad reportada (MXN por pieza). Prefiere Guadalajara; si no, todas las centrales.
+    """
+    g = _de(d["gold"], c)
+    if g.empty:
+        return None
+    mes_obj = (pd.Period(d["corte"], freq="M") + 1)
+    if c == "coco":
+        g = g[g["presentacion"].astype(str).str.casefold().eq("pieza") & g["precio_frecuente_mean"].notna()]
+        col, unidad = "precio_frecuente_mean", "MXN/pieza"
+    else:
+        g = g[g["precio_frecuente_kg_mean"].notna()]
+        col, unidad = "precio_frecuente_kg_mean", "MXN/kg"
+    if g.empty:
+        return None
+    gdl = g[g["mercado"].map(_market_id).eq(REFERENCIA)]
+    g = gdl if not gdl.empty else g
+    g = g.assign(mes=pd.to_datetime(g["fecha_mes"]).dt.to_period("M"))
+    w = g["precio_frecuente_count"].clip(lower=1) if "precio_frecuente_count" in g else 1
+    g = g.assign(_v=g[col] * w, _w=w).groupby("mes").agg(_v=("_v", "sum"), _w=("_w", "sum"))
+    serie = (g["_v"] / g["_w"]).rename("precio")
+    mismo = serie[[p.month == mes_obj.month for p in serie.index]]
+    if len(mismo) < 2:
+        return None
+    return {"mes": str(mes_obj), "mes_nombre": MESES_LARGOS[mes_obj.month - 1], "anios": len(mismo), "mediana": float(mismo.median()),
+            "minimo": float(mismo.min()), "maximo": float(mismo.max()), "ultimo": float(mismo.iloc[-1]), "ultimo_anio": mismo.index[-1].year,
+            "unidad": unidad, "plaza": "Guadalajara · Mercado de Abasto" if not gdl.empty else "centrales con cotización"}
+
+
 def r_proximo_mes(d: dict[str, Any], c: str) -> dict[str, Any]:
     q = f"¿A cuánto se va a pagar {PRODUCTOS[c]['articulo']} el próximo mes?"
     p = _pronostico(d, c)
@@ -182,6 +216,28 @@ def r_proximo_mes(d: dict[str, Any], c: str) -> dict[str, Any]:
                          "Para la temporada, use la pregunta de precio de hoy y el calendario de meses")
         else:
             motivo_np = "se exigen 36 meses continuos de una misma serie y aún no se reúnen"
+        est = referencia_estacional(d, c)
+        if est:
+            return _r(q, f"No hay pronóstico estadístico para {PRODUCTOS[c]['articulo']}: {motivo_np}. **Referencia de temporada:** en {est['mes_nombre']} de los últimos "
+                         f"{est['anios']} años, en {est['plaza']}, se pagó una mediana de **{_f(est['mediana'])} {est['unidad']}** (entre {_f(est['minimo'])} y "
+                         f"{_f(est['maximo'])}); en {est['ultimo_anio']} fue {_f(est['ultimo'])}.",
+                      _evidencia(est["anios"], 10, 65), f"referencia del mismo mes en {est['anios']} años (no es un modelo de pronóstico)",
+                      "Úsela como orden de magnitud para negociar; confírmela con el precio de hoy (pregunta 6).", "SNIIM · mismo mes de años anteriores", est["mes"],
+                      veredicto=f"Referencia de {est['mes_nombre']}: mediana {_f(est['mediana'])} {est['unidad']} en {est['anios']} años.")
+        if not g_.empty and meses_10 and meses_10 < 100:
+            meses_p = pd.to_datetime(g_["fecha_mes"]).dt.to_period("M").drop_duplicates()
+            anios = meses_p.map(lambda p: p.year).nunique()
+            frec = meses_p.map(lambda p: p.month).value_counts()
+            temporada = [MESES_LARGOS[m - 1] for m in sorted(frec.index) if frec[m] >= max(2, 0.5 * anios)]
+            sig = (pd.Period(d["corte"], freq="M") + 1)
+            if temporada:
+                fuera = MESES_LARGOS[sig.month - 1] not in temporada
+                return _r(q, f"Todavía no hay pronóstico para {PRODUCTOS[c]['articulo']}: {motivo_np}. Según {anios} años de cotizaciones, su temporada en las centrales es: "
+                             f"**{', '.join(temporada)}**." + (f" {MESES_LARGOS[sig.month - 1].capitalize()} está fuera de temporada: el SNIIM normalmente no lo cotiza ese mes." if fuera else ""),
+                          _evidencia(anios, 10, 60), f"meses con cotización en {anios} años",
+                          "Planee la venta para los meses de temporada; consulte el calendario de meses (pregunta 4) para ver cuáles pagan más.",
+                          "SNIIM · frecuencia de cotización por mes", str(d["corte"]),
+                          veredicto=f"Temporada: {', '.join(temporada[:4])}{'…' if len(temporada) > 4 else ''}.")
         return _r(q, f"Todavía no hay pronóstico para {PRODUCTOS[c]['articulo']}: {motivo_np}.",
                   "no aplica", "sin serie elegible", "Use el precio actual por central (pregunta 6) como referencia.", "Criterio de elegibilidad del observatorio")
     r = p.iloc[0]
@@ -430,10 +486,106 @@ def r_historia_productor(d: dict[str, Any], c: str) -> dict[str, Any]:
     anual = ((precio.iloc[-1] / precio.iloc[0]) ** (1 / max(1, fin - ini)) - 1) * 100
     serie = ", ".join(f"{a}: {v:.2f}" for a, v in precio.items())
     vol = (g["volumen_produccion"].iloc[-1] / g["volumen_produccion"].iloc[0] - 1) * 100
+    defl = d.get("deflactor", {})
+    real_txt = ""
+    if defl and ini in defl and fin in defl:
+        base_anio = max(defl)
+        real = precio * pd.Series({a: defl.get(int(a), float("nan")) for a in precio.index})
+        cambio_real = (real.iloc[-1] / real.iloc[0] - 1) * 100
+        real_txt = (f" Descontando la inflación (pesos de {base_anio}, IPC del Banco Mundial), {ini} equivale a {real.iloc[0]:.2f} MXN/kg: "
+                    f"el cambio **real** fue **{cambio_real:+.0f} %**" + (" — el precio subió más que la inflación." if cambio_real > 0 else " — el precio perdió frente a la inflación."))
     return _r(q, f"Precio medio rural en Colima (MXN/kg, SIAP): {serie}. De {ini} a {fin} cambió **{cambio:+.0f} %** ({anual:+.1f} % por año en promedio); "
-                 f"el año más alto fue {maxi} ({precio.max():.2f}) y el más bajo {mini} ({precio.min():.2f}). La producción del estado cambió {vol:+.0f} % en el mismo periodo.",
+                 f"el año más alto fue {maxi} ({precio.max():.2f}) y el más bajo {mini} ({precio.min():.2f}). La producción del estado cambió {vol:+.0f} % en el mismo periodo.{real_txt}",
               _evidencia(len(precio), 10), f"estadística oficial de {len(precio)} años (cierres agrícolas SIAP), ponderada por volumen de todos los municipios",
-              "Compare su precio de venta de cada año con esta serie; para comparar contra la inflación use el INPC de INEGI.", "SIAP · cierres 2016 en adelante", str(fin))
+              "Compare su precio de venta de cada año con esta serie y con el cambio real (sin inflación).", "SIAP · cierres 2016 en adelante · IPC Banco Mundial", str(fin))
+
+
+def _ingreso_ha(siap: pd.DataFrame, defl: dict[int, float]) -> pd.DataFrame:
+    """Ingreso bruto por hectárea cosechada (valor de la producción / superficie) por cultivo, municipio y año, en pesos del último año."""
+    if not {"superficie_cosechada_ha", "valor_produccion_mxn", "Anio"} <= set(siap.columns):
+        return siap.iloc[0:0].assign(ingreso_ha=[], factor=[], ingreso_ha_real=[])
+    s = siap[siap["superficie_cosechada_ha"].gt(0) & siap["valor_produccion_mxn"].gt(0)].copy()
+    s["ingreso_ha"] = s["valor_produccion_mxn"] / s["superficie_cosechada_ha"]
+    s["factor"] = s["Anio"].map(lambda a: defl.get(int(a), float("nan"))) if defl else 1.0
+    s["ingreso_ha_real"] = s["ingreso_ha"] * s["factor"]
+    return s
+
+
+def r_ingreso_ha(d: dict[str, Any], c: str) -> dict[str, Any]:
+    q = "¿Cuánto deja una hectárea de este cultivo en mi municipio?"
+    s = d["siap"]
+    s = s[s["Nomcultivo"].eq(PRODUCTOS[c]["siap"])] if not s.empty else s
+    if s.empty:
+        return _r(q, "SIAP no reporta este cultivo en Colima.", "no aplica", "sin datos", "—", "SIAP")
+    s = _ingreso_ha(s, d.get("deflactor", {}))
+    if s.empty:
+        return _r(q, "SIAP no trae superficie cosechada o valor de la producción para calcularlo.", "no aplica", "datos incompletos", "—", "SIAP")
+    anio = int(s["Anio"].max())
+    ult = s[s["Anio"].eq(anio)].sort_values("ingreso_ha", ascending=False)
+    est = ult["valor_produccion_mxn"].sum() / ult["superficie_cosechada_ha"].sum()
+    rend = ult["volumen_produccion"].sum() / ult["superficie_cosechada_ha"].sum()
+    txt = "; ".join(f"{r['Nommunicipio']}: ${r['ingreso_ha']:,.0f}/ha ({r['volumen_produccion'] / r['superficie_cosechada_ha']:.1f} t/ha)" for _, r in ult.head(5).iterrows())
+    hist = s.groupby("Anio").apply(lambda g: g["valor_produccion_mxn"].sum() / g["superficie_cosechada_ha"].sum() * g["factor"].iloc[0], include_groups=False)
+    tendencia = (hist.iloc[-1] / hist.iloc[0] - 1) * 100 if len(hist) > 1 else None
+    return _r(q, f"En {anio}, una hectárea cosechada de {PRODUCTOS[c]['nombre'].lower()} en Colima generó en promedio **${est:,.0f} de ingreso bruto** "
+                 f"(rendimiento {rend:.1f} t/ha × precio rural). Por municipio: {txt}."
+                 + (f" En pesos de hoy, el ingreso por hectárea cambió **{tendencia:+.0f} %** desde {int(hist.index[0])}." if tendencia is not None else "")
+                 + " Es ingreso **bruto**: no descuenta fertilizantes, mano de obra, riego ni cosecha.",
+              _evidencia(s["Anio"].nunique(), 10, 85), f"estadística oficial SIAP de {s['Anio'].nunique()} años; no incluye costos de producción",
+              "Compare su rendimiento con el de su municipio: si está por debajo, la mejora agronómica puede valer más que buscar mejor precio. Reste sus costos para saber la ganancia.",
+              "SIAP · valor de la producción / superficie cosechada", str(anio),
+              veredicto=f"Ingreso bruto promedio {anio}: ${est:,.0f} por hectárea ({rend:.1f} t/ha).")
+
+
+def r_cambiar_cultivo(d: dict[str, Any], c: str) -> dict[str, Any]:
+    q = "¿Me convendría sembrar otro cultivo?"
+    s = d["siap"]
+    if s.empty:
+        return _r(q, "Sin datos SIAP.", "no aplica", "sin datos", "—", "SIAP")
+    s = _ingreso_ha(s[s["Nomunidad"].eq("Tonelada")] if "Nomunidad" in s else s, d.get("deflactor", {}))
+    if s.empty:
+        return _r(q, "SIAP no trae superficie cosechada o valor de la producción para comparar cultivos.", "no aplica", "datos incompletos", "—", "SIAP")
+    ult = int(s["Anio"].max())
+    v = s[s["Anio"].ge(ult - 4)]
+    tabla = v.groupby("Nomcultivo").agg(valor=("valor_produccion_mxn", "sum"), sup=("superficie_cosechada_ha", "sum"), real=("ingreso_ha_real", "median"))
+    tabla = tabla[tabla["sup"] >= 300]  # cultivos con presencia relevante en el estado
+    tabla["ingreso_ha"] = tabla["valor"] / tabla["sup"]
+    tabla = tabla.sort_values("real", ascending=False)
+    propio = PRODUCTOS[c]["siap"]
+    if propio not in tabla.index:
+        return _r(q, f"{PRODUCTOS[c]['nombre']} no tiene superficie relevante en Colima para compararlo.", "no aplica", "sin superficie", "—", "SIAP")
+    pos = list(tabla.index).index(propio) + 1
+    top = "; ".join(f"{n}: ${r['real']:,.0f}/ha" for n, r in tabla.head(6).iterrows())
+    return _r(q, f"Mediana del ingreso bruto por hectárea en Colima, {ult - 4}–{ult}, en pesos de hoy, entre cultivos con al menos 300 ha cosechadas: {top}. "
+                 f"**{PRODUCTOS[c]['nombre']} ocupa el lugar {pos} de {len(tabla)}** con ${tabla.loc[propio, 'real']:,.0f}/ha. "
+                 "El ingreso bruto no considera costos (un cultivo que deja más por hectárea puede costar mucho más producirlo), años para producir (frutales), agua ni mercado.",
+              60, "estadística oficial SIAP; sin costos de producción ni riesgo, que pueden cambiar la conclusión",
+              "Antes de cambiar, compare costos por hectárea, años hasta la primera cosecha y si hay comprador. Úselo para preguntar, no para decidir solo.",
+              "SIAP · 5 años de cierres agrícolas · IPC Banco Mundial", str(ult),
+              veredicto=f"{PRODUCTOS[c]['nombre']}: lugar {pos} de {len(tabla)} en ingreso bruto por hectárea en Colima.")
+
+
+def r_aciertos(d: dict[str, Any], c: str) -> dict[str, Any]:
+    q = "¿Qué tanto ha acertado antes el pronóstico?"
+    a = d.get("aciertos", {}).get("por_serie", {})
+    p = _pronostico(d, c)
+    if p.empty or not a:
+        return _r(q, "No hay pronóstico evaluado para esta fruta.", "no aplica", "sin pronóstico", "—", "Historial de aciertos")
+    r = p[p["horizonte_meses"].eq(1)].iloc[0]
+    clave = f"{int(float(r['variante_id']))}|{_market_id(r['mercado'])}|{r.get('tipo_serie', 'origen_colima')}"
+    x = a.get(clave)
+    if not x:
+        return _r(q, "No hay historial de aciertos para esta serie.", "no aplica", "sin historial", "—", "Historial de aciertos")
+    return _r(q, f"En {x['meses_evaluados']} meses evaluados ({x['desde']} a {x['hasta']}), pronosticando un mes adelante sin conocer el dato: el precio real cayó dentro "
+                 f"del rango en **{_f(x['aciertos_rango_80_pct'], 0)} %** de los meses, el modelo acertó si subía o bajaba en "
+                 f"**{_f(x['aciertos_direccion_pct'], 0)} %**"
+                 + (" (casi como lanzar una moneda: no use el pronóstico para decidir si esperar)" if (x.get("aciertos_direccion_pct") or 0) < 62 else "")
+                 + f" y el error promedio fue de {_f(x['error_medio_abs_pct'], 1)} %. El rango se calibró con esos mismos meses, así que su acierto real "
+                 "puede ser algo menor: desde el 27 de noviembre de 2026 cada pronóstico emitido queda registrado para medirlo mes a mes.",
+              _evidencia(x["meses_evaluados"], 24, 90), f"{x['meses_evaluados']} meses de validación fuera de muestra",
+              "Si el acierto del rango está por arriba de 80 %, el rango es confiable para planear; la dirección le dice si conviene esperar.",
+              "Historial de aciertos OAIC", x["hasta"],
+              veredicto=f"Acertó el rango en {_f(x['aciertos_rango_80_pct'], 0)} % de {x['meses_evaluados']} meses.")
 
 
 def r_exportar(d: dict[str, Any], c: str) -> dict[str, Any]:
@@ -488,8 +640,8 @@ def r_confianza(d: dict[str, Any], c: str) -> dict[str, Any]:
               "Métricas de calidad OAIC", str(v.get("hasta", "—")))
 
 
-RESPUESTAS = [r_proximo_mes, r_vender_o_esperar, r_caro_o_barato, r_mejor_mes, r_que_plaza, r_precio_hoy_otras, r_cuanto_me_queda,
-              r_historia_productor, r_riesgo, r_competencia, r_mi_municipio, r_exportar, r_clima, r_confianza]
+RESPUESTAS = [r_proximo_mes, r_vender_o_esperar, r_aciertos, r_caro_o_barato, r_mejor_mes, r_que_plaza, r_precio_hoy_otras, r_cuanto_me_queda,
+              r_historia_productor, r_ingreso_ha, r_cambiar_cultivo, r_riesgo, r_competencia, r_mi_municipio, r_exportar, r_clima, r_confianza]
 
 
 def responder(d: dict[str, Any]) -> dict[str, list[dict[str, Any]]]:

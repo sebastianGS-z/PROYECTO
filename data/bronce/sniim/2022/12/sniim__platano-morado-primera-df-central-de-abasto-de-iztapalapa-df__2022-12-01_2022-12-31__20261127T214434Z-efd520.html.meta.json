@@ -1,0 +1,39 @@
+{
+  "esquema": "tdl-bronce-meta/1",
+  "contenido_original": {
+    "archivo": "sniim__platano-morado-primera-df-central-de-abasto-de-iztapalapa-df__2022-12-01_2022-12-31__20261127T214434Z-efd520.html",
+    "descripcion": "Bytes tal como los entregó la fuente; no se modifican."
+  },
+  "metadatos_captura": {
+    "fuente": "sniim",
+    "fuente_url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F12%2F2022&fechaFinal=31%2F12%2F2022&ProductoId=727&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+    "fecha_captura": "2026-11-27T22:11:27Z",
+    "identificador_ejecucion": "20261127T214434Z-efd520",
+    "formato_original": "html",
+    "sha256": "3005beb3b2fac17ee5b32375c75651598ea3c6d30b98aedcd477046dc39c83a9",
+    "bytes": 9422,
+    "http_status": 200,
+    "registros_detectados": 0,
+    "estado_captura": "sin_resultados",
+    "advertencias": [],
+    "colision_nombre": false,
+    "etiqueta": "Plátano Morado - Primera__DF: Central de Abasto de Iztapalapa DF",
+    "producto": "Plátano Morado - Primera",
+    "producto_id": "727",
+    "mercado": "DF: Central de Abasto de Iztapalapa DF",
+    "mercado_id": "100",
+    "fecha_ref_inicio": "2022-12-01",
+    "fecha_ref_fin": "2022-12-31",
+    "parametros": {
+      "fechaInicio": "01/12/2022",
+      "fechaFinal": "31/12/2022",
+      "ProductoId": "727",
+      "OrigenId": "-1",
+      "Origen": "Todos",
+      "DestinoId": "100",
+      "Destino": "DF: Central de Abasto de Iztapalapa DF",
+      "PreciosPorId": "1",
+      "RegistrosPorPagina": "500"
+    }
+  }
+}

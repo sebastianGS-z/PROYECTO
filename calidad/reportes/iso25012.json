@@ -1,19 +1,19 @@
 {
   "esquema": "oaic-iso25012/1",
-  "generado_utc": "2026-11-27T21:28:05+00:00",
+  "generado_utc": "2026-11-27T23:59:41+00:00",
   "fecha_medicion": "2026-11-27",
-  "filas_oro": 2727,
+  "filas_oro": 3733,
   "columnas_oro": 66,
   "medidas": {
     "completitud": {
       "definicion": "celdas no nulas en las columnas obligatorias de Oro / celdas totales de esas columnas",
       "valor": 1.0,
       "columnas_obligatorias_ausentes": [],
-      "completitud_tabla_completa": 0.8241,
+      "completitud_tabla_completa": 0.8017,
       "nota": "Las columnas de clima pueden ser nulas por diseño (NOAA sin publicación); se reportan en la completitud de tabla completa.",
       "por_columna_clima": {
-        "tavg_c_mean": 0.4342,
-        "prcp_mm_mean": 0.249
+        "tavg_c_mean": 0.3461,
+        "prcp_mm_mean": 0.1977
       }
     },
     "exactitud_sintactica_y_semantica": {
@@ -44,8 +44,8 @@
     "trazabilidad": {
       "definicion": "filas con linaje a Bronce (archivo, SHA-256, ingesta, índice) / filas",
       "valor": 1.0,
-      "archivos_bronce_referenciados": 2420,
-      "archivos_bronce_presentes": 2420,
+      "archivos_bronce_referenciados": 3409,
+      "archivos_bronce_presentes": 3409,
       "proporcion_archivos_presentes": 1.0
     },
     "credibilidad": {

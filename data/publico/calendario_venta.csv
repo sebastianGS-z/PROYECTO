@@ -1,4 +1,16 @@
 cultivo,variante_id,variante,mercado,base,nombre_mercado,mes,mes_nombre,indice_estacional,anios_observados,lectura,p_estacionalidad_kruskal,confianza_patron,confianza_pct,motivo_confianza
+aguacate_hass,133,Aguacate Hass - Primera,100,todos los orígenes,CDMX · Central de Abasto de Iztapalapa,1,ene,0.795,9,-21 % frente a la tendencia,0.0,alta,99,p < 0.001 con 118 observaciones
+aguacate_hass,133,Aguacate Hass - Primera,100,todos los orígenes,CDMX · Central de Abasto de Iztapalapa,2,feb,0.794,10,-21 % frente a la tendencia,0.0,alta,99,p < 0.001 con 118 observaciones
+aguacate_hass,133,Aguacate Hass - Primera,100,todos los orígenes,CDMX · Central de Abasto de Iztapalapa,3,mar,0.877,10,-12 % frente a la tendencia,0.0,alta,99,p < 0.001 con 118 observaciones
+aguacate_hass,133,Aguacate Hass - Primera,100,todos los orígenes,CDMX · Central de Abasto de Iztapalapa,4,abr,1.057,10,+6 % frente a la tendencia,0.0,alta,99,p < 0.001 con 118 observaciones
+aguacate_hass,133,Aguacate Hass - Primera,100,todos los orígenes,CDMX · Central de Abasto de Iztapalapa,5,may,1.211,10,+21 % frente a la tendencia,0.0,alta,99,p < 0.001 con 118 observaciones
+aguacate_hass,133,Aguacate Hass - Primera,100,todos los orígenes,CDMX · Central de Abasto de Iztapalapa,6,jun,1.304,9,+30 % frente a la tendencia,0.0,alta,99,p < 0.001 con 118 observaciones
+aguacate_hass,133,Aguacate Hass - Primera,100,todos los orígenes,CDMX · Central de Abasto de Iztapalapa,7,jul,1.353,10,+35 % frente a la tendencia,0.0,alta,99,p < 0.001 con 118 observaciones
+aguacate_hass,133,Aguacate Hass - Primera,100,todos los orígenes,CDMX · Central de Abasto de Iztapalapa,8,ago,1.154,10,+15 % frente a la tendencia,0.0,alta,99,p < 0.001 con 118 observaciones
+aguacate_hass,133,Aguacate Hass - Primera,100,todos los orígenes,CDMX · Central de Abasto de Iztapalapa,9,sep,0.998,10,-0 % frente a la tendencia,0.0,alta,99,p < 0.001 con 118 observaciones
+aguacate_hass,133,Aguacate Hass - Primera,100,todos los orígenes,CDMX · Central de Abasto de Iztapalapa,10,oct,0.847,10,-15 % frente a la tendencia,0.0,alta,99,p < 0.001 con 118 observaciones
+aguacate_hass,133,Aguacate Hass - Primera,100,todos los orígenes,CDMX · Central de Abasto de Iztapalapa,11,nov,0.8,10,-20 % frente a la tendencia,0.0,alta,99,p < 0.001 con 118 observaciones
+aguacate_hass,133,Aguacate Hass - Primera,100,todos los orígenes,CDMX · Central de Abasto de Iztapalapa,12,dic,0.766,10,-23 % frente a la tendencia,0.0,alta,99,p < 0.001 con 118 observaciones
 aguacate_hass,133,Aguacate Hass - Primera,140,todos los orígenes,Guadalajara · Mercado de Abasto,1,ene,0.854,10,-15 % frente a la tendencia,0.0,alta,100,p < 0.001 con 119 observaciones
 aguacate_hass,133,Aguacate Hass - Primera,140,todos los orígenes,Guadalajara · Mercado de Abasto,2,feb,0.819,10,-18 % frente a la tendencia,0.0,alta,100,p < 0.001 con 119 observaciones
 aguacate_hass,133,Aguacate Hass - Primera,140,todos los orígenes,Guadalajara · Mercado de Abasto,3,mar,0.873,10,-13 % frente a la tendencia,0.0,alta,100,p < 0.001 con 119 observaciones
@@ -23,6 +35,18 @@ guanabana,374,Guanabana - Primera,140,todos los orígenes,Guadalajara · Mercado
 guanabana,374,Guanabana - Primera,140,todos los orígenes,Guadalajara · Mercado de Abasto,10,oct,1.052,6,+5 % frente a la tendencia,0.0122,alta,86,p = 0.012 con 79 observaciones
 guanabana,374,Guanabana - Primera,140,todos los orígenes,Guadalajara · Mercado de Abasto,11,nov,0.996,7,-0 % frente a la tendencia,0.0122,alta,86,p = 0.012 con 79 observaciones
 guanabana,374,Guanabana - Primera,140,todos los orígenes,Guadalajara · Mercado de Abasto,12,dic,1.02,6,+2 % frente a la tendencia,0.0122,alta,86,p = 0.012 con 79 observaciones
+guayaba,378,Guayaba - Primera,100,todos los orígenes,CDMX · Central de Abasto de Iztapalapa,1,ene,1.073,9,+7 % frente a la tendencia,0.0,alta,99,p < 0.001 con 118 observaciones
+guayaba,378,Guayaba - Primera,100,todos los orígenes,CDMX · Central de Abasto de Iztapalapa,2,feb,1.114,10,+11 % frente a la tendencia,0.0,alta,99,p < 0.001 con 118 observaciones
+guayaba,378,Guayaba - Primera,100,todos los orígenes,CDMX · Central de Abasto de Iztapalapa,3,mar,1.047,10,+5 % frente a la tendencia,0.0,alta,99,p < 0.001 con 118 observaciones
+guayaba,378,Guayaba - Primera,100,todos los orígenes,CDMX · Central de Abasto de Iztapalapa,4,abr,1.287,10,+29 % frente a la tendencia,0.0,alta,99,p < 0.001 con 118 observaciones
+guayaba,378,Guayaba - Primera,100,todos los orígenes,CDMX · Central de Abasto de Iztapalapa,5,may,1.138,10,+14 % frente a la tendencia,0.0,alta,99,p < 0.001 con 118 observaciones
+guayaba,378,Guayaba - Primera,100,todos los orígenes,CDMX · Central de Abasto de Iztapalapa,6,jun,0.95,9,-5 % frente a la tendencia,0.0,alta,99,p < 0.001 con 118 observaciones
+guayaba,378,Guayaba - Primera,100,todos los orígenes,CDMX · Central de Abasto de Iztapalapa,7,jul,0.886,10,-11 % frente a la tendencia,0.0,alta,99,p < 0.001 con 118 observaciones
+guayaba,378,Guayaba - Primera,100,todos los orígenes,CDMX · Central de Abasto de Iztapalapa,8,ago,0.794,10,-21 % frente a la tendencia,0.0,alta,99,p < 0.001 con 118 observaciones
+guayaba,378,Guayaba - Primera,100,todos los orígenes,CDMX · Central de Abasto de Iztapalapa,9,sep,0.779,10,-22 % frente a la tendencia,0.0,alta,99,p < 0.001 con 118 observaciones
+guayaba,378,Guayaba - Primera,100,todos los orígenes,CDMX · Central de Abasto de Iztapalapa,10,oct,0.865,10,-13 % frente a la tendencia,0.0,alta,99,p < 0.001 con 118 observaciones
+guayaba,378,Guayaba - Primera,100,todos los orígenes,CDMX · Central de Abasto de Iztapalapa,11,nov,0.908,10,-9 % frente a la tendencia,0.0,alta,99,p < 0.001 con 118 observaciones
+guayaba,378,Guayaba - Primera,100,todos los orígenes,CDMX · Central de Abasto de Iztapalapa,12,dic,1.215,10,+21 % frente a la tendencia,0.0,alta,99,p < 0.001 con 118 observaciones
 guayaba,378,Guayaba - Primera,140,todos los orígenes,Guadalajara · Mercado de Abasto,1,ene,0.976,10,-2 % frente a la tendencia,0.0,alta,100,p < 0.001 con 119 observaciones
 guayaba,378,Guayaba - Primera,140,todos los orígenes,Guadalajara · Mercado de Abasto,2,feb,0.929,10,-7 % frente a la tendencia,0.0,alta,100,p < 0.001 con 119 observaciones
 guayaba,378,Guayaba - Primera,140,todos los orígenes,Guadalajara · Mercado de Abasto,3,mar,1.048,10,+5 % frente a la tendencia,0.0,alta,100,p < 0.001 con 119 observaciones
@@ -59,6 +83,17 @@ limon,421,Limón c/semilla # 5 - Primera,140,origen Colima,Guadalajara · Mercad
 limon,421,Limón c/semilla # 5 - Primera,140,origen Colima,Guadalajara · Mercado de Abasto,10,oct,1.026,10,+3 % frente a la tendencia,0.0001,alta,99,p < 0.001 con 117 observaciones
 limon,421,Limón c/semilla # 5 - Primera,140,origen Colima,Guadalajara · Mercado de Abasto,11,nov,0.776,10,-22 % frente a la tendencia,0.0001,alta,99,p < 0.001 con 117 observaciones
 limon,421,Limón c/semilla # 5 - Primera,140,origen Colima,Guadalajara · Mercado de Abasto,12,dic,0.776,10,-22 % frente a la tendencia,0.0001,alta,99,p < 0.001 con 117 observaciones
+mango_ataulfo,465,Mango Ataulfo - Primera,100,todos los orígenes,CDMX · Central de Abasto de Iztapalapa,1,ene,1.265,2,+27 % frente a la tendencia,0.0003,alta,88,p < 0.001 con 85 observaciones
+mango_ataulfo,465,Mango Ataulfo - Primera,100,todos los orígenes,CDMX · Central de Abasto de Iztapalapa,2,feb,1.082,6,+8 % frente a la tendencia,0.0003,alta,88,p < 0.001 con 85 observaciones
+mango_ataulfo,465,Mango Ataulfo - Primera,100,todos los orígenes,CDMX · Central de Abasto de Iztapalapa,3,mar,1.003,9,+0 % frente a la tendencia,0.0003,alta,88,p < 0.001 con 85 observaciones
+mango_ataulfo,465,Mango Ataulfo - Primera,100,todos los orígenes,CDMX · Central de Abasto de Iztapalapa,4,abr,0.92,10,-8 % frente a la tendencia,0.0003,alta,88,p < 0.001 con 85 observaciones
+mango_ataulfo,465,Mango Ataulfo - Primera,100,todos los orígenes,CDMX · Central de Abasto de Iztapalapa,5,may,0.856,10,-14 % frente a la tendencia,0.0003,alta,88,p < 0.001 con 85 observaciones
+mango_ataulfo,465,Mango Ataulfo - Primera,100,todos los orígenes,CDMX · Central de Abasto de Iztapalapa,6,jun,0.797,9,-20 % frente a la tendencia,0.0003,alta,88,p < 0.001 con 85 observaciones
+mango_ataulfo,465,Mango Ataulfo - Primera,100,todos los orígenes,CDMX · Central de Abasto de Iztapalapa,7,jul,0.87,10,-13 % frente a la tendencia,0.0003,alta,88,p < 0.001 con 85 observaciones
+mango_ataulfo,465,Mango Ataulfo - Primera,100,todos los orígenes,CDMX · Central de Abasto de Iztapalapa,8,ago,0.987,10,-1 % frente a la tendencia,0.0003,alta,88,p < 0.001 con 85 observaciones
+mango_ataulfo,465,Mango Ataulfo - Primera,100,todos los orígenes,CDMX · Central de Abasto de Iztapalapa,9,sep,1.141,9,+14 % frente a la tendencia,0.0003,alta,88,p < 0.001 con 85 observaciones
+mango_ataulfo,465,Mango Ataulfo - Primera,100,todos los orígenes,CDMX · Central de Abasto de Iztapalapa,10,oct,1.238,6,+24 % frente a la tendencia,0.0003,alta,88,p < 0.001 con 85 observaciones
+mango_ataulfo,465,Mango Ataulfo - Primera,100,todos los orígenes,CDMX · Central de Abasto de Iztapalapa,11,nov,1.635,4,+63 % frente a la tendencia,0.0003,alta,88,p < 0.001 con 85 observaciones
 mango_ataulfo,465,Mango Ataulfo - Primera,140,todos los orígenes,Guadalajara · Mercado de Abasto,1,ene,1.55,3,+55 % frente a la tendencia,0.0001,alta,82,p < 0.001 con 65 observaciones
 mango_ataulfo,465,Mango Ataulfo - Primera,140,todos los orígenes,Guadalajara · Mercado de Abasto,2,feb,1.149,5,+15 % frente a la tendencia,0.0001,alta,82,p < 0.001 con 65 observaciones
 mango_ataulfo,465,Mango Ataulfo - Primera,140,todos los orígenes,Guadalajara · Mercado de Abasto,3,mar,1.11,8,+11 % frente a la tendencia,0.0001,alta,82,p < 0.001 con 65 observaciones
@@ -69,6 +104,18 @@ mango_ataulfo,465,Mango Ataulfo - Primera,140,todos los orígenes,Guadalajara ·
 mango_ataulfo,465,Mango Ataulfo - Primera,140,todos los orígenes,Guadalajara · Mercado de Abasto,8,ago,1.042,9,+4 % frente a la tendencia,0.0001,alta,82,p < 0.001 con 65 observaciones
 mango_ataulfo,465,Mango Ataulfo - Primera,140,todos los orígenes,Guadalajara · Mercado de Abasto,9,sep,1.046,6,+5 % frente a la tendencia,0.0001,alta,82,p < 0.001 con 65 observaciones
 mango_ataulfo,465,Mango Ataulfo - Primera,140,todos los orígenes,Guadalajara · Mercado de Abasto,12,dic,1.98,1,+98 % frente a la tendencia,0.0001,alta,82,p < 0.001 con 65 observaciones
+mango_manila,480,Mango Manila - Primera,100,todos los orígenes,CDMX · Central de Abasto de Iztapalapa,1,ene,1.358,4,+36 % frente a la tendencia,0.0,alta,93,p < 0.001 con 98 observaciones
+mango_manila,480,Mango Manila - Primera,100,todos los orígenes,CDMX · Central de Abasto de Iztapalapa,2,feb,0.997,9,-0 % frente a la tendencia,0.0,alta,93,p < 0.001 con 98 observaciones
+mango_manila,480,Mango Manila - Primera,100,todos los orígenes,CDMX · Central de Abasto de Iztapalapa,3,mar,0.899,9,-10 % frente a la tendencia,0.0,alta,93,p < 0.001 con 98 observaciones
+mango_manila,480,Mango Manila - Primera,100,todos los orígenes,CDMX · Central de Abasto de Iztapalapa,4,abr,0.824,10,-18 % frente a la tendencia,0.0,alta,93,p < 0.001 con 98 observaciones
+mango_manila,480,Mango Manila - Primera,100,todos los orígenes,CDMX · Central de Abasto de Iztapalapa,5,may,0.775,10,-23 % frente a la tendencia,0.0,alta,93,p < 0.001 con 98 observaciones
+mango_manila,480,Mango Manila - Primera,100,todos los orígenes,CDMX · Central de Abasto de Iztapalapa,6,jun,0.706,9,-29 % frente a la tendencia,0.0,alta,93,p < 0.001 con 98 observaciones
+mango_manila,480,Mango Manila - Primera,100,todos los orígenes,CDMX · Central de Abasto de Iztapalapa,7,jul,0.783,10,-22 % frente a la tendencia,0.0,alta,93,p < 0.001 con 98 observaciones
+mango_manila,480,Mango Manila - Primera,100,todos los orígenes,CDMX · Central de Abasto de Iztapalapa,8,ago,0.905,10,-9 % frente a la tendencia,0.0,alta,93,p < 0.001 con 98 observaciones
+mango_manila,480,Mango Manila - Primera,100,todos los orígenes,CDMX · Central de Abasto de Iztapalapa,9,sep,1.146,10,+15 % frente a la tendencia,0.0,alta,93,p < 0.001 con 98 observaciones
+mango_manila,480,Mango Manila - Primera,100,todos los orígenes,CDMX · Central de Abasto de Iztapalapa,10,oct,1.443,9,+44 % frente a la tendencia,0.0,alta,93,p < 0.001 con 98 observaciones
+mango_manila,480,Mango Manila - Primera,100,todos los orígenes,CDMX · Central de Abasto de Iztapalapa,11,nov,1.54,6,+54 % frente a la tendencia,0.0,alta,93,p < 0.001 con 98 observaciones
+mango_manila,480,Mango Manila - Primera,100,todos los orígenes,CDMX · Central de Abasto de Iztapalapa,12,dic,1.929,2,+93 % frente a la tendencia,0.0,alta,93,p < 0.001 con 98 observaciones
 papaya,609,Papaya Maradol - Primera,140,origen Colima,Guadalajara · Mercado de Abasto,1,ene,1.036,10,+4 % frente a la tendencia,0.0014,alta,100,p = 0.001 con 119 observaciones
 papaya,609,Papaya Maradol - Primera,140,origen Colima,Guadalajara · Mercado de Abasto,2,feb,1.083,10,+8 % frente a la tendencia,0.0014,alta,100,p = 0.001 con 119 observaciones
 papaya,609,Papaya Maradol - Primera,140,origen Colima,Guadalajara · Mercado de Abasto,3,mar,0.951,10,-5 % frente a la tendencia,0.0014,alta,100,p = 0.001 con 119 observaciones

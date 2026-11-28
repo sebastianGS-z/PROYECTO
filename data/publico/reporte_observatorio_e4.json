@@ -1,6 +1,6 @@
 {
   "esquema": "oaic-e4-observatorio/1",
-  "generado_utc": "2026-11-27T21:27:49.742514+00:00",
+  "generado_utc": "2026-11-27T23:59:40.336512+00:00",
   "capa_oro": "data/oro/panel_mensual.csv",
   "origen_objetivo": "Colima",
   "horizonte_meses": 3,
@@ -9,8 +9,9 @@
   "regla_normalizacion": "SNIIM declara Kilogramo o peso en kg en la presentación; se normaliza cada cotización antes de agregar. Presentaciones sin peso explícito quedan fuera del pronóstico por kg.",
   "metodo": "36 meses contiguos mínimos; selección por MAE en seis meses walk-forward y evaluación independiente en los seis meses cerrados siguientes; reentrenamiento del modelo elegido con toda la serie",
   "validacion": {
-    "meses_seleccion": 6,
-    "meses_holdout_independiente": 6,
+    "meses_seleccion": "6 (12 si la serie tiene 60+ meses)",
+    "meses_holdout_independiente": "6 (12 si la serie tiene 60+ meses)",
+    "regla_combinacion": "se prefiere la combinación si su MAE de selección está a menos de 10 % del mejor",
     "holdout": "Los últimos seis meses no participan en la selección del modelo; el MAE/RMSE/MAPE publicados para el modelo elegido se calculan sobre este bloque."
   },
   "linaje_pronostico": "Cada pronóstico incluye el periodo de Oro usado y el SHA-256 del conjunto ordenado de huellas de linaje mensual; se puede reconstruir desde la serie y periodos en panel_mensual.csv.",
@@ -20,6 +21,7 @@
     "holt_winters_aditivo",
     "arima_aic",
     "sarima_aic",
+    "sarima_log",
     "combinacion"
   ],
   "minimo_meses_contiguos": 36,
@@ -70,15 +72,15 @@
       "tipo_serie": "origen_colima",
       "meses": 76,
       "pronosticable": true,
-      "modelo_elegido": "sarima_aic",
-      "n_validaciones_seleccion": 6,
-      "n_validaciones_holdout": 6,
+      "modelo_elegido": "combinacion",
+      "n_validaciones_seleccion": 12,
+      "n_validaciones_holdout": 12,
       "periodo_seleccion": [
-        "2025-11",
-        "2026-04"
+        "2024-11",
+        "2025-10"
       ],
       "periodo_holdout": [
-        "2026-05",
+        "2025-11",
         "2026-10"
       ],
       "fecha_primer_dato": "2020-07",
@@ -167,15 +169,15 @@
       "tipo_serie": "origen_colima",
       "meses": 76,
       "pronosticable": true,
-      "modelo_elegido": "combinacion",
-      "n_validaciones_seleccion": 6,
-      "n_validaciones_holdout": 6,
+      "modelo_elegido": "holt_winters_aditivo",
+      "n_validaciones_seleccion": 12,
+      "n_validaciones_holdout": 12,
       "periodo_seleccion": [
-        "2025-11",
-        "2026-04"
+        "2024-11",
+        "2025-10"
       ],
       "periodo_holdout": [
-        "2026-05",
+        "2025-11",
         "2026-10"
       ],
       "fecha_primer_dato": "2020-07",
@@ -372,15 +374,15 @@
       "tipo_serie": "origen_colima",
       "meses": 67,
       "pronosticable": true,
-      "modelo_elegido": "arima_aic",
-      "n_validaciones_seleccion": 6,
-      "n_validaciones_holdout": 6,
+      "modelo_elegido": "combinacion",
+      "n_validaciones_seleccion": 12,
+      "n_validaciones_holdout": 12,
       "periodo_seleccion": [
-        "2025-02",
-        "2025-07"
+        "2024-02",
+        "2025-01"
       ],
       "periodo_holdout": [
-        "2025-08",
+        "2025-02",
         "2026-01"
       ],
       "fecha_primer_dato": "2020-07",
@@ -423,14 +425,14 @@
       "meses": 76,
       "pronosticable": true,
       "modelo_elegido": "combinacion",
-      "n_validaciones_seleccion": 6,
-      "n_validaciones_holdout": 6,
+      "n_validaciones_seleccion": 12,
+      "n_validaciones_holdout": 12,
       "periodo_seleccion": [
-        "2025-11",
-        "2026-04"
+        "2024-11",
+        "2025-10"
       ],
       "periodo_holdout": [
-        "2026-05",
+        "2025-11",
         "2026-10"
       ],
       "fecha_primer_dato": "2020-07",
@@ -448,14 +450,14 @@
       "meses": 76,
       "pronosticable": true,
       "modelo_elegido": "combinacion",
-      "n_validaciones_seleccion": 6,
-      "n_validaciones_holdout": 6,
+      "n_validaciones_seleccion": 12,
+      "n_validaciones_holdout": 12,
       "periodo_seleccion": [
-        "2025-11",
-        "2026-04"
+        "2024-11",
+        "2025-10"
       ],
       "periodo_holdout": [
-        "2026-05",
+        "2025-11",
         "2026-10"
       ],
       "fecha_primer_dato": "2020-07",
@@ -472,15 +474,15 @@
       "tipo_serie": "referencia_mercado",
       "meses": 76,
       "pronosticable": true,
-      "modelo_elegido": "combinacion",
-      "n_validaciones_seleccion": 6,
-      "n_validaciones_holdout": 6,
+      "modelo_elegido": "holt_winters_aditivo",
+      "n_validaciones_seleccion": 12,
+      "n_validaciones_holdout": 12,
       "periodo_seleccion": [
-        "2025-11",
-        "2026-04"
+        "2024-11",
+        "2025-10"
       ],
       "periodo_holdout": [
-        "2026-05",
+        "2025-11",
         "2026-10"
       ],
       "fecha_primer_dato": "2020-07",
@@ -497,15 +499,15 @@
       "tipo_serie": "referencia_mercado",
       "meses": 76,
       "pronosticable": true,
-      "modelo_elegido": "arima_aic",
-      "n_validaciones_seleccion": 6,
-      "n_validaciones_holdout": 6,
+      "modelo_elegido": "combinacion",
+      "n_validaciones_seleccion": 12,
+      "n_validaciones_holdout": 12,
       "periodo_seleccion": [
-        "2025-11",
-        "2026-04"
+        "2024-11",
+        "2025-10"
       ],
       "periodo_holdout": [
-        "2026-05",
+        "2025-11",
         "2026-10"
       ],
       "fecha_primer_dato": "2020-07",

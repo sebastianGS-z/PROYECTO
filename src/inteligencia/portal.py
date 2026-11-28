@@ -29,7 +29,8 @@ from src.inteligencia.catalogo import FRUTAS  # noqa: E402
 
 PRODUCTOS = {k: v["nombre"] for k, v in FRUTAS.items()}
 NAV = [("inicio.html", "Inicio"), ("preguntas.html", "Preguntas del productor"), ("mapa.html", "Mapa"), ("inteligencia.html", "Reporte de inteligencia"),
-       ("cliente.html", "Vista de cliente"), ("index.html", "Panel técnico"), ("laboratorio.html", "Laboratorio"), ("admin.html", "Administración")]
+       ("cliente.html", "Vista de cliente"), ("index.html", "Panel técnico"), ("laboratorio.html", "Laboratorio"), ("admin.html", "Administración"),
+       ("alertas.xml", "Alertas (RSS)")]
 
 CSS = """
 :root{--ink:#17231f;--muted:#5f6d67;--line:#dde5df;--paper:#f4f7f3;--surface:#fff;--forest:#143d31;--lime:#d9ed8c;--gold:#c08a32;--red:#a85242;--ok:#2e7d4f}
@@ -149,8 +150,14 @@ def inicio(base: Path = BASE_DIR) -> str:
                         f'<p>Pronóstico: {_pill(conf_pron, pct_pron)}</p><a class="cta" href="preguntas.html#{c}">{len(resp) or "Ver"} respuestas sobre {nombre.lower()} →</a></article>')
     hallazgos = "".join(f"<li>{html.escape(h)}</li>" for h in intel.get("hallazgos", [])[:5])
     v = fiab.get("periodos", {}).get("ventana_sello_14_dias", {})
+    alertas = _js(base, "data/publico/alertas.json").get("alertas", [])
+    lista_alertas = "".join(f'<li><b>{html.escape(a["titulo"])}</b><br><span class="muted">{html.escape(a["texto"][:180])}</span></li>' for a in alertas[:5])
+    tarjeta_alertas = (f'<h2>Alertas de hoy ({len(alertas)})</h2><div class="card"><ul>{lista_alertas or "<li>Sin alertas.</li>"}</ul>'
+                       '<p class="muted">Para recibirlas sin entrar al sitio, agregue <b>alertas.xml</b> a cualquier lector de RSS o a un servicio de "RSS a correo". '
+                       'El observatorio no pide ni guarda datos personales.</p><a class="cta" href="alertas.xml">Suscribirse (RSS)</a> '
+                       '<a class="cta" href="../data/publico/alertas.json">Alertas en JSON</a></div>')
     cuerpo = (f'<h2>Precio por producto</h2><div class="grid">{"".join(tarjetas)}</div>'
-              f'<h2>Hallazgos del mes</h2><div class="card"><ul>{hallazgos or "<li>Sin hallazgos en este corte.</li>"}</ul>'
+              f'{tarjeta_alertas}<h2>Hallazgos del mes</h2><div class="card"><ul>{hallazgos or "<li>Sin hallazgos en este corte.</li>"}</ul>'
               f'<a class="cta" href="inteligencia.html">Ver reporte completo (imprimible)</a></div>'
               '<h2>¿Qué quiere hacer?</h2><div class="grid">'
               '<div class="card"><h3>Saber si me ofrecen buen precio</h3><p class="muted">Calculadora en huerta contra precio rural y mayorista.</p><a class="cta" href="preguntas.html">Abrir calculadora</a></div>'
@@ -161,12 +168,19 @@ def inicio(base: Path = BASE_DIR) -> str:
               f'<h2>Confianza del sistema</h2><div class="card"><div class="row"><span>Captura funcionando (últimos {v.get("dias", 14)} días)</span><b>{_f((v.get("disponibilidad") or 0) * 100, 0)} %</b></div>'
               f'<div class="row"><span>Datos al</span><b>{html.escape(str(v.get("hasta", "—")))}</b></div>'
               f'<p class="muted">Fuentes oficiales: SNIIM (Secretaría de Economía), SIAP (SADER), NOAA, INEGI, UN Comtrade. Cada cifra es rastreable a su archivo original. No es asesoría financiera.</p></div>')
-    return _pagina("Observatorio de Agro-Inteligencia Colimense", "Precios, pronósticos y decisiones de venta para limón, papaya y plátano de Colima", "inicio.html", cuerpo)
+    return _pagina("Observatorio de Agro-Inteligencia Colimense", "Precios, pronósticos y decisiones de venta para las 10 frutas principales de Colima", "inicio.html", cuerpo)
 
 
 # --------------------------------------------------------------------------------------------------
 # Administración
 # --------------------------------------------------------------------------------------------------
+
+def _aciertos(base: Path) -> pd.DataFrame:
+    a = _js(base, "data/publico/aciertos_resumen.json").get("por_serie", {})
+    return pd.DataFrame([{"serie": v["variante"], "plaza": v["plaza"], "modelo": v["modelo"], "meses": v["meses_evaluados"],
+                          "acierto rango 80 %": f"{v['aciertos_rango_80_pct']:.0f} %", "acierto dirección": f"{v['aciertos_direccion_pct']:.0f} %" if v.get("aciertos_direccion_pct") is not None else "—",
+                          "error medio": f"{v['error_medio_abs_pct']:.1f} %"} for v in a.values()])
+
 
 def cobertura_frutas(base: Path, anios: int = 10) -> pd.DataFrame:
     """Meses con precio por fruta en los últimos ``anios`` años (todas las centrales y solo origen Colima)."""
@@ -277,6 +291,8 @@ def admin(base: Path = BASE_DIR) -> str:
               f'<h2>Calidad de datos · ISO/IEC 25012</h2>{_tabla(medidas)}'
               f'<h2>Salud de los pronósticos</h2>{_tabla(salud)}'
               f'<h2>Comparación de plazas · resultados por nivel de confianza</h2>{_tabla(pl)}'
+              f'<h2>Historial de aciertos del pronóstico</h2>{_tabla(_aciertos(base))}'
+              '<p class="muted">Pronóstico a un mes fuera de muestra del modelo elegido frente al precio real. El registro permanente de pronósticos emitidos está en data/publico/historial_pronosticos.csv.</p>'
               f'<h2>Cobertura de historia por fruta (últimos 10 años)</h2>{_tabla(cobertura_frutas(base))}'
               '<p class="muted">Un mes sin precio significa que el SNIIM no publicó esa fruta en las centrales capturadas ese mes; no se rellena.</p>'
               f'<h2>Inventario de Bronce</h2>{_tabla(inv, nd=1)}'
@@ -288,9 +304,34 @@ def admin(base: Path = BASE_DIR) -> str:
     return _pagina("Administración del observatorio", f"Operación, calidad y salud de los datos · métricas al {fiab.get('generado_utc', '—')[:16]} UTC", "admin.html", cuerpo)
 
 
+def barra(actual: str) -> str:
+    """Barra de navegación del portal para las vistas que no genera este módulo (cliente y laboratorio)."""
+    enlaces = "".join(f'<a href="{h}" style="color:{"#d9ed8c" if h == actual else "#e7eee9"};text-decoration:none;font:600 13px system-ui,sans-serif;'
+                      f'padding:6px 10px;border-radius:8px;white-space:nowrap">{n}</a>' for h, n in NAV)
+    return f'<nav class="oaic-nav" aria-label="Secciones" style="background:#143d31;padding:8px 16px;display:flex;gap:6px;overflow-x:auto">{enlaces}</nav>'
+
+
+def inyectar_barra(ruta: Path) -> bool:
+    """Pone (o reemplaza) la barra del portal justo después de ``<body>``. Idempotente."""
+    if not ruta.is_file():
+        return False
+    t = ruta.read_text(encoding="utf-8")
+    if 'class="oaic-nav"' in t:
+        i = t.index('<nav class="oaic-nav"')
+        t = t[:i] + t[t.index("</nav>", i) + len("</nav>"):]
+    i = t.find("<body")
+    if i < 0:
+        return False
+    j = t.index(">", i) + 1
+    ruta.write_text(t[:j] + barra(ruta.name) + t[j:], encoding="utf-8")
+    return True
+
+
 def ejecutar(base: Path = BASE_DIR) -> dict[str, str]:
     (base / "tablero/inicio.html").write_text(inicio(base), encoding="utf-8")
     (base / "tablero/admin.html").write_text(admin(base), encoding="utf-8")
+    for vista in ("cliente.html", "laboratorio.html"):  # index.html ya trae su menú lateral
+        inyectar_barra(base / "tablero" / vista)
     return {"inicio": "tablero/inicio.html", "admin": "tablero/admin.html"}
 
 

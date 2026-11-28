@@ -1,0 +1,102 @@
+{
+  "esquema": "oaic-aciertos/1",
+  "generado_utc": "2026-11-27T23:59:46+00:00",
+  "metodo": "Pronóstico a un mes fuera de muestra (walk-forward) del modelo elegido, comparado con el precio real del mes.",
+  "advertencia": "El ancho del rango de 80 % se calibró con estos mismos errores, así que su porcentaje de acierto aquí es optimista; la cobertura real se mide con el registro permanente. El error y la dirección sí son fuera de muestra. Los meses en que el precio no cambió (menos de 0.5 %) no cuentan para la dirección.",
+  "por_serie": {
+    "133|140|referencia_mercado": {
+      "variante": "Aguacate Hass - Primera",
+      "plaza": "Guadalajara · Mercado de Abasto",
+      "modelo": "combinacion",
+      "meses_evaluados": 24,
+      "error_medio_abs_pct": 11.7,
+      "aciertos_rango_80_pct": 83.0,
+      "aciertos_direccion_pct": 82.0,
+      "desde": "2024-11",
+      "hasta": "2026-10"
+    },
+    "378|140|referencia_mercado": {
+      "variante": "Guayaba - Primera",
+      "plaza": "Guadalajara · Mercado de Abasto",
+      "modelo": "holt_winters_aditivo",
+      "meses_evaluados": 24,
+      "error_medio_abs_pct": 15.0,
+      "aciertos_rango_80_pct": 83.0,
+      "aciertos_direccion_pct": 78.0,
+      "desde": "2024-11",
+      "hasta": "2026-10"
+    },
+    "421|140|origen_colima": {
+      "variante": "Limón c/semilla # 5 - Primera",
+      "plaza": "Guadalajara · Mercado de Abasto",
+      "modelo": "combinacion",
+      "meses_evaluados": 24,
+      "error_medio_abs_pct": 15.1,
+      "aciertos_rango_80_pct": 88.0,
+      "aciertos_direccion_pct": 87.0,
+      "desde": "2024-11",
+      "hasta": "2026-10"
+    },
+    "609|140|origen_colima": {
+      "variante": "Papaya Maradol - Primera",
+      "plaza": "Guadalajara · Mercado de Abasto",
+      "modelo": "holt_winters_aditivo",
+      "meses_evaluados": 24,
+      "error_medio_abs_pct": 14.0,
+      "aciertos_rango_80_pct": 83.0,
+      "aciertos_direccion_pct": 65.0,
+      "desde": "2024-11",
+      "hasta": "2026-10"
+    },
+    "723|140|referencia_mercado": {
+      "variante": "Plátano Macho - Primera",
+      "plaza": "Guadalajara · Mercado de Abasto",
+      "modelo": "combinacion",
+      "meses_evaluados": 24,
+      "error_medio_abs_pct": 4.5,
+      "aciertos_rango_80_pct": 83.0,
+      "aciertos_direccion_pct": 59.0,
+      "desde": "2024-11",
+      "hasta": "2026-10"
+    },
+    "787|140|referencia_mercado": {
+      "variante": "Sandía Sangría - Primera",
+      "plaza": "Guadalajara · Mercado de Abasto",
+      "modelo": "combinacion",
+      "meses_evaluados": 24,
+      "error_medio_abs_pct": 8.1,
+      "aciertos_rango_80_pct": 88.0,
+      "aciertos_direccion_pct": 50.0,
+      "desde": "2024-11",
+      "hasta": "2026-10"
+    },
+    "800|140|origen_colima": {
+      "variante": "Tamarindo - Primera",
+      "plaza": "Guadalajara · Mercado de Abasto",
+      "modelo": "combinacion",
+      "meses_evaluados": 24,
+      "error_medio_abs_pct": 6.3,
+      "aciertos_rango_80_pct": 88.0,
+      "aciertos_direccion_pct": 71.0,
+      "desde": "2024-02",
+      "hasta": "2026-01"
+    },
+    "800|80|origen_colima": {
+      "variante": "Tamarindo - Primera",
+      "plaza": "Colima · Centros de distribución",
+      "modelo": "suavizamiento_simple",
+      "meses_evaluados": 12,
+      "error_medio_abs_pct": 0.8,
+      "aciertos_rango_80_pct": 100.0,
+      "aciertos_direccion_pct": 40.0,
+      "desde": "2025-11",
+      "hasta": "2026-10"
+    }
+  },
+  "registro_permanente": {
+    "pronosticos_emitidos": 24,
+    "ya_evaluados": 0,
+    "aciertos_rango_80_pct": null,
+    "nota": "El registro empezó el 2026-11-27; se llena conforme llegan los meses pronosticados."
+  }
+}

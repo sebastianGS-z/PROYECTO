@@ -90,7 +90,11 @@ Sitio: **<https://sebastiangs-z.github.io/PROYECTO/>** (se publica con GitHub Pa
 
 **Mercados extranjeros.** `python main.py comtrade-captura` (UN Comtrade 2019–2024: importaciones desde México, importaciones mundiales y exportadores, con pausa de 6 s por la cuota del API) y `python main.py exportacion` (destinos, crecimiento, oportunidades y prima de exportación en MXN/kg con tipo de cambio del BCE).
 
-Regenerar todo desde Bronce: `python main.py capas && python main.py observatorio && python -m calidad.metricas && python main.py exportacion && python main.py inteligencia && python main.py reporte && python main.py preguntas && python main.py mapa && python main.py portal`. Fuentes históricas adicionales: `python main.py siap-captura --anios 2016 ... 2025` (cierres agrícolas SIAP) y `python main.py historica --inicio 2016-11-01 ...` (SNIIM).
+**Precios reales e historial de aciertos.** `python main.py inflacion-captura` guarda en Bronce el índice de precios al consumidor de México (Banco Mundial, FP.CPI.TOTL) para expresar precios e ingresos de años anteriores en pesos de hoy. `python main.py aciertos` publica qué tanto ha acertado el pronóstico (rango de 80 %, dirección y error, fuera de muestra) y agrega cada pronóstico emitido a `data/publico/historial_pronosticos.csv` para medir los aciertos reales mes a mes.
+
+**Alertas.** `python main.py alertas` escribe `tablero/alertas.xml` (RSS 2.0) y `data/publico/alertas.json`: precio alto o bajo frente a su historia, pronóstico que se aleja del dato del mes, central que paga más con confianza alta, prima de exportación ≥ 20 % y fuentes sin datos nuevos. Cualquier lector de RSS o servicio de "RSS a correo" avisa sin que el observatorio guarde datos personales.
+
+Regenerar todo desde Bronce: `python main.py capas && python main.py observatorio && python -m calidad.metricas && python main.py exportacion && python main.py aciertos && python main.py inteligencia && python main.py reporte && python main.py preguntas && python main.py alertas && python main.py mapa && python main.py portal`. Fuentes históricas adicionales: `python main.py siap-captura --anios 2016 ... 2025` (cierres agrícolas SIAP) y `python main.py historica --inicio 2016-11-01 ...` (SNIIM).
 
 ## Mapa de evidencias por materia
 

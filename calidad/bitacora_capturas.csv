@@ -60,3 +60,7 @@ run_id,fuente,modo,disparador,inicio_utc,fin_utc,duracion_s,estado,solicitudes,r
 20261127T173045Z-dd78ea,sniim,historica,local,2026-11-27T17:30:45Z,2026-11-27T19:41:10Z,7825.08,exitosa,1181,13538,1177,0,
 20261127T194122Z-918ed6,sniim,historica,local,2026-11-27T19:41:22Z,2026-11-27T20:32:02Z,3040.13,exitosa,1178,12385,1177,0,
 20261127T203202Z-809ee3,sniim,historica,local,2026-11-27T20:32:02Z,2026-11-27T20:50:06Z,1083.23,exitosa,434,3164,433,0,
+20261127T214434Z-efd520,sniim,historica,local,2026-11-27T21:44:34Z,2026-11-27T23:00:17Z,4543.15,parcial,1612,17544,1596,1,"{'producto_clave': 'platano', 'producto': 'Plátano Chiapas calidad exportación - Primera', 'mercado_clave': 'cdmx', 'inicio': '2020-03-01', 'fin': '2020-03-31'}: RequestFailed: Agotados 4 intentos par"
+20261127T230853Z-8ca288,sniim,historica,local,2026-11-27T23:08:53Z,2026-11-27T23:16:25Z,452.21,parcial,145,2431,140,1,"{'producto_clave': 'guayaba', 'producto': 'Guayaba - Primera', 'mercado_clave': 'cdmx', 'inicio': '2026-09-01', 'fin': '2026-09-30'}: RequestFailed: Agotados 4 intentos para https://www.economia-sniim"
+20261127T235109Z-eed6fd,sniim,historica,local,2026-11-27T23:51:09Z,2026-11-27T23:51:15Z,5.26,exitosa,3,21,2,0,
+20261127T235115Z-4ea00d,sniim,historica,local,2026-11-27T23:51:15Z,2026-11-27T23:51:42Z,26.94,exitosa,12,100,11,0,

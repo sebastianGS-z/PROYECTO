@@ -1,0 +1,65 @@
+{
+  "run_id": "20261127T235109Z-eed6fd",
+  "fuente": "sniim",
+  "modo": "historica",
+  "disparador": "local",
+  "inicio": "2026-11-27T23:51:09Z",
+  "fin": "2026-11-27T23:51:15Z",
+  "duracion_s": 5.26,
+  "estado": "exitosa",
+  "solicitudes": 3,
+  "registros": 21,
+  "consultas": [
+    {
+      "paso": "catalogo_formulario",
+      "estado": "ok",
+      "registros": 0,
+      "archivo": "sniim__catalogo-formulario__2026-11-27_2026-11-27__20261127T235109Z-eed6fd.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "guayaba",
+      "producto": "Guayaba - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2026-09-01",
+      "fin": "2026-09-30",
+      "estado": "ok",
+      "registros": 21,
+      "archivo": "sniim__guayaba-primera-df-central-de-abasto-de-iztapalapa-df__2026-09-01_2026-09-30__20261127T235109Z-eed6fd.html",
+      "error": null,
+      "advertencias": []
+    }
+  ],
+  "archivos": [
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__catalogo-formulario__2026-11-27_2026-11-27__20261127T235109Z-eed6fd.html",
+      "sha256": "0b7309043ab6c99dd2c634866bf0cfc75ae0301215a714035ea2a060fb889383",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/Consultas/MercadosNacionales/PreciosDeMercado/Agricolas/ConsultaFrutasYHortalizas.aspx",
+      "bytes": 67149
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/09/sniim__guayaba-primera-df-central-de-abasto-de-iztapalapa-df__2026-09-01_2026-09-30__20261127T235109Z-eed6fd.html",
+      "sha256": "d456e70972589d866343dc4614243554e59448978c66cce71cc28be8538182e6",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F09%2F2026&fechaFinal=30%2F09%2F2026&ProductoId=378&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26261
+    }
+  ],
+  "errores": [],
+  "parametros": {
+    "productos": [
+      "guayaba"
+    ],
+    "mercados": [
+      "cdmx"
+    ],
+    "periodos": [
+      [
+        "2026-09-01",
+        "2026-09-30"
+      ]
+    ]
+  },
+  "esquema": "tdl-manifest/1",
+  "archivos_generados": 2
+}

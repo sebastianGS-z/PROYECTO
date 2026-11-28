@@ -2,7 +2,7 @@
   "api": "OAIC · Observatorio de Agro-Inteligencia Colimense",
   "version": "v1",
   "licencia": "CC BY 4.0 para la contribución OAIC; las fuentes conservan sus términos (data/publico/LICENSE.md)",
-  "generado_utc": "2026-11-27T21:28:11+00:00",
+  "generado_utc": "2026-11-27T23:59:50+00:00",
   "recursos": {
     "pronosticos": {
       "url": "pronosticos.json",
@@ -75,7 +75,7 @@
     "margen_productor": {
       "url": "margen_productor.json",
       "descripcion": "Precio al productor (SIAP) frente al precio mayorista (SNIIM)",
-      "filas": 101,
+      "filas": 131,
       "columnas": [
         "anio",
         "cultivo",
@@ -94,7 +94,7 @@
     "calendario_venta": {
       "url": "calendario_venta.json",
       "descripcion": "Índice estacional por mes calendario",
-      "filas": 130,
+      "filas": 177,
       "columnas": [
         "cultivo",
         "variante_id",
@@ -116,7 +116,7 @@
     "senales": {
       "url": "senales.json",
       "descripcion": "Percentil histórico del último precio y lectura",
-      "filas": 29,
+      "filas": 33,
       "columnas": [
         "cultivo",
         "variante_id",
@@ -136,7 +136,7 @@
     "panel_mensual": {
       "url": "panel_mensual.json",
       "descripcion": "Panel mensual completo con linaje a Bronce",
-      "filas": 2727,
+      "filas": 3733,
       "columnas": [
         "cultivo",
         "variante",

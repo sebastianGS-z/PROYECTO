@@ -34,7 +34,14 @@ REFERENCIA_CULTIVOS = ("limon", "papaya", "platano", "mango_ataulfo", "mango_man
                        "guanabana", "sandia", "sandia_blanca", "sandia_jubilee", "sandia_peacock", "sandia_negra", "sandia_rayada", "sandia_sangria")
 SELECTION_STEPS = 6
 HOLDOUT_STEPS = 6
-MODEL_NAMES = ("suavizamiento_simple", "holt", "holt_winters_aditivo", "arima_aic", "sarima_aic", "combinacion")
+SERIE_LARGA = 60          # con 60 meses continuos o más, la validación usa 12 + 12 meses
+PASOS_SERIE_LARGA = 12
+
+
+def ventanas(n: int) -> tuple[int, int]:
+    """Meses de selección y de holdout según la longitud de la serie (más historia → validación más exigente)."""
+    return (PASOS_SERIE_LARGA, PASOS_SERIE_LARGA) if n >= SERIE_LARGA else (SELECTION_STEPS, HOLDOUT_STEPS)
+MODEL_NAMES = ("suavizamiento_simple", "holt", "holt_winters_aditivo", "arima_aic", "sarima_aic", "sarima_log", "combinacion")
 MARKET_NAMES = {
     "80": "Colima · Centros de distribución",
     "100": "CDMX · Central de Abasto de Iztapalapa",
@@ -138,6 +145,11 @@ def _ajustar(model: str, values: np.ndarray, steps: int) -> np.ndarray:
         if len(preds) < 2:
             raise ValueError("combinación requiere al menos dos modelos")
         return np.mean(preds, axis=0)
+    if model == "sarima_log":
+        # SARIMA sobre log(precio): amortigua picos extremos; se regresa a pesos con exp (mediana del pronóstico).
+        if (values <= 0).any():
+            raise ValueError("log requiere precios positivos")
+        return np.exp(_ajustar("sarima_aic", np.log(values), steps))
     series = pd.Series(values, dtype="float64")
     with warnings.catch_warnings():
         warnings.simplefilter("ignore")
@@ -207,8 +219,9 @@ def _mensual_colima(gold: pd.DataFrame, origen_objetivo: str | None = "Colima") 
 
 def _backtest(series: pd.Series) -> tuple[pd.DataFrame, pd.DataFrame]:
     values = series.to_numpy(dtype="float64")
-    selection_start = len(values) - SELECTION_STEPS - HOLDOUT_STEPS
-    holdout_start = len(values) - HOLDOUT_STEPS
+    sel_n, hold_n = ventanas(len(values))
+    selection_start = len(values) - sel_n - hold_n
+    holdout_start = len(values) - hold_n
     if selection_start < 24:
         return pd.DataFrame(), pd.DataFrame()
     rows: list[dict[str, Any]] = []
@@ -345,6 +358,11 @@ def generar_observatorio(gold_path: Path | None = None, output_dir: Path | None 
                                            "motivo": "sin_modelo_con_validacion_de_seleccion"})
                 continue
             winner = str(selection_scores.iloc[0]["modelo"])
+            # Regla declarada de antemano: la combinación se prefiere si su MAE de selección está a menos de 10 %
+            # del mejor (es más estable fuera de muestra que un modelo individual que gana por poco).
+            comb = selection_scores[selection_scores["modelo"].eq("combinacion")]
+            if winner != "combinacion" and len(comb) and float(comb.iloc[0]["mae_mxn_kg"]) <= 1.10 * float(selection_scores.iloc[0]["mae_mxn_kg"]):
+                winner = "combinacion"
             winner_holdout = holdout_scores[holdout_scores["modelo"].eq(winner)]
             if winner_holdout.empty:
                 eligibility.append(meta | {"meses": int(len(indexed)), "pronosticable": False,
@@ -363,8 +381,9 @@ def generar_observatorio(gold_path: Path | None = None, output_dir: Path | None 
                 predictions = predictions.assign(**meta)
                 validation_rows.extend(predictions.to_dict("records"))
             last = periods[-1]
-            selection_start = len(periods) - SELECTION_STEPS - HOLDOUT_STEPS
-            holdout_start = len(periods) - HOLDOUT_STEPS
+            sel_n, hold_n = ventanas(len(periods))
+            selection_start = len(periods) - sel_n - hold_n
+            holdout_start = len(periods) - hold_n
             selection_first_month = str(periods[selection_start])
             selection_last_month = str(periods[holdout_start - 1])
             holdout_first_month = str(periods[holdout_start])
@@ -554,7 +573,9 @@ def generar_observatorio(gold_path: Path | None = None, output_dir: Path | None 
         "ultimo_mes_cerrado_usado": str(last_closed_month),
         "regla_normalizacion": "SNIIM declara Kilogramo o peso en kg en la presentación; se normaliza cada cotización antes de agregar. Presentaciones sin peso explícito quedan fuera del pronóstico por kg.",
         "metodo": "36 meses contiguos mínimos; selección por MAE en seis meses walk-forward y evaluación independiente en los seis meses cerrados siguientes; reentrenamiento del modelo elegido con toda la serie",
-        "validacion": {"meses_seleccion": SELECTION_STEPS, "meses_holdout_independiente": HOLDOUT_STEPS,
+        "validacion": {"meses_seleccion": f"{SELECTION_STEPS} ({PASOS_SERIE_LARGA} si la serie tiene {SERIE_LARGA}+ meses)",
+                       "meses_holdout_independiente": f"{HOLDOUT_STEPS} ({PASOS_SERIE_LARGA} si la serie tiene {SERIE_LARGA}+ meses)",
+                       "regla_combinacion": "se prefiere la combinación si su MAE de selección está a menos de 10 % del mejor",
                        "holdout": "Los últimos seis meses no participan en la selección del modelo; el MAE/RMSE/MAPE publicados para el modelo elegido se calculan sobre este bloque."},
         "linaje_pronostico": "Cada pronóstico incluye el periodo de Oro usado y el SHA-256 del conjunto ordenado de huellas de linaje mensual; se puede reconstruir desde la serie y periodos en panel_mensual.csv.",
         "modelos": list(MODEL_NAMES), "minimo_meses_contiguos": MIN_MONTHS,

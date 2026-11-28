@@ -1,0 +1,2702 @@
+{
+  "run_id": "20261127T230853Z-8ca288",
+  "fuente": "sniim",
+  "modo": "historica",
+  "disparador": "local",
+  "inicio": "2026-11-27T23:08:53Z",
+  "fin": "2026-11-27T23:16:25Z",
+  "duracion_s": 452.21,
+  "estado": "parcial",
+  "solicitudes": 145,
+  "registros": 2431,
+  "consultas": [
+    {
+      "paso": "catalogo_formulario",
+      "estado": "ok",
+      "registros": 0,
+      "archivo": "sniim__catalogo-formulario__2026-11-27_2026-11-27__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_ataulfo",
+      "producto": "Mango Ataulfo - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2023-11-01",
+      "fin": "2023-11-30",
+      "estado": "ok",
+      "registros": 16,
+      "archivo": "sniim__mango-ataulfo-primera-df-central-de-abasto-de-iztapalapa-df__2023-11-01_2023-11-30__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_ataulfo",
+      "producto": "Mango Ataulfo - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2023-12-01",
+      "fin": "2023-12-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__mango-ataulfo-primera-df-central-de-abasto-de-iztapalapa-df__2023-12-01_2023-12-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_ataulfo",
+      "producto": "Mango Ataulfo - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2024-01-01",
+      "fin": "2024-01-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__mango-ataulfo-primera-df-central-de-abasto-de-iztapalapa-df__2024-01-01_2024-01-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_ataulfo",
+      "producto": "Mango Ataulfo - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2024-02-01",
+      "fin": "2024-02-29",
+      "estado": "ok",
+      "registros": 4,
+      "archivo": "sniim__mango-ataulfo-primera-df-central-de-abasto-de-iztapalapa-df__2024-02-01_2024-02-29__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_ataulfo",
+      "producto": "Mango Ataulfo - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2024-03-01",
+      "fin": "2024-03-31",
+      "estado": "ok",
+      "registros": 18,
+      "archivo": "sniim__mango-ataulfo-primera-df-central-de-abasto-de-iztapalapa-df__2024-03-01_2024-03-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_ataulfo",
+      "producto": "Mango Ataulfo - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2024-04-01",
+      "fin": "2024-04-30",
+      "estado": "ok",
+      "registros": 22,
+      "archivo": "sniim__mango-ataulfo-primera-df-central-de-abasto-de-iztapalapa-df__2024-04-01_2024-04-30__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_ataulfo",
+      "producto": "Mango Ataulfo - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2024-05-01",
+      "fin": "2024-05-31",
+      "estado": "ok",
+      "registros": 22,
+      "archivo": "sniim__mango-ataulfo-primera-df-central-de-abasto-de-iztapalapa-df__2024-05-01_2024-05-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_ataulfo",
+      "producto": "Mango Ataulfo - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2024-06-01",
+      "fin": "2024-06-30",
+      "estado": "ok",
+      "registros": 20,
+      "archivo": "sniim__mango-ataulfo-primera-df-central-de-abasto-de-iztapalapa-df__2024-06-01_2024-06-30__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_ataulfo",
+      "producto": "Mango Ataulfo - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2024-07-01",
+      "fin": "2024-07-31",
+      "estado": "ok",
+      "registros": 23,
+      "archivo": "sniim__mango-ataulfo-primera-df-central-de-abasto-de-iztapalapa-df__2024-07-01_2024-07-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_ataulfo",
+      "producto": "Mango Ataulfo - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2024-08-01",
+      "fin": "2024-08-31",
+      "estado": "ok",
+      "registros": 22,
+      "archivo": "sniim__mango-ataulfo-primera-df-central-de-abasto-de-iztapalapa-df__2024-08-01_2024-08-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_ataulfo",
+      "producto": "Mango Ataulfo - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2024-09-01",
+      "fin": "2024-09-30",
+      "estado": "ok",
+      "registros": 14,
+      "archivo": "sniim__mango-ataulfo-primera-df-central-de-abasto-de-iztapalapa-df__2024-09-01_2024-09-30__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_ataulfo",
+      "producto": "Mango Ataulfo - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2024-10-01",
+      "fin": "2024-10-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__mango-ataulfo-primera-df-central-de-abasto-de-iztapalapa-df__2024-10-01_2024-10-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_ataulfo",
+      "producto": "Mango Ataulfo - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2024-11-01",
+      "fin": "2024-11-30",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__mango-ataulfo-primera-df-central-de-abasto-de-iztapalapa-df__2024-11-01_2024-11-30__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_ataulfo",
+      "producto": "Mango Ataulfo - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2024-12-01",
+      "fin": "2024-12-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__mango-ataulfo-primera-df-central-de-abasto-de-iztapalapa-df__2024-12-01_2024-12-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_ataulfo",
+      "producto": "Mango Ataulfo - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2025-01-01",
+      "fin": "2025-01-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__mango-ataulfo-primera-df-central-de-abasto-de-iztapalapa-df__2025-01-01_2025-01-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_ataulfo",
+      "producto": "Mango Ataulfo - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2025-02-01",
+      "fin": "2025-02-28",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__mango-ataulfo-primera-df-central-de-abasto-de-iztapalapa-df__2025-02-01_2025-02-28__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_ataulfo",
+      "producto": "Mango Ataulfo - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2025-03-01",
+      "fin": "2025-03-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__mango-ataulfo-primera-df-central-de-abasto-de-iztapalapa-df__2025-03-01_2025-03-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_ataulfo",
+      "producto": "Mango Ataulfo - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2025-04-01",
+      "fin": "2025-04-30",
+      "estado": "ok",
+      "registros": 16,
+      "archivo": "sniim__mango-ataulfo-primera-df-central-de-abasto-de-iztapalapa-df__2025-04-01_2025-04-30__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_ataulfo",
+      "producto": "Mango Ataulfo - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2025-05-01",
+      "fin": "2025-05-31",
+      "estado": "ok",
+      "registros": 20,
+      "archivo": "sniim__mango-ataulfo-primera-df-central-de-abasto-de-iztapalapa-df__2025-05-01_2025-05-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_ataulfo",
+      "producto": "Mango Ataulfo - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2025-06-01",
+      "fin": "2025-06-30",
+      "estado": "ok",
+      "registros": 21,
+      "archivo": "sniim__mango-ataulfo-primera-df-central-de-abasto-de-iztapalapa-df__2025-06-01_2025-06-30__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_ataulfo",
+      "producto": "Mango Ataulfo - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2025-07-01",
+      "fin": "2025-07-31",
+      "estado": "ok",
+      "registros": 23,
+      "archivo": "sniim__mango-ataulfo-primera-df-central-de-abasto-de-iztapalapa-df__2025-07-01_2025-07-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_ataulfo",
+      "producto": "Mango Ataulfo - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2025-08-01",
+      "fin": "2025-08-31",
+      "estado": "ok",
+      "registros": 21,
+      "archivo": "sniim__mango-ataulfo-primera-df-central-de-abasto-de-iztapalapa-df__2025-08-01_2025-08-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_ataulfo",
+      "producto": "Mango Ataulfo - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2025-09-01",
+      "fin": "2025-09-30",
+      "estado": "ok",
+      "registros": 21,
+      "archivo": "sniim__mango-ataulfo-primera-df-central-de-abasto-de-iztapalapa-df__2025-09-01_2025-09-30__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_ataulfo",
+      "producto": "Mango Ataulfo - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2025-10-01",
+      "fin": "2025-10-31",
+      "estado": "ok",
+      "registros": 9,
+      "archivo": "sniim__mango-ataulfo-primera-df-central-de-abasto-de-iztapalapa-df__2025-10-01_2025-10-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_ataulfo",
+      "producto": "Mango Ataulfo - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2025-11-01",
+      "fin": "2025-11-30",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__mango-ataulfo-primera-df-central-de-abasto-de-iztapalapa-df__2025-11-01_2025-11-30__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_ataulfo",
+      "producto": "Mango Ataulfo - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2025-12-01",
+      "fin": "2025-12-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__mango-ataulfo-primera-df-central-de-abasto-de-iztapalapa-df__2025-12-01_2025-12-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_ataulfo",
+      "producto": "Mango Ataulfo - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2026-01-01",
+      "fin": "2026-01-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__mango-ataulfo-primera-df-central-de-abasto-de-iztapalapa-df__2026-01-01_2026-01-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_ataulfo",
+      "producto": "Mango Ataulfo - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2026-02-01",
+      "fin": "2026-02-28",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__mango-ataulfo-primera-df-central-de-abasto-de-iztapalapa-df__2026-02-01_2026-02-28__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_ataulfo",
+      "producto": "Mango Ataulfo - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2026-03-01",
+      "fin": "2026-03-31",
+      "estado": "ok",
+      "registros": 21,
+      "archivo": "sniim__mango-ataulfo-primera-df-central-de-abasto-de-iztapalapa-df__2026-03-01_2026-03-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_ataulfo",
+      "producto": "Mango Ataulfo - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2026-04-01",
+      "fin": "2026-04-30",
+      "estado": "ok",
+      "registros": 20,
+      "archivo": "sniim__mango-ataulfo-primera-df-central-de-abasto-de-iztapalapa-df__2026-04-01_2026-04-30__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_ataulfo",
+      "producto": "Mango Ataulfo - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2026-05-01",
+      "fin": "2026-05-31",
+      "estado": "ok",
+      "registros": 19,
+      "archivo": "sniim__mango-ataulfo-primera-df-central-de-abasto-de-iztapalapa-df__2026-05-01_2026-05-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_ataulfo",
+      "producto": "Mango Ataulfo - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2026-06-01",
+      "fin": "2026-06-30",
+      "estado": "ok",
+      "registros": 22,
+      "archivo": "sniim__mango-ataulfo-primera-df-central-de-abasto-de-iztapalapa-df__2026-06-01_2026-06-30__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_ataulfo",
+      "producto": "Mango Ataulfo - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2026-07-01",
+      "fin": "2026-07-31",
+      "estado": "ok",
+      "registros": 23,
+      "archivo": "sniim__mango-ataulfo-primera-df-central-de-abasto-de-iztapalapa-df__2026-07-01_2026-07-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_ataulfo",
+      "producto": "Mango Ataulfo - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2026-08-01",
+      "fin": "2026-08-31",
+      "estado": "ok",
+      "registros": 21,
+      "archivo": "sniim__mango-ataulfo-primera-df-central-de-abasto-de-iztapalapa-df__2026-08-01_2026-08-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_ataulfo",
+      "producto": "Mango Ataulfo - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2026-09-01",
+      "fin": "2026-09-30",
+      "estado": "ok",
+      "registros": 21,
+      "archivo": "sniim__mango-ataulfo-primera-df-central-de-abasto-de-iztapalapa-df__2026-09-01_2026-09-30__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_manila",
+      "producto": "Mango Manila - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2023-11-01",
+      "fin": "2023-11-30",
+      "estado": "ok",
+      "registros": 16,
+      "archivo": "sniim__mango-manila-primera-df-central-de-abasto-de-iztapalapa-df__2023-11-01_2023-11-30__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_manila",
+      "producto": "Mango Manila - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2023-12-01",
+      "fin": "2023-12-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__mango-manila-primera-df-central-de-abasto-de-iztapalapa-df__2023-12-01_2023-12-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_manila",
+      "producto": "Mango Manila - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2024-01-01",
+      "fin": "2024-01-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__mango-manila-primera-df-central-de-abasto-de-iztapalapa-df__2024-01-01_2024-01-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_manila",
+      "producto": "Mango Manila - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2024-02-01",
+      "fin": "2024-02-29",
+      "estado": "ok",
+      "registros": 4,
+      "archivo": "sniim__mango-manila-primera-df-central-de-abasto-de-iztapalapa-df__2024-02-01_2024-02-29__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_manila",
+      "producto": "Mango Manila - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2024-03-01",
+      "fin": "2024-03-31",
+      "estado": "ok",
+      "registros": 18,
+      "archivo": "sniim__mango-manila-primera-df-central-de-abasto-de-iztapalapa-df__2024-03-01_2024-03-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_manila",
+      "producto": "Mango Manila - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2024-04-01",
+      "fin": "2024-04-30",
+      "estado": "ok",
+      "registros": 22,
+      "archivo": "sniim__mango-manila-primera-df-central-de-abasto-de-iztapalapa-df__2024-04-01_2024-04-30__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_manila",
+      "producto": "Mango Manila - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2024-05-01",
+      "fin": "2024-05-31",
+      "estado": "ok",
+      "registros": 22,
+      "archivo": "sniim__mango-manila-primera-df-central-de-abasto-de-iztapalapa-df__2024-05-01_2024-05-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_manila",
+      "producto": "Mango Manila - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2024-06-01",
+      "fin": "2024-06-30",
+      "estado": "ok",
+      "registros": 20,
+      "archivo": "sniim__mango-manila-primera-df-central-de-abasto-de-iztapalapa-df__2024-06-01_2024-06-30__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_manila",
+      "producto": "Mango Manila - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2024-07-01",
+      "fin": "2024-07-31",
+      "estado": "ok",
+      "registros": 23,
+      "archivo": "sniim__mango-manila-primera-df-central-de-abasto-de-iztapalapa-df__2024-07-01_2024-07-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_manila",
+      "producto": "Mango Manila - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2024-08-01",
+      "fin": "2024-08-31",
+      "estado": "ok",
+      "registros": 22,
+      "archivo": "sniim__mango-manila-primera-df-central-de-abasto-de-iztapalapa-df__2024-08-01_2024-08-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_manila",
+      "producto": "Mango Manila - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2024-09-01",
+      "fin": "2024-09-30",
+      "estado": "ok",
+      "registros": 20,
+      "archivo": "sniim__mango-manila-primera-df-central-de-abasto-de-iztapalapa-df__2024-09-01_2024-09-30__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_manila",
+      "producto": "Mango Manila - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2024-10-01",
+      "fin": "2024-10-31",
+      "estado": "ok",
+      "registros": 13,
+      "archivo": "sniim__mango-manila-primera-df-central-de-abasto-de-iztapalapa-df__2024-10-01_2024-10-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_manila",
+      "producto": "Mango Manila - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2024-11-01",
+      "fin": "2024-11-30",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__mango-manila-primera-df-central-de-abasto-de-iztapalapa-df__2024-11-01_2024-11-30__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_manila",
+      "producto": "Mango Manila - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2024-12-01",
+      "fin": "2024-12-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__mango-manila-primera-df-central-de-abasto-de-iztapalapa-df__2024-12-01_2024-12-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_manila",
+      "producto": "Mango Manila - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2025-01-01",
+      "fin": "2025-01-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__mango-manila-primera-df-central-de-abasto-de-iztapalapa-df__2025-01-01_2025-01-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_manila",
+      "producto": "Mango Manila - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2025-02-01",
+      "fin": "2025-02-28",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__mango-manila-primera-df-central-de-abasto-de-iztapalapa-df__2025-02-01_2025-02-28__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_manila",
+      "producto": "Mango Manila - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2025-03-01",
+      "fin": "2025-03-31",
+      "estado": "sin_resultados",
+      "registros": 0,
+      "archivo": "sniim__mango-manila-primera-df-central-de-abasto-de-iztapalapa-df__2025-03-01_2025-03-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_manila",
+      "producto": "Mango Manila - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2025-04-01",
+      "fin": "2025-04-30",
+      "estado": "ok",
+      "registros": 16,
+      "archivo": "sniim__mango-manila-primera-df-central-de-abasto-de-iztapalapa-df__2025-04-01_2025-04-30__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_manila",
+      "producto": "Mango Manila - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2025-05-01",
+      "fin": "2025-05-31",
+      "estado": "ok",
+      "registros": 20,
+      "archivo": "sniim__mango-manila-primera-df-central-de-abasto-de-iztapalapa-df__2025-05-01_2025-05-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_manila",
+      "producto": "Mango Manila - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2025-06-01",
+      "fin": "2025-06-30",
+      "estado": "ok",
+      "registros": 21,
+      "archivo": "sniim__mango-manila-primera-df-central-de-abasto-de-iztapalapa-df__2025-06-01_2025-06-30__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_manila",
+      "producto": "Mango Manila - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2025-07-01",
+      "fin": "2025-07-31",
+      "estado": "ok",
+      "registros": 23,
+      "archivo": "sniim__mango-manila-primera-df-central-de-abasto-de-iztapalapa-df__2025-07-01_2025-07-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_manila",
+      "producto": "Mango Manila - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2025-08-01",
+      "fin": "2025-08-31",
+      "estado": "ok",
+      "registros": 21,
+      "archivo": "sniim__mango-manila-primera-df-central-de-abasto-de-iztapalapa-df__2025-08-01_2025-08-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_manila",
+      "producto": "Mango Manila - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2025-09-01",
+      "fin": "2025-09-30",
+      "estado": "ok",
+      "registros": 21,
+      "archivo": "sniim__mango-manila-primera-df-central-de-abasto-de-iztapalapa-df__2025-09-01_2025-09-30__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_manila",
+      "producto": "Mango Manila - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2025-10-01",
+      "fin": "2025-10-31",
+      "estado": "ok",
+      "registros": 23,
+      "archivo": "sniim__mango-manila-primera-df-central-de-abasto-de-iztapalapa-df__2025-10-01_2025-10-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_manila",
+      "producto": "Mango Manila - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2025-11-01",
+      "fin": "2025-11-30",
+      "estado": "ok",
+      "registros": 19,
+      "archivo": "sniim__mango-manila-primera-df-central-de-abasto-de-iztapalapa-df__2025-11-01_2025-11-30__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_manila",
+      "producto": "Mango Manila - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2025-12-01",
+      "fin": "2025-12-31",
+      "estado": "ok",
+      "registros": 22,
+      "archivo": "sniim__mango-manila-primera-df-central-de-abasto-de-iztapalapa-df__2025-12-01_2025-12-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_manila",
+      "producto": "Mango Manila - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2026-01-01",
+      "fin": "2026-01-31",
+      "estado": "ok",
+      "registros": 21,
+      "archivo": "sniim__mango-manila-primera-df-central-de-abasto-de-iztapalapa-df__2026-01-01_2026-01-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_manila",
+      "producto": "Mango Manila - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2026-02-01",
+      "fin": "2026-02-28",
+      "estado": "ok",
+      "registros": 19,
+      "archivo": "sniim__mango-manila-primera-df-central-de-abasto-de-iztapalapa-df__2026-02-01_2026-02-28__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_manila",
+      "producto": "Mango Manila - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2026-03-01",
+      "fin": "2026-03-31",
+      "estado": "ok",
+      "registros": 21,
+      "archivo": "sniim__mango-manila-primera-df-central-de-abasto-de-iztapalapa-df__2026-03-01_2026-03-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_manila",
+      "producto": "Mango Manila - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2026-04-01",
+      "fin": "2026-04-30",
+      "estado": "ok",
+      "registros": 20,
+      "archivo": "sniim__mango-manila-primera-df-central-de-abasto-de-iztapalapa-df__2026-04-01_2026-04-30__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_manila",
+      "producto": "Mango Manila - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2026-05-01",
+      "fin": "2026-05-31",
+      "estado": "ok",
+      "registros": 19,
+      "archivo": "sniim__mango-manila-primera-df-central-de-abasto-de-iztapalapa-df__2026-05-01_2026-05-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_manila",
+      "producto": "Mango Manila - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2026-06-01",
+      "fin": "2026-06-30",
+      "estado": "ok",
+      "registros": 22,
+      "archivo": "sniim__mango-manila-primera-df-central-de-abasto-de-iztapalapa-df__2026-06-01_2026-06-30__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_manila",
+      "producto": "Mango Manila - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2026-07-01",
+      "fin": "2026-07-31",
+      "estado": "ok",
+      "registros": 23,
+      "archivo": "sniim__mango-manila-primera-df-central-de-abasto-de-iztapalapa-df__2026-07-01_2026-07-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_manila",
+      "producto": "Mango Manila - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2026-08-01",
+      "fin": "2026-08-31",
+      "estado": "ok",
+      "registros": 21,
+      "archivo": "sniim__mango-manila-primera-df-central-de-abasto-de-iztapalapa-df__2026-08-01_2026-08-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "mango_manila",
+      "producto": "Mango Manila - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2026-09-01",
+      "fin": "2026-09-30",
+      "estado": "ok",
+      "registros": 21,
+      "archivo": "sniim__mango-manila-primera-df-central-de-abasto-de-iztapalapa-df__2026-09-01_2026-09-30__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "aguacate_hass",
+      "producto": "Aguacate Hass - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2023-11-01",
+      "fin": "2023-11-30",
+      "estado": "ok",
+      "registros": 20,
+      "archivo": "sniim__aguacate-hass-primera-df-central-de-abasto-de-iztapalapa-df__2023-11-01_2023-11-30__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "aguacate_hass",
+      "producto": "Aguacate Hass - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2023-12-01",
+      "fin": "2023-12-31",
+      "estado": "ok",
+      "registros": 20,
+      "archivo": "sniim__aguacate-hass-primera-df-central-de-abasto-de-iztapalapa-df__2023-12-01_2023-12-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "aguacate_hass",
+      "producto": "Aguacate Hass - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2024-01-01",
+      "fin": "2024-01-31",
+      "estado": "ok",
+      "registros": 22,
+      "archivo": "sniim__aguacate-hass-primera-df-central-de-abasto-de-iztapalapa-df__2024-01-01_2024-01-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "aguacate_hass",
+      "producto": "Aguacate Hass - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2024-02-01",
+      "fin": "2024-02-29",
+      "estado": "ok",
+      "registros": 20,
+      "archivo": "sniim__aguacate-hass-primera-df-central-de-abasto-de-iztapalapa-df__2024-02-01_2024-02-29__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "aguacate_hass",
+      "producto": "Aguacate Hass - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2024-03-01",
+      "fin": "2024-03-31",
+      "estado": "ok",
+      "registros": 18,
+      "archivo": "sniim__aguacate-hass-primera-df-central-de-abasto-de-iztapalapa-df__2024-03-01_2024-03-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "aguacate_hass",
+      "producto": "Aguacate Hass - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2024-04-01",
+      "fin": "2024-04-30",
+      "estado": "ok",
+      "registros": 22,
+      "archivo": "sniim__aguacate-hass-primera-df-central-de-abasto-de-iztapalapa-df__2024-04-01_2024-04-30__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "aguacate_hass",
+      "producto": "Aguacate Hass - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2024-05-01",
+      "fin": "2024-05-31",
+      "estado": "ok",
+      "registros": 22,
+      "archivo": "sniim__aguacate-hass-primera-df-central-de-abasto-de-iztapalapa-df__2024-05-01_2024-05-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "aguacate_hass",
+      "producto": "Aguacate Hass - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2024-06-01",
+      "fin": "2024-06-30",
+      "estado": "ok",
+      "registros": 20,
+      "archivo": "sniim__aguacate-hass-primera-df-central-de-abasto-de-iztapalapa-df__2024-06-01_2024-06-30__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "aguacate_hass",
+      "producto": "Aguacate Hass - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2024-07-01",
+      "fin": "2024-07-31",
+      "estado": "ok",
+      "registros": 23,
+      "archivo": "sniim__aguacate-hass-primera-df-central-de-abasto-de-iztapalapa-df__2024-07-01_2024-07-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "aguacate_hass",
+      "producto": "Aguacate Hass - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2024-08-01",
+      "fin": "2024-08-31",
+      "estado": "ok",
+      "registros": 22,
+      "archivo": "sniim__aguacate-hass-primera-df-central-de-abasto-de-iztapalapa-df__2024-08-01_2024-08-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "aguacate_hass",
+      "producto": "Aguacate Hass - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2024-09-01",
+      "fin": "2024-09-30",
+      "estado": "ok",
+      "registros": 20,
+      "archivo": "sniim__aguacate-hass-primera-df-central-de-abasto-de-iztapalapa-df__2024-09-01_2024-09-30__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "aguacate_hass",
+      "producto": "Aguacate Hass - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2024-10-01",
+      "fin": "2024-10-31",
+      "estado": "ok",
+      "registros": 22,
+      "archivo": "sniim__aguacate-hass-primera-df-central-de-abasto-de-iztapalapa-df__2024-10-01_2024-10-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "aguacate_hass",
+      "producto": "Aguacate Hass - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2024-11-01",
+      "fin": "2024-11-30",
+      "estado": "ok",
+      "registros": 20,
+      "archivo": "sniim__aguacate-hass-primera-df-central-de-abasto-de-iztapalapa-df__2024-11-01_2024-11-30__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "aguacate_hass",
+      "producto": "Aguacate Hass - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2024-12-01",
+      "fin": "2024-12-31",
+      "estado": "ok",
+      "registros": 21,
+      "archivo": "sniim__aguacate-hass-primera-df-central-de-abasto-de-iztapalapa-df__2024-12-01_2024-12-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "aguacate_hass",
+      "producto": "Aguacate Hass - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2025-01-01",
+      "fin": "2025-01-31",
+      "estado": "ok",
+      "registros": 22,
+      "archivo": "sniim__aguacate-hass-primera-df-central-de-abasto-de-iztapalapa-df__2025-01-01_2025-01-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "aguacate_hass",
+      "producto": "Aguacate Hass - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2025-02-01",
+      "fin": "2025-02-28",
+      "estado": "ok",
+      "registros": 19,
+      "archivo": "sniim__aguacate-hass-primera-df-central-de-abasto-de-iztapalapa-df__2025-02-01_2025-02-28__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "aguacate_hass",
+      "producto": "Aguacate Hass - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2025-03-01",
+      "fin": "2025-03-31",
+      "estado": "ok",
+      "registros": 20,
+      "archivo": "sniim__aguacate-hass-primera-df-central-de-abasto-de-iztapalapa-df__2025-03-01_2025-03-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "aguacate_hass",
+      "producto": "Aguacate Hass - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2025-04-01",
+      "fin": "2025-04-30",
+      "estado": "ok",
+      "registros": 20,
+      "archivo": "sniim__aguacate-hass-primera-df-central-de-abasto-de-iztapalapa-df__2025-04-01_2025-04-30__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "aguacate_hass",
+      "producto": "Aguacate Hass - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2025-05-01",
+      "fin": "2025-05-31",
+      "estado": "ok",
+      "registros": 20,
+      "archivo": "sniim__aguacate-hass-primera-df-central-de-abasto-de-iztapalapa-df__2025-05-01_2025-05-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "aguacate_hass",
+      "producto": "Aguacate Hass - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2025-06-01",
+      "fin": "2025-06-30",
+      "estado": "ok",
+      "registros": 21,
+      "archivo": "sniim__aguacate-hass-primera-df-central-de-abasto-de-iztapalapa-df__2025-06-01_2025-06-30__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "aguacate_hass",
+      "producto": "Aguacate Hass - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2025-07-01",
+      "fin": "2025-07-31",
+      "estado": "ok",
+      "registros": 23,
+      "archivo": "sniim__aguacate-hass-primera-df-central-de-abasto-de-iztapalapa-df__2025-07-01_2025-07-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "aguacate_hass",
+      "producto": "Aguacate Hass - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2025-08-01",
+      "fin": "2025-08-31",
+      "estado": "ok",
+      "registros": 21,
+      "archivo": "sniim__aguacate-hass-primera-df-central-de-abasto-de-iztapalapa-df__2025-08-01_2025-08-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "aguacate_hass",
+      "producto": "Aguacate Hass - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2025-09-01",
+      "fin": "2025-09-30",
+      "estado": "ok",
+      "registros": 21,
+      "archivo": "sniim__aguacate-hass-primera-df-central-de-abasto-de-iztapalapa-df__2025-09-01_2025-09-30__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "aguacate_hass",
+      "producto": "Aguacate Hass - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2025-10-01",
+      "fin": "2025-10-31",
+      "estado": "ok",
+      "registros": 23,
+      "archivo": "sniim__aguacate-hass-primera-df-central-de-abasto-de-iztapalapa-df__2025-10-01_2025-10-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "aguacate_hass",
+      "producto": "Aguacate Hass - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2025-11-01",
+      "fin": "2025-11-30",
+      "estado": "ok",
+      "registros": 19,
+      "archivo": "sniim__aguacate-hass-primera-df-central-de-abasto-de-iztapalapa-df__2025-11-01_2025-11-30__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "aguacate_hass",
+      "producto": "Aguacate Hass - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2025-12-01",
+      "fin": "2025-12-31",
+      "estado": "ok",
+      "registros": 22,
+      "archivo": "sniim__aguacate-hass-primera-df-central-de-abasto-de-iztapalapa-df__2025-12-01_2025-12-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "aguacate_hass",
+      "producto": "Aguacate Hass - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2026-01-01",
+      "fin": "2026-01-31",
+      "estado": "ok",
+      "registros": 21,
+      "archivo": "sniim__aguacate-hass-primera-df-central-de-abasto-de-iztapalapa-df__2026-01-01_2026-01-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "aguacate_hass",
+      "producto": "Aguacate Hass - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2026-02-01",
+      "fin": "2026-02-28",
+      "estado": "ok",
+      "registros": 19,
+      "archivo": "sniim__aguacate-hass-primera-df-central-de-abasto-de-iztapalapa-df__2026-02-01_2026-02-28__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "aguacate_hass",
+      "producto": "Aguacate Hass - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2026-03-01",
+      "fin": "2026-03-31",
+      "estado": "ok",
+      "registros": 21,
+      "archivo": "sniim__aguacate-hass-primera-df-central-de-abasto-de-iztapalapa-df__2026-03-01_2026-03-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "aguacate_hass",
+      "producto": "Aguacate Hass - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2026-04-01",
+      "fin": "2026-04-30",
+      "estado": "ok",
+      "registros": 20,
+      "archivo": "sniim__aguacate-hass-primera-df-central-de-abasto-de-iztapalapa-df__2026-04-01_2026-04-30__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "aguacate_hass",
+      "producto": "Aguacate Hass - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2026-05-01",
+      "fin": "2026-05-31",
+      "estado": "ok",
+      "registros": 19,
+      "archivo": "sniim__aguacate-hass-primera-df-central-de-abasto-de-iztapalapa-df__2026-05-01_2026-05-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "aguacate_hass",
+      "producto": "Aguacate Hass - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2026-06-01",
+      "fin": "2026-06-30",
+      "estado": "ok",
+      "registros": 22,
+      "archivo": "sniim__aguacate-hass-primera-df-central-de-abasto-de-iztapalapa-df__2026-06-01_2026-06-30__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "aguacate_hass",
+      "producto": "Aguacate Hass - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2026-07-01",
+      "fin": "2026-07-31",
+      "estado": "ok",
+      "registros": 23,
+      "archivo": "sniim__aguacate-hass-primera-df-central-de-abasto-de-iztapalapa-df__2026-07-01_2026-07-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "aguacate_hass",
+      "producto": "Aguacate Hass - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2026-08-01",
+      "fin": "2026-08-31",
+      "estado": "ok",
+      "registros": 21,
+      "archivo": "sniim__aguacate-hass-primera-df-central-de-abasto-de-iztapalapa-df__2026-08-01_2026-08-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "aguacate_hass",
+      "producto": "Aguacate Hass - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2026-09-01",
+      "fin": "2026-09-30",
+      "estado": "ok",
+      "registros": 21,
+      "archivo": "sniim__aguacate-hass-primera-df-central-de-abasto-de-iztapalapa-df__2026-09-01_2026-09-30__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "guayaba",
+      "producto": "Guayaba - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2023-11-01",
+      "fin": "2023-11-30",
+      "estado": "ok",
+      "registros": 20,
+      "archivo": "sniim__guayaba-primera-df-central-de-abasto-de-iztapalapa-df__2023-11-01_2023-11-30__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "guayaba",
+      "producto": "Guayaba - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2023-12-01",
+      "fin": "2023-12-31",
+      "estado": "ok",
+      "registros": 20,
+      "archivo": "sniim__guayaba-primera-df-central-de-abasto-de-iztapalapa-df__2023-12-01_2023-12-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "guayaba",
+      "producto": "Guayaba - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2024-01-01",
+      "fin": "2024-01-31",
+      "estado": "ok",
+      "registros": 22,
+      "archivo": "sniim__guayaba-primera-df-central-de-abasto-de-iztapalapa-df__2024-01-01_2024-01-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "guayaba",
+      "producto": "Guayaba - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2024-02-01",
+      "fin": "2024-02-29",
+      "estado": "ok",
+      "registros": 20,
+      "archivo": "sniim__guayaba-primera-df-central-de-abasto-de-iztapalapa-df__2024-02-01_2024-02-29__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "guayaba",
+      "producto": "Guayaba - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2024-03-01",
+      "fin": "2024-03-31",
+      "estado": "ok",
+      "registros": 18,
+      "archivo": "sniim__guayaba-primera-df-central-de-abasto-de-iztapalapa-df__2024-03-01_2024-03-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "guayaba",
+      "producto": "Guayaba - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2024-04-01",
+      "fin": "2024-04-30",
+      "estado": "ok",
+      "registros": 22,
+      "archivo": "sniim__guayaba-primera-df-central-de-abasto-de-iztapalapa-df__2024-04-01_2024-04-30__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "guayaba",
+      "producto": "Guayaba - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2024-05-01",
+      "fin": "2024-05-31",
+      "estado": "ok",
+      "registros": 22,
+      "archivo": "sniim__guayaba-primera-df-central-de-abasto-de-iztapalapa-df__2024-05-01_2024-05-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "guayaba",
+      "producto": "Guayaba - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2024-06-01",
+      "fin": "2024-06-30",
+      "estado": "ok",
+      "registros": 20,
+      "archivo": "sniim__guayaba-primera-df-central-de-abasto-de-iztapalapa-df__2024-06-01_2024-06-30__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "guayaba",
+      "producto": "Guayaba - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2024-07-01",
+      "fin": "2024-07-31",
+      "estado": "ok",
+      "registros": 23,
+      "archivo": "sniim__guayaba-primera-df-central-de-abasto-de-iztapalapa-df__2024-07-01_2024-07-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "guayaba",
+      "producto": "Guayaba - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2024-08-01",
+      "fin": "2024-08-31",
+      "estado": "ok",
+      "registros": 22,
+      "archivo": "sniim__guayaba-primera-df-central-de-abasto-de-iztapalapa-df__2024-08-01_2024-08-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "guayaba",
+      "producto": "Guayaba - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2024-09-01",
+      "fin": "2024-09-30",
+      "estado": "ok",
+      "registros": 20,
+      "archivo": "sniim__guayaba-primera-df-central-de-abasto-de-iztapalapa-df__2024-09-01_2024-09-30__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "guayaba",
+      "producto": "Guayaba - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2024-10-01",
+      "fin": "2024-10-31",
+      "estado": "ok",
+      "registros": 22,
+      "archivo": "sniim__guayaba-primera-df-central-de-abasto-de-iztapalapa-df__2024-10-01_2024-10-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "guayaba",
+      "producto": "Guayaba - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2024-11-01",
+      "fin": "2024-11-30",
+      "estado": "ok",
+      "registros": 20,
+      "archivo": "sniim__guayaba-primera-df-central-de-abasto-de-iztapalapa-df__2024-11-01_2024-11-30__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "guayaba",
+      "producto": "Guayaba - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2024-12-01",
+      "fin": "2024-12-31",
+      "estado": "ok",
+      "registros": 21,
+      "archivo": "sniim__guayaba-primera-df-central-de-abasto-de-iztapalapa-df__2024-12-01_2024-12-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "guayaba",
+      "producto": "Guayaba - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2025-01-01",
+      "fin": "2025-01-31",
+      "estado": "ok",
+      "registros": 22,
+      "archivo": "sniim__guayaba-primera-df-central-de-abasto-de-iztapalapa-df__2025-01-01_2025-01-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "guayaba",
+      "producto": "Guayaba - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2025-02-01",
+      "fin": "2025-02-28",
+      "estado": "ok",
+      "registros": 19,
+      "archivo": "sniim__guayaba-primera-df-central-de-abasto-de-iztapalapa-df__2025-02-01_2025-02-28__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "guayaba",
+      "producto": "Guayaba - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2025-03-01",
+      "fin": "2025-03-31",
+      "estado": "ok",
+      "registros": 20,
+      "archivo": "sniim__guayaba-primera-df-central-de-abasto-de-iztapalapa-df__2025-03-01_2025-03-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "guayaba",
+      "producto": "Guayaba - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2025-04-01",
+      "fin": "2025-04-30",
+      "estado": "ok",
+      "registros": 20,
+      "archivo": "sniim__guayaba-primera-df-central-de-abasto-de-iztapalapa-df__2025-04-01_2025-04-30__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "guayaba",
+      "producto": "Guayaba - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2025-05-01",
+      "fin": "2025-05-31",
+      "estado": "ok",
+      "registros": 20,
+      "archivo": "sniim__guayaba-primera-df-central-de-abasto-de-iztapalapa-df__2025-05-01_2025-05-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "guayaba",
+      "producto": "Guayaba - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2025-06-01",
+      "fin": "2025-06-30",
+      "estado": "ok",
+      "registros": 21,
+      "archivo": "sniim__guayaba-primera-df-central-de-abasto-de-iztapalapa-df__2025-06-01_2025-06-30__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "guayaba",
+      "producto": "Guayaba - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2025-07-01",
+      "fin": "2025-07-31",
+      "estado": "ok",
+      "registros": 23,
+      "archivo": "sniim__guayaba-primera-df-central-de-abasto-de-iztapalapa-df__2025-07-01_2025-07-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "guayaba",
+      "producto": "Guayaba - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2025-08-01",
+      "fin": "2025-08-31",
+      "estado": "ok",
+      "registros": 21,
+      "archivo": "sniim__guayaba-primera-df-central-de-abasto-de-iztapalapa-df__2025-08-01_2025-08-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "guayaba",
+      "producto": "Guayaba - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2025-09-01",
+      "fin": "2025-09-30",
+      "estado": "ok",
+      "registros": 21,
+      "archivo": "sniim__guayaba-primera-df-central-de-abasto-de-iztapalapa-df__2025-09-01_2025-09-30__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "guayaba",
+      "producto": "Guayaba - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2025-10-01",
+      "fin": "2025-10-31",
+      "estado": "ok",
+      "registros": 23,
+      "archivo": "sniim__guayaba-primera-df-central-de-abasto-de-iztapalapa-df__2025-10-01_2025-10-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "guayaba",
+      "producto": "Guayaba - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2025-11-01",
+      "fin": "2025-11-30",
+      "estado": "ok",
+      "registros": 19,
+      "archivo": "sniim__guayaba-primera-df-central-de-abasto-de-iztapalapa-df__2025-11-01_2025-11-30__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "guayaba",
+      "producto": "Guayaba - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2025-12-01",
+      "fin": "2025-12-31",
+      "estado": "ok",
+      "registros": 22,
+      "archivo": "sniim__guayaba-primera-df-central-de-abasto-de-iztapalapa-df__2025-12-01_2025-12-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "guayaba",
+      "producto": "Guayaba - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2026-01-01",
+      "fin": "2026-01-31",
+      "estado": "ok",
+      "registros": 21,
+      "archivo": "sniim__guayaba-primera-df-central-de-abasto-de-iztapalapa-df__2026-01-01_2026-01-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "guayaba",
+      "producto": "Guayaba - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2026-02-01",
+      "fin": "2026-02-28",
+      "estado": "ok",
+      "registros": 19,
+      "archivo": "sniim__guayaba-primera-df-central-de-abasto-de-iztapalapa-df__2026-02-01_2026-02-28__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "guayaba",
+      "producto": "Guayaba - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2026-03-01",
+      "fin": "2026-03-31",
+      "estado": "ok",
+      "registros": 21,
+      "archivo": "sniim__guayaba-primera-df-central-de-abasto-de-iztapalapa-df__2026-03-01_2026-03-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "guayaba",
+      "producto": "Guayaba - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2026-04-01",
+      "fin": "2026-04-30",
+      "estado": "ok",
+      "registros": 20,
+      "archivo": "sniim__guayaba-primera-df-central-de-abasto-de-iztapalapa-df__2026-04-01_2026-04-30__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "guayaba",
+      "producto": "Guayaba - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2026-05-01",
+      "fin": "2026-05-31",
+      "estado": "ok",
+      "registros": 19,
+      "archivo": "sniim__guayaba-primera-df-central-de-abasto-de-iztapalapa-df__2026-05-01_2026-05-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "guayaba",
+      "producto": "Guayaba - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2026-06-01",
+      "fin": "2026-06-30",
+      "estado": "ok",
+      "registros": 22,
+      "archivo": "sniim__guayaba-primera-df-central-de-abasto-de-iztapalapa-df__2026-06-01_2026-06-30__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "guayaba",
+      "producto": "Guayaba - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2026-07-01",
+      "fin": "2026-07-31",
+      "estado": "ok",
+      "registros": 23,
+      "archivo": "sniim__guayaba-primera-df-central-de-abasto-de-iztapalapa-df__2026-07-01_2026-07-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "guayaba",
+      "producto": "Guayaba - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2026-08-01",
+      "fin": "2026-08-31",
+      "estado": "ok",
+      "registros": 21,
+      "archivo": "sniim__guayaba-primera-df-central-de-abasto-de-iztapalapa-df__2026-08-01_2026-08-31__20261127T230853Z-8ca288.html",
+      "error": null,
+      "advertencias": []
+    },
+    {
+      "producto_clave": "guayaba",
+      "producto": "Guayaba - Primera",
+      "mercado_clave": "cdmx",
+      "inicio": "2026-09-01",
+      "fin": "2026-09-30",
+      "estado": "fallida",
+      "registros": 0,
+      "archivo": null,
+      "error": "RequestFailed: Agotados 4 intentos para https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F09%2F2026&fechaFinal=30%2F09%2F2026&ProductoId=378&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500: ConnectionError: HTTPSConnectionPool(host='www.economia-sniim.gob.mx', port=443): Max retries exceeded with url: /nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F09%2F2026&fechaFinal=30%2F09%2F2026&ProductoId=378&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500 (Caused by NameResolutionError(\"HTTPSConnection(host='www.economia-sniim.gob.mx', port=443): Failed to resolve 'www.economia-sniim.gob.mx' ([Errno -2] Name or service not known)\"))",
+      "advertencias": []
+    }
+  ],
+  "archivos": [
+    {
+      "ruta": "data/bronce/sniim/2026/11/sniim__catalogo-formulario__2026-11-27_2026-11-27__20261127T230853Z-8ca288.html",
+      "sha256": "0b7309043ab6c99dd2c634866bf0cfc75ae0301215a714035ea2a060fb889383",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/Consultas/MercadosNacionales/PreciosDeMercado/Agricolas/ConsultaFrutasYHortalizas.aspx",
+      "bytes": 67149
+    },
+    {
+      "ruta": "data/bronce/sniim/2023/11/sniim__mango-ataulfo-primera-df-central-de-abasto-de-iztapalapa-df__2023-11-01_2023-11-30__20261127T230853Z-8ca288.html",
+      "sha256": "4fc36bd00fbb76c033395869b1ee60dbd14cdc7aaa3abcd21791a797f1c0179d",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F11%2F2023&fechaFinal=30%2F11%2F2023&ProductoId=465&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 23564
+    },
+    {
+      "ruta": "data/bronce/sniim/2023/12/sniim__mango-ataulfo-primera-df-central-de-abasto-de-iztapalapa-df__2023-12-01_2023-12-31__20261127T230853Z-8ca288.html",
+      "sha256": "4fa9124aa2d5f9f49c34823a4450348f65b2d7e742ab0cbb8b6ad75dcb2fbcc9",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F12%2F2023&fechaFinal=31%2F12%2F2023&ProductoId=465&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9422
+    },
+    {
+      "ruta": "data/bronce/sniim/2024/01/sniim__mango-ataulfo-primera-df-central-de-abasto-de-iztapalapa-df__2024-01-01_2024-01-31__20261127T230853Z-8ca288.html",
+      "sha256": "22fc0fc8b485e4b5cbad536e97c1a29b29d381d1b09fe4c50fdb16db2fd21ffc",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F01%2F2024&fechaFinal=31%2F01%2F2024&ProductoId=465&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9422
+    },
+    {
+      "ruta": "data/bronce/sniim/2024/02/sniim__mango-ataulfo-primera-df-central-de-abasto-de-iztapalapa-df__2024-02-01_2024-02-29__20261127T230853Z-8ca288.html",
+      "sha256": "d49e6f9dd380c28def29c206643d146deffe9fd90f92e302a8c91bc947361d50",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F02%2F2024&fechaFinal=29%2F02%2F2024&ProductoId=465&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 16596
+    },
+    {
+      "ruta": "data/bronce/sniim/2024/03/sniim__mango-ataulfo-primera-df-central-de-abasto-de-iztapalapa-df__2024-03-01_2024-03-31__20261127T230853Z-8ca288.html",
+      "sha256": "f63a7c237ff3d4bf6de7feeb3b30d5524f53d9ac55602f08f4047ed51c644290",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F03%2F2024&fechaFinal=31%2F03%2F2024&ProductoId=465&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 24486
+    },
+    {
+      "ruta": "data/bronce/sniim/2024/04/sniim__mango-ataulfo-primera-df-central-de-abasto-de-iztapalapa-df__2024-04-01_2024-04-30__20261127T230853Z-8ca288.html",
+      "sha256": "60f60f5eb69667a6a6a2a13d94a3cef468fef237c7dc9929a122ef5e8f098f26",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F04%2F2024&fechaFinal=30%2F04%2F2024&ProductoId=465&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26742
+    },
+    {
+      "ruta": "data/bronce/sniim/2024/05/sniim__mango-ataulfo-primera-df-central-de-abasto-de-iztapalapa-df__2024-05-01_2024-05-31__20261127T230853Z-8ca288.html",
+      "sha256": "75399c895ecbf9aefdb8e0815d74478e2e1b2fb3bbcd2397221e11f65252844a",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F05%2F2024&fechaFinal=31%2F05%2F2024&ProductoId=465&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26742
+    },
+    {
+      "ruta": "data/bronce/sniim/2024/06/sniim__mango-ataulfo-primera-df-central-de-abasto-de-iztapalapa-df__2024-06-01_2024-06-30__20261127T230853Z-8ca288.html",
+      "sha256": "c0972ad1ebdd5aaa66d9bc4634673020c7828bc2d8ef43688fb556fdb316e347",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F06%2F2024&fechaFinal=30%2F06%2F2024&ProductoId=465&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 25612
+    },
+    {
+      "ruta": "data/bronce/sniim/2024/07/sniim__mango-ataulfo-primera-df-central-de-abasto-de-iztapalapa-df__2024-07-01_2024-07-31__20261127T230853Z-8ca288.html",
+      "sha256": "f26cdcbc3dfd928b685b4bbdec2d5bc54bce04ba27ee0240900991f2e4efae0d",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F07%2F2024&fechaFinal=31%2F07%2F2024&ProductoId=465&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 27303
+    },
+    {
+      "ruta": "data/bronce/sniim/2024/08/sniim__mango-ataulfo-primera-df-central-de-abasto-de-iztapalapa-df__2024-08-01_2024-08-31__20261127T230853Z-8ca288.html",
+      "sha256": "313a4cff34ff049d145e4ee8eb812add73749a6c36266530e1fba5f05892ea03",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F08%2F2024&fechaFinal=31%2F08%2F2024&ProductoId=465&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26742
+    },
+    {
+      "ruta": "data/bronce/sniim/2024/09/sniim__mango-ataulfo-primera-df-central-de-abasto-de-iztapalapa-df__2024-09-01_2024-09-30__20261127T230853Z-8ca288.html",
+      "sha256": "af013c9b511d47f73d6331ec090e06c9e7d2b0d9220bea6525fff66de18b2446",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F09%2F2024&fechaFinal=30%2F09%2F2024&ProductoId=465&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 22258
+    },
+    {
+      "ruta": "data/bronce/sniim/2024/10/sniim__mango-ataulfo-primera-df-central-de-abasto-de-iztapalapa-df__2024-10-01_2024-10-31__20261127T230853Z-8ca288.html",
+      "sha256": "0443e8d70fe83ca67224c97030033da4b5b85844725e6a76ed38d4fe2c7a0151",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2024&fechaFinal=31%2F10%2F2024&ProductoId=465&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9422
+    },
+    {
+      "ruta": "data/bronce/sniim/2024/11/sniim__mango-ataulfo-primera-df-central-de-abasto-de-iztapalapa-df__2024-11-01_2024-11-30__20261127T230853Z-8ca288.html",
+      "sha256": "867dd31b7ad1bd8fb604cbc74baff55054b1c0fdb24216485c6dfb11af402014",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F11%2F2024&fechaFinal=30%2F11%2F2024&ProductoId=465&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9422
+    },
+    {
+      "ruta": "data/bronce/sniim/2024/12/sniim__mango-ataulfo-primera-df-central-de-abasto-de-iztapalapa-df__2024-12-01_2024-12-31__20261127T230853Z-8ca288.html",
+      "sha256": "a722463f9c51c489651d0651fe30cf6ca7b01b3984a268f2ed7b4624020e6933",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F12%2F2024&fechaFinal=31%2F12%2F2024&ProductoId=465&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9422
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/01/sniim__mango-ataulfo-primera-df-central-de-abasto-de-iztapalapa-df__2025-01-01_2025-01-31__20261127T230853Z-8ca288.html",
+      "sha256": "3fe39000389e67df8c205e06e7d0d8c8aabf329cb32da6fa4cab9b6d75385119",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F01%2F2025&fechaFinal=31%2F01%2F2025&ProductoId=465&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9422
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/02/sniim__mango-ataulfo-primera-df-central-de-abasto-de-iztapalapa-df__2025-02-01_2025-02-28__20261127T230853Z-8ca288.html",
+      "sha256": "927b6de85bc374755e35b230cc02518c2581845e7e1939fc3f4cf522f8ffc15a",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F02%2F2025&fechaFinal=28%2F02%2F2025&ProductoId=465&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9422
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/03/sniim__mango-ataulfo-primera-df-central-de-abasto-de-iztapalapa-df__2025-03-01_2025-03-31__20261127T230853Z-8ca288.html",
+      "sha256": "16c3d1196ed68c6a8d65bf9a6a2e8508384d1e7107c7692ba293025690788596",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F03%2F2025&fechaFinal=31%2F03%2F2025&ProductoId=465&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9422
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/04/sniim__mango-ataulfo-primera-df-central-de-abasto-de-iztapalapa-df__2025-04-01_2025-04-30__20261127T230853Z-8ca288.html",
+      "sha256": "5ef98d448c06fdb10098b9070a6afc074c7eb03e94122320f2b93ef5ba0f1867",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F04%2F2025&fechaFinal=30%2F04%2F2025&ProductoId=465&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 23360
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/05/sniim__mango-ataulfo-primera-df-central-de-abasto-de-iztapalapa-df__2025-05-01_2025-05-31__20261127T230853Z-8ca288.html",
+      "sha256": "5f825a0b356774c27c5af21614d0e8988cb7c71dceeffc82a5914e53e5b11fc1",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F05%2F2025&fechaFinal=31%2F05%2F2025&ProductoId=465&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 25612
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/06/sniim__mango-ataulfo-primera-df-central-de-abasto-de-iztapalapa-df__2025-06-01_2025-06-30__20261127T230853Z-8ca288.html",
+      "sha256": "472b61f98e3d826617538236c2dcc37ee9729e6bd07169ce288d6bae5a1f936a",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F06%2F2025&fechaFinal=30%2F06%2F2025&ProductoId=465&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26177
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/07/sniim__mango-ataulfo-primera-df-central-de-abasto-de-iztapalapa-df__2025-07-01_2025-07-31__20261127T230853Z-8ca288.html",
+      "sha256": "76b201bc27148b3cd68f52fe47742c97fe92d7800e794974b3818cd6bf3b8082",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F07%2F2025&fechaFinal=31%2F07%2F2025&ProductoId=465&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 27303
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/08/sniim__mango-ataulfo-primera-df-central-de-abasto-de-iztapalapa-df__2025-08-01_2025-08-31__20261127T230853Z-8ca288.html",
+      "sha256": "5f8f96c4e2e66660ecbfd1f9b7dda30b379bbb3a111d49e14edff95d9fdc2fff",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F08%2F2025&fechaFinal=31%2F08%2F2025&ProductoId=465&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26177
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/09/sniim__mango-ataulfo-primera-df-central-de-abasto-de-iztapalapa-df__2025-09-01_2025-09-30__20261127T230853Z-8ca288.html",
+      "sha256": "bb399b18b64d9a452e94112083fb611c375b43d1fa17f8f9c2abb92460f42b78",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F09%2F2025&fechaFinal=30%2F09%2F2025&ProductoId=465&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26177
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/10/sniim__mango-ataulfo-primera-df-central-de-abasto-de-iztapalapa-df__2025-10-01_2025-10-31__20261127T230853Z-8ca288.html",
+      "sha256": "0cae827eac074e1534c6fbaf4164e80e33d462760f67e9c326c8c48ddb79e0ba",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2025&fechaFinal=31%2F10%2F2025&ProductoId=465&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 19413
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/11/sniim__mango-ataulfo-primera-df-central-de-abasto-de-iztapalapa-df__2025-11-01_2025-11-30__20261127T230853Z-8ca288.html",
+      "sha256": "bd952920b6b99d5da5078b1d89826b4c2d4f685ca5eb6d6cc6ff819185567ca2",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F11%2F2025&fechaFinal=30%2F11%2F2025&ProductoId=465&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9422
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/12/sniim__mango-ataulfo-primera-df-central-de-abasto-de-iztapalapa-df__2025-12-01_2025-12-31__20261127T230853Z-8ca288.html",
+      "sha256": "b7356665592763103cb1c1c27f15bce4d14a7124eb9cc76442690e5266fee59a",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F12%2F2025&fechaFinal=31%2F12%2F2025&ProductoId=465&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9422
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/01/sniim__mango-ataulfo-primera-df-central-de-abasto-de-iztapalapa-df__2026-01-01_2026-01-31__20261127T230853Z-8ca288.html",
+      "sha256": "c182eda0bacec1917b765681c256e230c4f548deac607d856cd2503dc97d00aa",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F01%2F2026&fechaFinal=31%2F01%2F2026&ProductoId=465&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9422
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/02/sniim__mango-ataulfo-primera-df-central-de-abasto-de-iztapalapa-df__2026-02-01_2026-02-28__20261127T230853Z-8ca288.html",
+      "sha256": "0c09931f922f237fa5475fc9ed7340e610991691b024b2881137ba3f91835f5a",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F02%2F2026&fechaFinal=28%2F02%2F2026&ProductoId=465&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9422
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/03/sniim__mango-ataulfo-primera-df-central-de-abasto-de-iztapalapa-df__2026-03-01_2026-03-31__20261127T230853Z-8ca288.html",
+      "sha256": "f5dc491506b4b4091a543e4501893fe91210e8ef6a181df12e7255a2448e7998",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F03%2F2026&fechaFinal=31%2F03%2F2026&ProductoId=465&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26240
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/04/sniim__mango-ataulfo-primera-df-central-de-abasto-de-iztapalapa-df__2026-04-01_2026-04-30__20261127T230853Z-8ca288.html",
+      "sha256": "8a0b853a1854bee3b31a5de8f3e1c183e4b049ea38a80137697e0dee2ea1614b",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F04%2F2026&fechaFinal=30%2F04%2F2026&ProductoId=465&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 25660
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/05/sniim__mango-ataulfo-primera-df-central-de-abasto-de-iztapalapa-df__2026-05-01_2026-05-31__20261127T230853Z-8ca288.html",
+      "sha256": "68a23d1892f5b485d28b29559eca2fa53ab074de44c63fa38701c32c049fc398",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F05%2F2026&fechaFinal=31%2F05%2F2026&ProductoId=465&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 25094
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/06/sniim__mango-ataulfo-primera-df-central-de-abasto-de-iztapalapa-df__2026-06-01_2026-06-30__20261127T230853Z-8ca288.html",
+      "sha256": "f05710d6ca6f15838e2e3a6cd2cfca98c59d0de73d6adaeaa154a624167539e7",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F06%2F2026&fechaFinal=30%2F06%2F2026&ProductoId=465&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26792
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/07/sniim__mango-ataulfo-primera-df-central-de-abasto-de-iztapalapa-df__2026-07-01_2026-07-31__20261127T230853Z-8ca288.html",
+      "sha256": "a4fde3dc59eeab17718aa7cdfc7b8baac6b6c22a76873990f56cf9a9197974c2",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F07%2F2026&fechaFinal=31%2F07%2F2026&ProductoId=465&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 27358
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/08/sniim__mango-ataulfo-primera-df-central-de-abasto-de-iztapalapa-df__2026-08-01_2026-08-31__20261127T230853Z-8ca288.html",
+      "sha256": "3e4d82b9f145a1c01b96141ed9f3b71193e6a0e492781f9ca7b1c5e727494956",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F08%2F2026&fechaFinal=31%2F08%2F2026&ProductoId=465&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26512
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/09/sniim__mango-ataulfo-primera-df-central-de-abasto-de-iztapalapa-df__2026-09-01_2026-09-30__20261127T230853Z-8ca288.html",
+      "sha256": "127c019719c9a8dc0a8e7da929b77ed10d64fc1e9ab5e24fc76855a05f351c4d",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F09%2F2026&fechaFinal=30%2F09%2F2026&ProductoId=465&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26436
+    },
+    {
+      "ruta": "data/bronce/sniim/2023/11/sniim__mango-manila-primera-df-central-de-abasto-de-iztapalapa-df__2023-11-01_2023-11-30__20261127T230853Z-8ca288.html",
+      "sha256": "4dbfb90c56f7596eea631f62e91bb323376497fae5c371b9166d07a350faa667",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F11%2F2023&fechaFinal=30%2F11%2F2023&ProductoId=480&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 23599
+    },
+    {
+      "ruta": "data/bronce/sniim/2023/12/sniim__mango-manila-primera-df-central-de-abasto-de-iztapalapa-df__2023-12-01_2023-12-31__20261127T230853Z-8ca288.html",
+      "sha256": "3eaedb39dfe6c1bf535f52fb9ccd60d7bc9350223dda98c016022df97cf133ab",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F12%2F2023&fechaFinal=31%2F12%2F2023&ProductoId=480&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9422
+    },
+    {
+      "ruta": "data/bronce/sniim/2024/01/sniim__mango-manila-primera-df-central-de-abasto-de-iztapalapa-df__2024-01-01_2024-01-31__20261127T230853Z-8ca288.html",
+      "sha256": "aab816b699a72f7bd439a993423e2fe1b5a2f1155647cf9c9f500e97199f3e5e",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F01%2F2024&fechaFinal=31%2F01%2F2024&ProductoId=480&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9422
+    },
+    {
+      "ruta": "data/bronce/sniim/2024/02/sniim__mango-manila-primera-df-central-de-abasto-de-iztapalapa-df__2024-02-01_2024-02-29__20261127T230853Z-8ca288.html",
+      "sha256": "4730a771201a7204e1ea4f4b2a8a6f71724a76a32c8eba80cfdbe34b33de373c",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F02%2F2024&fechaFinal=29%2F02%2F2024&ProductoId=480&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 16603
+    },
+    {
+      "ruta": "data/bronce/sniim/2024/03/sniim__mango-manila-primera-df-central-de-abasto-de-iztapalapa-df__2024-03-01_2024-03-31__20261127T230853Z-8ca288.html",
+      "sha256": "707c0291a5ba01443cfaacab8122fd9f6cc6d48257b6ff334e69a8558d113a4f",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F03%2F2024&fechaFinal=31%2F03%2F2024&ProductoId=480&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 24527
+    },
+    {
+      "ruta": "data/bronce/sniim/2024/04/sniim__mango-manila-primera-df-central-de-abasto-de-iztapalapa-df__2024-04-01_2024-04-30__20261127T230853Z-8ca288.html",
+      "sha256": "e3d7f15d220cb776ce41b35266d5fabc56cd2c78a9881ef63ec117e569743f88",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F04%2F2024&fechaFinal=30%2F04%2F2024&ProductoId=480&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26791
+    },
+    {
+      "ruta": "data/bronce/sniim/2024/05/sniim__mango-manila-primera-df-central-de-abasto-de-iztapalapa-df__2024-05-01_2024-05-31__20261127T230853Z-8ca288.html",
+      "sha256": "7561d61f551c9358b8226fdc7e507b16aeaa4cbb3ea0775cc593d016438da8ac",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F05%2F2024&fechaFinal=31%2F05%2F2024&ProductoId=480&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26791
+    },
+    {
+      "ruta": "data/bronce/sniim/2024/06/sniim__mango-manila-primera-df-central-de-abasto-de-iztapalapa-df__2024-06-01_2024-06-30__20261127T230853Z-8ca288.html",
+      "sha256": "16cc3b6a4ff52f3caec76c0e37ee4bd0fed3c525f37a4018655872227a6439ba",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F06%2F2024&fechaFinal=30%2F06%2F2024&ProductoId=480&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 25659
+    },
+    {
+      "ruta": "data/bronce/sniim/2024/07/sniim__mango-manila-primera-df-central-de-abasto-de-iztapalapa-df__2024-07-01_2024-07-31__20261127T230853Z-8ca288.html",
+      "sha256": "0e389762a59b04f6a7e76f11b67c774d023c01cb505a620b6604e648edf65f9a",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F07%2F2024&fechaFinal=31%2F07%2F2024&ProductoId=480&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 27357
+    },
+    {
+      "ruta": "data/bronce/sniim/2024/08/sniim__mango-manila-primera-df-central-de-abasto-de-iztapalapa-df__2024-08-01_2024-08-31__20261127T230853Z-8ca288.html",
+      "sha256": "4f99115a0e3a749ee10c549878e7a43378bf66645f94646ca136cde33f2ace8e",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F08%2F2024&fechaFinal=31%2F08%2F2024&ProductoId=480&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26787
+    },
+    {
+      "ruta": "data/bronce/sniim/2024/09/sniim__mango-manila-primera-df-central-de-abasto-de-iztapalapa-df__2024-09-01_2024-09-30__20261127T230853Z-8ca288.html",
+      "sha256": "e20b97623f21fb31b5e5bebb1a6f58077d1fb92bd2c6d13048cb264e8818782f",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F09%2F2024&fechaFinal=30%2F09%2F2024&ProductoId=480&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 25771
+    },
+    {
+      "ruta": "data/bronce/sniim/2024/10/sniim__mango-manila-primera-df-central-de-abasto-de-iztapalapa-df__2024-10-01_2024-10-31__20261127T230853Z-8ca288.html",
+      "sha256": "6ffae9a68a2660e4903e08594f756e343d9a782205f13ee1c01d8016b548d4e2",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2024&fechaFinal=31%2F10%2F2024&ProductoId=480&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 21879
+    },
+    {
+      "ruta": "data/bronce/sniim/2024/11/sniim__mango-manila-primera-df-central-de-abasto-de-iztapalapa-df__2024-11-01_2024-11-30__20261127T230853Z-8ca288.html",
+      "sha256": "11ec339d1d5d585a680b63bc184372be709097130786b2f1c8b7b425f9766457",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F11%2F2024&fechaFinal=30%2F11%2F2024&ProductoId=480&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9422
+    },
+    {
+      "ruta": "data/bronce/sniim/2024/12/sniim__mango-manila-primera-df-central-de-abasto-de-iztapalapa-df__2024-12-01_2024-12-31__20261127T230853Z-8ca288.html",
+      "sha256": "94089539da96eafd4b602f7b3474c926af5f7b0a542727819a9711cf28609388",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F12%2F2024&fechaFinal=31%2F12%2F2024&ProductoId=480&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9422
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/01/sniim__mango-manila-primera-df-central-de-abasto-de-iztapalapa-df__2025-01-01_2025-01-31__20261127T230853Z-8ca288.html",
+      "sha256": "6f95c57547ae97b5ef404b5668d2f859dc4efc73399226444fb7310f46b9a71e",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F01%2F2025&fechaFinal=31%2F01%2F2025&ProductoId=480&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9422
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/02/sniim__mango-manila-primera-df-central-de-abasto-de-iztapalapa-df__2025-02-01_2025-02-28__20261127T230853Z-8ca288.html",
+      "sha256": "b13d6f452ae993df0f5e77027478a2ef7a876debc4ec50f4f275e1c7769dc769",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F02%2F2025&fechaFinal=28%2F02%2F2025&ProductoId=480&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9422
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/03/sniim__mango-manila-primera-df-central-de-abasto-de-iztapalapa-df__2025-03-01_2025-03-31__20261127T230853Z-8ca288.html",
+      "sha256": "7196ec80c33012ab12c2769aea312dcfc724a412e7d26d73fabd090c74a3ed5a",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F03%2F2025&fechaFinal=31%2F03%2F2025&ProductoId=480&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 9422
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/04/sniim__mango-manila-primera-df-central-de-abasto-de-iztapalapa-df__2025-04-01_2025-04-30__20261127T230853Z-8ca288.html",
+      "sha256": "2ae44031827e9e65c8d1840fe30c484c99aa144d438ac4cf625ec8e1512899a8",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F04%2F2025&fechaFinal=30%2F04%2F2025&ProductoId=480&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 23395
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/05/sniim__mango-manila-primera-df-central-de-abasto-de-iztapalapa-df__2025-05-01_2025-05-31__20261127T230853Z-8ca288.html",
+      "sha256": "932f1a83c1557606be399d57c82a9fe255ce8f4d134377a0ffdd773c974e6e91",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F05%2F2025&fechaFinal=31%2F05%2F2025&ProductoId=480&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 25659
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/06/sniim__mango-manila-primera-df-central-de-abasto-de-iztapalapa-df__2025-06-01_2025-06-30__20261127T230853Z-8ca288.html",
+      "sha256": "aa00228184cd062000229cd2a4826a4117ef48f6fe7f19f5893b8a2deae9b10d",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F06%2F2025&fechaFinal=30%2F06%2F2025&ProductoId=480&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26225
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/07/sniim__mango-manila-primera-df-central-de-abasto-de-iztapalapa-df__2025-07-01_2025-07-31__20261127T230853Z-8ca288.html",
+      "sha256": "abb9150655a6896d02644b6b169a5c5fad6bc3caf5ba171041d030153a1e7784",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F07%2F2025&fechaFinal=31%2F07%2F2025&ProductoId=480&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 27357
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/08/sniim__mango-manila-primera-df-central-de-abasto-de-iztapalapa-df__2025-08-01_2025-08-31__20261127T230853Z-8ca288.html",
+      "sha256": "f70242cd9acd2cb23047f87ff75543a5f62aeb5bab8194f1fa0cd6451e06220c",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F08%2F2025&fechaFinal=31%2F08%2F2025&ProductoId=480&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26225
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/09/sniim__mango-manila-primera-df-central-de-abasto-de-iztapalapa-df__2025-09-01_2025-09-30__20261127T230853Z-8ca288.html",
+      "sha256": "0d55be5dac64277460ae1b7c018bcdd2e182985676cef59d925e3d6c4b7cd6ff",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F09%2F2025&fechaFinal=30%2F09%2F2025&ProductoId=480&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26225
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/10/sniim__mango-manila-primera-df-central-de-abasto-de-iztapalapa-df__2025-10-01_2025-10-31__20261127T230853Z-8ca288.html",
+      "sha256": "802a69a98d05bfecf349c2023f0e9dc67b6b48d02aa84ec3a603a02821f3e07f",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2025&fechaFinal=31%2F10%2F2025&ProductoId=480&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 27563
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/11/sniim__mango-manila-primera-df-central-de-abasto-de-iztapalapa-df__2025-11-01_2025-11-30__20261127T230853Z-8ca288.html",
+      "sha256": "90338c21ebd074754ff9c965ddf066233bde8afd005c7e824e68f40fd86f8b53",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F11%2F2025&fechaFinal=30%2F11%2F2025&ProductoId=480&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 25317
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/12/sniim__mango-manila-primera-df-central-de-abasto-de-iztapalapa-df__2025-12-01_2025-12-31__20261127T230853Z-8ca288.html",
+      "sha256": "ec3fd0d2ca3ae9c39c6254995be066fe9c8c7b047be6f4dcab4871c621b44539",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F12%2F2025&fechaFinal=31%2F12%2F2025&ProductoId=480&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 27073
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/01/sniim__mango-manila-primera-df-central-de-abasto-de-iztapalapa-df__2026-01-01_2026-01-31__20261127T230853Z-8ca288.html",
+      "sha256": "27c56885323962b2a3db03af8c8d0b170e91b3ebdb0d6c101a513c34e4197e3a",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F01%2F2026&fechaFinal=31%2F01%2F2026&ProductoId=480&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26421
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/02/sniim__mango-manila-primera-df-central-de-abasto-de-iztapalapa-df__2026-02-01_2026-02-28__20261127T230853Z-8ca288.html",
+      "sha256": "b17dc5286b171b5669ccc604cfc5b1cc750446a0688fde97942520f7e918d885",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F02%2F2026&fechaFinal=28%2F02%2F2026&ProductoId=480&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 25093
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/03/sniim__mango-manila-primera-df-central-de-abasto-de-iztapalapa-df__2026-03-01_2026-03-31__20261127T230853Z-8ca288.html",
+      "sha256": "283a439e5ce45ad240464f7af9ff9b73eab723b7f03bcaa861935297b6420b90",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F03%2F2026&fechaFinal=31%2F03%2F2026&ProductoId=480&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26225
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/04/sniim__mango-manila-primera-df-central-de-abasto-de-iztapalapa-df__2026-04-01_2026-04-30__20261127T230853Z-8ca288.html",
+      "sha256": "1b58711ac2146911ee7a2419793a2b254052fe6247c23d3d34b18d319e360c44",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F04%2F2026&fechaFinal=30%2F04%2F2026&ProductoId=480&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 25659
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/05/sniim__mango-manila-primera-df-central-de-abasto-de-iztapalapa-df__2026-05-01_2026-05-31__20261127T230853Z-8ca288.html",
+      "sha256": "952a5603c7734c7fda15dc04cbf33b6ce07300016e4ff52e3ed9b32b77e0b3ee",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F05%2F2026&fechaFinal=31%2F05%2F2026&ProductoId=480&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 25093
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/06/sniim__mango-manila-primera-df-central-de-abasto-de-iztapalapa-df__2026-06-01_2026-06-30__20261127T230853Z-8ca288.html",
+      "sha256": "ea5355856c6bed36dc9990e0a30f35e8ec4c04d455659fb36b7fc2f91affef97",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F06%2F2026&fechaFinal=30%2F06%2F2026&ProductoId=480&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26791
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/07/sniim__mango-manila-primera-df-central-de-abasto-de-iztapalapa-df__2026-07-01_2026-07-31__20261127T230853Z-8ca288.html",
+      "sha256": "6b4368a9681e31bcbbffb01a73731752ec7f17de21d47ffa412bf38c867e3181",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F07%2F2026&fechaFinal=31%2F07%2F2026&ProductoId=480&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 27353
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/08/sniim__mango-manila-primera-df-central-de-abasto-de-iztapalapa-df__2026-08-01_2026-08-31__20261127T230853Z-8ca288.html",
+      "sha256": "d6d02d3f3ce57d0116976206937592e4b03bf8c04c90e690d7b4ef7cae86b40d",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F08%2F2026&fechaFinal=31%2F08%2F2026&ProductoId=480&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26407
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/09/sniim__mango-manila-primera-df-central-de-abasto-de-iztapalapa-df__2026-09-01_2026-09-30__20261127T230853Z-8ca288.html",
+      "sha256": "8520c9a31daa16e8bdf3253ae7a7287433f7f05fb94db6b496dc1225ab2d8944",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F09%2F2026&fechaFinal=30%2F09%2F2026&ProductoId=480&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26393
+    },
+    {
+      "ruta": "data/bronce/sniim/2023/11/sniim__aguacate-hass-primera-df-central-de-abasto-de-iztapalapa-df__2023-11-01_2023-11-30__20261127T230853Z-8ca288.html",
+      "sha256": "e9f7db62efb157d7ce53ee0e5ebc68f2c611efcdaac086afaab73b48d68ede79",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F11%2F2023&fechaFinal=30%2F11%2F2023&ProductoId=133&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 25675
+    },
+    {
+      "ruta": "data/bronce/sniim/2023/12/sniim__aguacate-hass-primera-df-central-de-abasto-de-iztapalapa-df__2023-12-01_2023-12-31__20261127T230853Z-8ca288.html",
+      "sha256": "93c39aefa534f9a9b28b1c67d3cda4a2d9e82c706f8c78a98ec503b37e59641c",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F12%2F2023&fechaFinal=31%2F12%2F2023&ProductoId=133&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 25675
+    },
+    {
+      "ruta": "data/bronce/sniim/2024/01/sniim__aguacate-hass-primera-df-central-de-abasto-de-iztapalapa-df__2024-01-01_2024-01-31__20261127T230853Z-8ca288.html",
+      "sha256": "b249b829f69a71ab280dc223db6c4dd1c718f5d37ec24f05016c104130f6a64a",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F01%2F2024&fechaFinal=31%2F01%2F2024&ProductoId=133&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26813
+    },
+    {
+      "ruta": "data/bronce/sniim/2024/02/sniim__aguacate-hass-primera-df-central-de-abasto-de-iztapalapa-df__2024-02-01_2024-02-29__20261127T230853Z-8ca288.html",
+      "sha256": "de19a123afeb4a13e1adeabb878f3fb90641a450ed5473823f5052aba7d50d8b",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F02%2F2024&fechaFinal=29%2F02%2F2024&ProductoId=133&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 25675
+    },
+    {
+      "ruta": "data/bronce/sniim/2024/03/sniim__aguacate-hass-primera-df-central-de-abasto-de-iztapalapa-df__2024-03-01_2024-03-31__20261127T230853Z-8ca288.html",
+      "sha256": "8b546b433fb33e3a9086b550479d1de5a82134e9847851c5aca9d2fd8bcb9aeb",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F03%2F2024&fechaFinal=31%2F03%2F2024&ProductoId=133&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 24541
+    },
+    {
+      "ruta": "data/bronce/sniim/2024/04/sniim__aguacate-hass-primera-df-central-de-abasto-de-iztapalapa-df__2024-04-01_2024-04-30__20261127T230853Z-8ca288.html",
+      "sha256": "b72010b4451a664e8a5c7e8aa6efd09e3bad92f7f944d08cb6677867aca44363",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F04%2F2024&fechaFinal=30%2F04%2F2024&ProductoId=133&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26813
+    },
+    {
+      "ruta": "data/bronce/sniim/2024/05/sniim__aguacate-hass-primera-df-central-de-abasto-de-iztapalapa-df__2024-05-01_2024-05-31__20261127T230853Z-8ca288.html",
+      "sha256": "6249912f7d8cc1f97ca4c4933005c66dbc46501193dea7fcacf98c4e82786a55",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F05%2F2024&fechaFinal=31%2F05%2F2024&ProductoId=133&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26813
+    },
+    {
+      "ruta": "data/bronce/sniim/2024/06/sniim__aguacate-hass-primera-df-central-de-abasto-de-iztapalapa-df__2024-06-01_2024-06-30__20261127T230853Z-8ca288.html",
+      "sha256": "e517da903d64fbb48adce5d32652cec7699f4aaf9d9475aa6d29a42d007f2d82",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F06%2F2024&fechaFinal=30%2F06%2F2024&ProductoId=133&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 25715
+    },
+    {
+      "ruta": "data/bronce/sniim/2024/07/sniim__aguacate-hass-primera-df-central-de-abasto-de-iztapalapa-df__2024-07-01_2024-07-31__20261127T230853Z-8ca288.html",
+      "sha256": "40cd335b9f88ddb7b60fcba23f88eb614462fb9e81a0fb76268348eedec049cb",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F07%2F2024&fechaFinal=31%2F07%2F2024&ProductoId=133&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 27414
+    },
+    {
+      "ruta": "data/bronce/sniim/2024/08/sniim__aguacate-hass-primera-df-central-de-abasto-de-iztapalapa-df__2024-08-01_2024-08-31__20261127T230853Z-8ca288.html",
+      "sha256": "3050e6608d767e247d2b6245c09e39eb346f82ddca738c728403e4e2da13f087",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F08%2F2024&fechaFinal=31%2F08%2F2024&ProductoId=133&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26813
+    },
+    {
+      "ruta": "data/bronce/sniim/2024/09/sniim__aguacate-hass-primera-df-central-de-abasto-de-iztapalapa-df__2024-09-01_2024-09-30__20261127T230853Z-8ca288.html",
+      "sha256": "f9dcf17ad5e1a17f5f83cc6fc43e0f0c9c3220cda8ab60925a84e87ba37456d5",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F09%2F2024&fechaFinal=30%2F09%2F2024&ProductoId=133&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 25675
+    },
+    {
+      "ruta": "data/bronce/sniim/2024/10/sniim__aguacate-hass-primera-df-central-de-abasto-de-iztapalapa-df__2024-10-01_2024-10-31__20261127T230853Z-8ca288.html",
+      "sha256": "ec57f5c7a92db2eef12f2d97334be5053a976389407c11754721351bbe06a274",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2024&fechaFinal=31%2F10%2F2024&ProductoId=133&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26813
+    },
+    {
+      "ruta": "data/bronce/sniim/2024/11/sniim__aguacate-hass-primera-df-central-de-abasto-de-iztapalapa-df__2024-11-01_2024-11-30__20261127T230853Z-8ca288.html",
+      "sha256": "ee15b62fa454d51f06c9c826e9fa0f031f87a2daa8c5b7d696551d2331e7139d",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F11%2F2024&fechaFinal=30%2F11%2F2024&ProductoId=133&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 25675
+    },
+    {
+      "ruta": "data/bronce/sniim/2024/12/sniim__aguacate-hass-primera-df-central-de-abasto-de-iztapalapa-df__2024-12-01_2024-12-31__20261127T230853Z-8ca288.html",
+      "sha256": "020034a082ba88d23eebad3c5062692ca7102044b945d65d48d590cd41642d72",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F12%2F2024&fechaFinal=31%2F12%2F2024&ProductoId=133&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26246
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/01/sniim__aguacate-hass-primera-df-central-de-abasto-de-iztapalapa-df__2025-01-01_2025-01-31__20261127T230853Z-8ca288.html",
+      "sha256": "7174ffedb93f71a31cacc41ba8c20863a1ceb15d8bd4434477ca23d62beeeaf5",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F01%2F2025&fechaFinal=31%2F01%2F2025&ProductoId=133&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26813
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/02/sniim__aguacate-hass-primera-df-central-de-abasto-de-iztapalapa-df__2025-02-01_2025-02-28__20261127T230853Z-8ca288.html",
+      "sha256": "528839d4a882c7bb1644fdb78dadf613c6b5b9cc7d2edb3c9f6c896196d40d16",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F02%2F2025&fechaFinal=28%2F02%2F2025&ProductoId=133&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 25108
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/03/sniim__aguacate-hass-primera-df-central-de-abasto-de-iztapalapa-df__2025-03-01_2025-03-31__20261127T230853Z-8ca288.html",
+      "sha256": "1c40c50ee5831febeb427d63084260d7cb36512629afc11b22abd9b646cffedc",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F03%2F2025&fechaFinal=31%2F03%2F2025&ProductoId=133&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 25675
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/04/sniim__aguacate-hass-primera-df-central-de-abasto-de-iztapalapa-df__2025-04-01_2025-04-30__20261127T230853Z-8ca288.html",
+      "sha256": "0b32453bfa69cbcfe9d0c3d73b9a2b8cde9f135d4a9cf4db884de9e6b7afe89e",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F04%2F2025&fechaFinal=30%2F04%2F2025&ProductoId=133&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 25675
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/05/sniim__aguacate-hass-primera-df-central-de-abasto-de-iztapalapa-df__2025-05-01_2025-05-31__20261127T230853Z-8ca288.html",
+      "sha256": "856c79df123d561bd6ad806820a62ce3094b1d562d4a7b961b08bfdcbe942d8e",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F05%2F2025&fechaFinal=31%2F05%2F2025&ProductoId=133&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 25675
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/06/sniim__aguacate-hass-primera-df-central-de-abasto-de-iztapalapa-df__2025-06-01_2025-06-30__20261127T230853Z-8ca288.html",
+      "sha256": "ab8ff97b4c2e9b6a625fc56541047678cddcc923c0a3b90205af5eb366a18480",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F06%2F2025&fechaFinal=30%2F06%2F2025&ProductoId=133&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26242
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/07/sniim__aguacate-hass-primera-df-central-de-abasto-de-iztapalapa-df__2025-07-01_2025-07-31__20261127T230853Z-8ca288.html",
+      "sha256": "7e3d35e52d76467e01bbf949e33ac9385abe423c7edb1f02291539727a205c7e",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F07%2F2025&fechaFinal=31%2F07%2F2025&ProductoId=133&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 27380
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/08/sniim__aguacate-hass-primera-df-central-de-abasto-de-iztapalapa-df__2025-08-01_2025-08-31__20261127T230853Z-8ca288.html",
+      "sha256": "19650baa3c8ca50daf93f86bf4572cf7b7ebda0b3bb3edf5feb962fec3a661bf",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F08%2F2025&fechaFinal=31%2F08%2F2025&ProductoId=133&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26246
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/09/sniim__aguacate-hass-primera-df-central-de-abasto-de-iztapalapa-df__2025-09-01_2025-09-30__20261127T230853Z-8ca288.html",
+      "sha256": "bcfebceac9616b79898e87241b55e453c1dc1b0fbe34431a3a84794c19ef069e",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F09%2F2025&fechaFinal=30%2F09%2F2025&ProductoId=133&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26246
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/10/sniim__aguacate-hass-primera-df-central-de-abasto-de-iztapalapa-df__2025-10-01_2025-10-31__20261127T230853Z-8ca288.html",
+      "sha256": "70127f45aab408423cd201bced1c6397d776443b2dddd3f95baea1e04c907130",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2025&fechaFinal=31%2F10%2F2025&ProductoId=133&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 27380
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/11/sniim__aguacate-hass-primera-df-central-de-abasto-de-iztapalapa-df__2025-11-01_2025-11-30__20261127T230853Z-8ca288.html",
+      "sha256": "c4bfd2def374b6bc7d48bac1df4baa1dd3ed4e719f04c563d016889d39bdd3ea",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F11%2F2025&fechaFinal=30%2F11%2F2025&ProductoId=133&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 25108
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/12/sniim__aguacate-hass-primera-df-central-de-abasto-de-iztapalapa-df__2025-12-01_2025-12-31__20261127T230853Z-8ca288.html",
+      "sha256": "b4055b920791bded8794c56254a13aa30431fdf58c90de4caafab0c9d27e4362",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F12%2F2025&fechaFinal=31%2F12%2F2025&ProductoId=133&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26813
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/01/sniim__aguacate-hass-primera-df-central-de-abasto-de-iztapalapa-df__2026-01-01_2026-01-31__20261127T230853Z-8ca288.html",
+      "sha256": "4ac4d2883fb711f886df6d836e51ad81a5fea9980684b50a3ab5cd1a3b4c22cb",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F01%2F2026&fechaFinal=31%2F01%2F2026&ProductoId=133&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26246
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/02/sniim__aguacate-hass-primera-df-central-de-abasto-de-iztapalapa-df__2026-02-01_2026-02-28__20261127T230853Z-8ca288.html",
+      "sha256": "e9cded83a8455f6b6eb621d489c108168cce92ad0f980f3e02db2209c4a0b10a",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F02%2F2026&fechaFinal=28%2F02%2F2026&ProductoId=133&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 25108
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/03/sniim__aguacate-hass-primera-df-central-de-abasto-de-iztapalapa-df__2026-03-01_2026-03-31__20261127T230853Z-8ca288.html",
+      "sha256": "9b768a528ee787692689789ec770f190c7b54d62bb9772c0a96c95ee43f5bf0f",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F03%2F2026&fechaFinal=31%2F03%2F2026&ProductoId=133&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26246
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/04/sniim__aguacate-hass-primera-df-central-de-abasto-de-iztapalapa-df__2026-04-01_2026-04-30__20261127T230853Z-8ca288.html",
+      "sha256": "54e1dcee2c75e11d12e43d860a5385038bbe956e3b6a0e80c3c1420d60c7a6f5",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F04%2F2026&fechaFinal=30%2F04%2F2026&ProductoId=133&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 25675
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/05/sniim__aguacate-hass-primera-df-central-de-abasto-de-iztapalapa-df__2026-05-01_2026-05-31__20261127T230853Z-8ca288.html",
+      "sha256": "98d1ee334d2cc8f9a12ed47c6204516066063e5826a9e3768d0a145749d8c00d",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F05%2F2026&fechaFinal=31%2F05%2F2026&ProductoId=133&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 25108
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/06/sniim__aguacate-hass-primera-df-central-de-abasto-de-iztapalapa-df__2026-06-01_2026-06-30__20261127T230853Z-8ca288.html",
+      "sha256": "9db8169f97c5d16cfe4b655e3d805aae50956e532dba133a9d9bbcaf02097508",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F06%2F2026&fechaFinal=30%2F06%2F2026&ProductoId=133&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26813
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/07/sniim__aguacate-hass-primera-df-central-de-abasto-de-iztapalapa-df__2026-07-01_2026-07-31__20261127T230853Z-8ca288.html",
+      "sha256": "0ac0edc99da6c7d8c34683613a12a0be39a5b2fce303ffa32c51192620286dfd",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F07%2F2026&fechaFinal=31%2F07%2F2026&ProductoId=133&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 27380
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/08/sniim__aguacate-hass-primera-df-central-de-abasto-de-iztapalapa-df__2026-08-01_2026-08-31__20261127T230853Z-8ca288.html",
+      "sha256": "82ce851df1cd1b7e1bda03baeb23a8cc3ec26b7687402529a6fd8f07e3461655",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F08%2F2026&fechaFinal=31%2F08%2F2026&ProductoId=133&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26246
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/09/sniim__aguacate-hass-primera-df-central-de-abasto-de-iztapalapa-df__2026-09-01_2026-09-30__20261127T230853Z-8ca288.html",
+      "sha256": "2ff3fbc0a58378ee9eedc33b727f317065c3639ac3be7ed98ec28654af7e615e",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F09%2F2026&fechaFinal=30%2F09%2F2026&ProductoId=133&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26246
+    },
+    {
+      "ruta": "data/bronce/sniim/2023/11/sniim__guayaba-primera-df-central-de-abasto-de-iztapalapa-df__2023-11-01_2023-11-30__20261127T230853Z-8ca288.html",
+      "sha256": "06e86c792505106f90d19ee9fe57ccc6ace8a9b203172f876bc6526c2dd14cd2",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F11%2F2023&fechaFinal=30%2F11%2F2023&ProductoId=378&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 25690
+    },
+    {
+      "ruta": "data/bronce/sniim/2023/12/sniim__guayaba-primera-df-central-de-abasto-de-iztapalapa-df__2023-12-01_2023-12-31__20261127T230853Z-8ca288.html",
+      "sha256": "8679708a83c6e2fb130a54d6849bdfae6b6932a9dfe997a8ac35c2e6cf356c24",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F12%2F2023&fechaFinal=31%2F12%2F2023&ProductoId=378&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 25694
+    },
+    {
+      "ruta": "data/bronce/sniim/2024/01/sniim__guayaba-primera-df-central-de-abasto-de-iztapalapa-df__2024-01-01_2024-01-31__20261127T230853Z-8ca288.html",
+      "sha256": "e6b837bd92c49407c56affbc7a039dd8d5484e1f344d2c4791133404ece7ae81",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F01%2F2024&fechaFinal=31%2F01%2F2024&ProductoId=378&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26828
+    },
+    {
+      "ruta": "data/bronce/sniim/2024/02/sniim__guayaba-primera-df-central-de-abasto-de-iztapalapa-df__2024-02-01_2024-02-29__20261127T230853Z-8ca288.html",
+      "sha256": "31394a2846d6c35eb2007d10b24ee8a0574ae89e20ea150b0c1077c0022ffe36",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F02%2F2024&fechaFinal=29%2F02%2F2024&ProductoId=378&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 25694
+    },
+    {
+      "ruta": "data/bronce/sniim/2024/03/sniim__guayaba-primera-df-central-de-abasto-de-iztapalapa-df__2024-03-01_2024-03-31__20261127T230853Z-8ca288.html",
+      "sha256": "6ff71699eb71fb841514e994c3bc39e8d358f895d5fae11deb8eac108ce109df",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F03%2F2024&fechaFinal=31%2F03%2F2024&ProductoId=378&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 24556
+    },
+    {
+      "ruta": "data/bronce/sniim/2024/04/sniim__guayaba-primera-df-central-de-abasto-de-iztapalapa-df__2024-04-01_2024-04-30__20261127T230853Z-8ca288.html",
+      "sha256": "9684e3acf48192bc6fd6d710a0c35330a37da9e1c92a0bc35256631e6ba2e8a5",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F04%2F2024&fechaFinal=30%2F04%2F2024&ProductoId=378&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26828
+    },
+    {
+      "ruta": "data/bronce/sniim/2024/05/sniim__guayaba-primera-df-central-de-abasto-de-iztapalapa-df__2024-05-01_2024-05-31__20261127T230853Z-8ca288.html",
+      "sha256": "ba4097f49f803031a26a11709cd53b9261e220a0deba01254042423726aaf111",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F05%2F2024&fechaFinal=31%2F05%2F2024&ProductoId=378&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26828
+    },
+    {
+      "ruta": "data/bronce/sniim/2024/06/sniim__guayaba-primera-df-central-de-abasto-de-iztapalapa-df__2024-06-01_2024-06-30__20261127T230853Z-8ca288.html",
+      "sha256": "68163c81fdad4d5e5290fc850527f43dc23714e59b13051ec07a34b919e962d3",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F06%2F2024&fechaFinal=30%2F06%2F2024&ProductoId=378&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 25694
+    },
+    {
+      "ruta": "data/bronce/sniim/2024/07/sniim__guayaba-primera-df-central-de-abasto-de-iztapalapa-df__2024-07-01_2024-07-31__20261127T230853Z-8ca288.html",
+      "sha256": "ea2f83261195af01a6762bc2f4f948731839d77a62a42aca279b3fe7de4b8802",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F07%2F2024&fechaFinal=31%2F07%2F2024&ProductoId=378&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 27399
+    },
+    {
+      "ruta": "data/bronce/sniim/2024/08/sniim__guayaba-primera-df-central-de-abasto-de-iztapalapa-df__2024-08-01_2024-08-31__20261127T230853Z-8ca288.html",
+      "sha256": "ddb92e163ac9780185b39de1089857a5d093d5ff5141441cd37e0afad535861d",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F08%2F2024&fechaFinal=31%2F08%2F2024&ProductoId=378&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26814
+    },
+    {
+      "ruta": "data/bronce/sniim/2024/09/sniim__guayaba-primera-df-central-de-abasto-de-iztapalapa-df__2024-09-01_2024-09-30__20261127T230853Z-8ca288.html",
+      "sha256": "78ce8003f4385bec2c072642b70e122d3eb9b7f5a26985b7d54d38c7f5535090",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F09%2F2024&fechaFinal=30%2F09%2F2024&ProductoId=378&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 25694
+    },
+    {
+      "ruta": "data/bronce/sniim/2024/10/sniim__guayaba-primera-df-central-de-abasto-de-iztapalapa-df__2024-10-01_2024-10-31__20261127T230853Z-8ca288.html",
+      "sha256": "b7f651482bf817d124345f930ab1c69b720f0d08e1a3ec5653e2173ac5786958",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2024&fechaFinal=31%2F10%2F2024&ProductoId=378&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26828
+    },
+    {
+      "ruta": "data/bronce/sniim/2024/11/sniim__guayaba-primera-df-central-de-abasto-de-iztapalapa-df__2024-11-01_2024-11-30__20261127T230853Z-8ca288.html",
+      "sha256": "22d13452c7b26a89529849eed56fa62377177e67d39f10b1bc0aef20b6c9617c",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F11%2F2024&fechaFinal=30%2F11%2F2024&ProductoId=378&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 25694
+    },
+    {
+      "ruta": "data/bronce/sniim/2024/12/sniim__guayaba-primera-df-central-de-abasto-de-iztapalapa-df__2024-12-01_2024-12-31__20261127T230853Z-8ca288.html",
+      "sha256": "55b9d5541cfc769d4653652c1561285d7ed8e6fefe1a8ac9214876c44c2d0ab2",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F12%2F2024&fechaFinal=31%2F12%2F2024&ProductoId=378&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26261
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/01/sniim__guayaba-primera-df-central-de-abasto-de-iztapalapa-df__2025-01-01_2025-01-31__20261127T230853Z-8ca288.html",
+      "sha256": "74c708ca210edfaf2b0399c5fdf528508192ce364be9f01c314f90bea43aa09e",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F01%2F2025&fechaFinal=31%2F01%2F2025&ProductoId=378&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26827
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/02/sniim__guayaba-primera-df-central-de-abasto-de-iztapalapa-df__2025-02-01_2025-02-28__20261127T230853Z-8ca288.html",
+      "sha256": "ed74686eec8699ca343662e19fba32b959868cebc6406dc3bef10bf3cad86ea8",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F02%2F2025&fechaFinal=28%2F02%2F2025&ProductoId=378&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 25123
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/03/sniim__guayaba-primera-df-central-de-abasto-de-iztapalapa-df__2025-03-01_2025-03-31__20261127T230853Z-8ca288.html",
+      "sha256": "7fbd107b2271ec47cf5f88b1534227e09fbc7f65856a494eba4e840098bd3d35",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F03%2F2025&fechaFinal=31%2F03%2F2025&ProductoId=378&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 25694
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/04/sniim__guayaba-primera-df-central-de-abasto-de-iztapalapa-df__2025-04-01_2025-04-30__20261127T230853Z-8ca288.html",
+      "sha256": "3ae68e19406b92321a4360dc4d98f5e941c7bf4514db0b9786cd3c1b6aef1241",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F04%2F2025&fechaFinal=30%2F04%2F2025&ProductoId=378&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 25694
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/05/sniim__guayaba-primera-df-central-de-abasto-de-iztapalapa-df__2025-05-01_2025-05-31__20261127T230853Z-8ca288.html",
+      "sha256": "9cabc3418075a8e18e69e110ec4c66ac798094f9d93e432e1ae064fb46c86f1a",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F05%2F2025&fechaFinal=31%2F05%2F2025&ProductoId=378&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 25694
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/06/sniim__guayaba-primera-df-central-de-abasto-de-iztapalapa-df__2025-06-01_2025-06-30__20261127T230853Z-8ca288.html",
+      "sha256": "b17ecf181a961b0a4eaaae4ac82077ce0caf902f2b1bc6437a6036e4393aa60c",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F06%2F2025&fechaFinal=30%2F06%2F2025&ProductoId=378&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26261
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/07/sniim__guayaba-primera-df-central-de-abasto-de-iztapalapa-df__2025-07-01_2025-07-31__20261127T230853Z-8ca288.html",
+      "sha256": "12f49d0332a0fd160645ecebbe8d31894da700f15a93477d9c747b2a301ede4c",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F07%2F2025&fechaFinal=31%2F07%2F2025&ProductoId=378&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 27399
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/08/sniim__guayaba-primera-df-central-de-abasto-de-iztapalapa-df__2025-08-01_2025-08-31__20261127T230853Z-8ca288.html",
+      "sha256": "976ccdb0b6613f10f0f95a413137fd12b4a5870804bff6c23011bf0045ed14be",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F08%2F2025&fechaFinal=31%2F08%2F2025&ProductoId=378&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26261
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/09/sniim__guayaba-primera-df-central-de-abasto-de-iztapalapa-df__2025-09-01_2025-09-30__20261127T230853Z-8ca288.html",
+      "sha256": "ee8fa8d7b9a1acaf96f759d2a6a77509c627cb594871c377740bbf81a20aa616",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F09%2F2025&fechaFinal=30%2F09%2F2025&ProductoId=378&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26261
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/10/sniim__guayaba-primera-df-central-de-abasto-de-iztapalapa-df__2025-10-01_2025-10-31__20261127T230853Z-8ca288.html",
+      "sha256": "ad2d28d4ed93fe3f7f87c6a2e28a9addfc7df894c0bb3f8540f55ebbe233b9da",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2025&fechaFinal=31%2F10%2F2025&ProductoId=378&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 27399
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/11/sniim__guayaba-primera-df-central-de-abasto-de-iztapalapa-df__2025-11-01_2025-11-30__20261127T230853Z-8ca288.html",
+      "sha256": "36fe7bfae06f210f2ee182ab2d99bbc539b0113cb8c04a395ac58b6e52962da9",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F11%2F2025&fechaFinal=30%2F11%2F2025&ProductoId=378&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 25123
+    },
+    {
+      "ruta": "data/bronce/sniim/2025/12/sniim__guayaba-primera-df-central-de-abasto-de-iztapalapa-df__2025-12-01_2025-12-31__20261127T230853Z-8ca288.html",
+      "sha256": "d76097996cafc1847f9fc2733174590be48b2a5d5598fe9057a741c405cfe6c9",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F12%2F2025&fechaFinal=31%2F12%2F2025&ProductoId=378&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26828
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/01/sniim__guayaba-primera-df-central-de-abasto-de-iztapalapa-df__2026-01-01_2026-01-31__20261127T230853Z-8ca288.html",
+      "sha256": "d04ab1a24f9f10c06a4d0a4f194ea17b6490a0bb0a412f44598fae1082912001",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F01%2F2026&fechaFinal=31%2F01%2F2026&ProductoId=378&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26261
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/02/sniim__guayaba-primera-df-central-de-abasto-de-iztapalapa-df__2026-02-01_2026-02-28__20261127T230853Z-8ca288.html",
+      "sha256": "c5b3746edde1a21da64d381fee1cf1dadf5d29f8ba180830bae093a14a3eb402",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F02%2F2026&fechaFinal=28%2F02%2F2026&ProductoId=378&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 25123
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/03/sniim__guayaba-primera-df-central-de-abasto-de-iztapalapa-df__2026-03-01_2026-03-31__20261127T230853Z-8ca288.html",
+      "sha256": "d209215f1ca7f094ab34781a2ea44db773e567d17361c4f49c182db5316b9e74",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F03%2F2026&fechaFinal=31%2F03%2F2026&ProductoId=378&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26261
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/04/sniim__guayaba-primera-df-central-de-abasto-de-iztapalapa-df__2026-04-01_2026-04-30__20261127T230853Z-8ca288.html",
+      "sha256": "48fdab363385389166b4287b96d089d43187334ca49139479996c643435ca716",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F04%2F2026&fechaFinal=30%2F04%2F2026&ProductoId=378&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 25694
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/05/sniim__guayaba-primera-df-central-de-abasto-de-iztapalapa-df__2026-05-01_2026-05-31__20261127T230853Z-8ca288.html",
+      "sha256": "f0f8c225ef06d68d61dd9460fd9db3258a8ffb2bd3a6d66eee7917c0e990a361",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F05%2F2026&fechaFinal=31%2F05%2F2026&ProductoId=378&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 25123
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/06/sniim__guayaba-primera-df-central-de-abasto-de-iztapalapa-df__2026-06-01_2026-06-30__20261127T230853Z-8ca288.html",
+      "sha256": "dcf49f8287c2252d5542f8a73cd53b3c37bbbdd0e2fff53dcc3ed36c693ef3e4",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F06%2F2026&fechaFinal=30%2F06%2F2026&ProductoId=378&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26828
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/07/sniim__guayaba-primera-df-central-de-abasto-de-iztapalapa-df__2026-07-01_2026-07-31__20261127T230853Z-8ca288.html",
+      "sha256": "68a928aea3626627a1e922df9be106ddbf86a73e40651dbaaff63737a336103c",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F07%2F2026&fechaFinal=31%2F07%2F2026&ProductoId=378&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 27399
+    },
+    {
+      "ruta": "data/bronce/sniim/2026/08/sniim__guayaba-primera-df-central-de-abasto-de-iztapalapa-df__2026-08-01_2026-08-31__20261127T230853Z-8ca288.html",
+      "sha256": "b942a4cd940eb5ca2a28521b68721b26a3eac801d8e1fea51cb4c409a7fdb778",
+      "url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F08%2F2026&fechaFinal=31%2F08%2F2026&ProductoId=378&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+      "bytes": 26257
+    }
+  ],
+  "errores": [
+    "{'producto_clave': 'guayaba', 'producto': 'Guayaba - Primera', 'mercado_clave': 'cdmx', 'inicio': '2026-09-01', 'fin': '2026-09-30'}: RequestFailed: Agotados 4 intentos para https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F09%2F2026&fechaFinal=30%2F09%2F2026&ProductoId=378&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500: ConnectionError: HTTPSConnectionPool(host='www.economia-sniim.gob.mx', port=443): Max retries exceeded with url: /nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F09%2F2026&fechaFinal=30%2F09%2F2026&ProductoId=378&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500 (Caused by NameResolutionError(\"HTTPSConnection(host='www.economia-sniim.gob.mx', port=443): Failed to resolve 'www.economia-sniim.gob.mx' ([Errno -2] Name or service not known)\"))"
+  ],
+  "parametros": {
+    "productos": [
+      "mango_ataulfo",
+      "mango_manila",
+      "aguacate_hass",
+      "guayaba"
+    ],
+    "mercados": [
+      "cdmx"
+    ],
+    "periodos": [
+      [
+        "2023-11-01",
+        "2023-11-30"
+      ],
+      [
+        "2023-12-01",
+        "2023-12-31"
+      ],
+      [
+        "2024-01-01",
+        "2024-01-31"
+      ],
+      [
+        "2024-02-01",
+        "2024-02-29"
+      ],
+      [
+        "2024-03-01",
+        "2024-03-31"
+      ],
+      [
+        "2024-04-01",
+        "2024-04-30"
+      ],
+      [
+        "2024-05-01",
+        "2024-05-31"
+      ],
+      [
+        "2024-06-01",
+        "2024-06-30"
+      ],
+      [
+        "2024-07-01",
+        "2024-07-31"
+      ],
+      [
+        "2024-08-01",
+        "2024-08-31"
+      ],
+      [
+        "2024-09-01",
+        "2024-09-30"
+      ],
+      [
+        "2024-10-01",
+        "2024-10-31"
+      ],
+      [
+        "2024-11-01",
+        "2024-11-30"
+      ],
+      [
+        "2024-12-01",
+        "2024-12-31"
+      ],
+      [
+        "2025-01-01",
+        "2025-01-31"
+      ],
+      [
+        "2025-02-01",
+        "2025-02-28"
+      ],
+      [
+        "2025-03-01",
+        "2025-03-31"
+      ],
+      [
+        "2025-04-01",
+        "2025-04-30"
+      ],
+      [
+        "2025-05-01",
+        "2025-05-31"
+      ],
+      [
+        "2025-06-01",
+        "2025-06-30"
+      ],
+      [
+        "2025-07-01",
+        "2025-07-31"
+      ],
+      [
+        "2025-08-01",
+        "2025-08-31"
+      ],
+      [
+        "2025-09-01",
+        "2025-09-30"
+      ],
+      [
+        "2025-10-01",
+        "2025-10-31"
+      ],
+      [
+        "2025-11-01",
+        "2025-11-30"
+      ],
+      [
+        "2025-12-01",
+        "2025-12-31"
+      ],
+      [
+        "2026-01-01",
+        "2026-01-31"
+      ],
+      [
+        "2026-02-01",
+        "2026-02-28"
+      ],
+      [
+        "2026-03-01",
+        "2026-03-31"
+      ],
+      [
+        "2026-04-01",
+        "2026-04-30"
+      ],
+      [
+        "2026-05-01",
+        "2026-05-31"
+      ],
+      [
+        "2026-06-01",
+        "2026-06-30"
+      ],
+      [
+        "2026-07-01",
+        "2026-07-31"
+      ],
+      [
+        "2026-08-01",
+        "2026-08-31"
+      ],
+      [
+        "2026-09-01",
+        "2026-09-30"
+      ]
+    ]
+  },
+  "esquema": "tdl-manifest/1",
+  "archivos_generados": 140
+}

@@ -1,0 +1,39 @@
+{
+  "esquema": "tdl-bronce-meta/1",
+  "contenido_original": {
+    "archivo": "sniim__platano-veracruz-primera-df-central-de-abasto-de-iztapalapa-df__2021-11-01_2021-11-30__20261127T214434Z-efd520.html",
+    "descripcion": "Bytes tal como los entregó la fuente; no se modifican."
+  },
+  "metadatos_captura": {
+    "fuente": "sniim",
+    "fuente_url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F11%2F2021&fechaFinal=30%2F11%2F2021&ProductoId=736&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+    "fecha_captura": "2026-11-27T22:23:09Z",
+    "identificador_ejecucion": "20261127T214434Z-efd520",
+    "formato_original": "html",
+    "sha256": "50258c1ec1eca3ae188ce87cffa617067cf1d40a4196442eb1906d034c0b6e9e",
+    "bytes": 9422,
+    "http_status": 200,
+    "registros_detectados": 0,
+    "estado_captura": "sin_resultados",
+    "advertencias": [],
+    "colision_nombre": false,
+    "etiqueta": "Plátano Veracruz - Primera__DF: Central de Abasto de Iztapalapa DF",
+    "producto": "Plátano Veracruz - Primera",
+    "producto_id": "736",
+    "mercado": "DF: Central de Abasto de Iztapalapa DF",
+    "mercado_id": "100",
+    "fecha_ref_inicio": "2021-11-01",
+    "fecha_ref_fin": "2021-11-30",
+    "parametros": {
+      "fechaInicio": "01/11/2021",
+      "fechaFinal": "30/11/2021",
+      "ProductoId": "736",
+      "OrigenId": "-1",
+      "Origen": "Todos",
+      "DestinoId": "100",
+      "Destino": "DF: Central de Abasto de Iztapalapa DF",
+      "PreciosPorId": "1",
+      "RegistrosPorPagina": "500"
+    }
+  }
+}

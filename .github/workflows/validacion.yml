@@ -79,9 +79,11 @@ jobs:
       - name: Inteligencia comercial, preguntas, reporte, API y portal (sin red)
         run: |
           python main.py exportacion
+          python main.py aciertos
           python main.py inteligencia
           python main.py reporte
           python main.py preguntas
+          python main.py alertas
           python main.py mapa
           python main.py portal
       - name: Verificar artefactos del observatorio
@@ -98,6 +100,8 @@ jobs:
           test -s data/publico/api/v1/index.json
           test -s data/publico/plazas_colima.csv
           test -s tablero/preguntas.html
+          test -s tablero/alertas.xml
+          test -s data/publico/aciertos_resumen.json
           test -s tablero/inicio.html
           test -s tablero/admin.html
           test -s tablero/mapa.html

@@ -1,0 +1,9 @@
+producto,mercado,periodos_esperados,periodos_con_datos,cumple_36
+aguacate_hass,cdmx,84,82,True
+guayaba,cdmx,84,82,True
+limon_c5,cdmx,84,82,True
+mango_ataulfo,cdmx,84,61,True
+mango_manila,cdmx,84,69,True
+papaya,cdmx,84,82,True
+platano,cdmx,84,82,True
+tamarindo,cdmx,84,0,False

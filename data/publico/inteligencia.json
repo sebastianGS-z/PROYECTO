@@ -1,11 +1,11 @@
 {
   "esquema": "oaic-inteligencia/1",
-  "generado_utc": "2026-11-27T21:28:10+00:00",
+  "generado_utc": "2026-11-27T23:59:49+00:00",
   "ultimo_mes_cerrado": "2026-10",
   "plaza_referencia": "Guadalajara · Mercado de Abasto",
   "archivos": {
     "margen_productor": {
-      "filas": 101,
+      "filas": 131,
       "csv": "data/publico/margen_productor.csv"
     },
     "plazas_colima": {
@@ -13,18 +13,17 @@
       "csv": "data/publico/plazas_colima.csv"
     },
     "calendario_venta": {
-      "filas": 130,
+      "filas": 177,
       "csv": "data/publico/calendario_venta.csv"
     },
     "senales_mercado": {
-      "filas": 29,
+      "filas": 33,
       "csv": "data/publico/senales_mercado.csv"
     }
   },
   "hallazgos": [
     "Tamarindo: el valor de exportación de México en 2024 (65.34 MXN/kg) superó en 27 % al precio mayorista nacional (51.50 MXN/kg); principal comprador: USA. Es valor aduanal: descuente certificación, empaque y logística antes de comparar. (HS 081340 agrupa tamarindo y otras frutas secas.)",
-    "Guayaba: el valor de exportación de México en 2024 (30.08 MXN/kg) superó en 27 % al precio mayorista nacional (23.66 MXN/kg); principal comprador: USA. Es valor aduanal: descuente certificación, empaque y logística antes de comparar. (HS 080450 agrupa guayaba, mango y mangostán.)",
-    "Aguacate: el valor de exportación de México en 2024 (58.13 MXN/kg) superó en 48 % al precio mayorista nacional (39.29 MXN/kg); principal comprador: USA. Es valor aduanal: descuente certificación, empaque y logística antes de comparar.",
+    "Aguacate: el valor de exportación de México en 2024 (58.13 MXN/kg) superó en 46 % al precio mayorista nacional (39.75 MXN/kg); principal comprador: USA. Es valor aduanal: descuente certificación, empaque y logística antes de comparar.",
     "Plátano 2021: el productor de Colima recibió en promedio 5.31 MXN/kg (SIAP) mientras el mayorista de origen Colima se cotizó en 11.46 MXN/kg en Guadalajara: el productor capta 46 % del precio mayorista.",
     "Mango 2023: el productor de Colima recibió en promedio 5.56 MXN/kg (SIAP) mientras el mayorista de origen Colima se cotizó en 22.98 MXN/kg en Guadalajara: el productor capta 24 % del precio mayorista.",
     "Guanábana 2023: el productor de Colima recibió en promedio 6.83 MXN/kg (SIAP) mientras el mayorista de origen Colima se cotizó en 24.76 MXN/kg en Guadalajara: el productor capta 28 % del precio mayorista.",

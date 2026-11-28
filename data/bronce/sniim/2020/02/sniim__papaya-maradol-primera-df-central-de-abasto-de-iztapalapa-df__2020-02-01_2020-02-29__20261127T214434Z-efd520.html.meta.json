@@ -1,0 +1,39 @@
+{
+  "esquema": "tdl-bronce-meta/1",
+  "contenido_original": {
+    "archivo": "sniim__papaya-maradol-primera-df-central-de-abasto-de-iztapalapa-df__2020-02-01_2020-02-29__20261127T214434Z-efd520.html",
+    "descripcion": "Bytes tal como los entregó la fuente; no se modifican."
+  },
+  "metadatos_captura": {
+    "fuente": "sniim",
+    "fuente_url": "https://www.economia-sniim.gob.mx/nuevo/consultas/mercadosnacionales/preciosdemercado/agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F02%2F2020&fechaFinal=29%2F02%2F2020&ProductoId=609&OrigenId=-1&Origen=Todos&DestinoId=100&Destino=DF%3A+Central+de+Abasto+de+Iztapalapa+DF&PreciosPorId=1&RegistrosPorPagina=500",
+    "fecha_captura": "2026-11-27T22:34:32Z",
+    "identificador_ejecucion": "20261127T214434Z-efd520",
+    "formato_original": "html",
+    "sha256": "361aaa75c6c6cec99357f125ca4ea0e3e10ac99d89b1aced5d0387ca5f28398d",
+    "bytes": 24624,
+    "http_status": 200,
+    "registros_detectados": 19,
+    "estado_captura": "ok",
+    "advertencias": [],
+    "colision_nombre": false,
+    "etiqueta": "Papaya Maradol - Primera__DF: Central de Abasto de Iztapalapa DF",
+    "producto": "Papaya Maradol - Primera",
+    "producto_id": "609",
+    "mercado": "DF: Central de Abasto de Iztapalapa DF",
+    "mercado_id": "100",
+    "fecha_ref_inicio": "2020-02-01",
+    "fecha_ref_fin": "2020-02-29",
+    "parametros": {
+      "fechaInicio": "01/02/2020",
+      "fechaFinal": "29/02/2020",
+      "ProductoId": "609",
+      "OrigenId": "-1",
+      "Origen": "Todos",
+      "DestinoId": "100",
+      "Destino": "DF: Central de Abasto de Iztapalapa DF",
+      "PreciosPorId": "1",
+      "RegistrosPorPagina": "500"
+    }
+  }
+}

@@ -1,0 +1,181 @@
+serie,variante,plaza,modelo,mes,segmento,pronostico_mxn_kg,real_mxn_kg,error_pct,dentro_rango_80,direccion_correcta
+421|140|origen_colima,Limón c/semilla # 5 - Primera,Guadalajara · Mercado de Abasto,combinacion,2024-11,seleccion,15.75,12.4,27.0,True,
+421|140|origen_colima,Limón c/semilla # 5 - Primera,Guadalajara · Mercado de Abasto,combinacion,2024-12,seleccion,14.83,14.51,2.2,True,True
+421|140|origen_colima,Limón c/semilla # 5 - Primera,Guadalajara · Mercado de Abasto,combinacion,2025-01,seleccion,19.66,18.03,9.0,True,True
+421|140|origen_colima,Limón c/semilla # 5 - Primera,Guadalajara · Mercado de Abasto,combinacion,2025-02,seleccion,20.32,22.6,-10.1,True,True
+421|140|origen_colima,Limón c/semilla # 5 - Primera,Guadalajara · Mercado de Abasto,combinacion,2025-03,seleccion,25.07,32.67,-23.3,True,True
+421|140|origen_colima,Limón c/semilla # 5 - Primera,Guadalajara · Mercado de Abasto,combinacion,2025-04,seleccion,34.0,26.3,29.3,True,False
+421|140|origen_colima,Limón c/semilla # 5 - Primera,Guadalajara · Mercado de Abasto,combinacion,2025-05,seleccion,22.14,31.2,-29.0,False,False
+421|140|origen_colima,Limón c/semilla # 5 - Primera,Guadalajara · Mercado de Abasto,combinacion,2025-06,seleccion,32.05,31.97,0.3,True,True
+421|140|origen_colima,Limón c/semilla # 5 - Primera,Guadalajara · Mercado de Abasto,combinacion,2025-07,seleccion,30.06,26.8,12.2,True,True
+421|140|origen_colima,Limón c/semilla # 5 - Primera,Guadalajara · Mercado de Abasto,combinacion,2025-08,seleccion,27.68,30.03,-7.8,True,True
+421|140|origen_colima,Limón c/semilla # 5 - Primera,Guadalajara · Mercado de Abasto,combinacion,2025-09,seleccion,31.73,27.49,15.4,True,False
+421|140|origen_colima,Limón c/semilla # 5 - Primera,Guadalajara · Mercado de Abasto,combinacion,2025-10,seleccion,26.82,24.87,7.8,True,True
+421|140|origen_colima,Limón c/semilla # 5 - Primera,Guadalajara · Mercado de Abasto,combinacion,2025-11,holdout,21.67,17.61,23.1,True,True
+421|140|origen_colima,Limón c/semilla # 5 - Primera,Guadalajara · Mercado de Abasto,combinacion,2025-12,holdout,17.88,22.56,-20.7,True,True
+421|140|origen_colima,Limón c/semilla # 5 - Primera,Guadalajara · Mercado de Abasto,combinacion,2026-01,holdout,27.27,28.6,-4.7,True,True
+421|140|origen_colima,Limón c/semilla # 5 - Primera,Guadalajara · Mercado de Abasto,combinacion,2026-02,holdout,28.8,37.3,-22.8,False,True
+421|140|origen_colima,Limón c/semilla # 5 - Primera,Guadalajara · Mercado de Abasto,combinacion,2026-03,holdout,38.37,40.54,-5.4,True,True
+421|140|origen_colima,Limón c/semilla # 5 - Primera,Guadalajara · Mercado de Abasto,combinacion,2026-04,holdout,37.74,37.33,1.1,True,True
+421|140|origen_colima,Limón c/semilla # 5 - Primera,Guadalajara · Mercado de Abasto,combinacion,2026-05,holdout,33.82,34.74,-2.6,True,True
+421|140|origen_colima,Limón c/semilla # 5 - Primera,Guadalajara · Mercado de Abasto,combinacion,2026-06,holdout,32.59,28.83,13.1,True,True
+421|140|origen_colima,Limón c/semilla # 5 - Primera,Guadalajara · Mercado de Abasto,combinacion,2026-07,holdout,27.51,21.67,26.9,True,True
+421|140|origen_colima,Limón c/semilla # 5 - Primera,Guadalajara · Mercado de Abasto,combinacion,2026-08,holdout,23.05,27.94,-17.5,True,True
+421|140|origen_colima,Limón c/semilla # 5 - Primera,Guadalajara · Mercado de Abasto,combinacion,2026-09,holdout,30.56,34.38,-11.1,True,True
+421|140|origen_colima,Limón c/semilla # 5 - Primera,Guadalajara · Mercado de Abasto,combinacion,2026-10,holdout,33.31,23.65,40.8,False,True
+609|140|origen_colima,Papaya Maradol - Primera,Guadalajara · Mercado de Abasto,holt_winters_aditivo,2024-11,seleccion,20.68,29.6,-30.1,False,
+609|140|origen_colima,Papaya Maradol - Primera,Guadalajara · Mercado de Abasto,holt_winters_aditivo,2024-12,seleccion,20.19,20.1,0.5,True,True
+609|140|origen_colima,Papaya Maradol - Primera,Guadalajara · Mercado de Abasto,holt_winters_aditivo,2025-01,seleccion,20.02,16.05,24.8,False,True
+609|140|origen_colima,Papaya Maradol - Primera,Guadalajara · Mercado de Abasto,holt_winters_aditivo,2025-02,seleccion,21.63,18.74,15.4,True,True
+609|140|origen_colima,Papaya Maradol - Primera,Guadalajara · Mercado de Abasto,holt_winters_aditivo,2025-03,seleccion,19.69,15.95,23.4,True,False
+609|140|origen_colima,Papaya Maradol - Primera,Guadalajara · Mercado de Abasto,holt_winters_aditivo,2025-04,seleccion,19.12,18.0,6.2,True,True
+609|140|origen_colima,Papaya Maradol - Primera,Guadalajara · Mercado de Abasto,holt_winters_aditivo,2025-05,seleccion,18.71,23.7,-21.1,False,True
+609|140|origen_colima,Papaya Maradol - Primera,Guadalajara · Mercado de Abasto,holt_winters_aditivo,2025-06,seleccion,18.7,16.62,12.5,True,True
+609|140|origen_colima,Papaya Maradol - Primera,Guadalajara · Mercado de Abasto,holt_winters_aditivo,2025-07,seleccion,18.7,15.26,22.6,True,False
+609|140|origen_colima,Papaya Maradol - Primera,Guadalajara · Mercado de Abasto,holt_winters_aditivo,2025-08,seleccion,19.88,20.71,-4.0,True,True
+609|140|origen_colima,Papaya Maradol - Primera,Guadalajara · Mercado de Abasto,holt_winters_aditivo,2025-09,seleccion,20.61,19.19,7.4,True,True
+609|140|origen_colima,Papaya Maradol - Primera,Guadalajara · Mercado de Abasto,holt_winters_aditivo,2025-10,seleccion,22.43,17.74,26.4,False,False
+609|140|origen_colima,Papaya Maradol - Primera,Guadalajara · Mercado de Abasto,holt_winters_aditivo,2025-11,holdout,23.47,19.63,19.5,True,True
+609|140|origen_colima,Papaya Maradol - Primera,Guadalajara · Mercado de Abasto,holt_winters_aditivo,2025-12,holdout,20.57,17.7,16.2,True,False
+609|140|origen_colima,Papaya Maradol - Primera,Guadalajara · Mercado de Abasto,holt_winters_aditivo,2026-01,holdout,19.5,20.74,-6.0,True,True
+609|140|origen_colima,Papaya Maradol - Primera,Guadalajara · Mercado de Abasto,holt_winters_aditivo,2026-02,holdout,21.54,20.33,5.9,True,False
+609|140|origen_colima,Papaya Maradol - Primera,Guadalajara · Mercado de Abasto,holt_winters_aditivo,2026-03,holdout,19.5,17.1,14.1,True,True
+609|140|origen_colima,Papaya Maradol - Primera,Guadalajara · Mercado de Abasto,holt_winters_aditivo,2026-04,holdout,19.5,16.23,20.2,True,False
+609|140|origen_colima,Papaya Maradol - Primera,Guadalajara · Mercado de Abasto,holt_winters_aditivo,2026-05,holdout,20.23,17.17,17.8,True,True
+609|140|origen_colima,Papaya Maradol - Primera,Guadalajara · Mercado de Abasto,holt_winters_aditivo,2026-06,holdout,18.51,16.77,10.4,True,False
+609|140|origen_colima,Papaya Maradol - Primera,Guadalajara · Mercado de Abasto,holt_winters_aditivo,2026-07,holdout,16.78,16.59,1.1,True,False
+609|140|origen_colima,Papaya Maradol - Primera,Guadalajara · Mercado de Abasto,holt_winters_aditivo,2026-08,holdout,20.16,17.12,17.7,True,True
+609|140|origen_colima,Papaya Maradol - Primera,Guadalajara · Mercado de Abasto,holt_winters_aditivo,2026-09,holdout,18.73,18.17,3.1,True,True
+609|140|origen_colima,Papaya Maradol - Primera,Guadalajara · Mercado de Abasto,holt_winters_aditivo,2026-10,holdout,19.93,18.27,9.1,True,True
+800|140|origen_colima,Tamarindo - Primera,Guadalajara · Mercado de Abasto,combinacion,2024-02,seleccion,34.88,33.6,3.8,True,
+800|140|origen_colima,Tamarindo - Primera,Guadalajara · Mercado de Abasto,combinacion,2024-03,seleccion,33.07,33.11,-0.1,True,True
+800|140|origen_colima,Tamarindo - Primera,Guadalajara · Mercado de Abasto,combinacion,2024-04,seleccion,32.94,32.64,0.9,True,True
+800|140|origen_colima,Tamarindo - Primera,Guadalajara · Mercado de Abasto,combinacion,2024-05,seleccion,32.21,29.32,9.9,True,True
+800|140|origen_colima,Tamarindo - Primera,Guadalajara · Mercado de Abasto,combinacion,2024-06,seleccion,29.71,31.25,-4.9,True,True
+800|140|origen_colima,Tamarindo - Primera,Guadalajara · Mercado de Abasto,combinacion,2024-07,seleccion,31.42,31.3,0.4,True,
+800|140|origen_colima,Tamarindo - Primera,Guadalajara · Mercado de Abasto,combinacion,2024-08,seleccion,31.24,31.77,-1.7,True,False
+800|140|origen_colima,Tamarindo - Primera,Guadalajara · Mercado de Abasto,combinacion,2024-09,seleccion,31.83,29.2,9.0,True,False
+800|140|origen_colima,Tamarindo - Primera,Guadalajara · Mercado de Abasto,combinacion,2024-10,seleccion,29.32,34.55,-15.1,True,True
+800|140|origen_colima,Tamarindo - Primera,Guadalajara · Mercado de Abasto,combinacion,2024-11,seleccion,34.73,43.5,-20.2,False,True
+800|140|origen_colima,Tamarindo - Primera,Guadalajara · Mercado de Abasto,combinacion,2024-12,seleccion,45.2,47.71,-5.3,True,True
+800|140|origen_colima,Tamarindo - Primera,Guadalajara · Mercado de Abasto,combinacion,2025-01,seleccion,48.73,47.18,3.3,True,False
+800|140|origen_colima,Tamarindo - Primera,Guadalajara · Mercado de Abasto,combinacion,2025-02,holdout,46.95,43.37,8.3,True,True
+800|140|origen_colima,Tamarindo - Primera,Guadalajara · Mercado de Abasto,combinacion,2025-03,holdout,42.62,42.0,1.5,True,True
+800|140|origen_colima,Tamarindo - Primera,Guadalajara · Mercado de Abasto,combinacion,2025-04,holdout,41.74,45.88,-9.0,True,False
+800|140|origen_colima,Tamarindo - Primera,Guadalajara · Mercado de Abasto,combinacion,2025-05,holdout,46.01,54.8,-16.0,False,True
+800|140|origen_colima,Tamarindo - Primera,Guadalajara · Mercado de Abasto,combinacion,2025-06,holdout,56.35,55.12,2.2,True,True
+800|140|origen_colima,Tamarindo - Primera,Guadalajara · Mercado de Abasto,combinacion,2025-07,holdout,54.91,58.96,-6.9,True,False
+800|140|origen_colima,Tamarindo - Primera,Guadalajara · Mercado de Abasto,combinacion,2025-08,holdout,59.07,65.1,-9.2,False,True
+800|140|origen_colima,Tamarindo - Primera,Guadalajara · Mercado de Abasto,combinacion,2025-09,holdout,66.35,64.79,2.4,True,
+800|140|origen_colima,Tamarindo - Primera,Guadalajara · Mercado de Abasto,combinacion,2025-10,holdout,65.56,67.61,-3.0,True,True
+800|140|origen_colima,Tamarindo - Primera,Guadalajara · Mercado de Abasto,combinacion,2025-11,holdout,68.86,66.89,2.9,True,False
+800|140|origen_colima,Tamarindo - Primera,Guadalajara · Mercado de Abasto,combinacion,2025-12,holdout,68.02,73.64,-7.6,True,True
+800|140|origen_colima,Tamarindo - Primera,Guadalajara · Mercado de Abasto,combinacion,2026-01,holdout,74.89,80.36,-6.8,True,True
+800|80|origen_colima,Tamarindo - Primera,Colima · Centros de distribución,suavizamiento_simple,2025-11,seleccion,41.97,41.62,0.8,True,
+800|80|origen_colima,Tamarindo - Primera,Colima · Centros de distribución,suavizamiento_simple,2025-12,seleccion,41.64,41.67,-0.1,True,
+800|80|origen_colima,Tamarindo - Primera,Colima · Centros de distribución,suavizamiento_simple,2026-01,seleccion,41.67,42.89,-2.9,True,False
+800|80|origen_colima,Tamarindo - Primera,Colima · Centros de distribución,suavizamiento_simple,2026-02,seleccion,42.84,42.38,1.1,True,True
+800|80|origen_colima,Tamarindo - Primera,Colima · Centros de distribución,suavizamiento_simple,2026-03,seleccion,42.4,42.0,0.9,True,False
+800|80|origen_colima,Tamarindo - Primera,Colima · Centros de distribución,suavizamiento_simple,2026-04,seleccion,42.02,42.0,0.0,True,
+800|80|origen_colima,Tamarindo - Primera,Colima · Centros de distribución,suavizamiento_simple,2026-05,holdout,42.0,42.0,0.0,True,
+800|80|origen_colima,Tamarindo - Primera,Colima · Centros de distribución,suavizamiento_simple,2026-06,holdout,42.0,41.89,0.3,True,
+800|80|origen_colima,Tamarindo - Primera,Colima · Centros de distribución,suavizamiento_simple,2026-07,holdout,41.89,41.89,0.0,True,
+800|80|origen_colima,Tamarindo - Primera,Colima · Centros de distribución,suavizamiento_simple,2026-08,holdout,41.89,41.62,0.6,True,False
+800|80|origen_colima,Tamarindo - Primera,Colima · Centros de distribución,suavizamiento_simple,2026-09,holdout,41.64,41.44,0.5,True,
+800|80|origen_colima,Tamarindo - Primera,Colima · Centros de distribución,suavizamiento_simple,2026-10,holdout,41.45,42.22,-1.8,True,True
+723|140|referencia_mercado,Plátano Macho - Primera,Guadalajara · Mercado de Abasto,combinacion,2024-11,seleccion,23.23,25.2,-7.8,False,
+723|140|referencia_mercado,Plátano Macho - Primera,Guadalajara · Mercado de Abasto,combinacion,2024-12,seleccion,24.82,24.76,0.2,True,True
+723|140|referencia_mercado,Plátano Macho - Primera,Guadalajara · Mercado de Abasto,combinacion,2025-01,seleccion,24.86,22.5,10.5,False,False
+723|140|referencia_mercado,Plátano Macho - Primera,Guadalajara · Mercado de Abasto,combinacion,2025-02,seleccion,22.77,20.89,9.0,True,False
+723|140|referencia_mercado,Plátano Macho - Primera,Guadalajara · Mercado de Abasto,combinacion,2025-03,seleccion,21.28,20.8,2.3,True,
+723|140|referencia_mercado,Plátano Macho - Primera,Guadalajara · Mercado de Abasto,combinacion,2025-04,seleccion,21.07,19.6,7.5,True,False
+723|140|referencia_mercado,Plátano Macho - Primera,Guadalajara · Mercado de Abasto,combinacion,2025-05,seleccion,20.39,19.85,2.7,True,True
+723|140|referencia_mercado,Plátano Macho - Primera,Guadalajara · Mercado de Abasto,combinacion,2025-06,seleccion,19.82,19.36,2.4,True,True
+723|140|referencia_mercado,Plátano Macho - Primera,Guadalajara · Mercado de Abasto,combinacion,2025-07,seleccion,19.39,17.39,11.5,False,False
+723|140|referencia_mercado,Plátano Macho - Primera,Guadalajara · Mercado de Abasto,combinacion,2025-08,seleccion,18.24,18.6,-1.9,True,True
+723|140|referencia_mercado,Plátano Macho - Primera,Guadalajara · Mercado de Abasto,combinacion,2025-09,seleccion,18.81,19.05,-1.2,True,True
+723|140|referencia_mercado,Plátano Macho - Primera,Guadalajara · Mercado de Abasto,combinacion,2025-10,seleccion,19.76,19.2,2.9,True,True
+723|140|referencia_mercado,Plátano Macho - Primera,Guadalajara · Mercado de Abasto,combinacion,2025-11,holdout,19.77,20.16,-1.9,True,True
+723|140|referencia_mercado,Plátano Macho - Primera,Guadalajara · Mercado de Abasto,combinacion,2025-12,holdout,20.12,19.36,3.9,True,True
+723|140|referencia_mercado,Plátano Macho - Primera,Guadalajara · Mercado de Abasto,combinacion,2026-01,holdout,19.43,19.05,2.0,True,False
+723|140|referencia_mercado,Plátano Macho - Primera,Guadalajara · Mercado de Abasto,combinacion,2026-02,holdout,18.76,19.78,-5.1,True,False
+723|140|referencia_mercado,Plátano Macho - Primera,Guadalajara · Mercado de Abasto,combinacion,2026-03,holdout,19.6,19.52,0.4,True,True
+723|140|referencia_mercado,Plátano Macho - Primera,Guadalajara · Mercado de Abasto,combinacion,2026-04,holdout,19.23,18.93,1.6,True,True
+723|140|referencia_mercado,Plátano Macho - Primera,Guadalajara · Mercado de Abasto,combinacion,2026-05,holdout,18.95,18.08,4.8,True,False
+723|140|referencia_mercado,Plátano Macho - Primera,Guadalajara · Mercado de Abasto,combinacion,2026-06,holdout,17.84,17.2,3.7,True,True
+723|140|referencia_mercado,Plátano Macho - Primera,Guadalajara · Mercado de Abasto,combinacion,2026-07,holdout,17.05,17.3,-1.5,True,False
+723|140|referencia_mercado,Plátano Macho - Primera,Guadalajara · Mercado de Abasto,combinacion,2026-08,holdout,17.64,17.5,0.8,True,True
+723|140|referencia_mercado,Plátano Macho - Primera,Guadalajara · Mercado de Abasto,combinacion,2026-09,holdout,17.69,22.14,-20.1,False,True
+723|140|referencia_mercado,Plátano Macho - Primera,Guadalajara · Mercado de Abasto,combinacion,2026-10,holdout,21.94,22.36,-1.9,True,False
+133|140|referencia_mercado,Aguacate Hass - Primera,Guadalajara · Mercado de Abasto,combinacion,2024-11,seleccion,53.46,47.94,11.5,True,
+133|140|referencia_mercado,Aguacate Hass - Primera,Guadalajara · Mercado de Abasto,combinacion,2024-12,seleccion,45.79,43.15,6.1,True,True
+133|140|referencia_mercado,Aguacate Hass - Primera,Guadalajara · Mercado de Abasto,combinacion,2025-01,seleccion,44.04,54.04,-18.5,True,True
+133|140|referencia_mercado,Aguacate Hass - Primera,Guadalajara · Mercado de Abasto,combinacion,2025-02,seleccion,55.1,51.93,6.1,True,False
+133|140|referencia_mercado,Aguacate Hass - Primera,Guadalajara · Mercado de Abasto,combinacion,2025-03,seleccion,52.52,60.64,-13.4,True,True
+133|140|referencia_mercado,Aguacate Hass - Primera,Guadalajara · Mercado de Abasto,combinacion,2025-04,seleccion,64.1,65.78,-2.6,True,True
+133|140|referencia_mercado,Aguacate Hass - Primera,Guadalajara · Mercado de Abasto,combinacion,2025-05,seleccion,66.48,75.64,-12.1,True,True
+133|140|referencia_mercado,Aguacate Hass - Primera,Guadalajara · Mercado de Abasto,combinacion,2025-06,seleccion,78.65,72.08,9.1,True,False
+133|140|referencia_mercado,Aguacate Hass - Primera,Guadalajara · Mercado de Abasto,combinacion,2025-07,seleccion,71.45,58.56,22.0,False,True
+133|140|referencia_mercado,Aguacate Hass - Primera,Guadalajara · Mercado de Abasto,combinacion,2025-08,seleccion,54.38,53.28,2.1,True,True
+133|140|referencia_mercado,Aguacate Hass - Primera,Guadalajara · Mercado de Abasto,combinacion,2025-09,seleccion,51.77,43.76,18.3,True,True
+133|140|referencia_mercado,Aguacate Hass - Primera,Guadalajara · Mercado de Abasto,combinacion,2025-10,seleccion,39.74,41.15,-3.4,True,True
+133|140|referencia_mercado,Aguacate Hass - Primera,Guadalajara · Mercado de Abasto,combinacion,2025-11,holdout,38.89,35.7,8.9,True,True
+133|140|referencia_mercado,Aguacate Hass - Primera,Guadalajara · Mercado de Abasto,combinacion,2025-12,holdout,34.92,33.11,5.5,True,True
+133|140|referencia_mercado,Aguacate Hass - Primera,Guadalajara · Mercado de Abasto,combinacion,2026-01,holdout,35.96,34.26,5.0,True,True
+133|140|referencia_mercado,Aguacate Hass - Primera,Guadalajara · Mercado de Abasto,combinacion,2026-02,holdout,34.71,32.02,8.4,True,False
+133|140|referencia_mercado,Aguacate Hass - Primera,Guadalajara · Mercado de Abasto,combinacion,2026-03,holdout,34.72,33.72,3.0,True,True
+133|140|referencia_mercado,Aguacate Hass - Primera,Guadalajara · Mercado de Abasto,combinacion,2026-04,holdout,37.4,36.33,2.9,True,True
+133|140|referencia_mercado,Aguacate Hass - Primera,Guadalajara · Mercado de Abasto,combinacion,2026-05,holdout,39.54,43.44,-9.0,True,True
+133|140|referencia_mercado,Aguacate Hass - Primera,Guadalajara · Mercado de Abasto,combinacion,2026-06,holdout,46.7,61.2,-23.7,False,True
+133|140|referencia_mercado,Aguacate Hass - Primera,Guadalajara · Mercado de Abasto,combinacion,2026-07,holdout,63.52,48.26,31.6,False,False
+133|140|referencia_mercado,Aguacate Hass - Primera,Guadalajara · Mercado de Abasto,combinacion,2026-08,holdout,45.74,48.43,-5.6,True,
+133|140|referencia_mercado,Aguacate Hass - Primera,Guadalajara · Mercado de Abasto,combinacion,2026-09,holdout,47.05,31.97,47.2,False,True
+133|140|referencia_mercado,Aguacate Hass - Primera,Guadalajara · Mercado de Abasto,combinacion,2026-10,holdout,29.0,30.15,-3.8,True,True
+378|140|referencia_mercado,Guayaba - Primera,Guadalajara · Mercado de Abasto,holt_winters_aditivo,2024-11,seleccion,18.66,18.75,-0.5,True,
+378|140|referencia_mercado,Guayaba - Primera,Guadalajara · Mercado de Abasto,holt_winters_aditivo,2024-12,seleccion,19.03,21.79,-12.7,True,True
+378|140|referencia_mercado,Guayaba - Primera,Guadalajara · Mercado de Abasto,holt_winters_aditivo,2025-01,seleccion,20.14,19.2,4.9,True,True
+378|140|referencia_mercado,Guayaba - Primera,Guadalajara · Mercado de Abasto,holt_winters_aditivo,2025-02,seleccion,20.53,18.49,11.1,True,False
+378|140|referencia_mercado,Guayaba - Primera,Guadalajara · Mercado de Abasto,holt_winters_aditivo,2025-03,seleccion,22.17,22.88,-3.1,True,True
+378|140|referencia_mercado,Guayaba - Primera,Guadalajara · Mercado de Abasto,holt_winters_aditivo,2025-04,seleccion,24.04,29.62,-18.8,True,True
+378|140|referencia_mercado,Guayaba - Primera,Guadalajara · Mercado de Abasto,holt_winters_aditivo,2025-05,seleccion,25.58,29.67,-13.8,True,
+378|140|referencia_mercado,Guayaba - Primera,Guadalajara · Mercado de Abasto,holt_winters_aditivo,2025-06,seleccion,25.61,23.63,8.4,True,True
+378|140|referencia_mercado,Guayaba - Primera,Guadalajara · Mercado de Abasto,holt_winters_aditivo,2025-07,seleccion,23.96,27.21,-11.9,True,True
+378|140|referencia_mercado,Guayaba - Primera,Guadalajara · Mercado de Abasto,holt_winters_aditivo,2025-08,seleccion,19.94,21.43,-6.9,True,True
+378|140|referencia_mercado,Guayaba - Primera,Guadalajara · Mercado de Abasto,holt_winters_aditivo,2025-09,seleccion,19.9,19.0,4.8,True,True
+378|140|referencia_mercado,Guayaba - Primera,Guadalajara · Mercado de Abasto,holt_winters_aditivo,2025-10,seleccion,20.69,18.96,9.1,True,
+378|140|referencia_mercado,Guayaba - Primera,Guadalajara · Mercado de Abasto,holt_winters_aditivo,2025-11,holdout,21.54,20.79,3.6,True,True
+378|140|referencia_mercado,Guayaba - Primera,Guadalajara · Mercado de Abasto,holt_winters_aditivo,2025-12,holdout,22.4,16.66,34.5,True,False
+378|140|referencia_mercado,Guayaba - Primera,Guadalajara · Mercado de Abasto,holt_winters_aditivo,2026-01,holdout,22.39,16.64,34.6,False,
+378|140|referencia_mercado,Guayaba - Primera,Guadalajara · Mercado de Abasto,holt_winters_aditivo,2026-02,holdout,22.35,14.79,51.1,False,False
+378|140|referencia_mercado,Guayaba - Primera,Guadalajara · Mercado de Abasto,holt_winters_aditivo,2026-03,holdout,24.31,18.38,32.2,False,True
+378|140|referencia_mercado,Guayaba - Primera,Guadalajara · Mercado de Abasto,holt_winters_aditivo,2026-04,holdout,26.89,21.84,23.1,True,True
+378|140|referencia_mercado,Guayaba - Primera,Guadalajara · Mercado de Abasto,holt_winters_aditivo,2026-05,holdout,27.73,21.92,26.5,False,
+378|140|referencia_mercado,Guayaba - Primera,Guadalajara · Mercado de Abasto,holt_winters_aditivo,2026-06,holdout,20.66,18.99,8.8,True,True
+378|140|referencia_mercado,Guayaba - Primera,Guadalajara · Mercado de Abasto,holt_winters_aditivo,2026-07,holdout,18.18,18.23,-0.3,True,True
+378|140|referencia_mercado,Guayaba - Primera,Guadalajara · Mercado de Abasto,holt_winters_aditivo,2026-08,holdout,13.75,19.49,-29.4,True,False
+378|140|referencia_mercado,Guayaba - Primera,Guadalajara · Mercado de Abasto,holt_winters_aditivo,2026-09,holdout,18.63,19.42,-4.1,True,
+378|140|referencia_mercado,Guayaba - Primera,Guadalajara · Mercado de Abasto,holt_winters_aditivo,2026-10,holdout,20.09,21.59,-7.0,True,True
+787|140|referencia_mercado,Sandía Sangría - Primera,Guadalajara · Mercado de Abasto,combinacion,2024-11,seleccion,15.78,15.85,-0.4,True,
+787|140|referencia_mercado,Sandía Sangría - Primera,Guadalajara · Mercado de Abasto,combinacion,2024-12,seleccion,16.46,19.43,-15.3,False,True
+787|140|referencia_mercado,Sandía Sangría - Primera,Guadalajara · Mercado de Abasto,combinacion,2025-01,seleccion,18.57,18.0,3.2,True,True
+787|140|referencia_mercado,Sandía Sangría - Primera,Guadalajara · Mercado de Abasto,combinacion,2025-02,seleccion,19.19,16.26,18.0,True,False
+787|140|referencia_mercado,Sandía Sangría - Primera,Guadalajara · Mercado de Abasto,combinacion,2025-03,seleccion,16.46,12.2,34.9,False,False
+787|140|referencia_mercado,Sandía Sangría - Primera,Guadalajara · Mercado de Abasto,combinacion,2025-04,seleccion,12.28,13.0,-5.6,True,True
+787|140|referencia_mercado,Sandía Sangría - Primera,Guadalajara · Mercado de Abasto,combinacion,2025-05,seleccion,12.7,14.53,-12.6,True,False
+787|140|referencia_mercado,Sandía Sangría - Primera,Guadalajara · Mercado de Abasto,combinacion,2025-06,seleccion,14.55,14.36,1.3,True,False
+787|140|referencia_mercado,Sandía Sangría - Primera,Guadalajara · Mercado de Abasto,combinacion,2025-07,seleccion,14.43,14.63,-1.4,True,True
+787|140|referencia_mercado,Sandía Sangría - Primera,Guadalajara · Mercado de Abasto,combinacion,2025-08,seleccion,14.35,18.21,-21.2,False,False
+787|140|referencia_mercado,Sandía Sangría - Primera,Guadalajara · Mercado de Abasto,combinacion,2025-09,seleccion,18.27,18.43,-0.9,True,True
+787|140|referencia_mercado,Sandía Sangría - Primera,Guadalajara · Mercado de Abasto,combinacion,2025-10,seleccion,18.16,16.22,12.0,True,True
+787|140|referencia_mercado,Sandía Sangría - Primera,Guadalajara · Mercado de Abasto,combinacion,2025-11,holdout,16.46,15.41,6.8,True,False
+787|140|referencia_mercado,Sandía Sangría - Primera,Guadalajara · Mercado de Abasto,combinacion,2025-12,holdout,16.02,14.14,13.3,True,False
+787|140|referencia_mercado,Sandía Sangría - Primera,Guadalajara · Mercado de Abasto,combinacion,2026-01,holdout,13.85,13.17,5.2,True,True
+787|140|referencia_mercado,Sandía Sangría - Primera,Guadalajara · Mercado de Abasto,combinacion,2026-02,holdout,13.86,13.21,4.9,True,
+787|140|referencia_mercado,Sandía Sangría - Primera,Guadalajara · Mercado de Abasto,combinacion,2026-03,holdout,12.83,14.04,-8.6,True,False
+787|140|referencia_mercado,Sandía Sangría - Primera,Guadalajara · Mercado de Abasto,combinacion,2026-04,holdout,14.29,14.57,-1.9,True,True
+787|140|referencia_mercado,Sandía Sangría - Primera,Guadalajara · Mercado de Abasto,combinacion,2026-05,holdout,14.22,14.24,-0.1,True,True
+787|140|referencia_mercado,Sandía Sangría - Primera,Guadalajara · Mercado de Abasto,combinacion,2026-06,holdout,14.48,14.3,1.3,True,
+787|140|referencia_mercado,Sandía Sangría - Primera,Guadalajara · Mercado de Abasto,combinacion,2026-07,holdout,14.21,14.28,-0.5,True,
+787|140|referencia_mercado,Sandía Sangría - Primera,Guadalajara · Mercado de Abasto,combinacion,2026-08,holdout,14.48,15.96,-9.3,True,True
+787|140|referencia_mercado,Sandía Sangría - Primera,Guadalajara · Mercado de Abasto,combinacion,2026-09,holdout,16.04,14.95,7.3,True,False
+787|140|referencia_mercado,Sandía Sangría - Primera,Guadalajara · Mercado de Abasto,combinacion,2026-10,holdout,14.94,16.32,-8.5,True,False
